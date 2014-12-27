@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+SCREENSHOT DEPENDENCIES
+--------------------------------------------------------------------------------
+valac (>= 0.24.0)
+cmake (>= 2.8)
+libgtk-3-dev (>= 3.10)
+libgranite-dev
+
+--------------------------------------------------------------------------------
+BUILDING SCREENSHOT
+--------------------------------------------------------------------------------
+bzr branch lp:screenshot
+cd screenshot
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install

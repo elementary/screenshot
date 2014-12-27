@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Screenshot
+Comment=Save images of your screen or individual windows
+Exec=screenshot
+Icon=applets-screenshooter
+Terminal=false
+Categories=Utility;Office;
+Keywords=Todo;Tasks;
+X-GNOME-UsesNotifications=true
+Actions=AboutDialog;
+
+[Desktop Action AboutDialog]
+Name=About Screenshot
+Exec=screenshot -a
