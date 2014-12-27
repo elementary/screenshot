@@ -22,6 +22,8 @@ namespace Screenshot {
 
     public class ScreenshotWindow : Gtk.Window {
 
+        private Settings settings = new Settings ("net.launchpad.screenshot");
+
         /**
          *  UI elements
          */
@@ -29,10 +31,11 @@ namespace Screenshot {
         private Gtk.Grid        grid;
         private Gtk.Button      take_btn;
         
-        private int type_of_capture = 0;
-        private string choosen_format = "png";
-        private bool mouse_pointer = false;
-        private string folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
+        private int     type_of_capture;
+        private string  choosen_format;
+        private bool    mouse_pointer;
+        private bool    window_border;
+        private string  folder_dir;
 
         /**
          *  ScreenshotWindow Constructor
@@ -41,6 +44,15 @@ namespace Screenshot {
 
             title = _("Screenshot");
             resizable = false;     // Window is not resizable
+
+            type_of_capture = 0;
+            choosen_format = settings.get_string ("format");
+            mouse_pointer = settings.get_boolean ("mouse-pointer");
+            window_border = settings.get_boolean ("window-border");
+            folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
+
+            if (settings.get_string ("folder-dir") != folder_dir)
+                folder_dir = settings.get_string ("folder-dir");
 
             setup_ui ();
         }
@@ -78,16 +90,20 @@ namespace Screenshot {
              */
             var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
             all.toggled.connect (() => {
-                type_of_capture = 0;            
+                type_of_capture = 0;
             });
 
             // TODO
             var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
-            //curr_window.toggled.connect (null);
+            curr_window.toggled.connect (() => {
+                type_of_capture = 1;
+            });
 
             // TODO
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
-            //selection.toggled.connect (null);
+            selection.toggled.connect (() => {
+                type_of_capture = 2;
+            });
 
             // Pack first part of the grid
             grid.attach (area_label, 0, 0, 1, 1);
@@ -103,10 +119,14 @@ namespace Screenshot {
             var pointer_switch = new Gtk.Switch ();
             pointer_switch.halign = Gtk.Align.START;
 
+            pointer_switch.set_active (mouse_pointer);
+
             var border_label = new Gtk.Label (_("Include window border:"));
             border_label.halign = Gtk.Align.END;
             var border_switch = new Gtk.Switch ();
             border_switch.halign = Gtk.Align.START;
+
+            border_switch.set_active (window_border);
 
             var format_label = new Gtk.Label (_("File format:"));
             format_label.halign = Gtk.Align.END;
@@ -115,11 +135,7 @@ namespace Screenshot {
             location_label.halign = Gtk.Align.END;
             var location = new Gtk.FileChooserButton (_("Select Sreenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
 
-            try {
-                location.set_current_folder (folder_dir);
-            } catch (GLib.Error e) {
-                location.set_current_folder (Environment.get_home_dir ());
-            }
+            location.set_current_folder (folder_dir);
 
             /**
              *  Create combobox for file format
@@ -127,7 +143,7 @@ namespace Screenshot {
             var format_cmb = new Gtk.ComboBoxText ();
             format_cmb.append_text ("png");
             format_cmb.append_text ("jpeg");
-            format_cmb.active = 0;
+            format_cmb.active = (settings.get_string ("format") == "png" ? 0 : 1);
 
             // Pack second part of the grid
             grid.attach (prop_label, 0, 3, 1, 1);
@@ -151,21 +167,35 @@ namespace Screenshot {
              */
             pointer_switch.notify["active"].connect (() => {
 			    if (pointer_switch.active) {
-				    mouse_pointer = true;
+				    settings.set_boolean ("mouse-pointer", true);
+                    mouse_pointer = settings.get_boolean ("mouse-pointer");
 			    } else {
-				    mouse_pointer = false;
+				    settings.set_boolean ("mouse-pointer", false);
+                    mouse_pointer = settings.get_boolean ("mouse-pointer");
+			    }
+		    });
+
+            border_switch.notify["active"].connect (() => {
+			    if (border_switch.active) {
+				    settings.set_boolean ("window-border", true);
+                    window_border = settings.get_boolean ("window-border");
+			    } else {
+				    settings.set_boolean ("window-border", false);
+                    window_border = settings.get_boolean ("window-border");
 			    }
 		    });
 
             format_cmb.changed.connect (() => {
-			    choosen_format = format_cmb.get_active_text ();
+                settings.set_string ("format", format_cmb.get_active_text ());
+			    choosen_format = settings.get_string ("format");
 		    });
 
             location.selection_changed.connect (() => {
 			    SList<string> uris = location.get_uris ();
 			    foreach (unowned string uri in uris) {
-				    stdout.printf ("Selection changed:\n");
-				    stdout.printf (" %s\n", uri);
+                    print(uri);
+				    settings.set_string ("folder-dir", uri.substring (7, -1));
+                    folder_dir = settings.get_string ("folder-dir");
 			    }
 		    });
 
