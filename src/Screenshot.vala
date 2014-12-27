@@ -19,6 +19,7 @@
 ***/
 
 using Gtk;
+using Gdk;
 using Granite;
 
 namespace Screenshot {

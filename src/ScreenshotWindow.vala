@@ -28,13 +28,11 @@ namespace Screenshot {
         private Gtk.HeaderBar   header;
         private Gtk.Grid        grid;
         private Gtk.Button      take_btn;
-
-        private enum FORMAT {
-            PNG,
-            JPG
-        }
         
-        private int choosen_format = 0;
+        private int type_of_capture = 0;
+        private string choosen_format = "png";
+        private bool mouse_pointer = false;
+        private string folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
         /**
          *  ScreenshotWindow Constructor
@@ -62,7 +60,6 @@ namespace Screenshot {
 
             grid = new Gtk.Grid ();
             grid.margin = 12;
-            grid.margin_top = 24;
             grid.row_spacing = 6;
             grid.column_spacing = 12;
 
@@ -80,15 +77,19 @@ namespace Screenshot {
              *  Capture area selection
              */
             var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
-            //all.toggled.connect (null);
+            all.toggled.connect (() => {
+                type_of_capture = 0;            
+            });
 
+            // TODO
             var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
             //curr_window.toggled.connect (null);
 
-            // Not implemented yet
+            // TODO
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
             //selection.toggled.connect (null);
 
+            // Pack first part of the grid
             grid.attach (area_label, 0, 0, 1, 1);
             grid.attach (all, 1, 0, 1, 1);
             grid.attach (curr_window, 1, 1, 1, 1);
@@ -100,22 +101,35 @@ namespace Screenshot {
             var pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
             pointer_label.halign = Gtk.Align.END;
             var pointer_switch = new Gtk.Switch ();
+            pointer_switch.halign = Gtk.Align.START;
 
             var border_label = new Gtk.Label (_("Include window border:"));
             border_label.halign = Gtk.Align.END;
             var border_switch = new Gtk.Switch ();
+            border_switch.halign = Gtk.Align.START;
 
             var format_label = new Gtk.Label (_("File format:"));
             format_label.halign = Gtk.Align.END;
+
+            var location_label = new Gtk.Label (_("Screenshots folder:"));
+            location_label.halign = Gtk.Align.END;
+            var location = new Gtk.FileChooserButton (_("Select Sreenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
+
+            try {
+                location.set_current_folder (folder_dir);
+            } catch (GLib.Error e) {
+                location.set_current_folder (Environment.get_home_dir ());
+            }
 
             /**
              *  Create combobox for file format
              */
             var format_cmb = new Gtk.ComboBoxText ();
-            format_cmb.append_text ("PNG");
-            format_cmb.append_text ("JPG");
+            format_cmb.append_text ("png");
+            format_cmb.append_text ("jpeg");
             format_cmb.active = 0;
 
+            // Pack second part of the grid
             grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
@@ -123,18 +137,78 @@ namespace Screenshot {
             grid.attach (border_switch, 1, 5, 1, 1);
             grid.attach (format_label, 0, 6, 1, 1);
             grid.attach (format_cmb, 1, 6, 1, 1);
+            grid.attach (location_label, 0, 7, 1, 1);
+            grid.attach (location, 1, 7, 1, 1);
 
             // Take button
             take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
-            take_btn.margin_top = 18;
+            take_btn.margin_top = 12;
 
-            grid.attach (take_btn, 1, 7, 1, 1);
+            grid.attach (take_btn, 1, 8, 1, 1);
  
+            /**
+             *  Signals
+             */
+            pointer_switch.notify["active"].connect (() => {
+			    if (pointer_switch.active) {
+				    mouse_pointer = true;
+			    } else {
+				    mouse_pointer = false;
+			    }
+		    });
+
+            format_cmb.changed.connect (() => {
+			    choosen_format = format_cmb.get_active_text ();
+		    });
+
+            location.selection_changed.connect (() => {
+			    SList<string> uris = location.get_uris ();
+			    foreach (unowned string uri in uris) {
+				    stdout.printf ("Selection changed:\n");
+				    stdout.printf (" %s\n", uri);
+			    }
+		    });
+
+            take_btn.clicked.connect (save_to_file);
+
+            // Pack the main grid into the window
             this.add (grid);
         }
 
         private void save_to_file () {
-            
+
+            Gdk.Pixbuf screenshot;
+            string filename;
+            int width;
+            int height;
+
+            switch (type_of_capture) {
+                case 0:
+                    Gdk.Window win = Gdk.get_default_root_window();
+
+                    width = win.get_width();
+                    height = win.get_height();
+                    filename = _("Screenshot ") + new GLib.DateTime.now_local ().format ("%d/%m/%Y - %H:%M") + "." + choosen_format;
+                    
+                    try {
+                        screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                        screenshot.save (filename, choosen_format);
+
+                        // Send success notification
+                        show_notification (_("Task finished"), filename + _(" saved"));
+                    } catch (GLib.Error e) {
+                        // Send failure notification
+                        show_notification (_("Task aborted"), filename + _(" couldn't be saved"));
+                    }
+
+                    break;
+                case 1:
+                    // TODO
+                    break;
+                case 2:
+                    // TODO
+                    break;
+            }
         }
     }
 }

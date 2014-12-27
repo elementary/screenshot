@@ -52,13 +52,19 @@ add_definitions(-include config.h)
 add_subdirectory(po)
 
 #
+# dconf
+#
+add_subdirectory(schemas)
+
+#
 # Agenda
 #
 find_package(PkgConfig)
 
 pkg_check_modules(DEPS REQUIRED
         gtk+-3.0>=3.12
-        granite)
+        granite
+        libnotify)
 
 add_definitions(${DEPS_CFLAGS})
 
@@ -75,9 +81,11 @@ vala_precompile(VALA_C
         src/Screenshot.vala
         src/ScreenshotWindow.vala
         src/Translations.vala
+        src/Utils.vala
 PACKAGES
         gtk+-3.0
         granite
+        libnotify
 CUSTOM_VAPIS
         vapi/config.vapi
 OPTIONS

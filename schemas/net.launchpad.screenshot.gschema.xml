@@ -1,0 +1,4 @@
+<schemalist>
+	<schema id="net.launchpad.screenshot" path="/net/launchpad/screenshot/" gettext-domain="screenshot">
+	</schema>
+</schemalist>

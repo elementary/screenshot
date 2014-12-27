@@ -5,6 +5,7 @@ valac (>= 0.24.0)
 cmake (>= 2.8)
 libgtk-3-dev (>= 3.10)
 libgranite-dev
+libnotify
 
 --------------------------------------------------------------------------------
 BUILDING SCREENSHOT
