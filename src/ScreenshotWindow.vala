@@ -89,21 +89,12 @@ namespace Screenshot {
              *  Capture area selection
              */
             var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
-            all.toggled.connect (() => {
-                type_of_capture = 0;
-            });
 
             // TODO
             var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
-            curr_window.toggled.connect (() => {
-                type_of_capture = 1;
-            });
 
             // TODO
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
-            selection.toggled.connect (() => {
-                type_of_capture = 2;
-            });
 
             // Pack first part of the grid
             grid.attach (area_label, 0, 0, 1, 1);
@@ -127,6 +118,7 @@ namespace Screenshot {
             border_switch.halign = Gtk.Align.START;
 
             border_switch.set_active (window_border);
+            border_switch.set_sensitive (false);
 
             var format_label = new Gtk.Label (_("File format:"));
             format_label.halign = Gtk.Align.END;
@@ -160,11 +152,29 @@ namespace Screenshot {
             take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.margin_top = 12;
 
-            grid.attach (take_btn, 1, 8, 1, 1);
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+            box.pack_end (take_btn, false, false, 0);
+
+            grid.attach (box, 0, 8, 2, 1);
  
             /**
              *  Signals
              */
+            all.toggled.connect (() => {
+                type_of_capture = 0;
+                border_switch.set_sensitive (false);
+            });
+
+            curr_window.toggled.connect (() => {
+                type_of_capture = 1;
+                border_switch.set_sensitive (true);
+            });
+
+            selection.toggled.connect (() => {
+                type_of_capture = 2;
+                border_switch.set_sensitive (false);
+            });
+
             pointer_switch.notify["active"].connect (() => {
 			    if (pointer_switch.active) {
 				    settings.set_boolean ("mouse-pointer", true);
