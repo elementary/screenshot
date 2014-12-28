@@ -66,23 +66,27 @@ msgstr ""
 msgid "Select Sreenshots Folder…"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:151
+#: ../src/ScreenshotWindow.vala:132
+msgid "Delay in seconds:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:172
 msgid "Take Screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:258
+#: ../src/ScreenshotWindow.vala:256
 msgid "Task finished"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:258
+#: ../src/ScreenshotWindow.vala:256
 msgid "Image saved in "
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:261
+#: ../src/ScreenshotWindow.vala:259
 msgid "Task aborted"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:261
+#: ../src/ScreenshotWindow.vala:259
 msgid "Image not saved"
 msgstr ""
 

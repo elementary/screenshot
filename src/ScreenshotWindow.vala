@@ -276,6 +276,7 @@ namespace Screenshot {
                         grab_save (win);
                         Timeout.add (delay*1000, () => {
                             set_opacity (1);
+                            present ();
                             return false;
                         });
                         return false;
@@ -290,6 +291,7 @@ namespace Screenshot {
                         grab_save (win);
                         Timeout.add (delay*1000, () => {
                             set_opacity (1);
+                            present ();
                             return false;
                         });
                         return false;
