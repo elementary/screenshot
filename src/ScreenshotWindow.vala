@@ -29,12 +29,12 @@ namespace Screenshot {
          */
         private Gtk.HeaderBar   header;
         private Gtk.Grid        grid;
-        private Gtk.Button      take_btn;
         
         private int     type_of_capture;
         private string  choosen_format;
         private bool    mouse_pointer;
         private bool    include_date;
+        private int  delay;
         private string  folder_dir;
 
         /**
@@ -49,6 +49,7 @@ namespace Screenshot {
             choosen_format = settings.get_string ("format");
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             include_date = settings.get_boolean ("include-date");
+            delay = 1;
             folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
             if (settings.get_string ("folder-dir") != folder_dir)
@@ -128,13 +129,31 @@ namespace Screenshot {
 
             location.set_current_folder (folder_dir);
 
+            var delay_label = new Gtk.Label (_("Delay in seconds:"));
+            delay_label.halign = Gtk.Align.END;
+
+            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
+		    delay_spin.set_value (delay);
+
             /**
              *  Create combobox for file format
              */
             var format_cmb = new Gtk.ComboBoxText ();
             format_cmb.append_text ("png");
             format_cmb.append_text ("jpeg");
-            format_cmb.active = (settings.get_string ("format") == "png" ? 0 : 1);
+            format_cmb.append_text ("bmp");
+
+            switch (settings.get_string ("format")) {
+                case "png":
+                    format_cmb.active = 0;
+                    break;
+                case "jpeg":
+                    format_cmb.active = 1;
+                    break;
+                case "bmp":
+                    format_cmb.active = 2;
+                    break;
+            }
 
             // Pack second part of the grid
             grid.attach (prop_label, 0, 3, 1, 1);
@@ -142,19 +161,21 @@ namespace Screenshot {
             grid.attach (pointer_switch, 1, 4, 1, 1);
             grid.attach (date_label, 0, 5, 1, 1);
             grid.attach (date_switch, 1, 5, 1, 1);
-            grid.attach (format_label, 0, 6, 1, 1);
-            grid.attach (format_cmb, 1, 6, 1, 1);
-            grid.attach (location_label, 0, 7, 1, 1);
-            grid.attach (location, 1, 7, 1, 1);
+            grid.attach (delay_label, 0, 6, 1, 1);
+            grid.attach (delay_spin, 1, 6, 1, 1);
+            grid.attach (format_label, 0, 7, 1, 1);
+            grid.attach (format_cmb, 1, 7, 1, 1);
+            grid.attach (location_label, 0, 8, 1, 1);
+            grid.attach (location, 1, 8, 1, 1);
 
             // Take button
-            take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
+            var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.margin_top = 12;
 
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
             box.pack_end (take_btn, false, false, 0);
 
-            grid.attach (box, 0, 8, 2, 1);
+            grid.attach (box, 0, 9, 2, 1);
  
             /**
              *  Signals
@@ -191,6 +212,10 @@ namespace Screenshot {
 			    }
 		    });
 
+            delay_spin.value_changed.connect (() => {
+			    delay = delay_spin.get_value_as_int ();
+		    });
+
             format_cmb.changed.connect (() => {
                 settings.set_string ("format", format_cmb.get_active_text ());
 			    choosen_format = settings.get_string ("format");
@@ -205,74 +230,75 @@ namespace Screenshot {
 			    }
 		    });
 
-            take_btn.clicked.connect (save_to_file);
+            take_btn.clicked.connect (take_clicked);
 
             // Pack the main grid into the window
             this.add (grid);
         }
-
-        private void save_to_file () {
+        
+        private bool grab_save (Gdk.Window win) {
 
             Gdk.Pixbuf  screenshot;
-            string      filename;
-            string      date_time;
-            int         width;
-            int         height;
-
+            string      filename, date_time;
+            int         width, height;
+            
             date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d %m %Y - %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
             filename = folder_dir + _("/scr ") + date_time + "." + choosen_format;
 
+            width = win.get_width();
+            height = win.get_height();
+
+            try {
+                screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                screenshot.save (filename, choosen_format);
+
+                // Send success notification
+                show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
+            } catch (GLib.Error e) {
+                // Send failure notification
+                show_notification (_("Task aborted"), _("Image not saved"));
+            }
+
+            return false;
+        }
+
+        private void take_clicked () {
+
+            Gdk.Screen  screen;
+            Gdk.Window  win;
+            
             switch (type_of_capture) {
                 case 0:
-                    Gdk.Window win = Gdk.get_default_root_window();
+                    win = Gdk.get_default_root_window();
 
-                    width = win.get_width();
-                    height = win.get_height();
-
-                    try {
-                        screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
-                        screenshot.save (filename, choosen_format);
-
-                        // Send success notification
-                        show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
-                    } catch (GLib.Error e) {
-                        // Send failure notification
-                        show_notification (_("Task aborted"), _("Image not saved"));
-                    }
+                    set_opacity (0);
+                    Timeout.add (delay*1000, () => {
+                        grab_save (win);
+                        Timeout.add (delay*1000, () => {
+                            set_opacity (1);
+                            return false;
+                        });
+                        return false;
+                    }); 
                     break;
                 case 1:
-                    Gdk.Screen screen = Gdk.Screen.get_default ();
-                    Gdk.Window win = screen.get_active_window ();
+                    screen = Gdk.Screen.get_default ();
+                    win = screen.get_active_window ();
 
-                    width = win.get_width();
-                    height = win.get_height();
-                    
-                    print(width.to_string ());
-                    print(height.to_string ());
-
-                    try {
-                        screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
-                        screenshot.save (filename, choosen_format);
-
-                        // Send success notification
-                        show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
-                    } catch (GLib.Error e) {
-                        // Send failure notification
-                        show_notification (_("Task aborted"), _("Image not saved"));
-                    }
+                    set_opacity (0);
+                    Timeout.add (delay*1000, () => {
+                        grab_save (win);
+                        Timeout.add (delay*1000, () => {
+                            set_opacity (1);
+                            return false;
+                        });
+                        return false;
+                    }); 
                     break;
                 case 2:
                     // TODO
                     break;
             }
-        }
-
-        private void hide_window () {
-            this.hide ();
-        }
-
-        private void show_window () {
-            this.show ();
         }
     }
 }
