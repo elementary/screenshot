@@ -34,7 +34,7 @@ namespace Screenshot {
         private int     type_of_capture;
         private string  choosen_format;
         private bool    mouse_pointer;
-        private bool    window_border;
+        private bool    include_date;
         private string  folder_dir;
 
         /**
@@ -48,7 +48,7 @@ namespace Screenshot {
             type_of_capture = 0;
             choosen_format = settings.get_string ("format");
             mouse_pointer = settings.get_boolean ("mouse-pointer");
-            window_border = settings.get_boolean ("window-border");
+            include_date = settings.get_boolean ("include-date");
             folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
             if (settings.get_string ("folder-dir") != folder_dir)
@@ -112,13 +112,12 @@ namespace Screenshot {
 
             pointer_switch.set_active (mouse_pointer);
 
-            var border_label = new Gtk.Label (_("Include window border:"));
-            border_label.halign = Gtk.Align.END;
-            var border_switch = new Gtk.Switch ();
-            border_switch.halign = Gtk.Align.START;
+            var date_label = new Gtk.Label (_("Include date in file name:"));
+            date_label.halign = Gtk.Align.END;
+            var date_switch = new Gtk.Switch ();
+            date_switch.halign = Gtk.Align.START;
 
-            border_switch.set_active (window_border);
-            border_switch.set_sensitive (false);
+            date_switch.set_active (include_date);
 
             var format_label = new Gtk.Label (_("File format:"));
             format_label.halign = Gtk.Align.END;
@@ -141,8 +140,8 @@ namespace Screenshot {
             grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
-            grid.attach (border_label, 0, 5, 1, 1);
-            grid.attach (border_switch, 1, 5, 1, 1);
+            grid.attach (date_label, 0, 5, 1, 1);
+            grid.attach (date_switch, 1, 5, 1, 1);
             grid.attach (format_label, 0, 6, 1, 1);
             grid.attach (format_cmb, 1, 6, 1, 1);
             grid.attach (location_label, 0, 7, 1, 1);
@@ -162,17 +161,14 @@ namespace Screenshot {
              */
             all.toggled.connect (() => {
                 type_of_capture = 0;
-                border_switch.set_sensitive (false);
             });
 
             curr_window.toggled.connect (() => {
                 type_of_capture = 1;
-                border_switch.set_sensitive (true);
             });
 
             selection.toggled.connect (() => {
                 type_of_capture = 2;
-                border_switch.set_sensitive (false);
             });
 
             pointer_switch.notify["active"].connect (() => {
@@ -185,13 +181,13 @@ namespace Screenshot {
 			    }
 		    });
 
-            border_switch.notify["active"].connect (() => {
-			    if (border_switch.active) {
-				    settings.set_boolean ("window-border", true);
-                    window_border = settings.get_boolean ("window-border");
+            date_switch.notify["active"].connect (() => {
+			    if (date_switch.active) {
+				    settings.set_boolean ("include-date", true);
+                    include_date = settings.get_boolean ("include-date");
 			    } else {
-				    settings.set_boolean ("window-border", false);
-                    window_border = settings.get_boolean ("window-border");
+				    settings.set_boolean ("include-date", false);
+                    include_date = settings.get_boolean ("include-date");
 			    }
 		    });
 
@@ -217,10 +213,14 @@ namespace Screenshot {
 
         private void save_to_file () {
 
-            Gdk.Pixbuf screenshot;
-            string filename;
-            int width;
-            int height;
+            Gdk.Pixbuf  screenshot;
+            string      filename;
+            string      date_time;
+            int         width;
+            int         height;
+
+            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d %m %Y - %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
+            filename = folder_dir + _("/scr ") + date_time + "." + choosen_format;
 
             switch (type_of_capture) {
                 case 0:
@@ -228,27 +228,51 @@ namespace Screenshot {
 
                     width = win.get_width();
                     height = win.get_height();
-                    filename = _("Screenshot ") + new GLib.DateTime.now_local ().format ("%d/%m/%Y - %H:%M") + "." + choosen_format;
-                    
+
                     try {
                         screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
                         screenshot.save (filename, choosen_format);
 
                         // Send success notification
-                        show_notification (_("Task finished"), filename + _(" saved"));
+                        show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
                     } catch (GLib.Error e) {
                         // Send failure notification
-                        show_notification (_("Task aborted"), filename + _(" couldn't be saved"));
+                        show_notification (_("Task aborted"), _("Image not saved"));
                     }
-
                     break;
                 case 1:
-                    // TODO
+                    Gdk.Screen screen = Gdk.Screen.get_default ();
+                    Gdk.Window win = screen.get_active_window ();
+
+                    width = win.get_width();
+                    height = win.get_height();
+                    
+                    print(width.to_string ());
+                    print(height.to_string ());
+
+                    try {
+                        screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                        screenshot.save (filename, choosen_format);
+
+                        // Send success notification
+                        show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
+                    } catch (GLib.Error e) {
+                        // Send failure notification
+                        show_notification (_("Task aborted"), _("Image not saved"));
+                    }
                     break;
                 case 2:
                     // TODO
                     break;
             }
+        }
+
+        private void hide_window () {
+            this.hide ();
+        }
+
+        private void show_window () {
+            this.show ();
         }
     }
 }

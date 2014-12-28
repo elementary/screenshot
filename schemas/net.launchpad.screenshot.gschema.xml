@@ -6,7 +6,7 @@
         <key name="mouse-pointer" type="b">
             <default>false</default>
         </key>
-        <key name="window-border" type="b">
+        <key name="include-date" type="b">
             <default>false</default>
         </key>
         <key name="folder-dir" type="s">
