@@ -7,7 +7,7 @@
             <default>false</default>
         </key>
         <key name="include-date" type="b">
-            <default>false</default>
+            <default>true</default>
         </key>
         <key name="folder-dir" type="s">
             <default>""</default>
