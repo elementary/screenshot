@@ -243,7 +243,7 @@ namespace Screenshot {
             int         width, height;
             
             date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d %m %Y - %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
-            filename = folder_dir + _("/scr ") + date_time + "." + choosen_format;
+            filename = folder_dir + "/" + _("screenshot ") + date_time + "." + choosen_format;
 
             width = win.get_width();
             height = win.get_height();
@@ -257,6 +257,7 @@ namespace Screenshot {
             } catch (GLib.Error e) {
                 // Send failure notification
                 show_notification (_("Task aborted"), _("Image not saved"));
+                debug (e.message);
             }
 
             return false;
@@ -264,18 +265,18 @@ namespace Screenshot {
 
         private void take_clicked () {
 
-            Gdk.Screen  screen;
-            Gdk.Window  win;
+            Gdk.Screen              screen = null;
+            Gdk.Window              win    = null;
+            GLib.List<Gdk.Window>   list   = null;
             
             switch (type_of_capture) {
                 case 0:
                     win = Gdk.get_default_root_window();
 
-                    set_opacity (0);
+                    hide ();
                     Timeout.add (delay*1000, () => {
                         grab_save (win);
                         Timeout.add (delay*1000, () => {
-                            set_opacity (1);
                             present ();
                             return false;
                         });
@@ -284,18 +285,22 @@ namespace Screenshot {
                     break;
                 case 1:
                     screen = Gdk.Screen.get_default ();
-                    win = screen.get_active_window ();
 
-                    set_opacity (0);
+                    hide ();
                     Timeout.add (delay*1000, () => {
+                        list = screen.get_window_stack ();
+                        foreach (Gdk.Window item in list) {
+                            if (screen.get_active_window () == item) {
+                                win = item;                   
+                            }
+                        }
                         grab_save (win);
                         Timeout.add (delay*1000, () => {
-                            set_opacity (1);
                             present ();
                             return false;
                         });
                         return false;
-                    }); 
+                    });
                     break;
                 case 2:
                     // TODO

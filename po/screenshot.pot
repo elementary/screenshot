@@ -74,6 +74,10 @@ msgstr ""
 msgid "Take Screenshot"
 msgstr ""
 
+#: ../src/ScreenshotWindow.vala:246
+msgid "screenshot "
+msgstr ""
+
 #: ../src/ScreenshotWindow.vala:256
 msgid "Task finished"
 msgstr ""
