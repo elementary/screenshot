@@ -64,7 +64,8 @@ find_package(PkgConfig)
 pkg_check_modules(DEPS REQUIRED
         gtk+-3.0>=3.12
         granite
-        libnotify)
+        libnotify
+        gdk-pixbuf-2.0)
 
 add_definitions(${DEPS_CFLAGS})
 
