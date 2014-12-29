@@ -294,7 +294,10 @@ namespace Screenshot {
                                 win = item;                   
                             }
                         }
-                        grab_save (win);
+                        if (win != null)
+                            grab_save (win);
+                        else
+                            show_notification (_("Task aborted"), _("Couldn't find an active window"));
                         Timeout.add (delay*1000, () => {
                             present ();
                             return false;

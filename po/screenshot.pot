@@ -87,11 +87,16 @@ msgid "Image saved in "
 msgstr ""
 
 #: ../src/ScreenshotWindow.vala:259
+#: ../src/ScreenshotWindow.vala:300
 msgid "Task aborted"
 msgstr ""
 
 #: ../src/ScreenshotWindow.vala:259
 msgid "Image not saved"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:300
+msgid "Couldn't find an active window"
 msgstr ""
 
 #: ../src/Translations.vala:7
