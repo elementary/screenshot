@@ -34,8 +34,10 @@ namespace Screenshot {
         private string  choosen_format;
         private bool    mouse_pointer;
         private bool    include_date;
-        private int  delay;
+        private int     delay;
         private string  folder_dir;
+
+        private Screenshot.SelectionArea selection_area;
 
         /**
          *  ScreenshotWindow Constructor
@@ -182,14 +184,24 @@ namespace Screenshot {
              */
             all.toggled.connect (() => {
                 type_of_capture = 0;
+                if (selection_area != null)
+                    selection_area.hide ();
             });
 
             curr_window.toggled.connect (() => {
                 type_of_capture = 1;
+                if (selection_area != null)
+                    selection_area.hide ();
             });
 
             selection.toggled.connect (() => {
                 type_of_capture = 2;
+                
+                if (selection_area == null) {
+                    selection_area = new Screenshot.SelectionArea ();
+				    selection_area.show_all ();
+                } else
+                    selection_area.present ();
             });
 
             pointer_switch.notify["active"].connect (() => {

@@ -81,6 +81,7 @@ include(ValaPrecompile)
 vala_precompile(VALA_C
         src/Screenshot.vala
         src/ScreenshotWindow.vala
+        src/SelectionArea.vala
         src/Translations.vala
         src/Utils.vala
 PACKAGES
