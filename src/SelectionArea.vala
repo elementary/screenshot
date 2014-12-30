@@ -139,7 +139,7 @@ namespace Screenshot {
 				ctx.fill ();
 			}
 			ctx.rectangle (0, 0, w, h);
-			ctx.set_source_rgb (1.0, 1.0, 1.0);
+			ctx.set_source_rgb (0.7, 0.7, 0.7);
 			ctx.set_line_width (1.0);
 			ctx.stroke ();
 

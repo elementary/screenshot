@@ -93,10 +93,8 @@ namespace Screenshot {
              */
             var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
 
-            // TODO
             var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
 
-            // TODO
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
 
             // Pack first part of the grid
