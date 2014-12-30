@@ -252,7 +252,7 @@ namespace Screenshot {
             string      filename, date_time;
             int         width, height;
             
-            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d %m %Y - %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
+            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
             filename = folder_dir + "/" + _("screenshot ") + date_time + "." + choosen_format;
 
             width = win.get_width();
