@@ -260,6 +260,8 @@ namespace Screenshot {
 
             try {
                 screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                if (type_of_capture == 2)
+                    screenshot = new Gdk.Pixbuf.subpixbuf (screenshot, selection_area.x, selection_area.y, selection_area.w, selection_area.h);
                 screenshot.save (filename, choosen_format);
 
                 // Send success notification
@@ -316,7 +318,17 @@ namespace Screenshot {
                     });
                     break;
                 case 2:
-                    // TODO
+                    win = Gdk.get_default_root_window();
+
+                    selection_area.set_opacity (0);
+                    Timeout.add (delay*1000, () => {
+                        grab_save (win);
+                        Timeout.add (delay*1000, () => {
+                            selection_area.set_opacity (1);
+                            return false;
+                        });
+                        return false;
+                    }); 
                     break;
             }
         }
