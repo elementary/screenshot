@@ -67,7 +67,7 @@ pkg_check_modules(DEPS REQUIRED
         libnotify
         gdk-pixbuf-2.0)
 
-add_definitions(${DEPS_CFLAGS})
+add_definitions(${DEPS_CFLAGS} -w)
 
 link_libraries(${DEPS_LIBRARIES})
 link_directories(${DEPS_LIBRARY_DIRS})
