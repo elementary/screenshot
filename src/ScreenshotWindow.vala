@@ -334,7 +334,7 @@ namespace Screenshot {
                     hide ();
                     Timeout.add (delay*1000, () => {
                         grab_save (win);
-                        Timeout.add (delay*1000, () => {
+                        Timeout.add (200, () => {
                             present ();
                             return false;
                         });
@@ -356,7 +356,7 @@ namespace Screenshot {
                             grab_save (win);
                         else
                             show_notification (_("Task aborted"), _("Couldn't find an active window"));
-                        Timeout.add (delay*1000, () => {
+                        Timeout.add (200, () => {
                             present ();
                             return false;
                         });
@@ -369,7 +369,7 @@ namespace Screenshot {
                     selection_area.set_opacity (0);
                     Timeout.add (delay*1000, () => {
                         grab_save (win);
-                        Timeout.add (delay*1000, () => {
+                        Timeout.add (200, () => {
                             selection_area.set_opacity (1);
                             return false;
                         });
