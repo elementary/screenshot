@@ -234,7 +234,6 @@ namespace Screenshot {
             location.selection_changed.connect (() => {
 			    SList<string> uris = location.get_uris ();
 			    foreach (unowned string uri in uris) {
-                    print(uri);
 				    settings.set_string ("folder-dir", uri.substring (7, -1));
                     folder_dir = settings.get_string ("folder-dir");
 			    }
@@ -248,20 +247,67 @@ namespace Screenshot {
         
         private bool grab_save (Gdk.Window win) {
 
-            Gdk.Pixbuf  screenshot;
-            string      filename, date_time;
-            int         width, height;
+            Gdk.Pixbuf      screenshot;
+            Gdk.Rectangle   win_rect;
+            string          filename, date_time;
+            int             width, height;
             
             date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
             filename = folder_dir + "/" + _("screenshot ") + date_time + "." + choosen_format;
+            win_rect = Gdk.Rectangle ();
 
             width = win.get_width();
             height = win.get_height();
 
             try {
                 screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
-                if (type_of_capture == 2)
+
+                win_rect.x = 0;
+                win_rect.y = 0;
+                win_rect.width = width;
+                win_rect.height = height;
+
+                if (type_of_capture == 2) {
                     screenshot = new Gdk.Pixbuf.subpixbuf (screenshot, selection_area.x, selection_area.y, selection_area.w, selection_area.h);
+                    
+                    win_rect.x = selection_area.x;
+                    win_rect.y = selection_area.y;
+                    win_rect.width = selection_area.w;
+                    win_rect.height = selection_area.h;
+                }
+
+                if (mouse_pointer) {
+
+                    Gdk.Cursor      cursor;
+                    Gdk.Pixbuf      cursor_pixbuf;
+
+                    cursor = new Gdk.Cursor.for_display (Gdk.Display.get_default (), Gdk.CursorType.LEFT_PTR);
+                    cursor_pixbuf = cursor.get_image ();
+
+                    if (cursor_pixbuf != null) {
+                        
+                        Gdk.DeviceManager   manager;
+                        Gdk.Device          device;
+                        Gdk.Rectangle       cursor_rect;
+                        int                 cx, cy;
+
+                        manager = Gdk.Display.get_default ().get_device_manager ();
+                        device = manager.get_client_pointer ();
+                        win.get_device_position (device, out cx, out cy, null);
+                        cursor_rect = Gdk.Rectangle ();
+
+                        cursor_rect.x = cx + win_rect.x;
+                        cursor_rect.y = cy + win_rect.y;
+                        cursor_rect.width = cursor_pixbuf.get_width ();
+                        cursor_rect.height = cursor_pixbuf.get_height ();
+
+                        if (win_rect.intersect (cursor_rect, out cursor_rect)) {
+
+                            cursor_pixbuf.composite (screenshot, cx, cy, cursor_rect.width, cursor_rect.height, cx, cy, 1.0, 1.0, Gdk.InterpType.BILINEAR, 255);
+                        }
+                    }
+                }
+
                 screenshot.save (filename, choosen_format);
 
                 // Send success notification
