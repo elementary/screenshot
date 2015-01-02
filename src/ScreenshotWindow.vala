@@ -246,7 +246,7 @@ namespace Screenshot {
             take_btn.clicked.connect (take_clicked);
 
             focus_in_event.connect (() => {
-                if (selection_area != null) {
+                if (selection_area != null && selection_area.is_visible ()) {
                     selection_area.present ();
                     present ();
                 }
