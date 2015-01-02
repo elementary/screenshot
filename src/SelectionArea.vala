@@ -37,6 +37,7 @@ namespace Screenshot {
 			resizable = true;
 			set_has_resize_grip (false);
 			set_default_geometry (600, 400);
+            type_hint = Gdk.WindowTypeHint.DIALOG;
 			events = Gdk.EventMask.BUTTON_MOTION_MASK | Gdk.EventMask.BUTTON1_MOTION_MASK | 
                      Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK ;
 			skip_taskbar_hint = true;
