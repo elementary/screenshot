@@ -182,12 +182,14 @@ namespace Screenshot {
              */
             all.toggled.connect (() => {
                 type_of_capture = 0;
+
                 if (selection_area != null)
                     selection_area.hide ();
             });
 
             curr_window.toggled.connect (() => {
                 type_of_capture = 1;
+
                 if (selection_area != null)
                     selection_area.hide ();
             });
