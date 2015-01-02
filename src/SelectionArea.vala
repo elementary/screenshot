@@ -34,6 +34,7 @@ namespace Screenshot {
 
         public SelectionArea () {
 
+            stick ();
             resizable = true;
             deletable = false;
             set_has_resize_grip (false);

@@ -245,6 +245,15 @@ namespace Screenshot {
 
             take_btn.clicked.connect (take_clicked);
 
+            focus_in_event.connect (() => {
+                if (selection_area != null) {
+                    selection_area.present ();
+                    present ();
+                }
+
+                return false;
+            });
+
             // Pack the main grid into the window
             this.add (grid);
         }
