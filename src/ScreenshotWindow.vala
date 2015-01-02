@@ -200,6 +200,8 @@ namespace Screenshot {
 				    selection_area.show_all ();
                 } else
                     selection_area.present ();
+
+                present();
             });
 
             pointer_switch.notify["active"].connect (() => {
