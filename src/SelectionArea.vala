@@ -59,7 +59,7 @@ namespace Screenshot {
                 begin_move_drag ((int) e.button, (int) e.x_root, (int) e.y_root, e.time);
 
                 return false;
-			});
+            });
 
             configure_event.connect ((e) => {
 

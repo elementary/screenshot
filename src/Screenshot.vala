@@ -89,13 +89,13 @@ namespace Screenshot {
             Gtk.init (ref args);
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
-	        app = new ScreenshotApp ();  
+            app = new ScreenshotApp ();  
 
-	        if (args[1] == "-s") {
-		        return 0;
-	        }
-	        
-	        return app.run (args);
+            if (args[1] == "-s") {
+                return 0;
+            }
+
+            return app.run (args);
         }
     }
 }
