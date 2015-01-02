@@ -29,7 +29,7 @@ namespace Screenshot {
          */
         private Gtk.HeaderBar   header;
         private Gtk.Grid        grid;
-        
+
         private int     type_of_capture;
         private string  choosen_format;
         private bool    mouse_pointer;
