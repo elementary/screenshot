@@ -79,25 +79,41 @@ msgstr ""
 msgid "screenshot "
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:256
+#: ../src/ScreenshotWindow.vala:334
 msgid "Task finished"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:256
+#: ../src/ScreenshotWindow.vala:334
 msgid "Image saved in "
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:259
-#: ../src/ScreenshotWindow.vala:300
+#: ../src/ScreenshotWindow.vala:337
 msgid "Task aborted"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:259
+#: ../src/ScreenshotWindow.vala:337
+#: ../src/ScreenshotWindow.vala:380
 msgid "Image not saved"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:300
+#: ../src/ScreenshotWindow.vala:380
 msgid "Couldn't find an active window"
+msgstr ""
+
+#: ../src/Widgets/SaveDialog.vala:44
+msgid "Screenshot acquired"
+msgstr ""
+
+#: ../src/Widgets/SaveDialog.vala:59
+msgid "Name:"
+msgstr ""
+
+#: ../src/Widgets/SaveDialog.vala:66
+msgid "Dismiss"
+msgstr ""
+
+#: ../src/Widgets/SaveDialog.vala:65
+msgid "Save"
 msgstr ""
 
 #: ../src/Translations.vala:7
