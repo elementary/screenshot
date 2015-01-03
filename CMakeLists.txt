@@ -81,7 +81,8 @@ include(ValaPrecompile)
 vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
         src/Screenshot.vala
         src/ScreenshotWindow.vala
-        src/SelectionArea.vala
+        src/Widgets/SelectionArea.vala
+        src/Widgets/SaveDialog.vala
         src/Translations.vala
         src/Utils.vala
 PACKAGES

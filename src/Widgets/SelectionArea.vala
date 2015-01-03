@@ -18,7 +18,7 @@
   END LICENSE
 ***/
 
-namespace Screenshot {
+namespace Screenshot.Widgets {
     
     /**
      *  Code stolen from Eidete program with some fixes for warnings messages.
