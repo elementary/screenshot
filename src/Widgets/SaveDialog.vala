@@ -32,10 +32,10 @@ namespace Screenshot.Widgets {
 
         public SaveDialog (Gtk.Window parent, string filename) {
 
-            resizable = false;
-            modal = true;
+            set_resizable (false);
+            set_deletable (false);
+            set_modal (true);
             set_keep_above (true);
-            type_hint = Gdk.WindowTypeHint.DIALOG;
             transient_for = parent;
             
             Object (use_header_bar: 1);
