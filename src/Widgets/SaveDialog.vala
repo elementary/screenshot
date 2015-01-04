@@ -20,9 +20,8 @@
 
 namespace Screenshot.Widgets {
 
-    public class SaveDialog : Gtk.Window {
+    public class SaveDialog : Gtk.Dialog {
 
-        private Gtk.HeaderBar   header;
         private Gtk.Grid        grid;
         private Gtk.Label       name_label;
         private Gtk.Entry       name_entry;
@@ -33,18 +32,15 @@ namespace Screenshot.Widgets {
 
         public SaveDialog (Gtk.Window parent, string filename) {
 
-            deletable = false;
             resizable = false;
             modal = true;
             set_keep_above (true);
             type_hint = Gdk.WindowTypeHint.DIALOG;
             transient_for = parent;
             
-            header = new Gtk.HeaderBar ();
-            header.title = _("Screenshot acquired");
-            header.show_close_button = false;
-            header.get_style_context ().remove_class ("header-bar");
-            set_titlebar (header);
+            Object (use_header_bar: 1);
+            (get_header_bar () as Gtk.HeaderBar).show_close_button = false;
+            get_header_bar ().get_style_context ().remove_class ("header-bar");
 
             build (parent, filename);
         }
@@ -54,7 +50,10 @@ namespace Screenshot.Widgets {
             grid = new Gtk.Grid (); 
             grid.row_spacing = 12;
             grid.column_spacing = 12;
-            grid.margin = 12;
+            grid.margin_start = 12;
+            grid.margin_end = 12;
+
+            var content = this.get_content_area () as Gtk.Box;
 
             name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
@@ -63,7 +62,7 @@ namespace Screenshot.Widgets {
             name_entry.set_width_chars (30);
 
             save_btn = new Gtk.Button.with_label (_("Save"));
-            retry_btn = new Gtk.Button.with_label (_("Dismiss"));
+            retry_btn = new Gtk.Button.with_label (_("Cancel"));
             
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
             box.pack_end (save_btn, false, true, 0);
@@ -86,7 +85,7 @@ namespace Screenshot.Widgets {
             grid.attach (name_entry, 1, 0, 1, 1);
             grid.attach (box, 1, 1, 1, 1);
 
-            add (grid);
+            content.add (grid);
             show_all ();
         }
 

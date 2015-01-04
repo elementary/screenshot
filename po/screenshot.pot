@@ -109,7 +109,7 @@ msgid "Name:"
 msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:66
-msgid "Dismiss"
+msgid "Cancel"
 msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:65
