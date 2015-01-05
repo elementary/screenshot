@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-04 06:44+0000\n"
+"X-Launchpad-Export-Date: 2015-01-05 07:27+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Screenshot.vala:57
@@ -109,7 +109,7 @@ msgid "Name:"
 msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:66
-msgid "Dismiss"
+msgid "Cancel"
 msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:65
