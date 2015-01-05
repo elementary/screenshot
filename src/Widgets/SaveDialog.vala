@@ -32,16 +32,16 @@ namespace Screenshot.Widgets {
 
         public SaveDialog (Gtk.Window parent, string filename) {
 
-            set_resizable (false);
-            set_deletable (false);
-            set_modal (true);
-            set_keep_above (true);
-            transient_for = parent;
-            
             Object (use_header_bar: 1);
             (get_header_bar () as Gtk.HeaderBar).show_close_button = false;
             get_header_bar ().get_style_context ().remove_class ("header-bar");
 
+            resizable = false;
+            deletable = false;
+            modal = true;
+            set_keep_above (true);
+            set_transient_for (parent);
+            
             build (parent, filename);
         }
 
