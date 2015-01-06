@@ -204,6 +204,8 @@ namespace Screenshot {
                 } else
                     selection_area.present ();
 
+                set_transient_for (selection_area);
+
                 present();
             });
 
