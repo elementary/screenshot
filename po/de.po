@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-08-31 15:55-0500\n"
-"PO-Revision-Date: 2014-12-30 20:59+0000\n"
+"PO-Revision-Date: 2015-01-07 00:23+0000\n"
 "Last-Translator: Marvin Beckers <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-05 07:27+0000\n"
+"X-Launchpad-Export-Date: 2015-01-07 06:43+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Screenshot.vala:57
@@ -53,7 +53,7 @@ msgstr "Mauszeiger einbeziehen:"
 
 #: ../src/ScreenshotWindow.vala:115
 msgid "Include date in file name:"
-msgstr ""
+msgstr "Datum in Dateiname einfügen:"
 
 #: ../src/ScreenshotWindow.vala:122
 msgid "File format:"
