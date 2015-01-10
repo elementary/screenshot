@@ -62,7 +62,7 @@ add_subdirectory(schemas)
 find_package(PkgConfig)
 
 pkg_check_modules(DEPS REQUIRED
-        gtk+-3.0>=3.10
+        gtk+-3.0>=3.12
         granite
         libnotify
         gdk-pixbuf-2.0)
@@ -75,7 +75,7 @@ link_directories(${DEPS_LIBRARY_DIRS})
 find_package(Vala REQUIRED)
 
 include(ValaVersion)
-ensure_vala_version("0.22.0" MINIMUM)
+ensure_vala_version("0.24.0" MINIMUM)
 
 pkg_check_modules(GTK314_MIN QUIET gtk+-3.0>=3.14.0)
 if (GTK314_MIN_FOUND)
