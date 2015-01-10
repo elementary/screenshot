@@ -52,6 +52,9 @@ namespace Screenshot.Widgets {
             grid.column_spacing = 12;
             grid.margin_start = 12;
             grid.margin_end = 12;
+            #if HAS_GTK314_MIN
+            grid.margin_bottom = 12;
+            #endif
 
             var content = this.get_content_area () as Gtk.Box;
 
