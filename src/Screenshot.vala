@@ -46,10 +46,10 @@ namespace Screenshot {
             app_icon = "applets-screenshooter";
             app_launcher = "screenshot.desktop";
 
-            main_url = "https://launchpad.net/screenshot";
-            bug_url = "https://bugs.launchpad.net/screenshot";
-            help_url = "https://answers.launchpad.net/screenshot";
-            translate_url = "https://translations.launchpad.net/screenshot";
+            main_url = "https://launchpad.net/screenshot-tool";
+            bug_url = "https://bugs.launchpad.net/screenshot-tool";
+            help_url = "https://answers.launchpad.net/screenshot-tool";
+            translate_url = "https://translations.launchpad.net/screenshot-tool";
         
             about_authors = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
             about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
