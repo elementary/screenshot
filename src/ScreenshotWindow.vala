@@ -171,7 +171,11 @@ namespace Screenshot {
 
             // Take button
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
+            take_btn.get_style_context ().add_class ("suggested-action");
+            take_btn.can_default = true;
             take_btn.margin_top = 12;
+
+            this.set_default (take_btn);
 
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
             box.pack_end (take_btn, false, false, 0);
