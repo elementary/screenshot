@@ -55,7 +55,7 @@ namespace Screenshot {
             delay = 1;
             folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
-            if (settings.get_string ("folder-dir") != folder_dir)
+            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
                 folder_dir = settings.get_string ("folder-dir");
 
             setup_ui ();
