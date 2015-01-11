@@ -67,8 +67,6 @@ namespace Screenshot.Widgets {
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
 
-            save_btn.can_default = true;
-
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
             box.pack_end (save_btn, false, true, 0);
             box.pack_end (retry_btn, false, true, 0);
