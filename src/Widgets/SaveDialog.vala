@@ -90,6 +90,8 @@ namespace Screenshot.Widgets {
 
             content.add (grid);
             show_all ();
+
+            save_btn.grab_focus ();
         }
 
     }
