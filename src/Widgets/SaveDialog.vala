@@ -23,6 +23,7 @@ namespace Screenshot.Widgets {
     public class SaveDialog : Gtk.Dialog {
 
         private Gtk.Grid        grid;
+        private Gtk.Label       dialog_label;
         private Gtk.Label       name_label;
         private Gtk.Entry       name_entry;
         private Gtk.Button      save_btn;
@@ -58,11 +59,15 @@ namespace Screenshot.Widgets {
 
             var content = this.get_content_area () as Gtk.Box;
 
+            dialog_label = new Gtk.Label ("");
+            dialog_label.halign = Gtk.Align.START;
+            dialog_label.set_markup ("<b>" + _("Save the image as...") + "</b>");
+
             name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
             name_entry = new Gtk.Entry ();
             name_entry.set_text (filename);
-            name_entry.set_width_chars (30);
+            name_entry.set_width_chars (35);
 
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
@@ -84,9 +89,10 @@ namespace Screenshot.Widgets {
                 parent.present ();
             });
 
-            grid.attach (name_label, 0, 0, 1, 1);
-            grid.attach (name_entry, 1, 0, 1, 1);
-            grid.attach (box, 1, 1, 1, 1);
+            grid.attach (dialog_label, 1, 0, 1, 1);
+            grid.attach (name_label, 0, 1, 1, 1);
+            grid.attach (name_entry, 1, 1, 1, 1);
+            grid.attach (box, 1, 2, 1, 1);
 
             content.add (grid);
             show_all ();
