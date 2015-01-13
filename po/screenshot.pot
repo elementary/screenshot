@@ -108,6 +108,10 @@ msgstr ""
 msgid "Name:"
 msgstr ""
 
+#: ../src/Widgets/SaveDialog.vala:64
+msgid "Save the image as..."
+msgstr ""
+
 #: ../src/Widgets/SaveDialog.vala:66
 msgid "Cancel"
 msgstr ""
