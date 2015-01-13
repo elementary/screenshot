@@ -395,10 +395,12 @@ namespace Screenshot {
                     win = Gdk.get_default_root_window();
 
                     selection_area.set_opacity (0);
+                    this.set_opacity (0);
                     Timeout.add (delay*1000, () => {
                         grab_save (win);
                         Timeout.add (200, () => {
                             selection_area.set_opacity (1);
+                            this.set_opacity (1);
                             return false;
                         });
                         return false;
