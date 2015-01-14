@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-08-31 15:55-0500\n"
-"PO-Revision-Date: 2015-01-04 18:57+0000\n"
+"PO-Revision-Date: 2015-01-13 11:58+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-05 07:27+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-01-14 06:55+0000\n"
+"X-Generator: Launchpad (build 17298)\n"
 
 #: ../src/Screenshot.vala:57
 #: ../src/Translations.vala:6
@@ -107,6 +107,10 @@ msgstr "Schermata acquisita"
 #: ../src/Widgets/SaveDialog.vala:59
 msgid "Name:"
 msgstr "Nome:"
+
+#: ../src/Widgets/SaveDialog.vala:64
+msgid "Save the image as..."
+msgstr "Salvare l'immagine come ..."
 
 #: ../src/Widgets/SaveDialog.vala:66
 msgid "Cancel"
