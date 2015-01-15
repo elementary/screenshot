@@ -80,13 +80,11 @@ namespace Screenshot.Widgets {
             save_btn.clicked.connect (() => {
                 save_confirm (true, name_entry.get_text ());
                 this.destroy ();
-                parent.present ();
             });
 
             retry_btn.clicked.connect (() => {
                 save_confirm (false, filename);
                 this.destroy ();
-                parent.present ();
             });
 
             grid.attach (dialog_label, 1, 0, 1, 1);
@@ -99,7 +97,5 @@ namespace Screenshot.Widgets {
 
             save_btn.grab_focus ();
         }
-
     }
-
 }

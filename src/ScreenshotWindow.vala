@@ -273,7 +273,7 @@ namespace Screenshot {
             int             width, height;
             
             date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
-            filename = _("screenshot ") + date_time + "." + choosen_format;
+            filename = _("screenshot ") + date_time;
             win_rect = Gdk.Rectangle ();
 
             width = win.get_width();
@@ -331,7 +331,7 @@ namespace Screenshot {
 
             save_dialog.save_confirm.connect ((response, outname) => {
                 if (response == true) {
-                    filename = folder_dir + "/" + outname;
+                    filename = folder_dir + "/" + outname + "." + choosen_format;
 
                     try {
                         screenshot.save (filename, choosen_format);
