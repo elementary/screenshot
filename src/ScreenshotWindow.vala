@@ -31,7 +31,6 @@ namespace Screenshot {
         private Gtk.Grid        grid;
 
         private int     type_of_capture;
-        private string  choosen_format;
         private bool    mouse_pointer;
         private bool    include_date;
         private int     delay;
@@ -49,7 +48,6 @@ namespace Screenshot {
             resizable = false;     // Window is not resizable
 
             type_of_capture = 0;
-            choosen_format = settings.get_string ("format");
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             include_date = settings.get_boolean ("include-date");
             delay = 1;
@@ -121,9 +119,6 @@ namespace Screenshot {
 
             date_switch.set_active (include_date);
 
-            var format_label = new Gtk.Label (_("File format:"));
-            format_label.halign = Gtk.Align.END;
-
             var location_label = new Gtk.Label (_("Screenshots folder:"));
             location_label.halign = Gtk.Align.END;
             var location = new Gtk.FileChooserButton (_("Select Sreenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
@@ -136,26 +131,6 @@ namespace Screenshot {
             var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
 		    delay_spin.set_value (delay);
 
-            /**
-             *  Create combobox for file format
-             */
-            var format_cmb = new Gtk.ComboBoxText ();
-            format_cmb.append_text ("png");
-            format_cmb.append_text ("jpeg");
-            format_cmb.append_text ("bmp");
-
-            switch (settings.get_string ("format")) {
-                case "png":
-                    format_cmb.active = 0;
-                    break;
-                case "jpeg":
-                    format_cmb.active = 1;
-                    break;
-                case "bmp":
-                    format_cmb.active = 2;
-                    break;
-            }
-
             // Pack second part of the grid
             grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
@@ -164,8 +139,6 @@ namespace Screenshot {
             grid.attach (date_switch, 1, 5, 1, 1);
             grid.attach (delay_label, 0, 6, 1, 1);
             grid.attach (delay_spin, 1, 6, 1, 1);
-            grid.attach (format_label, 0, 7, 1, 1);
-            grid.attach (format_cmb, 1, 7, 1, 1);
             grid.attach (location_label, 0, 8, 1, 1);
             grid.attach (location, 1, 8, 1, 1);
 
@@ -235,11 +208,6 @@ namespace Screenshot {
 
             delay_spin.value_changed.connect (() => {
 			    delay = delay_spin.get_value_as_int ();
-		    });
-
-            format_cmb.changed.connect (() => {
-                settings.set_string ("format", format_cmb.get_active_text ());
-			    choosen_format = settings.get_string ("format");
 		    });
 
             location.selection_changed.connect (() => {
@@ -327,14 +295,14 @@ namespace Screenshot {
                 }
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (this, filename);
+            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, filename);
 
-            save_dialog.save_confirm.connect ((response, outname) => {
+            save_dialog.save_confirm.connect ((response, outname, format) => {
                 if (response == true) {
-                    filename = folder_dir + "/" + outname + "." + choosen_format;
+                    filename = folder_dir + "/" + outname + "." + format;
 
                     try {
-                        screenshot.save (filename, choosen_format);
+                        screenshot.save (filename, format);
                     } catch (GLib.Error e) {
                         // Send failure notification
                         show_notification (_("Task aborted"), _("Image not saved"));

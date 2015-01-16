@@ -22,16 +22,18 @@ namespace Screenshot.Widgets {
 
     public class SaveDialog : Gtk.Dialog {
 
-        private Gtk.Grid        grid;
-        private Gtk.Label       dialog_label;
-        private Gtk.Label       name_label;
-        private Gtk.Entry       name_entry;
-        private Gtk.Button      save_btn;
-        private Gtk.Button      retry_btn;
+        private Gtk.Grid            grid;
+        private Gtk.Label           dialog_label;
+        private Gtk.Label           name_label;
+        private Gtk.Entry           name_entry;
+        private Gtk.Label           format_label;
+        private Gtk.ComboBoxText    format_cmb;
+        private Gtk.Button          save_btn;
+        private Gtk.Button          retry_btn;
 
-        public signal void save_confirm (bool response, string outname);
+        public signal void save_confirm (bool response, string outname, string format);
 
-        public SaveDialog (Gtk.Window parent, string filename) {
+        public SaveDialog (Settings settings, Gtk.Window parent, string filename) {
 
             Object (use_header_bar: 1);
             (get_header_bar () as Gtk.HeaderBar).show_close_button = false;
@@ -43,10 +45,10 @@ namespace Screenshot.Widgets {
             set_keep_above (true);
             set_transient_for (parent);
             
-            build (parent, filename);
+            build (settings, parent, filename);
         }
 
-        public void build (Gtk.Window parent, string filename) {
+        public void build (Settings settings, Gtk.Window parent, string filename) {
 
             grid = new Gtk.Grid (); 
             grid.row_spacing = 12;
@@ -66,6 +68,29 @@ namespace Screenshot.Widgets {
             name_entry.set_text (filename);
             name_entry.set_width_chars (35);
 
+            format_label = new Gtk.Label (_("File format:"));
+            format_label.halign = Gtk.Align.END;
+
+            /**
+             *  Create combobox for file format
+             */
+            format_cmb = new Gtk.ComboBoxText ();
+            format_cmb.append_text ("png");
+            format_cmb.append_text ("jpeg");
+            format_cmb.append_text ("bmp");
+
+            switch (settings.get_string ("format")) {
+                case "png":
+                    format_cmb.active = 0;
+                    break;
+                case "jpeg":
+                    format_cmb.active = 1;
+                    break;
+                case "bmp":
+                    format_cmb.active = 2;
+                    break;
+            }
+
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
 
@@ -75,19 +100,25 @@ namespace Screenshot.Widgets {
             box.homogeneous = true;
 
             save_btn.clicked.connect (() => {
-                save_confirm (true, name_entry.get_text ());
+                save_confirm (true, name_entry.get_text (), format_cmb.get_active_text ());
                 this.destroy ();
             });
 
             retry_btn.clicked.connect (() => {
-                save_confirm (false, filename);
+                save_confirm (false, filename, format_cmb.get_active_text ());
                 this.destroy ();
             });
+
+            format_cmb.changed.connect (() => {
+                settings.set_string ("format", format_cmb.get_active_text ());
+		    });
 
             grid.attach (dialog_label, 1, 0, 1, 1);
             grid.attach (name_label, 0, 1, 1, 1);
             grid.attach (name_entry, 1, 1, 1, 1);
-            grid.attach (box, 1, 2, 1, 1);
+            grid.attach (format_label, 0, 2, 1, 1);
+            grid.attach (format_cmb, 1, 2, 1, 1);
+            grid.attach (box, 1, 3, 1, 1);
 
             content.add (grid);
             show_all ();
