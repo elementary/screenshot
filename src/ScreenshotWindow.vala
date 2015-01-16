@@ -335,12 +335,10 @@ namespace Screenshot {
 
                     try {
                         screenshot.save (filename, choosen_format);
-
-                        // Send success notification
-                        show_notification (_("Task finished"), _("Image saved in ") + folder_dir);
                     } catch (GLib.Error e) {
                         // Send failure notification
                         show_notification (_("Task aborted"), _("Image not saved"));
+                        debug (e.message);
                     }
                 } else
                     return;
