@@ -35,10 +35,6 @@ namespace Screenshot.Widgets {
 
         public SaveDialog (Settings settings, Gtk.Window parent, string filename) {
 
-            Object (use_header_bar: 1);
-            (get_header_bar () as Gtk.HeaderBar).show_close_button = false;
-            get_header_bar ().get_style_context ().remove_class ("header-bar");
-
             resizable = false;
             deletable = false;
             modal = true;
