@@ -40,8 +40,11 @@ namespace Screenshot.Widgets {
             modal = true;
             set_keep_above (true);
             set_transient_for (parent);
+            window_position = Gtk.WindowPosition.CENTER;
             
             build (settings, parent, filename);
+            show_all ();
+            save_btn.grab_focus ();
         }
 
         public void build (Settings settings, Gtk.Window parent, string filename) {
@@ -117,9 +120,6 @@ namespace Screenshot.Widgets {
             grid.attach (box, 1, 3, 1, 1);
 
             content.add (grid);
-            show_all ();
-
-            save_btn.grab_focus ();
         }
     }
 }

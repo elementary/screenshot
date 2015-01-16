@@ -325,11 +325,11 @@ namespace Screenshot {
                 case 0:
                     win = Gdk.get_default_root_window();
 
-                    hide ();
+                    this.set_opacity (0);
                     Timeout.add (delay*1000, () => {
                         grab_save (win);
                         Timeout.add (200, () => {
-                            present ();
+                            this.set_opacity (1);
                             return false;
                         });
                         return false;
@@ -338,7 +338,8 @@ namespace Screenshot {
                 case 1:
                     screen = Gdk.Screen.get_default ();
 
-                    hide ();
+                    this.set_opacity (0);
+                    this.hide ();
                     Timeout.add (delay*1000, () => {
                         list = screen.get_window_stack ();
                         foreach (Gdk.Window item in list) {
@@ -346,12 +347,13 @@ namespace Screenshot {
                                 win = item;                   
                             }
                         }
+                        this.show ();
                         if (win != null)
                             grab_save (win);
                         else
                             show_notification (_("Task aborted"), _("Couldn't find an active window"));
                         Timeout.add (200, () => {
-                            present ();
+                            this.set_opacity (1);
                             return false;
                         });
                         return false;
@@ -370,7 +372,7 @@ namespace Screenshot {
                             return false;
                         });
                         return false;
-                    }); 
+                    });
                     break;
             }
         }

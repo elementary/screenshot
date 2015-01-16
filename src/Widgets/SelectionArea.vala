@@ -102,11 +102,6 @@ namespace Screenshot.Widgets {
                     h = e.height;
                 }
 
-                geometry_changed.connect ( (x, y, w, h) => {
-                    this.w  = (int)w;
-                    this.h = (int)h;
-                });
-
                 return false;
             });
         }
@@ -146,8 +141,5 @@ namespace Screenshot.Widgets {
 
             return base.draw (ctx);
         }
-
-        public signal void geometry_changed (int x, int y, int width, int height);
-
     }
 }
