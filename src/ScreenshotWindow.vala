@@ -298,11 +298,16 @@ namespace Screenshot {
             save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, filename);
 
             save_dialog.save_confirm.connect ((response, outname, format) => {
+                save_dialog.set_opacity (0);
+                save_dialog.destroy ();
+
                 if (response == true) {
                     filename = folder_dir + "/" + outname + "." + format;
 
                     try {
                         screenshot.save (filename, format);
+
+                        this.destroy ();
                     } catch (GLib.Error e) {
                         // Send failure notification
                         show_notification (_("Task aborted"), _("Image not saved"));
