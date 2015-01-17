@@ -121,7 +121,7 @@ namespace Screenshot {
 
             var location_label = new Gtk.Label (_("Screenshots folder:"));
             location_label.halign = Gtk.Align.END;
-            var location = new Gtk.FileChooserButton (_("Select Sreenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
+            var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
 
             location.set_current_folder (folder_dir);
 
@@ -298,6 +298,8 @@ namespace Screenshot {
             save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, filename);
 
             save_dialog.save_confirm.connect ((response, outname, format) => {
+                save_dialog.destroy ();
+
                 if (response == true) {
                     filename = folder_dir + "/" + outname + "." + format;
 

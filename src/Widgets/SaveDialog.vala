@@ -100,12 +100,10 @@ namespace Screenshot.Widgets {
 
             save_btn.clicked.connect (() => {
                 save_confirm (true, name_entry.get_text (), format_cmb.get_active_text ());
-                this.destroy ();
             });
 
             retry_btn.clicked.connect (() => {
                 save_confirm (false, filename, format_cmb.get_active_text ());
-                this.destroy ();
             });
 
             format_cmb.changed.connect (() => {
