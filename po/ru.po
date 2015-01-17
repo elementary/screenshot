@@ -64,7 +64,7 @@ msgid "Screenshots folder:"
 msgstr "Папка для снимков экрана:"
 
 #: ../src/ScreenshotWindow.vala:127
-msgid "Select Sreenshots Folder…"
+msgid "Select Screenshots Folder…"
 msgstr "Выбрать папку для снимков экрана:"
 
 #: ../src/ScreenshotWindow.vala:132
