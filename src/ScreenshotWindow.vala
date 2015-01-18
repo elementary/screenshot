@@ -33,6 +33,7 @@ namespace Screenshot {
         private int     type_of_capture;
         private bool    mouse_pointer;
         private bool    include_date;
+        private bool    close_on_save;
         private int     delay;
         private string  folder_dir;
 
@@ -50,6 +51,7 @@ namespace Screenshot {
             type_of_capture = 0;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             include_date = settings.get_boolean ("include-date");
+            close_on_save = settings.get_boolean ("close-on-save");
             delay = 1;
             folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
@@ -119,6 +121,13 @@ namespace Screenshot {
 
             date_switch.set_active (include_date);
 
+            var close_label = new Gtk.Label (_("Close after saving:"));
+            close_label.halign = Gtk.Align.END;
+            var close_switch = new Gtk.Switch ();
+            close_switch.halign = Gtk.Align.START;
+
+            close_switch.set_active (close_on_save);
+
             var location_label = new Gtk.Label (_("Screenshots folder:"));
             location_label.halign = Gtk.Align.END;
             var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
@@ -137,8 +146,10 @@ namespace Screenshot {
             grid.attach (pointer_switch, 1, 4, 1, 1);
             grid.attach (date_label, 0, 5, 1, 1);
             grid.attach (date_switch, 1, 5, 1, 1);
-            grid.attach (delay_label, 0, 6, 1, 1);
-            grid.attach (delay_spin, 1, 6, 1, 1);
+            grid.attach (close_label, 0, 6, 1, 1);
+            grid.attach (close_switch, 1, 6, 1, 1);
+            grid.attach (delay_label, 0, 7, 1, 1);
+            grid.attach (delay_spin, 1, 7, 1, 1);
             grid.attach (location_label, 0, 8, 1, 1);
             grid.attach (location, 1, 8, 1, 1);
 
@@ -203,6 +214,16 @@ namespace Screenshot {
 			    } else {
 				    settings.set_boolean ("include-date", false);
                     include_date = settings.get_boolean ("include-date");
+			    }
+		    });
+
+            close_switch.notify["active"].connect (() => {
+			    if (close_switch.active) {
+				    settings.set_boolean ("close-on-save", true);
+                    close_on_save = settings.get_boolean ("close-on-save");
+			    } else {
+				    settings.set_boolean ("close-on-save", false);
+                    close_on_save = settings.get_boolean ("close-on-save");
 			    }
 		    });
 
@@ -307,7 +328,8 @@ namespace Screenshot {
                     try {
                         screenshot.save (filename, format);
 
-                        this.destroy ();
+                        if (close_on_save == true)
+                            this.destroy ();
                     } catch (GLib.Error e) {
                         // Send failure notification
                         show_notification (_("Task aborted"), _("Image not saved"));

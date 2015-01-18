@@ -9,6 +9,9 @@
         <key name="include-date" type="b">
             <default>true</default>
         </key>
+        <key name="close-on-save" type="b">
+            <default>false</default>
+        </key>
         <key name="folder-dir" type="s">
             <default>""</default>
         </key>
