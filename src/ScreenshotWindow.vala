@@ -35,7 +35,6 @@ namespace Screenshot {
         private bool    include_date;
         private bool    close_on_save;
         private int     delay;
-        private string  folder_dir;
 
         private Screenshot.Widgets.SelectionArea    selection_area;
         private Screenshot.Widgets.SaveDialog       save_dialog;
@@ -53,10 +52,6 @@ namespace Screenshot {
             include_date = settings.get_boolean ("include-date");
             close_on_save = settings.get_boolean ("close-on-save");
             delay = 1;
-            folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
-
-            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
-                folder_dir = settings.get_string ("folder-dir");
 
             setup_ui ();
         }
@@ -128,12 +123,6 @@ namespace Screenshot {
 
             close_switch.set_active (close_on_save);
 
-            var location_label = new Gtk.Label (_("Screenshots folder:"));
-            location_label.halign = Gtk.Align.END;
-            var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
-
-            location.set_current_folder (folder_dir);
-
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
@@ -150,8 +139,6 @@ namespace Screenshot {
             grid.attach (close_switch, 1, 6, 1, 1);
             grid.attach (delay_label, 0, 7, 1, 1);
             grid.attach (delay_spin, 1, 7, 1, 1);
-            grid.attach (location_label, 0, 8, 1, 1);
-            grid.attach (location, 1, 8, 1, 1);
 
             // Take button
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
@@ -164,7 +151,7 @@ namespace Screenshot {
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
             box.pack_end (take_btn, false, false, 0);
 
-            grid.attach (box, 0, 9, 2, 1);
+            grid.attach (box, 0, 8, 2, 1);
  
             /**
              *  Signals
@@ -231,14 +218,6 @@ namespace Screenshot {
 			    delay = delay_spin.get_value_as_int ();
 		    });
 
-            location.selection_changed.connect (() => {
-			    SList<string> uris = location.get_uris ();
-			    foreach (unowned string uri in uris) {
-				    settings.set_string ("folder-dir", uri.substring (7, -1));
-                    folder_dir = settings.get_string ("folder-dir");
-			    }
-		    });
-
             take_btn.clicked.connect (take_clicked);
 
             focus_in_event.connect (() => {
@@ -258,11 +237,8 @@ namespace Screenshot {
 
             Gdk.Pixbuf      screenshot;
             Gdk.Rectangle   win_rect;
-            string          filename, date_time;
             int             width, height;
             
-            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
-            filename = _("screenshot ") + date_time;
             win_rect = Gdk.Rectangle ();
 
             width = win.get_width();
@@ -316,17 +292,17 @@ namespace Screenshot {
                 }
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, filename);
+            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, include_date);
 
-            save_dialog.save_confirm.connect ((response, outname, format) => {
+            save_dialog.save_confirm.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.set_opacity (0);
                 save_dialog.destroy ();
 
                 if (response == true) {
-                    filename = folder_dir + "/" + outname + "." + format;
+                    string file_name = folder_dir + "/" + output_name + "." + format;
 
                     try {
-                        screenshot.save (filename, format);
+                        screenshot.save (file_name, format);
 
                         if (close_on_save == true)
                             this.destroy ();

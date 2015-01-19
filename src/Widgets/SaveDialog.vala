@@ -31,9 +31,13 @@ namespace Screenshot.Widgets {
         private Gtk.Button          save_btn;
         private Gtk.Button          retry_btn;
 
-        public signal void save_confirm (bool response, string outname, string format);
+        private string  file_name;
+        private string  date_time;
+        private string  folder_dir;
 
-        public SaveDialog (Settings settings, Gtk.Window parent, string filename) {
+        public signal void save_confirm (bool response, string folder_dir, string output_name, string format);
+
+        public SaveDialog (Settings settings, Gtk.Window parent, bool include_date) {
 
             resizable = false;
             deletable = false;
@@ -42,12 +46,20 @@ namespace Screenshot.Widgets {
             set_transient_for (parent);
             window_position = Gtk.WindowPosition.CENTER;
             
-            build (settings, parent, filename);
+            folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
+
+            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
+                folder_dir = settings.get_string ("folder-dir");
+
+            build (settings, parent, include_date);
             show_all ();
-            save_btn.grab_focus ();
+            name_entry.grab_focus ();
         }
 
-        public void build (Settings settings, Gtk.Window parent, string filename) {
+        public void build (Settings settings, Gtk.Window parent, bool include_date) {
+
+            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
+            file_name = _("screenshot ") + date_time;
 
             grid = new Gtk.Grid (); 
             grid.row_spacing = 12;
@@ -64,10 +76,10 @@ namespace Screenshot.Widgets {
             name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
             name_entry = new Gtk.Entry ();
-            name_entry.set_text (filename);
+            name_entry.set_text (file_name);
             name_entry.set_width_chars (35);
 
-            format_label = new Gtk.Label (_("File format:"));
+            format_label = new Gtk.Label (_("Format:"));
             format_label.halign = Gtk.Align.END;
 
             /**
@@ -90,8 +102,16 @@ namespace Screenshot.Widgets {
                     break;
             }
 
+            var location_label = new Gtk.Label (_("Folder:"));
+            location_label.halign = Gtk.Align.END;
+            var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
+
+            location.set_current_folder (folder_dir);
+
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
+
+            save_btn.get_style_context ().add_class ("suggested-action");
 
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
             box.pack_end (save_btn, false, true, 0);
@@ -99,15 +119,23 @@ namespace Screenshot.Widgets {
             box.homogeneous = true;
 
             save_btn.clicked.connect (() => {
-                save_confirm (true, name_entry.get_text (), format_cmb.get_active_text ());
+                save_confirm (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
             });
 
             retry_btn.clicked.connect (() => {
-                save_confirm (false, filename, format_cmb.get_active_text ());
+                save_confirm (false, folder_dir, file_name, format_cmb.get_active_text ());
             });
 
             format_cmb.changed.connect (() => {
                 settings.set_string ("format", format_cmb.get_active_text ());
+		    });
+
+            location.selection_changed.connect (() => {
+			    SList<string> uris = location.get_uris ();
+			    foreach (unowned string uri in uris) {
+				    settings.set_string ("folder-dir", uri.substring (7, -1));
+                    folder_dir = settings.get_string ("folder-dir");
+			    }
 		    });
 
             grid.attach (dialog_label, 1, 0, 1, 1);
@@ -115,7 +143,9 @@ namespace Screenshot.Widgets {
             grid.attach (name_entry, 1, 1, 1, 1);
             grid.attach (format_label, 0, 2, 1, 1);
             grid.attach (format_cmb, 1, 2, 1, 1);
-            grid.attach (box, 1, 3, 1, 1);
+            grid.attach (location_label, 0, 3, 1, 1);
+            grid.attach (location, 1, 3, 1, 1);
+            grid.attach (box, 1, 4, 1, 1);
 
             content.add (grid);
         }
