@@ -38,7 +38,7 @@ namespace Screenshot {
             build_release_name = Build.RELEASE_NAME;
             build_version_info = Build.VERSION_INFO;
 
-            program_name = "Screenshot";
+            program_name = _("Screenshot");
             exec_name = "screenshot";
 
             app_years = "2014-2015";
