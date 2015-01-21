@@ -294,7 +294,7 @@ namespace Screenshot {
 
             save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, include_date);
 
-            save_dialog.save_confirm.connect ((response, folder_dir, output_name, format) => {
+            save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.set_opacity (0);
                 save_dialog.destroy ();
 

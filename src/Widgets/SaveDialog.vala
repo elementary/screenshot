@@ -35,7 +35,7 @@ namespace Screenshot.Widgets {
         private string  date_time;
         private string  folder_dir;
 
-        public signal void save_confirm (bool response, string folder_dir, string output_name, string format);
+        public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
         public SaveDialog (Settings settings, Gtk.Window parent, bool include_date) {
 
@@ -119,11 +119,11 @@ namespace Screenshot.Widgets {
             box.homogeneous = true;
 
             save_btn.clicked.connect (() => {
-                save_confirm (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
+                save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
             });
 
             retry_btn.clicked.connect (() => {
-                save_confirm (false, folder_dir, file_name, format_cmb.get_active_text ());
+                save_response (false, folder_dir, file_name, format_cmb.get_active_text ());
             });
 
             format_cmb.changed.connect (() => {
@@ -137,6 +137,13 @@ namespace Screenshot.Widgets {
                     folder_dir = settings.get_string ("folder-dir");
 			    }
 		    });
+
+            key_press_event.connect ((e) => {
+                if (e.keyval == Gdk.Key.Return)
+                    save_btn.activate ();
+
+                return false;
+            });
 
             grid.attach (dialog_label, 1, 0, 1, 1);
             grid.attach (name_label, 0, 1, 1, 1);
