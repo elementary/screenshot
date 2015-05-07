@@ -329,7 +329,9 @@ namespace Screenshot {
                     win = Gdk.get_default_root_window();
 
                     this.set_opacity (0);
+                    this.hide ();
                     Timeout.add (delay*1000, () => {
+                        this.show ();
                         grab_save (win);
                         Timeout.add (200, () => {
                             this.set_opacity (1);
