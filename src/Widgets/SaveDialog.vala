@@ -89,6 +89,7 @@ namespace Screenshot.Widgets {
             format_cmb.append_text ("png");
             format_cmb.append_text ("jpeg");
             format_cmb.append_text ("bmp");
+            format_cmb.append_text ("tiff");
 
             switch (settings.get_string ("format")) {
                 case "png":
@@ -99,6 +100,9 @@ namespace Screenshot.Widgets {
                     break;
                 case "bmp":
                     format_cmb.active = 2;
+                    break;
+                case "tiff":
+                    format_cmb.active = 3;
                     break;
             }
 

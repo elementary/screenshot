@@ -152,7 +152,7 @@ namespace Screenshot {
             box.pack_end (take_btn, false, false, 0);
 
             grid.attach (box, 0, 8, 2, 1);
- 
+
             /**
              *  Signals
              */
@@ -180,7 +180,6 @@ namespace Screenshot {
                     selection_area.present ();
 
                 set_transient_for (selection_area);
-
                 present();
             });
 

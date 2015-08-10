@@ -35,14 +35,15 @@ namespace Screenshot.Widgets {
         public SelectionArea () {
 
             stick ();
-            resizable = true;
-            deletable = false;
+            set_resizable (true);
+            set_deletable (false);
+            set_type_hint (Gdk.WindowTypeHint.DIALOG);
             set_has_resize_grip (false);
             set_default_geometry (640, 480);
             events = Gdk.EventMask.BUTTON_MOTION_MASK | Gdk.EventMask.BUTTON1_MOTION_MASK | 
                      Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK ;
-            skip_taskbar_hint = true;
-            skip_pager_hint = true;
+            set_skip_taskbar_hint (true);
+            set_skip_pager_hint (true);
 			
             button_press_event.connect ((e) => {
                 Gdk.WindowEdge [] dir = {Gdk.WindowEdge.NORTH_WEST,
