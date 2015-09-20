@@ -142,6 +142,7 @@ namespace Screenshot {
             var cancel_btn = new Gtk.Button.with_label (_("Cancel"));
 
             Gtk.Box actions = get_action_area () as Gtk.Box;
+            actions.margin_top = 12;
             actions.add (cancel_btn);
             actions.add (take_btn);
 
