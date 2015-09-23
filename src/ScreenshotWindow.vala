@@ -32,7 +32,6 @@ namespace Screenshot {
 
         private int     type_of_capture;
         private bool    mouse_pointer;
-        private bool    include_date;
         private bool    close_on_save;
         private int     delay;
 
@@ -49,7 +48,6 @@ namespace Screenshot {
 
             type_of_capture = 0;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
-            include_date = settings.get_boolean ("include-date");
             close_on_save = settings.get_boolean ("close-on-save");
             delay = 1;
 
@@ -109,13 +107,6 @@ namespace Screenshot {
 
             pointer_switch.set_active (mouse_pointer);
 
-            var date_label = new Gtk.Label (_("Include date in file name:"));
-            date_label.halign = Gtk.Align.END;
-            var date_switch = new Gtk.Switch ();
-            date_switch.halign = Gtk.Align.START;
-
-            date_switch.set_active (include_date);
-
             var close_label = new Gtk.Label (_("Close after saving:"));
             close_label.halign = Gtk.Align.END;
             var close_switch = new Gtk.Switch ();
@@ -133,8 +124,6 @@ namespace Screenshot {
             grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
-            grid.attach (date_label, 0, 5, 1, 1);
-            grid.attach (date_switch, 1, 5, 1, 1);
             grid.attach (close_label, 0, 6, 1, 1);
             grid.attach (close_switch, 1, 6, 1, 1);
             grid.attach (delay_label, 0, 7, 1, 1);
@@ -190,16 +179,6 @@ namespace Screenshot {
 			    } else {
 				    settings.set_boolean ("mouse-pointer", false);
                     mouse_pointer = settings.get_boolean ("mouse-pointer");
-			    }
-		    });
-
-            date_switch.notify["active"].connect (() => {
-			    if (date_switch.active) {
-				    settings.set_boolean ("include-date", true);
-                    include_date = settings.get_boolean ("include-date");
-			    } else {
-				    settings.set_boolean ("include-date", false);
-                    include_date = settings.get_boolean ("include-date");
 			    }
 		    });
 
@@ -291,7 +270,7 @@ namespace Screenshot {
                 }
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this, include_date);
+            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this);
 
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.set_opacity (0);

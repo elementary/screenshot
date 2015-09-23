@@ -37,7 +37,7 @@ namespace Screenshot.Widgets {
 
         public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
-        public SaveDialog (Settings settings, Gtk.Window parent, bool include_date) {
+        public SaveDialog (Settings settings, Gtk.Window parent) {
 
             resizable = false;
             deletable = false;
@@ -51,14 +51,14 @@ namespace Screenshot.Widgets {
             if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
                 folder_dir = settings.get_string ("folder-dir");
 
-            build (settings, parent, include_date);
+            build (settings, parent);
             show_all ();
             name_entry.grab_focus ();
         }
 
-        public void build (Settings settings, Gtk.Window parent, bool include_date) {
+        public void build (Settings settings, Gtk.Window parent) {
 
-            date_time = (include_date ? new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S") : new GLib.DateTime.now_local ().format ("%H:%M:%S"));
+            date_time = new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S");
             file_name = _("screenshot ") + date_time;
 
             grid = new Gtk.Grid (); 
