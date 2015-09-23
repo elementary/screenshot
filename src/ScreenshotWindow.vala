@@ -285,8 +285,11 @@ namespace Screenshot {
                         if (close_on_save == true)
                             this.destroy ();
                     } catch (GLib.Error e) {
-                        // Send failure notification
-                        show_notification (_("Task aborted"), _("Image not saved"));
+                        Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                            Gtk.ButtonsType.CLOSE, _("Task aborted"));
+                        dialog.secondary_text = _("Image not saved");
+                        dialog.run ();
+                        dialog.destroy ();
                         debug (e.message);
                     }
                 } else
@@ -333,8 +336,13 @@ namespace Screenshot {
                         this.show ();
                         if (win != null)
                             grab_save (win);
-                        else
-                            show_notification (_("Task aborted"), _("Couldn't find an active window"));
+                        else {
+                            Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                Gtk.ButtonsType.CLOSE, _("Task aborted"));
+                            dialog.secondary_text = _("Couldn't find an active window");
+                            dialog.run ();
+                            dialog.destroy ();
+                        }
                         Timeout.add (200, () => {
                             this.set_opacity (1);
                             return false;
