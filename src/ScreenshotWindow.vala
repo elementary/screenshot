@@ -124,10 +124,10 @@ namespace Screenshot {
             grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
-            grid.attach (close_label, 0, 6, 1, 1);
-            grid.attach (close_switch, 1, 6, 1, 1);
-            grid.attach (delay_label, 0, 7, 1, 1);
-            grid.attach (delay_spin, 1, 7, 1, 1);
+            grid.attach (close_label, 0, 5, 1, 1);
+            grid.attach (close_switch, 1, 5, 1, 1);
+            grid.attach (delay_label, 0, 6, 1, 1);
+            grid.attach (delay_spin, 1, 6, 1, 1);
 
             // Take button
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
