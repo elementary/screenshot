@@ -6,7 +6,6 @@ Exec=screenshot
 Icon=applets-screenshooter
 Terminal=false
 X-GNOME-Gettext-Domain=screenshot
-X-GNOME-UsesNotifications=true
 Categories=Utility;Office;
 Keywords=Snapshot;Screenshot;
 Actions=AboutDialog;

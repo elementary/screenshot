@@ -64,7 +64,6 @@ find_package(PkgConfig)
 pkg_check_modules(DEPS REQUIRED
         gtk+-3.0>=3.12
         granite
-        libnotify
         gdk-pixbuf-2.0)
 
 add_definitions(${DEPS_CFLAGS} -w)
@@ -84,11 +83,9 @@ vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
         src/Widgets/SelectionArea.vala
         src/Widgets/SaveDialog.vala
         src/Translations.vala
-        src/Utils.vala
 PACKAGES
         gtk+-3.0
         granite
-        libnotify
 CUSTOM_VAPIS
         vapi/config.vapi
 OPTIONS
