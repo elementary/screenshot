@@ -20,15 +20,14 @@
 
 namespace Screenshot {
 
-    public class ScreenshotWindow : Gtk.Window {
+    public class ScreenshotWindow : Gtk.Dialog {
 
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
         /**
          *  UI elements
          */
-        private Gtk.HeaderBar   header;
-        private Gtk.Grid        grid;
+        private Gtk.Grid grid;
 
         private int     type_of_capture;
         private bool    mouse_pointer;
@@ -43,8 +42,9 @@ namespace Screenshot {
          */
         public ScreenshotWindow () {
 
-            title = _("Screenshot");
-            resizable = false;     // Window is not resizable
+            resizable = false;
+            deletable = false;
+            border_width = 6;
 
             type_of_capture = 0;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
@@ -59,16 +59,8 @@ namespace Screenshot {
          */
         void setup_ui () {
 
-            /* Use CSD */
-            header = new Gtk.HeaderBar ();
-            header.title = this.title;
-            header.set_show_close_button (true);
-            header.get_style_context ().remove_class ("header-bar");
-
-            this.set_titlebar (header);
-
             grid = new Gtk.Grid ();
-            grid.margin = 12;
+            grid.margin = 6;
             grid.row_spacing = 6;
             grid.column_spacing = 12;
 
@@ -133,14 +125,16 @@ namespace Screenshot {
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.get_style_context ().add_class ("suggested-action");
             take_btn.can_default = true;
-            take_btn.margin_top = 12;
 
             this.set_default (take_btn);
 
-            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-            box.pack_end (take_btn, false, false, 0);
+            var cancel_btn = new Gtk.Button.with_label (_("Cancel"));
 
-            grid.attach (box, 0, 8, 2, 1);
+            Gtk.Box actions = get_action_area () as Gtk.Box;
+            actions.margin_top = 12;
+            actions.add (cancel_btn);
+            actions.add (take_btn);
+
 
             /**
              *  Signals
@@ -197,6 +191,7 @@ namespace Screenshot {
 		    });
 
             take_btn.clicked.connect (take_clicked);
+            cancel_btn.clicked.connect (cancel_clicked);
 
             focus_in_event.connect (() => {
                 if (selection_area != null && selection_area.is_visible ()) {
@@ -208,7 +203,8 @@ namespace Screenshot {
             });
 
             // Pack the main grid into the window
-            this.add (grid);
+            Gtk.Box content = get_content_area () as Gtk.Box;
+            content.add (grid);
         }
         
         private bool grab_save (Gdk.Window win) {
@@ -366,6 +362,10 @@ namespace Screenshot {
                     });
                     break;
             }
+        }
+
+        private void cancel_clicked () {
+            destroy ();
         }
     }
 }
