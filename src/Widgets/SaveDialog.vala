@@ -58,8 +58,8 @@ namespace Screenshot.Widgets {
 
         public void build (Settings settings, Gtk.Window parent) {
 
-            date_time = new GLib.DateTime.now_local ().format ("%d-%m-%Y %H:%M:%S");
-            file_name = _("screenshot ") + date_time;
+            date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
+            file_name = _("Screenshot from ") + date_time;
 
             grid = new Gtk.Grid (); 
             grid.row_spacing = 12;
@@ -69,9 +69,9 @@ namespace Screenshot.Widgets {
 
             var content = this.get_content_area () as Gtk.Box;
 
-            dialog_label = new Gtk.Label ("");
+            dialog_label = new Gtk.Label (_("Save Image as…"));
+            dialog_label.get_style_context ().add_class ("h4");
             dialog_label.halign = Gtk.Align.START;
-            dialog_label.set_markup ("<b>" + _("Save the image as...") + "</b>");
 
             name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
