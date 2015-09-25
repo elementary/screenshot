@@ -65,13 +65,12 @@ namespace Screenshot {
             grid.column_spacing = 12;
 
             /* Labels used to distinguish selections */
-            var area_label = new Gtk.Label ("");
-            area_label.set_markup ("<b>"+_("Capture area:")+"</b>");
+            var area_label = new Gtk.Label (_("Capture area:"));
+            area_label.get_style_context ().add_class ("h4");
             area_label.halign = Gtk.Align.END;
 
-            var prop_label = new Gtk.Label ("");
-            prop_label.set_markup ("<b>"+_("Properties")+"</b>");
-            prop_label.margin_top = 12;
+            var prop_label = new Gtk.Label (_("Properties:"));
+            prop_label.get_style_context ().add_class ("h4");
             prop_label.halign = Gtk.Align.END;
 
             /**
