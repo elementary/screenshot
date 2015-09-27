@@ -41,6 +41,7 @@ namespace Screenshot.Widgets {
 
             resizable = false;
             deletable = false;
+            border_width = 6;
             modal = true;
             set_keep_above (true);
             set_transient_for (parent);
@@ -61,11 +62,10 @@ namespace Screenshot.Widgets {
             date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
             file_name = _("Screenshot from ") + date_time;
 
-            grid = new Gtk.Grid (); 
+            grid = new Gtk.Grid ();
+            grid.margin = 6;
             grid.row_spacing = 12;
             grid.column_spacing = 12;
-            grid.margin_start = 12;
-            grid.margin_end = 12;
 
             var content = this.get_content_area () as Gtk.Box;
 
@@ -117,10 +117,10 @@ namespace Screenshot.Widgets {
 
             save_btn.get_style_context ().add_class ("suggested-action");
 
-            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
-            box.pack_end (save_btn, false, true, 0);
-            box.pack_end (retry_btn, false, true, 0);
-            box.homogeneous = true;
+            Gtk.Box actions = get_action_area () as Gtk.Box;
+            actions.margin_top = 12;
+            actions.add (retry_btn);
+            actions.add (save_btn);
 
             save_btn.clicked.connect (() => {
                 save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
@@ -156,7 +156,6 @@ namespace Screenshot.Widgets {
             grid.attach (format_cmb, 1, 2, 1, 1);
             grid.attach (location_label, 0, 3, 1, 1);
             grid.attach (location, 1, 3, 1, 1);
-            grid.attach (box, 1, 4, 1, 1);
 
             content.add (grid);
         }
