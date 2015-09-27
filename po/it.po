@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-25 03:23-0500\n"
-"PO-Revision-Date: 2015-01-19 19:42+0000\n"
+"PO-Revision-Date: 2015-09-26 16:30+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-26 06:36+0000\n"
+"X-Launchpad-Export-Date: 2015-09-27 05:44+0000\n"
 "X-Generator: Launchpad (build 17754)\n"
 
 #: ../src/Screenshot.vala:41 ../src/Translations.vala:7
@@ -39,7 +39,7 @@ msgstr "Area di cattura:"
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Properties:"
-msgstr ""
+msgstr "Proprietà:"
 
 #: ../src/ScreenshotWindow.vala:79
 msgid "Grab the whole screen"
@@ -87,11 +87,11 @@ msgstr "Impossibile trovare una finestra attiva"
 
 #: ../src/Widgets/SaveDialog.vala:62
 msgid "Screenshot from "
-msgstr ""
+msgstr "Istantanea del "
 
 #: ../src/Widgets/SaveDialog.vala:72
 msgid "Save Image as…"
-msgstr ""
+msgstr "Salva immagine come ..."
 
 #: ../src/Widgets/SaveDialog.vala:76
 msgid "Name:"
