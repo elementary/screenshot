@@ -45,8 +45,7 @@ namespace Screenshot.Widgets {
             modal = true;
             set_keep_above (true);
             set_transient_for (parent);
-            window_position = Gtk.WindowPosition.CENTER;
-            
+
             folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
             if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
@@ -132,15 +131,15 @@ namespace Screenshot.Widgets {
 
             format_cmb.changed.connect (() => {
                 settings.set_string ("format", format_cmb.get_active_text ());
-		    });
+            });
 
             location.selection_changed.connect (() => {
-			    SList<string> uris = location.get_uris ();
-			    foreach (unowned string uri in uris) {
-				    settings.set_string ("folder-dir", uri.substring (7, -1));
+                SList<string> uris = location.get_uris ();
+                foreach (unowned string uri in uris) {
+                    settings.set_string ("folder-dir", uri.substring (7, -1));
                     folder_dir = settings.get_string ("folder-dir");
-			    }
-		    });
+                }
+            });
 
             key_press_event.connect ((e) => {
                 if (e.keyval == Gdk.Key.Return)
