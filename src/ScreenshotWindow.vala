@@ -21,6 +21,11 @@
 namespace Screenshot {
 
     public class ScreenshotWindow : Gtk.Dialog {
+        private enum CaptureType {
+            SCREEN,
+            CURRENT_WINDOW,
+            AREA
+        }
 
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
@@ -29,10 +34,10 @@ namespace Screenshot {
          */
         private Gtk.Grid grid;
 
-        private int     type_of_capture;
-        private bool    mouse_pointer;
-        private bool    close_on_save;
-        private int     delay;
+        private CaptureType capture_mode;
+        private bool        mouse_pointer;
+        private bool        close_on_save;
+        private int         delay;
 
         private Screenshot.Widgets.SelectionArea    selection_area;
         private Screenshot.Widgets.SaveDialog       save_dialog;
@@ -46,7 +51,7 @@ namespace Screenshot {
             deletable = false;
             border_width = 6;
 
-            type_of_capture = 0;
+			capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
             delay = 1;
@@ -139,22 +144,22 @@ namespace Screenshot {
              *  Signals
              */
             all.toggled.connect (() => {
-                type_of_capture = 0;
+                capture_mode = CaptureType.SCREEN;
 
                 if (selection_area != null)
                     selection_area.hide ();
             });
 
             curr_window.toggled.connect (() => {
-                type_of_capture = 1;
+                capture_mode = CaptureType.CURRENT_WINDOW;
 
                 if (selection_area != null)
                     selection_area.hide ();
             });
 
             selection.toggled.connect (() => {
-                type_of_capture = 2;
-                
+                capture_mode = CaptureType.AREA;
+
                 if (selection_area == null) {
                     selection_area = new Screenshot.Widgets.SelectionArea ();
 				    selection_area.show_all ();
@@ -224,7 +229,7 @@ namespace Screenshot {
             win_rect.width = width;
             win_rect.height = height;
 
-            if (type_of_capture == 2) {
+            if (capture_mode == CaptureType.AREA) {
                 screenshot = new Gdk.Pixbuf.subpixbuf (screenshot, selection_area.x, selection_area.y, selection_area.w, selection_area.h);
                     
                 win_rect.x = selection_area.x;
@@ -300,8 +305,8 @@ namespace Screenshot {
             Gdk.Window              win    = null;
             GLib.List<Gdk.Window>   list   = null;
             
-            switch (type_of_capture) {
-                case 0:
+            switch (capture_mode) {
+                case CaptureType.SCREEN:
                     win = Gdk.get_default_root_window();
 
                     this.set_opacity (0);
@@ -316,7 +321,7 @@ namespace Screenshot {
                         return false;
                     }); 
                     break;
-                case 1:
+                case CaptureType.CURRENT_WINDOW:
                     screen = Gdk.Screen.get_default ();
 
                     this.set_opacity (0);
@@ -345,7 +350,7 @@ namespace Screenshot {
                         return false;
                     });
                     break;
-                case 2:
+                case CaptureType.AREA:
                     win = Gdk.get_default_root_window();
 
                     selection_area.set_opacity (0);
