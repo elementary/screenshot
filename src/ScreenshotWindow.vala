@@ -305,9 +305,9 @@ namespace Screenshot {
                     win = Gdk.get_default_root_window();
 
                     this.set_opacity (0);
-                    this.hide ();
+                    this.iconify ();
                     Timeout.add (delay*1000, () => {
-                        this.show ();
+                        this.present ();
                         grab_save (win);
                         Timeout.add (200, () => {
                             this.set_opacity (1);
@@ -320,7 +320,7 @@ namespace Screenshot {
                     screen = Gdk.Screen.get_default ();
 
                     this.set_opacity (0);
-                    this.hide ();
+                    this.iconify ();
                     Timeout.add (delay*1000, () => {
                         list = screen.get_window_stack ();
                         foreach (Gdk.Window item in list) {
@@ -328,7 +328,7 @@ namespace Screenshot {
                                 win = item;                   
                             }
                         }
-                        this.show ();
+                        this.present ();
                         if (win != null)
                             grab_save (win);
                         else {
