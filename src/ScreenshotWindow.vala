@@ -307,7 +307,7 @@ namespace Screenshot {
                     this.set_opacity (0);
                     this.iconify ();
                     Timeout.add (delay*1000, () => {
-                        this.show ();
+                        this.present ();
                         grab_save (win);
                         Timeout.add (200, () => {
                             this.set_opacity (1);
@@ -328,7 +328,7 @@ namespace Screenshot {
                                 win = item;                   
                             }
                         }
-                        this.show ();
+                        this.present ();
                         if (win != null)
                             grab_save (win);
                         else {
