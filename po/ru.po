@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-25 03:23-0500\n"
-"PO-Revision-Date: 2015-10-20 14:09+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
+"PO-Revision-Date: 2015-10-21 18:19+0000\n"
+"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-21 06:21+0000\n"
+"X-Launchpad-Export-Date: 2015-10-22 05:57+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Screenshot.vala:41 ../src/Translations.vala:7
@@ -27,7 +27,7 @@ msgstr "Сохранить снимки экрана или индивидуал
 
 #: ../src/Translations.vala:9
 msgid "Snapshot;Screenshot;"
-msgstr "Снимок экрана;"
+msgstr "Snapshot;Screenshot;Снимок экрана;Скриншот"
 
 #: ../src/Translations.vala:10
 msgid "About Screenshot"
