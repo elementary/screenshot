@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-25 03:23-0500\n"
-"PO-Revision-Date: 2015-10-02 08:03+0000\n"
+"PO-Revision-Date: 2015-11-25 07:37+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-16 06:02+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-11-26 05:38+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
 
 #: ../src/Screenshot.vala:41 ../src/Translations.vala:7
 msgid "Screenshot"
@@ -39,7 +39,7 @@ msgstr "截图区域："
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Properties:"
-msgstr "属性"
+msgstr "截图设置："
 
 #: ../src/ScreenshotWindow.vala:79
 msgid "Grab the whole screen"
@@ -55,15 +55,15 @@ msgstr "截取选中区域"
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Grab mouse pointer:"
-msgstr "截取鼠标指针："
+msgstr "包括鼠标："
 
 #: ../src/ScreenshotWindow.vala:101
 msgid "Close after saving:"
-msgstr "保存后关闭："
+msgstr "结束退出："
 
 #: ../src/ScreenshotWindow.vala:108
 msgid "Delay in seconds:"
-msgstr "延时时常："
+msgstr "倒计秒数："
 
 #: ../src/ScreenshotWindow.vala:124
 msgid "Take Screenshot"
