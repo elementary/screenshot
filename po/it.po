@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-25 03:23-0500\n"
-"PO-Revision-Date: 2015-09-26 16:30+0000\n"
+"PO-Revision-Date: 2015-12-06 20:32+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-16 06:02+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-12-07 05:39+0000\n"
+"X-Generator: Launchpad (build 17862)\n"
 
 #: ../src/Screenshot.vala:41 ../src/Translations.vala:7
 msgid "Screenshot"
@@ -91,7 +91,7 @@ msgstr "Istantanea del "
 
 #: ../src/Widgets/SaveDialog.vala:72
 msgid "Save Image as…"
-msgstr "Salva immagine come ..."
+msgstr "Salva immagine come..."
 
 #: ../src/Widgets/SaveDialog.vala:76
 msgid "Name:"
@@ -107,7 +107,7 @@ msgstr "Cartella:"
 
 #: ../src/Widgets/SaveDialog.vala:111
 msgid "Select Screenshots Folder…"
-msgstr "Seleziona cartella delle schermate ..."
+msgstr "Seleziona cartella delle schermate..."
 
 #: ../src/Widgets/SaveDialog.vala:115
 msgid "Save"
