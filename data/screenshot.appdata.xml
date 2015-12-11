@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015 elementary, LLC <contact@elementary.io> -->
+<application>
+  <id type="desktop">screenshot.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_group>elementary</project_group>
+  <project_license>GPL-3.0+</project_license>
+  <name>Screenshot</name>
+  <icon type="stock">applets-screenshooter</icon>
+  <summary>Save images of your screen or individual windows</summary>
+  <description>
+    <p>
+      Screenshot is a simple screenshot tool. It includes whole screen shots,
+      selected area shots, current window shots, delayed shots, and timed shots.
+    </p>
+  </description>
+  <url type="homepage">http://elementary.io/</url>
+  <updatecontact>contact_at_elementary.io</updatecontact>
+</application>
