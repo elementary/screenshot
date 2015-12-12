@@ -95,6 +95,7 @@ OPTIONS
 add_executable(screenshot ${VALA_C})
 
 install (TARGETS screenshot RUNTIME DESTINATION bin)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/screenshot.appdata.xml DESTINATION share/appdata)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/screenshot.desktop DESTINATION share/applications)
 
 option (ICON_UPDATE "Run gtk-update-icon-cache after the install." ON)
