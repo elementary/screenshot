@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-25 03:23-0500\n"
-"PO-Revision-Date: 2015-09-22 17:44+0000\n"
+"PO-Revision-Date: 2015-12-12 14:57+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-16 06:02+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-12-13 05:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/Screenshot.vala:41 ../src/Translations.vala:7
 msgid "Screenshot"
@@ -39,7 +39,7 @@ msgstr "Ekraanipildi piirid:"
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Properties:"
-msgstr ""
+msgstr "Atribuudid:"
 
 #: ../src/ScreenshotWindow.vala:79
 msgid "Grab the whole screen"
@@ -87,11 +87,11 @@ msgstr "Aktiivset akent ei leitud"
 
 #: ../src/Widgets/SaveDialog.vala:62
 msgid "Screenshot from "
-msgstr ""
+msgstr "Ekraanipilt kohast "
 
 #: ../src/Widgets/SaveDialog.vala:72
 msgid "Save Image as…"
-msgstr ""
+msgstr "Pildi salvestamine kui…"
 
 #: ../src/Widgets/SaveDialog.vala:76
 msgid "Name:"
