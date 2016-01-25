@@ -9,6 +9,9 @@
         <key name="close-on-save" type="b">
             <default>false</default>
         </key>
+        <key name="delay" type="i">
+            <default>1</default>
+        </key>
         <key name="folder-dir" type="s">
             <default>""</default>
         </key>

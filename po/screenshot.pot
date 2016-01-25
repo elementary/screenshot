@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 13:36+0100\n"
+"POT-Creation-Date: 2016-01-25 18:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/ScreenshotWindow.vala:71
+#: ../src/ScreenshotWindow.vala:72
 msgid "Capture area:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:75
+#: ../src/ScreenshotWindow.vala:76
 msgid "Properties:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:82
+#: ../src/ScreenshotWindow.vala:83
 msgid "Grab the whole screen"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:84
+#: ../src/ScreenshotWindow.vala:85
 msgid "Grab the current window"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:86
+#: ../src/ScreenshotWindow.vala:87
 msgid "Select area to grab"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:97
+#: ../src/ScreenshotWindow.vala:98
 msgid "Grab mouse pointer:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:104
+#: ../src/ScreenshotWindow.vala:105
 msgid "Close after saving:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:111
+#: ../src/ScreenshotWindow.vala:112
 msgid "Delay in seconds:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:127
+#: ../src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:133 ../src/Widgets/SaveDialog.vala:113
+#: ../src/ScreenshotWindow.vala:134 ../src/Widgets/SaveDialog.vala:113
 msgid "Cancel"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:287 ../src/ScreenshotWindow.vala:339
-msgid "Task aborted"
+#: ../src/ScreenshotWindow.vala:289 ../src/ScreenshotWindow.vala:341
+msgid "Could not capture screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:288
+#: ../src/ScreenshotWindow.vala:290
 msgid "Image not saved"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:340
+#: ../src/ScreenshotWindow.vala:342
 msgid "Couldn't find an active window"
 msgstr ""
 

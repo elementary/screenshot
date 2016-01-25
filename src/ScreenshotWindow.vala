@@ -53,7 +53,7 @@ namespace Screenshot {
 			capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
-            delay = 1;
+            delay = settings.get_int ("delay");
 
             setup_ui ();
         }
@@ -191,6 +191,7 @@ namespace Screenshot {
 
             delay_spin.value_changed.connect (() => {
 			    delay = delay_spin.get_value_as_int ();
+                settings.set_int ("delay", delay);
 		    });
 
             take_btn.clicked.connect (take_clicked);
@@ -285,8 +286,9 @@ namespace Screenshot {
                             this.destroy ();
                     } catch (GLib.Error e) {
                         Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                            Gtk.ButtonsType.CLOSE, _("Task aborted"));
+                            Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
                         dialog.secondary_text = _("Image not saved");
+                        dialog.deletable = false;
                         dialog.run ();
                         dialog.destroy ();
                         debug (e.message);
@@ -337,8 +339,9 @@ namespace Screenshot {
                             grab_save (win);
                         else {
                             Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                                Gtk.ButtonsType.CLOSE, _("Task aborted"));
+                                Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
                             dialog.secondary_text = _("Couldn't find an active window");
+                            dialog.deletable = false;
                             dialog.run ();
                             dialog.destroy ();
                         }
