@@ -1,27 +1,25 @@
 /***
-  BEGIN LICENSE
 
-  Copyright (C) 2014-2015 Fabio Zaramella <ffabio.96.x@gmail.com>
+    Copyright (C) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
 
-  This program is free software: you can redistribute it and/or modify it
-  under the terms of the GNU Lesser General Public License version 3, as
-  published    by the Free Software Foundation.
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License version 3, as
+    published by the Free Software Foundation.
 
-  This program is distributed in the hope that it will be useful, but
-  WITHOUT ANY WARRANTY; without even the implied warranties of
-  MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-  PURPOSE.  See the GNU General Public License for more details.
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranties of
+    MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
+    PURPOSE.  See the GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License along
-  with this program.  If not, see <http://www.gnu.org/licenses>
+    You should have received a copy of the GNU General Public License along
+    with this program.  If not, see <http://www.gnu.org/licenses>
 
-  END LICENSE
 ***/
 
 namespace Screenshot.Widgets {
     
     /**
-     *  Code stolen from Eidete program with some fixes for warnings messages.
+     *  Code stolen from Eidete program with some adjustments.
      */
     public class SelectionArea : Granite.Widgets.CompositedWindow {
 
@@ -37,7 +35,6 @@ namespace Screenshot.Widgets {
             stick ();
             set_resizable (true);
             set_deletable (false);
-            set_type_hint (Gdk.WindowTypeHint.DIALOG);
             set_has_resize_grip (false);
             set_default_geometry (640, 480);
             events = Gdk.EventMask.BUTTON_MOTION_MASK | Gdk.EventMask.BUTTON1_MOTION_MASK | 
