@@ -37,7 +37,7 @@ namespace Screenshot.Widgets {
             set_deletable (false);
             set_has_resize_grip (false);
             set_default_geometry (640, 480);
-            set_type_hint (Gdk.WindowTypeHint.UTILITY);
+            set_type_hint (Gdk.WindowTypeHint.DIALOG);
             events = Gdk.EventMask.BUTTON_MOTION_MASK | Gdk.EventMask.BUTTON1_MOTION_MASK | 
                      Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK ;
             set_skip_taskbar_hint (true);

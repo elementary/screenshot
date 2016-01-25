@@ -19,6 +19,7 @@
 namespace Screenshot {
 
     public class ScreenshotWindow : Gtk.Dialog {
+
         private enum CaptureType {
             SCREEN,
             CURRENT_WINDOW,
