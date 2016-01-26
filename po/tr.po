@@ -7,21 +7,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-09-25 03:23-0500\n"
+"POT-Creation-Date: 2016-01-25 18:53+0100\n"
 "PO-Revision-Date: 2015-12-22 18:53+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-23 05:19+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-01-26 05:35+0000\n"
+"X-Generator: Launchpad (build 17902)\n"
 
-#: ../src/Screenshot.vala:41 ../src/Translations.vala:7
+#: ../src/ScreenshotWindow.vala:72
+msgid "Capture area:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:76
+msgid "Properties:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:83
+msgid "Grab the whole screen"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:85
+msgid "Grab the current window"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:87
+msgid "Select area to grab"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:98
+msgid "Grab mouse pointer:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:105
+msgid "Close after saving:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:112
+msgid "Delay in seconds:"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:128
+msgid "Take Screenshot"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:134 ../src/Widgets/SaveDialog.vala:113
+msgid "Cancel"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:289 ../src/ScreenshotWindow.vala:341
+msgid "Could not capture screenshot"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:290
+msgid "Image not saved"
+msgstr ""
+
+#: ../src/ScreenshotWindow.vala:342
+msgid "Couldn't find an active window"
+msgstr ""
+
+#: ../src/Translations.vala:7 ../src/Screenshot.vala:35
 msgid "Screenshot"
 msgstr ""
 
-#: ../src/Screenshot.vala:57 ../src/Translations.vala:8
+#: ../src/Translations.vala:8 ../src/Screenshot.vala:51
 msgid "Save images of your screen or individual windows."
 msgstr ""
 
@@ -33,82 +85,30 @@ msgstr ""
 msgid "About Screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:68
-msgid "Capture area:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:72
-msgid "Properties:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:79
-msgid "Grab the whole screen"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:81
-msgid "Grab the current window"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:83
-msgid "Select area to grab"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Grab mouse pointer:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:101
-msgid "Close after saving:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:108
-msgid "Delay in seconds:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:124
-msgid "Take Screenshot"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:130 ../src/Widgets/SaveDialog.vala:116
-msgid "Cancel"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:284 ../src/ScreenshotWindow.vala:336
-msgid "Task aborted"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:285
-msgid "Image not saved"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:337
-msgid "Couldn't find an active window"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:62
+#: ../src/Widgets/SaveDialog.vala:60
 msgid "Screenshot from "
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:72
+#: ../src/Widgets/SaveDialog.vala:69
 msgid "Save Image as…"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:76
+#: ../src/Widgets/SaveDialog.vala:73
 msgid "Name:"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:82
+#: ../src/Widgets/SaveDialog.vala:79
 msgid "Format:"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:109
+#: ../src/Widgets/SaveDialog.vala:106
 msgid "Folder:"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:111
+#: ../src/Widgets/SaveDialog.vala:108
 msgid "Select Screenshots Folder…"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:115
+#: ../src/Widgets/SaveDialog.vala:112
 msgid "Save"
 msgstr ""
