@@ -145,15 +145,19 @@ namespace Screenshot {
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
 
-                if (selection_area != null)
-                    selection_area.hide ();
+                if (selection_area != null) {
+                    selection_area.destroy ();
+                    selection_area = null;
+                }
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
 
-                if (selection_area != null)
-                    selection_area.hide ();
+                if (selection_area != null) {
+                    selection_area.destroy ();
+                    selection_area = null;
+                }
             });
 
             selection.toggled.connect (() => {
@@ -200,7 +204,9 @@ namespace Screenshot {
             focus_in_event.connect (() => {
                 if (selection_area != null && selection_area.is_visible ()) {
                     selection_area.present ();
-                    present ();
+                    this.present ();
+                } else {
+                    this.present ();
                 }
 
                 return false;
