@@ -145,15 +145,19 @@ namespace Screenshot {
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
 
-                if (selection_area != null)
-                    selection_area.hide ();
+                if (selection_area != null) {
+                    selection_area.destroy ();
+                    selection_area = null;
+                }
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
 
-                if (selection_area != null)
-                    selection_area.hide ();
+                if (selection_area != null) {
+                    selection_area.destroy ();
+                    selection_area = null;
+                }
             });
 
             selection.toggled.connect (() => {
@@ -200,7 +204,9 @@ namespace Screenshot {
             focus_in_event.connect (() => {
                 if (selection_area != null && selection_area.is_visible ()) {
                     selection_area.present ();
-                    present ();
+                    this.present ();
+                } else {
+                    this.present ();
                 }
 
                 return false;
@@ -219,8 +225,8 @@ namespace Screenshot {
             
             win_rect = Gdk.Rectangle ();
 
-            width = win.get_width();
-            height = win.get_height();
+            width = win.get_width ();
+            height = win.get_height ();
 
             screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
 
@@ -230,6 +236,7 @@ namespace Screenshot {
             win_rect.height = height;
 
             if (capture_mode == CaptureType.AREA) {
+
                 screenshot = new Gdk.Pixbuf.subpixbuf (screenshot, selection_area.x, selection_area.y, selection_area.w, selection_area.h);
                     
                 win_rect.x = selection_area.x;
@@ -264,7 +271,6 @@ namespace Screenshot {
                     cursor_rect.height = cursor_pixbuf.get_height ();
 
                     if (win_rect.intersect (cursor_rect, out cursor_rect)) {
-
                         cursor_pixbuf.composite (screenshot, cx, cy, cursor_rect.width, cursor_rect.height, cx, cy, 1.0, 1.0, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
@@ -311,22 +317,22 @@ namespace Screenshot {
                     win = Gdk.get_default_root_window();
 
                     this.set_opacity (0);
-                    this.iconify ();
+                    this.hide ();
                     Timeout.add (delay*1000, () => {
                         this.present ();
                         grab_save (win);
-                        Timeout.add (200, () => {
+                        Timeout.add (250, () => {
                             this.set_opacity (1);
                             return false;
-                        });
+                        }); 
                         return false;
-                    }); 
+                    });
                     break;
                 case CaptureType.CURRENT_WINDOW:
                     screen = Gdk.Screen.get_default ();
 
                     this.set_opacity (0);
-                    this.iconify ();
+                    this.hide ();
                     Timeout.add (delay*1000, () => {
                         list = screen.get_window_stack ();
                         foreach (Gdk.Window item in list) {
@@ -334,7 +340,9 @@ namespace Screenshot {
                                 win = item;                   
                             }
                         }
+
                         this.present ();
+
                         if (win != null)
                             grab_save (win);
                         else {
@@ -345,10 +353,11 @@ namespace Screenshot {
                             dialog.run ();
                             dialog.destroy ();
                         }
-                        Timeout.add (200, () => {
+                        
+                        Timeout.add (250, () => {
                             this.set_opacity (1);
                             return false;
-                        });
+                        }); 
                         return false;
                     });
                     break;
@@ -356,10 +365,14 @@ namespace Screenshot {
                     win = Gdk.get_default_root_window();
 
                     selection_area.set_opacity (0);
+                    selection_area.hide ();
                     this.set_opacity (0);
+                    this.hide ();
                     Timeout.add (delay*1000, () => {
+                        this.present ();
+                        selection_area.present ();
                         grab_save (win);
-                        Timeout.add (200, () => {
+                        Timeout.add (250, () => {
                             selection_area.set_opacity (1);
                             this.set_opacity (1);
                             return false;

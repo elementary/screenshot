@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 18:53+0100\n"
+"POT-Creation-Date: 2016-01-28 11:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,15 +57,15 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:289 ../src/ScreenshotWindow.vala:341
+#: ../src/ScreenshotWindow.vala:295 ../src/ScreenshotWindow.vala:350
 msgid "Could not capture screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:290
+#: ../src/ScreenshotWindow.vala:296
 msgid "Image not saved"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:342
+#: ../src/ScreenshotWindow.vala:351
 msgid "Couldn't find an active window"
 msgstr ""
 
