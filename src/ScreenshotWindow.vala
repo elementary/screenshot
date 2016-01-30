@@ -126,7 +126,7 @@ namespace Screenshot {
 
             // Take button
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
-            take_btn.get_style_context ().add_class ("suggested-action");
+            take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             take_btn.can_default = true;
 
             this.set_default (take_btn);
