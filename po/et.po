@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-01-28 11:36+0100\n"
-"PO-Revision-Date: 2015-12-12 14:57+0000\n"
+"PO-Revision-Date: 2016-02-10 22:29+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-31 06:03+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-02-11 06:18+0000\n"
+"X-Generator: Launchpad (build 17923)\n"
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Capture area:"
@@ -59,7 +59,7 @@ msgstr "Loobu"
 
 #: ../src/ScreenshotWindow.vala:295 ../src/ScreenshotWindow.vala:350
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Ekraanipildi tegemine ebaõnnestus"
 
 #: ../src/ScreenshotWindow.vala:296
 msgid "Image not saved"
