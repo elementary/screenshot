@@ -35,7 +35,7 @@ namespace Screenshot.Widgets {
 
         public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
-        public SaveDialog (Settings settings, Gtk.Window parent) {
+        public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
 
             resizable = false;
             deletable = false;
@@ -49,12 +49,12 @@ namespace Screenshot.Widgets {
             if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
                 folder_dir = settings.get_string ("folder-dir");
 
-            build (settings, parent);
+            build (pixbuf, settings, parent);
             show_all ();
             name_entry.grab_focus ();
         }
 
-        public void build (Settings settings, Gtk.Window parent) {
+        public void build (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
 
             date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
             file_name = _("Screenshot from ") + date_time;
@@ -65,6 +65,23 @@ namespace Screenshot.Widgets {
             grid.column_spacing = 12;
 
             var content = this.get_content_area () as Gtk.Box;
+
+            var main_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+
+            int width = pixbuf.get_width () / 4;
+            int height = pixbuf.get_height () / 4;
+            if (pixbuf.get_width () > Gdk.Screen.width () / 2) {
+                width /= 2;
+            }
+
+            if (pixbuf.get_height () > Gdk.Screen.height () / 2) {
+                height /= 2;
+            }
+
+            var screenshot = pixbuf.copy ();
+            screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
+
+            var preview = new Gtk.Image.from_pixbuf (screenshot);
 
             dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
@@ -154,7 +171,10 @@ namespace Screenshot.Widgets {
             grid.attach (location_label, 0, 3, 1, 1);
             grid.attach (location, 1, 3, 1, 1);
 
-            content.add (grid);
+            main_box.add (preview);
+            main_box.add (grid);
+
+            content.add (main_box);
         }
     }
 }

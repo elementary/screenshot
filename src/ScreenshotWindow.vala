@@ -276,14 +276,13 @@ namespace Screenshot {
                 }
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this);
+            save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
 
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
-                save_dialog.set_opacity (0);
                 save_dialog.destroy ();
 
                 if (response == true) {
-                    string file_name = folder_dir + "/" + output_name + "." + format;
+                    string file_name = Path.build_filename (folder_dir, output_name + "." + format);
 
                     try {
                         screenshot.save (file_name, format);
@@ -299,8 +298,7 @@ namespace Screenshot {
                         dialog.destroy ();
                         debug (e.message);
                     }
-                } else
-                    return;
+                }
             });
 
             return false;
