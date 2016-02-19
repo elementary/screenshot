@@ -78,8 +78,7 @@ namespace Screenshot.Widgets {
                 height /= 2;
             }
 
-            var screenshot = pixbuf.copy ();
-            screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
+            var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
 
             var preview = new Gtk.Image.from_pixbuf (screenshot);
 

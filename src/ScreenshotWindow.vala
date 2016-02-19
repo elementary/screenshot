@@ -287,8 +287,9 @@ namespace Screenshot {
                     try {
                         screenshot.save (file_name, format);
 
-                        if (close_on_save == true)
+                        if (close_on_save == true) {
                             this.destroy ();
+                        }
                     } catch (GLib.Error e) {
                         Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
                             Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
