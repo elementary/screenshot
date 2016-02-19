@@ -276,20 +276,20 @@ namespace Screenshot {
                 }
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (settings, this);
+            save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
 
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
-                save_dialog.set_opacity (0);
                 save_dialog.destroy ();
 
                 if (response == true) {
-                    string file_name = folder_dir + "/" + output_name + "." + format;
+                    string file_name = Path.build_filename (folder_dir, output_name + "." + format);
 
                     try {
                         screenshot.save (file_name, format);
 
-                        if (close_on_save == true)
+                        if (close_on_save == true) {
                             this.destroy ();
+                        }
                     } catch (GLib.Error e) {
                         Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
                             Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
@@ -299,8 +299,7 @@ namespace Screenshot {
                         dialog.destroy ();
                         debug (e.message);
                     }
-                } else
-                    return;
+                }
             });
 
             return false;
