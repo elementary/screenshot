@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
 Name=Screenshot
-Comment=Save images of your screen or individual windows
+Comment=Save images of the screen
 Exec=screenshot
-Icon=applets-screenshooter
+Icon=accessories-screenshot
 Terminal=false
 X-GNOME-Gettext-Domain=screenshot
 Categories=GTK;GNOME;Utility;
