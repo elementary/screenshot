@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2015 elementary, LLC <contact@elementary.io> -->
-<application>
-  <id type="desktop">screenshot.desktop</id>
-  <metadata_license>CC0</metadata_license>
+<!-- Copyright 2015-2016 elementary, LLC <contact@elementary.io> -->
+<component type="desktop">
+  <id>screenshot.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
   <project_group>elementary</project_group>
   <project_license>GPL-3.0+</project_license>
   <name>Screenshot</name>
-  <icon type="stock">applets-screenshooter</icon>
-  <summary>Save images of your screen or individual windows</summary>
+  <summary>Save images of the screen</summary>
   <description>
     <p>
-      Screenshot is a simple screenshot tool. It includes whole screen shots,
-      selected area shots, current window shots, delayed shots, and timed shots.
+      A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.
     </p>
   </description>
+  <provides>
+    <binary>screenshot</binary>
+  </provides>
+  <developer_name>elementary LLC.</developer_name>
   <url type="homepage">http://elementary.io/</url>
-  <updatecontact>contact_at_elementary.io</updatecontact>
-</application>
+  <url type="bugtracker">https://bugs.launchpad.net/screenshot-tool</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://elementaryos.stackexchange.com/questions/tagged/screenshot</url>
+  <update_contact>contact_at_elementary.io</update_contact>
+</component>
