@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-01-28 11:36+0100\n"
-"PO-Revision-Date: 2016-01-26 12:31+0000\n"
+"PO-Revision-Date: 2016-03-03 14:38+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-31 06:03+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:22+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Capture area:"
@@ -39,7 +39,7 @@ msgstr "截取选中区域"
 
 #: ../src/ScreenshotWindow.vala:98
 msgid "Grab mouse pointer:"
-msgstr "包括鼠标："
+msgstr "保留鼠标："
 
 #: ../src/ScreenshotWindow.vala:105
 msgid "Close after saving:"
@@ -59,7 +59,7 @@ msgstr "取消"
 
 #: ../src/ScreenshotWindow.vala:295 ../src/ScreenshotWindow.vala:350
 msgid "Could not capture screenshot"
-msgstr "无法捕捉屏幕截图"
+msgstr "无法抓取屏幕截图"
 
 #: ../src/ScreenshotWindow.vala:296
 msgid "Image not saved"
