@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-01-28 11:36+0100\n"
-"PO-Revision-Date: 2015-01-24 21:30+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"PO-Revision-Date: 2016-03-05 21:53+0000\n"
+"Last-Translator: Charlie <jncarlos@me.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-31 06:03+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-03-06 05:44+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: ../src/ScreenshotWindow.vala:72
 msgid "Capture area:"
@@ -23,7 +23,7 @@ msgstr "Área de captura:"
 
 #: ../src/ScreenshotWindow.vala:76
 msgid "Properties:"
-msgstr ""
+msgstr "Propiedades:"
 
 #: ../src/ScreenshotWindow.vala:83
 msgid "Grab the whole screen"
@@ -59,7 +59,7 @@ msgstr "Cancelar"
 
 #: ../src/ScreenshotWindow.vala:295 ../src/ScreenshotWindow.vala:350
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "No se pudo crear la captura"
 
 #: ../src/ScreenshotWindow.vala:296
 msgid "Image not saved"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:69
 msgid "Save Image as…"
-msgstr ""
+msgstr "Guardar imagen como…"
 
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Name:"
