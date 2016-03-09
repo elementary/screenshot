@@ -8,8 +8,21 @@ Terminal=false
 X-GNOME-Gettext-Domain=screenshot
 Categories=GTK;GNOME;Utility;
 Keywords=Snapshot;Screenshot;
-Actions=AboutDialog;
+Actions=ScreenShot;WindowShot;AreaShot;AboutDialog;
 
 [Desktop Action AboutDialog]
 Name=About Screenshot
 Exec=screenshot -a
+
+[Desktop Action ScreenShot]
+Name=Screenshot of the Whole Screen
+Exec=screenshot --action 1
+
+[Desktop Action WindowShot]
+Name=Screenshot of the Current Window
+Exec=screenshot --action 2
+
+[Desktop Action AreaShot]
+Name=Screenshot of a Selected Area
+Exec=screenshot --action 3
+OnlyShowIn=Unity;
