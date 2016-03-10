@@ -23,12 +23,26 @@ namespace Screenshot {
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
 
+        private OptionEntry[] options;
+
         private int action = 0;
         private int delay = 1;
         private bool grab_pointer = false;
+        private bool screen = false;
+        private bool win = false;
+        private bool area = false;
 
         construct {
             flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
+
+            options = new OptionEntry[5];
+            options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
+			options[1] = { "area", 'a', 0, OptionArg.NONE, ref area, _("Capture area"), null };
+			options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
+			options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
+            options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
+
+            add_main_option_entries (options);
 
             // App info
             build_version = Build.VERSION;
@@ -97,35 +111,33 @@ namespace Screenshot {
                 return 0;
             }
 
-            return app.run (args);
+            //Workarround to get Granite's --about & Gtk's --help working together
+            if (args[1] == "--about") {
+                return app.run (args);
+            } else {
+                return ((Gtk.Application)app).run (args);
+            }
         }
 
         private int _command_line (ApplicationCommandLine command_line) {
-            OptionEntry[] options = new OptionEntry[3];
-            options[0] = { "action", 0, 0, OptionArg.INT, ref action, "Action to do", null};
-            options[1] = { "delay", 0, 0, OptionArg.INT, ref delay, "Delay before taking the screenshot", null };
-            options[2] = { "grab-pointer", 0, 0, OptionArg.NONE, ref grab_pointer, "Grab pointer in screen?", null };
-
-            add_main_option_entries (options);
-
             string[] args = command_line.get_arguments ();
-            string*[] _args = new string[args.length];
-            for (int i = 0; i < args.length; i++) {
-                _args[i] = args[i];
-            }
 
             try {
                 var opt_context = new OptionContext ("- Screenhot tool");
                 opt_context.set_help_enabled (true);
                 opt_context.add_main_entries (options, null);
 
-                unowned string[] tmp = _args;
+                unowned string[] tmp = args;
                 opt_context.parse (ref tmp);
             } catch (OptionError e) {
                 command_line.print ("error: %s\n", e.message);
                 command_line.print ("Run '%s --help' to see a full list of available command line options.\n", args[0]);
                 return 0;
             }
+
+            if (screen) action = 1;
+            if (win) action = 2;
+            if (area) action = 3;
 
             if (action == 0) {
                 normal_startup ();
