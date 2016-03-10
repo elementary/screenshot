@@ -37,7 +37,7 @@ namespace Screenshot {
 
             options = new OptionEntry[5];
             options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
-            options[1] = { "area", 'a', 0, OptionArg.NONE, ref area, _("Capture area"), null };
+            options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
             options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
             options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
             options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
@@ -96,7 +96,7 @@ namespace Screenshot {
             return app;
         }
 
-    	public static int main (string[] args) {
+        public static int main (string[] args) {
             // Init internationalization support
             Intl.setlocale (LocaleCategory.ALL, "");
             Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
@@ -106,10 +106,6 @@ namespace Screenshot {
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
             app = new ScreenshotApp ();
-
-            if (args[1] == "-s") {
-                return 0;
-            }
 
             //Workaround to get Granite's --about & Gtk's --help working together
             if ("--help" in args || "-h" in args) {
@@ -123,7 +119,7 @@ namespace Screenshot {
             string[] args = command_line.get_arguments ();
 
             try {
-                var opt_context = new OptionContext ("- Screenhot tool");
+                var opt_context = new OptionContext ("- Screenshot tool");
                 opt_context.set_help_enabled (true);
                 opt_context.add_main_entries (options, null);
 
