@@ -23,7 +23,26 @@ namespace Screenshot {
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
 
+        private new OptionEntry[] options;
+
+        private int action = 0;
+        private int delay = 1;
+        private bool grab_pointer = false;
+        private bool screen = false;
+        private bool win = false;
+        private bool area = false;
+
         construct {
+            flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
+
+            options = new OptionEntry[5];
+            options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
+            options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
+            options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
+            options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
+            options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
+
+            add_main_option_entries (options);
 
             // App info
             build_version = Build.VERSION;
@@ -44,7 +63,7 @@ namespace Screenshot {
             bug_url = "https://bugs.launchpad.net/screenshot-tool";
             help_url = "https://answers.launchpad.net/screenshot-tool";
             translate_url = "https://translations.launchpad.net/screenshot-tool";
-        
+
             about_authors = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
             about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
             about_artists = {"Fabio Zaramella"};
@@ -54,7 +73,12 @@ namespace Screenshot {
         }
 
         protected override void activate () {
-                        
+            this.hold ();
+            stdout.printf ("activated\n");
+            this.release ();
+        }
+
+        private void normal_startup () {
             if (window != null) {
                 window.present (); // present window if app is already open
                 return;
@@ -66,15 +90,13 @@ namespace Screenshot {
         }
 
         public static ScreenshotApp get_instance () {
-
             if (app == null)
                 app = new ScreenshotApp ();
 
             return app;
         }
 
-    	public static int main (string[] args) {
-	        
+        public static int main (string[] args) {
             // Init internationalization support
             Intl.setlocale (LocaleCategory.ALL, "");
             Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
@@ -83,13 +105,59 @@ namespace Screenshot {
             Gtk.init (ref args);
             Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
-            app = new ScreenshotApp ();  
+            app = new ScreenshotApp ();
 
-            if (args[1] == "-s") {
+            //Workaround to get Granite's --about & Gtk's --help working together
+            if ("--help" in args || "-h" in args) {
+                return ((Gtk.Application)app).run (args);
+            } else {
+                return app.run (args);
+            }
+        }
+
+        private int _command_line (ApplicationCommandLine command_line) {
+            string[] args = command_line.get_arguments ();
+
+            try {
+                var opt_context = new OptionContext ("- Screenshot tool");
+                opt_context.set_help_enabled (true);
+                opt_context.add_main_entries (options, null);
+
+                unowned string[] tmp = args;
+                opt_context.parse (ref tmp);
+            } catch (OptionError e) {
+                command_line.print ("error: %s\n", e.message);
+                command_line.print ("Run '%s --help' to see a full list of available command line options.\n", args[0]);
                 return 0;
             }
 
-            return app.run (args);
+            if (screen) action = 1;
+            if (win) action = 2;
+            if (area) action = 3;
+
+            if (action == 0) {
+                normal_startup ();
+            } else {
+                window = new ScreenshotWindow.from_cmd (action, delay, grab_pointer);
+                window.set_application (this);
+                window.show_all ();
+
+                if (action != 3) {
+                    window.take_clicked ();
+                } else {
+                    window.present ();
+                }
+            }
+
+            return 0;
+        }
+
+        public override int command_line (ApplicationCommandLine commmand_line) {
+            this.hold ();
+            int res = _command_line (commmand_line);
+            this.release ();
+
+            return res;
         }
     }
 }
