@@ -23,7 +23,7 @@ namespace Screenshot {
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
 
-        private OptionEntry[] options;
+        private new OptionEntry[] options;
 
         private int action = 0;
         private int delay = 1;
@@ -37,9 +37,9 @@ namespace Screenshot {
 
             options = new OptionEntry[5];
             options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
-			options[1] = { "area", 'a', 0, OptionArg.NONE, ref area, _("Capture area"), null };
-			options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
-			options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
+            options[1] = { "area", 'a', 0, OptionArg.NONE, ref area, _("Capture area"), null };
+            options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
+            options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
             options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
 
             add_main_option_entries (options);
@@ -111,11 +111,11 @@ namespace Screenshot {
                 return 0;
             }
 
-            //Workarround to get Granite's --about & Gtk's --help working together
-            if (args[1] == "--about") {
-                return app.run (args);
-            } else {
+            //Workaround to get Granite's --about & Gtk's --help working together
+            if ("--help" in args || "-h" in args) {
                 return ((Gtk.Application)app).run (args);
+            } else {
+                return app.run (args);
             }
         }
 
