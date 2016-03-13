@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-03-09 08:19-0600\n"
-"PO-Revision-Date: 2015-10-06 12:17+0000\n"
+"PO-Revision-Date: 2016-03-12 15:45+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-11 05:57+0000\n"
+"X-Launchpad-Export-Date: 2016-03-13 05:54+0000\n"
 "X-Generator: Launchpad (build 17939)\n"
 
 #: ../src/ScreenshotWindow.vala:99
@@ -59,7 +59,7 @@ msgstr "Avbryt"
 
 #: ../src/ScreenshotWindow.vala:320 ../src/ScreenshotWindow.vala:398
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Kunne ikke fange opp skjermbilde"
 
 #: ../src/ScreenshotWindow.vala:321
 msgid "Image not saved"
