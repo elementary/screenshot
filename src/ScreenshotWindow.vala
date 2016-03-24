@@ -37,9 +37,14 @@ namespace Screenshot {
         private Gtk.RadioButton selection;
 
         private CaptureType capture_mode;
+        private string prev_font_regular;
+        private string prev_font_document;
+        private string prev_font_mono;
+
         private bool mouse_pointer;
         private bool from_command;
         private bool close_on_save;
+        private bool redact;
         private int delay;
 
         private Screenshot.Widgets.SelectionArea    selection_area;
@@ -56,18 +61,23 @@ namespace Screenshot {
 			capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
+            redact = settings.get_boolean ("redact");
             delay = settings.get_int ("delay");
 
             setup_ui ();
         }
 
-        public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer) {
+        public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact) {
             if (delay != null) {
                 this.delay = delay;
             }
 
             if (grab_pointer != null) {
                 mouse_pointer = grab_pointer;
+            }
+
+            if (redact != null) {
+                this.redact = redact;
             }
 
             close_on_save = true;
@@ -136,6 +146,13 @@ namespace Screenshot {
 
             close_switch.set_active (close_on_save);
 
+            var redact_label = new Gtk.Label (_("Conceal text:"));
+            redact_label.halign = Gtk.Align.END;
+            var redact_switch = new Gtk.Switch ();
+            redact_switch.halign = Gtk.Align.START;
+
+            redact_switch.set_active (redact);
+
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
@@ -148,8 +165,10 @@ namespace Screenshot {
             grid.attach (pointer_switch, 1, 4, 1, 1);
             grid.attach (close_label, 0, 5, 1, 1);
             grid.attach (close_switch, 1, 5, 1, 1);
-            grid.attach (delay_label, 0, 6, 1, 1);
-            grid.attach (delay_spin, 1, 6, 1, 1);
+            grid.attach (redact_label, 0, 6, 1, 1);
+            grid.attach (redact_switch, 1, 6, 1, 1);
+            grid.attach (delay_label, 0, 7, 1, 1);
+            grid.attach (delay_spin, 1, 7, 1, 1);
 
             // Take button
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
@@ -200,29 +219,24 @@ namespace Screenshot {
             });
 
             pointer_switch.notify["active"].connect (() => {
-			    if (pointer_switch.active) {
-				    settings.set_boolean ("mouse-pointer", true);
-                    mouse_pointer = settings.get_boolean ("mouse-pointer");
-			    } else {
-				    settings.set_boolean ("mouse-pointer", false);
-                    mouse_pointer = settings.get_boolean ("mouse-pointer");
-			    }
-		    });
+                settings.set_boolean ("mouse-pointer", pointer_switch.active);
+                mouse_pointer = pointer_switch.active;
+            });
 
             close_switch.notify["active"].connect (() => {
-			    if (close_switch.active) {
-				    settings.set_boolean ("close-on-save", true);
-                    close_on_save = settings.get_boolean ("close-on-save");
-			    } else {
-				    settings.set_boolean ("close-on-save", false);
-                    close_on_save = settings.get_boolean ("close-on-save");
-			    }
-		    });
+                settings.set_boolean ("close-on-save", close_switch.active);
+                close_on_save = close_switch.active;
+            });
+
+            redact_switch.notify["active"].connect (() => {
+                settings.set_boolean ("redact", redact_switch.active);
+                redact = redact_switch.active;
+            });
 
             delay_spin.value_changed.connect (() => {
-			    delay = delay_spin.get_value_as_int ();
+                delay = delay_spin.get_value_as_int ();
                 settings.set_int ("delay", delay);
-		    });
+            });
 
             take_btn.clicked.connect (take_clicked);
             cancel_btn.clicked.connect (cancel_clicked);
@@ -243,7 +257,23 @@ namespace Screenshot {
             content.add (grid);
         }
 
-        private bool grab_save (Gdk.Window win) {
+        private bool grab_save (Gdk.Window win, bool extra_time) {
+            if (extra_time) {
+                redact_text (true);
+                Timeout.add (1000, () => {
+                    grab_save (win, false);
+                    return false;
+                });
+
+                return false;
+            }
+
+            Timeout.add (250, () => {
+                selection_area.set_opacity (1);
+                this.set_opacity (1);
+                return false;
+            });
+
             Gdk.Pixbuf      screenshot;
             Gdk.Rectangle   win_rect;
             int             width, height;
@@ -299,6 +329,10 @@ namespace Screenshot {
                         cursor_pixbuf.composite (screenshot, cx, cy, cursor_rect.width, cursor_rect.height, cx, cy, 1.0, 1.0, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
+            }
+
+            if (redact) {
+                redact_text (false);
             }
 
             save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
@@ -359,14 +393,9 @@ namespace Screenshot {
 
             this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 this.present ();
-                grab_save (win);
-                Timeout.add (250, () => {
-                    this.set_opacity (1);
-                    return false;
-                });
-
+                grab_save (win, redact);
                 return false;
             });
 
@@ -381,7 +410,7 @@ namespace Screenshot {
 
             this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -392,7 +421,7 @@ namespace Screenshot {
                 this.present ();
 
                 if (win != null)
-                    grab_save (win);
+                    grab_save (win, redact);
                 else {
                     Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
                     Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
@@ -400,12 +429,9 @@ namespace Screenshot {
                     dialog.deletable = false;
                     dialog.run ();
                     dialog.destroy ();
-                }
 
-                Timeout.add (250, () => {
                     this.set_opacity (1);
-                    return false;
-                });
+                }
 
                 return false;
             });
@@ -421,18 +447,32 @@ namespace Screenshot {
             this.set_opacity (0);
             this.hide ();
 
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 this.present ();
                 selection_area.present ();
-                grab_save (win);
-                Timeout.add (250, () => {
-                    selection_area.set_opacity (1);
-                    this.set_opacity (1);
-                    return false;
-                });
+                grab_save (win, redact);
 
                 return false;
             });
+        }
+
+        private void redact_text (bool redact) {
+            if (redact) {
+                var settings = new Settings ("org.gnome.desktop.interface");
+                prev_font_regular = settings.get_string ("font-name");
+                prev_font_mono = settings.get_string ("monospace-font-name");
+                prev_font_document = settings.get_string ("document-font-name");
+
+                settings.set_string ("font-name", "Redacted Script Regular 9");
+                settings.set_string ("monospace-font-name", "Redacted Script Light 10");
+                settings.set_string ("document-font-name", "Redacted Script Regular 10");
+            } else {
+                var settings = new Settings ("org.gnome.desktop.interface");
+
+                settings.set_string ("font-name", prev_font_regular);
+                settings.set_string ("monospace-font-name", prev_font_mono);
+                settings.set_string ("document-font-name", prev_font_document);
+            }
         }
 
         private void cancel_clicked () {
