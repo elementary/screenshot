@@ -9,7 +9,7 @@
         <key name="close-on-save" type="b">
             <default>false</default>
         </key>
-	<key name="redact" type="b">
+        <key name="redact" type="b">
             <default>false</default>
         </key>
         <key name="delay" type="i">

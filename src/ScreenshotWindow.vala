@@ -257,7 +257,23 @@ namespace Screenshot {
             content.add (grid);
         }
 
-        private bool grab_save (Gdk.Window win) {
+        private bool grab_save (Gdk.Window win, bool extra_time) {
+            if (extra_time) {
+                redact_text (true);
+                Timeout.add (1000, () => {
+                    grab_save (win, false);
+                    return false;
+                });
+
+                return false;
+            }
+
+            Timeout.add (250, () => {
+                selection_area.set_opacity (1);
+                this.set_opacity (1);
+                return false;
+            });
+
             Gdk.Pixbuf      screenshot;
             Gdk.Rectangle   win_rect;
             int             width, height;
@@ -357,10 +373,6 @@ namespace Screenshot {
         }
 
         public void take_clicked () {
-            if (redact) {
-                redact_text (true);
-            }
-
             switch (capture_mode) {
                 case CaptureType.SCREEN:
                     capture_screen ();
@@ -381,14 +393,9 @@ namespace Screenshot {
 
             this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 this.present ();
-                grab_save (win);
-                Timeout.add (250, () => {
-                    this.set_opacity (1);
-                    return false;
-                });
-
+                grab_save (win, redact);
                 return false;
             });
 
@@ -403,7 +410,7 @@ namespace Screenshot {
 
             this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -414,7 +421,7 @@ namespace Screenshot {
                 this.present ();
 
                 if (win != null)
-                    grab_save (win);
+                    grab_save (win, redact);
                 else {
                     Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
                     Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
@@ -422,12 +429,9 @@ namespace Screenshot {
                     dialog.deletable = false;
                     dialog.run ();
                     dialog.destroy ();
-                }
 
-                Timeout.add (250, () => {
                     this.set_opacity (1);
-                    return false;
-                });
+                }
 
                 return false;
             });
@@ -443,15 +447,10 @@ namespace Screenshot {
             this.set_opacity (0);
             this.hide ();
 
-            Timeout.add (delay*1000, () => {
+            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
                 this.present ();
                 selection_area.present ();
-                grab_save (win);
-                Timeout.add (250, () => {
-                    selection_area.set_opacity (1);
-                    this.set_opacity (1);
-                    return false;
-                });
+                grab_save (win, redact);
 
                 return false;
             });
