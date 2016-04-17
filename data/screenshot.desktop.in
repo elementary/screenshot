@@ -1,27 +1,27 @@
 [Desktop Entry]
 Type=Application
-Name=Screenshot
-Comment=Save images of the screen
+_Name=Screenshot
+_Comment=Save images of the screen
 Exec=screenshot
 Icon=accessories-screenshot
 Terminal=false
 X-GNOME-Gettext-Domain=screenshot
 Categories=GTK;GNOME;Utility;
-Keywords=Snapshot;Screenshot;
+_Keywords=Snapshot;Screenshot;
 Actions=ScreenShot;WindowShot;AreaShot;AboutDialog;
 
 [Desktop Action AboutDialog]
-Name=About Screenshot
+_Name=About Screenshot
 Exec=screenshot --about
 
 [Desktop Action ScreenShot]
-Name=Screenshot of the Whole Screen
+_Name=Screenshot of the Whole Screen
 Exec=screenshot --screen
 
 [Desktop Action WindowShot]
-Name=Screenshot of the Current Window
+_Name=Screenshot of the Current Window
 Exec=screenshot --window
 
 [Desktop Action AreaShot]
-Name=Screenshot of a Selected Area
+_Name=Screenshot of a Selected Area
 Exec=screenshot --area
