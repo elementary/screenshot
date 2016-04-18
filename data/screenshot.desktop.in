@@ -5,7 +5,6 @@ _Comment=Save images of the screen
 Exec=screenshot
 Icon=accessories-screenshot
 Terminal=false
-X-GNOME-Gettext-Domain=screenshot
 Categories=GTK;GNOME;Utility;
 _Keywords=Snapshot;Screenshot;
 Actions=ScreenShot;WindowShot;AreaShot;AboutDialog;
