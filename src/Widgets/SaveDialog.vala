@@ -57,7 +57,8 @@ namespace Screenshot.Widgets {
         public void build (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
 
             date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
-            file_name = _("Screenshot from ") + date_time;
+            /// TRANSLATORS: %s represents a timestamp here
+            file_name = _("Screenshot from %s").printf (date_time);
 
             grid = new Gtk.Grid ();
             grid.margin = 6;
@@ -128,7 +129,7 @@ namespace Screenshot.Widgets {
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
 
-            save_btn.get_style_context ().add_class ("suggested-action");
+            save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             Gtk.Box actions = get_action_area () as Gtk.Box;
             actions.margin_top = 12;

@@ -87,7 +87,6 @@ vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
         src/ScreenshotWindow.vala
         src/Widgets/SelectionArea.vala
         src/Widgets/SaveDialog.vala
-        src/Translations.vala
 PACKAGES
         gtk+-3.0
         granite
