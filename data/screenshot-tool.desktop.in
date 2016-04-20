@@ -2,7 +2,7 @@
 Type=Application
 _Name=Screenshot
 _Comment=Save images of the screen
-Exec=screenshot
+Exec=screenshot-tool
 Icon=accessories-screenshot
 Terminal=false
 Categories=GTK;GNOME;Utility;
@@ -11,16 +11,16 @@ Actions=ScreenShot;WindowShot;AreaShot;AboutDialog;
 
 [Desktop Action AboutDialog]
 _Name=About Screenshot
-Exec=screenshot --about
+Exec=screenshot-tool --about
 
 [Desktop Action ScreenShot]
 _Name=Screenshot of the Whole Screen
-Exec=screenshot --screen
+Exec=screenshot-tool --screen
 
 [Desktop Action WindowShot]
 _Name=Screenshot of the Current Window
-Exec=screenshot --window
+Exec=screenshot-tool --window
 
 [Desktop Action AreaShot]
 _Name=Screenshot of a Selected Area
-Exec=screenshot --area
+Exec=screenshot-tool --area

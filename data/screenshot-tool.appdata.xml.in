@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2015-2016 elementary, LLC <contact@elementary.io> -->
 <component type="desktop">
-  <id>screenshot.desktop</id>
+  <id>screenshot-tool.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_group>elementary</project_group>
   <project_license>GPL-3.0+</project_license>
-  <name>Screenshot</name>
-  <summary>Save images of the screen</summary>
+  <_name>Screenshot</_name>
   <description>
-    <p>
+    <_p>
       A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.
-    </p>
+    </_p>
   </description>
   <provides>
     <binary>screenshot</binary>

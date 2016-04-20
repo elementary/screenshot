@@ -1,4 +1,4 @@
-project (screenshot)
+project (screenshot-tool)
 cmake_minimum_required (VERSION 2.8)
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/vala)
@@ -7,8 +7,8 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/vala)
 # Base
 #
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-set (PKGDATADIR "${DATADIR}/screenshot")
-set (GETTEXT_PACKAGE "screenshot")
+set (PKGDATADIR "${DATADIR}/${CMAKE_PROJECT_NAME}")
+set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
 set (RELEASE_NAME "Just a photogram.")
 set (VERSION "0.1")
 set (VERSION_INFO "Development")
@@ -18,7 +18,7 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 #
 # Niceties
 #
-set (ARCHIVE_NAME screenshot-${VERSION})
+set (ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${VERSION})
 add_custom_target (dist
     COMMAND bzr export --root=${ARCHIVE_NAME} ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.bz2
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
@@ -57,6 +57,11 @@ add_subdirectory(po)
 add_subdirectory(schemas)
 
 #
+# data
+#
+add_subdirectory(data)
+
+#
 # Agenda
 #
 find_package(PkgConfig)
@@ -92,11 +97,9 @@ OPTIONS
         --thread
 )
 
-add_executable(screenshot ${VALA_C})
+add_executable(${CMAKE_PROJECT_NAME} ${VALA_C})
 
-install (TARGETS screenshot RUNTIME DESTINATION bin)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/screenshot.appdata.xml DESTINATION share/appdata)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/screenshot.desktop DESTINATION share/applications)
+install (TARGETS ${CMAKE_PROJECT_NAME} RUNTIME DESTINATION bin)
 
 option (ICON_UPDATE "Run gtk-update-icon-cache after the install." ON)
 if (ICON_UPDATE)
