@@ -7,142 +7,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-18 19:09-0300\n"
-"PO-Revision-Date: 2016-03-04 16:03+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"POT-Creation-Date: 2016-04-20 11:36+0200\n"
+"PO-Revision-Date: 2016-04-20 18:17+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-20 05:45+0000\n"
+"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
-#: ../src/Widgets/SaveDialog.vala:60
-msgid "Screenshot from "
-msgstr "Bildschirmfoto von "
-
-#: ../src/Widgets/SaveDialog.vala:85
-msgid "Save Image as…"
-msgstr "Bild speichern unter …"
-
-#: ../src/Widgets/SaveDialog.vala:89
-msgid "Name:"
-msgstr "Name:"
-
-#: ../src/Widgets/SaveDialog.vala:95
-msgid "Format:"
-msgstr "Format:"
-
-#: ../src/Widgets/SaveDialog.vala:122
-msgid "Folder:"
-msgstr "Ordner:"
-
-#: ../src/Widgets/SaveDialog.vala:124
-msgid "Select Screenshots Folder…"
-msgstr "Bildschirmfotoordner auswählen …"
-
-#: ../src/Widgets/SaveDialog.vala:128
-msgid "Save"
-msgstr "Speichern"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:180
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#: ../src/Translations.vala:7 ../src/Screenshot.vala:56
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
-#: ../src/Translations.vala:8 ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
+msgid "Save images of the screen"
 msgstr ""
-"Speichert Bildschirmfotos des gesamten Bildschirms oder eines einzelnen "
-"Fensters."
 
-#: ../src/Translations.vala:9
 msgid "Snapshot;Screenshot;"
 msgstr "Schnappschuss;Bildschirmfoto;"
 
-#: ../src/Translations.vala:10
 msgid "About Screenshot"
 msgstr "Info zu Bildschirmfoto"
 
-#: ../src/ScreenshotWindow.vala:109
-msgid "Capture area:"
-msgstr "Aufnahmebereich:"
-
-#: ../src/ScreenshotWindow.vala:113
-msgid "Properties:"
-msgstr "Eigenschaften:"
-
-#: ../src/ScreenshotWindow.vala:120
-msgid "Grab the whole screen"
-msgstr "Den gesamten Bildschirm aufnehmen"
-
-#: ../src/ScreenshotWindow.vala:122
-msgid "Grab the current window"
-msgstr "Das aktuelle Fenster aufnehmen"
-
-#: ../src/ScreenshotWindow.vala:124
-msgid "Select area to grab"
-msgstr "Aufnahmebereich auswählen"
-
-#: ../src/ScreenshotWindow.vala:135
-msgid "Grab mouse pointer:"
-msgstr "Mauszeiger einbeziehen:"
-
-#: ../src/ScreenshotWindow.vala:142
-msgid "Close after saving:"
-msgstr "Beenden nach speichern:"
-
-#: ../src/ScreenshotWindow.vala:149
-msgid "Conceal text:"
+msgid "Screenshot of the Whole Screen"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:156
-msgid "Delay in seconds:"
-msgstr "Verzögerung in Sekunden:"
-
-#: ../src/ScreenshotWindow.vala:174
-msgid "Take Screenshot"
-msgstr "Bildschirmfoto aufnehmen"
-
-#: ../src/ScreenshotWindow.vala:354 ../src/ScreenshotWindow.vala:427
-msgid "Could not capture screenshot"
-msgstr "Screenshot konnte nicht erfasst werden"
-
-#: ../src/ScreenshotWindow.vala:355
-msgid "Image not saved"
-msgstr "Aufnahme wurde nicht gespeichert"
-
-#: ../src/ScreenshotWindow.vala:428
-msgid "Couldn't find an active window"
-msgstr "Es konnte kein aktives Fenster ermittelt werden"
-
-#: ../src/Screenshot.vala:40
-msgid "Capture active window"
+msgid "Screenshot of the Current Window"
 msgstr ""
 
-#: ../src/Screenshot.vala:41
-msgid "Capture area"
+msgid "Screenshot of a Selected Area"
 msgstr ""
 
-#: ../src/Screenshot.vala:42
-msgid "Capture the whole screen"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Take screenshot after specified delay"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Seconds"
-msgstr ""
-
-#: ../src/Screenshot.vala:44
-msgid "Include the pointer with the screenshot"
-msgstr ""
-
-#: ../src/Screenshot.vala:45
-msgid "Redact system text"
+msgid ""
+"A simple screenshot tool. Capture whole screen shots, selected area shots, "
+"current window shots, and timed shots."
 msgstr ""

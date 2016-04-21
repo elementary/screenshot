@@ -7,140 +7,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-18 19:09-0300\n"
-"PO-Revision-Date: 2016-01-25 18:58+0000\n"
+"POT-Creation-Date: 2016-04-20 11:36+0200\n"
+"PO-Revision-Date: 2016-04-20 18:51+0000\n"
 "Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-20 05:45+0000\n"
+"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
-#: ../src/Widgets/SaveDialog.vala:60
-msgid "Screenshot from "
-msgstr "Снимок экрана от "
-
-#: ../src/Widgets/SaveDialog.vala:85
-msgid "Save Image as…"
-msgstr "Сохранить изображение в..."
-
-#: ../src/Widgets/SaveDialog.vala:89
-msgid "Name:"
-msgstr "Название:"
-
-#: ../src/Widgets/SaveDialog.vala:95
-msgid "Format:"
-msgstr "Формат:"
-
-#: ../src/Widgets/SaveDialog.vala:122
-msgid "Folder:"
-msgstr "Папка:"
-
-#: ../src/Widgets/SaveDialog.vala:124
-msgid "Select Screenshots Folder…"
-msgstr "Выберите папку для скриншотов…"
-
-#: ../src/Widgets/SaveDialog.vala:128
-msgid "Save"
-msgstr "Сохранить"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:180
-msgid "Cancel"
-msgstr "Отменить"
-
-#: ../src/Translations.vala:7 ../src/Screenshot.vala:56
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
-#: ../src/Translations.vala:8 ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Сохранить снимки экрана или индивидуальных окон."
+msgid "Save images of the screen"
+msgstr "Сохранить снимок экрана"
 
-#: ../src/Translations.vala:9
 msgid "Snapshot;Screenshot;"
 msgstr "Snapshot;Screenshot;Снимок экрана;Скриншот"
 
-#: ../src/Translations.vala:10
 msgid "About Screenshot"
 msgstr "О программе"
 
-#: ../src/ScreenshotWindow.vala:109
-msgid "Capture area:"
-msgstr "Область захвата:"
+msgid "Screenshot of the Whole Screen"
+msgstr "Снимок экрана"
 
-#: ../src/ScreenshotWindow.vala:113
-msgid "Properties:"
-msgstr "Параметры:"
+msgid "Screenshot of the Current Window"
+msgstr "Снимок текущего окна"
 
-#: ../src/ScreenshotWindow.vala:120
-msgid "Grab the whole screen"
-msgstr "Захватить весь экран"
+msgid "Screenshot of a Selected Area"
+msgstr "Снимок выбранной области"
 
-#: ../src/ScreenshotWindow.vala:122
-msgid "Grab the current window"
-msgstr "Захватить текущее окно"
-
-#: ../src/ScreenshotWindow.vala:124
-msgid "Select area to grab"
-msgstr "Выбрать область захвата"
-
-#: ../src/ScreenshotWindow.vala:135
-msgid "Grab mouse pointer:"
-msgstr "Захватить указатель:"
-
-#: ../src/ScreenshotWindow.vala:142
-msgid "Close after saving:"
-msgstr "Закрыть после сохранения:"
-
-#: ../src/ScreenshotWindow.vala:149
-msgid "Conceal text:"
+msgid ""
+"A simple screenshot tool. Capture whole screen shots, selected area shots, "
+"current window shots, and timed shots."
 msgstr ""
-
-#: ../src/ScreenshotWindow.vala:156
-msgid "Delay in seconds:"
-msgstr "Задержка в секундах:"
-
-#: ../src/ScreenshotWindow.vala:174
-msgid "Take Screenshot"
-msgstr "Сделать снимок экрана"
-
-#: ../src/ScreenshotWindow.vala:354 ../src/ScreenshotWindow.vala:427
-msgid "Could not capture screenshot"
-msgstr "Не удалось сделать скриншот"
-
-#: ../src/ScreenshotWindow.vala:355
-msgid "Image not saved"
-msgstr "Снимок не сохранён"
-
-#: ../src/ScreenshotWindow.vala:428
-msgid "Couldn't find an active window"
-msgstr "Не удалось найти активное окно"
-
-#: ../src/Screenshot.vala:40
-msgid "Capture active window"
-msgstr ""
-
-#: ../src/Screenshot.vala:41
-msgid "Capture area"
-msgstr ""
-
-#: ../src/Screenshot.vala:42
-msgid "Capture the whole screen"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Take screenshot after specified delay"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Seconds"
-msgstr ""
-
-#: ../src/Screenshot.vala:44
-msgid "Include the pointer with the screenshot"
-msgstr ""
-
-#: ../src/Screenshot.vala:45
-msgid "Redact system text"
-msgstr ""
+"Простой инструмент для создания скриншотов. Скриншоты всего экрана, "
+"выбранной области, текущего окна, а также скриншоты с временной задержкой."

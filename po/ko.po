@@ -7,67 +7,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-18 19:09-0300\n"
-"PO-Revision-Date: 2016-03-22 16:26+0000\n"
+"POT-Creation-Date: 2016-04-20 11:36+0200\n"
+"PO-Revision-Date: 2016-04-20 12:42+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-20 05:45+0000\n"
+"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
-#: ../src/Widgets/SaveDialog.vala:60
-msgid "Screenshot from "
-msgstr "스크린샷 "
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:61
+msgid "Screenshot from %s"
+msgstr "%s에서 스크린샷 찍기"
 
-#: ../src/Widgets/SaveDialog.vala:85
+#: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr "다음 이름으로 이미지 저장하기..."
+msgstr "다음 이름으로 저장하기..."
 
-#: ../src/Widgets/SaveDialog.vala:89
+#: ../src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "이름:"
 
-#: ../src/Widgets/SaveDialog.vala:95
+#: ../src/Widgets/SaveDialog.vala:96
 msgid "Format:"
 msgstr "형식:"
 
-#: ../src/Widgets/SaveDialog.vala:122
+#: ../src/Widgets/SaveDialog.vala:123
 msgid "Folder:"
 msgstr "폴더:"
 
-#: ../src/Widgets/SaveDialog.vala:124
+#: ../src/Widgets/SaveDialog.vala:125
 msgid "Select Screenshots Folder…"
 msgstr "스크린샷 폴더 고르기..."
 
-#: ../src/Widgets/SaveDialog.vala:128
+#: ../src/Widgets/SaveDialog.vala:129
 msgid "Save"
 msgstr "저장"
 
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:180
+#: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
 msgid "Cancel"
 msgstr "취소"
 
-#: ../src/Translations.vala:7 ../src/Screenshot.vala:56
+#: ../src/Screenshot.vala:40
+msgid "Capture active window"
+msgstr "사용 중인 창 찍기"
+
+#: ../src/Screenshot.vala:41
+msgid "Capture area"
+msgstr "선택 영역 찍기"
+
+#: ../src/Screenshot.vala:42
+msgid "Capture the whole screen"
+msgstr "전체 화면 찍기"
+
+#: ../src/Screenshot.vala:43
+msgid "Take screenshot after specified delay"
+msgstr "타임 샷 찍기"
+
+#: ../src/Screenshot.vala:43
+msgid "Seconds"
+msgstr "초"
+
+#: ../src/Screenshot.vala:44
+msgid "Include the pointer with the screenshot"
+msgstr "마우스 포인터 포함"
+
+#: ../src/Screenshot.vala:45
+msgid "Redact system text"
+msgstr "시스템 텍스트 편집"
+
+#: ../src/Screenshot.vala:56
 msgid "Screenshot"
 msgstr "스크린샷"
 
-#: ../src/Translations.vala:8 ../src/Screenshot.vala:72
+#: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
 msgstr "현재 화면이나 각 창들을 이미지로 저장합니다."
 
-#: ../src/Translations.vala:9
-msgid "Snapshot;Screenshot;"
-msgstr "스냅샷;스크린샷;"
-
-#: ../src/Translations.vala:10
-msgid "About Screenshot"
-msgstr "스크린샷 정보"
-
 #: ../src/ScreenshotWindow.vala:109
 msgid "Capture area:"
-msgstr "캡처할 영역:"
+msgstr "찍을 영역:"
 
 #: ../src/ScreenshotWindow.vala:113
 msgid "Properties:"
@@ -87,7 +108,7 @@ msgstr "찍을 영역 선택"
 
 #: ../src/ScreenshotWindow.vala:135
 msgid "Grab mouse pointer:"
-msgstr "마우스 포인터 포함하기:"
+msgstr "마우스 포인터 포함:"
 
 #: ../src/ScreenshotWindow.vala:142
 msgid "Close after saving:"
@@ -95,7 +116,7 @@ msgstr "저장하고 닫기:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr ""
+msgstr "텍스트 숨김:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
@@ -115,32 +136,4 @@ msgstr "이미지 저장되지 않음"
 
 #: ../src/ScreenshotWindow.vala:428
 msgid "Couldn't find an active window"
-msgstr "사용 중인 창을 찾을 수 없습니다"
-
-#: ../src/Screenshot.vala:40
-msgid "Capture active window"
-msgstr ""
-
-#: ../src/Screenshot.vala:41
-msgid "Capture area"
-msgstr ""
-
-#: ../src/Screenshot.vala:42
-msgid "Capture the whole screen"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Take screenshot after specified delay"
-msgstr ""
-
-#: ../src/Screenshot.vala:43
-msgid "Seconds"
-msgstr ""
-
-#: ../src/Screenshot.vala:44
-msgid "Include the pointer with the screenshot"
-msgstr ""
-
-#: ../src/Screenshot.vala:45
-msgid "Redact system text"
-msgstr ""
+msgstr "사용 중인 창이 없습니다"
