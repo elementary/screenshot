@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-20 11:36+0200\n"
-"PO-Revision-Date: 2016-04-20 18:55+0000\n"
+"PO-Revision-Date: 2016-04-27 09:21+0000\n"
 "Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
+"X-Launchpad-Export-Date: 2016-04-28 06:02+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
@@ -116,7 +116,7 @@ msgstr "Закрыть после сохранения:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr "Скрывать текст:"
+msgstr "Скрыть текст:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
