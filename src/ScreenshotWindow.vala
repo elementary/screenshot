@@ -341,7 +341,14 @@ namespace Screenshot {
                 save_dialog.destroy ();
 
                 if (response == true) {
-                    string file_name = Path.build_filename (folder_dir, output_name + "." + format);
+                    string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
+                    string output = output_name;                    
+
+                    foreach (string type in formats) {
+                        output = output.replace (type, "");
+                    }
+
+                    string file_name = Path.build_filename (folder_dir, output + "." + format);
 
                     try {
                         screenshot.save (file_name, format);
