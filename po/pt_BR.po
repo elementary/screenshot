@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-20 11:36+0200\n"
-"PO-Revision-Date: 2016-02-11 17:56+0000\n"
-"Last-Translator: Arthur Bergamaschi <arthurbergmz@gmail.com>\n"
+"PO-Revision-Date: 2016-05-09 15:41+0000\n"
+"Last-Translator: Leonardo Lemos <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-05-10 05:51+0000\n"
+"X-Generator: Launchpad (build 18025)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Captura de tela de %s"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
@@ -52,31 +52,31 @@ msgstr "Cancelar"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Captura da janela atual"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Área de captura"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Capturar a tela inteira"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Capturar a tela após um tempo especifico"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Segundos"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Incluir o cursor na captura de tela"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
-msgstr ""
+msgstr "Remover textos do sistema"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
@@ -116,7 +116,7 @@ msgstr "Fechar após salvar:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr ""
+msgstr "Ocultar texto:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
