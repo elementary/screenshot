@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-20 11:36+0200\n"
-"PO-Revision-Date: 2016-05-15 18:38+0000\n"
+"PO-Revision-Date: 2016-05-16 15:52+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-16 06:00+0000\n"
+"X-Launchpad-Export-Date: 2016-05-17 06:02+0000\n"
 "X-Generator: Launchpad (build 18025)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
@@ -96,15 +96,15 @@ msgstr "속성:"
 
 #: ../src/ScreenshotWindow.vala:120
 msgid "Grab the whole screen"
-msgstr "전체 화면 찍기"
+msgstr "전체 화면"
 
 #: ../src/ScreenshotWindow.vala:122
 msgid "Grab the current window"
-msgstr "현재 창 찍기"
+msgstr "현재 창"
 
 #: ../src/ScreenshotWindow.vala:124
 msgid "Select area to grab"
-msgstr "선택 범위 찍기"
+msgstr "사용자 지정"
 
 #: ../src/ScreenshotWindow.vala:135
 msgid "Grab mouse pointer:"
@@ -120,7 +120,7 @@ msgstr "텍스트 숨김:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
-msgstr "타이머 설정하기, 단위 초:"
+msgstr "타이머 설정:"
 
 #: ../src/ScreenshotWindow.vala:174
 msgid "Take Screenshot"
