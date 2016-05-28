@@ -70,7 +70,7 @@ namespace Screenshot {
             about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
             about_artists = {"Fabio Zaramella"};
             about_comments = _("Save images of your screen or individual windows.");
-            about_translators = "";
+            about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
         }
 
