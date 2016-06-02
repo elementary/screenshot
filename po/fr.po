@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-20 11:36+0200\n"
-"PO-Revision-Date: 2016-04-20 09:46+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"POT-Creation-Date: 2016-05-28 23:24+0400\n"
+"PO-Revision-Date: 2016-06-01 15:21+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-21 05:48+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-06-02 06:23+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
@@ -49,42 +49,6 @@ msgstr "Enregistrer"
 #: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
 msgid "Cancel"
 msgstr "Annuler"
-
-#: ../src/Screenshot.vala:40
-msgid "Capture active window"
-msgstr "Capturer la fenêtre actuelle"
-
-#: ../src/Screenshot.vala:41
-msgid "Capture area"
-msgstr "Capturer une zone"
-
-#: ../src/Screenshot.vala:42
-msgid "Capture the whole screen"
-msgstr "Capturer l'écran en entier"
-
-#: ../src/Screenshot.vala:43
-msgid "Take screenshot after specified delay"
-msgstr "Prendre une capture avec retardateur"
-
-#: ../src/Screenshot.vala:43
-msgid "Seconds"
-msgstr "Secondes"
-
-#: ../src/Screenshot.vala:44
-msgid "Include the pointer with the screenshot"
-msgstr "Inclure le pointeur dans la capture d'écran"
-
-#: ../src/Screenshot.vala:45
-msgid "Redact system text"
-msgstr ""
-
-#: ../src/Screenshot.vala:56
-msgid "Screenshot"
-msgstr "Capture d'écran"
-
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Enregistrer des images de l'écran ou une simple fenêtre."
 
 #: ../src/ScreenshotWindow.vala:109
 msgid "Capture area:"
@@ -126,14 +90,59 @@ msgstr "Délais (en secondes) :"
 msgid "Take Screenshot"
 msgstr "Réaliser la capture d'écran"
 
-#: ../src/ScreenshotWindow.vala:354 ../src/ScreenshotWindow.vala:427
+#: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
 msgstr "Impossible d'effectuer la capture d'écran"
 
-#: ../src/ScreenshotWindow.vala:355
+#: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
 msgstr "Image non-enregistrée"
 
-#: ../src/ScreenshotWindow.vala:428
+#: ../src/ScreenshotWindow.vala:435
 msgid "Couldn't find an active window"
 msgstr "Impossible de trouver une fenêtre active"
+
+#: ../src/Screenshot.vala:40
+msgid "Capture active window"
+msgstr "Capturer la fenêtre actuelle"
+
+#: ../src/Screenshot.vala:41
+msgid "Capture area"
+msgstr "Capturer une zone"
+
+#: ../src/Screenshot.vala:42
+msgid "Capture the whole screen"
+msgstr "Capturer l'écran en entier"
+
+#: ../src/Screenshot.vala:43
+msgid "Take screenshot after specified delay"
+msgstr "Prendre une capture avec retardateur"
+
+#: ../src/Screenshot.vala:43
+msgid "Seconds"
+msgstr "Secondes"
+
+#: ../src/Screenshot.vala:44
+msgid "Include the pointer with the screenshot"
+msgstr "Inclure le pointeur dans la capture d'écran"
+
+#: ../src/Screenshot.vala:45
+msgid "Redact system text"
+msgstr ""
+
+#: ../src/Screenshot.vala:56
+msgid "Screenshot"
+msgstr "Capture d'écran"
+
+#: ../src/Screenshot.vala:72
+msgid "Save images of your screen or individual windows."
+msgstr "Enregistrer des images de l'écran ou une simple fenêtre."
+
+#: ../src/Screenshot.vala:73
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Anthony https://launchpad.net/~toto33500\n"
+"  Corentin Noël https://launchpad.net/~tintou\n"
+"  EpicKiwi https://launchpad.net/~lelycandu76\n"
+"  chilledfrogs https://launchpad.net/~chilledfrogs"
