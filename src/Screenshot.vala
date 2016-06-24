@@ -58,7 +58,7 @@ namespace Screenshot {
 
             app_years = "2014-2016";
             application_id = "net.launchpad.screenshot";
-            app_icon = "applets-screenshooter";
+            app_icon = "accessories-screenshot";
             app_launcher = "screenshot.desktop";
 
             main_url = "https://launchpad.net/screenshot-tool";
