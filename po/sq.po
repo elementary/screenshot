@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2016-06-29 14:08+0000\n"
+"Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-02 06:23+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-06-30 05:55+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr ""
+msgstr "Ruaje imazhin si…"
 
 #: ../src/Widgets/SaveDialog.vala:90
 msgid "Name:"
-msgstr ""
+msgstr "Emri:"
 
 #: ../src/Widgets/SaveDialog.vala:96
 msgid "Format:"
-msgstr ""
+msgstr "Formati:"
 
 #: ../src/Widgets/SaveDialog.vala:123
 msgid "Folder:"
-msgstr ""
+msgstr "Dosja:"
 
 #: ../src/Widgets/SaveDialog.vala:125
 msgid "Select Screenshots Folder…"
@@ -39,31 +39,31 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Save"
-msgstr ""
+msgstr "Ruaj"
 
 #: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 #: ../src/ScreenshotWindow.vala:109
 msgid "Capture area:"
-msgstr ""
+msgstr "Zona e kapjes:"
 
 #: ../src/ScreenshotWindow.vala:113
 msgid "Properties:"
-msgstr ""
+msgstr "Vetitë:"
 
 #: ../src/ScreenshotWindow.vala:120
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Merr të tërë ekranin"
 
 #: ../src/ScreenshotWindow.vala:122
 msgid "Grab the current window"
-msgstr ""
+msgstr "Merr dritaren aktuale"
 
 #: ../src/ScreenshotWindow.vala:124
 msgid "Select area to grab"
-msgstr ""
+msgstr "Zgjidh zonën e kapjes"
 
 #: ../src/ScreenshotWindow.vala:135
 msgid "Grab mouse pointer:"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:142
 msgid "Close after saving:"
-msgstr ""
+msgstr "Mbyll pas ruajtjes:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "Vonesa në sekonda:"
 
 #: ../src/ScreenshotWindow.vala:174
 msgid "Take Screenshot"
@@ -91,23 +91,23 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
-msgstr ""
+msgstr "Imazhi nuk u ruajt"
 
 #: ../src/ScreenshotWindow.vala:435
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "Nuk u gjetën dritare aktive"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Kap dritaren aktive"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Zona e kapjes"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Kap të tërë ekranin"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Sekonda"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
@@ -136,3 +136,5 @@ msgstr ""
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Indrit Bashkimi https://launchpad.net/~indritbsh"
