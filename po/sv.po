@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-06-03 16:45+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
+"PO-Revision-Date: 2016-07-22 14:33+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-04 06:07+0000\n"
-"X-Generator: Launchpad (build 18086)\n"
+"X-Launchpad-Export-Date: 2016-07-23 05:51+0000\n"
+"X-Generator: Launchpad (build 18147)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Skärmdump från %s"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr ""
+msgstr "Spara bild som…"
 
 #: ../src/Widgets/SaveDialog.vala:90
 msgid "Name:"
@@ -56,7 +56,7 @@ msgstr "Område att fånga:"
 
 #: ../src/ScreenshotWindow.vala:113
 msgid "Properties:"
-msgstr ""
+msgstr "Egenskaper:"
 
 #: ../src/ScreenshotWindow.vala:120
 msgid "Grab the whole screen"
@@ -80,7 +80,7 @@ msgstr "Stäng när bilden sparats:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr ""
+msgstr "Dölj text:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
@@ -92,7 +92,7 @@ msgstr "Ta skärmbild"
 
 #: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "kunde inte ta skärmdump"
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
@@ -104,31 +104,31 @@ msgstr "Kunde inte hitta aktuellt fönster"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Fånga aktuellt fönster"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Fånga område"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Fånga hela skärmen"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Ta skärmdump efter angiven fördröjning"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunder"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Inkludera markören i skärmdumpen"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
-msgstr ""
+msgstr "Redigera bort systemtext"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
