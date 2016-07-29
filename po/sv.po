@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-07-22 14:33+0000\n"
+"PO-Revision-Date: 2016-07-28 19:39+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-23 05:51+0000\n"
-"X-Generator: Launchpad (build 18147)\n"
+"X-Launchpad-Export-Date: 2016-07-29 06:03+0000\n"
+"X-Generator: Launchpad (build 18153)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr "Skärmdump från %s"
+msgstr "Skärmbild från %s"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
@@ -92,7 +92,7 @@ msgstr "Ta skärmbild"
 
 #: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
-msgstr "kunde inte ta skärmdump"
+msgstr "kunde inte ta skärmbild"
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
@@ -116,7 +116,7 @@ msgstr "Fånga hela skärmen"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr "Ta skärmdump efter angiven fördröjning"
+msgstr "Ta skärmbild efter angiven fördröjning"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
@@ -124,7 +124,7 @@ msgstr "Sekunder"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr "Inkludera markören i skärmdumpen"
+msgstr "Inkludera markören i skärmbilden"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
