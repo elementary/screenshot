@@ -151,7 +151,7 @@ namespace Screenshot.Widgets {
             location.selection_changed.connect (() => {
                 SList<string> uris = location.get_uris ();
                 foreach (unowned string uri in uris) {
-                    settings.set_string ("folder-dir", uri.substring (7, -1));
+                    settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
                     folder_dir = settings.get_string ("folder-dir");
                 }
             });
