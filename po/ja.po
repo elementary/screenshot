@@ -3,19 +3,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-08-02 01:27+0000\n"
+"PO-Revision-Date: 2016-08-03 05:28+0000\n"
 "Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:03+0000\n"
+"X-Launchpad-Export-Date: 2016-08-03 05:58+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr "Screenshot from %s"
+msgstr "%s からのスクリーンショット"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
@@ -31,11 +31,11 @@ msgstr "フォーマット:"
 
 #: ../src/Widgets/SaveDialog.vala:123
 msgid "Folder:"
-msgstr "フォルダ:"
+msgstr "フォルダー:"
 
 #: ../src/Widgets/SaveDialog.vala:125
 msgid "Select Screenshots Folder…"
-msgstr "スクリーンショットフォルダを選択..."
+msgstr "スクリーンショットフォルダーを選択..."
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Save"
@@ -51,7 +51,7 @@ msgstr "キャプチャーの範囲:"
 
 #: ../src/ScreenshotWindow.vala:113
 msgid "Properties:"
-msgstr "プロパティー:"
+msgstr "プロパティ:"
 
 #: ../src/ScreenshotWindow.vala:120
 msgid "Grab the whole screen"
@@ -87,7 +87,7 @@ msgstr "スクリーンショットを撮る"
 
 #: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "スクリーンショットを撮る事ができませんでした"
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
@@ -137,4 +137,5 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) https://launchpad.net/~balloon"
+"  BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) https://launchpad.net/~balloon\n"
+"  Fabio Zaramella https://launchpad.net/~fabiozaramella"
