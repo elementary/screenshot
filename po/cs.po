@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-06-03 16:45+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
+"PO-Revision-Date: 2016-08-06 21:35+0000\n"
+"Last-Translator: Marek Suchánek <suchm@seznam.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-04 06:06+0000\n"
-"X-Generator: Launchpad (build 18086)\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:47+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Snímek z %s"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
@@ -80,7 +80,7 @@ msgstr "Zavřít po uložení:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr ""
+msgstr "Skrýt text:"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
@@ -92,7 +92,7 @@ msgstr "Zachytit snímek obrazovky"
 
 #: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Snímek obrazovky nemohl být pořízen"
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
@@ -104,27 +104,27 @@ msgstr "Nelze najít žádné aktivní okno"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Zachytit aktivní okno"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Zachytit oblast"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Zachytit celou obrazovku"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Pořídit snímek po stanovené prodlevě"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Sekund"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Zahrnout do snímku obrazovky kurzor myši"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
@@ -143,4 +143,5 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
+"  Marek Suchánek https://launchpad.net/~suchm\n"
 "  Petr Dombek https://launchpad.net/~dombek"
