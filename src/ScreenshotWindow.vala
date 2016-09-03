@@ -47,9 +47,6 @@ namespace Screenshot {
         private bool redact;
         private int delay;
 
-        private Screenshot.Widgets.SelectionArea    selection_area;
-        private Screenshot.Widgets.SaveDialog       save_dialog;
-
         /**
          *  ScreenshotWindow Constructor
          */
@@ -189,33 +186,15 @@ namespace Screenshot {
              */
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
-
-                if (selection_area != null) {
-                    selection_area.destroy ();
-                    selection_area = null;
-                }
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
-
-                if (selection_area != null) {
-                    selection_area.destroy ();
-                    selection_area = null;
-                }
             });
 
             selection.toggled.connect (() => {
                 capture_mode = CaptureType.AREA;
-
-                if (selection_area == null) {
-                    selection_area = new Screenshot.Widgets.SelectionArea ();
-				    selection_area.show_all ();
-                } else
-                    selection_area.present ();
-
-                set_transient_for (selection_area);
-                present();
+                present ();
             });
 
             pointer_switch.notify["active"].connect (() => {
@@ -241,84 +220,69 @@ namespace Screenshot {
             take_btn.clicked.connect (take_clicked);
             cancel_btn.clicked.connect (cancel_clicked);
 
-            focus_in_event.connect (() => {
-                if (selection_area != null && selection_area.is_visible ()) {
-                    selection_area.present ();
-                    this.present ();
-                } else {
-                    this.present ();
-                }
-
-                return false;
-            });
-
             // Pack the main grid into the window
             Gtk.Box content = get_content_area () as Gtk.Box;
             content.add (grid);
         }
 
-        private bool grab_save (Gdk.Window win, bool extra_time) {
+        private bool grab_save (Gdk.Window? win, bool extra_time) {
             if (extra_time) {
                 redact_text (true);
-                Timeout.add (1000, () => {
-                    grab_save (win, false);
-                    return false;
+                Timeout.add_seconds (1, () => {
+                    return grab_save (win, false);
                 });
 
                 return false;
             }
 
-            Timeout.add (250, () => {
-                selection_area.set_opacity (1);
-                this.set_opacity (1);
-                return false;
-            });
+            var win_rect = Gdk.Rectangle ();
+            var root = Gdk.get_default_root_window ();
 
-            Gdk.Pixbuf      screenshot;
-            Gdk.Rectangle   win_rect;
-            int             width, height;
+            if (win == null) {
+                win = root;  
+            }
 
-            win_rect = Gdk.Rectangle ();
-
-            width = win.get_width ();
-            height = win.get_height ();
-
-            screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
-
-            win_rect.x = 0;
-            win_rect.y = 0;
-            win_rect.width = width;
-            win_rect.height = height;
-
+            Gdk.Pixbuf? screenshot;
             if (capture_mode == CaptureType.AREA) {
+                Gdk.Rectangle selection_rect;
+                win.get_frame_extents (out selection_rect);
 
-                screenshot = new Gdk.Pixbuf.subpixbuf (screenshot, selection_area.x, selection_area.y, selection_area.w, selection_area.h);
+                screenshot = new Gdk.Pixbuf.subpixbuf (Gdk.pixbuf_get_from_window (root, 0, 0, root.get_width (), root.get_height ()),
+                                                    selection_rect.x, selection_rect.y, selection_rect.width, selection_rect.height);
 
-                win_rect.x = selection_area.x;
-                win_rect.y = selection_area.y;
-                win_rect.width = selection_area.w;
-                win_rect.height = selection_area.h;
+                win_rect.x = selection_rect.x;
+                win_rect.y = selection_rect.y;
+                win_rect.width = selection_rect.width;
+                win_rect.height = selection_rect.height;
+            } else {
+                int width = win.get_width ();
+                int height = win.get_height ();
+
+                screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+
+                win_rect.x = 0;
+                win_rect.y = 0;
+                win_rect.width = width;
+                win_rect.height = height;
+            }
+
+            if (screenshot == null) {
+                show_error_dialog ();
+                return false;
             }
 
             if (mouse_pointer) {
-
-                Gdk.Cursor      cursor;
-                Gdk.Pixbuf      cursor_pixbuf;
-
-                cursor = new Gdk.Cursor.for_display (Gdk.Display.get_default (), Gdk.CursorType.LEFT_PTR);
-                cursor_pixbuf = cursor.get_image ();
+                var cursor = new Gdk.Cursor.for_display (Gdk.Display.get_default (), Gdk.CursorType.LEFT_PTR);
+                var cursor_pixbuf = cursor.get_image ();
 
                 if (cursor_pixbuf != null) {
+                    var manager = Gdk.Display.get_default ().get_device_manager ();
+                    var device = manager.get_client_pointer ();
 
-                    Gdk.DeviceManager   manager;
-                    Gdk.Device          device;
-                    Gdk.Rectangle       cursor_rect;
-                    int                 cx, cy;
-
-                    manager = Gdk.Display.get_default ().get_device_manager ();
-                    device = manager.get_client_pointer ();
+                    int cx, cy;
                     win.get_device_position (device, out cx, out cy, null);
-                    cursor_rect = Gdk.Rectangle ();
+
+                    var cursor_rect = Gdk.Rectangle ();
 
                     cursor_rect.x = cx + win_rect.x;
                     cursor_rect.y = cy + win_rect.y;
@@ -335,12 +299,11 @@ namespace Screenshot {
                 redact_text (false);
             }
 
-            save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
-
+            var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.destroy ();
 
-                if (response == true) {
+                if (response) {
                     string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
                     string output = output_name;                    
 
@@ -353,16 +316,11 @@ namespace Screenshot {
                     try {
                         screenshot.save (file_name, format);
 
-                        if (close_on_save == true) {
+                        if (close_on_save) {
                             this.destroy ();
                         }
                     } catch (GLib.Error e) {
-                        Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                            Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
-                        dialog.secondary_text = _("Image not saved");
-                        dialog.deletable = false;
-                        dialog.run ();
-                        dialog.destroy ();
+                        show_error_dialog ();
                         debug (e.message);
                     }
                 }
@@ -375,6 +333,8 @@ namespace Screenshot {
             save_dialog.close.connect (() => {
                 this.destroy ();
             });
+
+            save_dialog.show_all ();
 
             return false;
         }
@@ -394,18 +354,12 @@ namespace Screenshot {
         }
 
         private void capture_screen () {
-            Gdk.Window win = null;
-
-            win = Gdk.get_default_root_window();
-
-            this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
-                this.present ();
-                grab_save (win, redact);
-                return false;
-            });
 
+            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+                this.present ();
+                return grab_save (null, redact);
+            });
         }
 
         private void capture_window () {
@@ -415,9 +369,8 @@ namespace Screenshot {
 
             screen = Gdk.Screen.get_default ();
 
-            this.set_opacity (0);
             this.hide ();
-            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
+            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -427,17 +380,15 @@ namespace Screenshot {
 
                 this.present ();
 
-                if (win != null)
+                if (win != null) {
                     grab_save (win, redact);
-                else {
+                } else {
                     Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                    Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
+                                                                    Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
                     dialog.secondary_text = _("Couldn't find an active window");
                     dialog.deletable = false;
                     dialog.run ();
                     dialog.destroy ();
-
-                    this.set_opacity (1);
                 }
 
                 return false;
@@ -445,22 +396,37 @@ namespace Screenshot {
         }
 
         private void capture_area () {
-            Gdk.Window win = null;
-
-            win = Gdk.get_default_root_window();
-
-            selection_area.set_opacity (0);
-            selection_area.hide ();
-            this.set_opacity (0);
+            var selection_area = new Screenshot.Widgets.SelectionArea ();
+            selection_area.show_all ();
             this.hide ();
 
-            Timeout.add (delay * 1000 - (redact? 1000 : 0), () => {
-                this.present ();
-                selection_area.present ();
-                grab_save (win, redact);
-
-                return false;
+            selection_area.cancelled.connect (() => {
+                selection_area.close ();
+                if (close_on_save) {
+                    this.destroy ();
+                } else {
+                    this.present ();
+                }
             });
+
+            var win = selection_area.get_window ();
+
+            selection_area.captured.connect (() => {
+                selection_area.close ();
+                Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+                    this.present ();
+                    return grab_save (win, redact);
+                });
+            });
+        }
+
+        private void show_error_dialog () {
+            var dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                                Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
+            dialog.secondary_text = _("Image not saved");
+            dialog.deletable = false;
+            dialog.run ();
+            dialog.destroy ();
         }
 
         private void redact_text (bool redact) {

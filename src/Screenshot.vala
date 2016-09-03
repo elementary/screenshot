@@ -142,13 +142,7 @@ namespace Screenshot {
             } else {
                 window = new ScreenshotWindow.from_cmd (action, delay, grab_pointer, redact);
                 window.set_application (this);
-                window.show_all ();
-
-                if (action != 3) {
-                    window.take_clicked ();
-                } else {
-                    window.present ();
-                }
+                window.take_clicked ();
             }
 
             return 0;
