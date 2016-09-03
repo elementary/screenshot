@@ -50,7 +50,6 @@ namespace Screenshot.Widgets {
                 folder_dir = settings.get_string ("folder-dir");
 
             build (pixbuf, settings, parent);
-            show_all ();
             name_entry.grab_focus ();
         }
 
