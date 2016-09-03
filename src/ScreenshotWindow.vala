@@ -402,7 +402,11 @@ namespace Screenshot {
 
             selection_area.cancelled.connect (() => {
                 selection_area.close ();
-                this.present ();
+                if (close_on_save) {
+                    this.destroy ();
+                } else {
+                    this.present ();
+                }
             });
 
             var win = selection_area.get_window ();
