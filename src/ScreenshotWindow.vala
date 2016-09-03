@@ -395,7 +395,7 @@ namespace Screenshot {
             });
         }
 
-        private void capture_area () {
+        public void capture_area () {
             var selection_area = new Screenshot.Widgets.SelectionArea ();
             selection_area.show_all ();
             this.hide ();

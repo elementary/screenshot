@@ -144,11 +144,7 @@ namespace Screenshot {
                 window.set_application (this);
                 window.show_all ();
 
-                if (action != 3) {
-                    window.take_clicked ();
-                } else {
-                    window.present ();
-                }
+                window.take_clicked ();
             }
 
             return 0;
