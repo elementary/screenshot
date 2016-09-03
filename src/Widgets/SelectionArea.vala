@@ -40,62 +40,61 @@ namespace Screenshot.Widgets {
 
             var screen = get_screen ();
             set_default_size (screen.get_width (), screen.get_height ());
-            add_events (Gdk.EventMask.POINTER_MOTION_MASK | Gdk.EventMask.KEY_PRESS_MASK);
+        }
 
-            button_press_event.connect ((e) => {
-                if (dragging || e.button != 1) {
-                    return true;
-                }
-
-                dragging = true;
-
-                start_point.x = (int)e.x_root;
-                start_point.y = (int)e.y_root;
-
+        public override bool button_press_event (Gdk.EventButton e) {
+            if (dragging || e.button != 1) {
                 return true;
-            });
+            }
 
-            button_release_event.connect ((e) => {
-                if (!dragging || e.button != 1) {
-                    return true;
-                }
+            dragging = true;
 
-                dragging = false;
-                captured ();
+            start_point.x = (int)e.x_root;
+            start_point.y = (int)e.y_root;
 
+            return true;            
+        }
+
+        public override bool button_release_event (Gdk.EventButton e) {
+            if (!dragging || e.button != 1) {
                 return true;
-            });
+            }
 
-            motion_notify_event.connect ((e) => {
-                if (!dragging) {
-                    return true;
-                }
+            dragging = false;
+            captured ();
 
-                int x = start_point.x;
-                int y = start_point.y;
+            return true;            
+        }
 
-                int width = (x - (int)e.x_root).abs ();
-                int height = (y - (int)e.y_root).abs ();
-                if (width < 1 || height < 1) {
-                    return true;
-                }
-
-                x = int.min (x, (int)e.x_root);
-                y = int.min (y, (int)e.y_root);
-
-                move (x, y);
-                resize (width, height);
-
+        public override bool motion_notify_event (Gdk.EventMotion e) {
+            if (!dragging) {
                 return true;
-            });
+            }
 
-            key_press_event.connect ((e) => {
-                if (e.keyval == Gdk.Key.Escape) {
-                    cancelled ();
-                }
+            int x = start_point.x;
+            int y = start_point.y;
 
+            int width = (x - (int)e.x_root).abs ();
+            int height = (y - (int)e.y_root).abs ();
+            if (width < 1 || height < 1) {
                 return true;
-            });
+            }
+
+            x = int.min (x, (int)e.x_root);
+            y = int.min (y, (int)e.y_root);
+
+            move (x, y);
+            resize (width, height);
+
+            return true;            
+        }
+
+        public override bool key_press_event (Gdk.EventKey e) {
+            if (e.keyval == Gdk.Key.Escape) {
+                cancelled ();
+            }
+
+            return true;            
         }
 
         public override void show_all () {
@@ -105,20 +104,28 @@ namespace Screenshot.Widgets {
             var keyboard = pointer.get_associated_device ();
             var window = get_window ();
 
-            pointer.grab (window,
+            var status = pointer.grab (window,
                         Gdk.GrabOwnership.NONE,
                         false,
                         Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK | Gdk.EventMask.POINTER_MOTION_MASK,
                         new Gdk.Cursor.for_display (window.get_display (), Gdk.CursorType.CROSSHAIR),
                         Gtk.get_current_event_time ());
 
+            if (status != Gdk.GrabStatus.SUCCESS) {
+                pointer.ungrab (Gtk.get_current_event_time ());
+            }
+
             if (keyboard != null) {
-                keyboard.grab (window,
+                status = keyboard.grab (window,
                         Gdk.GrabOwnership.NONE,
                         false,
                         Gdk.EventMask.KEY_PRESS_MASK,
                         null,
                         Gtk.get_current_event_time ());
+
+                if (status != Gdk.GrabStatus.SUCCESS) {
+                    keyboard.ungrab (Gtk.get_current_event_time ());
+                }                
             }
         }
 
