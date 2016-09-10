@@ -235,6 +235,11 @@ namespace Screenshot {
                 return false;
             }
 
+            Timeout.add (250, () => {
+                this.set_opacity (1);
+                return false;
+            });
+
             var win_rect = Gdk.Rectangle ();
             var root = Gdk.get_default_root_window ();
 
@@ -340,6 +345,7 @@ namespace Screenshot {
         }
 
         public void take_clicked () {
+            this.set_opacity (0);
             switch (capture_mode) {
                 case CaptureType.SCREEN:
                     capture_screen ();
