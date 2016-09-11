@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-02 06:23+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-09-11 06:16+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
@@ -136,3 +136,5 @@ msgstr ""
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Dono https://launchpad.net/~laszlo-bence-27"
