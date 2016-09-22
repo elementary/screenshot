@@ -3,131 +3,131 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-28 23:24+0400\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2016-09-21 19:31+0000\n"
+"Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-11 06:17+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-09-22 08:57+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:61
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "سکرین شاٹ بتاریخ %s"
 
 #: ../src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr ""
+msgstr "تصویر محفوظ کریں بنام۔۔۔"
 
 #: ../src/Widgets/SaveDialog.vala:90
 msgid "Name:"
-msgstr ""
+msgstr "نام:"
 
 #: ../src/Widgets/SaveDialog.vala:96
 msgid "Format:"
-msgstr ""
+msgstr "فارمیٹ:"
 
 #: ../src/Widgets/SaveDialog.vala:123
 msgid "Folder:"
-msgstr ""
+msgstr "فولڈر:"
 
 #: ../src/Widgets/SaveDialog.vala:125
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "سکریں شاٹ فولڈر منتخب کریں۔۔۔"
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Save"
-msgstr ""
+msgstr "محفوظ کریں"
 
 #: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
 msgid "Cancel"
-msgstr ""
+msgstr "منسوخ کریں"
 
 #: ../src/ScreenshotWindow.vala:109
 msgid "Capture area:"
-msgstr ""
+msgstr "کیپچر کرنے کے لیے رکبہ:"
 
 #: ../src/ScreenshotWindow.vala:113
 msgid "Properties:"
-msgstr ""
+msgstr "خصوصیات"
 
 #: ../src/ScreenshotWindow.vala:120
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "مکمل سکرین کی تصویر لیں"
 
 #: ../src/ScreenshotWindow.vala:122
 msgid "Grab the current window"
-msgstr ""
+msgstr "موجودہ ونڈو کی تصویر لیں"
 
 #: ../src/ScreenshotWindow.vala:124
 msgid "Select area to grab"
-msgstr ""
+msgstr "تصویر لینے کے لیے رکبہ چنیں"
 
 #: ../src/ScreenshotWindow.vala:135
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "ماوٗس پوائنٹر کو پکڑے:"
 
 #: ../src/ScreenshotWindow.vala:142
 msgid "Close after saving:"
-msgstr ""
+msgstr "محفوظ کرنے کے بعد بند:"
 
 #: ../src/ScreenshotWindow.vala:149
 msgid "Conceal text:"
-msgstr ""
+msgstr "متن پوشیدہ کریں"
 
 #: ../src/ScreenshotWindow.vala:156
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "سیکنڈوں میں تاخیر"
 
 #: ../src/ScreenshotWindow.vala:174
 msgid "Take Screenshot"
-msgstr ""
+msgstr "سکرین شاٹ لیں"
 
 #: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "سکرین شاٹ نہیں لے سکا"
 
 #: ../src/ScreenshotWindow.vala:362
 msgid "Image not saved"
-msgstr ""
+msgstr "تصویر محفوظ نہیں ہوئی"
 
 #: ../src/ScreenshotWindow.vala:435
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "کوئی ایکٹیو ونڈو نہیں ملی"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "ایکٹیو ونڈو کی تصویر لیں"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "کچھ رکبے کی تصویر لیں"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "مکمل سکرین کی تصویر لیں"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "بتائی گئی تاخیر کے بعد سکرین شاٹ لیں"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "سیکنڈ"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "ماؤس پوائینٹر کو سکرین شاٹ میں شامل کریں"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
-msgstr ""
+msgstr "سسٹم متن کو کالا کریں پوشیدہ کرنے کے لیے"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr ""
+msgstr "سکرین شاٹ"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
@@ -136,3 +136,5 @@ msgstr ""
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Waqar Ahmed https://launchpad.net/~waqar-17a"
