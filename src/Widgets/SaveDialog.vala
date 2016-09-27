@@ -131,8 +131,8 @@ namespace Screenshot.Widgets {
 
             Gtk.Box actions = get_action_area () as Gtk.Box;
             actions.margin_top = 12;
-            actions.add (retry_btn);
             actions.add (clipboard_btn);
+            actions.add (retry_btn);
             actions.add (save_btn);
 
             save_btn.clicked.connect (() => {
