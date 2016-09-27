@@ -244,7 +244,7 @@ namespace Screenshot {
             var root = Gdk.get_default_root_window ();
 
             if (win == null) {
-                win = root;  
+                win = root;
             }
 
             Gdk.Pixbuf? screenshot;
@@ -310,7 +310,7 @@ namespace Screenshot {
 
                 if (response) {
                     string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
-                    string output = output_name;                    
+                    string output = output_name;
 
                     foreach (string type in formats) {
                         output = output.replace (type, "");
@@ -336,7 +336,9 @@ namespace Screenshot {
             });
 
             save_dialog.close.connect (() => {
-                this.destroy ();
+                if (close_on_save) {
+                    this.destroy ();
+                }
             });
 
             save_dialog.show_all ();
