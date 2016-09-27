@@ -28,6 +28,7 @@ namespace Screenshot.Widgets {
         private Gtk.ComboBoxText    format_cmb;
         private Gtk.Button          save_btn;
         private Gtk.Button          retry_btn;
+        private Gtk.Button          clipboard_btn;
 
         private string  file_name;
         private string  date_time;
@@ -124,16 +125,23 @@ namespace Screenshot.Widgets {
 
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
+            clipboard_btn = new Gtk.Button.with_label (_("Clipboard"));
 
             save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             Gtk.Box actions = get_action_area () as Gtk.Box;
             actions.margin_top = 12;
             actions.add (retry_btn);
+            actions.add (clipboard_btn);
             actions.add (save_btn);
 
             save_btn.clicked.connect (() => {
                 save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
+            });
+
+            clipboard_btn.clicked.connect (() => {
+                 Gtk.Clipboard.get_default (this.get_display ()).set_image (pixbuf);
+                 this.close ();
             });
 
             retry_btn.clicked.connect (() => {
