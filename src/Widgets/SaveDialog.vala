@@ -70,13 +70,13 @@ namespace Screenshot.Widgets {
 
             int width = pixbuf.get_width () / 4;
             int height = pixbuf.get_height () / 4;
-            if (pixbuf.get_width () > Gdk.Screen.width () / 2) {
+            if (pixbuf.get_width () > Gdk.Screen.width () / 2 || pixbuf.get_height () > Gdk.Screen.height () / 2) {
                 width /= 2;
-            }
-
-            if (pixbuf.get_height () > Gdk.Screen.height () / 2) {
                 height /= 2;
             }
+
+            debug (width.to_string ());
+            debug (height.to_string ());
 
             var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
 
