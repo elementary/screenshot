@@ -97,6 +97,10 @@ namespace Screenshot {
          *  Builds all of the widgets and arranges them in the window
          */
         void setup_ui () {
+            window_position = Gtk.WindowPosition.CENTER;
+            set_keep_above (true);
+            stick ();
+        
             grid = new Gtk.Grid ();
             grid.margin = 6;
             grid.row_spacing = 6;
@@ -244,7 +248,7 @@ namespace Screenshot {
             var root = Gdk.get_default_root_window ();
 
             if (win == null) {
-                win = root;  
+                win = root;
             }
 
             Gdk.Pixbuf? screenshot;
@@ -310,7 +314,7 @@ namespace Screenshot {
 
                 if (response) {
                     string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
-                    string output = output_name;                    
+                    string output = output_name;
 
                     foreach (string type in formats) {
                         output = output.replace (type, "");
