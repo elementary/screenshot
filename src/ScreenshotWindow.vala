@@ -310,13 +310,25 @@ namespace Screenshot {
 
                 if (response) {
                     string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
-                    string output = output_name;                    
+                    string output = output_name;
 
                     foreach (string type in formats) {
                         output = output.replace (type, "");
                     }
 
-                    string file_name = Path.build_filename (folder_dir, output + "." + format);
+                    string file_name = "";
+                    int attempt = 0;
+
+                    // Check if file exists
+                    do {
+                        if (attempt == 0) {
+                            file_name = Path.build_filename (folder_dir, "%s.%s".printf (output, format));
+                        } else {
+                            file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (output, attempt, format));
+                        }
+
+                        attempt++;
+                    } while (File.new_for_path (file_name).query_exists ());
 
                     try {
                         screenshot.save (file_name, format);
