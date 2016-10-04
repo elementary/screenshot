@@ -126,7 +126,7 @@ namespace Screenshot.Widgets {
 
             save_btn = new Gtk.Button.with_label (_("Save"));
             retry_btn = new Gtk.Button.with_label (_("Cancel"));
-            clipboard_btn = new Gtk.Button.with_label (_("Clipboard"));
+            clipboard_btn = new Gtk.Button.with_label (_("Copy to Clipboard"));
 
             save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
