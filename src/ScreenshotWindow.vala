@@ -352,7 +352,9 @@ namespace Screenshot {
             });
 
             save_dialog.close.connect (() => {
-                this.destroy ();
+                if (close_on_save) {
+                    this.destroy ();
+                }
             });
 
             save_dialog.show_all ();
