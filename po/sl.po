@@ -7,100 +7,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-05-28 23:24+0400\n"
+"POT-Creation-Date: 2016-10-06 13:30-0700\n"
 "PO-Revision-Date: 2016-07-24 11:20+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-11 06:16+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-07 06:56+0000\n"
+"X-Generator: Launchpad (build 18217)\n"
 
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:61
-msgid "Screenshot from %s"
-msgstr "Zaslonska slika %s"
-
-#: ../src/Widgets/SaveDialog.vala:86
-msgid "Save Image as…"
-msgstr "Shrani sliko kot..."
-
-#: ../src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "Ime:"
-
-#: ../src/Widgets/SaveDialog.vala:96
-msgid "Format:"
-msgstr "Zapis:"
-
-#: ../src/Widgets/SaveDialog.vala:123
-msgid "Folder:"
-msgstr "Mapa:"
-
-#: ../src/Widgets/SaveDialog.vala:125
-msgid "Select Screenshots Folder…"
-msgstr "Izberite mapo za slike..."
-
-#: ../src/Widgets/SaveDialog.vala:129
-msgid "Save"
-msgstr "Shrani"
-
-#: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
-msgid "Cancel"
-msgstr "Prekliči"
-
-#: ../src/ScreenshotWindow.vala:109
+#: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
 msgstr "Območje zajema:"
 
-#: ../src/ScreenshotWindow.vala:113
+#: ../src/ScreenshotWindow.vala:114
 msgid "Properties:"
 msgstr "Lastnosti:"
 
-#: ../src/ScreenshotWindow.vala:120
+#: ../src/ScreenshotWindow.vala:121
 msgid "Grab the whole screen"
 msgstr "Zajemi cel zaslon"
 
-#: ../src/ScreenshotWindow.vala:122
+#: ../src/ScreenshotWindow.vala:123
 msgid "Grab the current window"
 msgstr "Zajemi trenutno okno"
 
-#: ../src/ScreenshotWindow.vala:124
+#: ../src/ScreenshotWindow.vala:125
 msgid "Select area to grab"
 msgstr "Izberite območje za zajem"
 
-#: ../src/ScreenshotWindow.vala:135
+#: ../src/ScreenshotWindow.vala:136
 msgid "Grab mouse pointer:"
 msgstr "Zajemi miškin kazalec:"
 
-#: ../src/ScreenshotWindow.vala:142
+#: ../src/ScreenshotWindow.vala:143
 msgid "Close after saving:"
 msgstr "Zapri po zajemu:"
 
-#: ../src/ScreenshotWindow.vala:149
+#: ../src/ScreenshotWindow.vala:150
 msgid "Conceal text:"
 msgstr "Prikrij besedilo:"
 
-#: ../src/ScreenshotWindow.vala:156
+#: ../src/ScreenshotWindow.vala:157
 msgid "Delay in seconds:"
 msgstr "Zamik v sekundah:"
 
-#: ../src/ScreenshotWindow.vala:174
+#: ../src/ScreenshotWindow.vala:175
 msgid "Take Screenshot"
 msgstr "Zajemi sliko"
 
-#: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
+#: ../src/ScreenshotWindow.vala:181 ../src/Widgets/SaveDialog.vala:128
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../src/ScreenshotWindow.vala:411 ../src/ScreenshotWindow.vala:449
 msgid "Could not capture screenshot"
 msgstr "Ni bilo mogoče zajeti zaslona."
 
-#: ../src/ScreenshotWindow.vala:362
-msgid "Image not saved"
-msgstr "Slika ni bila shranjena"
-
-#: ../src/ScreenshotWindow.vala:435
+#: ../src/ScreenshotWindow.vala:412
 msgid "Couldn't find an active window"
 msgstr "Ni bilo mogoče najti aktivnega okna"
+
+#: ../src/ScreenshotWindow.vala:450
+msgid "Image not saved"
+msgstr "Slika ni bila shranjena"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -144,3 +115,36 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
 "  Jernej Virag https://launchpad.net/~jernej"
+
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:62
+msgid "Screenshot from %s"
+msgstr "Zaslonska slika %s"
+
+#: ../src/Widgets/SaveDialog.vala:84
+msgid "Save Image as…"
+msgstr "Shrani sliko kot..."
+
+#: ../src/Widgets/SaveDialog.vala:88
+msgid "Name:"
+msgstr "Ime:"
+
+#: ../src/Widgets/SaveDialog.vala:94
+msgid "Format:"
+msgstr "Zapis:"
+
+#: ../src/Widgets/SaveDialog.vala:121
+msgid "Folder:"
+msgstr "Mapa:"
+
+#: ../src/Widgets/SaveDialog.vala:123
+msgid "Select Screenshots Folder…"
+msgstr "Izberite mapo za slike..."
+
+#: ../src/Widgets/SaveDialog.vala:127
+msgid "Save"
+msgstr "Shrani"
+
+#: ../src/Widgets/SaveDialog.vala:129
+msgid "Copy to Clipboard"
+msgstr ""

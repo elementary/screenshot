@@ -7,100 +7,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-05-28 23:24+0400\n"
+"POT-Creation-Date: 2016-10-06 13:30-0700\n"
 "PO-Revision-Date: 2016-07-17 16:04+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-11 06:16+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-07 06:56+0000\n"
+"X-Generator: Launchpad (build 18217)\n"
 
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:61
-msgid "Screenshot from %s"
-msgstr "Captura de ecrã de %s"
-
-#: ../src/Widgets/SaveDialog.vala:86
-msgid "Save Image as…"
-msgstr "Guardar Imagem como..."
-
-#: ../src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "Nome:"
-
-#: ../src/Widgets/SaveDialog.vala:96
-msgid "Format:"
-msgstr "Formato:"
-
-#: ../src/Widgets/SaveDialog.vala:123
-msgid "Folder:"
-msgstr "Pasta:"
-
-#: ../src/Widgets/SaveDialog.vala:125
-msgid "Select Screenshots Folder…"
-msgstr "Seleccionar Pasta de Capturas de Ecrã..."
-
-#: ../src/Widgets/SaveDialog.vala:129
-msgid "Save"
-msgstr "Guardar"
-
-#: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../src/ScreenshotWindow.vala:109
+#: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
 msgstr "Capturar área:"
 
-#: ../src/ScreenshotWindow.vala:113
+#: ../src/ScreenshotWindow.vala:114
 msgid "Properties:"
 msgstr "Propriedades:"
 
-#: ../src/ScreenshotWindow.vala:120
+#: ../src/ScreenshotWindow.vala:121
 msgid "Grab the whole screen"
 msgstr "Capturar o ecrã inteiro"
 
-#: ../src/ScreenshotWindow.vala:122
+#: ../src/ScreenshotWindow.vala:123
 msgid "Grab the current window"
 msgstr "Capturar a janela corrente"
 
-#: ../src/ScreenshotWindow.vala:124
+#: ../src/ScreenshotWindow.vala:125
 msgid "Select area to grab"
 msgstr "Seleccionar área para capturar"
 
-#: ../src/ScreenshotWindow.vala:135
+#: ../src/ScreenshotWindow.vala:136
 msgid "Grab mouse pointer:"
 msgstr "Capturar ponteiro de rato:"
 
-#: ../src/ScreenshotWindow.vala:142
+#: ../src/ScreenshotWindow.vala:143
 msgid "Close after saving:"
 msgstr "Fechar depois de guardar:"
 
-#: ../src/ScreenshotWindow.vala:149
+#: ../src/ScreenshotWindow.vala:150
 msgid "Conceal text:"
 msgstr "Esconder texto:"
 
-#: ../src/ScreenshotWindow.vala:156
+#: ../src/ScreenshotWindow.vala:157
 msgid "Delay in seconds:"
 msgstr "Atraso em segundos:"
 
-#: ../src/ScreenshotWindow.vala:174
+#: ../src/ScreenshotWindow.vala:175
 msgid "Take Screenshot"
 msgstr "Capturar uma imagem do ecrã"
 
-#: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
+#: ../src/ScreenshotWindow.vala:181 ../src/Widgets/SaveDialog.vala:128
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../src/ScreenshotWindow.vala:411 ../src/ScreenshotWindow.vala:449
 msgid "Could not capture screenshot"
 msgstr "Não foi possível capturar a imagem de ecrã"
 
-#: ../src/ScreenshotWindow.vala:362
-msgid "Image not saved"
-msgstr "Imagem não guardada"
-
-#: ../src/ScreenshotWindow.vala:435
+#: ../src/ScreenshotWindow.vala:412
 msgid "Couldn't find an active window"
 msgstr "Janela activa não encontrada"
+
+#: ../src/ScreenshotWindow.vala:450
+msgid "Image not saved"
+msgstr "Imagem não guardada"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -147,3 +118,36 @@ msgstr ""
 "  Pedro Monteiro https://launchpad.net/~pedro.monteiro\n"
 "  RDRR https://launchpad.net/~rubendrr\n"
 "  yEdubart https://launchpad.net/~vps1992"
+
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:62
+msgid "Screenshot from %s"
+msgstr "Captura de ecrã de %s"
+
+#: ../src/Widgets/SaveDialog.vala:84
+msgid "Save Image as…"
+msgstr "Guardar Imagem como..."
+
+#: ../src/Widgets/SaveDialog.vala:88
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../src/Widgets/SaveDialog.vala:94
+msgid "Format:"
+msgstr "Formato:"
+
+#: ../src/Widgets/SaveDialog.vala:121
+msgid "Folder:"
+msgstr "Pasta:"
+
+#: ../src/Widgets/SaveDialog.vala:123
+msgid "Select Screenshots Folder…"
+msgstr "Seleccionar Pasta de Capturas de Ecrã..."
+
+#: ../src/Widgets/SaveDialog.vala:127
+msgid "Save"
+msgstr "Guardar"
+
+#: ../src/Widgets/SaveDialog.vala:129
+msgid "Copy to Clipboard"
+msgstr ""

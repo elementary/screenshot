@@ -2,100 +2,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-28 23:24+0400\n"
+"POT-Creation-Date: 2016-10-06 13:30-0700\n"
 "PO-Revision-Date: 2016-08-04 17:42+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-11 06:16+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-07 06:55+0000\n"
+"X-Generator: Launchpad (build 18217)\n"
 
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:61
-msgid "Screenshot from %s"
-msgstr "Ekrano kopija ties %s"
-
-#: ../src/Widgets/SaveDialog.vala:86
-msgid "Save Image as…"
-msgstr "Įrašyti paveikslą kaip..."
-
-#: ../src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "Pavadinimas:"
-
-#: ../src/Widgets/SaveDialog.vala:96
-msgid "Format:"
-msgstr "Formatas:"
-
-#: ../src/Widgets/SaveDialog.vala:123
-msgid "Folder:"
-msgstr "Aplankas:"
-
-#: ../src/Widgets/SaveDialog.vala:125
-msgid "Select Screenshots Folder…"
-msgstr "Pasirinkite ekrano kopijų aplanką..."
-
-#: ../src/Widgets/SaveDialog.vala:129
-msgid "Save"
-msgstr "Įrašyti"
-
-#: ../src/Widgets/SaveDialog.vala:130 ../src/ScreenshotWindow.vala:180
-msgid "Cancel"
-msgstr "Atsisakyti"
-
-#: ../src/ScreenshotWindow.vala:109
+#: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
 msgstr "Fotografavimo sritis:"
 
-#: ../src/ScreenshotWindow.vala:113
+#: ../src/ScreenshotWindow.vala:114
 msgid "Properties:"
 msgstr "Savybės:"
 
-#: ../src/ScreenshotWindow.vala:120
+#: ../src/ScreenshotWindow.vala:121
 msgid "Grab the whole screen"
 msgstr "Visas ekranas"
 
-#: ../src/ScreenshotWindow.vala:122
+#: ../src/ScreenshotWindow.vala:123
 msgid "Grab the current window"
 msgstr "Esamas langas"
 
-#: ../src/ScreenshotWindow.vala:124
+#: ../src/ScreenshotWindow.vala:125
 msgid "Select area to grab"
 msgstr "Pasirinkti sritį"
 
-#: ../src/ScreenshotWindow.vala:135
+#: ../src/ScreenshotWindow.vala:136
 msgid "Grab mouse pointer:"
 msgstr "Fotografuoti pelės rodyklę:"
 
-#: ../src/ScreenshotWindow.vala:142
+#: ../src/ScreenshotWindow.vala:143
 msgid "Close after saving:"
 msgstr "Po įrašymo užverti:"
 
-#: ../src/ScreenshotWindow.vala:149
+#: ../src/ScreenshotWindow.vala:150
 msgid "Conceal text:"
 msgstr "Nuslėpti tekstą:"
 
-#: ../src/ScreenshotWindow.vala:156
+#: ../src/ScreenshotWindow.vala:157
 msgid "Delay in seconds:"
 msgstr "Delsa, sekundėmis:"
 
-#: ../src/ScreenshotWindow.vala:174
+#: ../src/ScreenshotWindow.vala:175
 msgid "Take Screenshot"
 msgstr "Padaryti ekrano kopiją"
 
-#: ../src/ScreenshotWindow.vala:361 ../src/ScreenshotWindow.vala:434
+#: ../src/ScreenshotWindow.vala:181 ../src/Widgets/SaveDialog.vala:128
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: ../src/ScreenshotWindow.vala:411 ../src/ScreenshotWindow.vala:449
 msgid "Could not capture screenshot"
 msgstr "Nepavyko nufotografuoti ekrano"
 
-#: ../src/ScreenshotWindow.vala:362
-msgid "Image not saved"
-msgstr "Paveikslas neįrašytas"
-
-#: ../src/ScreenshotWindow.vala:435
+#: ../src/ScreenshotWindow.vala:412
 msgid "Couldn't find an active window"
 msgstr "Nepavyko rasti aktyvaus lango"
+
+#: ../src/ScreenshotWindow.vala:450
+msgid "Image not saved"
+msgstr "Paveikslas neįrašytas"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -138,3 +109,36 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Moo https://launchpad.net/~mooo"
+
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:62
+msgid "Screenshot from %s"
+msgstr "Ekrano kopija ties %s"
+
+#: ../src/Widgets/SaveDialog.vala:84
+msgid "Save Image as…"
+msgstr "Įrašyti paveikslą kaip..."
+
+#: ../src/Widgets/SaveDialog.vala:88
+msgid "Name:"
+msgstr "Pavadinimas:"
+
+#: ../src/Widgets/SaveDialog.vala:94
+msgid "Format:"
+msgstr "Formatas:"
+
+#: ../src/Widgets/SaveDialog.vala:121
+msgid "Folder:"
+msgstr "Aplankas:"
+
+#: ../src/Widgets/SaveDialog.vala:123
+msgid "Select Screenshots Folder…"
+msgstr "Pasirinkite ekrano kopijų aplanką..."
+
+#: ../src/Widgets/SaveDialog.vala:127
+msgid "Save"
+msgstr "Įrašyti"
+
+#: ../src/Widgets/SaveDialog.vala:129
+msgid "Copy to Clipboard"
+msgstr ""
