@@ -401,12 +401,8 @@ namespace Screenshot {
                         win = item;
                     }
 
-                    // recieve updates of other windows when they are resized
-                    Gdk.EventMask mask = item.get_events ();
-                    Gdk.EventMask wantedMask = mask | Gdk.EventMask.STRUCTURE_MASK;
-                    if (mask != wantedMask) {
-                        item.set_events (wantedMask);
-                    }
+                    // Recieve updates of other windows when they are resized
+                    item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
                 }
 
                 this.present ();
