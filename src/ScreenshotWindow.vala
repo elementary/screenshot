@@ -400,6 +400,9 @@ namespace Screenshot {
                     if (screen.get_active_window () == item) {
                         win = item;
                     }
+
+                    // Recieve updates of other windows when they are resized
+                    item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
                 }
 
                 this.present ();
