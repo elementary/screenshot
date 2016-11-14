@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-06 13:30-0700\n"
-"PO-Revision-Date: 2016-09-28 01:10+0000\n"
-"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
+"PO-Revision-Date: 2016-11-13 10:57+0000\n"
+"Last-Translator: Mario Rodrigo <capitantrueno@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-07 06:56+0000\n"
-"X-Generator: Launchpad (build 18217)\n"
+"X-Launchpad-Export-Date: 2016-11-14 06:19+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
 #: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
@@ -27,7 +27,7 @@ msgstr "Propiedades:"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Grab the whole screen"
-msgstr "Capturar la pantalla entera"
+msgstr "Seleccionar toda la pantalla"
 
 #: ../src/ScreenshotWindow.vala:123
 msgid "Grab the current window"
@@ -75,7 +75,7 @@ msgstr "Imagen sin guardar"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Capturar ventana activa"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
@@ -83,11 +83,11 @@ msgstr "Capturar área"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Capturar toda la pantalla"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Capturar pantalla tras una espera"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
@@ -116,6 +116,7 @@ msgstr ""
 "  Adolfo Jayme https://launchpad.net/~fitojb\n"
 "  Cameron Norman https://launchpad.net/~cameronnemo\n"
 "  Charlie https://launchpad.net/~jncarlos\n"
+"  Cristian Cubias https://launchpad.net/~cristiancubias\n"
 "  DanielM https://launchpad.net/~inad9300\n"
 "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
 "  Félix Brezo https://launchpad.net/~febrezo\n"
@@ -123,12 +124,13 @@ msgstr ""
 "  Haggen https://launchpad.net/~h2gn\n"
 "  J.S.Sebastian https://launchpad.net/~j-s-sebastian-x\n"
 "  Juan Mantilla https://launchpad.net/~judamalo77\n"
-"  Mario Rodrigo https://launchpad.net/~capitantrueno"
+"  Mario Rodrigo https://launchpad.net/~capitantrueno\n"
+"  Thureos https://launchpad.net/~thureos"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:62
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Captura realizada el %s"
 
 #: ../src/Widgets/SaveDialog.vala:84
 msgid "Save Image as…"
@@ -156,4 +158,4 @@ msgstr "Guardar"
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copiar al portapapeles"
