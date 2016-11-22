@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-06 13:30-0700\n"
-"PO-Revision-Date: 2016-06-03 16:46+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
+"PO-Revision-Date: 2016-11-21 17:34+0000\n"
+"Last-Translator: Özgür BASKIN <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-07 06:56+0000\n"
-"X-Generator: Launchpad (build 18217)\n"
+"X-Launchpad-Export-Date: 2016-11-22 06:21+0000\n"
+"X-Generator: Launchpad (build 18269)\n"
 
 #: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
-msgstr "Alanı Yakala"
+msgstr "Alanı yakala:"
 
 #: ../src/ScreenshotWindow.vala:114
 msgid "Properties:"
@@ -43,7 +43,7 @@ msgstr "Fare imlecini yakala"
 
 #: ../src/ScreenshotWindow.vala:143
 msgid "Close after saving:"
-msgstr "Kaydettikten sonra kapat"
+msgstr "Kaydettikten sonra kapat:"
 
 #: ../src/ScreenshotWindow.vala:150
 msgid "Conceal text:"
@@ -117,7 +117,8 @@ msgstr ""
 "  Kaan Kölköy https://launchpad.net/~kaanklky\n"
 "  Melih Güçlü https://launchpad.net/~melihguclu\n"
 "  Murat Yilmazlar https://launchpad.net/~muratyilmazlar\n"
-"  Sadık Poyraz https://launchpad.net/~sadikpoyraz01"
+"  Sadık Poyraz https://launchpad.net/~sadikpoyraz01\n"
+"  Özgür BASKIN https://launchpad.net/~ozgur-baskin"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:62
@@ -150,4 +151,4 @@ msgstr "Kaydet"
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Panoya Kopyala"
