@@ -1,3 +1,9 @@
+screenshot-tool (0.1.1) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Thu, 24 Nov 2016 15:01:55 -0600
+
 screenshot-tool (0.1.0.3) xenial; urgency=medium
 
   * New upstream release.
