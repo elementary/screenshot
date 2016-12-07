@@ -72,6 +72,16 @@ namespace Screenshot {
             about_comments = _("Save images of your screen or individual windows.");
             about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
+
+            var quit_action = new SimpleAction ("quit", null);
+            quit_action.activate.connect (() => {
+                if (window != null) {
+                    window.destroy ();
+                }
+            });
+
+            add_action (quit_action);
+            add_accelerator ("<Control>q", "app.quit", null);
         }
 
         protected override void activate () {
