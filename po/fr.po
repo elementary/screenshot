@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-06 13:30-0700\n"
-"PO-Revision-Date: 2016-07-18 19:52+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
+"PO-Revision-Date: 2016-12-19 23:46+0000\n"
+"Last-Translator: Pierre <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-07 06:55+0000\n"
-"X-Generator: Launchpad (build 18217)\n"
+"X-Launchpad-Export-Date: 2016-12-20 05:11+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
@@ -118,6 +118,7 @@ msgstr ""
 "  EpicKiwi https://launchpad.net/~lelycandu76\n"
 "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
 "  Nikos https://launchpad.net/~nicolas-jovanovic\n"
+"  Pierre https://launchpad.net/~caillou\n"
 "  chilledfrogs https://launchpad.net/~chilledfrogs"
 
 #. / TRANSLATORS: %s represents a timestamp here
@@ -151,4 +152,4 @@ msgstr "Enregistrer"
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copier dans le presse-papier"
