@@ -266,8 +266,15 @@ namespace Screenshot {
             } else {
                 int width = win.get_width ();
                 int height = win.get_height ();
+                int scale_factor = win.get_scale_factor ();
 
-                screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                // Check the scaling factor in use, and if greater than 1 scale the image. (for HiDPI displays)
+                if (scale_factor > 1) {
+                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width / scale_factor, height / scale_factor);
+                    screenshot.scale (screenshot, width, height, width, height, 0, 0, scale_factor, scale_factor, Gdk.InterpType.BILINEAR);
+                } else {
+                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                }
 
                 win_rect.x = 0;
                 win_rect.y = 0;
