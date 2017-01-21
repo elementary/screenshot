@@ -46,7 +46,6 @@ namespace Screenshot {
         private bool close_on_save;
         private bool redact;
         private int delay;
-        private int scale_factor;
 
         /**
          *  ScreenshotWindow Constructor
@@ -253,7 +252,7 @@ namespace Screenshot {
             }
 
             Gdk.Pixbuf? screenshot;
-            scale_factor = win.get_scale_factor ();
+            int scale_factor = win.get_scale_factor ();
 
             if (capture_mode == CaptureType.AREA) {
                 Gdk.Rectangle selection_rect;
@@ -297,13 +296,15 @@ namespace Screenshot {
                     var manager = Gdk.Display.get_default ().get_device_manager ();
                     var device = manager.get_client_pointer ();
 
-                    int cx, cy;
+                    int cx, cy, xhot, yhot;
                     win.get_device_position (device, out cx, out cy, null);
+                    xhot = int.parse (cursor_pixbuf.get_option ("x_hot")); // Left padding in cursor_pixbuf between the margin and the actual pointer
+                    yhot = int.parse (cursor_pixbuf.get_option ("y_hot")); // Top padding in cursor_pixbuf between the margin and the actual pointer
 
                     var cursor_rect = Gdk.Rectangle ();
 
-                    cursor_rect.x = cx + win_rect.x;
-                    cursor_rect.y = cy + win_rect.y;
+                    cursor_rect.x = cx + win_rect.x - xhot;
+                    cursor_rect.y = cy + win_rect.y - yhot;
                     cursor_rect.width = cursor_pixbuf.get_width ();
                     cursor_rect.height = cursor_pixbuf.get_height ();
 
