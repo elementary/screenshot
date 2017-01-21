@@ -46,6 +46,7 @@ namespace Screenshot {
         private bool close_on_save;
         private bool redact;
         private int delay;
+        private int scale_factor;
 
         /**
          *  ScreenshotWindow Constructor
@@ -252,6 +253,8 @@ namespace Screenshot {
             }
 
             Gdk.Pixbuf? screenshot;
+            scale_factor = win.get_scale_factor ();
+
             if (capture_mode == CaptureType.AREA) {
                 Gdk.Rectangle selection_rect;
                 win.get_frame_extents (out selection_rect);
@@ -266,7 +269,6 @@ namespace Screenshot {
             } else {
                 int width = win.get_width ();
                 int height = win.get_height ();
-                int scale_factor = win.get_scale_factor ();
 
                 // Check the scaling factor in use, and if greater than 1 scale the image. (for HiDPI displays)
                 if (scale_factor > 1) {
@@ -305,8 +307,15 @@ namespace Screenshot {
                     cursor_rect.width = cursor_pixbuf.get_width ();
                     cursor_rect.height = cursor_pixbuf.get_height ();
 
+                    if (scale_factor > 1) {
+                        cursor_rect.x *= scale_factor;
+                        cursor_rect.y *= scale_factor;
+                        cursor_rect.width *= scale_factor;
+                        cursor_rect.height *= scale_factor;
+                    }
+
                     if (win_rect.intersect (cursor_rect, out cursor_rect)) {
-                        cursor_pixbuf.composite (screenshot, cx, cy, cursor_rect.width, cursor_rect.height, cx, cy, 1.0, 1.0, Gdk.InterpType.BILINEAR, 255);
+                        cursor_pixbuf.composite (screenshot, cursor_rect.x, cursor_rect.y, cursor_rect.width, cursor_rect.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
             }
