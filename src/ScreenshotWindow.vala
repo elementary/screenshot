@@ -1,6 +1,7 @@
 /***
 
     Copyright (C) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
+                  2017 elementary LLC.
 
     This program is free software: you can redistribute it and/or modify it
     under the terms of the GNU Lesser General Public License version 3, as
@@ -28,9 +29,6 @@ namespace Screenshot {
 
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
-        /**
-         *  UI elements
-         */
         private Gtk.Grid grid;
         private Gtk.RadioButton all;
         private Gtk.RadioButton curr_window;
@@ -47,21 +45,128 @@ namespace Screenshot {
         private bool redact;
         private int delay;
 
-        /**
-         *  ScreenshotWindow Constructor
-         */
         public ScreenshotWindow () {
-            resizable = false;
-            deletable = false;
-            border_width = 6;
+            Object (border_width: 6,
+                    deletable: false,
+                    resizable: false);
 
 			capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
             redact = settings.get_boolean ("redact");
             delay = settings.get_int ("delay");
+        }
 
-            setup_ui ();
+        construct {
+            set_keep_above (true);
+            stick ();
+
+            var area_label = new Gtk.Label (_("Capture area:"));
+            area_label.get_style_context ().add_class ("h4");
+            area_label.halign = Gtk.Align.END;
+
+            all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
+
+            curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
+
+            selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
+
+            var prop_label = new Gtk.Label (_("Properties:"));
+            prop_label.get_style_context ().add_class ("h4");
+            prop_label.halign = Gtk.Align.END;
+
+            var pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
+            pointer_label.halign = Gtk.Align.END;
+
+            var pointer_switch = new Gtk.Switch ();
+            pointer_switch.halign = Gtk.Align.START;
+            settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+
+            var close_label = new Gtk.Label (_("Close after saving:"));
+            close_label.halign = Gtk.Align.END;
+
+            var close_switch = new Gtk.Switch ();
+            close_switch.halign = Gtk.Align.START;
+            settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+
+            var redact_label = new Gtk.Label (_("Conceal text:"));
+            redact_label.halign = Gtk.Align.END;
+
+            var redact_switch = new Gtk.Switch ();
+            redact_switch.halign = Gtk.Align.START;
+            settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+
+            var delay_label = new Gtk.Label (_("Delay in seconds:"));
+            delay_label.halign = Gtk.Align.END;
+
+            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
+            settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
+
+            grid = new Gtk.Grid ();
+            grid.margin = 6;
+            grid.row_spacing = 6;
+            grid.column_spacing = 12;
+            grid.attach (area_label, 0, 0, 1, 1);
+            grid.attach (all, 1, 0, 1, 1);
+            grid.attach (curr_window, 1, 1, 1, 1);
+            grid.attach (selection, 1, 2, 1, 1);
+            grid.attach (prop_label, 0, 3, 1, 1);
+            grid.attach (pointer_label, 0, 4, 1, 1);
+            grid.attach (pointer_switch, 1, 4, 1, 1);
+            grid.attach (close_label, 0, 5, 1, 1);
+            grid.attach (close_switch, 1, 5, 1, 1);
+            grid.attach (redact_label, 0, 6, 1, 1);
+            grid.attach (redact_switch, 1, 6, 1, 1);
+            grid.attach (delay_label, 0, 7, 1, 1);
+            grid.attach (delay_spin, 1, 7, 1, 1);
+
+            Gtk.Box content = get_content_area () as Gtk.Box;
+            content.add (grid);
+
+            var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
+            take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            take_btn.can_default = true;
+
+            this.set_default (take_btn);
+
+            var cancel_btn = new Gtk.Button.with_label (_("Cancel"));
+
+            Gtk.Box actions = get_action_area () as Gtk.Box;
+            actions.margin_top = 12;
+            actions.add (cancel_btn);
+            actions.add (take_btn);
+
+            all.toggled.connect (() => {
+                capture_mode = CaptureType.SCREEN;
+            });
+
+            curr_window.toggled.connect (() => {
+                capture_mode = CaptureType.CURRENT_WINDOW;
+            });
+
+            selection.toggled.connect (() => {
+                capture_mode = CaptureType.AREA;
+                present ();
+            });
+
+            pointer_switch.notify["active"].connect (() => {
+                mouse_pointer = pointer_switch.active;
+            });
+
+            close_switch.notify["active"].connect (() => {
+                close_on_save = close_switch.active;
+            });
+
+            redact_switch.notify["active"].connect (() => {
+                redact = redact_switch.active;
+            });
+
+            delay_spin.value_changed.connect (() => {
+                delay = delay_spin.get_value_as_int ();
+            });
+
+            take_btn.clicked.connect (take_clicked);
+            cancel_btn.clicked.connect (cancel_clicked);
         }
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact) {
@@ -78,7 +183,6 @@ namespace Screenshot {
             }
 
             close_on_save = true;
-            setup_ui ();
 
             if (action != null) {
                 switch (action) {
@@ -91,142 +195,6 @@ namespace Screenshot {
             }
 
             from_command = true;
-        }
-
-        /**
-         *  Builds all of the widgets and arranges them in the window
-         */
-        void setup_ui () {
-            window_position = Gtk.WindowPosition.CENTER;
-            set_keep_above (true);
-            stick ();
-        
-            grid = new Gtk.Grid ();
-            grid.margin = 6;
-            grid.row_spacing = 6;
-            grid.column_spacing = 12;
-
-            /* Labels used to distinguish selections */
-            var area_label = new Gtk.Label (_("Capture area:"));
-            area_label.get_style_context ().add_class ("h4");
-            area_label.halign = Gtk.Align.END;
-
-            var prop_label = new Gtk.Label (_("Properties:"));
-            prop_label.get_style_context ().add_class ("h4");
-            prop_label.halign = Gtk.Align.END;
-
-            /**
-             *  Capture area selection
-             */
-            all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
-
-            curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
-
-            selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
-
-            // Pack first part of the grid
-            grid.attach (area_label, 0, 0, 1, 1);
-            grid.attach (all, 1, 0, 1, 1);
-            grid.attach (curr_window, 1, 1, 1, 1);
-            grid.attach (selection, 1, 2, 1, 1);
-
-            /**
-             *  Effects area selection
-             */
-            var pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
-            pointer_label.halign = Gtk.Align.END;
-            var pointer_switch = new Gtk.Switch ();
-            pointer_switch.halign = Gtk.Align.START;
-
-            pointer_switch.set_active (mouse_pointer);
-
-            var close_label = new Gtk.Label (_("Close after saving:"));
-            close_label.halign = Gtk.Align.END;
-            var close_switch = new Gtk.Switch ();
-            close_switch.halign = Gtk.Align.START;
-
-            close_switch.set_active (close_on_save);
-
-            var redact_label = new Gtk.Label (_("Conceal text:"));
-            redact_label.halign = Gtk.Align.END;
-            var redact_switch = new Gtk.Switch ();
-            redact_switch.halign = Gtk.Align.START;
-
-            redact_switch.set_active (redact);
-
-            var delay_label = new Gtk.Label (_("Delay in seconds:"));
-            delay_label.halign = Gtk.Align.END;
-
-            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
-		    delay_spin.set_value (delay);
-
-            // Pack second part of the grid
-            grid.attach (prop_label, 0, 3, 1, 1);
-            grid.attach (pointer_label, 0, 4, 1, 1);
-            grid.attach (pointer_switch, 1, 4, 1, 1);
-            grid.attach (close_label, 0, 5, 1, 1);
-            grid.attach (close_switch, 1, 5, 1, 1);
-            grid.attach (redact_label, 0, 6, 1, 1);
-            grid.attach (redact_switch, 1, 6, 1, 1);
-            grid.attach (delay_label, 0, 7, 1, 1);
-            grid.attach (delay_spin, 1, 7, 1, 1);
-
-            // Take button
-            var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
-            take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            take_btn.can_default = true;
-
-            this.set_default (take_btn);
-
-            var cancel_btn = new Gtk.Button.with_label (_("Cancel"));
-
-            Gtk.Box actions = get_action_area () as Gtk.Box;
-            actions.margin_top = 12;
-            actions.add (cancel_btn);
-            actions.add (take_btn);
-
-            /**
-             *  Signals
-             */
-            all.toggled.connect (() => {
-                capture_mode = CaptureType.SCREEN;
-            });
-
-            curr_window.toggled.connect (() => {
-                capture_mode = CaptureType.CURRENT_WINDOW;
-            });
-
-            selection.toggled.connect (() => {
-                capture_mode = CaptureType.AREA;
-                present ();
-            });
-
-            pointer_switch.notify["active"].connect (() => {
-                settings.set_boolean ("mouse-pointer", pointer_switch.active);
-                mouse_pointer = pointer_switch.active;
-            });
-
-            close_switch.notify["active"].connect (() => {
-                settings.set_boolean ("close-on-save", close_switch.active);
-                close_on_save = close_switch.active;
-            });
-
-            redact_switch.notify["active"].connect (() => {
-                settings.set_boolean ("redact", redact_switch.active);
-                redact = redact_switch.active;
-            });
-
-            delay_spin.value_changed.connect (() => {
-                delay = delay_spin.get_value_as_int ();
-                settings.set_int ("delay", delay);
-            });
-
-            take_btn.clicked.connect (take_clicked);
-            cancel_btn.clicked.connect (cancel_clicked);
-
-            // Pack the main grid into the window
-            Gtk.Box content = get_content_area () as Gtk.Box;
-            content.add (grid);
         }
 
         private bool grab_save (Gdk.Window? win, bool extra_time) {
@@ -474,8 +442,8 @@ namespace Screenshot {
         }
 
         private void redact_text (bool redact) {
+            var settings = new Settings ("org.gnome.desktop.interface");
             if (redact) {
-                var settings = new Settings ("org.gnome.desktop.interface");
                 prev_font_regular = settings.get_string ("font-name");
                 prev_font_mono = settings.get_string ("monospace-font-name");
                 prev_font_document = settings.get_string ("document-font-name");
@@ -484,8 +452,6 @@ namespace Screenshot {
                 settings.set_string ("monospace-font-name", "Redacted Script Light 10");
                 settings.set_string ("document-font-name", "Redacted Script Regular 10");
             } else {
-                var settings = new Settings ("org.gnome.desktop.interface");
-
                 settings.set_string ("font-name", prev_font_regular);
                 settings.set_string ("monospace-font-name", prev_font_mono);
                 settings.set_string ("document-font-name", prev_font_document);
