@@ -29,11 +29,6 @@ namespace Screenshot {
 
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
-        private Gtk.Grid grid;
-        private Gtk.RadioButton all;
-        private Gtk.RadioButton curr_window;
-        private Gtk.RadioButton selection;
-
         private CaptureType capture_mode;
         private string prev_font_regular;
         private string prev_font_document;
@@ -50,7 +45,7 @@ namespace Screenshot {
                     deletable: false,
                     resizable: false);
 
-			capture_mode = CaptureType.SCREEN;
+            capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
             redact = settings.get_boolean ("redact");
@@ -65,11 +60,11 @@ namespace Screenshot {
             area_label.get_style_context ().add_class ("h4");
             area_label.halign = Gtk.Align.END;
 
-            all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
+            var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
 
-            curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
+            var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
 
-            selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
+            var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
 
             var prop_label = new Gtk.Label (_("Properties:"));
             prop_label.get_style_context ().add_class ("h4");
@@ -102,7 +97,7 @@ namespace Screenshot {
             var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
             settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
-            grid = new Gtk.Grid ();
+            var grid = new Gtk.Grid ();
             grid.margin = 6;
             grid.row_spacing = 6;
             grid.column_spacing = 12;
@@ -182,18 +177,21 @@ namespace Screenshot {
                 this.redact = redact;
             }
 
-            close_on_save = true;
-
             if (action != null) {
                 switch (action) {
-                    case 1: this.capture_mode = CaptureType.SCREEN; break;
-                    case 2: this.capture_mode = CaptureType.CURRENT_WINDOW; break;
-                    case 3: this.capture_mode = CaptureType.AREA;
-                        selection.set_active (true);
-                    break;
+                    case 1:
+                        capture_mode = CaptureType.SCREEN;
+                        break;
+                    case 2:
+                        capture_mode = CaptureType.CURRENT_WINDOW;
+                        break;
+                    case 3:
+                        capture_mode = CaptureType.AREA;
+                        break;
                 }
             }
 
+            close_on_save = true;
             from_command = true;
         }
 
