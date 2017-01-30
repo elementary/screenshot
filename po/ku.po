@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-06 13:30-0700\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2017-01-29 17:32+0000\n"
+"Last-Translator: Rokar <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-07 06:55+0000\n"
-"X-Generator: Launchpad (build 18217)\n"
+"X-Launchpad-Export-Date: 2017-01-30 05:53+0000\n"
+"X-Generator: Launchpad (build 18315)\n"
 
 #: ../src/ScreenshotWindow.vala:110
 msgid "Capture area:"
@@ -50,11 +50,11 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:175
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Wêneya Sermasê bike"
 
 #: ../src/ScreenshotWindow.vala:181 ../src/Widgets/SaveDialog.vala:128
 msgid "Cancel"
-msgstr ""
+msgstr "Betal bike"
 
 #: ../src/ScreenshotWindow.vala:411 ../src/ScreenshotWindow.vala:449
 msgid "Could not capture screenshot"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Çirke"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr ""
+msgstr "Wêneya sermasê"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
@@ -107,6 +107,8 @@ msgstr ""
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Rokar https://launchpad.net/~rokarali"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:62
@@ -119,15 +121,15 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:88
 msgid "Name:"
-msgstr ""
+msgstr "Nav:"
 
 #: ../src/Widgets/SaveDialog.vala:94
 msgid "Format:"
-msgstr ""
+msgstr "Teşe:"
 
 #: ../src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
-msgstr ""
+msgstr "Peldank:"
 
 #: ../src/Widgets/SaveDialog.vala:123
 msgid "Select Screenshots Folder…"
@@ -135,7 +137,7 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:127
 msgid "Save"
-msgstr ""
+msgstr "Tomar Bike"
 
 #: ../src/Widgets/SaveDialog.vala:129
 msgid "Copy to Clipboard"
