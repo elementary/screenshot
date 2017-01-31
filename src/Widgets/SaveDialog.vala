@@ -1,6 +1,7 @@
 /***
 
     Copyright (C) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
+                  2017 elementary LLC. 
 
     This program is free software: you can redistribute it and/or modify it
     under the terms of the GNU Lesser General Public License version 3, as
@@ -21,54 +22,30 @@ namespace Screenshot.Widgets {
 
     public class SaveDialog : Gtk.Dialog {
 
-        private Gtk.Grid            grid;
-        private Gtk.Label           dialog_label;
-        private Gtk.Label           name_label;
-        private Gtk.Entry           name_entry;
-        private Gtk.Label           format_label;
-        private Gtk.ComboBoxText    format_cmb;
-        private Gtk.Button          save_btn;
-        private Gtk.Button          retry_btn;
-        private Gtk.Button          clipboard_btn;
-
-        private string  file_name;
-        private string  date_time;
-        private string  folder_dir;
+        public Gdk.Pixbuf pixbuf { get; construct; }
+        public Settings settings { get; construct; }
 
         public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
         public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
-
-            resizable = false;
-            deletable = false;
-            border_width = 6;
-            modal = true;
-            set_keep_above (true);
-            set_transient_for (parent);
-
-            folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
-
-            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "")
-                folder_dir = settings.get_string ("folder-dir");
-
-            build (pixbuf, settings, parent);
-            name_entry.grab_focus ();
+            Object (border_width: 6,
+                    deletable: false,
+                    modal: true,
+                    parent: parent,
+                    pixbuf: pixbuf,
+                    resizable: false,
+                    settings: settings,
+                    transient_for: parent);
         }
 
-        public void build (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
+        construct {
+            set_keep_above (true);
 
-            date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
-            /// TRANSLATORS: %s represents a timestamp here
-            file_name = _("Screenshot from %s").printf (date_time);
+            var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
-            grid = new Gtk.Grid ();
-            grid.margin = 6;
-            grid.row_spacing = 12;
-            grid.column_spacing = 12;
-
-            var content = this.get_content_area () as Gtk.Box;
-
-            var main_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "") {
+                folder_dir = settings.get_string ("folder-dir");
+            }
 
             int width = pixbuf.get_width () / 4;
             int height = pixbuf.get_height () / 4;
@@ -80,24 +57,29 @@ namespace Screenshot.Widgets {
             var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
 
             var preview = new Gtk.Image.from_pixbuf (screenshot);
+            preview.get_style_context ().add_class ("card");
 
-            dialog_label = new Gtk.Label (_("Save Image as…"));
+            var dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
             dialog_label.halign = Gtk.Align.START;
 
-            name_label = new Gtk.Label (_("Name:"));
+            var name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
-            name_entry = new Gtk.Entry ();
-            name_entry.set_text (file_name);
-            name_entry.set_width_chars (35);
 
-            format_label = new Gtk.Label (_("Format:"));
+            var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
+
+            /// TRANSLATORS: %s represents a timestamp here
+            var file_name = _("Screenshot from %s").printf (date_time);
+
+            var name_entry = new Gtk.Entry ();
+            name_entry.hexpand = true;
+            name_entry.text = file_name;
+            name_entry.grab_focus ();
+
+            var format_label = new Gtk.Label (_("Format:"));
             format_label.halign = Gtk.Align.END;
 
-            /**
-             *  Create combobox for file format
-             */
-            format_cmb = new Gtk.ComboBoxText ();
+            var format_cmb = new Gtk.ComboBoxText ();
             format_cmb.append_text ("png");
             format_cmb.append_text ("jpeg");
             format_cmb.append_text ("bmp");
@@ -120,17 +102,33 @@ namespace Screenshot.Widgets {
 
             var location_label = new Gtk.Label (_("Folder:"));
             location_label.halign = Gtk.Align.END;
-            var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
 
+            var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
             location.set_current_folder (folder_dir);
 
-            save_btn = new Gtk.Button.with_label (_("Save"));
-            retry_btn = new Gtk.Button.with_label (_("Cancel"));
-            clipboard_btn = new Gtk.Button.with_label (_("Copy to Clipboard"));
+            var grid = new Gtk.Grid ();
+            grid.margin = 6;
+            grid.row_spacing = 12;
+            grid.column_spacing = 12;
+            grid.attach (preview, 0, 0, 2, 1);
+            grid.attach (dialog_label, 0, 1, 2, 1);
+            grid.attach (name_label, 0, 2, 1, 1);
+            grid.attach (name_entry, 1, 2, 1, 1);
+            grid.attach (format_label, 0, 3, 1, 1);
+            grid.attach (format_cmb, 1, 3, 1, 1);
+            grid.attach (location_label, 0, 4, 1, 1);
+            grid.attach (location, 1, 4, 1, 1);
 
+            var content = this.get_content_area () as Gtk.Box;
+            content.add (grid);
+
+            var save_btn = new Gtk.Button.with_label (_("Save"));
             save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            Gtk.Box actions = get_action_area () as Gtk.Box;
+            var retry_btn = new Gtk.Button.with_label (_("Cancel"));
+            var clipboard_btn = new Gtk.Button.with_label (_("Copy to Clipboard"));
+
+            var actions = get_action_area () as Gtk.Box;
             actions.margin_top = 12;
             actions.add (clipboard_btn);
             actions.add (retry_btn);
@@ -167,19 +165,6 @@ namespace Screenshot.Widgets {
 
                 return false;
             });
-
-            grid.attach (dialog_label, 1, 0, 1, 1);
-            grid.attach (name_label, 0, 1, 1, 1);
-            grid.attach (name_entry, 1, 1, 1, 1);
-            grid.attach (format_label, 0, 2, 1, 1);
-            grid.attach (format_cmb, 1, 2, 1, 1);
-            grid.attach (location_label, 0, 3, 1, 1);
-            grid.attach (location, 1, 3, 1, 1);
-
-            main_box.add (preview);
-            main_box.add (grid);
-
-            content.add (main_box);
         }
     }
 }
