@@ -34,7 +34,6 @@ namespace Screenshot.Widgets {
             Object (border_width: 6,
                     deletable: false,
                     modal: true,
-                    parent: parent,
                     pixbuf: pixbuf,
                     resizable: false,
                     settings: settings,
@@ -60,7 +59,6 @@ namespace Screenshot.Widgets {
             var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
 
             var preview = new Gtk.Image.from_pixbuf (screenshot);
-            preview.get_style_context ().add_class ("card");
 
             var dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
