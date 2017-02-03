@@ -19,6 +19,7 @@
 ​  <release version="0.1.2" date="" urgency="medium">
     ⁠<description>
       <ul>
+        <_li>Fix extra black area on HiDPI screenshots</_li>
         <_li>Translation updates</_li>
       </ul>
     ⁠</description>
