@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2015-2016 elementary, LLC <contact@elementary.io> -->
+<!-- Copyright 2015-2017 elementary, LLC <contact@elementary.io> -->
 <component type="desktop">
   <id>screenshot-tool.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_group>elementary</project_group>
   <project_license>GPL-3.0+</project_license>
   <_name>Screenshot</_name>
+  <_summary>Save images of the screen</_summary>
   <description>
     <_p>
       A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.
@@ -14,6 +15,22 @@
   <provides>
     <binary>screenshot</binary>
   </provides>
+​<releases>
+​  <release version="0.1.2" date="" urgency="medium">
+    ⁠<description>
+      <ul>
+        <_li>Translation updates</_li>
+      </ul>
+    ⁠</description>
+​  </release>
+​  <release version="0.1.1" date="2016-11-24" urgency="medium">
+    <description>
+      <ul>
+        <_li>Minor bug fixes</_li>
+      </ul>
+    </description>
+  </release>
+​</releases>
   <developer_name>elementary LLC.</developer_name>
   <url type="homepage">http://elementary.io/</url>
   <url type="bugtracker">https://bugs.launchpad.net/screenshot-tool</url>
