@@ -2,69 +2,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-06 13:30-0700\n"
+"POT-Creation-Date: 2017-02-03 11:20-0800\n"
 "PO-Revision-Date: 2016-06-28 20:21+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-07 06:55+0000\n"
-"X-Generator: Launchpad (build 18217)\n"
+"X-Launchpad-Export-Date: 2017-02-04 06:07+0000\n"
+"X-Generator: Launchpad (build 18322)\n"
 
-#: ../src/ScreenshotWindow.vala:110
+#: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
 msgstr "इस क्षेत्र को लें:"
 
-#: ../src/ScreenshotWindow.vala:114
-msgid "Properties:"
-msgstr "गुण:"
-
-#: ../src/ScreenshotWindow.vala:121
+#: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
 msgstr "पूरे स्क्रीन को पकड़ें"
 
-#: ../src/ScreenshotWindow.vala:123
+#: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
 msgstr "वर्तमान विंडो को पकड़ें"
 
-#: ../src/ScreenshotWindow.vala:125
+#: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
 msgstr "चुने हुए क्षेत्र को पकड़ें"
 
-#: ../src/ScreenshotWindow.vala:136
+#: ../src/ScreenshotWindow.vala:69
+msgid "Properties:"
+msgstr "गुण:"
+
+#: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
 msgstr "माउस पॉइंटर को पकड़ें"
 
-#: ../src/ScreenshotWindow.vala:143
+#: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
 msgstr "सहेजने के पश्चात बंद करें"
 
-#: ../src/ScreenshotWindow.vala:150
+#: ../src/ScreenshotWindow.vala:87
 msgid "Conceal text:"
 msgstr "टेक्स्ट के छुपाएँ :"
 
-#: ../src/ScreenshotWindow.vala:157
+#: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:175
+#: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
 msgstr "स्क्रीनशॉट लें"
 
-#: ../src/ScreenshotWindow.vala:181 ../src/Widgets/SaveDialog.vala:128
+#: ../src/ScreenshotWindow.vala:127 ../src/Widgets/SaveDialog.vala:129
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: ../src/ScreenshotWindow.vala:411 ../src/ScreenshotWindow.vala:449
+#: ../src/ScreenshotWindow.vala:397 ../src/ScreenshotWindow.vala:435
 msgid "Could not capture screenshot"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:412
+#: ../src/ScreenshotWindow.vala:398
 msgid "Couldn't find an active window"
 msgstr ""
 
-#: ../src/ScreenshotWindow.vala:450
+#: ../src/ScreenshotWindow.vala:436
 msgid "Image not saved"
 msgstr ""
 
@@ -111,35 +111,35 @@ msgstr ""
 "  Anand Kumar https://launchpad.net/~anandkumar\n"
 "  Fabio Zaramella https://launchpad.net/~fabiozaramella"
 
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:62
-msgid "Screenshot from %s"
-msgstr "%s से स्क्रीनशॉट"
-
-#: ../src/Widgets/SaveDialog.vala:84
+#: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
 msgstr "छवि ऐसे सुरक्षित करें..."
 
-#: ../src/Widgets/SaveDialog.vala:88
+#: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
 msgstr "नाम:"
 
-#: ../src/Widgets/SaveDialog.vala:94
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:73
+msgid "Screenshot from %s"
+msgstr "%s से स्क्रीनशॉट"
+
+#: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
 msgstr "प्रारूप:"
 
-#: ../src/Widgets/SaveDialog.vala:121
+#: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
 msgstr "फ़ोल्डर:"
 
-#: ../src/Widgets/SaveDialog.vala:123
+#: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
 msgstr "स्क्रीनशॉट्स के लिए फोल्डर चुनें..."
 
-#: ../src/Widgets/SaveDialog.vala:127
+#: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
 msgstr "सहेजें"
 
-#: ../src/Widgets/SaveDialog.vala:129
+#: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
 msgstr ""
