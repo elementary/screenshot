@@ -56,7 +56,7 @@ namespace Screenshot {
             program_name = _("Screenshot");
             exec_name = "screenshot";
 
-            app_years = "2014-2016";
+            app_years = "2014-2017";
             application_id = "net.launchpad.screenshot";
             app_icon = "accessories-screenshot";
             app_launcher = "screenshot.desktop";
