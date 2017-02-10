@@ -16,11 +16,12 @@
     <binary>screenshot</binary>
   </provides>
 ​<releases>
-​  <release version="0.1.2" date="" urgency="medium">
+​  <release version="0.1.2" date="2017-02-10" urgency="medium">
     ⁠<description>
       <ul>
         <_li>Fix extra black area on HiDPI screenshots</_li>
         <_li>Translation updates</_li>
+        <_li>Minor bug fixes</_li>
       </ul>
     ⁠</description>
 ​  </release>
