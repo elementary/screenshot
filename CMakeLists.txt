@@ -70,7 +70,7 @@ pkg_check_modules(DEPS REQUIRED
         gtk+-3.0>=3.12
         granite
         gdk-pixbuf-2.0
-		libcanberra)
+        libcanberra)
 
 add_definitions(${DEPS_CFLAGS} -w)
 
