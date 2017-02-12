@@ -69,7 +69,8 @@ find_package(PkgConfig)
 pkg_check_modules(DEPS REQUIRED
         gtk+-3.0>=3.12
         granite
-        gdk-pixbuf-2.0)
+        gdk-pixbuf-2.0
+        libcanberra)
 
 add_definitions(${DEPS_CFLAGS} -w)
 
@@ -90,6 +91,7 @@ vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
 PACKAGES
         gtk+-3.0
         granite
+        libcanberra
 CUSTOM_VAPIS
         vapi/config.vapi
 OPTIONS
