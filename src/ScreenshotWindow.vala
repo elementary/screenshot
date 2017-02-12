@@ -291,6 +291,8 @@ namespace Screenshot {
                 redact_text (false);
             }
 
+            play_shutter_sound ("screen-capture", _("Screenshot taken"));
+
             var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.destroy ();
@@ -454,6 +456,20 @@ namespace Screenshot {
                 settings.set_string ("monospace-font-name", prev_font_mono);
                 settings.set_string ("document-font-name", prev_font_document);
             }
+        }
+
+        private void play_shutter_sound (string id, string desc) {
+            Canberra.Context context;
+            Canberra.Proplist props;
+
+            Canberra.Context.create (out context);
+            Canberra.Proplist.create (out props);
+
+            props.sets (Canberra.PROP_EVENT_ID, id);
+            props.sets (Canberra.PROP_EVENT_DESCRIPTION, desc);
+            props.sets (Canberra.PROP_CANBERRA_CACHE_CONTROL, "permanent");
+
+            context.play_full (0, props, null);
         }
 
         private void cancel_clicked () {
