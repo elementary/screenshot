@@ -67,7 +67,7 @@ namespace Screenshot.Widgets {
             var name_label = new Gtk.Label (_("Name:"));
             name_label.halign = Gtk.Align.END;
 
-            var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H:%M:%S");
+            var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
             /// TRANSLATORS: %s represents a timestamp here
             var file_name = _("Screenshot from %s").printf (date_time);
