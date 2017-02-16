@@ -3,16 +3,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-03 11:20-0800\n"
+"POT-Creation-Date: 2017-02-15 18:59-0200\n"
 "PO-Revision-Date: 2017-01-07 09:18+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-04 06:08+0000\n"
-"X-Generator: Launchpad (build 18322)\n"
+"X-Launchpad-Export-Date: 2017-02-16 06:47+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 "Language: sr\n"
+
+#: ../src/Widgets/SaveDialog.vala:63
+msgid "Save Image as…"
+msgstr "Сачувај слику као…"
+
+#: ../src/Widgets/SaveDialog.vala:67
+msgid "Name:"
+msgstr "Назив:"
+
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:73
+msgid "Screenshot from %s"
+msgstr "Снимак екрана у %s"
+
+#: ../src/Widgets/SaveDialog.vala:80
+msgid "Format:"
+msgstr "Формат:"
+
+#: ../src/Widgets/SaveDialog.vala:104
+msgid "Folder:"
+msgstr "Фасцикла:"
+
+#: ../src/Widgets/SaveDialog.vala:107
+msgid "Select Screenshots Folder…"
+msgstr "Изабери фасциклу снимака…"
+
+#: ../src/Widgets/SaveDialog.vala:126
+msgid "Save"
+msgstr "Сачувај"
+
+#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
+msgid "Cancel"
+msgstr "Откажи"
+
+#: ../src/Widgets/SaveDialog.vala:130
+msgid "Copy to Clipboard"
+msgstr "Умножи у оставу"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
@@ -54,19 +91,19 @@ msgstr "Застој у секундама:"
 msgid "Take Screenshot"
 msgstr "Снимите екран"
 
-#: ../src/ScreenshotWindow.vala:127 ../src/Widgets/SaveDialog.vala:129
-msgid "Cancel"
-msgstr "Откажи"
+#: ../src/ScreenshotWindow.vala:294
+msgid "Screenshot taken"
+msgstr ""
 
-#: ../src/ScreenshotWindow.vala:397 ../src/ScreenshotWindow.vala:435
+#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
 msgstr "Не могу да снимим снимак екрана"
 
-#: ../src/ScreenshotWindow.vala:398
+#: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
 msgstr "Не могу да нађем радни прозор"
 
-#: ../src/ScreenshotWindow.vala:436
+#: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
 msgstr "Слика није сачувана"
 
@@ -111,36 +148,3 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Мирослав Николић https://launchpad.net/~lipek"
-
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Сачувај слику као…"
-
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Назив:"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Снимак екрана у %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Формат:"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Фасцикла:"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Изабери фасциклу снимака…"
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Сачувај"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr "Умножи у оставу"

@@ -7,15 +7,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2017-02-03 11:20-0800\n"
+"POT-Creation-Date: 2017-02-15 18:59-0200\n"
 "PO-Revision-Date: 2016-12-20 07:16+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-04 06:07+0000\n"
-"X-Generator: Launchpad (build 18322)\n"
+"X-Launchpad-Export-Date: 2017-02-16 06:47+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
+
+#: ../src/Widgets/SaveDialog.vala:63
+msgid "Save Image as…"
+msgstr "Enregistrer l'image sous..."
+
+#: ../src/Widgets/SaveDialog.vala:67
+msgid "Name:"
+msgstr "Nom :"
+
+#. / TRANSLATORS: %s represents a timestamp here
+#: ../src/Widgets/SaveDialog.vala:73
+msgid "Screenshot from %s"
+msgstr "Capture d'écran du %s"
+
+#: ../src/Widgets/SaveDialog.vala:80
+msgid "Format:"
+msgstr "Format :"
+
+#: ../src/Widgets/SaveDialog.vala:104
+msgid "Folder:"
+msgstr "Dossier :"
+
+#: ../src/Widgets/SaveDialog.vala:107
+msgid "Select Screenshots Folder…"
+msgstr "Sélectionner le dossier de captures d'écran…"
+
+#: ../src/Widgets/SaveDialog.vala:126
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../src/Widgets/SaveDialog.vala:130
+msgid "Copy to Clipboard"
+msgstr "Copier dans le presse-papier"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
@@ -57,19 +94,19 @@ msgstr "Délais (en secondes) :"
 msgid "Take Screenshot"
 msgstr "Réaliser la capture d'écran"
 
-#: ../src/ScreenshotWindow.vala:127 ../src/Widgets/SaveDialog.vala:129
-msgid "Cancel"
-msgstr "Annuler"
+#: ../src/ScreenshotWindow.vala:294
+msgid "Screenshot taken"
+msgstr ""
 
-#: ../src/ScreenshotWindow.vala:397 ../src/ScreenshotWindow.vala:435
+#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
 msgstr "Impossible d'effectuer la capture d'écran"
 
-#: ../src/ScreenshotWindow.vala:398
+#: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
 msgstr "Impossible de trouver une fenêtre active"
 
-#: ../src/ScreenshotWindow.vala:436
+#: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
 msgstr "Image non-enregistrée"
 
@@ -120,36 +157,3 @@ msgstr ""
 "  Nikos https://launchpad.net/~nicolas-jovanovic\n"
 "  Pierre https://launchpad.net/~caillou\n"
 "  chilledfrogs https://launchpad.net/~chilledfrogs"
-
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Enregistrer l'image sous..."
-
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Nom :"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Capture d'écran du %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Format :"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Dossier :"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Sélectionner le dossier de captures d'écran…"
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Enregistrer"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr "Copier dans le presse-papier"
