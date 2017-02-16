@@ -208,9 +208,9 @@ namespace Screenshot {
             }
 
             Timeout.add (250, () => {
-				if (from_command == false) {
-                	this.set_opacity (1);
-				}
+                if (from_command == false) {
+                    this.set_opacity (1);
+                }
                 return false;
             });
 
