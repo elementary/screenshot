@@ -102,8 +102,9 @@ namespace Screenshot {
         }
 
         public static ScreenshotApp get_instance () {
-            if (app == null)
+            if (app != null) {
                 app = new ScreenshotApp ();
+            }
 
             return app;
         }
