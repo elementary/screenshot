@@ -397,7 +397,7 @@ namespace Screenshot {
 
                 this.present ();
 
-                if (win != null && (win.get_type_hint () == Gdk.WindowTypeHint.NORMAL || win.get_type_hint () == Gdk.WindowTypeHint.DIALOG)) {
+                if (win != null) {
                     grab_save (win, redact);
                 } else {
                     Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
