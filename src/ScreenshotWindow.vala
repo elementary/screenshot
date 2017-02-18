@@ -193,6 +193,8 @@ namespace Screenshot {
 
             close_on_save = true;
             from_command = true;
+
+            this.set_opacity (0);
         }
 
         private bool grab_save (Gdk.Window? win, bool extra_time) {
@@ -206,7 +208,9 @@ namespace Screenshot {
             }
 
             Timeout.add (250, () => {
-                this.set_opacity (1);
+                if (from_command == false) {
+                    this.set_opacity (1);
+                }
                 return false;
             });
 
@@ -349,6 +353,7 @@ namespace Screenshot {
 
         public void take_clicked () {
             this.set_opacity (0);
+
             switch (capture_mode) {
                 case CaptureType.SCREEN:
                     capture_screen ();
@@ -401,6 +406,12 @@ namespace Screenshot {
                     dialog.deletable = false;
                     dialog.run ();
                     dialog.destroy ();
+
+                    if (from_command == false) {
+                        this.set_opacity (1);
+                    } else {
+                        this.destroy ();
+                    }
                 }
 
                 return false;
