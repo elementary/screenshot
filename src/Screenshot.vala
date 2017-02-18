@@ -32,17 +32,19 @@ namespace Screenshot {
         private bool win = false;
         private bool area = false;
         private bool redact = false;
+        private bool clipboard = false;
 
         construct {
             flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
 
-            options = new OptionEntry[6];
+            options = new OptionEntry[7];
             options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
             options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
             options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
             options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
             options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
             options[5] = { "redact", 'e', 0, OptionArg.NONE, ref redact, _("Redact system text"), null };
+            options[6] = { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, _("Save screenshot to clipboard"), null };
 
             add_main_option_entries (options);
 
@@ -151,7 +153,7 @@ namespace Screenshot {
             if (action == 0) {
                 normal_startup ();
             } else {
-                window = new ScreenshotWindow.from_cmd (action, delay, grab_pointer, redact);
+                window = new ScreenshotWindow.from_cmd (action, delay, grab_pointer, redact, clipboard);
                 window.set_application (this);
                 window.take_clicked ();
             }
