@@ -464,6 +464,9 @@ namespace Screenshot {
             var win = selection_area.get_window ();
 
             selection_area.captured.connect (() => {
+            	if (delay == 0) {
+            		selection_area.set_opacity (0);
+            	}
                 selection_area.close ();
                 Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
                     this.present ();
