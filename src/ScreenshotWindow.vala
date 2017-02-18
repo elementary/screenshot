@@ -307,7 +307,7 @@ namespace Screenshot {
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
 
-            if (!from_command) {
+            if (from_command == false) {
                 var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
                 save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                     save_dialog.destroy ();
@@ -330,10 +330,6 @@ namespace Screenshot {
                             show_error_dialog ();
                             debug (e.message);
                         }
-                    }
-
-                    if (from_command && close_on_save) {
-                        this.destroy ();
                     }
                 });
 
@@ -400,7 +396,9 @@ namespace Screenshot {
             this.hide ();
 
             Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
-                this.present ();
+                if (from_command == false) {
+                    this.present ();
+                }
                 return grab_save (null, redact);
             });
         }
@@ -424,7 +422,9 @@ namespace Screenshot {
                     item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
                 }
 
-                this.present ();
+                if (from_command == false) {
+                    this.present ();
+                }
 
                 if (win != null) {
                     grab_save (win, redact);
@@ -457,7 +457,9 @@ namespace Screenshot {
                 if (close_on_save) {
                     this.destroy ();
                 } else {
-                    this.present ();
+                    if (from_command == false) {
+                        this.present ();
+                    }
                 }
             });
 
@@ -469,7 +471,9 @@ namespace Screenshot {
             	}
                 selection_area.close ();
                 Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
-                    this.present ();
+                    if (from_command == false) {
+                        this.present ();
+                    }
                     return grab_save (win, redact);
                 });
             });
