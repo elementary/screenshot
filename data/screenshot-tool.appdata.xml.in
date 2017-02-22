@@ -15,24 +15,24 @@
   <provides>
     <binary>screenshot</binary>
   </provides>
-​<releases>
-​  <release version="0.1.2" date="2017-02-10" urgency="medium">
-    ⁠<description>
-      <ul>
-        <_li>Fix extra black area on HiDPI screenshots</_li>
-        <_li>Translation updates</_li>
-        <_li>Minor bug fixes</_li>
-      </ul>
-    ⁠</description>
-​  </release>
-​  <release version="0.1.1" date="2016-11-24" urgency="medium">
-    <description>
-      <ul>
-        <_li>Minor bug fixes</_li>
-      </ul>
-    </description>
-  </release>
-​</releases>
+  <releases>
+    <release version="0.1.2" date="2017-02-10" urgency="medium">
+      ⁠<description>
+        <ul>
+          <_li>Fix extra black area on HiDPI screenshots</_li>
+          <_li>Translation updates</_li>
+          <_li>Minor bug fixes</_li>
+        </ul>
+      ⁠</description>
+    </release>
+    <release version="0.1.1" date="2016-11-24" urgency="medium">
+      <description>
+        <ul>
+          <_li>Minor bug fixes</_li>
+        </ul>
+      </description>
+    </release>
+  </releases>
   <developer_name>elementary LLC.</developer_name>
   <url type="homepage">http://elementary.io/</url>
   <url type="bugtracker">https://bugs.launchpad.net/screenshot-tool</url>
