@@ -39,6 +39,7 @@ namespace Screenshot {
         private bool close_on_save;
         private bool redact;
         private int delay;
+        private bool to_clipboard;
 
         public ScreenshotWindow () {
             Object (border_width: 6,
@@ -50,9 +51,14 @@ namespace Screenshot {
             close_on_save = settings.get_boolean ("close-on-save");
             redact = settings.get_boolean ("redact");
             delay = settings.get_int ("delay");
+            to_clipboard = false;
         }
 
         construct {
+            if (from_command) {
+                return;
+            }
+
             set_keep_above (true);
             stick ();
 
@@ -164,7 +170,7 @@ namespace Screenshot {
             cancel_btn.clicked.connect (cancel_clicked);
         }
 
-        public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact) {
+        public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
             if (delay != null) {
                 this.delay = delay;
             }
@@ -189,6 +195,10 @@ namespace Screenshot {
                         capture_mode = CaptureType.AREA;
                         break;
                 }
+            }
+
+            if (clipboard != null) {
+                to_clipboard = clipboard;
             }
 
             close_on_save = true;
@@ -297,58 +307,73 @@ namespace Screenshot {
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
 
-            var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
-            save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
-                save_dialog.destroy ();
+            if (from_command == false) {
+                var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
+                save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
+                    save_dialog.destroy ();
 
-                if (response) {
-                    string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
-                    string output = output_name;
+                    if (response) {
+                        string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
+                        string output = output_name;
 
-                    foreach (string type in formats) {
-                        output = output.replace (type, "");
-                    }
-
-                    string file_name = "";
-                    int attempt = 0;
-
-                    // Check if file exists
-                    do {
-                        if (attempt == 0) {
-                            file_name = Path.build_filename (folder_dir, "%s.%s".printf (output, format));
-                        } else {
-                            file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (output, attempt, format));
+                        foreach (string type in formats) {
+                            output = output.replace (type, "");
                         }
 
-                        attempt++;
-                    } while (File.new_for_path (file_name).query_exists ());
+                        try {
+                            save_file (output, format, folder_dir, screenshot);
 
-                    try {
-                        screenshot.save (file_name, format);
-
-                        if (close_on_save) {
-                            this.destroy ();
+                            if (close_on_save) {
+                                this.destroy ();
+                            }
+                        } catch (GLib.Error e) {
+                            show_error_dialog ();
+                            debug (e.message);
                         }
-                    } catch (GLib.Error e) {
-                        show_error_dialog ();
-                        debug (e.message);
                     }
-                }
+                });
 
-                if (from_command && close_on_save) {
-                    this.destroy ();
-                }
-            });
+                save_dialog.close.connect (() => {
+                    if (close_on_save) {
+                        this.destroy ();
+                    }
+                });
 
-            save_dialog.close.connect (() => {
-                if (close_on_save) {
-                    this.destroy ();
-                }
-            });
+                save_dialog.show_all ();
+            } else {
+                if (to_clipboard) {
+                    Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
+                } else {
+                    var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
-            save_dialog.show_all ();
+                    /// TRANSLATORS: %s represents a timestamp here
+                    string file_name = _("Screenshot from %s").printf (date_time);
+                    string folder_dir = settings.get_string ("folder-dir");
+                    string format = settings.get_string ("format");
+
+                    save_file (file_name, format, folder_dir, screenshot);
+                }
+                this.destroy ();
+            }
 
             return false;
+        }
+
+        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) {
+            string full_file_name = "";
+                int attempt = 0;
+
+                do {
+                    if (attempt == 0) {
+                        full_file_name = Path.build_filename (folder_dir, "%s.%s".printf (file_name, format));
+                    } else {
+                        full_file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (file_name, attempt, format));
+                    }
+
+                    attempt++;
+                } while (File.new_for_path (full_file_name).query_exists ());
+
+                screenshot.save (full_file_name, format);
         }
 
         public void take_clicked () {
@@ -371,7 +396,9 @@ namespace Screenshot {
             this.hide ();
 
             Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
-                this.present ();
+                if (from_command == false) {
+                    this.present ();
+                }
                 return grab_save (null, redact);
             });
         }
@@ -395,7 +422,9 @@ namespace Screenshot {
                     item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
                 }
 
-                this.present ();
+                if (from_command == false) {
+                    this.present ();
+                }
 
                 if (win != null) {
                     grab_save (win, redact);
@@ -428,16 +457,23 @@ namespace Screenshot {
                 if (close_on_save) {
                     this.destroy ();
                 } else {
-                    this.present ();
+                    if (from_command == false) {
+                        this.present ();
+                    }
                 }
             });
 
             var win = selection_area.get_window ();
 
             selection_area.captured.connect (() => {
+            	if (delay == 0) {
+            		selection_area.set_opacity (0);
+            	}
                 selection_area.close ();
                 Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
-                    this.present ();
+                    if (from_command == false) {
+                        this.present ();
+                    }
                     return grab_save (win, redact);
                 });
             });
