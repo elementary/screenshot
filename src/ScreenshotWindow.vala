@@ -359,21 +359,30 @@ namespace Screenshot {
             return false;
         }
 
-        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) {
+        private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) {
             string full_file_name = "";
-                int attempt = 0;
 
-                do {
-                    if (attempt == 0) {
-                        full_file_name = Path.build_filename (folder_dir, "%s.%s".printf (file_name, format));
-                    } else {
-                        full_file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (file_name, attempt, format));
-                    }
+            if (folder_dir == "") {
+                if (settings.get_string ("folder-dir") != "") {
+                    folder_dir = settings.get_string ("folder-dir");
+                } else {
+                    folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
+                }
+            }
 
-                    attempt++;
-                } while (File.new_for_path (full_file_name).query_exists ());
+            int attempt = 0;
 
-                screenshot.save (full_file_name, format);
+            do {
+                if (attempt == 0) {
+                    full_file_name = Path.build_filename (folder_dir, "%s.%s".printf (file_name, format));
+                } else {
+                    full_file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (file_name, attempt, format));
+                }
+
+                attempt++;
+            } while (File.new_for_path (full_file_name).query_exists ());
+
+            screenshot.save (full_file_name, format);
         }
 
         public void take_clicked () {
