@@ -359,12 +359,13 @@ namespace Screenshot {
             return false;
         }
 
-        private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) {
+        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) {
             string full_file_name = "";
 
             if (folder_dir == "") {
-                if (settings.get_string ("folder-dir") != "") {
-                    folder_dir = settings.get_string ("folder-dir");
+                string folder_from_settings = settings.get_string ("folder-dir");
+                if (folder_from_settings != "") {
+                    folder_dir = folder_from_settings;
                 } else {
                     folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
                 }
