@@ -3,51 +3,51 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2017-03-01 20:23+0000\n"
+"Last-Translator: draza <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-16 06:47+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-03-02 05:55+0000\n"
+"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr ""
+msgstr "Saglabāt attēlu kā..."
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
-msgstr ""
+msgstr "Nosaukums:"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Ekrānattēls no %s"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
-msgstr ""
+msgstr "Formāts:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr ""
+msgstr "Mape:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "Norādiet ekrānattēlu mapi"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
-msgstr ""
+msgstr "_Saglabāt"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
 msgid "Cancel"
-msgstr ""
+msgstr "At_celt"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopēt uz starpliktuvi"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
@@ -55,27 +55,27 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Tvert visu ekrānu"
 
 #: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
-msgstr ""
+msgstr "Tvert esošo logu"
 
 #: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
-msgstr ""
+msgstr "Norādīt reģionu ko tvert"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr ""
+msgstr "Parametri"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "Tvert peles kursoru"
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
-msgstr ""
+msgstr "Aizvērt pēc saglabāšanas"
 
 #: ../src/ScreenshotWindow.vala:87
 msgid "Conceal text:"
@@ -83,51 +83,51 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "Aizture sekundēs"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Uzņemt ekrānattēlu"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Ekrānattēls uzņemts"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Neizdevās notvert ekrānattēlu"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "Neatradu aktīvo logu"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr ""
+msgstr "Attēls netika saglabāts"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Tvert aktīvo logu"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Tveršanas laukums"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Tvert visu ekrānu"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Tvert ekrānbildi pēc norādītās aiztures"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Sekundes"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Iekļaut kursoru ekrānattēlā"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
@@ -135,7 +135,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr ""
+msgstr "Ekrānattēls"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
@@ -144,3 +144,5 @@ msgstr ""
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  draza https://launchpad.net/~draza"
