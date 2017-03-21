@@ -348,10 +348,9 @@ namespace Screenshot {
 
                     /// TRANSLATORS: %s represents a timestamp here
                     string file_name = _("Screenshot from %s").printf (date_time);
-                    string folder_dir = settings.get_string ("folder-dir");
                     string format = settings.get_string ("format");
                     try {
-                        save_file (file_name, format, folder_dir, screenshot);
+                        save_file (file_name, format, "", screenshot);
                     } catch (GLib.Error e) {
                         show_error_dialog ();
                         debug (e.message);
