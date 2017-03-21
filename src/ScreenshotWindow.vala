@@ -350,8 +350,12 @@ namespace Screenshot {
                     string file_name = _("Screenshot from %s").printf (date_time);
                     string folder_dir = settings.get_string ("folder-dir");
                     string format = settings.get_string ("format");
-
-                    save_file (file_name, format, folder_dir, screenshot);
+                    try {
+                        save_file (file_name, format, folder_dir, screenshot);
+                    } catch (GLib.Error e) {
+                        show_error_dialog ();
+                        debug (e.message);
+                    }
                 }
                 this.destroy ();
             }
@@ -359,7 +363,7 @@ namespace Screenshot {
             return false;
         }
 
-        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) {
+        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
             string full_file_name = "";
 
             if (folder_dir == "") {
