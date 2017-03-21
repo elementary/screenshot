@@ -367,7 +367,7 @@ namespace Screenshot {
 
             if (folder_dir == "") {
                 string folder_from_settings = settings.get_string ("folder-dir");
-                if (folder_from_settings != "") {
+                if (folder_from_settings != "" && File.new_for_path (folder_from_settings).query_exists ()) {
                     folder_dir = folder_from_settings;
                 } else {
                     folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
