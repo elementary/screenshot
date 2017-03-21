@@ -45,8 +45,10 @@ namespace Screenshot.Widgets {
 
             var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
 
-            if (settings.get_string ("folder-dir") != folder_dir && settings.get_string ("folder-dir") != "") {
-                folder_dir = settings.get_string ("folder-dir");
+            var folder_from_settings = settings.get_string ("folder-dir");
+
+            if (folder_from_settings != folder_dir && folder_from_settings != "" && File.new_for_path (folder_from_settings).query_exists ()) {
+                folder_dir = folder_from_settings;
             }
 
             int width = pixbuf.get_width () / 4;
