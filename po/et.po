@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-21 23:33+0000\n"
+"PO-Revision-Date: 2017-03-31 17:48+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-16 06:47+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
+"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
@@ -52,7 +52,7 @@ msgstr "Loobu"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopeeri mällu"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
@@ -96,7 +96,7 @@ msgstr "Tee ekraanist pilt"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Ekraanipilt tehtud"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"

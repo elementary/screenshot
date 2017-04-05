@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-12-02 07:45+0000\n"
+"PO-Revision-Date: 2017-03-27 15:01+0000\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-16 06:47+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
+"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
@@ -96,7 +96,7 @@ msgstr "Fes una captura de pantalla"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Captura de pantalla feta"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
