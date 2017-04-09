@@ -479,11 +479,13 @@ namespace Screenshot {
             var win = selection_area.get_window ();
 
             selection_area.captured.connect (() => {
-            	if (delay == 0) {
-            		selection_area.set_opacity (0);
-            	}
+                var timeout = (delay - (redact ? 1 : 0)) * 1000;
+                if (delay == 0) {
+                    selection_area.set_opacity (0);
+                    timeout += 100;
+                }
                 selection_area.close ();
-                Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+                Timeout.add (timeout, () => {
                     if (from_command == false) {
                         this.present ();
                     }
