@@ -1,5 +1,5 @@
 <schemalist>
-	<schema id="net.launchpad.screenshot" path="/net/launchpad/screenshot/" gettext-domain="screenshot">
+    <schema id="net.launchpad.screenshot" path="/net/launchpad/screenshot/" gettext-domain="screenshot">
         <key name="format" type="s">
             <default>"png"</default>
         </key>
@@ -13,10 +13,11 @@
             <default>false</default>
         </key>
         <key name="delay" type="i">
+            <range min="0" max="15"/>
             <default>1</default>
         </key>
         <key name="folder-dir" type="s">
             <default>""</default>
         </key>
-	</schema>
+    </schema>
 </schemalist>
