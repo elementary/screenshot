@@ -406,14 +406,14 @@ namespace Screenshot {
         }
 
         private int get_timeout(int delay, bool redact) {
-            int timeout = delay;
+            int timeout = delay * 1000;
 
             if (redact) {
-                timeout -= 1;
+                timeout -= 1000;
             }
 
-            if (timeout < 0) {
-                timeout = 0;
+            if (timeout < 100) {
+                timeout = 100;
             }
 
             return timeout;
@@ -422,7 +422,7 @@ namespace Screenshot {
         private void capture_screen () {
             this.hide ();
 
-            Timeout.add_seconds (get_timeout (delay, redact), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 if (from_command == false) {
                     this.present ();
                 }
@@ -438,7 +438,7 @@ namespace Screenshot {
             screen = Gdk.Screen.get_default ();
 
             this.hide ();
-            Timeout.add_seconds (get_timeout (delay, redact), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -493,13 +493,11 @@ namespace Screenshot {
             var win = selection_area.get_window ();
 
             selection_area.captured.connect (() => {
-                var timeout = get_timeout (delay, redact) * 1000;
                 if (delay == 0) {
                     selection_area.set_opacity (0);
-                    timeout += 100;
                 }
                 selection_area.close ();
-                Timeout.add (timeout, () => {
+                Timeout.add (get_timeout (delay, redact), () => {
                     if (from_command == false) {
                         this.present ();
                     }
