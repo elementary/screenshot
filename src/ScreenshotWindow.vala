@@ -100,7 +100,7 @@ namespace Screenshot {
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
-            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
+            var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
             settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
             var grid = new Gtk.Grid ();
@@ -172,7 +172,7 @@ namespace Screenshot {
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
             if (delay != null) {
-                this.delay = delay;
+                this.delay = int.max (0, delay);
             }
 
             if (grab_pointer != null) {
@@ -405,10 +405,24 @@ namespace Screenshot {
             }
         }
 
+        private int get_timeout(int delay, bool redact) {
+            int timeout = delay * 1000;
+
+            if (redact) {
+                timeout -= 1000;
+            }
+
+            if (timeout < 100) {
+                timeout = 100;
+            }
+
+            return timeout;
+        }
+
         private void capture_screen () {
             this.hide ();
 
-            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 if (from_command == false) {
                     this.present ();
                 }
@@ -424,7 +438,7 @@ namespace Screenshot {
             screen = Gdk.Screen.get_default ();
 
             this.hide ();
-            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -479,11 +493,11 @@ namespace Screenshot {
             var win = selection_area.get_window ();
 
             selection_area.captured.connect (() => {
-            	if (delay == 0) {
-            		selection_area.set_opacity (0);
-            	}
+                if (delay == 0) {
+                    selection_area.set_opacity (0);
+                }
                 selection_area.close ();
-                Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+                Timeout.add (get_timeout (delay, redact), () => {
                     if (from_command == false) {
                         this.present ();
                     }
