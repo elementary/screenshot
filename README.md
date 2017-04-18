@@ -5,6 +5,7 @@
 
 You'll need the following dependencies:
 * cmake
+* libcanberra-dev
 * libgdk-pixbuf2.0-dev
 * libgtk-3-dev
 * libgranite-dev
