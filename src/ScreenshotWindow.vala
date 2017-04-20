@@ -528,7 +528,7 @@ namespace Screenshot {
            * @offset_x and @offset_y reflect the left and top shadow widths for CSD windows.
            * @pix1 will be composited on top of @pix2. The final result
            * will contain the whole of each pix on a white background.
-         ***/   
+         ***/
         private Gdk.Pixbuf composite_pix (Gdk.Pixbuf pix1, Gdk.Pixbuf pix2, Gdk.Rectangle selection_rect,
                                           int offset_x, int offset_y) {
 
@@ -572,9 +572,6 @@ namespace Screenshot {
             var cs = new Cairo.ImageSurface (Cairo.Format.ARGB32, cairo_width, cairo_height);
             var cr = new Cairo.Context (cs);
             cr.set_operator (Cairo.Operator.OVER);
-
-            cr.set_source_rgba (255, 255, 255, 255); // White background to show shadow
-            cr.paint ();
 
             cr.translate (offset_x2, offset_y2);
             Gdk.cairo_set_source_pixbuf (cr, pix2, 0.0, 0.0);
