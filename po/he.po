@@ -3,144 +3,147 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-20 12:08+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot-tool"
+"/screenshot-tool/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr ""
+msgstr "שמירת תמונה בשם…"
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
-msgstr ""
+msgstr "שם:"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "צילום מסך מ־%s"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
-msgstr ""
+msgstr "תבנית:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr ""
+msgstr "תיקייה:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "בחירת תיקייה לצילומי המסך…"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "העתקה ללוח הגזירים"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
-msgstr ""
+msgstr "אזור הלכידה:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "לכידה של כל המסך"
 
 #: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
-msgstr ""
+msgstr "לכידת החלון הנוכחי"
 
 #: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
-msgstr ""
+msgstr "בחירת אזור ללכידה"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr ""
+msgstr "מאפיינים:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "לכידת סמן העכבר:"
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
-msgstr ""
+msgstr "לסגור לאחר השמירה:"
 
 #: ../src/ScreenshotWindow.vala:87
 msgid "Conceal text:"
-msgstr ""
+msgstr "הסתרת טקסט:"
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "השהיה בשניות:"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
-msgstr ""
+msgstr "צילום המסך"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "המסך צולם"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "לא ניתן לצלם את המסך"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "לא ניתן למצוא חלון פעיל"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr ""
+msgstr "התמונה לא נשמרה"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "לכידת החלון הפעיל"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "לכידת אזור"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "צילום כל המסך"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "צילום לאחר השהיה מוגדרת"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "שניות"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "לכלול את הסמן עם צילום המסך"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
-msgstr ""
+msgstr "צנזור טקסט של המערכת"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr ""
+msgstr "צילום מסך"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
-msgstr ""
+msgstr "שמירת תמונות של המסך שלך או של חלונות נפרדים."
 
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
-msgstr ""
+msgstr "Yaron Shahrabani <sh.yaron@gmail.com>"
