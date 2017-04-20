@@ -30,9 +30,9 @@ namespace Screenshot {
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
         private CaptureType capture_mode;
-        private string prev_font_regular;
-        private string prev_font_document;
-        private string prev_font_mono;
+        private string? prev_font_regular = null;
+        private string? prev_font_document = null;
+        private string? prev_font_mono = null;
 
         private bool mouse_pointer;
         private bool from_command;
@@ -55,6 +55,8 @@ namespace Screenshot {
         }
 
         construct {
+            redact_text (false); /* Ensure system is not redacted */
+
             if (from_command) {
                 return;
             }
@@ -100,7 +102,7 @@ namespace Screenshot {
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
-            var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
+            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
             settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
             var grid = new Gtk.Grid ();
@@ -172,7 +174,7 @@ namespace Screenshot {
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
             if (delay != null) {
-                this.delay = int.max (0, delay);
+                this.delay = delay;
             }
 
             if (grab_pointer != null) {
@@ -224,67 +226,44 @@ namespace Screenshot {
                 return false;
             });
 
-            var win_rect = Gdk.Rectangle ();
             var root = Gdk.get_default_root_window ();
 
             if (win == null) {
                 win = root;
             }
 
-            Gdk.Pixbuf? screenshot;
-            int scale_factor = win.get_scale_factor ();
+            var root_width = root.get_width ();
+            var root_height = root.get_height ();
+            int scale_factor = root.get_scale_factor ();
 
-            if (capture_mode == CaptureType.AREA) {
-                Gdk.Rectangle selection_rect;
-                win.get_frame_extents (out selection_rect);
+            Gdk.Pixbuf? root_pix = get_scaled_pixbuf_from_window (root, capture_mode, scale_factor);
+            /* Ensure redacted text restored asap */
+            redact_text (false);
 
-                screenshot = new Gdk.Pixbuf.subpixbuf (Gdk.pixbuf_get_from_window (root, 0, 0, root.get_width (), root.get_height ()),
-                                                    selection_rect.x, selection_rect.y, selection_rect.width, selection_rect.height);
-
-                win_rect.x = selection_rect.x;
-                win_rect.y = selection_rect.y;
-                win_rect.width = selection_rect.width;
-                win_rect.height = selection_rect.height;
-            } else {
-                int width = win.get_width ();
-                int height = win.get_height ();
-
-                // Check the scaling factor in use, and if greater than 1 scale the image. (for HiDPI displays)
-                if (scale_factor > 1 && capture_mode == CaptureType.SCREEN) {
-                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width / scale_factor, height / scale_factor);
-                    screenshot.scale (screenshot, width, height, width, height, 0, 0, scale_factor, scale_factor, Gdk.InterpType.BILINEAR);
-                } else {
-                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
-                }
-
-                win_rect.x = 0;
-                win_rect.y = 0;
-                win_rect.width = width;
-                win_rect.height = height;
-            }
-
-            if (screenshot == null) {
+            if (root_pix == null) {
                 show_error_dialog ();
                 return false;
             }
 
             if (mouse_pointer) {
+                /* Getting actual cursor for current window fails for some reason so we construct a default cursor */
                 var cursor = new Gdk.Cursor.for_display (Gdk.Display.get_default (), Gdk.CursorType.LEFT_PTR);
                 var cursor_pixbuf = cursor.get_image ();
 
+                /* It is easier to accurately place cursor by compositing cursor image with the root screen */
+                /* It may or may not appear in the final screenshot */
                 if (cursor_pixbuf != null) {
                     var manager = Gdk.Display.get_default ().get_device_manager ();
                     var device = manager.get_client_pointer ();
 
                     int cx, cy, xhot, yhot;
-                    win.get_device_position (device, out cx, out cy, null);
+                    root.get_device_position (device, out cx, out cy, null);
                     xhot = int.parse (cursor_pixbuf.get_option ("x_hot")); // Left padding in cursor_pixbuf between the margin and the actual pointer
                     yhot = int.parse (cursor_pixbuf.get_option ("y_hot")); // Top padding in cursor_pixbuf between the margin and the actual pointer
 
                     var cursor_rect = Gdk.Rectangle ();
-
-                    cursor_rect.x = cx + win_rect.x - xhot;
-                    cursor_rect.y = cy + win_rect.y - yhot;
+                    cursor_rect.x = cx - xhot;
+                    cursor_rect.y = cy - yhot;
                     cursor_rect.width = cursor_pixbuf.get_width ();
                     cursor_rect.height = cursor_pixbuf.get_height ();
 
@@ -295,14 +274,91 @@ namespace Screenshot {
                         cursor_rect.height *= scale_factor;
                     }
 
-                    if (win_rect.intersect (cursor_rect, out cursor_rect)) {
-                        cursor_pixbuf.composite (screenshot, cursor_rect.x, cursor_rect.y, cursor_rect.width, cursor_rect.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
-                    }
+                    cursor_pixbuf.composite (root_pix,
+                                             cursor_rect.x, cursor_rect.y,
+                                             cursor_rect.width, cursor_rect.height,
+                                             cursor_rect.x, cursor_rect.y,
+                                             scale_factor,
+                                             scale_factor,
+                                             Gdk.InterpType.BILINEAR,
+                                             255);
                 }
             }
 
-            if (redact) {
-                redact_text (false);
+            Gdk.Pixbuf? screenshot = null;
+
+            if (capture_mode == CaptureType.AREA || capture_mode == CaptureType.CURRENT_WINDOW) {
+                /* We use a subpixbuf of the root screen for capturing the current window because this will include
+                 * menus, popups, tooltips etc whereas pixbuf_get_from_window will not */
+                Gdk.Rectangle selection_rect;
+                win.get_frame_extents (out selection_rect); /* Includes non-CSD decorations and regions offscreen */
+                Gdk.Pixbuf? window_pix = null;
+                int offset_x, offset_y;
+                offset_x = offset_y = 0;
+                Gdk.Rectangle subpix_rect = {selection_rect.x, selection_rect.y ,selection_rect.width ,selection_rect.height};
+
+                if (capture_mode == CaptureType.CURRENT_WINDOW) {
+                    /* frame_extents may include shadow region as a translucent border which we
+                     * do not want when creating the subpixbuf because it will cause selection of
+                     * parts of the background screen.*/
+
+                    /* Need to scale frame extents when not selected manually */
+                    if (scale_factor > 1) {
+                        selection_rect.x *= scale_factor;
+                        selection_rect.y *= scale_factor;
+                        selection_rect.width *= scale_factor;
+                        selection_rect.height *= scale_factor;
+                    }
+
+                    window_pix = get_scaled_pixbuf_from_window (win, capture_mode, scale_factor);
+                    /* window_pix does not include non-CSD decorations but includes regions offscreen */
+                    /* For non-CSD windows window_pix has no shadow and selection_rect will be unaltered and larger than window_pix;
+                     * the offsets will be zero.  For CSD windows, selection_rect starts the same size as window_pix
+                     * and will be shrunk to exclude the shadows; the offsets will reflect the thickness of the shadows. */
+                    selection_rect = remove_translucent_border (window_pix, selection_rect, out offset_x, out offset_y);
+                    subpix_rect = {selection_rect.x, selection_rect.y ,selection_rect.width ,selection_rect.height};
+
+                    /* Do not try to select region outside the root window */
+                    if (selection_rect.x < 0) {
+                        subpix_rect.width += selection_rect.x;
+                        subpix_rect.x = 0;
+                    }
+
+                    if (selection_rect.x + selection_rect.width > root_width) {
+                        subpix_rect.width = root_width - selection_rect.x;
+                    }
+
+                    if (selection_rect.y < 0) {
+                        subpix_rect.height += selection_rect.y;
+                        subpix_rect.y = 0;
+                    }
+
+                    if (selection_rect.y + selection_rect.height > root_height) {
+                        subpix_rect.height = root_height - selection_rect.y;
+                    }
+                }
+
+                Gdk.Pixbuf subpix = new Gdk.Pixbuf.subpixbuf (root_pix,
+                                                              subpix_rect.x,
+                                                              subpix_rect.y,
+                                                              subpix_rect.width,
+                                                              subpix_rect.height);
+
+                if (capture_mode == CaptureType.CURRENT_WINDOW) {
+                    /* For whole window grab, construct a composite of selection_pix and window_pix
+                     * (including shadow if there is one - absent with non-CSD windows.  Use Cairo since
+                     * we do not know which of the pixbufs is larger.  */
+                    screenshot = composite_pix (subpix, window_pix, selection_rect, offset_x, offset_y);
+                } else {
+                    screenshot = subpix;
+                }
+            } else {
+                screenshot = root_pix;
+            }
+
+            if (screenshot == null) {
+                show_error_dialog ();
+                return false;
             }
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
@@ -349,6 +405,7 @@ namespace Screenshot {
                     /// TRANSLATORS: %s represents a timestamp here
                     string file_name = _("Screenshot from %s").printf (date_time);
                     string format = settings.get_string ("format");
+
                     try {
                         save_file (file_name, format, "", screenshot);
                     } catch (GLib.Error e) {
@@ -356,10 +413,178 @@ namespace Screenshot {
                         debug (e.message);
                     }
                 }
+
                 this.destroy ();
             }
 
             return false;
+        }
+
+        private Gdk.Pixbuf? get_scaled_pixbuf_from_window (Gdk.Window win, CaptureType mode, int scale_factor) {
+            int width = win.get_width ();
+            int height = win.get_height ();
+            // Check the scaling factor in use, and if greater than 1 scale the image. (for HiDPI displays)
+            Gdk.Pixbuf? pix;
+            if (scale_factor > 1 && mode == CaptureType.SCREEN) {
+                pix = Gdk.pixbuf_get_from_window (win, 0, 0, width / scale_factor, height / scale_factor);
+                pix.scale (pix, width, height, width, height, 0, 0, scale_factor, scale_factor, Gdk.InterpType.BILINEAR);
+            } else {
+                pix = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+            }
+
+            return pix;
+        }
+
+
+        private Gdk.Rectangle remove_translucent_border (Gdk.Pixbuf? pix, Gdk.Rectangle rect, out int offset_x, out int offset_y) {
+            const int MIN_ALPHA = 128;
+            const int MIN_COLOR = 10;
+            offset_x = offset_y = 0;
+
+            if (pix == null) {
+                rect.x = rect.y = rect.width = rect.height = 0;
+            } else {
+                /* Measure any dark translucent shadow around pix */
+                var height = pix.get_height ();
+                var width = pix.get_width ();
+                uint8[] bytes = pix.read_pixel_bytes ().get_data ();
+                var length = pix.get_byte_length ();
+                var rowstride = pix.rowstride;
+                var half_row = (width / 2) * 4;
+
+                /* Measure top margin */
+                int count = 0;
+                uint index = half_row + 3;
+                while (index < length &&
+                       bytes[index] < MIN_ALPHA &&
+                       bytes[index - 1] < MIN_COLOR &&
+                       bytes[index - 2] < MIN_COLOR &&
+                       bytes[index - 3] < MIN_COLOR) {
+
+
+                    index += rowstride;
+                    count++;
+                }
+
+                rect.height -= count;
+                rect.y += count;
+                offset_y = count;
+
+                /* Measure bottom margin */
+                count = 0;
+                index = (uint)(length - half_row + 3);
+
+                while (index < length &&
+                       bytes[index] < MIN_ALPHA &&
+                       bytes[index - 1] < MIN_COLOR &&
+                       bytes[index - 2] < MIN_COLOR &&
+                       bytes[index - 3] < MIN_COLOR) {
+
+                    index -= rowstride;
+                    count++;
+                }
+
+                rect.height -= count;
+
+                /* Measure left margin */
+                count = 0;
+                index = (uint)(rowstride * (height / 2) + 3);
+                while (index < length &&
+                       bytes[index] < MIN_ALPHA &&
+                       bytes[index - 1] < MIN_COLOR &&
+                       bytes[index - 2] < MIN_COLOR &&
+                       bytes[index - 3] < MIN_COLOR) {
+
+                    index += 4;
+                    count++;
+                }
+
+                rect.width -= count;
+                rect.x += count;
+                offset_x = count;
+
+                /* Measure right margin */
+                count = 0;
+                index = rowstride * (height / 2) - 1;
+                while (index < length &&
+                       bytes[index] < MIN_ALPHA &&
+                       bytes[index - 1] < MIN_COLOR &&
+                       bytes[index - 2] < MIN_COLOR &&
+                       bytes[index - 3] < MIN_COLOR) {
+
+                    index -= 4;
+                    count++;
+                }
+
+                rect.width -= count;
+            }
+
+            return rect;
+        }
+        /*** @pix1 is the subpix of the root screen.
+           * @pix2 is the pixbuf of the whole window with CSD decorations (if any) including shadows.
+           * @selection_rect is the area of the whole window, including non-CSD decorations (if any) but excluding shadows.
+           * @offset_x and @offset_y are zero for non-CSD window since @pix2 is smaller than @selection_rect.
+           * @offset_x and @offset_y reflect the left and top shadow widths for CSD windows.
+           * @pix1 will be composited on top of @pix2. The final result
+           * will contain the whole of each pix on a white background.
+         ***/   
+        private Gdk.Pixbuf composite_pix (Gdk.Pixbuf pix1, Gdk.Pixbuf pix2, Gdk.Rectangle selection_rect,
+                                          int offset_x, int offset_y) {
+
+            double offset_x1 = 0.0;
+            double offset_y1 = 0.0;
+            double offset_x2 = 0.0;
+            double offset_y2 = 0.0;
+            int width1 = pix1.get_width ();
+            int width2 = pix2.get_width ();
+            int height1 = pix1.get_height ();
+            int height2 = pix2.get_height ();
+
+            offset_x1 = offset_x;
+            offset_y1 = offset_y;
+
+            bool left_truncation = (selection_rect.width > width1 && selection_rect.x < 0);
+            bool top_truncation = (selection_rect.height > height1 && selection_rect.y < 0);
+            int top_truncation_amount = top_truncation ? selection_rect.height - height1 : 0;
+            bool non_CSD = (selection_rect.height > height2);
+            int non_CSD_amount = non_CSD ? selection_rect.height - height2 : 0;
+            int non_CSD_not_showing_amount = non_CSD ? int.min (top_truncation_amount, non_CSD_amount) : 0;
+
+            if (left_truncation) {
+                offset_x1 -= selection_rect.x;
+            }
+
+            if (top_truncation) {
+                if (!non_CSD) {
+                    offset_y1 -= selection_rect.y;
+                } else {
+                    offset_y1 -= (selection_rect.y + non_CSD_amount);
+                }
+            } else {
+                offset_y2 = non_CSD_amount;
+            }
+
+            var cairo_width = int.max (selection_rect.width, width2);
+            var cairo_height = int.max (selection_rect.height - non_CSD_not_showing_amount, height2);
+
+            /* Create an Image surface large enough to hold composite image*/
+            var cs = new Cairo.ImageSurface (Cairo.Format.ARGB32, cairo_width, cairo_height);
+            var cr = new Cairo.Context (cs);
+            cr.set_operator (Cairo.Operator.OVER);
+
+            cr.set_source_rgba (255, 255, 255, 255); // White background to show shadow
+            cr.paint ();
+
+            cr.translate (offset_x2, offset_y2);
+            Gdk.cairo_set_source_pixbuf (cr, pix2, 0.0, 0.0);
+            cr.paint ();
+
+            cr.translate (offset_x1 - offset_x2, offset_y1 - offset_y2);
+            Gdk.cairo_set_source_pixbuf (cr, pix1, 0.0, 0.0);
+            cr.paint ();
+
+            return Gdk.pixbuf_get_from_surface (cs, 0, 0, cairo_width, cairo_height);
         }
 
         private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
@@ -405,24 +630,10 @@ namespace Screenshot {
             }
         }
 
-        private int get_timeout(int delay, bool redact) {
-            int timeout = delay * 1000;
-
-            if (redact) {
-                timeout -= 1000;
-            }
-
-            if (timeout < 100) {
-                timeout = 100;
-            }
-
-            return timeout;
-        }
-
         private void capture_screen () {
             this.hide ();
 
-            Timeout.add (get_timeout (delay, redact), () => {
+            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
                 if (from_command == false) {
                     this.present ();
                 }
@@ -438,7 +649,7 @@ namespace Screenshot {
             screen = Gdk.Screen.get_default ();
 
             this.hide ();
-            Timeout.add (get_timeout (delay, redact), () => {
+            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
@@ -497,7 +708,7 @@ namespace Screenshot {
                     selection_area.set_opacity (0);
                 }
                 selection_area.close ();
-                Timeout.add (get_timeout (delay, redact), () => {
+                Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
                     if (from_command == false) {
                         this.present ();
                     }
@@ -525,10 +736,14 @@ namespace Screenshot {
                 settings.set_string ("font-name", "Redacted Script Regular 9");
                 settings.set_string ("monospace-font-name", "Redacted Script Light 10");
                 settings.set_string ("document-font-name", "Redacted Script Regular 10");
-            } else {
+            } else if (prev_font_regular != null) {
                 settings.set_string ("font-name", prev_font_regular);
                 settings.set_string ("monospace-font-name", prev_font_mono);
                 settings.set_string ("document-font-name", prev_font_document);
+            } else if (settings.get_string ("font-name").contains ("Redacted")) { /* Fallback in case a program crash leaves the system redacted */
+                settings.reset ("font-name");
+                settings.reset ("monospace-font-name");
+                settings.reset ("document-font-name");
             }
         }
 
