@@ -16,6 +16,15 @@
     <binary>screenshot</binary>
   </provides>
   <releases>
+    <release version="0.1.3" date="2017-04-21" urgency="medium">
+      <description>
+        <ul>
+          <_li>Play shutter sound when a screenshot is taken"
+          <_li>Translation updates</_li>
+          <_li>Minor bug fixes</_li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.2" date="2017-02-10" urgency="medium">
       ⁠<description>
         <ul>
