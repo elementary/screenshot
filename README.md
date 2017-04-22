@@ -4,7 +4,9 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
+* appstream
 * cmake
+* desktop-file-utils
 * libcanberra-dev
 * libgdk-pixbuf2.0-dev
 * libgranite-dev
