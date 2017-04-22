@@ -15,10 +15,10 @@ It's recommended to create a clean build environment
     mkdir build
     cd build/
     
-Run `cmake` to configure the build environment and then `make` to build and run automated tests
+Run `cmake` to configure the build environment and then `make all test` to build and run automated tests
 
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-    make
+    make all test
     
 To install, use `make install`, then execute with `screenshot-tool`
 
