@@ -4,7 +4,7 @@ services:
  - docker
 
 env:
- - DEPENDENCY_PACKAGES="appstreamcli cmake desktop-file-utils libcanberra-dev libgdk-pixbuf2.0-dev libgranite-dev valac"
+ - DEPENDENCY_PACKAGES="appstream cmake desktop-file-utils libcanberra-dev libgdk-pixbuf2.0-dev libgranite-dev valac"
 
 install:
  - docker pull elementary/docker:loki
