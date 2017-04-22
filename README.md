@@ -7,9 +7,7 @@ You'll need the following dependencies:
 * cmake
 * libcanberra-dev
 * libgdk-pixbuf2.0-dev
-* libgtk-3-dev
 * libgranite-dev
-* libnotify
 * valac
 
 It's recommended to create a clean build environment
