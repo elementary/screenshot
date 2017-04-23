@@ -30,9 +30,9 @@ namespace Screenshot {
         private Settings settings = new Settings ("net.launchpad.screenshot");
 
         private CaptureType capture_mode;
-        private string? prev_font_regular = null;
-        private string? prev_font_document = null;
-        private string? prev_font_mono = null;
+        private string prev_font_regular;
+        private string prev_font_document;
+        private string prev_font_mono;
 
         private bool mouse_pointer;
         private bool from_command;
@@ -55,8 +55,6 @@ namespace Screenshot {
         }
 
         construct {
-            redact_text (false); /* Ensure system is not redacted */
-
             if (from_command) {
                 return;
             }
@@ -102,7 +100,7 @@ namespace Screenshot {
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
-            var delay_spin = new Gtk.SpinButton.with_range (1, 15, 1);
+            var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
             settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
             var grid = new Gtk.Grid ();
@@ -174,7 +172,7 @@ namespace Screenshot {
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
             if (delay != null) {
-                this.delay = delay;
+                this.delay = int.max (0, delay);
             }
 
             if (grab_pointer != null) {
@@ -237,8 +235,6 @@ namespace Screenshot {
             int scale_factor = root.get_scale_factor ();
 
             Gdk.Pixbuf? root_pix = get_scaled_pixbuf_from_window (root, capture_mode, scale_factor);
-            /* Ensure redacted text restored asap */
-            redact_text (false);
 
             if (root_pix == null) {
                 show_error_dialog ();
@@ -359,6 +355,10 @@ namespace Screenshot {
             if (screenshot == null) {
                 show_error_dialog ();
                 return false;
+            }
+
+            if (redact) {
+                redact_text (false);
             }
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
@@ -627,10 +627,24 @@ namespace Screenshot {
             }
         }
 
+        private int get_timeout(int delay, bool redact) {
+            int timeout = delay * 1000;
+
+            if (redact) {
+                timeout -= 1000;
+            }
+
+            if (timeout < 100) {
+                timeout = 100;
+            }
+
+            return timeout;
+        }
+
         private void capture_screen () {
             this.hide ();
 
-            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 if (from_command == false) {
                     this.present ();
                 }
@@ -646,14 +660,14 @@ namespace Screenshot {
             screen = Gdk.Screen.get_default ();
 
             this.hide ();
-            Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+            Timeout.add (get_timeout (delay, redact), () => {
                 list = screen.get_window_stack ();
                 foreach (Gdk.Window item in list) {
                     if (screen.get_active_window () == item) {
                         win = item;
                     }
 
-                    // Recieve updates of other windows when they are resized
+                    // Receive updates of other windows when they are resized
                     item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
                 }
 
@@ -733,14 +747,10 @@ namespace Screenshot {
                 settings.set_string ("font-name", "Redacted Script Regular 9");
                 settings.set_string ("monospace-font-name", "Redacted Script Light 10");
                 settings.set_string ("document-font-name", "Redacted Script Regular 10");
-            } else if (prev_font_regular != null) {
+            } else {
                 settings.set_string ("font-name", prev_font_regular);
                 settings.set_string ("monospace-font-name", prev_font_mono);
                 settings.set_string ("document-font-name", prev_font_document);
-            } else if (settings.get_string ("font-name").contains ("Redacted")) { /* Fallback in case a program crash leaves the system redacted */
-                settings.reset ("font-name");
-                settings.reset ("monospace-font-name");
-                settings.reset ("document-font-name");
             }
         }
 
