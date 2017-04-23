@@ -719,7 +719,7 @@ namespace Screenshot {
                     selection_area.set_opacity (0);
                 }
                 selection_area.close ();
-                Timeout.add_seconds (delay - (redact ? 1 : 0), () => {
+                Timeout.add_seconds (get_timeout (delay, redact), () => {
                     if (from_command == false) {
                         this.present ();
                     }
