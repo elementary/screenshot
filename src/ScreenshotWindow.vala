@@ -586,9 +586,10 @@ namespace Screenshot {
 
         private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
             string full_file_name = "";
+            string folder_from_settings = "";
 
             if (folder_dir == "") {
-                string folder_from_settings = settings.get_string ("folder-dir");
+                folder_from_settings = settings.get_string ("folder-dir");
                 if (folder_from_settings != "" && File.new_for_path (folder_from_settings).query_exists ()) {
                     folder_dir = folder_from_settings;
                 } else {
