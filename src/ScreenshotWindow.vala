@@ -232,9 +232,10 @@ namespace Screenshot {
             }
 
             Gdk.Pixbuf? screenshot;
-            int scale_factor = win.get_scale_factor ();
+            int scale_factor;
 
             if (capture_mode == CaptureType.AREA) {
+                scale_factor = root.get_scale_factor ();
                 Gdk.Rectangle selection_rect;
                 win.get_frame_extents (out selection_rect);
 
@@ -246,6 +247,7 @@ namespace Screenshot {
                 win_rect.width = selection_rect.width;
                 win_rect.height = selection_rect.height;
             } else {
+                scale_factor = win.get_scale_factor ();
                 int width = win.get_width ();
                 int height = win.get_height ();
 
