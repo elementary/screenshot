@@ -232,9 +232,10 @@ namespace Screenshot {
             }
 
             Gdk.Pixbuf? screenshot;
-            int scale_factor = win.get_scale_factor ();
+            int scale_factor;
 
             if (capture_mode == CaptureType.AREA) {
+                scale_factor = root.get_scale_factor ();
                 Gdk.Rectangle selection_rect;
                 win.get_frame_extents (out selection_rect);
 
@@ -246,6 +247,7 @@ namespace Screenshot {
                 win_rect.width = selection_rect.width;
                 win_rect.height = selection_rect.height;
             } else {
+                scale_factor = win.get_scale_factor ();
                 int width = win.get_width ();
                 int height = win.get_height ();
 
@@ -277,14 +279,17 @@ namespace Screenshot {
                     var device = manager.get_client_pointer ();
 
                     int cx, cy, xhot, yhot;
-                    win.get_device_position (device, out cx, out cy, null);
+                    if (capture_mode != CaptureType.AREA) {
+                        win.get_device_position (device, out cx, out cy, null);
+                    } else {
+                        root.get_device_position (device, out cx, out cy, null);
+                    }
                     xhot = int.parse (cursor_pixbuf.get_option ("x_hot")); // Left padding in cursor_pixbuf between the margin and the actual pointer
                     yhot = int.parse (cursor_pixbuf.get_option ("y_hot")); // Top padding in cursor_pixbuf between the margin and the actual pointer
 
                     var cursor_rect = Gdk.Rectangle ();
-
-                    cursor_rect.x = cx + win_rect.x - xhot;
-                    cursor_rect.y = cy + win_rect.y - yhot;
+                    cursor_rect.x = cx - xhot;
+                    cursor_rect.y = cy - yhot;
                     cursor_rect.width = cursor_pixbuf.get_width ();
                     cursor_rect.height = cursor_pixbuf.get_height ();
 
@@ -295,8 +300,13 @@ namespace Screenshot {
                         cursor_rect.height *= scale_factor;
                     }
 
-                    if (win_rect.intersect (cursor_rect, out cursor_rect)) {
-                        cursor_pixbuf.composite (screenshot, cursor_rect.x, cursor_rect.y, cursor_rect.width, cursor_rect.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
+                    Gdk.Rectangle cursor_clip;
+                    if (win_rect.intersect (cursor_rect, out cursor_clip)) {
+                        cursor_rect.x -= win_rect.x;
+                        cursor_rect.y -= win_rect.y;
+                        cursor_clip.x -= win_rect.x;
+                        cursor_clip.y -= win_rect.y;
+                        cursor_pixbuf.composite (screenshot, cursor_clip.x, cursor_clip.y, cursor_clip.width, cursor_clip.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
             }
@@ -313,7 +323,7 @@ namespace Screenshot {
                     save_dialog.destroy ();
 
                     if (response) {
-                        string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
+                        string[] formats = {".png", ".jpg", ".jpeg", ".bmp", ".tiff"};
                         string output = output_name;
 
                         foreach (string type in formats) {
