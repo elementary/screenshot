@@ -63,10 +63,10 @@ namespace Screenshot {
             app_icon = "accessories-screenshot";
             app_launcher = "screenshot.desktop";
 
-            main_url = "https://launchpad.net/screenshot-tool";
-            bug_url = "https://bugs.launchpad.net/screenshot-tool";
-            help_url = "https://answers.launchpad.net/screenshot-tool";
-            translate_url = "https://translations.launchpad.net/screenshot-tool";
+            main_url = "https://github.com/elementary/screenshot-tool";
+            bug_url = "https://github.com/elementary/screenshot-tool/issues";
+            help_url = "https://elementaryos.stackexchange.com/questions/tagged/screenshot";
+            translate_url = "https://l10n.elementary.io/projects/screenshot-tool";
 
             about_authors = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
             about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
