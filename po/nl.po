@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-04-24 21:15+0000\n"
+"PO-Revision-Date: 2017-04-29 10:54+0000\n"
 "Last-Translator: Pieter De Clercq <pieter.eke@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool"
 "/screenshot-tool/nl/>\n"
@@ -31,51 +31,51 @@ msgstr "Naam:"
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Schermafdruk van %s"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
-msgstr ""
+msgstr "Formaat:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr ""
+msgstr "Map:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "Selecteer map..."
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopiëren naar klembord"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
-msgstr ""
+msgstr "Gebied van afdruk:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Afdruk van het volledige scherm"
 
 #: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
-msgstr ""
+msgstr "Afdruk van het huidige venster"
 
 #: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
-msgstr ""
+msgstr "Selecteer gebied voor afdruk"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr ""
+msgstr "Eigenschappen:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
