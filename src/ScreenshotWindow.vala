@@ -254,6 +254,7 @@ namespace Screenshot {
 
                     int cx, cy, xhot, yhot;
                     root.get_device_position (device, out cx, out cy, null);
+
                     xhot = int.parse (cursor_pixbuf.get_option ("x_hot")); // Left padding in cursor_pixbuf between the margin and the actual pointer
                     yhot = int.parse (cursor_pixbuf.get_option ("y_hot")); // Top padding in cursor_pixbuf between the margin and the actual pointer
 
@@ -369,7 +370,7 @@ namespace Screenshot {
                     save_dialog.destroy ();
 
                     if (response) {
-                        string[] formats = {".png", ".jpg", ".jpeg",".bmp", ".tiff"};
+                        string[] formats = {".png", ".jpg", ".jpeg", ".bmp", ".tiff"};
                         string output = output_name;
 
                         foreach (string type in formats) {
@@ -720,7 +721,7 @@ namespace Screenshot {
                     selection_area.set_opacity (0);
                 }
                 selection_area.close ();
-                Timeout.add_seconds (get_timeout (delay, redact), () => {
+                Timeout.add (get_timeout (delay, redact), () => {
                     if (from_command == false) {
                         this.present ();
                     }
