@@ -40,6 +40,8 @@ namespace Screenshot {
         private bool redact;
         private int delay;
         private bool to_clipboard;
+        private int window_x;
+        private int window_y;
 
         public ScreenshotWindow () {
             Object (border_width: 6,
@@ -431,10 +433,12 @@ namespace Screenshot {
         }
 
         private void capture_screen () {
+            remember_window_position ();
             this.hide ();
 
             Timeout.add (get_timeout (delay, redact), () => {
                 if (from_command == false) {
+                    move (window_x, window_y);
                     this.present ();
                 }
                 return grab_save (null, redact);
@@ -448,6 +452,7 @@ namespace Screenshot {
 
             screen = Gdk.Screen.get_default ();
 
+            remember_window_position ();
             this.hide ();
             Timeout.add (get_timeout (delay, redact), () => {
                 list = screen.get_window_stack ();
@@ -461,6 +466,7 @@ namespace Screenshot {
                 }
 
                 if (from_command == false) {
+                    move (window_x, window_y);
                     this.present ();
                 }
 
@@ -488,6 +494,7 @@ namespace Screenshot {
         private void capture_area () {
             var selection_area = new Screenshot.Widgets.SelectionArea ();
             selection_area.show_all ();
+            remember_window_position ();
             this.hide ();
 
             selection_area.cancelled.connect (() => {
@@ -496,6 +503,7 @@ namespace Screenshot {
                     this.destroy ();
                 } else {
                     if (from_command == false) {
+                        move (window_x, window_y);
                         this.present ();
                     }
                 }
@@ -510,6 +518,7 @@ namespace Screenshot {
                 selection_area.close ();
                 Timeout.add (get_timeout (delay, redact), () => {
                     if (from_command == false) {
+                        move (window_x, window_y);
                         this.present ();
                     }
                     return grab_save (win, redact);
@@ -559,6 +568,12 @@ namespace Screenshot {
 
         private void cancel_clicked () {
             destroy ();
+        }
+
+        // Save main window position so that this position can be used
+        // when the window reappears again
+        private void remember_window_position () {
+	    this.get_toplevel ().get_window ().get_root_origin (out window_x, out window_y);
         }
     }
 }
