@@ -573,9 +573,9 @@ namespace Screenshot {
         // Save main window position so that this position can be used
         // when the window reappears again
         private void remember_window_position () {
-	       var window = this.get_toplevel ().get_window ();
-           if (window != null) {
-	           window.get_root_origin (out window_x, out window_y);
+            var window = this.get_toplevel ().get_window ();
+            if (window != null) {
+                window.get_root_origin (out window_x, out window_y);
            }
         }
     }
