@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
 "PO-Revision-Date: 2017-05-27 13:34+0000\n"
-"Last-Translator: Lieven Hanssen <lhanssen@freedommail.co>\n"
+"Last-Translator: Pieter De Clercq <pieter.eke@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool"
 "/screenshot-tool/nl/>\n"
 "Language: nl\n"
@@ -131,7 +131,7 @@ msgstr "Maak een schermafbeelding na een bepaalde vertraging"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Seconden"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
