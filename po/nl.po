@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-05-12 15:45+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"PO-Revision-Date: 2017-05-27 13:29+0000\n"
+"Last-Translator: Lieven Hanssen <lhanssen@freedommail.co>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool"
 "/screenshot-tool/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
@@ -59,7 +59,7 @@ msgstr "Kopiëren naar klembord"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
-msgstr "Gebied van afdruk:"
+msgstr "Opnamegebied:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
@@ -79,15 +79,15 @@ msgstr "Eigenschappen:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "Neem de muiscursor op:"
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
-msgstr ""
+msgstr "Sluiten na het opslaan:"
 
 #: ../src/ScreenshotWindow.vala:87
 msgid "Conceal text:"
-msgstr ""
+msgstr "Verberg tekst:"
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
