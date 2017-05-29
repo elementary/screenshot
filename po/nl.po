@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
 "PO-Revision-Date: 2017-05-29 22:20+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Last-Translator: Pieter De Clercq <pieter.eke@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool"
 "/screenshot-tool/nl/>\n"
 "Language: nl\n"
@@ -95,15 +95,15 @@ msgstr "Uitstel in seconden:"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
-msgstr "Maak schermafbeelding"
+msgstr "Neem schermafdruk"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr "Schermafbeelding is gemaakt"
+msgstr "Schermafdruk genomen"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr "Kon schermafbeelding niet maken"
+msgstr "Kon schermafdruk niet nemen"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
