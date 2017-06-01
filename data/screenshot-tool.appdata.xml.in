@@ -16,6 +16,13 @@
     <binary>screenshot</binary>
   </provides>
   <releases>
+    <release version="0.1.3.2" date="2017-mm-dd" urgency="medium">
+      <description>
+        <ul>
+          <_li>Remember main window position for reappearing window</_li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.3.1" date="2017-04-29" urgency="medium">
       <description>
         <ul>
