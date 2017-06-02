@@ -6,20 +6,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-03 16:47+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"PO-Revision-Date: 2017-05-03 15:57+0000\n"
+"Last-Translator: Eqest Studio <eqest@outlook.com>\n"
+"Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects"
+"/screenshot-tool/screenshot-tool/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr ""
+msgstr "Zapisz obrazek jako:"
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
@@ -72,7 +75,7 @@ msgstr "Select area to grab"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr ""
+msgstr "Właściwości:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
@@ -96,7 +99,7 @@ msgstr "Take Screenshot"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Zrobiono zrzut ekranu"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
@@ -131,8 +134,9 @@ msgid "Seconds"
 msgstr ""
 
 #: ../src/Screenshot.vala:44
+#, fuzzy
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Zachowaj kursor na zrzucie ekranu"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"

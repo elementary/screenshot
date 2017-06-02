@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
 "PO-Revision-Date: 2017-04-24 07:06+0000\n"
 "Last-Translator: Oscar A. Mata T. <oscar.mata@gmail.com>\n"
