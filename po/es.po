@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-06-11 02:48+0000\n"
+"PO-Revision-Date: 2017-06-11 02:49+0000\n"
 "Last-Translator: Mario Canchis <mariocanchis@yahoo.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool"
 "/screenshot-tool/es/>\n"
@@ -111,7 +111,7 @@ msgstr "No se encontró ninguna ventana activa"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr "Imagen sin guardar"
+msgstr "Imagen no grabada"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
