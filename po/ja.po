@@ -3,18 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-02-26 10:22+0000\n"
-"Last-Translator: Ryo Nakano <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-22 11:31+0000\n"
+"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool"
+"/screenshot-tool/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr "画像を保存..."
+msgstr "画像を保存…"
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
@@ -23,7 +26,7 @@ msgstr "ファイル名:"
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr "Screenshot from %s"
+msgstr "%s からのスクリーンショット"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
@@ -35,7 +38,7 @@ msgstr "フォルダー:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr "スクリーンショットフォルダーを選択..."
+msgstr "スクリーンショットフォルダーを選択…"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
@@ -71,7 +74,7 @@ msgstr "プロパティ:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr "マウスポインター部分を取り込む"
+msgstr "マウスポインター部分を取り込む："
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"

@@ -6,16 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-04-09 21:43+0000\n"
-"Last-Translator: Mario Rodrigo <capitantrueno@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"PO-Revision-Date: 2017-06-11 02:49+0000\n"
+"Last-Translator: Mario Canchis <mariocanchis@yahoo.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool"
+"/screenshot-tool/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-04-14 05:53+0000\n"
-"X-Generator: Launchpad (build 18352)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
@@ -96,7 +99,7 @@ msgstr "Capturar pantalla"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Pantallazo tomado"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
@@ -108,7 +111,7 @@ msgstr "No se encontró ninguna ventana activa"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr "Imagen sin guardar"
+msgstr "Imagen no grabada"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -140,7 +143,7 @@ msgstr "Redactar texto del sistema"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr "Capturar pantalla"
+msgstr "Captura de pantalla"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
