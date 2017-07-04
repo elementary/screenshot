@@ -58,9 +58,15 @@ namespace Screenshot.Widgets {
                 height /= 2;
             }
 
-            var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
+            var scale = get_style_context ().get_scale ();
 
-            var preview = new Gtk.Image.from_pixbuf (screenshot);
+            var preview = new Gtk.Image ();
+            preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
+            preview.get_style_context ().set_scale (1);
+
+            var preview_box = new Gtk.Grid ();
+            preview_box.get_style_context ().add_class ("card");
+            preview_box.add (preview);
 
             var dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
@@ -111,9 +117,10 @@ namespace Screenshot.Widgets {
 
             var grid = new Gtk.Grid ();
             grid.margin = 6;
+            grid.margin_top = 0;
             grid.row_spacing = 12;
             grid.column_spacing = 12;
-            grid.attach (preview, 0, 0, 2, 1);
+            grid.attach (preview_box, 0, 0, 2, 1);
             grid.attach (dialog_label, 0, 1, 2, 1);
             grid.attach (name_label, 0, 2, 1, 1);
             grid.attach (name_entry, 1, 2, 1, 1);
