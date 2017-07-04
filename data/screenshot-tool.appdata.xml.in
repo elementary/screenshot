@@ -58,8 +58,9 @@
   </releases>
   <developer_name>elementary LLC.</developer_name>
   <url type="homepage">http://elementary.io/</url>
-  <url type="bugtracker">https://bugs.launchpad.net/screenshot-tool</url>
+  <url type="bugtracker">https://github.com/elementary/screenshot-tool/issues</url>
   <url type="donation">https://elementary.io/get-involved#funding</url>
   <url type="help">https://elementaryos.stackexchange.com/questions/tagged/screenshot</url>
+  <url type="translate">https://l10n.elementary.io/projects/screenshot-tool</url>
   <update_contact>contact_at_elementary.io</update_contact>
 </component>
