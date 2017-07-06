@@ -18,7 +18,7 @@
 
 namespace Screenshot {
 
-    public class ScreenshotApp : Granite.Application {
+    public class ScreenshotApp : Gtk.Application {
 
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
@@ -47,33 +47,6 @@ namespace Screenshot {
             options[6] = { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, _("Save screenshot to clipboard"), null };
 
             add_main_option_entries (options);
-
-            // App info
-            build_version = Build.VERSION;
-            build_data_dir = Build.DATADIR;
-            build_pkg_data_dir = Build.PKGDATADIR;
-            build_release_name = Build.RELEASE_NAME;
-            build_version_info = Build.VERSION_INFO;
-
-            program_name = _("Screenshot");
-            exec_name = "screenshot";
-
-            app_years = "2014-2017";
-            application_id = "net.launchpad.screenshot";
-            app_icon = "accessories-screenshot";
-            app_launcher = "screenshot.desktop";
-
-            main_url = "https://github.com/elementary/screenshot-tool";
-            bug_url = "https://github.com/elementary/screenshot-tool/issues";
-            help_url = "https://elementaryos.stackexchange.com/questions/tagged/screenshot";
-            translate_url = "https://l10n.elementary.io/projects/screenshot-tool";
-
-            about_authors = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
-            about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
-            about_artists = {"Fabio Zaramella"};
-            about_comments = _("Save images of your screen or individual windows.");
-            about_translators = _("translator-credits");
-            about_license_type = Gtk.License.GPL_3_0;
 
             var quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
@@ -122,12 +95,7 @@ namespace Screenshot {
 
             app = new ScreenshotApp ();
 
-            //Workaround to get Granite's --about & Gtk's --help working together
-            if ("--help" in args || "-h" in args) {
-                return ((Gtk.Application)app).run (args);
-            } else {
-                return app.run (args);
-            }
+            return app.run (args);
         }
 
         private int _command_line (ApplicationCommandLine command_line) {
