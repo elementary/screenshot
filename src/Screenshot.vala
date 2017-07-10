@@ -34,6 +34,8 @@ namespace Screenshot {
         private bool redact = false;
         private bool clipboard = false;
 
+        public const string SAVE_FOLDER = _("Screenshots");
+
         construct {
             flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
 
@@ -82,6 +84,17 @@ namespace Screenshot {
             }
 
             return app;
+        }
+
+        public static void create_dir_if_missing (string path) {
+            if (!File.new_for_path (path).query_exists ()) {
+                try {
+                    File file = File.new_for_path (path);
+                    file.make_directory ();
+                } catch (Error e) {
+                    debug (e.message);
+                }
+            }
         }
 
         public static int main (string[] args) {
