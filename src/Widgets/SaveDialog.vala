@@ -67,8 +67,12 @@ namespace Screenshot.Widgets {
             preview.get_style_context ().set_scale (1);
 
             var preview_box = new Gtk.Grid ();
-            preview_box.get_style_context ().add_class ("card");
+            preview_box.halign = Gtk.Align.CENTER;
             preview_box.add (preview);
+
+            var preview_box_context = preview_box.get_style_context ();
+            preview_box_context.add_class ("card");
+            preview_box_context.add_class ("checkerboard-layout");
 
             var dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
