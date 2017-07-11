@@ -374,17 +374,19 @@ namespace Screenshot {
             return false;
         }
 
-        private void save_file (string file_name, string format, string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
+        private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
             string full_file_name = "";
             string folder_from_settings = "";
 
             if (folder_dir == "") {
                 folder_from_settings = settings.get_string ("folder-dir");
-                if (folder_from_settings != "" && File.new_for_path (folder_from_settings).query_exists ()) {
+                if (folder_from_settings != "") {
                     folder_dir = folder_from_settings;
                 } else {
-                    folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
+                    folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
+                        + "%c".printf(GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
                 }
+                ScreenshotApp.create_dir_if_missing (folder_dir);
             }
 
             int attempt = 0;
