@@ -84,7 +84,7 @@ ensure_vala_version("0.24.0" MINIMUM)
 
 include(ValaPrecompile)
 vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
-        src/Screenshot.vala
+        src/Application.vala
         src/ScreenshotWindow.vala
         src/Widgets/SelectionArea.vala
         src/Widgets/SaveDialog.vala
