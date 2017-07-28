@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2017-07-06 13:49-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,6 @@ msgstr ""
 msgid "Snapshot;Screenshot;"
 msgstr ""
 
-msgid "About Screenshot"
-msgstr ""
-
 msgid "Screenshot of the Whole Screen"
 msgstr ""
 
@@ -43,11 +40,17 @@ msgid ""
 "current window shots, and timed shots."
 msgstr ""
 
-msgid "Fix extra black area on HiDPI screenshots"
+msgid "Remember main window position for reappearing window"
+msgstr ""
+
+msgid "Minor bug fixes"
+msgstr ""
+
+msgid "Play shutter sound when a screenshot is taken"
 msgstr ""
 
 msgid "Translation updates"
 msgstr ""
 
-msgid "Minor bug fixes"
+msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""

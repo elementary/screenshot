@@ -10,7 +10,7 @@ set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 set (PKGDATADIR "${DATADIR}/${CMAKE_PROJECT_NAME}")
 set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
 set (RELEASE_NAME "Just a photogram.")
-set (VERSION "0.1.3.1")
+set (VERSION "0.1.4")
 set (VERSION_INFO "Development")
 
 # CTest
@@ -91,7 +91,7 @@ ensure_vala_version("0.24.0" MINIMUM)
 
 include(ValaPrecompile)
 vala_precompile(VALA_C ${CMAKE_PROJECT_NAME}
-        src/Screenshot.vala
+        src/Application.vala
         src/ScreenshotWindow.vala
         src/Widgets/SelectionArea.vala
         src/Widgets/SaveDialog.vala

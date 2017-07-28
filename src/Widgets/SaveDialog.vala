@@ -4,8 +4,7 @@
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
-* License as published by the Free Software Foundation; either
-* version 3 of the License, or (at your option) any later version.
+* License version 3 as published by the Free Software Foundation.
 *
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -42,14 +41,16 @@ namespace Screenshot.Widgets {
 
         construct {
             set_keep_above (true);
-
-            var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES);
+            var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
+                +  "%c".printf(GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
 
             var folder_from_settings = settings.get_string ("folder-dir");
 
-            if (folder_from_settings != folder_dir && folder_from_settings != "" && File.new_for_path (folder_from_settings).query_exists ()) {
+            if (folder_from_settings != folder_dir && folder_from_settings != "") {
                 folder_dir = folder_from_settings;
             }
+
+            ScreenshotApp.create_dir_if_missing (folder_dir);
 
             int width = pixbuf.get_width () / 4;
             int height = pixbuf.get_height () / 4;
@@ -58,9 +59,19 @@ namespace Screenshot.Widgets {
                 height /= 2;
             }
 
-            var screenshot = pixbuf.scale_simple (width, height, Gdk.InterpType.BILINEAR);
+            var scale = get_style_context ().get_scale ();
 
-            var preview = new Gtk.Image.from_pixbuf (screenshot);
+            var preview = new Gtk.Image ();
+            preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
+            preview.get_style_context ().set_scale (1);
+
+            var preview_box = new Gtk.Grid ();
+            preview_box.halign = Gtk.Align.CENTER;
+            preview_box.add (preview);
+
+            var preview_box_context = preview_box.get_style_context ();
+            preview_box_context.add_class ("card");
+            preview_box_context.add_class ("checkerboard-layout");
 
             var dialog_label = new Gtk.Label (_("Save Image as…"));
             dialog_label.get_style_context ().add_class ("h4");
@@ -111,9 +122,10 @@ namespace Screenshot.Widgets {
 
             var grid = new Gtk.Grid ();
             grid.margin = 6;
+            grid.margin_top = 0;
             grid.row_spacing = 12;
             grid.column_spacing = 12;
-            grid.attach (preview, 0, 0, 2, 1);
+            grid.attach (preview_box, 0, 0, 2, 1);
             grid.attach (dialog_label, 0, 1, 2, 1);
             grid.attach (name_label, 0, 2, 1, 1);
             grid.attach (name_entry, 1, 2, 1, 1);

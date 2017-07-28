@@ -1,24 +1,25 @@
-/***
-
-    Copyright (C) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-
-    This program is free software: you can redistribute it and/or modify it
-    under the terms of the GNU Lesser General Public License version 3, as
-    published by the Free Software Foundation.
-
-    This program is distributed in the hope that it will be useful, but
-    WITHOUT ANY WARRANTY; without even the implied warranties of
-    MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-    PURPOSE.  See the GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program.  If not, see <http://www.gnu.org/licenses>
-
-***/
+/*
+* Copyright (c) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
+*               2017 elementary LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU Lesser General Public
+* License version 3 as published by the Free Software Foundation.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
 
 namespace Screenshot {
 
-    public class ScreenshotApp : Granite.Application {
+    public class ScreenshotApp : Gtk.Application {
 
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
@@ -34,6 +35,8 @@ namespace Screenshot {
         private bool redact = false;
         private bool clipboard = false;
 
+        public const string SAVE_FOLDER = _("Screenshots");
+
         construct {
             flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
 
@@ -47,33 +50,6 @@ namespace Screenshot {
             options[6] = { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, _("Save screenshot to clipboard"), null };
 
             add_main_option_entries (options);
-
-            // App info
-            build_version = Build.VERSION;
-            build_data_dir = Build.DATADIR;
-            build_pkg_data_dir = Build.PKGDATADIR;
-            build_release_name = Build.RELEASE_NAME;
-            build_version_info = Build.VERSION_INFO;
-
-            program_name = _("Screenshot");
-            exec_name = "screenshot";
-
-            app_years = "2014-2017";
-            application_id = "net.launchpad.screenshot";
-            app_icon = "accessories-screenshot";
-            app_launcher = "screenshot.desktop";
-
-            main_url = "https://github.com/elementary/screenshot-tool";
-            bug_url = "https://github.com/elementary/screenshot-tool/issues";
-            help_url = "https://elementaryos.stackexchange.com/questions/tagged/screenshot";
-            translate_url = "https://l10n.elementary.io/projects/screenshot-tool";
-
-            about_authors = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
-            about_documenters = {"Fabio Zaramella <ffabio.96.x@gmail.com>"};
-            about_artists = {"Fabio Zaramella"};
-            about_comments = _("Save images of your screen or individual windows.");
-            about_translators = _("translator-credits");
-            about_license_type = Gtk.License.GPL_3_0;
 
             var quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
@@ -111,6 +87,17 @@ namespace Screenshot {
             return app;
         }
 
+        public static void create_dir_if_missing (string path) {
+            if (!File.new_for_path (path).query_exists ()) {
+                try {
+                    File file = File.new_for_path (path);
+                    file.make_directory ();
+                } catch (Error e) {
+                    debug (e.message);
+                }
+            }
+        }
+
         public static int main (string[] args) {
             // Init internationalization support
             Intl.setlocale (LocaleCategory.ALL, "");
@@ -122,12 +109,7 @@ namespace Screenshot {
 
             app = new ScreenshotApp ();
 
-            //Workaround to get Granite's --about & Gtk's --help working together
-            if ("--help" in args || "-h" in args) {
-                return ((Gtk.Application)app).run (args);
-            } else {
-                return app.run (args);
-            }
+            return app.run (args);
         }
 
         private int _command_line (ApplicationCommandLine command_line) {
