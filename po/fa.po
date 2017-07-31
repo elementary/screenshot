@@ -3,23 +3,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-07-31 10:43+0000\n"
+"Last-Translator: mohamad12121 <mohamadij2@gmail.com>\n"
+"Language-Team: Persian <https://weblate.elementary.io/projects/screenshot-"
+"tool/screenshot-tool/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr ""
+msgstr "ذخیره تصویر به عنوان …"
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
-msgstr ""
+msgstr "نام:"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
@@ -40,11 +42,11 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
-msgstr ""
+msgstr "ذخیره"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
 msgid "Cancel"
-msgstr ""
+msgstr "انصراف"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
@@ -52,7 +54,7 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
-msgstr ""
+msgstr "ناحیه عکس گرفتن:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
@@ -84,7 +86,7 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "وقفه به ثانیه:"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
@@ -92,11 +94,11 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "اسکرینb'‌'شات گرفته شد"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "نمی توان اسکرینb'‌'شات گرفت"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
@@ -104,7 +106,7 @@ msgstr ""
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr ""
+msgstr "تصویر ذخیره نشد"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -124,7 +126,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "ثانیه"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
@@ -136,7 +138,7 @@ msgstr ""
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
-msgstr ""
+msgstr "اسکرین شات"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
