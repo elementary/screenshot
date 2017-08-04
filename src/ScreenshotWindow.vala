@@ -132,11 +132,11 @@ namespace Screenshot {
 
             this.set_default (take_btn);
 
-            var cancel_btn = new Gtk.Button.with_label (_("Cancel"));
+            var close_btn = new Gtk.Button.with_label (_("Close"));
 
             Gtk.Box actions = get_action_area () as Gtk.Box;
             actions.margin_top = 12;
-            actions.add (cancel_btn);
+            actions.add (close_btn);
             actions.add (take_btn);
 
             all.toggled.connect (() => {
@@ -169,7 +169,7 @@ namespace Screenshot {
             });
 
             take_btn.clicked.connect (take_clicked);
-            cancel_btn.clicked.connect (cancel_clicked);
+            close_btn.clicked.connect (close_clicked);
         }
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
@@ -568,7 +568,7 @@ namespace Screenshot {
             context.play_full (0, props, null);
         }
 
-        private void cancel_clicked () {
+        private void close_clicked () {
             destroy ();
         }
 
