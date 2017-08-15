@@ -1,5 +1,5 @@
 <schemalist>
-    <schema id="net.launchpad.screenshot" path="/net/launchpad/screenshot/" gettext-domain="screenshot">
+    <schema id="io.elementary.screenshot-tool" path="/io/elementary/screenshot-tool/" gettext-domain="io.elementary.screenshot-tool">
         <key name="format" type="s">
             <default>"png"</default>
         </key>

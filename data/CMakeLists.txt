@@ -1,9 +1,9 @@
 include (Translations)
 
 configure_file_translation (${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.appdata.xml.in ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.appdata.xml ${CMAKE_SOURCE_DIR}/po/)
-configure_file_translation (${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.desktop ${CMAKE_SOURCE_DIR}/po/)
+configure_file_translation (${CMAKE_CURRENT_SOURCE_DIR}/screenshot-tool.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/screenshot-tool.desktop ${CMAKE_SOURCE_DIR}/po/)
 install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.appdata.xml DESTINATION share/appdata)
-install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.desktop DESTINATION share/applications)
+install (FILES ${CMAKE_CURRENT_BINARY_DIR}/screenshot-tool.desktop DESTINATION share/applications)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/icons/32/accessories-screenshot.svg DESTINATION share/icons/hicolor/32x32/apps)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/icons/48/accessories-screenshot.svg DESTINATION share/icons/hicolor/48x48/apps)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/icons/64/accessories-screenshot.svg DESTINATION share/icons/hicolor/64x64/apps)
