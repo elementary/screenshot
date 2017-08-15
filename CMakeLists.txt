@@ -13,6 +13,13 @@ set (RELEASE_NAME "Just a photogram.")
 set (VERSION "0.1.4")
 set (VERSION_INFO "Development")
 
+# CTest
+include (CTest)
+if (BUILD_TESTING)
+    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/screenshot-tool.desktop)
+    add_test (NAME validate-appdata COMMAND appstreamcli validate ${CMAKE_BINARY_DIR}/data/screenshot-tool.appdata.xml)
+endif ()
+
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 #
