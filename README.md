@@ -20,7 +20,7 @@ Run `cmake` to configure the build environment and then `make` to build and run 
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make
     
-To install, use `make install`, then execute with `screenshot-tool`
+To install, use `make install`, then execute with `io.elementary.screenshot-tool`
 
     sudo make install
-    screenshot-tool
+    io.elementary.screenshot-tool

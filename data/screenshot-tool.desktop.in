@@ -2,7 +2,7 @@
 Type=Application
 _Name=Screenshot
 _Comment=Save images of the screen
-Exec=screenshot-tool
+Exec=io.elementary.screenshot-tool
 Icon=accessories-screenshot
 Terminal=false
 Categories=GTK;GNOME;Utility;

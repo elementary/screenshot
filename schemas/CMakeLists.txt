@@ -1,2 +1,2 @@
 include(GSettings)
-add_schema("net.launchpad.screenshot.gschema.xml")
+add_schema("io.elementary.screenshot-tool.gschema.xml")
