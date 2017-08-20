@@ -11,12 +11,12 @@ Actions=ScreenShot;WindowShot;AreaShot;
 
 [Desktop Action ScreenShot]
 _Name=Screenshot of the Whole Screen
-Exec=screenshot-tool --screen
+Exec=io.elementary.screenshot-tool --screen
 
 [Desktop Action WindowShot]
 _Name=Screenshot of the Current Window
-Exec=screenshot-tool --window
+Exec=io.elementary.screenshot-tool --window
 
 [Desktop Action AreaShot]
 _Name=Screenshot of a Selected Area
-Exec=screenshot-tool --area
+Exec=io.elementary.screenshot-tool --area
