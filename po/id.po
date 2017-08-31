@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-08-22 11:09+0000\n"
-"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
+"PO-Revision-Date: 2017-08-31 15:14+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/id/>\n"
 "Language: id\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
@@ -34,7 +34,7 @@ msgstr "Format:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr ""
+msgstr "Folder:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
@@ -146,4 +146,4 @@ msgstr "Simpan gambar dari layar atau jendela individual Anda."
 
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
-msgstr ""
+msgstr "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
