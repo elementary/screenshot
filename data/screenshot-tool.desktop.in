@@ -1,22 +1,22 @@
 [Desktop Entry]
 Type=Application
-_Name=Screenshot
-_Comment=Save images of the screen
+Name=Screenshot
+Comment=Save images of the screen
 Exec=io.elementary.screenshot-tool
 Icon=accessories-screenshot
 Terminal=false
 Categories=GTK;GNOME;Utility;
-_Keywords=Snapshot;Screenshot;
+Keywords=Snapshot;Screenshot;
 Actions=ScreenShot;WindowShot;AreaShot;
 
 [Desktop Action ScreenShot]
-_Name=Screenshot of the Whole Screen
+Name=Screenshot of the Whole Screen
 Exec=screenshot-tool --screen
 
 [Desktop Action WindowShot]
-_Name=Screenshot of the Current Window
+Name=Screenshot of the Current Window
 Exec=screenshot-tool --window
 
 [Desktop Action AreaShot]
-_Name=Screenshot of a Selected Area
+Name=Screenshot of a Selected Area
 Exec=screenshot-tool --area
