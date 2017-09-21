@@ -3,6 +3,7 @@ Section: graphics
 Priority: extra
 Maintainer: Cody Garver <cody@elementary.io> 
 Build-Depends: debhelper (>= 9),
+               desktop-file-utils,
                gettext,
                libcanberra-dev,
                libgranite-dev,
