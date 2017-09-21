@@ -6,10 +6,14 @@
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 %:
-	dh $@ 
+	dh $@ --buildsystem=meson
 
 override_dh_strip:
 	dh_strip --dbg-package=screenshot-tool-dbg
 
 override_dh_install:
 	dh_install --fail-missing
+
+override_dh_auto_install:
+	dh_auto_install
+	find . -name "extra.mo" -delete
