@@ -21,13 +21,11 @@
 */
 
 namespace Screenshot.Widgets {
-
     public class SaveDialog : Gtk.Dialog {
-
         public Gdk.Pixbuf pixbuf { get; construct; }
         public Settings settings { get; construct; }
 
-        public signal void save_response (bool response, string folder_dir, string output_name, string format);
+        public signal void save_response (string folder_dir, string output_name, string format);
 
         public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
             Object (border_width: 6,
@@ -134,32 +132,19 @@ namespace Screenshot.Widgets {
             grid.attach (location_label, 0, 4, 1, 1);
             grid.attach (location, 1, 4, 1, 1);
 
-            var content = this.get_content_area () as Gtk.Box;
-            content.add (grid);
+            ((Gtk.Box) get_content_area ()).add (grid);
+            ((Gtk.Box) get_action_area ()).margin_top = 12;
 
-            var save_btn = new Gtk.Button.with_label (_("Save"));
-            save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            add_button (_("Copy to Clipboard"), 1);
+            add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
-            var retry_btn = new Gtk.Button.with_label (_("Cancel"));
-            var clipboard_btn = new Gtk.Button.with_label (_("Copy to Clipboard"));
+            var save_button = add_button (_("Save"), Gtk.ResponseType.ACCEPT);
+            save_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            var actions = get_action_area () as Gtk.Box;
-            actions.margin_top = 12;
-            actions.add (clipboard_btn);
-            actions.add (retry_btn);
-            actions.add (save_btn);
+            response.connect (on_response);
 
-            save_btn.clicked.connect (() => {
-                save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
-            });
-
-            clipboard_btn.clicked.connect (() => {
-                 Gtk.Clipboard.get_default (this.get_display ()).set_image (pixbuf);
-                 this.close ();
-            });
-
-            retry_btn.clicked.connect (() => {
-                save_response (false, folder_dir, file_name, format_cmb.get_active_text ());
+            ((Gtk.Button) save_button).clicked.connect (() => {
+                save_response (folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
             });
 
             format_cmb.changed.connect (() => {
@@ -175,11 +160,23 @@ namespace Screenshot.Widgets {
             });
 
             key_press_event.connect ((e) => {
-                if (e.keyval == Gdk.Key.Return)
-                    save_btn.activate ();
-
+                if (e.keyval == Gdk.Key.Return) {
+                    save_button.activate ();
+                }
                 return false;
             });
+        }
+
+        private void on_response (Gtk.Dialog source, int response_id) {
+            switch (response_id) {
+            case Gtk.ResponseType.CANCEL:
+                destroy ();
+                break;
+            case 1:
+                Gtk.Clipboard.get_default (get_display ()).set_image (pixbuf);
+                close ();
+                break;
+            }
         }
     }
 }
