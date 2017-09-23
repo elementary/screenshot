@@ -80,12 +80,10 @@ namespace Screenshot.Widgets {
 
             var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
-            /// TRANSLATORS: %s represents a timestamp here
-            var file_name = _("Screenshot from %s").printf (date_time);
-
             var name_entry = new Gtk.Entry ();
             name_entry.hexpand = true;
-            name_entry.text = file_name;
+            /// TRANSLATORS: %s represents a timestamp here
+            name_entry.text = _("Screenshot from %s").printf (date_time);
             name_entry.grab_focus ();
 
             var format_label = new Gtk.Label (_("Format:"));
