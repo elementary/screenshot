@@ -8,7 +8,19 @@ description: |
   and beautiful presentations.
 
 grade: stable
-confinement: devmode
+confinement: strict
+
+plugs:
+  elementary-platform-loki:
+    interface: content
+    target: $SNAP/gnome-platform
+    default-provider: elementary-platform-loki:elementary-platform-loki
+
+slots:
+  screenshot-tool:
+    interface: dbus
+    bus: session
+    name: io.elementary.screenshot-tool
 
 apps:
   screenshot-tool:
@@ -37,7 +49,8 @@ parts:
       apt update
       apt dist-upgrade -y
   screenshot-tool:
-    after: [elementary, desktop-gtk3]
+    build-attributes: [no-system-libraries]
+    after: [elementary, desktop-gnome-platform]
     plugin: meson
     meson-parameters: [--prefix=/usr]
     source: .
