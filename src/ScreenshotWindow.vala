@@ -506,6 +506,7 @@ namespace Screenshot {
                 } else {
                     if (from_command == false) {
                         move (window_x, window_y);
+                        this.set_opacity (1);
                         this.present ();
                     }
                 }
