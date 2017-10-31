@@ -321,27 +321,25 @@ namespace Screenshot {
 
             if (from_command == false) {
                 var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
-                save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
+                save_dialog.save_response.connect ((folder_dir, output_name, format) => {
                     save_dialog.destroy ();
 
-                    if (response) {
-                        string[] formats = {".png", ".jpg", ".jpeg", ".bmp", ".tiff"};
-                        string output = output_name;
+                    string[] formats = {".png", ".jpg", ".jpeg", ".bmp", ".tiff"};
+                    string output = output_name;
 
-                        foreach (string type in formats) {
-                            output = output.replace (type, "");
+                    foreach (string type in formats) {
+                        output = output.replace (type, "");
+                    }
+
+                    try {
+                        save_file (output, format, folder_dir, screenshot);
+
+                        if (close_on_save) {
+                            this.destroy ();
                         }
-
-                        try {
-                            save_file (output, format, folder_dir, screenshot);
-
-                            if (close_on_save) {
-                                this.destroy ();
-                            }
-                        } catch (GLib.Error e) {
-                            show_error_dialog ();
-                            debug (e.message);
-                        }
+                    } catch (GLib.Error e) {
+                        show_error_dialog ();
+                        debug (e.message);
                     }
                 });
 
