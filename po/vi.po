@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-12-28 02:21+0000\n"
+"PO-Revision-Date: 2017-12-28 19:11+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/vi/>\n"
@@ -70,7 +70,7 @@ msgstr "Chọn khu vực để chụp"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr "Tính chất:"
+msgstr "Thuộc tính:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
@@ -146,4 +146,4 @@ msgstr "Lưu hình ảnh màn hình của bạn hoặc các cửa sổ riêng bi
 
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
-msgstr "Hải Hồ"
+msgstr "Hải Hồ - https://l10n.elementary.io/user/haiho/"
