@@ -1,4 +1,7 @@
-project('io.elementary.screenshot-tool', 'vala', 'c')
+project(
+    'io.elementary.screenshot-tool', 'vala', 'c',
+    meson_version : '>= 0.43'
+)
 
 i18n = import('i18n')
 
