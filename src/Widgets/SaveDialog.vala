@@ -85,6 +85,10 @@ namespace Screenshot.Widgets {
             /// TRANSLATORS: %s represents a timestamp here
             var file_name = _("Screenshot from %s").printf (date_time);
 
+            if (this.scale_factor > 1) {
+                file_name += " @2";
+            }
+
             var name_entry = new Gtk.Entry ();
             name_entry.hexpand = true;
             name_entry.text = file_name;
