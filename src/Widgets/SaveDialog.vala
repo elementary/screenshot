@@ -86,7 +86,7 @@ namespace Screenshot.Widgets {
             var file_name = _("Screenshot from %s").printf (date_time);
 
             if (this.scale_factor > 1) {
-                file_name += " @2";
+                file_name += " @%d".printf (this.scale_factor);
             }
 
             var name_entry = new Gtk.Entry ();
