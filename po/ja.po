@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2018-02-18 11:09+0000\n"
+"PO-Revision-Date: 2018-03-07 00:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/ja/>\n"
@@ -34,11 +34,11 @@ msgstr "フォーマット:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr "フォルダー:"
+msgstr "フォルダ:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr "スクリーンショットフォルダーを選択…"
+msgstr "スクリーンショットフォルダを選択…"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
