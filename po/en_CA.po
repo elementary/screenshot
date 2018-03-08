@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2016-06-03 16:44+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
-"Language-Team: English (Canada) <en_CA@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-03-08 16:29+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) <https://weblate.elementary.io/projects"
+"/screenshot-tool/screenshot-tool/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
@@ -53,7 +55,7 @@ msgstr "Cancel"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copy to Clipboard"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
@@ -97,7 +99,7 @@ msgstr "Take Screenshot"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Screenshot taken"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
