@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2018-05-06 00:10+0000\n"
+"PO-Revision-Date: 2018-05-07 21:58+0000\n"
 "Last-Translator: febrezo <felixbrezo@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/es/>\n"
@@ -50,7 +50,6 @@ msgid "Save"
 msgstr "Guardar"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-#, fuzzy
 msgid "Cancel"
 msgstr "Cancelar"
 
