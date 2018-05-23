@@ -1,6 +1,6 @@
 /*
-* Copyright (c) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-*               2017 elementary LLC. (http://launchpad.net/screenshot-tool)
+* Copyright (c) 2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
+*               2017–2018 elementary LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
