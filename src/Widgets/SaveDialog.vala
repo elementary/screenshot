@@ -30,13 +30,16 @@ namespace Screenshot.Widgets {
         public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
         public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
-            Object (border_width: 6,
-                    deletable: false,
-                    modal: true,
-                    pixbuf: pixbuf,
-                    resizable: false,
-                    settings: settings,
-                    transient_for: parent);
+            Object (
+                border_width: 6,
+                deletable: false,
+                modal: true,
+                pixbuf: pixbuf,
+                resizable: false,
+                settings: settings,
+                title: _("Screenshot"),
+                transient_for: parent
+            );
         }
 
         construct {

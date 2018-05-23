@@ -44,9 +44,12 @@ namespace Screenshot {
         private int window_y;
 
         public ScreenshotWindow () {
-            Object (border_width: 6,
-                    deletable: false,
-                    resizable: false);
+            Object (
+                border_width: 6,
+                deletable: false,
+                resizable: false,
+                title: _("Screenshot")
+            );
 
             capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
