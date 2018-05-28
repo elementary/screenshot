@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2018-05-13 00:11+0000\n"
+"PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/ja/>\n"
@@ -102,7 +102,7 @@ msgstr "スクリーンショットを撮ることができませんでした"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
-msgstr "現在のウィンドウが見つかりません"
+msgstr "現在のウィンドウが見つかりませんでした"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
