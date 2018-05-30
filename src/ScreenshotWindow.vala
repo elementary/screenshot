@@ -1,6 +1,6 @@
 /*
-* Copyright (c) 2014-2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-*               2017 elementary LLC. (https://elementary.io)
+* Copyright (c) 2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
+*               2017–2018 elementary LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
@@ -44,9 +44,12 @@ namespace Screenshot {
         private int window_y;
 
         public ScreenshotWindow () {
-            Object (border_width: 6,
-                    deletable: false,
-                    resizable: false);
+            Object (
+                border_width: 6,
+                deletable: false,
+                resizable: false,
+                title: _("Screenshot")
+            );
 
             capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
