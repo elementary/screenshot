@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2018-05-31 15:57+0000\n"
+"PO-Revision-Date: 2018-06-03 13:09+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/hu/>\n"
@@ -17,124 +17,124 @@ msgstr ""
 
 #: ../src/Widgets/SaveDialog.vala:63
 msgid "Save Image as…"
-msgstr ""
+msgstr "Kép mentése másként…"
 
 #: ../src/Widgets/SaveDialog.vala:67
 msgid "Name:"
-msgstr ""
+msgstr "Név:"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Képernyőmentés %s"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
-msgstr ""
+msgstr "Formátum:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr ""
+msgstr "Könyvtár:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "Válassza ki a képernyőmentések helyét…"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
 msgid "Cancel"
-msgstr ""
+msgstr "Mégsem"
 
 #: ../src/Widgets/SaveDialog.vala:130
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Másolás a vágólapra"
 
 #: ../src/ScreenshotWindow.vala:59
 msgid "Capture area:"
-msgstr ""
+msgstr "Mentési terület:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "A teljes képernyő mentése"
 
 #: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
-msgstr ""
+msgstr "Az aktuális ablak mentése"
 
 #: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
-msgstr ""
+msgstr "Kijelölt terület mentése"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
-msgstr ""
+msgstr "Tulajdonságok:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "Mentse az egérmutatót:"
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
-msgstr ""
+msgstr "Bezárás mentés után:"
 
 #: ../src/ScreenshotWindow.vala:87
 msgid "Conceal text:"
-msgstr ""
+msgstr "Szöveg elrejtése:"
 
 #: ../src/ScreenshotWindow.vala:94
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "Késleltetés másodpercben:"
 
 #: ../src/ScreenshotWindow.vala:121
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Képernyőkép készítése"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Képernyőkép elkészítve"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Nem lehetett menteni a képernyőképet"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "Nem található aktív ablak"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr ""
+msgstr "A kép nem lett elmentve"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
-msgstr ""
+msgstr "Aktív ablak mentése"
 
 #: ../src/Screenshot.vala:41
 msgid "Capture area"
-msgstr ""
+msgstr "Terület mentése"
 
 #: ../src/Screenshot.vala:42
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Az egész képernyő mentése"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Képernyőmentés egy meghatározott késleltetés után"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"
-msgstr ""
+msgstr "Másodperc"
 
 #: ../src/Screenshot.vala:44
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Az egérmutató belevétele a képernyőképbe"
 
 #: ../src/Screenshot.vala:45
 msgid "Redact system text"
-msgstr ""
+msgstr "Rendszerszövegek kitakarása"
 
 #: ../src/Screenshot.vala:56
 msgid "Screenshot"
@@ -142,7 +142,7 @@ msgstr "Képernyőkép"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
-msgstr ""
+msgstr "Mentse le képként a képernyő vagy egy különálló ablak tartalmát."
 
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
