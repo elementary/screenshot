@@ -3,11 +3,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-05-06 07:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <https://l10n.elementary.io/projects/screenshot-tool"
-"/screenshot-tool/sr/>\n"
+"Language-Team: Serbian <https://l10n.elementary.io/projects/screenshot-tool/"
+"screenshot-tool/sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,137 +17,148 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Сачувај слику као…"
+#: src/Application.vala:38
+#, fuzzy
+msgid "Screenshots"
+msgstr "Снимак екрана"
 
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Назив:"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Снимак екрана у %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Формат:"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Фасцикла:"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Изабери фасциклу снимака…"
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Сачувај"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-msgid "Cancel"
-msgstr "Откажи"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr "Умножи у оставу"
-
-#: ../src/ScreenshotWindow.vala:59
-msgid "Capture area:"
-msgstr "Област снимања:"
-
-#: ../src/ScreenshotWindow.vala:63
-msgid "Grab the whole screen"
-msgstr "Захвати читав екран"
-
-#: ../src/ScreenshotWindow.vala:65
-msgid "Grab the current window"
-msgstr "Захвати текући прозор"
-
-#: ../src/ScreenshotWindow.vala:67
-msgid "Select area to grab"
-msgstr "Изаберите област за снимање"
-
-#: ../src/ScreenshotWindow.vala:69
-msgid "Properties:"
-msgstr "Својства:"
-
-#: ../src/ScreenshotWindow.vala:73
-msgid "Grab mouse pointer:"
-msgstr "Захвати показивач миша:"
-
-#: ../src/ScreenshotWindow.vala:80
-msgid "Close after saving:"
-msgstr "Затвори након чувања:"
-
-#: ../src/ScreenshotWindow.vala:87
-msgid "Conceal text:"
-msgstr "Прикриј текст:"
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Delay in seconds:"
-msgstr "Застој у секундама:"
-
-#: ../src/ScreenshotWindow.vala:121
-msgid "Take Screenshot"
-msgstr "Снимите екран"
-
-#: ../src/ScreenshotWindow.vala:294
-msgid "Screenshot taken"
-msgstr "Снимак екрана је урађен"
-
-#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
-msgid "Could not capture screenshot"
-msgstr "Не могу да снимим снимак екрана"
-
-#: ../src/ScreenshotWindow.vala:400
-msgid "Couldn't find an active window"
-msgstr "Не могу да нађем радни прозор"
-
-#: ../src/ScreenshotWindow.vala:438
-msgid "Image not saved"
-msgstr "Слика није сачувана"
-
-#: ../src/Screenshot.vala:40
+#: src/Application.vala:44
 msgid "Capture active window"
 msgstr "Снимите радни прозор"
 
-#: ../src/Screenshot.vala:41
+#: src/Application.vala:45
 msgid "Capture area"
 msgstr "Област снимања"
 
-#: ../src/Screenshot.vala:42
+#: src/Application.vala:46
 msgid "Capture the whole screen"
 msgstr "Снимите читав екран"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Take screenshot after specified delay"
 msgstr "Снимите екран након наведеног застоја"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Seconds"
 msgstr "Секунде"
 
-#: ../src/Screenshot.vala:44
+#: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
 msgstr "Укључи показивач у снимку екрана"
 
-#: ../src/Screenshot.vala:45
+#: src/Application.vala:49
 msgid "Redact system text"
 msgstr "Уредите текст система"
 
-#: ../src/Screenshot.vala:56
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
 msgstr "Снимак екрана"
 
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Сачувајте слике вашег екрана или засебних прозора."
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr "Област снимања:"
 
-#: ../src/Screenshot.vala:73
-msgid "translator-credits"
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr "Захвати читав екран"
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr "Захвати текући прозор"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr "Изаберите област за снимање"
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr "Својства:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr "Захвати показивач миша:"
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr "Затвори након чувања:"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
+msgstr "Прикриј текст:"
+
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr "Застој у секундама:"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
+msgstr "Снимите екран"
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Мирослав Николић https://launchpad.net/~lipek"
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr "Снимак екрана је урађен"
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr "Снимак екрана у %s"
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr "Не могу да снимим снимак екрана"
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr "Не могу да нађем радни прозор"
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr "Слика није сачувана"
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr "Сачувај слику као…"
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr "Назив:"
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr "Формат:"
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr "Фасцикла:"
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr "Изабери фасциклу снимака…"
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr "Сачувај"
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr "Откажи"
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr "Умножи у оставу"
+
+#~ msgid "Save images of your screen or individual windows."
+#~ msgstr "Сачувајте слике вашег екрана или засебних прозора."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Мирослав Николић https://launchpad.net/~lipek"

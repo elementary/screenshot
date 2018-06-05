@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-07-07 20:40+0000\n"
 "Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
-"Language-Team: English (Australia) <https://l10n.elementary.io/projects"
-"/screenshot-tool/screenshot-tool/en_AU/>\n"
+"Language-Team: English (Australia) <https://l10n.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/en_AU/>\n"
 "Language: en_AU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,135 +15,146 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Save Image as…"
+#: src/Application.vala:38
+#, fuzzy
+msgid "Screenshots"
+msgstr "Screenshot"
 
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Name:"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Screenshot from %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Format:"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Folder:"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Select Screenshots Folder…"
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Save"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-msgid "Cancel"
-msgstr "Cancel"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr "Copy to Clipboard"
-
-#: ../src/ScreenshotWindow.vala:59
-msgid "Capture area:"
-msgstr "Capture area:"
-
-#: ../src/ScreenshotWindow.vala:63
-msgid "Grab the whole screen"
-msgstr "Grab the whole screen"
-
-#: ../src/ScreenshotWindow.vala:65
-msgid "Grab the current window"
-msgstr "Grab the current window"
-
-#: ../src/ScreenshotWindow.vala:67
-msgid "Select area to grab"
-msgstr "Select area to grab"
-
-#: ../src/ScreenshotWindow.vala:69
-msgid "Properties:"
-msgstr "Properties:"
-
-#: ../src/ScreenshotWindow.vala:73
-msgid "Grab mouse pointer:"
-msgstr "Grab mouse pointer:"
-
-#: ../src/ScreenshotWindow.vala:80
-msgid "Close after saving:"
-msgstr "Close after saving:"
-
-#: ../src/ScreenshotWindow.vala:87
-msgid "Conceal text:"
-msgstr "Conceal text:"
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Delay in seconds:"
-msgstr "Delay in seconds:"
-
-#: ../src/ScreenshotWindow.vala:121
-msgid "Take Screenshot"
-msgstr "Take Screenshot"
-
-#: ../src/ScreenshotWindow.vala:294
-msgid "Screenshot taken"
-msgstr "Screenshot taken"
-
-#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
-msgid "Could not capture screenshot"
-msgstr "Could not capture screenshot"
-
-#: ../src/ScreenshotWindow.vala:400
-msgid "Couldn't find an active window"
-msgstr "Couldn't find an active window"
-
-#: ../src/ScreenshotWindow.vala:438
-msgid "Image not saved"
-msgstr "Image not saved"
-
-#: ../src/Screenshot.vala:40
+#: src/Application.vala:44
 msgid "Capture active window"
 msgstr "Capture active window"
 
-#: ../src/Screenshot.vala:41
+#: src/Application.vala:45
 msgid "Capture area"
 msgstr "Capture area"
 
-#: ../src/Screenshot.vala:42
+#: src/Application.vala:46
 msgid "Capture the whole screen"
 msgstr "Capture the whole screen"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Take screenshot after specified delay"
 msgstr "Take screenshot after specified delay"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Seconds"
 msgstr "Seconds"
 
-#: ../src/Screenshot.vala:44
+#: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
 msgstr "Include the pointer with the screenshot"
 
-#: ../src/Screenshot.vala:45
+#: src/Application.vala:49
 msgid "Redact system text"
 msgstr "Redact system text"
 
-#: ../src/Screenshot.vala:56
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
 msgstr "Screenshot"
 
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Save images of your screen or individual windows."
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr "Capture area:"
 
-#: ../src/Screenshot.vala:73
-msgid "translator-credits"
-msgstr "translator-credits"
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr "Grab the whole screen"
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr "Grab the current window"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr "Select area to grab"
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr "Properties:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr "Grab mouse pointer:"
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr "Close after saving:"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
+msgstr "Conceal text:"
+
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr "Delay in seconds:"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
+msgstr "Take Screenshot"
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr "Screenshot taken"
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr "Screenshot from %s"
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr "Could not capture screenshot"
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr "Couldn't find an active window"
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr "Image not saved"
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr "Save Image as…"
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr "Name:"
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr "Format:"
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr "Folder:"
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr "Select Screenshots Folder…"
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr "Save"
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr "Cancel"
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr "Copy to Clipboard"
+
+#~ msgid "Save images of your screen or individual windows."
+#~ msgstr "Save images of your screen or individual windows."
+
+#~ msgid "translator-credits"
+#~ msgstr "translator-credits"

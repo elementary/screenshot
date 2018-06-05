@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-04 20:44+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,27 +13,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Ekrano kopija"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Įrašyti ekrano paveikslus"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Ekrano kopija;Momentinė nuotrauka;"
-
-msgid "About Screenshot"
-msgstr "Apie Ekrano kopiją"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Viso ekrano kopija"
-
-msgid "Screenshot of the Current Window"
-msgstr "Esamo lango ekrano kopija"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Pasirinktos srities ekrano kopija"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -42,11 +32,38 @@ msgstr ""
 "pasirinktos srities ekrano kopijas, esamo lango ekrano kopijas bei ekrano "
 "kopijas su laiko uždelsimu."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Pataisyta papildoma juoda sritis HiDPI ekrano kopijose"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Vertimų atnaujinimai"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Smulkių klaidų pataisymai"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Ekrano kopija;Momentinė nuotrauka;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Viso ekrano kopija"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Esamo lango ekrano kopija"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Pasirinktos srities ekrano kopija"
+
+#~ msgid "About Screenshot"
+#~ msgstr "Apie Ekrano kopiją"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Pataisyta papildoma juoda sritis HiDPI ekrano kopijose"
+
+#~ msgid "Translation updates"
+#~ msgstr "Vertimų atnaujinimai"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Smulkių klaidų pataisymai"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2016-06-03 16:46+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -18,138 +18,145 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
+#: src/Application.vala:38
+msgid "Screenshots"
 msgstr ""
 
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr ""
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-msgid "Cancel"
-msgstr ""
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:59
-msgid "Capture area:"
-msgstr "พื้นที่ในการจับภาพ:"
-
-#: ../src/ScreenshotWindow.vala:63
-msgid "Grab the whole screen"
-msgstr "จับภาพทั้งหน้าจอ"
-
-#: ../src/ScreenshotWindow.vala:65
-msgid "Grab the current window"
-msgstr "จับภาพหน้าต่างปัจจุบัน"
-
-#: ../src/ScreenshotWindow.vala:67
-msgid "Select area to grab"
-msgstr "เลือกพื้นที่ที่ต้องการจับภาพ"
-
-#: ../src/ScreenshotWindow.vala:69
-msgid "Properties:"
-msgstr "คุณสมบัติ:"
-
-#: ../src/ScreenshotWindow.vala:73
-msgid "Grab mouse pointer:"
-msgstr "จับภาพตัวชี้เมาส์:"
-
-#: ../src/ScreenshotWindow.vala:80
-msgid "Close after saving:"
-msgstr "ปิดหลังจากบันทึก:"
-
-#: ../src/ScreenshotWindow.vala:87
-msgid "Conceal text:"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Delay in seconds:"
-msgstr "หน่วงเวลาเป็นวินาที:"
-
-#: ../src/ScreenshotWindow.vala:121
-msgid "Take Screenshot"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:294
-msgid "Screenshot taken"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
-msgid "Could not capture screenshot"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:400
-msgid "Couldn't find an active window"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:438
-msgid "Image not saved"
-msgstr ""
-
-#: ../src/Screenshot.vala:40
+#: src/Application.vala:44
 msgid "Capture active window"
 msgstr ""
 
-#: ../src/Screenshot.vala:41
+#: src/Application.vala:45
 msgid "Capture area"
 msgstr ""
 
-#: ../src/Screenshot.vala:42
+#: src/Application.vala:46
 msgid "Capture the whole screen"
 msgstr ""
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Take screenshot after specified delay"
 msgstr ""
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Seconds"
 msgstr ""
 
-#: ../src/Screenshot.vala:44
+#: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
 msgstr ""
 
-#: ../src/Screenshot.vala:45
+#: src/Application.vala:49
 msgid "Redact system text"
 msgstr ""
 
-#: ../src/Screenshot.vala:56
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
 msgstr ""
 
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr "พื้นที่ในการจับภาพ:"
+
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr "จับภาพทั้งหน้าจอ"
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr "จับภาพหน้าต่างปัจจุบัน"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr "เลือกพื้นที่ที่ต้องการจับภาพ"
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr "คุณสมบัติ:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr "จับภาพตัวชี้เมาส์:"
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr "ปิดหลังจากบันทึก:"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
 msgstr ""
 
-#: ../src/Screenshot.vala:73
-msgid "translator-credits"
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr "หน่วงเวลาเป็นวินาที:"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
-"  Rockworld https://launchpad.net/~rockrock2222222"
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr ""
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
+#~ "  Rockworld https://launchpad.net/~rockrock2222222"

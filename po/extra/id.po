@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-07-06 14:35+0700\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: \n"
@@ -14,27 +14,17 @@ msgstr ""
 "X-Generator: Poedit 2.0.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Cuplikan layar"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Simpan gambar dari layar"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Cuplikan layar;"
-
-msgid "About Screenshot"
-msgstr "Tentang Cuplikan Layar"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Cuplikan Layar dari Seluruh Layar"
-
-msgid "Screenshot of the Current Window"
-msgstr "Cuplikan Layar dari Jendela Saat Ini"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Cuplikan Layar dari Suatu Daerah"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -42,11 +32,38 @@ msgstr ""
 "Alat cuplikan layar sederhana. Cuplik seluruh cuplikan layar, cuplik area "
 "yang dipilih, cuplikan jendela saat ini, dan cuplikan dengan waktu."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Perbaiki area hitam ekstra pada cuplikan layar HiDPI"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Pembaruan terjemahan"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Perbaikan kutu kecil"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Cuplikan layar;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Cuplikan Layar dari Seluruh Layar"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Cuplikan Layar dari Jendela Saat Ini"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Cuplikan Layar dari Suatu Daerah"
+
+#~ msgid "About Screenshot"
+#~ msgstr "Tentang Cuplikan Layar"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Perbaiki area hitam ekstra pada cuplikan layar HiDPI"
+
+#~ msgid "Translation updates"
+#~ msgstr "Pembaruan terjemahan"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Perbaikan kutu kecil"

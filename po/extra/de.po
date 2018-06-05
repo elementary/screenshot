@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-05-21 20:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/screenshot-"
-"tool/extra/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/screenshot-tool/"
+"extra/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,27 +20,17 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Bildschirmfoto"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Bildschirmfotos speichern"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Schnappschuss;Bildschirmfoto;"
-
-msgid "About Screenshot"
-msgstr "Info zu Bildschirmfoto"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Bildschirmfoto des gesamten Bildschirms"
-
-msgid "Screenshot of the Current Window"
-msgstr "Bildschirmfoto des aktuellen Fensters"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Bildschirmfoto eines ausgewählten Bereichs"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -49,11 +39,38 @@ msgstr ""
 "Bildschirm, ausgewählte Bereiche sowie Fotos von Fenstern mit oder ohne "
 "Zeitauslöser aufgenommen werden."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Schwarze Ränder bei HiDPI-Bildschirmfotos beseitigt"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Aktualisierte Übersetzungen"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Kleinere Fehler behoben"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Schnappschuss;Bildschirmfoto;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Bildschirmfoto des gesamten Bildschirms"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Bildschirmfoto des aktuellen Fensters"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Bildschirmfoto eines ausgewählten Bereichs"
+
+#~ msgid "About Screenshot"
+#~ msgstr "Info zu Bildschirmfoto"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Schwarze Ränder bei HiDPI-Bildschirmfotos beseitigt"
+
+#~ msgid "Translation updates"
+#~ msgstr "Aktualisierte Übersetzungen"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Kleinere Fehler behoben"

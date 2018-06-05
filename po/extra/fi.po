@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-16 07:22+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -18,27 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Kuvakaappaus"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Tallenna näytöllä näkyvä kuva"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;kuvakaappaus;kuvankaappaus;ruutukaappaus;"
-
-msgid "About Screenshot"
-msgstr "Tietoja - Kuvakaappaus"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Kuvakaappaus koko näytöstä"
-
-msgid "Screenshot of the Current Window"
-msgstr "Kuvakaappaus nykyisestä ikkunasta"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Kuvakaappaus valitusta alueesta"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -47,11 +37,38 @@ msgstr ""
 "kuvakaappauksia, kuvakaappauksia valituista alueista tai ikkunoista sekä "
 "ajastettuja kuvakaappauksia."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Korjaa ylimääräinen musta alue HiDPI-kuvakaappauksista"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Päivityksiä kielikäännöksiin"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Muita pieniä korjauksia"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;kuvakaappaus;kuvankaappaus;ruutukaappaus;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Kuvakaappaus koko näytöstä"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Kuvakaappaus nykyisestä ikkunasta"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Kuvakaappaus valitusta alueesta"
+
+#~ msgid "About Screenshot"
+#~ msgstr "Tietoja - Kuvakaappaus"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Korjaa ylimääräinen musta alue HiDPI-kuvakaappauksista"
+
+#~ msgid "Translation updates"
+#~ msgstr "Päivityksiä kielikäännöksiin"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Muita pieniä korjauksia"

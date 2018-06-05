@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2016-08-10 18:23+0000\n"
 "Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,138 +13,149 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Зберегти зображення як…"
+#: src/Application.vala:38
+#, fuzzy
+msgid "Screenshots"
+msgstr "Знімок екрана"
 
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Назва:"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Знімок з %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Формат:"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Папка:"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Виберіть папку для знімків ..."
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Зберегти"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:59
-msgid "Capture area:"
-msgstr "Область знімку:"
-
-#: ../src/ScreenshotWindow.vala:63
-msgid "Grab the whole screen"
-msgstr "Захопити весь екран"
-
-#: ../src/ScreenshotWindow.vala:65
-msgid "Grab the current window"
-msgstr "Захопити лише поточне вікно"
-
-#: ../src/ScreenshotWindow.vala:67
-msgid "Select area to grab"
-msgstr "Виберіть область для захоплення"
-
-#: ../src/ScreenshotWindow.vala:69
-msgid "Properties:"
-msgstr "Властивості:"
-
-#: ../src/ScreenshotWindow.vala:73
-msgid "Grab mouse pointer:"
-msgstr "Захопіть курсор миші"
-
-#: ../src/ScreenshotWindow.vala:80
-msgid "Close after saving:"
-msgstr "Закрити після збереження:"
-
-#: ../src/ScreenshotWindow.vala:87
-msgid "Conceal text:"
-msgstr "Прихований текст:"
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Delay in seconds:"
-msgstr "Затримка в секундах:"
-
-#: ../src/ScreenshotWindow.vala:121
-msgid "Take Screenshot"
-msgstr "Зробити знімок екрану"
-
-#: ../src/ScreenshotWindow.vala:294
-msgid "Screenshot taken"
-msgstr ""
-
-#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
-msgid "Could not capture screenshot"
-msgstr "Неможливо зробити знімок екрану"
-
-#: ../src/ScreenshotWindow.vala:400
-msgid "Couldn't find an active window"
-msgstr "Неможливо знайти активне вікно"
-
-#: ../src/ScreenshotWindow.vala:438
-msgid "Image not saved"
-msgstr "Знімок не збережено"
-
-#: ../src/Screenshot.vala:40
+#: src/Application.vala:44
 msgid "Capture active window"
 msgstr "Захопіть активне вікно"
 
-#: ../src/Screenshot.vala:41
+#: src/Application.vala:45
 msgid "Capture area"
 msgstr "Область захоплення"
 
-#: ../src/Screenshot.vala:42
+#: src/Application.vala:46
 msgid "Capture the whole screen"
 msgstr "Захопити весь екран"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Take screenshot after specified delay"
 msgstr "Зробити знімок після зазначеної затримки"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Seconds"
 msgstr "Секунд"
 
-#: ../src/Screenshot.vala:44
+#: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
 msgstr "Включити курсор до знімку екрана"
 
-#: ../src/Screenshot.vala:45
+#: src/Application.vala:49
 msgid "Redact system text"
 msgstr "Редагувати системний текст"
 
-#: ../src/Screenshot.vala:56
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
 msgstr "Знімок екрана"
 
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Зберегти знімки екрану чи індивідуального вікна"
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr "Область знімку:"
 
-#: ../src/Screenshot.vala:73
-msgid "translator-credits"
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr "Захопити весь екран"
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr "Захопити лише поточне вікно"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr "Виберіть область для захоплення"
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr "Властивості:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr "Захопіть курсор миші"
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr "Закрити після збереження:"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
+msgstr "Прихований текст:"
+
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr "Затримка в секундах:"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
+msgstr "Зробити знімок екрану"
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
-"  Roman Sytnyk https://launchpad.net/~roman-sytnyk"
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr "Знімок з %s"
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr "Неможливо зробити знімок екрану"
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr "Неможливо знайти активне вікно"
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr "Знімок не збережено"
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr "Зберегти зображення як…"
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr "Назва:"
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr "Формат:"
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr "Папка:"
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr "Виберіть папку для знімків ..."
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr "Зберегти"
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr ""
+
+#~ msgid "Save images of your screen or individual windows."
+#~ msgstr "Зберегти знімки екрану чи індивідуального вікна"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
+#~ "  Roman Sytnyk https://launchpad.net/~roman-sytnyk"

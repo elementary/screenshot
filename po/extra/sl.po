@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-09-19 20:54+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/screenshot-"
@@ -16,42 +16,50 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Posnetek zaslona"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Shrani posnetke zaslona"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;Zaslon;Posnetek;Slika;"
-
-msgid "About Screenshot"
-msgstr "O programu za zajemanje zaslonskih slik"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Posnetek celotnega zaslona"
-
-msgid "Screenshot of the Current Window"
-msgstr "Posnetek trenutnega okna"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Posnetek izbranega območja"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr "Preprosto orodje za zajem zaslona."
 
-msgid "Fix extra black area on HiDPI screenshots"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
 msgstr ""
 
-msgid "Translation updates"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
 msgstr ""
 
-msgid "Minor bug fixes"
-msgstr ""
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;Zaslon;Posnetek;Slika;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Posnetek celotnega zaslona"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Posnetek trenutnega okna"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Posnetek izbranega območja"
+
+#~ msgid "About Screenshot"
+#~ msgstr "O programu za zajemanje zaslonskih slik"

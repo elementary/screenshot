@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-27 09:49+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -18,27 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Capture d'écran"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Enregistrer des images de l'écran"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Capture;Écran;"
-
-msgid "About Screenshot"
-msgstr "À propos de Capture d'écran"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Capture de tout l'écran"
-
-msgid "Screenshot of the Current Window"
-msgstr "Capture de la fenêtre actuelle"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Capture de la zone sélectionnée"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -46,12 +36,39 @@ msgstr ""
 "Un simple outil de capture d'écran. Capturez l'écran tout entier, des zones "
 "voulues, la fenêtre actuelle et même avec retardateur."
 
-msgid "Fix extra black area on HiDPI screenshots"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
 msgstr ""
-"Correction de la zone noire supplémentaire lors des captures d'écran HiDPI"
 
-msgid "Translation updates"
-msgstr "Mise à jour des traductions"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Corrections d'anomalies mineures"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Capture;Écran;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Capture de tout l'écran"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Capture de la fenêtre actuelle"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Capture de la zone sélectionnée"
+
+#~ msgid "About Screenshot"
+#~ msgstr "À propos de Capture d'écran"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr ""
+#~ "Correction de la zone noire supplémentaire lors des captures d'écran HiDPI"
+
+#~ msgid "Translation updates"
+#~ msgstr "Mise à jour des traductions"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Corrections d'anomalies mineures"

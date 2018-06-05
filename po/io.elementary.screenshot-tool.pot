@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.screenshot-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.screenshot-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Application.vala:38
+msgid "Screenshots"
+msgstr ""
+
+#: src/Application.vala:44
+msgid "Capture active window"
+msgstr ""
+
+#: src/Application.vala:45
+msgid "Capture area"
+msgstr ""
+
+#: src/Application.vala:46
+msgid "Capture the whole screen"
+msgstr ""
+
+#: src/Application.vala:47
+msgid "Take screenshot after specified delay"
+msgstr ""
+
+#: src/Application.vala:47
+msgid "Seconds"
+msgstr ""
+
+#: src/Application.vala:48
+msgid "Include the pointer with the screenshot"
+msgstr ""
+
+#: src/Application.vala:49
+msgid "Redact system text"
+msgstr ""
+
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr ""

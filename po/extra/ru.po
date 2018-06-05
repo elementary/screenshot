@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-09-19 20:53+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/screenshot-"
@@ -16,32 +16,22 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Сохранить снимок экрана"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;Снимок экрана;Скриншот;"
-
-msgid "About Screenshot"
-msgstr "О программе"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Снимок всего экрана"
-
-msgid "Screenshot of the Current Window"
-msgstr "Снимок текущего окна"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Снимок выбранной области"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -49,11 +39,38 @@ msgstr ""
 "Простой инструмент для создания скриншотов. Снимки всего экрана, выбранной "
 "области, текущего окна, а также снимки с временной задержкой."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Устранение дополнительной черной области на HiDPI скриншотах"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Обновления перевода"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Исправления небольших ошибок"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;Снимок экрана;Скриншот;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Снимок всего экрана"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Снимок текущего окна"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Снимок выбранной области"
+
+#~ msgid "About Screenshot"
+#~ msgstr "О программе"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Устранение дополнительной черной области на HiDPI скриншотах"
+
+#~ msgid "Translation updates"
+#~ msgstr "Обновления перевода"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Исправления небольших ошибок"

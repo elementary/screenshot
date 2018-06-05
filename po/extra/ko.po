@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-05 22:51+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -18,27 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "스크린샷"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "스크린샷 이미지 저장"
 
-msgid "Snapshot;Screenshot;"
-msgstr "스냅샷;스크린샷;"
-
-msgid "About Screenshot"
-msgstr "스크린샷 소개"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "전체 화면 찍기"
-
-msgid "Screenshot of the Current Window"
-msgstr "현재 창 찍기"
-
-msgid "Screenshot of a Selected Area"
-msgstr "지정 범위 찍기"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -46,11 +36,38 @@ msgstr ""
 "간편한 스크린샷 프로그램. 전체 화면 찍기, 지정 범위 찍기, 현재 창 찍기, 그리"
 "고 타임 샷 찍기."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "HiDPI 스크린샷에서 특정 부분이 검게 변하던 이슈 해결"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "번역 업데이트"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "자잘한 버그 해결"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "스냅샷;스크린샷;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "전체 화면 찍기"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "현재 창 찍기"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "지정 범위 찍기"
+
+#~ msgid "About Screenshot"
+#~ msgstr "스크린샷 소개"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "HiDPI 스크린샷에서 특정 부분이 검게 변하던 이슈 해결"
+
+#~ msgid "Translation updates"
+#~ msgstr "번역 업데이트"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "자잘한 버그 해결"

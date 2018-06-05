@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the extra package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-06 13:49-0700\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,40 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr ""
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr ""
 
-msgid "Snapshot;Screenshot;"
-msgstr ""
-
-msgid "Screenshot of the Whole Screen"
-msgstr ""
-
-msgid "Screenshot of the Current Window"
-msgstr ""
-
-msgid "Screenshot of a Selected Area"
-msgstr ""
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
 
-msgid "Remember main window position for reappearing window"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
 msgstr ""
 
-msgid "Minor bug fixes"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
 msgstr ""
 
-msgid "Play shutter sound when a screenshot is taken"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
 msgstr ""
 
-msgid "Translation updates"
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
 msgstr ""
 
-msgid "Fix extra black area on HiDPI screenshots"
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr ""
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
 msgstr ""

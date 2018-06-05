@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-03 21:46+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -18,27 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Schermata"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Salva immagini dello schermo"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Istantanea;Schermata;"
-
-msgid "About Screenshot"
-msgstr "Informazioni"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Schermata dell'intero schermo"
-
-msgid "Screenshot of the Current Window"
-msgstr "Schermata della finestra corrente"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Schermata di un'area selezionata"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -47,13 +37,40 @@ msgstr ""
 "schermo, di un'area selezionata o della finestra corrente e anche scatti "
 "cronometrati."
 
-msgid "Fix extra black area on HiDPI screenshots"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
 msgstr ""
-"Correzione di un problema che provocava la comparsa di uno spazio nero "
-"aggiuntivo nelle schermate di schermi HiDPI"
 
-msgid "Translation updates"
-msgstr "Aggiornamento delle traduzioni"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Correzione di bug minori"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Istantanea;Schermata;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Schermata dell'intero schermo"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Schermata della finestra corrente"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Schermata di un'area selezionata"
+
+#~ msgid "About Screenshot"
+#~ msgstr "Informazioni"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr ""
+#~ "Correzione di un problema che provocava la comparsa di uno spazio nero "
+#~ "aggiuntivo nelle schermate di schermi HiDPI"
+
+#~ msgid "Translation updates"
+#~ msgstr "Aggiornamento delle traduzioni"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Correzione di bug minori"

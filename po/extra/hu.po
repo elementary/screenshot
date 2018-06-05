@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2018-05-31 15:56+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
@@ -15,27 +15,17 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Képernyőkép"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Képernyőképek készítése"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;Képernyőképek;"
-
-msgid "About Screenshot"
-msgstr "A Képernyőképről"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "Képernyőkép az egész asztalról"
-
-msgid "Screenshot of the Current Window"
-msgstr "Képernyőkép az aktív ablakról"
-
-msgid "Screenshot of a Selected Area"
-msgstr "Képernyőkép egy kijelölt területről"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -43,11 +33,38 @@ msgstr ""
 "Egy egyszerű képernyőkép eszköz. Készítsen képet az egész asztalról, egy "
 "kijelölt területről vagy az aktív ablakról, akár időzetve is."
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Javítsa a fekete területeket a HiDPI képernyőképeken"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "Fordítási frissítések"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "Kisebb hibajavítások"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;Képernyőképek;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "Képernyőkép az egész asztalról"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "Képernyőkép az aktív ablakról"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "Képernyőkép egy kijelölt területről"
+
+#~ msgid "About Screenshot"
+#~ msgstr "A Képernyőképről"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Javítsa a fekete területeket a HiDPI képernyőképeken"
+
+#~ msgid "Translation updates"
+#~ msgstr "Fordítási frissítések"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Kisebb hibajavítások"

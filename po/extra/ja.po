@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-06-30 23:06+0000\n"
 "Last-Translator: Ryo Nakano <rmfmada3q@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-"
-"tool/extra/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
+"extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,39 +15,57 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:8
+#: data/screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
+#: data/io.elementary.screenshot-tool.appdata.xml.in:9
+#: data/screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "画面の画像を保存します"
 
-msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;"
-
-msgid "About Screenshot"
-msgstr "スクリーンショットについて"
-
-msgid "Screenshot of the Whole Screen"
-msgstr "画面全体のスクリーンショットを取得する"
-
-msgid "Screenshot of the Current Window"
-msgstr "現在のウインドウのスクリーンショットを取得する"
-
-msgid "Screenshot of a Selected Area"
-msgstr "選択領域のスクリーンショットを取得する"
-
+#: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィンドウなどのスクリーンショットに加え、遅延させてスクリーンショットを取得すること"
-"もできます。"
+"シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィン"
+"ドウなどのスクリーンショットに加え、遅延させてスクリーンショットを取得するこ"
+"ともできます。"
 
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "HiDPI スクリーンショットでの余分な黒い部分を修正"
+#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+msgid "elementary LLC."
+msgstr ""
 
-msgid "Translation updates"
-msgstr "翻訳のアップデート"
+#: data/screenshot-tool.desktop.in:7
+msgid "accessories-screenshot"
+msgstr ""
 
-msgid "Minor bug fixes"
-msgstr "マイナーなバグ修正"
+#: data/screenshot-tool.desktop.in:10
+msgid "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;"
+
+#: data/screenshot-tool.desktop.in:14
+msgid "Screenshot of the Whole Screen"
+msgstr "画面全体のスクリーンショットを取得する"
+
+#: data/screenshot-tool.desktop.in:18
+msgid "Screenshot of the Current Window"
+msgstr "現在のウインドウのスクリーンショットを取得する"
+
+#: data/screenshot-tool.desktop.in:22
+msgid "Screenshot of a Selected Area"
+msgstr "選択領域のスクリーンショットを取得する"
+
+#~ msgid "About Screenshot"
+#~ msgstr "スクリーンショットについて"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "HiDPI スクリーンショットでの余分な黒い部分を修正"
+
+#~ msgid "Translation updates"
+#~ msgstr "翻訳のアップデート"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "マイナーなバグ修正"

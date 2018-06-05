@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-15 18:59-0200\n"
+"POT-Creation-Date: 2018-06-05 09:42-0700\n"
 "PO-Revision-Date: 2017-02-21 16:53+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -18,140 +18,151 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
-#: ../src/Widgets/SaveDialog.vala:63
-msgid "Save Image as…"
-msgstr "Zapisz obraz jako..."
+#: src/Application.vala:38
+#, fuzzy
+msgid "Screenshots"
+msgstr "Zrzut ekranu"
 
-#: ../src/Widgets/SaveDialog.vala:67
-msgid "Name:"
-msgstr "Nazwa:"
-
-#. / TRANSLATORS: %s represents a timestamp here
-#: ../src/Widgets/SaveDialog.vala:73
-msgid "Screenshot from %s"
-msgstr "Zrzut ekranu z %s"
-
-#: ../src/Widgets/SaveDialog.vala:80
-msgid "Format:"
-msgstr "Format:"
-
-#: ../src/Widgets/SaveDialog.vala:104
-msgid "Folder:"
-msgstr "Katalog:"
-
-#: ../src/Widgets/SaveDialog.vala:107
-msgid "Select Screenshots Folder…"
-msgstr "Wybierz miejsce zapisu zrzutów ekranu..."
-
-#: ../src/Widgets/SaveDialog.vala:126
-msgid "Save"
-msgstr "Zapisz"
-
-#: ../src/Widgets/SaveDialog.vala:129 ../src/ScreenshotWindow.vala:127
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: ../src/Widgets/SaveDialog.vala:130
-msgid "Copy to Clipboard"
-msgstr "Kopiuj do schowka"
-
-#: ../src/ScreenshotWindow.vala:59
-msgid "Capture area:"
-msgstr "Zasięg zrzutu ekranu:"
-
-#: ../src/ScreenshotWindow.vala:63
-msgid "Grab the whole screen"
-msgstr "Zdjęcie całego ekranu"
-
-#: ../src/ScreenshotWindow.vala:65
-msgid "Grab the current window"
-msgstr "Zdjęcie aktywnego okna"
-
-#: ../src/ScreenshotWindow.vala:67
-msgid "Select area to grab"
-msgstr "Zdjęcie zaznaczonego obszaru"
-
-#: ../src/ScreenshotWindow.vala:69
-msgid "Properties:"
-msgstr "Właściwości:"
-
-#: ../src/ScreenshotWindow.vala:73
-msgid "Grab mouse pointer:"
-msgstr "Zdjęcie kursora myszy:"
-
-#: ../src/ScreenshotWindow.vala:80
-msgid "Close after saving:"
-msgstr "Wyłącz po zapisaniu:"
-
-#: ../src/ScreenshotWindow.vala:87
-msgid "Conceal text:"
-msgstr "Ukryj tekst:"
-
-#: ../src/ScreenshotWindow.vala:94
-msgid "Delay in seconds:"
-msgstr "Opóźnienie w sekundach:"
-
-#: ../src/ScreenshotWindow.vala:121
-msgid "Take Screenshot"
-msgstr "Zrób zrzut ekranu"
-
-#: ../src/ScreenshotWindow.vala:294
-msgid "Screenshot taken"
-msgstr "Wykonano zrzut ekranu"
-
-#: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
-msgid "Could not capture screenshot"
-msgstr "Nie udało się zrobić zrzutu ekranu"
-
-#: ../src/ScreenshotWindow.vala:400
-msgid "Couldn't find an active window"
-msgstr "Nie można znaleźć aktywnego okna"
-
-#: ../src/ScreenshotWindow.vala:438
-msgid "Image not saved"
-msgstr "Obraz nie został zapisany"
-
-#: ../src/Screenshot.vala:40
+#: src/Application.vala:44
 msgid "Capture active window"
 msgstr "Przechwyć aktywne okno"
 
-#: ../src/Screenshot.vala:41
+#: src/Application.vala:45
 msgid "Capture area"
 msgstr "Obszar przechwytywania"
 
-#: ../src/Screenshot.vala:42
+#: src/Application.vala:46
 msgid "Capture the whole screen"
 msgstr "Przechwyć cały ekran"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Take screenshot after specified delay"
 msgstr "Zrób zrzut ekranu po określonym czasie"
 
-#: ../src/Screenshot.vala:43
+#: src/Application.vala:47
 msgid "Seconds"
 msgstr "Sekund(y)"
 
-#: ../src/Screenshot.vala:44
+#: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
 msgstr "Dołącz kursor do zrzutu ekranu"
 
-#: ../src/Screenshot.vala:45
+#: src/Application.vala:49
 msgid "Redact system text"
 msgstr "Redaguj tekst systemowy"
 
-#: ../src/Screenshot.vala:56
+#: src/Application.vala:50
+msgid "Save screenshot to clipboard"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
 msgstr "Zrzut ekranu"
 
-#: ../src/Screenshot.vala:72
-msgid "Save images of your screen or individual windows."
-msgstr "Zapisz zrzut całego ekranu albo pojedynczych okien."
+#: src/ScreenshotWindow.vala:70
+msgid "Capture area:"
+msgstr "Zasięg zrzutu ekranu:"
 
-#: ../src/Screenshot.vala:73
-msgid "translator-credits"
+#: src/ScreenshotWindow.vala:74
+msgid "Grab the whole screen"
+msgstr "Zdjęcie całego ekranu"
+
+#: src/ScreenshotWindow.vala:76
+msgid "Grab the current window"
+msgstr "Zdjęcie aktywnego okna"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Select area to grab"
+msgstr "Zdjęcie zaznaczonego obszaru"
+
+#: src/ScreenshotWindow.vala:80
+msgid "Properties:"
+msgstr "Właściwości:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab mouse pointer:"
+msgstr "Zdjęcie kursora myszy:"
+
+#: src/ScreenshotWindow.vala:91
+msgid "Close after saving:"
+msgstr "Wyłącz po zapisaniu:"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Conceal text:"
+msgstr "Ukryj tekst:"
+
+#: src/ScreenshotWindow.vala:105
+msgid "Delay in seconds:"
+msgstr "Opóźnienie w sekundach:"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Take Screenshot"
+msgstr "Zrób zrzut ekranu"
+
+#: src/ScreenshotWindow.vala:138
+msgid "Close"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Damian Woźniak https://launchpad.net/~fisz\n"
-"  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
-"  Jonasz https://launchpad.net/~joni99\n"
-"  Piotr Strębski https://launchpad.net/~strebski"
+
+#: src/ScreenshotWindow.vala:323
+msgid "Screenshot taken"
+msgstr "Wykonano zrzut ekranu"
+
+#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#, c-format
+msgid "Screenshot from %s"
+msgstr "Zrzut ekranu z %s"
+
+#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+msgid "Could not capture screenshot"
+msgstr "Nie udało się zrobić zrzutu ekranu"
+
+#: src/ScreenshotWindow.vala:483
+msgid "Couldn't find an active window"
+msgstr "Nie można znaleźć aktywnego okna"
+
+#: src/ScreenshotWindow.vala:538
+msgid "Image not saved"
+msgstr "Obraz nie został zapisany"
+
+#: src/Widgets/SaveDialog.vala:79
+msgid "Save Image as…"
+msgstr "Zapisz obraz jako..."
+
+#: src/Widgets/SaveDialog.vala:83
+msgid "Name:"
+msgstr "Nazwa:"
+
+#: src/Widgets/SaveDialog.vala:100
+msgid "Format:"
+msgstr "Format:"
+
+#: src/Widgets/SaveDialog.vala:124
+msgid "Folder:"
+msgstr "Katalog:"
+
+#: src/Widgets/SaveDialog.vala:127
+msgid "Select Screenshots Folder…"
+msgstr "Wybierz miejsce zapisu zrzutów ekranu..."
+
+#: src/Widgets/SaveDialog.vala:147
+msgid "Save"
+msgstr "Zapisz"
+
+#: src/Widgets/SaveDialog.vala:150
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/Widgets/SaveDialog.vala:151
+msgid "Copy to Clipboard"
+msgstr "Kopiuj do schowka"
+
+#~ msgid "Save images of your screen or individual windows."
+#~ msgstr "Zapisz zrzut całego ekranu albo pojedynczych okien."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Damian Woźniak https://launchpad.net/~fisz\n"
+#~ "  Fabio Zaramella https://launchpad.net/~fabiozaramella\n"
+#~ "  Jonasz https://launchpad.net/~joni99\n"
+#~ "  Piotr Strębski https://launchpad.net/~strebski"
