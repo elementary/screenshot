@@ -15,6 +15,14 @@
   <provides>
     <binary>screenshot</binary>
   </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/screenshot-tool/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/screenshot-tool/master/data/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <releases>
     <release version="0.1.4" date="2017-07-27" urgency="medium">
       <description>
