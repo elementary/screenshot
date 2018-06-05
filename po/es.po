@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-06-11 02:49+0000\n"
-"Last-Translator: Mario Canchis <mariocanchis@yahoo.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool"
-"/screenshot-tool/es/>\n"
+"PO-Revision-Date: 2018-05-07 21:58+0000\n"
+"Last-Translator: febrezo <felixbrezo@gmail.com>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/screenshot-"
+"tool/screenshot-tool/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-14 05:53+0000\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
@@ -99,11 +99,11 @@ msgstr "Capturar pantalla"
 
 #: ../src/ScreenshotWindow.vala:294
 msgid "Screenshot taken"
-msgstr "Pantallazo tomado"
+msgstr "Captura de pantalla realizada"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr "No se pudo crear la captura"
+msgstr "No se pudo realizar la captura"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
@@ -111,7 +111,7 @@ msgstr "No se encontró ninguna ventana activa"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr "Imagen no grabada"
+msgstr "Imagen no guardada"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -127,7 +127,7 @@ msgstr "Capturar toda la pantalla"
 
 #: ../src/Screenshot.vala:43
 msgid "Take screenshot after specified delay"
-msgstr "Capturar pantalla tras una espera"
+msgstr "Capturar pantalla tras un retraso especificado"
 
 #: ../src/Screenshot.vala:43
 msgid "Seconds"

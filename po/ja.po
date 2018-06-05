@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 18:59-0200\n"
-"PO-Revision-Date: 2017-04-22 11:31+0000\n"
-"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool"
-"/screenshot-tool/ja/>\n"
+"PO-Revision-Date: 2018-05-29 00:12+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
+"tool/screenshot-tool/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: ../src/Widgets/SaveDialog.vala:63
@@ -26,7 +26,7 @@ msgstr "ファイル名:"
 #. / TRANSLATORS: %s represents a timestamp here
 #: ../src/Widgets/SaveDialog.vala:73
 msgid "Screenshot from %s"
-msgstr "%s からのスクリーンショット"
+msgstr "スクリーンショット %s"
 
 #: ../src/Widgets/SaveDialog.vala:80
 msgid "Format:"
@@ -34,11 +34,11 @@ msgstr "フォーマット:"
 
 #: ../src/Widgets/SaveDialog.vala:104
 msgid "Folder:"
-msgstr "フォルダー:"
+msgstr "フォルダ:"
 
 #: ../src/Widgets/SaveDialog.vala:107
 msgid "Select Screenshots Folder…"
-msgstr "スクリーンショットフォルダーを選択…"
+msgstr "スクリーンショットフォルダを選択…"
 
 #: ../src/Widgets/SaveDialog.vala:126
 msgid "Save"
@@ -58,15 +58,15 @@ msgstr "キャプチャーの範囲:"
 
 #: ../src/ScreenshotWindow.vala:63
 msgid "Grab the whole screen"
-msgstr "画面全体を取り込む"
+msgstr "画面全体を取得する"
 
 #: ../src/ScreenshotWindow.vala:65
 msgid "Grab the current window"
-msgstr "現在のウインドウを取り込む"
+msgstr "現在のウインドウを取得する"
 
 #: ../src/ScreenshotWindow.vala:67
 msgid "Select area to grab"
-msgstr "範囲を選択して取り込む"
+msgstr "選択領域を取得する"
 
 #: ../src/ScreenshotWindow.vala:69
 msgid "Properties:"
@@ -74,7 +74,7 @@ msgstr "プロパティ:"
 
 #: ../src/ScreenshotWindow.vala:73
 msgid "Grab mouse pointer:"
-msgstr "マウスポインター部分を取り込む："
+msgstr "マウスポインター部分を取得する:"
 
 #: ../src/ScreenshotWindow.vala:80
 msgid "Close after saving:"
@@ -98,15 +98,15 @@ msgstr "スクリーンショットを取得しました"
 
 #: ../src/ScreenshotWindow.vala:399 ../src/ScreenshotWindow.vala:437
 msgid "Could not capture screenshot"
-msgstr "スクリーンショットを撮る事ができませんでした"
+msgstr "スクリーンショットを撮ることができませんでした"
 
 #: ../src/ScreenshotWindow.vala:400
 msgid "Couldn't find an active window"
-msgstr "現在のウィンドウが見つかりません"
+msgstr "現在のウィンドウが見つかりませんでした"
 
 #: ../src/ScreenshotWindow.vala:438
 msgid "Image not saved"
-msgstr "画像は保存していません"
+msgstr "画像は保存されていません"
 
 #: ../src/Screenshot.vala:40
 msgid "Capture active window"
@@ -142,7 +142,7 @@ msgstr "スクリーンショット"
 
 #: ../src/Screenshot.vala:72
 msgid "Save images of your screen or individual windows."
-msgstr "画面や個別ウィンドウの画像を保存します。"
+msgstr "画面や個別のウィンドウの画像を保存します。"
 
 #: ../src/Screenshot.vala:73
 msgid "translator-credits"
