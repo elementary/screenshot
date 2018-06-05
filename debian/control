@@ -2,8 +2,7 @@ Source: screenshot-tool
 Section: graphics
 Priority: extra
 Maintainer: Cody Garver <cody@elementary.io> 
-Build-Depends: debhelper (>= 9),
-               desktop-file-utils,
+Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libcanberra-dev,
                libgranite-dev,
@@ -12,9 +11,7 @@ Build-Depends: debhelper (>= 9),
                meson,
                valac (>= 0.20)
 Standards-Version: 3.9.6
-Homepage: https://launchpad.net/screenshot-tool
-Vcs-Bzr: lp:screenshot-tool
-Vcs-Browser: https://code.launchpad.net/~elementary-apps/screenshot-tool/trunk
+Homepage: https://github.com/elementary/screenshot-tool
 
 Package: screenshot-tool
 Architecture: any
