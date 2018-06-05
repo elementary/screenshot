@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-06-04 00:09+0000\n"
+"PO-Revision-Date: 2018-06-05 17:52+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/hu/>\n"
@@ -16,9 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Képernyőkép"
+msgstr "Képernyőképek"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -50,7 +49,7 @@ msgstr "Rendszerszövegek kitakarása"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Képernyőképek mentése a vágólapra"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -98,7 +97,7 @@ msgstr "Képernyőkép készítése"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"
