@@ -55,7 +55,7 @@ msgstr "Redaguj tekst systemowy"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Zapisz zrzut ekranu do schowka"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -103,7 +103,7 @@ msgstr "Zrób zrzut ekranu"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"
