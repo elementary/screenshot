@@ -14,8 +14,8 @@ install_data(
 
 i18n.merge_file (
     'desktop',
-    input: 'screenshot-tool.desktop.in',
-    output: 'screenshot-tool.desktop',
+    input: meson.project_name() + '.desktop.in',
+    output: meson.project_name() + '.desktop',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'applications'),
     po_dir: join_paths(meson.source_root (), 'po', 'extra'),
@@ -34,5 +34,5 @@ i18n.merge_file (
 test (
     'Validate desktop file',
     find_program('desktop-file-validate'),
-    args: join_paths(meson.current_build_dir (), 'screenshot-tool.desktop')
+    args: join_paths(meson.current_build_dir (), meson.project_name() + '.desktop')
 )
