@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-05-07 21:58+0000\n"
-"Last-Translator: febrezo <felixbrezo@gmail.com>\n"
+"PO-Revision-Date: 2018-06-05 21:41+0000\n"
+"Last-Translator: Alain M. <alain23@protonmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/es/>\n"
 "Language: es\n"
@@ -21,7 +21,6 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-14 05:53+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
 msgstr "Captura de pantalla"
 
@@ -55,7 +54,7 @@ msgstr "Redactar texto del sistema"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Guardar captura de pantalla en el portapapeles"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -103,7 +102,7 @@ msgstr "Capturar pantalla"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"
