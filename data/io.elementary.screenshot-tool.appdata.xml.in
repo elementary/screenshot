@@ -24,6 +24,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.5" date="2018-06-06" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix ESC key behavior</li>
+          <li>Append scaling factor to filename</li>
+          <li>Minor bug fixes</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.4" date="2017-07-27" urgency="medium">
       <description>
         <ul>
