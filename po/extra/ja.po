@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-06-06 00:09+0000\n"
+"PO-Revision-Date: 2018-06-08 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
 "tool/extra/ja/>\n"
@@ -30,9 +30,8 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィン"
-"ドウなどのスクリーンショットに加え、遅延させてスクリーンショットを取得するこ"
-"ともできます。"
+"シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィンドウなどのスクリーンショットに加え、遅延させてのスクリーンショットも取得するこ"
+"とができます。"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:62
 msgid "elementary LLC."
@@ -44,19 +43,19 @@ msgstr ""
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;"
+msgstr "スナップショット;スクリーンショット;"
 
 #: data/screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "画面全体のスクリーンショットを取得する"
+msgstr "画面全体のスクリーンショットを取得"
 
 #: data/screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "現在のウインドウのスクリーンショットを取得する"
+msgstr "現在のウィンドウのスクリーンショットを取得"
 
 #: data/screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "選択領域のスクリーンショットを取得する"
+msgstr "選択領域のスクリーンショットを取得"
 
 #~ msgid "About Screenshot"
 #~ msgstr "スクリーンショットについて"
