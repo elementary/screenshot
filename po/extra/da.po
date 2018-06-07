@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-06-05 21:41+0000\n"
+"PO-Revision-Date: 2018-06-07 00:09+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/screenshot-"
 "tool/extra/da/>\n"
@@ -39,7 +39,7 @@ msgstr "elementary ApS."
 
 #: data/screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
