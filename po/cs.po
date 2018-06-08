@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-04-25 08:39+0000\n"
+"PO-Revision-Date: 2018-06-08 10:23+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/screenshot-tool"
+"/screenshot-tool/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,9 +21,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Snímek obrazovky"
+msgstr "Snímky obrazovky"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -55,7 +54,7 @@ msgstr "Odebrat systémový text"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Uložit snímek obrazovky do schránky"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -83,7 +82,7 @@ msgstr "Vlastnosti:"
 
 #: src/ScreenshotWindow.vala:84
 msgid "Grab mouse pointer:"
-msgstr "Zachytit kurzor myši"
+msgstr "Zachytit kurzor myši:"
 
 #: src/ScreenshotWindow.vala:91
 msgid "Close after saving:"
@@ -103,7 +102,7 @@ msgstr "Zachytit snímek obrazovky"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"
