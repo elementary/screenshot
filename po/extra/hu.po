@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-05-31 15:56+0000\n"
+"PO-Revision-Date: 2018-06-13 10:52+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
 "tool/extra/hu/>\n"
@@ -35,11 +35,11 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:62
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "segédeszközök-képernyőkép"
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
