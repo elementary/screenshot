@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-06-06 06:12+0000\n"
+"PO-Revision-Date: 2018-06-17 00:08+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/screenshot-"
 "tool/extra/ko/>\n"
@@ -44,7 +44,7 @@ msgstr "elementary LLC."
 
 #: data/screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr "액세서리-스크린샷"
+msgstr "accessories-screenshot"
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
