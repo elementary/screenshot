@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2017-08-31 15:14+0700\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"PO-Revision-Date: 2018-06-12 07:16+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/id/>\n"
 "Language: id\n"
@@ -12,13 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Cuplikan layar"
+msgstr "Tangkapan layar"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -50,7 +49,7 @@ msgstr "Redaktasikan teks sistem"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Simpan tangkapan layar ke papan klip"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -98,7 +97,7 @@ msgstr "Ambil Cuplikan Layar"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "Tutup"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"

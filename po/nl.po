@@ -8,22 +8,21 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2017-05-29 22:23+0000\n"
+"PO-Revision-Date: 2018-06-07 00:09+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/nl/>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/screenshot-tool"
+"/screenshot-tool/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Schermafdruk"
+msgstr "Schermafbeeldingen"
 
 #: src/Application.vala:44
 msgid "Capture active window"

@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2017-03-15 18:04+0000\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-06-07 00:09+0000\n"
+"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/screenshot-"
+"tool/extra/da/>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
 #: data/screenshot-tool.desktop.in:4
@@ -33,11 +35,11 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:62
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary ApS."
 
 #: data/screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"

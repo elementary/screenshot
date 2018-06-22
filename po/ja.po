@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-05-29 00:12+0000\n"
+"PO-Revision-Date: 2018-06-08 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
 "tool/screenshot-tool/ja/>\n"
@@ -16,7 +16,6 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
@@ -50,7 +49,7 @@ msgstr "システムテキストを墨消し"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "スクリーンショットをクリップボードに保存"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -62,15 +61,15 @@ msgstr "キャプチャーの範囲:"
 
 #: src/ScreenshotWindow.vala:74
 msgid "Grab the whole screen"
-msgstr "画面全体を取得する"
+msgstr "画面全体を取得"
 
 #: src/ScreenshotWindow.vala:76
 msgid "Grab the current window"
-msgstr "現在のウインドウを取得する"
+msgstr "現在のウィンドウを取得"
 
 #: src/ScreenshotWindow.vala:78
 msgid "Select area to grab"
-msgstr "選択領域を取得する"
+msgstr "選択領域を取得"
 
 #: src/ScreenshotWindow.vala:80
 msgid "Properties:"
@@ -78,7 +77,7 @@ msgstr "プロパティ:"
 
 #: src/ScreenshotWindow.vala:84
 msgid "Grab mouse pointer:"
-msgstr "マウスポインター部分を取得する:"
+msgstr "マウスポインター部分を取得:"
 
 #: src/ScreenshotWindow.vala:91
 msgid "Close after saving:"
@@ -98,7 +97,7 @@ msgstr "スクリーンショットを撮る"
 
 #: src/ScreenshotWindow.vala:138
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: src/ScreenshotWindow.vala:323
 msgid "Screenshot taken"
@@ -135,11 +134,11 @@ msgstr "フォーマット:"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Folder:"
-msgstr "フォルダ:"
+msgstr "フォルダー:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr "スクリーンショットフォルダを選択…"
+msgstr "スクリーンショットフォルダーを選択…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"

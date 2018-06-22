@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 09:42-0700\n"
-"PO-Revision-Date: 2018-03-08 16:26+0000\n"
+"PO-Revision-Date: 2018-06-22 12:53+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
-"Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
-"screenshot-tool/extra/en_CA/>\n"
+"Language-Team: English (Canada) <https://weblate.elementary.io/projects"
+"/screenshot-tool/extra/en_CA/>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:62
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
