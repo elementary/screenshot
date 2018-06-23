@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: screenshot-tool
-Source: https://launchpad.net/screenshot-tool
+Source: https://github.com/elementary/screenshot-tool
 
 Files: *
 Copyright: 2014-2015 Fabio Zaramella <ffabio.96.x@gmail.com>
