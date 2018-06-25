@@ -9,10 +9,10 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 	dh $@ --buildsystem=meson
 
 override_dh_strip:
-	dh_strip --dbg-package=screenshot-tool-dbg
+	dh_strip --dbgsym-migration='screenshot-tool-dbg (<< 0.1.5)'
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing --list-missing
 
 override_dh_auto_install:
 	dh_auto_install

@@ -1,6 +1,6 @@
 Source: screenshot-tool
 Section: graphics
-Priority: extra
+Priority: optional
 Maintainer: Cody Garver <cody@elementary.io> 
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 10.5.1),
                libgdk-pixbuf2.0-dev,
                meson,
                valac (>= 0.20)
-Standards-Version: 3.9.6
+Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/screenshot-tool
 
 Package: screenshot-tool
@@ -18,14 +18,3 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Screenshot utility
  A simple program screenshot utility for elementary OS.
-
-Package: screenshot-tool-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: screenshot-tool (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
-Enhances: screenshot-tool
-Description: Screenshot utility (debugging symbols)
- A simple program screenshot utility for elementary OS.
- .
- This package contains debugging symbols for screenshot-tool.

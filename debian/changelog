@@ -1,3 +1,9 @@
+screenshot-tool (0.1.5) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 06 Jun 2018 08:17:57 -0500
+
 screenshot-tool (0.1.4) xenial; urgency=medium
 
   * New upstream release.
