@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:23-0700\n"
 "PO-Revision-Date: 2018-06-08 10:23+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/screenshot-"
-"tool/extra/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/screenshot-tool/"
+"extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/screenshot-tool.desktop.in:4
+#: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Snímek obrazovky"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/screenshot-tool.desktop.in:5
+#: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Ukládejte snímky obrazovky"
 
@@ -38,27 +38,27 @@ msgstr ""
 "Jednoduchý nástroj pro snímání obrazovky. Zachytí snímek celé plochy, snímek "
 "vybrané oblasti, aktuálního okna i časované snímky."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+#: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/screenshot-tool.desktop.in:7
+#: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
 msgstr "accessories-screenshot"
 
-#: data/screenshot-tool.desktop.in:10
+#: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Momentka;Snímek obrazovky;Snapshot;Screenshot;"
 
-#: data/screenshot-tool.desktop.in:14
+#: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Snímek celé obrazovky"
 
-#: data/screenshot-tool.desktop.in:18
+#: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Snímek aktuálního okna"
 
-#: data/screenshot-tool.desktop.in:22
+#: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Snímek vybrané oblasti"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:22-0700\n"
 "PO-Revision-Date: 2018-04-19 15:30+0000\n"
 "Last-Translator: xia zixin <xia.zixin@yahoo.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/screenshot-"
@@ -58,64 +58,64 @@ msgstr "截图"
 msgid "Capture area:"
 msgstr "截图区域："
 
-#: src/ScreenshotWindow.vala:74
+#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "截取整个屏幕"
 
-#: src/ScreenshotWindow.vala:76
+#: src/ScreenshotWindow.vala:77
 msgid "Grab the current window"
 msgstr "截取当前窗口"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:79
 msgid "Select area to grab"
 msgstr "选择区域中截取"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:89
 msgid "Properties:"
 msgstr "属性："
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:93
 msgid "Grab mouse pointer:"
 msgstr "保留鼠标："
 
-#: src/ScreenshotWindow.vala:91
+#: src/ScreenshotWindow.vala:100
 msgid "Close after saving:"
 msgstr "保存并推出："
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:107
 msgid "Conceal text:"
 msgstr "隐藏文本："
 
-#: src/ScreenshotWindow.vala:105
+#: src/ScreenshotWindow.vala:114
 msgid "Delay in seconds:"
 msgstr "倒计秒数："
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:140
 msgid "Take Screenshot"
 msgstr "截取"
 
-#: src/ScreenshotWindow.vala:138
+#: src/ScreenshotWindow.vala:146
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:323
+#: src/ScreenshotWindow.vala:331
 msgid "Screenshot taken"
 msgstr "截图完毕"
 
-#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "屏幕截图 %s"
 
-#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
 msgid "Could not capture screenshot"
 msgstr "无法抓取屏幕截图"
 
-#: src/ScreenshotWindow.vala:483
+#: src/ScreenshotWindow.vala:491
 msgid "Couldn't find an active window"
 msgstr "无法找到活动窗口"
 
-#: src/ScreenshotWindow.vala:538
+#: src/ScreenshotWindow.vala:546
 msgid "Image not saved"
 msgstr "图像未保存"
 

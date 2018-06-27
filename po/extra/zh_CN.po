@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:23-0700\n"
 "PO-Revision-Date: 2017-03-13 08:39+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "X-Generator: Launchpad (build 18335)\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/screenshot-tool.desktop.in:4
+#: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "截图"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/screenshot-tool.desktop.in:5
+#: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "保存屏幕截图"
 
@@ -34,27 +34,27 @@ msgid ""
 "current window shots, and timed shots."
 msgstr "简单的截图工具，包括抓屏、选区、窗口和倒计时等功能"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+#: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
 msgstr ""
 
-#: data/screenshot-tool.desktop.in:7
+#: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
 msgstr ""
 
-#: data/screenshot-tool.desktop.in:10
+#: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "截图;截屏;"
 
-#: data/screenshot-tool.desktop.in:14
+#: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "整个屏幕的截图"
 
-#: data/screenshot-tool.desktop.in:18
+#: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "当前窗口的截图"
 
-#: data/screenshot-tool.desktop.in:22
+#: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "选中区域的截图"
 

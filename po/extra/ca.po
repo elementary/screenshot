@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:23-0700\n"
 "PO-Revision-Date: 2018-06-05 17:10+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/screenshot-"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/screenshot-tool.desktop.in:4
+#: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Captura de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/screenshot-tool.desktop.in:5
+#: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Desa imatges de la pantalla"
 
@@ -38,27 +38,27 @@ msgstr ""
 "Una eina simple de captura de pantalla. Captura imatges de pantalla, d'àrees "
 "seleccionades, de la finestra actual i fa captures temporitzades."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+#: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/screenshot-tool.desktop.in:7
+#: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
 msgstr "accessories-screenshot"
 
-#: data/screenshot-tool.desktop.in:10
+#: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Instantània;Captura de pantalla;"
 
-#: data/screenshot-tool.desktop.in:14
+#: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Captura de tota la pantalla"
 
-#: data/screenshot-tool.desktop.in:18
+#: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Captura de la finestra actual"
 
-#: data/screenshot-tool.desktop.in:22
+#: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura d'una àrea seleccionada"
 

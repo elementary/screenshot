@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:23-0700\n"
 "PO-Revision-Date: 2018-06-05 20:14+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/screenshot-"
@@ -22,12 +22,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/screenshot-tool.desktop.in:4
+#: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Zrzut ekranu"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/screenshot-tool.desktop.in:5
+#: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Zapisuje zrzuty ekranu"
 
@@ -39,27 +39,27 @@ msgstr ""
 "Proste narzędzie do tworzenia zrzutów ekranu. Przechwytuje cały ekran, "
 "wybrany obszar, bieżące okno oraz tworzy czasowe zrzuty ekranu."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+#: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/screenshot-tool.desktop.in:7
+#: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
 msgstr "accessories-screenshot"
 
-#: data/screenshot-tool.desktop.in:10
+#: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Migawka;Zrzut ekranu;"
 
-#: data/screenshot-tool.desktop.in:14
+#: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Zrzut całego ekranu"
 
-#: data/screenshot-tool.desktop.in:18
+#: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Zrzut bieżącego okna"
 
-#: data/screenshot-tool.desktop.in:22
+#: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Zrzut wybranego obszaru"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:23-0700\n"
 "PO-Revision-Date: 2018-06-05 17:10+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/screenshot-"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/screenshot-tool.desktop.in:4
+#: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
 msgstr "Captura de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/screenshot-tool.desktop.in:5
+#: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Guardar imágenes de la pantalla"
 
@@ -39,27 +39,27 @@ msgstr ""
 "la pantalla completa, un área concreta o la ventana activa y realizar "
 "capturas tras un tiempo."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:62
+#: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/screenshot-tool.desktop.in:7
+#: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
 msgstr "accessories-screenshot"
 
-#: data/screenshot-tool.desktop.in:10
+#: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Captura;Imagen;"
 
-#: data/screenshot-tool.desktop.in:14
+#: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Captura de pantalla completa"
 
-#: data/screenshot-tool.desktop.in:18
+#: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Captura de la ventana actual"
 
-#: data/screenshot-tool.desktop.in:22
+#: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura de un área seleccionada"
 

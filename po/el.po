@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:22-0700\n"
 "PO-Revision-Date: 2017-01-29 08:30+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,64 +58,64 @@ msgstr "Στιγμιότυπο οθόνης"
 msgid "Capture area:"
 msgstr "Περιοχή λήψης:"
 
-#: src/ScreenshotWindow.vala:74
+#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "Λήψη ολόκληρης της οθόνης"
 
-#: src/ScreenshotWindow.vala:76
+#: src/ScreenshotWindow.vala:77
 msgid "Grab the current window"
 msgstr "Λήψη του τρέχοντος παραθύρου"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:79
 msgid "Select area to grab"
 msgstr "Επιλογή περιοχής λήψης"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:89
 msgid "Properties:"
 msgstr "Ιδιότητες:"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:93
 msgid "Grab mouse pointer:"
 msgstr "Λήψη του δείκτη του ποντικιού:"
 
-#: src/ScreenshotWindow.vala:91
+#: src/ScreenshotWindow.vala:100
 msgid "Close after saving:"
 msgstr "Κλείσιμο μετά την αποθήκευση:"
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:107
 msgid "Conceal text:"
 msgstr "Απόκρυψη κειμένου:"
 
-#: src/ScreenshotWindow.vala:105
+#: src/ScreenshotWindow.vala:114
 msgid "Delay in seconds:"
 msgstr "Καθυστέρηση σε δευτερόλεπτα:"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:140
 msgid "Take Screenshot"
 msgstr "Λήψη στιγμιότυπου οθόνης"
 
-#: src/ScreenshotWindow.vala:138
+#: src/ScreenshotWindow.vala:146
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:323
+#: src/ScreenshotWindow.vala:331
 msgid "Screenshot taken"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Στιγμιότυπο οθόνης από %s"
 
-#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
 msgid "Could not capture screenshot"
 msgstr "Δεν είναι εφικτή η λήψη του στιγμιότυπου οθόνης"
 
-#: src/ScreenshotWindow.vala:483
+#: src/ScreenshotWindow.vala:491
 msgid "Couldn't find an active window"
 msgstr "Δε βρέθηκε ενεργό παράθυρο"
 
-#: src/ScreenshotWindow.vala:538
+#: src/ScreenshotWindow.vala:546
 msgid "Image not saved"
 msgstr "Η απεικόνιση δεν αποθηκεύτηκε"
 
