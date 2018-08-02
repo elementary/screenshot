@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 09:42-0700\n"
+"POT-Creation-Date: 2018-06-27 08:22-0700\n"
 "PO-Revision-Date: 2018-06-05 17:52+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
@@ -59,64 +59,64 @@ msgstr "Képernyőkép"
 msgid "Capture area:"
 msgstr "Mentési terület:"
 
-#: src/ScreenshotWindow.vala:74
+#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "A teljes képernyő mentése"
 
-#: src/ScreenshotWindow.vala:76
+#: src/ScreenshotWindow.vala:77
 msgid "Grab the current window"
 msgstr "Az aktuális ablak mentése"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:79
 msgid "Select area to grab"
 msgstr "Kijelölt terület mentése"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:89
 msgid "Properties:"
 msgstr "Tulajdonságok:"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:93
 msgid "Grab mouse pointer:"
 msgstr "Mentse az egérmutatót:"
 
-#: src/ScreenshotWindow.vala:91
+#: src/ScreenshotWindow.vala:100
 msgid "Close after saving:"
 msgstr "Bezárás mentés után:"
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:107
 msgid "Conceal text:"
 msgstr "Szöveg elrejtése:"
 
-#: src/ScreenshotWindow.vala:105
+#: src/ScreenshotWindow.vala:114
 msgid "Delay in seconds:"
 msgstr "Késleltetés másodpercben:"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:140
 msgid "Take Screenshot"
 msgstr "Képernyőkép készítése"
 
-#: src/ScreenshotWindow.vala:138
+#: src/ScreenshotWindow.vala:146
 msgid "Close"
 msgstr "Bezárás"
 
-#: src/ScreenshotWindow.vala:323
+#: src/ScreenshotWindow.vala:331
 msgid "Screenshot taken"
 msgstr "Képernyőkép elkészítve"
 
-#: src/ScreenshotWindow.vala:365 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Képernyőmentés %s"
 
-#: src/ScreenshotWindow.vala:482 src/ScreenshotWindow.vala:537
+#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
 msgid "Could not capture screenshot"
 msgstr "Nem lehetett menteni a képernyőképet"
 
-#: src/ScreenshotWindow.vala:483
+#: src/ScreenshotWindow.vala:491
 msgid "Couldn't find an active window"
 msgstr "Nem található aktív ablak"
 
-#: src/ScreenshotWindow.vala:538
+#: src/ScreenshotWindow.vala:546
 msgid "Image not saved"
 msgstr "A kép nem lett elmentve"
 
