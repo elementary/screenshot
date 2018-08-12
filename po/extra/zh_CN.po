@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:23-0700\n"
-"PO-Revision-Date: 2017-03-13 08:39+0000\n"
+"PO-Revision-Date: 2018-08-12 13:29+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
-"Language: \n"
+"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"screenshot-tool/extra/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
 #: data/io.elementary.screenshot-tool.desktop.in:4
@@ -32,15 +34,15 @@ msgstr "保存屏幕截图"
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
-msgstr "简单的截图工具，包括抓屏、选区、窗口和倒计时等功能"
+msgstr "简单的截图工具，包括抓屏、选区、窗口和倒计时等功能。"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "附件-截图"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
