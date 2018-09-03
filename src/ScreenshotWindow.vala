@@ -51,7 +51,6 @@ namespace Screenshot {
                 title: _("Screenshot")
             );
 
-            capture_mode = CaptureType.SCREEN;
             mouse_pointer = settings.get_boolean ("mouse-pointer");
             close_on_save = settings.get_boolean ("close-on-save");
             redact = settings.get_boolean ("redact");
@@ -77,6 +76,19 @@ namespace Screenshot {
             var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
 
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
+
+            switch (settings.get_int ("last-capture-mode")) {
+                case 1:
+                    capture_mode = CaptureType.CURRENT_WINDOW;
+                    curr_window.active = true;
+                    break;
+                case 2:
+                    capture_mode = CaptureType.AREA;
+                    selection.active = true;
+                    break;
+                default:
+                    capture_mode = CaptureType.SCREEN;
+            }
 
             var radio_grid = new Gtk.Grid ();
             radio_grid.margin_top = 6;
@@ -152,14 +164,17 @@ namespace Screenshot {
 
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
+                settings.set_int ("last-capture-mode", 0);
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
+                settings.set_int ("last-capture-mode", 1);
             });
 
             selection.toggled.connect (() => {
                 capture_mode = CaptureType.AREA;
+                settings.set_int ("last-capture-mode", 2);
                 present ();
             });
 
