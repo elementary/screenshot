@@ -105,7 +105,6 @@ namespace Screenshot {
             Intl.textdomain ("io.elementary.screenshot-tool");
 
             Gtk.init (ref args);
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
             app = new ScreenshotApp ();
 
