@@ -77,7 +77,7 @@ namespace Screenshot {
 
             var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
 
-            switch (settings.get_int ("last-capture-mode")) {
+            switch (settings.get_enum ("last-capture-mode")) {
                 case 1:
                     capture_mode = CaptureType.CURRENT_WINDOW;
                     curr_window.active = true;
@@ -164,17 +164,17 @@ namespace Screenshot {
 
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
-                settings.set_int ("last-capture-mode", 0);
+                settings.set_enum ("last-capture-mode", capture_mode);
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
-                settings.set_int ("last-capture-mode", 1);
+                settings.set_enum ("last-capture-mode", capture_mode);
             });
 
             selection.toggled.connect (() => {
                 capture_mode = CaptureType.AREA;
-                settings.set_int ("last-capture-mode", 2);
+                settings.set_enum ("last-capture-mode", capture_mode);
                 present ();
             });
 
