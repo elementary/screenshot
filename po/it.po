@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2018-09-06 18:51+0000\n"
+"PO-Revision-Date: 2018-09-06 23:02+0000\n"
 "Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/it/>\n"
@@ -22,15 +22,15 @@ msgstr ""
 
 #: src/Application.vala:38
 msgid "Screenshots"
-msgstr "Istantanea schermo"
+msgstr "Cattura dello schermo"
 
 #: src/Application.vala:44
 msgid "Capture active window"
-msgstr "Cattura la finestra corrente"
+msgstr "Cattura la finestra attiva"
 
 #: src/Application.vala:45
 msgid "Capture area"
-msgstr "Cattura area"
+msgstr "Cattura un'area dello schermo"
 
 #: src/Application.vala:46
 msgid "Capture the whole screen"
@@ -38,7 +38,7 @@ msgstr "Cattura l'intero schermo"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr "Cattura la schermata dopo il ritardo specificato"
+msgstr "Effettua la cattura con un ritardo specificato"
 
 #: src/Application.vala:47
 msgid "Seconds"
@@ -50,11 +50,11 @@ msgstr "Includi il puntatore nella schermata"
 
 #: src/Application.vala:49
 msgid "Redact system text"
-msgstr "Redige il testo del sistema"
+msgstr "Occulta il testo di sistema"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr "Salvare un'istantanea dello schermo negli appunti"
+msgstr "Salva la schermata negli appunti"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -119,7 +119,7 @@ msgstr "Impossibile catturare la schermata"
 
 #: src/ScreenshotWindow.vala:491
 msgid "Couldn't find an active window"
-msgstr "Non è stata trovata nessuna finestra attiva."
+msgstr "Non è stata trovata nessuna finestra attiva"
 
 #: src/ScreenshotWindow.vala:546
 msgid "Image not saved"
