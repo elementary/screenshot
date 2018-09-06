@@ -8,22 +8,21 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2018-03-01 21:48+0000\n"
-"Last-Translator: Artem Anufrij <artem.anufrij@live.de>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/de/>\n"
+"PO-Revision-Date: 2018-08-18 13:26+0000\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Bildschirmfoto"
+msgstr "Bildschirmfotos"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -55,7 +54,7 @@ msgstr "Systemtext unleserlich machen"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Speichere Bildschirmfoto in die Zwischenablage"
 
 #: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -103,7 +102,7 @@ msgstr "Bildschirmfoto aufnehmen"
 
 #: src/ScreenshotWindow.vala:146
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: src/ScreenshotWindow.vala:331
 msgid "Screenshot taken"
