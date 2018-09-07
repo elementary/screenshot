@@ -19,7 +19,7 @@
 
 namespace Screenshot {
 
-    public class ScreenshotWindow : Gtk.Dialog {
+    public class ScreenshotWindow : Gtk.ApplicationWindow {
 
         private enum CaptureType {
             SCREEN,
@@ -47,8 +47,7 @@ namespace Screenshot {
             Object (
                 border_width: 6,
                 deletable: false,
-                resizable: false,
-                title: _("Screenshot")
+                resizable: false
             );
 
             mouse_pointer = settings.get_boolean ("mouse-pointer");
@@ -129,6 +128,21 @@ namespace Screenshot {
             var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
             settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
+            var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
+            take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            take_btn.can_default = true;
+
+            this.set_default (take_btn);
+
+            var close_btn = new Gtk.Button.with_label (_("Close"));
+
+            var actions = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+            actions.halign = Gtk.Align.END;
+            actions.margin_top = 24;
+            actions.spacing = 6;
+            actions.add (close_btn);
+            actions.add (take_btn);
+
             var grid = new Gtk.Grid ();
             grid.margin = 6;
             grid.margin_top = 0;
@@ -145,22 +159,17 @@ namespace Screenshot {
             grid.attach (redact_switch, 1, 6, 1, 1);
             grid.attach (delay_label, 0, 7, 1, 1);
             grid.attach (delay_spin, 1, 7, 1, 1);
+            grid.attach (actions, 0, 8, 2, 1);
 
-            Gtk.Box content = get_content_area () as Gtk.Box;
-            content.add (grid);
+            var titlebar = new Gtk.HeaderBar ();
+            titlebar.has_subtitle = false;
 
-            var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
-            take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            take_btn.can_default = true;
+            var titlebar_style_context = titlebar.get_style_context ();
+            titlebar_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
+            titlebar_style_context.add_class ("default-decoration");
 
-            this.set_default (take_btn);
-
-            var close_btn = new Gtk.Button.with_label (_("Close"));
-
-            Gtk.Box actions = get_action_area () as Gtk.Box;
-            actions.margin_top = 12;
-            actions.add (close_btn);
-            actions.add (take_btn);
+            set_titlebar (titlebar);
+            add (grid);
 
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
