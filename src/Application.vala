@@ -101,8 +101,8 @@ namespace Screenshot {
         public static int main (string[] args) {
             // Init internationalization support
             Intl.setlocale (LocaleCategory.ALL, "");
-            Intl.bind_textdomain_codeset ("io.elementary.screenshot-tool", "UTF-8");
-            Intl.textdomain ("io.elementary.screenshot-tool");
+            Intl.bind_textdomain_codeset ("io.elementary.screenshot", "UTF-8");
+            Intl.textdomain ("io.elementary.screenshot");
 
             Gtk.init (ref args);
 

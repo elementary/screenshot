@@ -1,12 +1,12 @@
 project(
-    'io.elementary.screenshot-tool', 'vala', 'c',
+    'io.elementary.screenshot', 'vala', 'c',
     meson_version : '>= 0.43',
     version: '0.1.5'
 )
 
 i18n = import('i18n')
 
-add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.screenshot-tool"', language:'c')
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
 executable(
     meson.project_name(),

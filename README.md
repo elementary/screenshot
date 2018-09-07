@@ -1,4 +1,4 @@
-# Screenshot Tool
+# Screenshot
 [![Translation status](https://l10n.elementary.io/widgets/screenshot-tool/-/svg-badge.svg)](https://l10n.elementary.io/projects/screenshot-tool/?utm_source=widget)
 
 ![Screenshot Tool Screenshot](data/screenshot.png?raw=true)
@@ -19,7 +19,7 @@ Run `meson` to configure the build environment and then `ninja` to build and run
     cd build
     ninja
 
-To install, use `ninja install`, then execute with `io.elementary.screenshot-tool`
+To install, use `ninja install`, then execute with `io.elementary.screenshot`
 
     sudo ninja install
-    io.elementary.screenshot-tool
+    io.elementary.screenshot

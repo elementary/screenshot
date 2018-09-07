@@ -1,11 +1,11 @@
 <schemalist>
-    <enum id="io.elementary.screenshot-tool.capture-mode">
+    <enum id="io.elementary.screenshot.capture-mode">
         <value nick="screen" value="0"/>
         <value nick="window" value="1"/>
         <value nick="area" value="2"/>
     </enum>
 
-    <schema id="io.elementary.screenshot-tool" path="/io/elementary/screenshot-tool/" gettext-domain="io.elementary.screenshot-tool">
+    <schema id="io.elementary.screenshot" path="/io/elementary/screenshot/" gettext-domain="io.elementary.screenshot">
         <key name="format" type="s">
             <default>"png"</default>
         </key>
@@ -25,7 +25,7 @@
         <key name="folder-dir" type="s">
             <default>""</default>
         </key>
-        <key name='last-capture-mode' enum='io.elementary.screenshot-tool.capture-mode'>
+        <key name='last-capture-mode' enum='io.elementary.screenshot.capture-mode'>
             <default>"screen"</default>
         </key>
     </schema>

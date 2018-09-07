@@ -27,7 +27,7 @@ namespace Screenshot {
             AREA
         }
 
-        private Settings settings = new Settings ("io.elementary.screenshot-tool");
+        private Settings settings = new Settings ("io.elementary.screenshot");
 
         private CaptureType capture_mode;
         private string prev_font_regular;
