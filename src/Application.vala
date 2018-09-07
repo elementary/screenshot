@@ -75,6 +75,7 @@ namespace Screenshot {
             }
 
             window = new ScreenshotWindow ();
+            window.get_style_context ().add_class ("rounded");
             window.set_application (this);
             window.show_all ();
         }
