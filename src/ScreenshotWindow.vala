@@ -47,8 +47,7 @@ namespace Screenshot {
             Object (
                 border_width: 6,
                 deletable: false,
-                resizable: false,
-                title: null
+                resizable: false
             );
 
             mouse_pointer = settings.get_boolean ("mouse-pointer");
