@@ -59,7 +59,7 @@ namespace Screenshot {
             });
 
             add_action (quit_action);
-            add_accelerator ("<Control>q", "app.quit", null);
+            set_accels_for_action ("app.quit", {"<Control>q"});
         }
 
         protected override void activate () {
@@ -75,6 +75,7 @@ namespace Screenshot {
             }
 
             window = new ScreenshotWindow ();
+            window.get_style_context ().add_class ("rounded");
             window.set_application (this);
             window.show_all ();
         }
@@ -105,7 +106,6 @@ namespace Screenshot {
             Intl.textdomain ("io.elementary.screenshot-tool");
 
             Gtk.init (ref args);
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
 
             app = new ScreenshotApp ();
 
