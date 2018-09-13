@@ -21,15 +21,8 @@ cache:
   directories:
     - /tmp/liftoff
 
-matrix:
-  include:
-    - env: DIST=juno
-
-before_install:
-  - docker pull ubuntu:18.04
-
 install:
-  - npm install @elementaryos/houston@1
+  - npm install @elementaryos/houston
 
 script:
   - houston ci
@@ -37,5 +30,3 @@ script:
     --name-appstream io.elementary.screenshot-tool.desktop
     --name-domain io.elementary.screenshot-tool
     --name-human Screenshot
-    --distribution $DIST
-
