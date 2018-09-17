@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2018-09-17 14:50+0000\n"
+"PO-Revision-Date: 2018-09-19 00:09+0000\n"
 "Last-Translator: Nuno Alexandre MS ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/pt/>\n"
@@ -127,7 +127,7 @@ msgstr "Imagem não guardada"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr "Guardar Imagem como..."
+msgstr "Guardar Imagem como…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
@@ -143,7 +143,7 @@ msgstr "Pasta:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr "Seleccionar Pasta de Capturas de Ecrã..."
+msgstr "Seleccionar Pasta de Capturas de Ecrã…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
