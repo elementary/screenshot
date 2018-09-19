@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2018-06-05 20:14+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/pl/>\n"
+"PO-Revision-Date: 2018-09-20 00:04+0000\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
@@ -128,7 +128,7 @@ msgstr "Obraz nie został zapisany"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr "Zapisz obraz jako..."
+msgstr "Zapisz obraz jako…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
@@ -144,7 +144,7 @@ msgstr "Katalog:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr "Wybierz miejsce zapisu zrzutów ekranu..."
+msgstr "Wybierz miejsce zapisu zrzutów ekranu…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
