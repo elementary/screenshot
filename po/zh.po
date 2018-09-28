@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
+"POT-Creation-Date: 2018-09-28 09:01-0700\n"
 "PO-Revision-Date: 2018-04-19 15:30+0000\n"
 "Last-Translator: xia zixin <xia.zixin@yahoo.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/screenshot-"
@@ -50,74 +50,66 @@ msgstr "编辑系统文本"
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr "截图"
-
 #: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr "截图区域："
-
-#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "截取整个屏幕"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:74
 msgid "Grab the current window"
 msgstr "截取当前窗口"
 
-#: src/ScreenshotWindow.vala:79
+#: src/ScreenshotWindow.vala:78
 msgid "Select area to grab"
 msgstr "选择区域中截取"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr "属性："
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:102
 msgid "Grab mouse pointer:"
 msgstr "保留鼠标："
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:109
 msgid "Close after saving:"
 msgstr "保存并推出："
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:116
 msgid "Conceal text:"
 msgstr "隐藏文本："
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:123
 msgid "Delay in seconds:"
 msgstr "倒计秒数："
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:129
 msgid "Take Screenshot"
 msgstr "截取"
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:135
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:351
 msgid "Screenshot taken"
 msgstr "截图完毕"
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:393 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "屏幕截图 %s"
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:510 src/ScreenshotWindow.vala:565
 msgid "Could not capture screenshot"
 msgstr "无法抓取屏幕截图"
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:511
 msgid "Couldn't find an active window"
 msgstr "无法找到活动窗口"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:566
 msgid "Image not saved"
 msgstr "图像未保存"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr "截图"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
@@ -150,6 +142,12 @@ msgstr "取消"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
+
+#~ msgid "Capture area:"
+#~ msgstr "截图区域："
+
+#~ msgid "Properties:"
+#~ msgstr "属性："
 
 #~ msgid "Save images of your screen or individual windows."
 #~ msgstr "保存您的桌面或窗口的截图。"

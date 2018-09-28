@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
+"POT-Creation-Date: 2018-09-28 09:01-0700\n"
 "PO-Revision-Date: 2018-06-05 21:41+0000\n"
 "Last-Translator: Alain M. <alain23@protonmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/screenshot-"
@@ -56,74 +56,66 @@ msgstr "Redactar texto del sistema"
 msgid "Save screenshot to clipboard"
 msgstr "Guardar captura de pantalla en el portapapeles"
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr "Captura de pantalla"
-
 #: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr "Área de captura:"
-
-#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "Seleccionar toda la pantalla"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:74
 msgid "Grab the current window"
 msgstr "Capturar la ventana actual"
 
-#: src/ScreenshotWindow.vala:79
+#: src/ScreenshotWindow.vala:78
 msgid "Select area to grab"
 msgstr "Seleccionar el área que capturar"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr "Propiedades:"
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:102
 msgid "Grab mouse pointer:"
 msgstr "Capturar el puntero del ratón:"
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:109
 msgid "Close after saving:"
 msgstr "Cerrar después de guardar:"
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:116
 msgid "Conceal text:"
 msgstr "Ofuscar texto:"
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:123
 msgid "Delay in seconds:"
 msgstr "Retardo en segundos:"
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:129
 msgid "Take Screenshot"
 msgstr "Capturar pantalla"
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:135
 msgid "Close"
 msgstr "Cerrar"
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:351
 msgid "Screenshot taken"
 msgstr "Captura de pantalla realizada"
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:393 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura realizada el %s"
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:510 src/ScreenshotWindow.vala:565
 msgid "Could not capture screenshot"
 msgstr "No se pudo realizar la captura"
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:511
 msgid "Couldn't find an active window"
 msgstr "No se encontró ninguna ventana activa"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:566
 msgid "Image not saved"
 msgstr "Imagen no guardada"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr "Captura de pantalla"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
@@ -156,6 +148,12 @@ msgstr "Cancelar"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr "Copiar al portapapeles"
+
+#~ msgid "Capture area:"
+#~ msgstr "Área de captura:"
+
+#~ msgid "Properties:"
+#~ msgstr "Propiedades:"
 
 #~ msgid "Save images of your screen or individual windows."
 #~ msgstr "Guardar imágenes de la pantalla o ventanas individuales."
