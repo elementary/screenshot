@@ -65,16 +65,17 @@ namespace Screenshot {
             set_keep_above (true);
             stick ();
 
-            var area_label = new Gtk.Label (_("Capture area:"));
-            area_label.get_style_context ().add_class ("h4");
-            area_label.halign = Gtk.Align.END;
-            area_label.valign = Gtk.Align.START;
+            var all = new Gtk.RadioButton (null);
+            all.image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", Gtk.IconSize.DND);
+            all.tooltip_text = _("Grab the whole screen");
 
-            var all = new Gtk.RadioButton.with_label_from_widget (null, _("Grab the whole screen"));
+            var curr_window = new Gtk.RadioButton.from_widget (all);
+            curr_window.image = new Gtk.Image.from_icon_name ("grab-window-symbolic", Gtk.IconSize.DND);
+            curr_window.tooltip_text = _("Grab the current window");
 
-            var curr_window = new Gtk.RadioButton.with_label_from_widget (all, _("Grab the current window"));
-
-            var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, _("Select area to grab"));
+            var selection = new Gtk.RadioButton.from_widget (curr_window);
+            selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
+            selection.tooltip_text = _("Select area to grab");
 
             switch (settings.get_enum ("last-capture-mode")) {
                 case 1:
@@ -90,16 +91,13 @@ namespace Screenshot {
             }
 
             var radio_grid = new Gtk.Grid ();
-            radio_grid.margin_top = 6;
-            radio_grid.orientation = Gtk.Orientation.VERTICAL;
-            radio_grid.row_spacing = 6;
+            radio_grid.halign = Gtk.Align.CENTER;
+            radio_grid.column_spacing = 24;
+            radio_grid.margin = 24;
+            radio_grid.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
             radio_grid.add (all);
             radio_grid.add (curr_window);
             radio_grid.add (selection);
-
-            var prop_label = new Gtk.Label (_("Properties:"));
-            prop_label.get_style_context ().add_class ("h4");
-            prop_label.halign = Gtk.Align.END;
 
             var pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
             pointer_label.halign = Gtk.Align.END;
@@ -148,9 +146,6 @@ namespace Screenshot {
             grid.margin_top = 0;
             grid.row_spacing = 6;
             grid.column_spacing = 12;
-            grid.attach (area_label, 0, 0, 1, 1);
-            grid.attach (radio_grid, 1, 0);
-            grid.attach (prop_label, 0, 3, 1, 1);
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
             grid.attach (close_label, 0, 5, 1, 1);
@@ -163,6 +158,7 @@ namespace Screenshot {
 
             var titlebar = new Gtk.HeaderBar ();
             titlebar.has_subtitle = false;
+            titlebar.set_custom_title (radio_grid);
 
             var titlebar_style_context = titlebar.get_style_context ();
             titlebar_style_context.add_class (Gtk.STYLE_CLASS_FLAT);

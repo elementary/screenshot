@@ -4,12 +4,20 @@ project(
     version: '0.1.5'
 )
 
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.screenshot-tool"', language:'c')
 
+icon_res = gnome.compile_resources(
+    'screenshot-icon-resources',
+    'data/' + meson.project_name() + '.gresource.xml',
+    source_dir: 'data'
+)
+
 executable(
     meson.project_name(),
+    icon_res,
     'src/Application.vala',
     'src/ScreenshotWindow.vala',
     'src/Widgets/SelectionArea.vala',

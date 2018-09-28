@@ -51,6 +51,9 @@ namespace Screenshot {
 
             add_main_option_entries (options);
 
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            default_theme.add_resource_path ("/io/elementary/screenshot");
+
             var quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
                 if (window != null) {
