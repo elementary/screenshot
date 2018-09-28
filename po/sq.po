@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
+"POT-Creation-Date: 2018-09-28 09:01-0700\n"
 "PO-Revision-Date: 2016-06-30 19:06+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,74 +49,66 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr ""
-
 #: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr "Zona e kapjes:"
-
-#: src/ScreenshotWindow.vala:75
 msgid "Grab the whole screen"
 msgstr "Merr të tërë ekranin"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:74
 msgid "Grab the current window"
 msgstr "Merr dritaren aktuale"
 
-#: src/ScreenshotWindow.vala:79
+#: src/ScreenshotWindow.vala:78
 msgid "Select area to grab"
 msgstr "Zgjidh zonën e kapjes"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr "Vetitë:"
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:102
 msgid "Grab mouse pointer:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:109
 msgid "Close after saving:"
 msgstr "Mbyll pas ruajtjes:"
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:116
 msgid "Conceal text:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:123
 msgid "Delay in seconds:"
 msgstr "Vonesa në sekonda:"
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:129
 msgid "Take Screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:135
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:351
 msgid "Screenshot taken"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:393 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:510 src/ScreenshotWindow.vala:565
 msgid "Could not capture screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:511
 msgid "Couldn't find an active window"
 msgstr "Nuk u gjetën dritare aktive"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:566
 msgid "Image not saved"
 msgstr "Imazhi nuk u ruajt"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr ""
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
@@ -149,6 +141,12 @@ msgstr "Anulo"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr ""
+
+#~ msgid "Capture area:"
+#~ msgstr "Zona e kapjes:"
+
+#~ msgid "Properties:"
+#~ msgstr "Vetitë:"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
