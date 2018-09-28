@@ -494,10 +494,13 @@ namespace Screenshot {
                 if (win != null) {
                     grab_save (win, redact);
                 } else {
-                    Gtk.MessageDialog dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                                                                    Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
-                    dialog.secondary_text = _("Couldn't find an active window");
-                    dialog.deletable = false;
+                    var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                         _("Could not capture screenshot"),
+                         _("Couldn't find an active window"),
+                         "dialog-error",
+                         Gtk.ButtonsType.CLOSE
+                    );
+
                     dialog.run ();
                     dialog.destroy ();
 
@@ -549,10 +552,13 @@ namespace Screenshot {
         }
 
         private void show_error_dialog () {
-            var dialog = new Gtk.MessageDialog (this, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
-                                                Gtk.ButtonsType.CLOSE, _("Could not capture screenshot"));
-            dialog.secondary_text = _("Image not saved");
-            dialog.deletable = false;
+            var dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                 _("Could not capture screenshot"),
+                 _("Image not saved"),
+                 "dialog-error",
+                 Gtk.ButtonsType.CLOSE
+            );
+
             dialog.run ();
             dialog.destroy ();
         }
