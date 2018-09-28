@@ -27,21 +27,20 @@ namespace Screenshot {
             AREA
         }
 
-        private Settings settings = new Settings ("io.elementary.screenshot-tool");
-
+        private Settings settings;
         private CaptureType capture_mode;
         private string prev_font_regular;
         private string prev_font_document;
         private string prev_font_mono;
-
-        private bool mouse_pointer;
         private bool from_command;
-        private bool close_on_save;
-        private bool redact;
         private int delay;
         private bool to_clipboard;
         private int window_x;
         private int window_y;
+
+        public bool close_on_save { get; set; }
+        public bool mouse_pointer { get; set; }
+        public bool redact { get; set; }
 
         public ScreenshotWindow () {
             Object (
@@ -50,10 +49,6 @@ namespace Screenshot {
                 resizable: false
             );
 
-            mouse_pointer = settings.get_boolean ("mouse-pointer");
-            close_on_save = settings.get_boolean ("close-on-save");
-            redact = settings.get_boolean ("redact");
-            delay = settings.get_int ("delay");
             to_clipboard = false;
         }
 
@@ -77,19 +72,6 @@ namespace Screenshot {
             selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
             selection.tooltip_text = _("Select area to grab");
 
-            switch (settings.get_enum ("last-capture-mode")) {
-                case 1:
-                    capture_mode = CaptureType.CURRENT_WINDOW;
-                    curr_window.active = true;
-                    break;
-                case 2:
-                    capture_mode = CaptureType.AREA;
-                    selection.active = true;
-                    break;
-                default:
-                    capture_mode = CaptureType.SCREEN;
-            }
-
             var radio_grid = new Gtk.Grid ();
             radio_grid.halign = Gtk.Align.CENTER;
             radio_grid.column_spacing = 24;
@@ -104,27 +86,23 @@ namespace Screenshot {
 
             var pointer_switch = new Gtk.Switch ();
             pointer_switch.halign = Gtk.Align.START;
-            settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
             var close_label = new Gtk.Label (_("Close after saving:"));
             close_label.halign = Gtk.Align.END;
 
             var close_switch = new Gtk.Switch ();
             close_switch.halign = Gtk.Align.START;
-            settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
             var redact_label = new Gtk.Label (_("Conceal text:"));
             redact_label.halign = Gtk.Align.END;
 
             var redact_switch = new Gtk.Switch ();
             redact_switch.halign = Gtk.Align.START;
-            settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
 
             var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
-            settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
 
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -167,6 +145,28 @@ namespace Screenshot {
             set_titlebar (titlebar);
             add (grid);
 
+            settings = new Settings ("io.elementary.screenshot-tool");
+            settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("mouse-pointer", this, "mouse-pointer", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("close-on-save", this, "close-on-save", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("redact", this, "redact", GLib.SettingsBindFlags.DEFAULT);
+
+            switch (settings.get_enum ("last-capture-mode")) {
+                case 1:
+                    capture_mode = CaptureType.CURRENT_WINDOW;
+                    curr_window.active = true;
+                    break;
+                case 2:
+                    capture_mode = CaptureType.AREA;
+                    selection.active = true;
+                    break;
+                default:
+                    capture_mode = CaptureType.SCREEN;
+            }
+
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
                 settings.set_enum ("last-capture-mode", capture_mode);
@@ -181,18 +181,6 @@ namespace Screenshot {
                 capture_mode = CaptureType.AREA;
                 settings.set_enum ("last-capture-mode", capture_mode);
                 present ();
-            });
-
-            pointer_switch.notify["active"].connect (() => {
-                mouse_pointer = pointer_switch.active;
-            });
-
-            close_switch.notify["active"].connect (() => {
-                close_on_save = close_switch.active;
-            });
-
-            redact_switch.notify["active"].connect (() => {
-                redact = redact_switch.active;
             });
 
             delay_spin.value_changed.connect (() => {
@@ -570,19 +558,19 @@ namespace Screenshot {
         }
 
         private void redact_text (bool redact) {
-            var settings = new Settings ("org.gnome.desktop.interface");
+            var desktop_settings = new Settings ("org.gnome.desktop.interface");
             if (redact) {
-                prev_font_regular = settings.get_string ("font-name");
-                prev_font_mono = settings.get_string ("monospace-font-name");
-                prev_font_document = settings.get_string ("document-font-name");
+                prev_font_regular = desktop_settings.get_string ("font-name");
+                prev_font_mono = desktop_settings.get_string ("monospace-font-name");
+                prev_font_document = desktop_settings.get_string ("document-font-name");
 
-                settings.set_string ("font-name", "Redacted Script Regular 9");
-                settings.set_string ("monospace-font-name", "Redacted Script Light 10");
-                settings.set_string ("document-font-name", "Redacted Script Regular 10");
+                desktop_settings.set_string ("font-name", "Redacted Script Regular 9");
+                desktop_settings.set_string ("monospace-font-name", "Redacted Script Light 10");
+                desktop_settings.set_string ("document-font-name", "Redacted Script Regular 10");
             } else {
-                settings.set_string ("font-name", prev_font_regular);
-                settings.set_string ("monospace-font-name", prev_font_mono);
-                settings.set_string ("document-font-name", prev_font_document);
+                desktop_settings.set_string ("font-name", prev_font_regular);
+                desktop_settings.set_string ("monospace-font-name", prev_font_mono);
+                desktop_settings.set_string ("document-font-name", prev_font_document);
             }
         }
 
