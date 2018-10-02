@@ -129,23 +129,18 @@ namespace Screenshot {
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             take_btn.can_default = true;
+            take_btn.margin_top = 24;
 
             this.set_default (take_btn);
 
             var close_btn = new Gtk.Button.with_label (_("Close"));
-
-            var actions = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-            actions.halign = Gtk.Align.END;
-            actions.margin_top = 24;
-            actions.spacing = 6;
-            actions.add (close_btn);
-            actions.add (take_btn);
+            close_btn.margin_top = 24;
 
             var grid = new Gtk.Grid ();
             grid.margin = 6;
             grid.margin_top = 0;
             grid.row_spacing = 6;
-            grid.column_spacing = 12;
+            grid.column_spacing = 6;
             grid.attach (pointer_label, 0, 4, 1, 1);
             grid.attach (pointer_switch, 1, 4, 1, 1);
             grid.attach (close_label, 0, 5, 1, 1);
@@ -154,7 +149,8 @@ namespace Screenshot {
             grid.attach (redact_switch, 1, 6, 1, 1);
             grid.attach (delay_label, 0, 7, 1, 1);
             grid.attach (delay_spin, 1, 7, 1, 1);
-            grid.attach (actions, 0, 8, 2, 1);
+            grid.attach (close_btn, 0, 8);
+            grid.attach (take_btn, 1, 8);
 
             var titlebar = new Gtk.HeaderBar ();
             titlebar.has_subtitle = false;
