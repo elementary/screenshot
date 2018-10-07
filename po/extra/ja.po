@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:23-0700\n"
-"PO-Revision-Date: 2018-08-03 00:04+0000\n"
+"PO-Revision-Date: 2018-10-07 02:38+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/"
 "screenshot-tool/extra/ja/>\n"
@@ -40,7 +40,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
