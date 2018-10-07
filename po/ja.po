@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2018-09-30 00:09+0000\n"
+"PO-Revision-Date: 2018-10-08 00:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/ja/>\n"
@@ -114,7 +114,7 @@ msgstr "スクリーンショット"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr "画像に名前をつけて保存…"
+msgstr "名前を付けて画像を保存…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
