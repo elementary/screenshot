@@ -46,7 +46,6 @@ namespace Screenshot {
         public ScreenshotWindow () {
             Object (
                 border_width: 6,
-                deletable: false,
                 resizable: false
             );
 
