@@ -33,7 +33,7 @@ executable(
     install : true
 )
 
-meson.add_install_script('meson/post_install.py')
+meson.add_install_script('meson/post_install.py', join_paths(get_option('prefix'), get_option('datadir')))
 
 subdir('data')
 subdir('po')
