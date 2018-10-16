@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-28 09:01-0700\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
 "PO-Revision-Date: 2018-09-19 00:09+0000\n"
 "Last-Translator: Nuno Alexandre MS ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/screenshot-"
@@ -56,60 +56,61 @@ msgstr "Ocultar texto do sistema"
 msgid "Save screenshot to clipboard"
 msgstr "Guardar captura de ecrã na área de transferência"
 
-#: src/ScreenshotWindow.vala:70
+#: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
 msgstr "Capturar o ecrã inteiro"
 
-#: src/ScreenshotWindow.vala:74
+#: src/ScreenshotWindow.vala:73
 msgid "Grab the current window"
 msgstr "Capturar a janela corrente"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
 msgstr "Seleccionar área para capturar"
 
-#: src/ScreenshotWindow.vala:102
+#: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
 msgstr "Capturar ponteiro de rato:"
 
-#: src/ScreenshotWindow.vala:109
+#: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
 msgstr "Fechar depois de guardar:"
 
-#: src/ScreenshotWindow.vala:116
+#: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
 msgstr "Esconder texto:"
 
-#: src/ScreenshotWindow.vala:123
+#: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
 msgstr "Atraso em segundos:"
 
-#: src/ScreenshotWindow.vala:129
+#: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
 msgstr "Capturar uma imagem do ecrã"
 
-#: src/ScreenshotWindow.vala:135
+#: src/ScreenshotWindow.vala:134
 msgid "Close"
 msgstr "Fechar"
 
-#: src/ScreenshotWindow.vala:351
+#: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
 msgstr "Captura de ecrã tirada"
 
-#: src/ScreenshotWindow.vala:393 src/Widgets/SaveDialog.vala:89
+#. / TRANSLATORS: %s represents a timestamp here
+#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura de ecrã de %s"
 
-#: src/ScreenshotWindow.vala:510 src/ScreenshotWindow.vala:565
+#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
 msgstr "Não foi possível capturar a imagem de ecrã"
 
-#: src/ScreenshotWindow.vala:511
+#: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
 msgstr "Janela activa não encontrada"
 
-#: src/ScreenshotWindow.vala:566
+#: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
 msgstr "Imagem não guardada"
 

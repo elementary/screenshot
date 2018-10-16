@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-28 09:01-0700\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
 "PO-Revision-Date: 2017-12-28 19:11+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/screenshot-"
@@ -52,60 +52,61 @@ msgstr "Giảm lại văn bản hệ thống"
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:70
+#: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
 msgstr "Chụp toàn bộ màn hình"
 
-#: src/ScreenshotWindow.vala:74
+#: src/ScreenshotWindow.vala:73
 msgid "Grab the current window"
 msgstr "Chụp cửa sổ hiện tại"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
 msgstr "Chọn khu vực để chụp"
 
-#: src/ScreenshotWindow.vala:102
+#: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
 msgstr "Chụp con trỏ chuột:"
 
-#: src/ScreenshotWindow.vala:109
+#: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
 msgstr "Đóng sau khi lưu:"
 
-#: src/ScreenshotWindow.vala:116
+#: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
 msgstr "Che giấu văn bản:"
 
-#: src/ScreenshotWindow.vala:123
+#: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
 msgstr "Trễ trong vài giây:"
 
-#: src/ScreenshotWindow.vala:129
+#: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
 msgstr "Chụp màn hình"
 
-#: src/ScreenshotWindow.vala:135
+#: src/ScreenshotWindow.vala:134
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:351
+#: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
 msgstr "Đã chụp ảnh chụp màn hình"
 
-#: src/ScreenshotWindow.vala:393 src/Widgets/SaveDialog.vala:89
+#. / TRANSLATORS: %s represents a timestamp here
+#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ảnh chụp màn hình từ %s"
 
-#: src/ScreenshotWindow.vala:510 src/ScreenshotWindow.vala:565
+#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
 msgstr "Không thể chụp màn hình"
 
-#: src/ScreenshotWindow.vala:511
+#: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
 msgstr "Không tìm thấy cửa sổ đang hoạt động"
 
-#: src/ScreenshotWindow.vala:566
+#: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
 msgstr "Hình ảnh không được lưu"
 
