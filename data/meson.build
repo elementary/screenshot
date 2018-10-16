@@ -30,3 +30,10 @@ i18n.merge_file (
     install_dir: join_paths(get_option('datadir'), 'metainfo'),
     po_dir: join_paths(meson.source_root (), 'po', 'extra')
 )
+
+install_subdir (
+    'font',
+    install_dir: join_paths(get_option('datadir'), 'fonts', 'truetype', 'redacted-elementary'),
+    exclude_files: 'OFL.txt',
+    strip_directory : true
+)
