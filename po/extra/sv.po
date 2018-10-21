@@ -8,20 +8,22 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2016-07-28 19:35+0000\n"
-"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"PO-Revision-Date: 2018-10-21 09:37+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/"
+"screenshot-tool/extra/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
 #: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
-msgstr "Skärmbild"
+msgstr "Skärmdump"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
 #: data/io.elementary.screenshot-tool.desktop.in:5
@@ -33,14 +35,16 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
+"Ett simpelt skärmdumpsverktyg. Fånga bilder av hela skärmen, valda områden, "
+"nuvarande fönster eller använd tidsinställning."
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
