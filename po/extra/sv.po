@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2018-10-21 09:37+0000\n"
+"PO-Revision-Date: 2018-10-25 10:04+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/"
 "screenshot-tool/extra/sv/>\n"
@@ -52,15 +52,15 @@ msgstr "Skärmdump;Skärmbild;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Skärmbild av hela skärmen"
+msgstr "Skärmdump av hela skärmen"
 
 #: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "Skärmbild av aktuellt fönster"
+msgstr "Skärmdump av aktuellt fönster"
 
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Skärmbild av ett markerat område"
+msgstr "Skärmdump av ett markerat område"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Om Skärmbild"
