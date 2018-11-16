@@ -2,150 +2,146 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"PO-Revision-Date: 2018-11-04 11:21+0000\n"
+"Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
+"Language-Team: Bosnian <https://weblate.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/bs/>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: src/Application.vala:38
 msgid "Screenshots"
-msgstr ""
+msgstr "Snimke ekrana"
 
 #: src/Application.vala:44
 msgid "Capture active window"
-msgstr ""
+msgstr "Obuhvati aktivni prozor"
 
 #: src/Application.vala:45
 msgid "Capture area"
-msgstr ""
+msgstr "Obuhvati područje"
 
 #: src/Application.vala:46
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Obuhvati cijeli ekran"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Snimaj nakon određene odgode"
 
 #: src/Application.vala:47
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunde"
 
 #: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Uključi i kursor u snimku ekrana"
 
 #: src/Application.vala:49
 msgid "Redact system text"
-msgstr ""
+msgstr "Sakrij sistemski tekst"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Sačuvaj snimku u međuspremnik"
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:75
+#: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Uslikaj cijeli ekran"
+
+#: src/ScreenshotWindow.vala:73
+msgid "Grab the current window"
+msgstr "Uslikaj trenutni prozor"
 
 #: src/ScreenshotWindow.vala:77
-msgid "Grab the current window"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:79
 msgid "Select area to grab"
-msgstr ""
+msgstr "Odaberi područje za slikanje"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "Uslikaj kursor miša:"
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
-msgstr ""
+msgstr "Zatvori nakon sačuvanja:"
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
-msgstr ""
+msgstr "Prikrij tekst:"
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "Odgoda u sekundama:"
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Uslikaj ekran"
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:134
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Ekran snimljen"
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#. / TRANSLATORS: %s represents a timestamp here
+#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Snimka ekrana iz %s"
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Nije bilo moguće snimiti ekran"
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "Nije bilo moguće pronaći aktivan prozor"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
-msgstr ""
+msgstr "Slika nije sačuvana"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr "Snimka ekrana"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr ""
+msgstr "Sačuvaj sliku kao…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
-msgstr ""
+msgstr "Naziv:"
 
 #: src/Widgets/SaveDialog.vala:100
 msgid "Format:"
-msgstr ""
+msgstr "Format:"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Folder:"
-msgstr ""
+msgstr "Fascikla:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "Odaberi fasciklu snimki ekrana…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
-msgstr ""
+msgstr "Sačuvaj"
 
 #: src/Widgets/SaveDialog.vala:150
 msgid "Cancel"
-msgstr ""
+msgstr "Otkaži"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopiraj u međuspremnik"

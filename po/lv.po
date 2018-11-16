@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
 "PO-Revision-Date: 2017-03-03 14:12+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,74 +50,67 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr "Ekrānattēls"
-
-#: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:75
+#: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
 msgstr "Tvert visu ekrānu"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:73
 msgid "Grab the current window"
 msgstr "Tvert esošo logu"
 
-#: src/ScreenshotWindow.vala:79
+#: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
 msgstr "Norādīt reģionu ko tvert"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr "Parametri"
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
 msgstr "Tvert peles kursoru"
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
 msgstr "Aizvērt pēc saglabāšanas"
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
 msgstr "Aizture sekundēs"
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
 msgstr "Uzņemt ekrānattēlu"
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:134
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
 msgstr "Ekrānattēls uzņemts"
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#. / TRANSLATORS: %s represents a timestamp here
+#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ekrānattēls no %s"
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
 msgstr "Neizdevās notvert ekrānattēlu"
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
 msgstr "Neatradu aktīvo logu"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
 msgstr "Attēls netika saglabāts"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr "Ekrānattēls"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
@@ -150,6 +143,9 @@ msgstr "At_celt"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr "Kopēt uz starpliktuvi"
+
+#~ msgid "Properties:"
+#~ msgstr "Parametri"
 
 #~ msgid "translator-credits"
 #~ msgstr ""

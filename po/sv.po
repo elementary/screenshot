@@ -7,21 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:22-0700\n"
-"PO-Revision-Date: 2016-07-28 19:39+0000\n"
-"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"PO-Revision-Date: 2018-10-21 09:35+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: src/Application.vala:38
-#, fuzzy
 msgid "Screenshots"
-msgstr "Skärmbild"
+msgstr "Skärmdumpar"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -37,7 +38,7 @@ msgstr "Fånga hela skärmen"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr "Ta skärmbild efter angiven fördröjning"
+msgstr "Ta skärmdump efter angiven fördröjning"
 
 #: src/Application.vala:47
 msgid "Seconds"
@@ -45,7 +46,7 @@ msgstr "Sekunder"
 
 #: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
-msgstr "Inkludera markören i skärmbilden"
+msgstr "Inkludera markören i skärmdumpen"
 
 #: src/Application.vala:49
 msgid "Redact system text"
@@ -53,76 +54,69 @@ msgstr "Redigera bort systemtext"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Spara skärmdump till urklipp"
 
-#: src/ScreenshotWindow.vala:51 src/Widgets/SaveDialog.vala:40
-msgid "Screenshot"
-msgstr "Skärmbild"
-
-#: src/ScreenshotWindow.vala:70
-msgid "Capture area:"
-msgstr "Område att fånga:"
-
-#: src/ScreenshotWindow.vala:75
+#: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
 msgstr "Fånga hela bildskärmen"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:73
 msgid "Grab the current window"
 msgstr "Fånga aktuellt fönster"
 
-#: src/ScreenshotWindow.vala:79
+#: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
 msgstr "Välj område att fånga"
 
-#: src/ScreenshotWindow.vala:89
-msgid "Properties:"
-msgstr "Egenskaper:"
-
-#: src/ScreenshotWindow.vala:93
+#: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
 msgstr "Fånga muspekare:"
 
-#: src/ScreenshotWindow.vala:100
+#: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
 msgstr "Stäng när bilden sparats:"
 
-#: src/ScreenshotWindow.vala:107
+#: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
 msgstr "Dölj text:"
 
-#: src/ScreenshotWindow.vala:114
+#: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
 msgstr "Fördröj antal sekunder:"
 
-#: src/ScreenshotWindow.vala:140
+#: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
-msgstr "Ta skärmbild"
+msgstr "Ta skärmdump"
 
-#: src/ScreenshotWindow.vala:146
+#: src/ScreenshotWindow.vala:134
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 
-#: src/ScreenshotWindow.vala:331
+#: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Skärmdump tagen"
 
-#: src/ScreenshotWindow.vala:373 src/Widgets/SaveDialog.vala:89
+#. / TRANSLATORS: %s represents a timestamp here
+#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Skärmbild från %s"
+msgstr "Skärmdump från %s"
 
-#: src/ScreenshotWindow.vala:490 src/ScreenshotWindow.vala:545
+#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
-msgstr "kunde inte ta skärmbild"
+msgstr "Kunde inte ta skärmdump"
 
-#: src/ScreenshotWindow.vala:491
+#: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
 msgstr "Kunde inte hitta aktuellt fönster"
 
-#: src/ScreenshotWindow.vala:546
+#: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
 msgstr "Bilden sparades inte"
+
+#: src/Widgets/SaveDialog.vala:40
+msgid "Screenshot"
+msgstr "Skärmdump"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
@@ -142,7 +136,7 @@ msgstr "Mapp:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr "Välj mapp för skärmbilder…"
+msgstr "Välj mapp för skärmdumpar…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
@@ -154,7 +148,13 @@ msgstr "Avbryt"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopiera till urklipp"
+
+#~ msgid "Capture area:"
+#~ msgstr "Område att fånga:"
+
+#~ msgid "Properties:"
+#~ msgstr "Egenskaper:"
 
 #~ msgid "Save images of your screen or individual windows."
 #~ msgstr "Spara bilder av hela bildskärmen eller av individuella fönster."

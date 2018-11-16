@@ -1,16 +1,32 @@
-language: generic
+---
+
+language: node_js
+
+node_js:
+  - lts/*
+
+sudo: required
 
 services:
- - docker
+  - docker
 
-env:
- - DEPENDENCY_PACKAGES="desktop-file-utils meson libcanberra-dev libgdk-pixbuf2.0-dev libgranite-dev valac"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-5-dev
+
+cache:
+  directories:
+    - /tmp/liftoff
 
 install:
- - docker pull elementary/docker:loki
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && cd build && ninja test"
- - docker pull elementary/docker:loki-unstable
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && rm -rf build && meson build && cd build && ninja test"
+  - npm install @elementaryos/houston
 
 script:
- - echo BUILDS PASSED
+  - houston ci
+    --type system-app
+    --name-appstream io.elementary.screenshot-tool.desktop
+    --name-domain io.elementary.screenshot-tool
+    --name-human Screenshot

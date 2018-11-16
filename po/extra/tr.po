@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:23-0700\n"
-"PO-Revision-Date: 2018-08-31 13:18+0000\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"PO-Revision-Date: 2018-10-21 09:37+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/"
 "screenshot-tool/extra/tr/>\n"
@@ -44,7 +44,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr "aksesuarlar-ekran görüntüsü"
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"

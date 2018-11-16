@@ -24,6 +24,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.6.0" date="2018-10-16" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix Alt+F4 key behavior</li>
+          <li>Icons now represent the capture area options</li>
+          <li>Minor bug fixes</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.5" date="2018-06-06" urgency="medium">
       <description>
         <ul>

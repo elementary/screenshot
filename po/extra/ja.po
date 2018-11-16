@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 08:23-0700\n"
-"PO-Revision-Date: 2018-08-03 00:04+0000\n"
+"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"PO-Revision-Date: 2018-11-08 13:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/"
 "screenshot-tool/extra/ja/>\n"
@@ -29,10 +29,7 @@ msgstr "画面の画像を保存します"
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
-msgstr ""
-"シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィン"
-"ドウなどのスクリーンショットに加え、遅延させてのスクリーンショットも取得する"
-"ことができます。"
+msgstr "シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィンドウのほか、遅延させたスクリーンショットも取得することができます。"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
@@ -40,7 +37,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -56,7 +53,7 @@ msgstr "現在のウィンドウのスクリーンショット"
 
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "選択領域のスクリーンショット"
+msgstr "選択範囲のスクリーンショット"
 
 #~ msgid "About Screenshot"
 #~ msgstr "スクリーンショットについて"
