@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2018-11-08 13:03+0000\n"
+"PO-Revision-Date: 2018-11-22 03:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/ja/>\n"
@@ -65,19 +65,19 @@ msgstr "取得する範囲を選択します"
 
 #: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
-msgstr "マウスポインター部分を取得:"
+msgstr "マウスポインター部分を取得："
 
 #: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
-msgstr "保存後に閉じる:"
+msgstr "保存後に閉じる："
 
 #: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
-msgstr "テキストを隠す:"
+msgstr "テキストを隠す："
 
 #: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
-msgstr "遅延する秒数:"
+msgstr "遅延する秒数："
 
 #: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
@@ -119,15 +119,15 @@ msgstr "名前を付けて画像を保存…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
-msgstr "名前:"
+msgstr "名前："
 
 #: src/Widgets/SaveDialog.vala:100
 msgid "Format:"
-msgstr "形式:"
+msgstr "形式："
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Folder:"
-msgstr "フォルダー:"
+msgstr "フォルダー："
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
