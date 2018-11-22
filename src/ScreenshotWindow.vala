@@ -445,8 +445,8 @@ namespace Screenshot {
                 timeout -= 1000;
             }
 
-            if (timeout < 100) {
-                timeout = 100;
+            if (timeout < 300) {
+                timeout = 300;
             }
 
             return timeout;
