@@ -185,6 +185,7 @@ namespace Screenshot {
             delay_spin.value_changed.connect (() => {
                 delay = delay_spin.get_value_as_int ();
             });
+            delay = delay_spin.get_value_as_int ();
 
             take_btn.clicked.connect (take_clicked);
             close_btn.clicked.connect (close_clicked);
