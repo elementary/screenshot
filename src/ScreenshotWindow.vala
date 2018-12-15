@@ -107,16 +107,31 @@ namespace Screenshot {
             take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             take_btn.can_default = true;
 
+            var icon_button = new Gtk.ToggleButton ();
+            icon_button.image = new Gtk.Image.from_icon_name ("tools-timer-symbolic", Gtk.IconSize.MENU);
+            icon_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
+            var timers = new Screenshot.Widgets.TimersList (icon_button);
+            timers.position = Gtk.PositionType.TOP;
+            
+            icon_button.toggled.connect (() => timers.show_all ());
+
+
             this.set_default (take_btn);
 
             var close_btn = new Gtk.Button.with_label (_("Close"));
+
+            var actions_grid = new Gtk.Grid ();
+            actions_grid.add (take_btn);
+            actions_grid.add (icon_button);
+            actions_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
 
             var actions = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
             actions.halign = Gtk.Align.END;
             actions.margin_top = 24;
             actions.spacing = 6;
             actions.add (close_btn);
-            actions.add (take_btn);
+            actions.add (actions_grid);
 
             var grid = new Gtk.Grid ();
             grid.margin = 6;
@@ -129,9 +144,7 @@ namespace Screenshot {
             grid.attach (close_switch, 1, 5, 1, 1);
             grid.attach (redact_label, 0, 6, 1, 1);
             grid.attach (redact_switch, 1, 6, 1, 1);
-            grid.attach (delay_label, 0, 7, 1, 1);
-            grid.attach (delay_spin, 1, 7, 1, 1);
-            grid.attach (actions, 0, 8, 2, 1);
+            grid.attach (actions, 0, 7, 2, 1);
 
             var titlebar = new Gtk.HeaderBar ();
             titlebar.has_subtitle = false;
@@ -225,7 +238,7 @@ namespace Screenshot {
             close_on_save = true;
             from_command = true;
 
-            this.set_opacity (0);
+            this.opacity = 0;
         }
 
         private bool grab_save (Gdk.Window? win, bool extra_time) {
@@ -240,7 +253,7 @@ namespace Screenshot {
 
             Timeout.add (250, () => {
                 if (from_command == false) {
-                    this.set_opacity (1);
+                    this.opacity = 1;
                 }
                 return false;
             });
@@ -424,7 +437,7 @@ namespace Screenshot {
         }
 
         public void take_clicked () {
-            this.set_opacity (0);
+            this.opacity = 0;
 
             switch (capture_mode) {
                 case CaptureType.SCREEN:
@@ -505,7 +518,7 @@ namespace Screenshot {
                     dialog.destroy ();
 
                     if (from_command == false) {
-                        this.set_opacity (1);
+                        this.opacity = 1;
                     } else {
                         this.destroy ();
                     }
@@ -528,7 +541,7 @@ namespace Screenshot {
                 } else {
                     if (from_command == false) {
                         move (window_x, window_y);
-                        this.set_opacity (1);
+                        this.opacity = 1;
                         this.present ();
                     }
                 }
@@ -538,7 +551,7 @@ namespace Screenshot {
 
             selection_area.captured.connect (() => {
                 if (delay == 0) {
-                    selection_area.set_opacity (0);
+                    selection_area.opacity = 0;
                 }
                 selection_area.close ();
                 Timeout.add (get_timeout (delay, redact), () => {
