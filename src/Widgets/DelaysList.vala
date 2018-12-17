@@ -18,31 +18,43 @@
  */
 
 namespace Screenshot.Widgets {
-    public class TimersList : Gtk.Popover {
-
+    public class DelaysList : Gtk.Popover {
+        public signal void delay_changed (int delay);
         private Gtk.Grid selection_list;
 
-        public TimersList (Gtk.Widget relative_to) {
+        public DelaysList (Gtk.Widget relative_to) {
             this.relative_to = relative_to;
         }
 
         construct {
+            var now_sec = get_timer_button(0);
             var three_sec = get_timer_button (3);
             var five_sec = get_timer_button (5);
             var ten_sec = get_timer_button (10);
-                    
+
             selection_list = new Gtk.Grid ();
             selection_list.orientation = Gtk.Orientation.VERTICAL;
+            selection_list.add (now_sec);
             selection_list.add (three_sec);
             selection_list.add (five_sec);
-            selection_list.add (ten_sec);   
+            selection_list.add (ten_sec);
             selection_list.show_all ();
             add (selection_list);
         }
 
         private Gtk.ModelButton get_timer_button (int delay) {
             var button = new Gtk.ModelButton ();
-            button.text = _("in %ds").printf (delay);
+
+            if (delay == 0) {
+                button.text = _("Now");
+            } else {
+                button.text = _("in %ds").printf (delay);
+            }
+
+            button.clicked.connect (() => {
+                delay_changed (delay);
+                hide();
+            });
 
             return button;
         }

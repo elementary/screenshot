@@ -98,11 +98,6 @@ namespace Screenshot {
             var redact_switch = new Gtk.Switch ();
             redact_switch.halign = Gtk.Align.START;
 
-            var delay_label = new Gtk.Label (_("Delay in seconds:"));
-            delay_label.halign = Gtk.Align.END;
-
-            var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
-
             var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
             take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             take_btn.can_default = true;
@@ -111,11 +106,14 @@ namespace Screenshot {
             icon_button.image = new Gtk.Image.from_icon_name ("tools-timer-symbolic", Gtk.IconSize.MENU);
             icon_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            var timers = new Screenshot.Widgets.TimersList (icon_button);
-            timers.position = Gtk.PositionType.TOP;
+            var delay_options = new Screenshot.Widgets.DelaysList (icon_button);
+            delay_options.position = Gtk.PositionType.TOP;
+            delay_options.delay_changed.connect ((_delay) => {
+                delay = _delay;
+                icon_button.set_active(false);
+            });
             
-            icon_button.toggled.connect (() => timers.show_all ());
-
+            icon_button.toggled.connect (() => delay_options.show_all ());
 
             this.set_default (take_btn);
 
@@ -162,7 +160,7 @@ namespace Screenshot {
             settings.bind ("mouse-pointer", this, "mouse-pointer", GLib.SettingsBindFlags.DEFAULT);
             settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
             settings.bind ("close-on-save", this, "close-on-save", GLib.SettingsBindFlags.DEFAULT);
-            settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
+            settings.bind ("delay", this, "delay", GLib.SettingsBindFlags.DEFAULT);
             settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
             settings.bind ("redact", this, "redact", GLib.SettingsBindFlags.DEFAULT);
 
@@ -194,11 +192,6 @@ namespace Screenshot {
                 settings.set_enum ("last-capture-mode", capture_mode);
                 present ();
             });
-
-            delay_spin.value_changed.connect (() => {
-                delay = delay_spin.get_value_as_int ();
-            });
-            delay = delay_spin.get_value_as_int ();
 
             take_btn.clicked.connect (take_clicked);
             close_btn.clicked.connect (close_clicked);
