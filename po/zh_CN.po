@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2019-01-15 13:35+0000\n"
+"PO-Revision-Date: 2019-01-16 00:03+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/zh_Hans/>\n"
@@ -136,7 +136,7 @@ msgstr "目录："
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr "选择保存目录："
+msgstr "选择保存目录…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
