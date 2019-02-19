@@ -27,7 +27,7 @@ executable(
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('gtk+-3.0'),
-        dependency('granite'),
+        dependency('granite', version: '>=5.0'),
         dependency('libcanberra')
     ],
     install : true
