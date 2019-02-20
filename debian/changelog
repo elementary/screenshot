@@ -1,3 +1,9 @@
+screenshot-tool (1.6.2) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <codygarver@gmail.com>  Wed, 20 Feb 2019 15:13:57 -0600
+
 screenshot-tool (1.6.1) bionic; urgency=medium
 
   * New upstream release.
