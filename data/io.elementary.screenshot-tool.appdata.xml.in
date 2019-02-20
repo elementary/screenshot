@@ -24,6 +24,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.6.2" date="2019-02-20" urgency="medium">
+      <description>
+        <ul>
+          <li>Revert from redacted font as soon as possible to avoid getting stuck in some situations</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.1" date="2019-02-01" urgency="medium">
       <description>
         <ul>
