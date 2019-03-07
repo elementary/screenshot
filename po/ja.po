@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2018-12-02 06:32+0000\n"
+"PO-Revision-Date: 2019-01-29 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/ja/>\n"
@@ -95,7 +95,7 @@ msgstr "スクリーンショットを撮りました"
 #: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr "スクリーンショット %s"
+msgstr "%s のスクリーンショット"
 
 #: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"

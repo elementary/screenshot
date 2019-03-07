@@ -292,6 +292,10 @@ namespace Screenshot {
                 win_rect.height = height;
             }
 
+            if (redact) {
+                redact_text (false);
+            }
+
             if (screenshot == null) {
                 show_error_dialog ();
                 return false;
@@ -336,10 +340,6 @@ namespace Screenshot {
                         cursor_pixbuf.composite (screenshot, cursor_clip.x, cursor_clip.y, cursor_clip.width, cursor_clip.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
-            }
-
-            if (redact) {
-                redact_text (false);
             }
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));

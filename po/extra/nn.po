@@ -3,52 +3,56 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2016-04-20 17:37+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-01-05 03:20+0000\n"
+"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
+"screenshot-tool/extra/nn/>\n"
+"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
 #: data/io.elementary.screenshot-tool.desktop.in:4
 msgid "Screenshot"
-msgstr ""
+msgstr "Skjermkutt"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
 #: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
-msgstr ""
+msgstr "Lagre bilete av skjermen"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
+"Eit enkelt skjermkuttverktøy. Ta heile skjermkutt, valde område, gjeldande "
+"vindauge. Alt med moglegheita til å bruke nedtelling til å gjere det."
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr ""
+msgstr "Skjermbilde;Snapshot;Screenshot;Skjermkutt;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr ""
+msgstr "Skjermkutt av heile skjermen"
 
 #: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr ""
+msgstr "Skjermkutt av gjeldande vindauge"
 
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr ""
+msgstr "Skjermkutt av eit valt område"

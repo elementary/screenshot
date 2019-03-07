@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2018-12-02 06:32+0000\n"
+"PO-Revision-Date: 2018-12-23 16:49+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/mr/>\n"
@@ -45,69 +45,69 @@ msgstr "स्क्रीनशॉटमध्ये पॉइंटर सम�
 
 #: src/Application.vala:49
 msgid "Redact system text"
-msgstr ""
+msgstr "सिस्टम मजकूर रेडक्ट"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "क्लिपबोर्डवर स्क्रीनशॉट जतन करा"
 
 #: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "संपूर्ण स्क्रीन मिळवा"
 
 #: src/ScreenshotWindow.vala:73
 msgid "Grab the current window"
-msgstr ""
+msgstr "वर्तमान खिडकी घ्या"
 
 #: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
-msgstr ""
+msgstr "पकडण्यासाठी क्षेत्र निवडा"
 
 #: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "माउस पॉइंटर पकडा:"
 
 #: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
-msgstr ""
+msgstr "जतन केल्यानंतर बंद करा:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
-msgstr ""
+msgstr "मजकूर लपवा:"
 
 #: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "सेकंदांमध्ये विलंब:"
 
 #: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
-msgstr ""
+msgstr "स्क्रीनशॉट घ्या"
 
 #: src/ScreenshotWindow.vala:134
 msgid "Close"
-msgstr ""
+msgstr "बंद करा"
 
 #: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
-msgstr ""
+msgstr "स्क्रीनशॉट घेतला"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "%s चा स्क्रीनशॉट"
 
 #: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "स्क्रीनशॉट कॅप्चर होऊ शकला नाही"
 
 #: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "सक्रिय विंडो सापडली नाही"
 
 #: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
-msgstr ""
+msgstr "प्रतिमा जतन केली नाही"
 
 #: src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -115,32 +115,32 @@ msgstr "स्क्रीनशॉट"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr ""
+msgstr "म्हणून प्रतिमा जतन करा …"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
-msgstr ""
+msgstr "नाव:"
 
 #: src/Widgets/SaveDialog.vala:100
 msgid "Format:"
-msgstr ""
+msgstr "प्रारूप:"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Folder:"
-msgstr ""
+msgstr "फ़ोल्डर:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "स्क्रीनशॉट फोल्डर निवडा …"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
-msgstr ""
+msgstr "जतन करा"
 
 #: src/Widgets/SaveDialog.vala:150
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द करा"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "क्लिपबोर्डवर कॉपी करा"
