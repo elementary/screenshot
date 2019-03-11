@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
 "PO-Revision-Date: 2019-03-11 20:53+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"Last-Translator: karim inabi <karim99tgt@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/ar/>\n"
 "Language: ar\n"
@@ -24,13 +24,15 @@ msgstr "لقطة للشاشة"
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
 #: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
-msgstr ""
+msgstr "حفظ صور الشاشة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
+"أداة شاشة بسيطة، تلتقط جميع لقطات الشاشة ولقطات لمناطق محددة بالشاشة ولقطات "
+"النافذة الحالية ولقطات موقوتة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "elementary LLC."
