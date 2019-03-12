@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2018-07-23 20:11+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
+"PO-Revision-Date: 2019-02-22 00:04+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/nb/>\n"
 "Language: nb\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Application.vala:38
 msgid "Screenshots"
-msgstr "Skjermbilder"
+msgstr "Skjermavbildninger"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -46,7 +46,7 @@ msgstr "Sekunder"
 
 #: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
-msgstr "Ta med peker i skjermbildet"
+msgstr "Ta med peker i skjermavbildningen"
 
 #: src/Application.vala:49
 msgid "Redact system text"
@@ -86,7 +86,7 @@ msgstr "Forsinkelse i sekunder:"
 
 #: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
-msgstr "Ta skjermbilde"
+msgstr "Utfør skjermavbildning"
 
 #: src/ScreenshotWindow.vala:134
 msgid "Close"
@@ -94,17 +94,17 @@ msgstr "Lukk"
 
 #: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
-msgstr "Skjermbilde tatt"
+msgstr "Skjermavbildning utført"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Skjermbilde fra %s"
+msgstr "Skjermavbildning fra %s"
 
 #: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
-msgstr "Kunne ikke fange opp skjermbilde"
+msgstr "Kunne ikke utføre skjermavbildning"
 
 #: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
@@ -116,7 +116,7 @@ msgstr "Bilde ikke lagret"
 
 #: src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
-msgstr "Skjermbilde"
+msgstr "Skjermavbildning"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"

@@ -185,6 +185,7 @@ namespace Screenshot {
             delay_spin.value_changed.connect (() => {
                 delay = delay_spin.get_value_as_int ();
             });
+            delay = delay_spin.get_value_as_int ();
 
             take_btn.clicked.connect (take_clicked);
             close_btn.clicked.connect (close_clicked);
@@ -285,6 +286,10 @@ namespace Screenshot {
                 win_rect.height = height;
             }
 
+            if (redact) {
+                redact_text (false);
+            }
+
             if (screenshot == null) {
                 show_error_dialog ();
                 return false;
@@ -329,10 +334,6 @@ namespace Screenshot {
                         cursor_pixbuf.composite (screenshot, cursor_clip.x, cursor_clip.y, cursor_clip.width, cursor_clip.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
                     }
                 }
-            }
-
-            if (redact) {
-                redact_text (false);
             }
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
@@ -445,8 +446,8 @@ namespace Screenshot {
                 timeout -= 1000;
             }
 
-            if (timeout < 100) {
-                timeout = 100;
+            if (timeout < 300) {
+                timeout = 300;
             }
 
             return timeout;
