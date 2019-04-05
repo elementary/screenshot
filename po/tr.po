@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2019-03-31 21:52+0000\n"
+"PO-Revision-Date: 2019-04-05 21:52+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/tr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Application.vala:38
 msgid "Screenshots"
-msgstr "Ekran Görüntüsü"
+msgstr "Ekran Görüntüleri"
 
 #: src/Application.vala:44
 msgid "Capture active window"
@@ -116,7 +116,7 @@ msgstr "Görüntü kaydedilmedi"
 
 #: src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
-msgstr "Ekran görüntüsü"
+msgstr "Ekran Görüntüsü"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
