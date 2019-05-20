@@ -62,7 +62,7 @@ namespace Screenshot {
             });
 
             add_action (quit_action);
-            set_accels_for_action ("app.quit", {"<Control>q"});
+            set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
         }
 
         protected override void activate () {
