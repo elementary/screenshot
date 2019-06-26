@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2018-06-22 20:56+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/screenshot-"
@@ -57,61 +57,61 @@ msgstr "Редактировать системный текст"
 msgid "Save screenshot to clipboard"
 msgstr "Сохранить снимок в буфер обмена"
 
-#: src/ScreenshotWindow.vala:69
+#: src/ScreenshotWindow.vala:64
 msgid "Grab the whole screen"
 msgstr "Захватить весь экран"
 
-#: src/ScreenshotWindow.vala:73
+#: src/ScreenshotWindow.vala:68
 msgid "Grab the current window"
 msgstr "Захватить текущее окно"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:72
 msgid "Select area to grab"
 msgstr "Выбрать область захвата"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:83
 msgid "Grab mouse pointer:"
 msgstr "Захватить указатель:"
 
-#: src/ScreenshotWindow.vala:108
+#: src/ScreenshotWindow.vala:89
 msgid "Close after saving:"
 msgstr "Закрыть после сохранения:"
 
-#: src/ScreenshotWindow.vala:115
+#: src/ScreenshotWindow.vala:95
 msgid "Conceal text:"
 msgstr "Скрыть текст:"
 
-#: src/ScreenshotWindow.vala:122
+#: src/ScreenshotWindow.vala:101
 msgid "Delay in seconds:"
 msgstr "Задержка в секундах:"
 
-#: src/ScreenshotWindow.vala:128
+#: src/ScreenshotWindow.vala:106
 msgid "Take Screenshot"
 msgstr "Сделать снимок экрана"
 
-#: src/ScreenshotWindow.vala:134
+#: src/ScreenshotWindow.vala:112
 msgid "Close"
 msgstr "Закрыть"
 
-#: src/ScreenshotWindow.vala:350
+#: src/ScreenshotWindow.vala:339
 msgid "Screenshot taken"
 msgstr "Снимок экрана создан"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Снимок экрана от %s"
 
-#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
+#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
 msgid "Could not capture screenshot"
 msgstr "Не удалось сделать скриншот"
 
-#: src/ScreenshotWindow.vala:510
+#: src/ScreenshotWindow.vala:499
 msgid "Couldn't find an active window"
 msgstr "Не удалось найти активное окно"
 
-#: src/ScreenshotWindow.vala:568
+#: src/ScreenshotWindow.vala:557
 msgid "Image not saved"
 msgstr "Снимок не сохранён"
 

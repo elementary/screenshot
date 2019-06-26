@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2018-06-06 06:14+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/screenshot-"
@@ -56,61 +56,61 @@ msgstr "시스템 텍스트 편집"
 msgid "Save screenshot to clipboard"
 msgstr "스크린샷 클립보드에 저장하기"
 
-#: src/ScreenshotWindow.vala:69
+#: src/ScreenshotWindow.vala:64
 msgid "Grab the whole screen"
 msgstr "전체 화면"
 
-#: src/ScreenshotWindow.vala:73
+#: src/ScreenshotWindow.vala:68
 msgid "Grab the current window"
 msgstr "현재 창"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:72
 msgid "Select area to grab"
 msgstr "사용자 지정"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:83
 msgid "Grab mouse pointer:"
 msgstr "마우스 포인터 포함:"
 
-#: src/ScreenshotWindow.vala:108
+#: src/ScreenshotWindow.vala:89
 msgid "Close after saving:"
 msgstr "저장하고 닫기:"
 
-#: src/ScreenshotWindow.vala:115
+#: src/ScreenshotWindow.vala:95
 msgid "Conceal text:"
 msgstr "텍스트 숨김:"
 
-#: src/ScreenshotWindow.vala:122
+#: src/ScreenshotWindow.vala:101
 msgid "Delay in seconds:"
 msgstr "타이머 설정:"
 
-#: src/ScreenshotWindow.vala:128
+#: src/ScreenshotWindow.vala:106
 msgid "Take Screenshot"
 msgstr "스크린샷 찍기"
 
-#: src/ScreenshotWindow.vala:134
+#: src/ScreenshotWindow.vala:112
 msgid "Close"
 msgstr "닫기"
 
-#: src/ScreenshotWindow.vala:350
+#: src/ScreenshotWindow.vala:339
 msgid "Screenshot taken"
 msgstr "스크린샷을 찍었습니다"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s에 스크린샷 찍기"
 
-#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
+#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
 msgid "Could not capture screenshot"
 msgstr "스크린샷을 찍을 수 없습니다"
 
-#: src/ScreenshotWindow.vala:510
+#: src/ScreenshotWindow.vala:499
 msgid "Couldn't find an active window"
 msgstr "사용 중인 창이 없습니다"
 
-#: src/ScreenshotWindow.vala:568
+#: src/ScreenshotWindow.vala:557
 msgid "Image not saved"
 msgstr "이미지 저장되지 않음"
 
