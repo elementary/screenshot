@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2019-07-10 04:46+0000\n"
+"PO-Revision-Date: 2019-07-15 01:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/eo/>\n"
@@ -26,35 +26,35 @@ msgstr "Ekrankopioj"
 
 #: src/Application.vala:44
 msgid "Capture active window"
-msgstr ""
+msgstr "Kapti la aktivan fenestron"
 
 #: src/Application.vala:45
 msgid "Capture area"
-msgstr ""
+msgstr "Kapti areaĵon"
 
 #: src/Application.vala:46
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Kapti la tutan ekranon"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Kapti post specifita daŭro"
 
 #: src/Application.vala:47
 msgid "Seconds"
-msgstr ""
+msgstr "Sekundoj"
 
 #: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Inkluzivigi la indikilon en la kaptado"
 
 #: src/Application.vala:49
 msgid "Redact system text"
-msgstr ""
+msgstr "Redakti la sisteman tekston"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Registri la kaptaĵon en la tondujo"
 
 #: src/ScreenshotWindow.vala:69
 msgid "Grab the whole screen"
@@ -66,23 +66,23 @@ msgstr "Kapti la aktivan fenestron"
 
 #: src/ScreenshotWindow.vala:77
 msgid "Select area to grab"
-msgstr ""
+msgstr "Elekti areaĵon kaptota"
 
 #: src/ScreenshotWindow.vala:101
 msgid "Grab mouse pointer:"
-msgstr ""
+msgstr "Kapti la musan indikilon:"
 
 #: src/ScreenshotWindow.vala:108
 msgid "Close after saving:"
-msgstr ""
+msgstr "Fermi post registrado:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Conceal text:"
-msgstr ""
+msgstr "Kaŝi la tekston:"
 
 #: src/ScreenshotWindow.vala:122
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "Daŭro en sekundoj:"
 
 #: src/ScreenshotWindow.vala:128
 msgid "Take Screenshot"
@@ -90,29 +90,29 @@ msgstr "Krei ekrankopion"
 
 #: src/ScreenshotWindow.vala:134
 msgid "Close"
-msgstr ""
+msgstr "Fermi"
 
 #: src/ScreenshotWindow.vala:350
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Ekrankopio farita"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "Ekrankopita je %s"
 
 #: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "Neeblis fari ekrankopion"
 
 #: src/ScreenshotWindow.vala:510
 msgid "Couldn't find an active window"
-msgstr ""
+msgstr "Ne estas aktiva fenestro"
 
 #: src/ScreenshotWindow.vala:568
 msgid "Image not saved"
-msgstr ""
+msgstr "Bildo ne registrita"
 
 #: src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
@@ -120,7 +120,7 @@ msgstr "Ekrankopio"
 
 #: src/Widgets/SaveDialog.vala:79
 msgid "Save Image as…"
-msgstr ""
+msgstr "Registri bildon kiel…"
 
 #: src/Widgets/SaveDialog.vala:83
 msgid "Name:"
@@ -136,7 +136,7 @@ msgstr "Dosierujo:"
 
 #: src/Widgets/SaveDialog.vala:127
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "Elekti la dosierujon de ekrankopioj…"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Save"
@@ -148,7 +148,7 @@ msgstr "Rezigni"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopii en la tondujo"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
