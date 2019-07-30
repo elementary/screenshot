@@ -62,7 +62,7 @@ namespace Screenshot {
             });
 
             add_action (quit_action);
-            set_accels_for_action ("app.quit", {"<Control>q"});
+            set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
 
             const string DESKTOP_SCHEMA = "io.elementary.desktop";
             const string DARK_KEY = "prefer-dark";

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:55-0700\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2018-09-09 00:02+0000\n"
 "Last-Translator: Lewis Goddard <lewisgoddard@eustasy.org>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
@@ -56,61 +56,61 @@ msgstr "Redact system text"
 msgid "Save screenshot to clipboard"
 msgstr "Save screenshot to clipboard"
 
-#: src/ScreenshotWindow.vala:69
+#: src/ScreenshotWindow.vala:64
 msgid "Grab the whole screen"
 msgstr "Grab the whole screen"
 
-#: src/ScreenshotWindow.vala:73
+#: src/ScreenshotWindow.vala:68
 msgid "Grab the current window"
 msgstr "Grab the current window"
 
-#: src/ScreenshotWindow.vala:77
+#: src/ScreenshotWindow.vala:72
 msgid "Select area to grab"
 msgstr "Select area to grab"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:83
 msgid "Grab mouse pointer:"
 msgstr "Grab mouse pointer:"
 
-#: src/ScreenshotWindow.vala:108
+#: src/ScreenshotWindow.vala:89
 msgid "Close after saving:"
 msgstr "Close after saving:"
 
-#: src/ScreenshotWindow.vala:115
+#: src/ScreenshotWindow.vala:95
 msgid "Conceal text:"
 msgstr "Conceal text:"
 
-#: src/ScreenshotWindow.vala:122
+#: src/ScreenshotWindow.vala:101
 msgid "Delay in seconds:"
 msgstr "Delay in seconds:"
 
-#: src/ScreenshotWindow.vala:128
+#: src/ScreenshotWindow.vala:106
 msgid "Take Screenshot"
 msgstr "Take Screenshot"
 
-#: src/ScreenshotWindow.vala:134
+#: src/ScreenshotWindow.vala:112
 msgid "Close"
 msgstr "Close"
 
-#: src/ScreenshotWindow.vala:350
+#: src/ScreenshotWindow.vala:339
 msgid "Screenshot taken"
 msgstr "Screenshot taken"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:392 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Screenshot from %s"
 
-#: src/ScreenshotWindow.vala:509 src/ScreenshotWindow.vala:567
+#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
 msgid "Could not capture screenshot"
 msgstr "Could not capture screenshot"
 
-#: src/ScreenshotWindow.vala:510
+#: src/ScreenshotWindow.vala:499
 msgid "Couldn't find an active window"
 msgstr "Couldn't find an active window"
 
-#: src/ScreenshotWindow.vala:568
+#: src/ScreenshotWindow.vala:557
 msgid "Image not saved"
 msgstr "Image not saved"
 
