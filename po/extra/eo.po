@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:55-0700\n"
-"PO-Revision-Date: 2019-07-13 07:28+0000\n"
+"PO-Revision-Date: 2019-08-29 17:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/"
 "screenshot-tool/extra/eo/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -42,7 +42,7 @@ msgstr ""
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
-msgstr ""
+msgstr "Malfari tiparan ŝanĝon tuj, por eviti blokiĝon en iuj situacioj"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:40
@@ -52,23 +52,23 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:85
 #: data/io.elementary.screenshot-tool.appdata.xml.in:94
 msgid "Translation updates"
-msgstr ""
+msgstr "Tradukaj ĝisdatigoj"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Ĉiam respekti la specifitan daŭron"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Pligrandigi la minimuman tempolimon ĝis 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Ripari la konduton de klavoj Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:48
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Bildeton nun montras la agordojn pri areaĵa kapto"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:49
 #: data/io.elementary.screenshot-tool.appdata.xml.in:59
@@ -78,11 +78,11 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:95
 #: data/io.elementary.screenshot-tool.appdata.xml.in:102
 msgid "Minor bug fixes"
-msgstr ""
+msgstr "Malgravaj sencimigoj"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Ripari la konduton de la klavo Esk"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:58
 msgid "Append scaling factor to filename"
