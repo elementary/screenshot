@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2018-06-05 23:02+0000\n"
+"PO-Revision-Date: 2019-08-29 17:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/screenshot-"
-"tool/extra/lt/>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/"
+"screenshot-tool/extra/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -40,6 +40,8 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Kaip įmanoma greičiau sugrįžti iš redaguoto šrifto, kad kai kuriose "
+"situacijose būtų išvengta strigčių"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:40
@@ -53,19 +55,19 @@ msgstr "Vertimų atnaujinimai"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Visada gerbti delsos nustatymą"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Padidinti mažiausią laiko limitą iki 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Pataisyti Alt+F4 klavišo elgseną"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:48
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Dabar, piktogramos atvaizduoja fotografavimo srities parametrus"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:49
 #: data/io.elementary.screenshot-tool.appdata.xml.in:59
@@ -79,23 +81,23 @@ msgstr "Smulkių klaidų pataisymai"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Pataisyti Grįžties(ESC) klavišo elgseną"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:58
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Pridėti mastelio keitimo faktorių į failo pavadinimą"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:67
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Naujas numatytasis aplankas, skirtas ekrano kopijų įrašymui"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:68
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Prisiminti iš naujo atsirandančio lango pagrindinę poziciją"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Darant ekrano kopiją atkurti sklendės garsą"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:93
 msgid "Fix extra black area on HiDPI screenshots"
