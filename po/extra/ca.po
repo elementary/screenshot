@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2018-08-24 00:01+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/screenshot-"
-"tool/extra/ca/>\n"
+"PO-Revision-Date: 2019-08-29 17:22+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot-tool/"
+"extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -43,6 +43,8 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Reversió al tipus de lletra redactat tan aviat com sigui possible per evitar "
+"que quedin bloquejats en algunes situacions"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:40
@@ -56,19 +58,19 @@ msgstr "Actualitzacions de la traducció"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Es respecta sempre la configuració de retard"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Increment del temps màxim a 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Correcció del comportament de la tecla Alt + F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:48
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Ara les icones representen les opcions de l'àrea de captura"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:49
 #: data/io.elementary.screenshot-tool.appdata.xml.in:59
@@ -82,23 +84,23 @@ msgstr "Correccions d'errors menors"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Correcció del comportament de la tecla ESC"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:58
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Addició del factor d’escala al nom del fitxer"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:67
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Nova carpeta predeterminada per desar les captures de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:68
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Record de la posició principal de la finestra per tornar a aparèixer"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Reprodueix el so de l'obturador quan es fa una captura de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:93
 msgid "Fix extra black area on HiDPI screenshots"
