@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-09-05 16:22+0000\n"
+"PO-Revision-Date: 2019-09-09 15:22+0000\n"
 "Last-Translator: Daniel <riesp@protonmail.com>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/gl/>\n"
@@ -102,24 +102,24 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:136
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr ""
+msgstr "Captura;Imaxe;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr ""
+msgstr "Captura de pantalla completa"
 
 #: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr ""
+msgstr "Captura da xanela actual"
 
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr ""
+msgstr "Captura dunha área seleccionada"
