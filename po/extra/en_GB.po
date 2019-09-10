@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2018-09-08 16:43+0000\n"
-"Last-Translator: Lewis Goddard <lewisgoddard@eustasy.org>\n"
-"Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
-"projects/screenshot-tool/extra/en_GB/>\n"
+"PO-Revision-Date: 2019-09-11 12:22+0000\n"
+"Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
+"Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
+"screenshot-tool/extra/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -43,6 +43,8 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Revert from redacted font as soon as possible to avoid getting stuck in some "
+"situations"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:40
@@ -56,19 +58,19 @@ msgstr "Translation updates"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Always respect delay setting"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Increase minimum timeout to 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Fix Alt+F4 key behaviour"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:48
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Icons now represent the capture area options"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:49
 #: data/io.elementary.screenshot-tool.appdata.xml.in:59
@@ -82,23 +84,23 @@ msgstr "Minor bug fixes"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Fix ESC key behaviour"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:58
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Append scaling factor to filename"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:67
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "New default folder to save screenshots"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:68
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Remember main window position for reappearing window"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Play shutter sound when a screenshot is taken"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:93
 msgid "Fix extra black area on HiDPI screenshots"
