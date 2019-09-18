@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2018-06-05 16:55+0000\n"
-"Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/ca/>\n"
+"PO-Revision-Date: 2019-09-18 17:22+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot-tool/"
+"screenshot-tool/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
@@ -50,7 +50,7 @@ msgstr "Inclou el punter a la captura de pantalla"
 
 #: src/Application.vala:49
 msgid "Redact system text"
-msgstr "Redacta el text del sistema"
+msgstr "Expurga el text del sistema"
 
 #: src/Application.vala:50
 msgid "Save screenshot to clipboard"
