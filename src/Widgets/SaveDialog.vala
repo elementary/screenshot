@@ -45,7 +45,7 @@ namespace Screenshot.Widgets {
         construct {
             set_keep_above (true);
             var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
-                +  "%c".printf(GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
+                + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
 
             var folder_from_settings = settings.get_string ("folder-dir");
 

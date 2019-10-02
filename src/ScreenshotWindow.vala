@@ -403,7 +403,7 @@ namespace Screenshot {
                     folder_dir = folder_from_settings;
                 } else {
                     folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                        + "%c".printf(GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
+                        + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
                 }
                 ScreenshotApp.create_dir_if_missing (folder_dir);
             }
@@ -439,7 +439,7 @@ namespace Screenshot {
             }
         }
 
-        private int get_timeout(int delay, bool redact) {
+        private int get_timeout (int delay, bool redact) {
             int timeout = delay * 1000;
 
             if (redact) {
