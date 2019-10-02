@@ -52,7 +52,7 @@ namespace Screenshot.Widgets {
             start_point.x = (int)e.x_root;
             start_point.y = (int)e.y_root;
 
-            return true;            
+            return true;
         }
 
         public override bool button_release_event (Gdk.EventButton e) {
@@ -63,7 +63,7 @@ namespace Screenshot.Widgets {
             dragging = false;
             captured ();
 
-            return true;            
+            return true;
         }
 
         public override bool motion_notify_event (Gdk.EventMotion e) {
@@ -86,7 +86,7 @@ namespace Screenshot.Widgets {
             move (x, y);
             resize (width, height);
 
-            return true;            
+            return true;
         }
 
         public override bool key_press_event (Gdk.EventKey e) {
@@ -94,7 +94,7 @@ namespace Screenshot.Widgets {
                 cancelled ();
             }
 
-            return true;            
+            return true;
         }
 
         public override void show_all () {
@@ -125,7 +125,7 @@ namespace Screenshot.Widgets {
 
                 if (status != Gdk.GrabStatus.SUCCESS) {
                     keyboard.ungrab (Gtk.get_current_event_time ());
-                }                
+                }
             }
         }
 
