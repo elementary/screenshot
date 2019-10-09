@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-09-09 15:22+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2019-10-10 14:23+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/es/>\n"
 "Language: es\n"
@@ -44,6 +44,8 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Revertir de la fuente redactada lo antes posible para evitar quedarse "
+"atascado en algunas situaciones"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:40
@@ -57,19 +59,19 @@ msgstr "Actualización de traducciones"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Respetar siempre la configuración de retraso"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Aumentar el tiempo de espera mínimo a 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Corregir el comportamiento de la tecla Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:48
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Los iconos ahora representan las opciones del área de captura"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:49
 #: data/io.elementary.screenshot-tool.appdata.xml.in:59
@@ -83,23 +85,25 @@ msgstr "Reparación de errores menores"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Corregir comportamiento de la tecla ESC"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:58
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Agregar factor de escala al nombre de archivo"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:67
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Nueva carpeta predeterminada para guardar capturas de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:68
 msgid "Remember main window position for reappearing window"
 msgstr ""
+"Recuerde la posición de la ventana principal cuando reaparezca la ventana"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Play shutter sound when a screenshot is taken"
 msgstr ""
+"Reproduce el sonido del obturador cuando se toma una captura de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:93
 msgid "Fix extra black area on HiDPI screenshots"
