@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-10-30 09:23-0700\n"
 "PO-Revision-Date: 2019-10-27 19:24+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -34,72 +34,77 @@ msgstr ""
 "וצילומים מתוזמנים."
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
+msgid "Close when pressing the Escape key"
+msgstr ""
+
+#: data/io.elementary.screenshot-tool.appdata.xml.in:31
+#: data/io.elementary.screenshot-tool.appdata.xml.in:39
+#: data/io.elementary.screenshot-tool.appdata.xml.in:48
+#: data/io.elementary.screenshot-tool.appdata.xml.in:58
+#: data/io.elementary.screenshot-tool.appdata.xml.in:68
+#: data/io.elementary.screenshot-tool.appdata.xml.in:78
+#: data/io.elementary.screenshot-tool.appdata.xml.in:93
+#: data/io.elementary.screenshot-tool.appdata.xml.in:102
+msgid "Translation updates"
+msgstr "עדכוני תרגומים"
+
+#: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr "לשחזר את הגופן שהשתנה באופן זמני כדי להימנע מתקיעות בכל מיני מצבים"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:31
-#: data/io.elementary.screenshot-tool.appdata.xml.in:40
-#: data/io.elementary.screenshot-tool.appdata.xml.in:50
-#: data/io.elementary.screenshot-tool.appdata.xml.in:60
-#: data/io.elementary.screenshot-tool.appdata.xml.in:70
-#: data/io.elementary.screenshot-tool.appdata.xml.in:85
-#: data/io.elementary.screenshot-tool.appdata.xml.in:94
-msgid "Translation updates"
-msgstr "עדכוני תרגומים"
-
-#: data/io.elementary.screenshot-tool.appdata.xml.in:38
+#: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid "Always respect delay setting"
 msgstr "תמיד לכבד את הגדרות ההשהיה"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:39
+#: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Increase minimum timeout to 300"
 msgstr "הקטנת הזמן הקצוב המזערי ל־300"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:47
+#: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Fix Alt+F4 key behavior"
 msgstr "תיקון התנהגות צירוף המקשים Alt+F4"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:48
+#: data/io.elementary.screenshot-tool.appdata.xml.in:56
 msgid "Icons now represent the capture area options"
 msgstr "סמלים מייצגים מעתה את אפשרויות האזורים ללכידה"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:49
-#: data/io.elementary.screenshot-tool.appdata.xml.in:59
-#: data/io.elementary.screenshot-tool.appdata.xml.in:69
+#: data/io.elementary.screenshot-tool.appdata.xml.in:57
+#: data/io.elementary.screenshot-tool.appdata.xml.in:67
 #: data/io.elementary.screenshot-tool.appdata.xml.in:77
-#: data/io.elementary.screenshot-tool.appdata.xml.in:86
-#: data/io.elementary.screenshot-tool.appdata.xml.in:95
-#: data/io.elementary.screenshot-tool.appdata.xml.in:102
+#: data/io.elementary.screenshot-tool.appdata.xml.in:85
+#: data/io.elementary.screenshot-tool.appdata.xml.in:94
+#: data/io.elementary.screenshot-tool.appdata.xml.in:103
+#: data/io.elementary.screenshot-tool.appdata.xml.in:110
 msgid "Minor bug fixes"
 msgstr "תיקוני באגים קלים"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:57
+#: data/io.elementary.screenshot-tool.appdata.xml.in:65
 msgid "Fix ESC key behavior"
 msgstr "תיקון התנהגות המקש Esc"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:58
+#: data/io.elementary.screenshot-tool.appdata.xml.in:66
 msgid "Append scaling factor to filename"
 msgstr "הוספת מקדם שינוי גודל לשם הקובץ"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:67
+#: data/io.elementary.screenshot-tool.appdata.xml.in:75
 msgid "New default folder to save screenshots"
 msgstr "תיקיית בררת מחדל חדשה לשמירת צילומי מסך"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:68
+#: data/io.elementary.screenshot-tool.appdata.xml.in:76
 msgid "Remember main window position for reappearing window"
 msgstr "לזכור את מיקום החלון הראשי לטובת תצוגה חוזרת"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:84
+#: data/io.elementary.screenshot-tool.appdata.xml.in:92
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "השמעת צליל צמצם בעת צילום המסך"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:93
+#: data/io.elementary.screenshot-tool.appdata.xml.in:101
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "תיקון אזור שחור נוסף בצילומי HiDPI"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:136
+#: data/io.elementary.screenshot-tool.appdata.xml.in:144
 msgid "elementary LLC."
 msgstr "elementary LLC.‎"
 
