@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-09-14 12:22+0000\n"
+"PO-Revision-Date: 2019-11-03 14:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/ja/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Esc キーの押下時にアプリを終了するように修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
@@ -52,23 +52,23 @@ msgstr "翻訳の更新"
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
-msgstr ""
+msgstr "特定の状況下においてアプリがフリーズするのを防ぐため、なるべく早くダミーフォントから復元するように修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "遅延の設定を常に反映するように修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:47
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "タイムアウトの最小値を300ミリ秒に増加"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Alt+F4 キー押下時の動作を修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:56
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "取得範囲を表すアイコンに変更"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:57
 #: data/io.elementary.screenshot-tool.appdata.xml.in:67
@@ -82,23 +82,23 @@ msgstr "軽微なバグの修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:65
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Esc キー押下時の動作を修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:66
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "ファイル名にスケールファクターを追加するように変更"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:75
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "スクリーンショットのデフォルトの保存先を変更"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:76
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "メインウィンドウの位置を記録し、再度表示されるウィンドウで復元するように変更"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:92
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "スクリーンショットの取得時にシャッター音が鳴るように変更"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:101
 msgid "Fix extra black area on HiDPI screenshots"
