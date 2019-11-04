@@ -19,6 +19,7 @@ executable(
     meson.project_name(),
     icon_res,
     'src/Application.vala',
+    'src/ScreenshotProxy.vala',
     'src/ScreenshotWindow.vala',
     'src/Widgets/SelectionArea.vala',
     'src/Widgets/SaveDialog.vala',
