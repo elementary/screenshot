@@ -228,11 +228,17 @@ namespace Screenshot {
             this.set_opacity (0);
         }
 
-        private bool grab_save (Gdk.Window? win, bool extra_time) {
+        private string get_tmp_filename () {
+            var dir = Environment.get_user_cache_dir ();
+            var name = "io.elementary.screenshot-tool-%lu.png".printf (Random.next_int ());
+            return Path.build_filename (dir, name);
+        }
+
+        private bool grab_save (Gdk.Rectangle? rect, bool extra_time) {
             if (extra_time) {
                 redact_text (true);
                 Timeout.add_seconds (1, () => {
-                    return grab_save (win, false);
+                    return grab_save (rect, false);
                 });
 
                 return false;
@@ -245,95 +251,55 @@ namespace Screenshot {
                 return false;
             });
 
-            var win_rect = Gdk.Rectangle ();
-            var root = Gdk.get_default_root_window ();
-
-            if (win == null) {
-                win = root;
-            }
-
             Gdk.Pixbuf? screenshot;
-            int scale_factor;
 
-            if (capture_mode == CaptureType.AREA) {
-                scale_factor = root.get_scale_factor ();
-                Gdk.Rectangle selection_rect;
-                win.get_frame_extents (out selection_rect);
+            var success = false;
+            var filename_used = "";
+            var tmp_filename = get_tmp_filename ();
 
-                screenshot = new Gdk.Pixbuf.subpixbuf (Gdk.pixbuf_get_from_window (root, 0, 0, root.get_width (), root.get_height ()),
-                                                    selection_rect.x, selection_rect.y, selection_rect.width, selection_rect.height);
+            try {
+                var screenshot_proxy = Bus.get_proxy_sync<ScreenshotProxy> (BusType.SESSION,
+                                                                            "org.gnome.Shell.Screenshot",
+                                                                            "/org/gnome/Shell/Screenshot");
 
-                win_rect.x = selection_rect.x;
-                win_rect.y = selection_rect.y;
-                win_rect.width = selection_rect.width;
-                win_rect.height = selection_rect.height;
-            } else {
-                scale_factor = win.get_scale_factor ();
-                int width = win.get_width ();
-                int height = win.get_height ();
-
-                // Check the scaling factor in use, and if greater than 1 scale the image. (for HiDPI displays)
-                if (scale_factor > 1 && capture_mode == CaptureType.SCREEN) {
-                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width / scale_factor, height / scale_factor);
-                    screenshot.scale (screenshot, width, height, width, height, 0, 0, scale_factor, scale_factor, Gdk.InterpType.BILINEAR);
-                } else {
-                    screenshot = Gdk.pixbuf_get_from_window (win, 0, 0, width, height);
+                switch (capture_mode) {
+                    case CaptureType.SCREEN:
+                        screenshot_proxy.screenshot (mouse_pointer, false, tmp_filename,
+                                                     out success, out filename_used);
+                        break;
+                    case CaptureType.CURRENT_WINDOW:
+                        screenshot_proxy.screenshot_window (true, mouse_pointer, false,
+                                                            tmp_filename,
+                                                            out success, out filename_used);
+                        break;
+                    case CaptureType.AREA:
+                        if (rect != null) {
+                            screenshot_proxy.screenshot_area (rect.x, rect.y, rect.width, rect.height,
+                                                              false, tmp_filename,
+                                                              out success, out filename_used);
+                        }
+                        break;
                 }
-
-                win_rect.x = 0;
-                win_rect.y = 0;
-                win_rect.width = width;
-                win_rect.height = height;
+            } catch (Error e) {
+                warning ("Couldn't take screenshot: %s\n", e.message);
+                screenshot = null;
             }
 
             if (redact) {
                 redact_text (false);
             }
 
-            if (screenshot == null) {
+            if (!success) {
                 show_error_dialog ();
                 return false;
             }
 
-            if (mouse_pointer) {
-                var cursor = new Gdk.Cursor.for_display (Gdk.Display.get_default (), Gdk.CursorType.LEFT_PTR);
-                var cursor_pixbuf = cursor.get_image ();
-
-                if (cursor_pixbuf != null) {
-                    var manager = Gdk.Display.get_default ().get_device_manager ();
-                    var device = manager.get_client_pointer ();
-
-                    int cx, cy, xhot, yhot;
-                    if (capture_mode != CaptureType.AREA) {
-                        win.get_device_position (device, out cx, out cy, null);
-                    } else {
-                        root.get_device_position (device, out cx, out cy, null);
-                    }
-                    xhot = int.parse (cursor_pixbuf.get_option ("x_hot")); // Left padding in cursor_pixbuf between the margin and the actual pointer
-                    yhot = int.parse (cursor_pixbuf.get_option ("y_hot")); // Top padding in cursor_pixbuf between the margin and the actual pointer
-
-                    var cursor_rect = Gdk.Rectangle ();
-                    cursor_rect.x = cx - xhot;
-                    cursor_rect.y = cy - yhot;
-                    cursor_rect.width = cursor_pixbuf.get_width ();
-                    cursor_rect.height = cursor_pixbuf.get_height ();
-
-                    if (scale_factor > 1) {
-                        cursor_rect.x *= scale_factor;
-                        cursor_rect.y *= scale_factor;
-                        cursor_rect.width *= scale_factor;
-                        cursor_rect.height *= scale_factor;
-                    }
-
-                    Gdk.Rectangle cursor_clip;
-                    if (win_rect.intersect (cursor_rect, out cursor_clip)) {
-                        cursor_rect.x -= win_rect.x;
-                        cursor_rect.y -= win_rect.y;
-                        cursor_clip.x -= win_rect.x;
-                        cursor_clip.y -= win_rect.y;
-                        cursor_pixbuf.composite (screenshot, cursor_clip.x, cursor_clip.y, cursor_clip.width, cursor_clip.height, cursor_rect.x, cursor_rect.y, scale_factor, scale_factor, Gdk.InterpType.BILINEAR, 255);
-                    }
-                }
+            try {
+                screenshot = new Gdk.Pixbuf.from_file (filename_used);
+                FileUtils.unlink (filename_used);
+            } catch (Error e) {
+                show_error_dialog ();
+                return false;
             }
 
             play_shutter_sound ("screen-capture", _("Screenshot taken"));
@@ -425,18 +391,57 @@ namespace Screenshot {
 
         public void take_clicked () {
             this.set_opacity (0);
+            remember_window_position ();
+            this.hide ();
 
-            switch (capture_mode) {
-                case CaptureType.SCREEN:
-                    capture_screen ();
-                    break;
-                case CaptureType.CURRENT_WINDOW:
-                    capture_window ();
-                    break;
-                case CaptureType.AREA:
-                    capture_area ();
-                    break;
+            if (capture_mode == CaptureType.AREA) {
+                ScreenshotProxy? screenshot_proxy = null;
+                try {
+                    screenshot_proxy = Bus.get_proxy_sync<ScreenshotProxy> (BusType.SESSION,
+                                                                            "org.gnome.Shell.Screenshot",
+                                                                            "/org/gnome/Shell/Screenshot");
+                } catch (Error e) {
+                    warning ("Couldn't take screenshot: %s\n", e.message);
+                    return;
+                }
+
+                screenshot_proxy.select_area.begin ((obj, res) => {
+                    try {
+                        int x, y, width, height;
+                        screenshot_proxy.select_area.end (res, out x, out y, out width, out height);
+
+                        Gdk.Rectangle? area_rect = { x, y, width, height };
+
+                        wait_and_grab_save (area_rect);
+                    } catch (GLib.IOError.CANCELLED e) {
+                        if (close_on_save) {
+                            this.destroy ();
+                        } else {
+                            if (from_command == false) {
+                                move (window_x, window_y);
+                                this.set_opacity (1);
+                                this.present ();
+                            }
+                        }
+                        return;
+                    } catch (Error e) {
+                        warning ("Couldn't take screenshot: %s\n", e.message);
+                    }
+                });
+                return;
             }
+
+            wait_and_grab_save (null);
+        }
+
+        private void wait_and_grab_save (Gdk.Rectangle? rect) {
+            Timeout.add (get_timeout (delay, redact), () => {
+                if (from_command == false) {
+                    move (window_x, window_y);
+                    this.present ();
+                }
+                return grab_save (rect, redact);
+            });
         }
 
         private int get_timeout (int delay, bool redact) {
@@ -451,104 +456,6 @@ namespace Screenshot {
             }
 
             return timeout;
-        }
-
-        private void capture_screen () {
-            remember_window_position ();
-            this.hide ();
-
-            Timeout.add (get_timeout (delay, redact), () => {
-                if (from_command == false) {
-                    move (window_x, window_y);
-                    this.present ();
-                }
-                return grab_save (null, redact);
-            });
-        }
-
-        private void capture_window () {
-            Gdk.Screen screen = null;
-            Gdk.Window win = null;
-            GLib.List<Gdk.Window> list = null;
-
-            screen = Gdk.Screen.get_default ();
-
-            remember_window_position ();
-            this.hide ();
-            Timeout.add (get_timeout (delay, redact), () => {
-                list = screen.get_window_stack ();
-                foreach (Gdk.Window item in list) {
-                    if (screen.get_active_window () == item) {
-                        win = item;
-                    }
-
-                    // Recieve updates of other windows when they are resized
-                    item.set_events (item.get_events () | Gdk.EventMask.STRUCTURE_MASK);
-                }
-
-                if (from_command == false) {
-                    move (window_x, window_y);
-                    this.present ();
-                }
-
-                if (win != null) {
-                    grab_save (win, redact);
-                } else {
-                    var dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                         _("Could not capture screenshot"),
-                         _("Couldn't find an active window"),
-                         "dialog-error",
-                         Gtk.ButtonsType.CLOSE
-                    );
-
-                    dialog.run ();
-                    dialog.destroy ();
-
-                    if (from_command == false) {
-                        this.set_opacity (1);
-                    } else {
-                        this.destroy ();
-                    }
-                }
-
-                return false;
-            });
-        }
-
-        private void capture_area () {
-            var selection_area = new Screenshot.Widgets.SelectionArea ();
-            selection_area.show_all ();
-            remember_window_position ();
-            this.hide ();
-
-            selection_area.cancelled.connect (() => {
-                selection_area.close ();
-                if (close_on_save) {
-                    this.destroy ();
-                } else {
-                    if (from_command == false) {
-                        move (window_x, window_y);
-                        this.set_opacity (1);
-                        this.present ();
-                    }
-                }
-            });
-
-            var win = selection_area.get_window ();
-
-            selection_area.captured.connect (() => {
-                if (delay == 0) {
-                    selection_area.set_opacity (0);
-                }
-                selection_area.close ();
-                Timeout.add (get_timeout (delay, redact), () => {
-                    if (from_command == false) {
-                        move (window_x, window_y);
-                        this.present ();
-                    }
-                    return grab_save (win, redact);
-                });
-            });
         }
 
         private void show_error_dialog () {
