@@ -21,7 +21,6 @@ executable(
     'src/Application.vala',
     'src/ScreenshotProxy.vala',
     'src/ScreenshotWindow.vala',
-    'src/Widgets/SelectionArea.vala',
     'src/Widgets/SaveDialog.vala',
     dependencies: [
         dependency('gdk-pixbuf-2.0'),
