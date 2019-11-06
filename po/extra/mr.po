@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-09-15 16:22+0000\n"
+"PO-Revision-Date: 2019-11-08 14:24+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/mr/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "एस्केप की दाबल्यावर बंद करा"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
