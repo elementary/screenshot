@@ -21,17 +21,8 @@ namespace Screenshot {
 
     public class ScreenshotWindow : Gtk.ApplicationWindow {
 
-        private enum CaptureType {
-            SCREEN,
-            CURRENT_WINDOW,
-            AREA
-        }
-
         private Settings settings;
         private CaptureType capture_mode;
-        private string prev_font_regular;
-        private string prev_font_document;
-        private string prev_font_mono;
         private bool from_command;
         private int delay;
         private bool to_clipboard;
@@ -224,86 +215,39 @@ namespace Screenshot {
 
             close_on_save = true;
             from_command = true;
-
-            this.set_opacity (0);
         }
 
-        private string get_tmp_filename () {
-            var dir = Environment.get_user_cache_dir ();
-            var name = "io.elementary.screenshot-tool-%lu.png".printf (Random.next_int ());
-            return Path.build_filename (dir, name);
+        private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
+            string full_file_name = "";
+            string folder_from_settings = "";
+
+            if (folder_dir == "") {
+                folder_from_settings = settings.get_string ("folder-dir");
+                if (folder_from_settings != "") {
+                    folder_dir = folder_from_settings;
+                } else {
+                    folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
+                        + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
+                }
+                ScreenshotApp.create_dir_if_missing (folder_dir);
+            }
+
+            int attempt = 0;
+
+            do {
+                if (attempt == 0) {
+                    full_file_name = Path.build_filename (folder_dir, "%s.%s".printf (file_name, format));
+                } else {
+                    full_file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (file_name, attempt, format));
+                }
+
+                attempt++;
+            } while (File.new_for_path (full_file_name).query_exists ());
+
+            screenshot.save (full_file_name, format);
         }
 
-        private bool grab_save (Gdk.Rectangle? rect, bool extra_time) {
-            if (extra_time) {
-                redact_text (true);
-                Timeout.add_seconds (1, () => {
-                    return grab_save (rect, false);
-                });
-
-                return false;
-            }
-
-            Timeout.add (250, () => {
-                if (from_command == false) {
-                    this.set_opacity (1);
-                }
-                return false;
-            });
-
-            Gdk.Pixbuf? screenshot;
-
-            var success = false;
-            var filename_used = "";
-            var tmp_filename = get_tmp_filename ();
-
-            try {
-                var screenshot_proxy = Bus.get_proxy_sync<ScreenshotProxy> (BusType.SESSION,
-                                                                            "org.gnome.Shell.Screenshot",
-                                                                            "/org/gnome/Shell/Screenshot");
-
-                switch (capture_mode) {
-                    case CaptureType.SCREEN:
-                        screenshot_proxy.screenshot (mouse_pointer, false, tmp_filename,
-                                                     out success, out filename_used);
-                        break;
-                    case CaptureType.CURRENT_WINDOW:
-                        screenshot_proxy.screenshot_window (true, mouse_pointer, false,
-                                                            tmp_filename,
-                                                            out success, out filename_used);
-                        break;
-                    case CaptureType.AREA:
-                        if (rect != null) {
-                            screenshot_proxy.screenshot_area (rect.x, rect.y, rect.width, rect.height,
-                                                              false, tmp_filename,
-                                                              out success, out filename_used);
-                        }
-                        break;
-                }
-            } catch (Error e) {
-                warning ("Couldn't take screenshot: %s\n", e.message);
-                screenshot = null;
-            }
-
-            if (redact) {
-                redact_text (false);
-            }
-
-            if (!success) {
-                show_error_dialog ();
-                return false;
-            }
-
-            try {
-                screenshot = new Gdk.Pixbuf.from_file (filename_used);
-                FileUtils.unlink (filename_used);
-            } catch (Error e) {
-                show_error_dialog ();
-                return false;
-            }
-
-            play_shutter_sound ("screen-capture", _("Screenshot taken"));
-
+        private void save_pixbuf (Gdk.Pixbuf screenshot) {
             if (from_command == false) {
                 var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
                 save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
@@ -355,107 +299,35 @@ namespace Screenshot {
                 }
                 this.destroy ();
             }
-
-            return false;
-        }
-
-        private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
-            string full_file_name = "";
-            string folder_from_settings = "";
-
-            if (folder_dir == "") {
-                folder_from_settings = settings.get_string ("folder-dir");
-                if (folder_from_settings != "") {
-                    folder_dir = folder_from_settings;
-                } else {
-                    folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                        + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
-                }
-                ScreenshotApp.create_dir_if_missing (folder_dir);
-            }
-
-            int attempt = 0;
-
-            do {
-                if (attempt == 0) {
-                    full_file_name = Path.build_filename (folder_dir, "%s.%s".printf (file_name, format));
-                } else {
-                    full_file_name = Path.build_filename (folder_dir, "%s (%d).%s".printf (file_name, attempt, format));
-                }
-
-                attempt++;
-            } while (File.new_for_path (full_file_name).query_exists ());
-
-            screenshot.save (full_file_name, format);
         }
 
         public void take_clicked () {
-            this.set_opacity (0);
             remember_window_position ();
             this.hide ();
 
-            if (capture_mode == CaptureType.AREA) {
-                ScreenshotProxy? screenshot_proxy = null;
+            var backend = new ScreenshotBackend ();
+            backend.capture.begin (capture_mode, delay, mouse_pointer, redact, (obj, res) => {
+                Gdk.Pixbuf? pixbuf = null;
                 try {
-                    screenshot_proxy = Bus.get_proxy_sync<ScreenshotProxy> (BusType.SESSION,
-                                                                            "org.gnome.Shell.Screenshot",
-                                                                            "/org/gnome/Shell/Screenshot");
+                    pixbuf = backend.capture.end (res);
+                } catch (GLib.IOError.CANCELLED e) {
+                    if (close_on_save) {
+                        this.destroy ();
+                        return;
+                    }
                 } catch (Error e) {
-                    warning ("Couldn't take screenshot: %s\n", e.message);
-                    return;
+                    show_error_dialog ();
                 }
 
-                screenshot_proxy.select_area.begin ((obj, res) => {
-                    try {
-                        int x, y, width, height;
-                        screenshot_proxy.select_area.end (res, out x, out y, out width, out height);
+                if (pixbuf != null) {
+                    save_pixbuf (pixbuf);
+                }
 
-                        Gdk.Rectangle? area_rect = { x, y, width, height };
-
-                        wait_and_grab_save (area_rect);
-                    } catch (GLib.IOError.CANCELLED e) {
-                        if (close_on_save) {
-                            this.destroy ();
-                        } else {
-                            if (from_command == false) {
-                                move (window_x, window_y);
-                                this.set_opacity (1);
-                                this.present ();
-                            }
-                        }
-                        return;
-                    } catch (Error e) {
-                        warning ("Couldn't take screenshot: %s\n", e.message);
-                    }
-                });
-                return;
-            }
-
-            wait_and_grab_save (null);
-        }
-
-        private void wait_and_grab_save (Gdk.Rectangle? rect) {
-            Timeout.add (get_timeout (delay, redact), () => {
                 if (from_command == false) {
                     move (window_x, window_y);
                     this.present ();
                 }
-                return grab_save (rect, redact);
             });
-        }
-
-        private int get_timeout (int delay, bool redact) {
-            int timeout = delay * 1000;
-
-            if (redact) {
-                timeout -= 1000;
-            }
-
-            if (timeout < 300) {
-                timeout = 300;
-            }
-
-            return timeout;
         }
 
         private void show_error_dialog () {
@@ -468,37 +340,6 @@ namespace Screenshot {
 
             dialog.run ();
             dialog.destroy ();
-        }
-
-        private void redact_text (bool redact) {
-            var desktop_settings = new Settings ("org.gnome.desktop.interface");
-            if (redact) {
-                prev_font_regular = desktop_settings.get_string ("font-name");
-                prev_font_mono = desktop_settings.get_string ("monospace-font-name");
-                prev_font_document = desktop_settings.get_string ("document-font-name");
-
-                desktop_settings.set_string ("font-name", "Redacted Script Regular 9");
-                desktop_settings.set_string ("monospace-font-name", "Redacted Script Light 10");
-                desktop_settings.set_string ("document-font-name", "Redacted Script Regular 10");
-            } else {
-                desktop_settings.set_string ("font-name", prev_font_regular);
-                desktop_settings.set_string ("monospace-font-name", prev_font_mono);
-                desktop_settings.set_string ("document-font-name", prev_font_document);
-            }
-        }
-
-        private void play_shutter_sound (string id, string desc) {
-            Canberra.Context context;
-            Canberra.Proplist props;
-
-            Canberra.Context.create (out context);
-            Canberra.Proplist.create (out props);
-
-            props.sets (Canberra.PROP_EVENT_ID, id);
-            props.sets (Canberra.PROP_EVENT_DESCRIPTION, desc);
-            props.sets (Canberra.PROP_CANBERRA_CACHE_CONTROL, "permanent");
-
-            context.play_full (0, props, null);
         }
 
         private void close_clicked () {
