@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-08-30 21:22+0000\n"
+"PO-Revision-Date: 2019-11-08 14:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
-"Language-Team: Esperanto <https://l10n.elementary.io/projects/screenshot-"
-"tool/extra/eo/>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/"
+"screenshot-tool/extra/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Fermi per premo de la eskapa klavo"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
