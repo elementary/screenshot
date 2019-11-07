@@ -33,17 +33,8 @@ namespace Screenshot {
                                                              "org.gnome.Shell.Screenshot",
                                                              "/org/gnome/Shell/Screenshot");
             } catch (Error e) {
-                warning ("Couldn't take screenshot: %s\n", e.message);
-                // TODO: error
+                error ("Couldn't get dbus proxy: %s\n", e.message);
             }
-        }
-
-        private async void sleep (int delay) {
-            GLib.Timeout.add (delay, () => {
-                sleep.callback ();
-                return Source.REMOVE;
-            });
-            yield;
         }
 
         public async Gdk.Pixbuf? capture (CaptureType type, int delay, bool include_pointer, bool redact) throws Error {
@@ -60,13 +51,21 @@ namespace Screenshot {
                 yield sleep (1000);
             }
 
-            var pixbuf = yield grab_save (rect, type, include_pointer);
+            var pixbuf = yield get_pixbuf (rect, type, include_pointer);
 
             if (redact) {
                 redact_text (false);
             }
 
             return pixbuf;
+        }
+
+        private async void sleep (int delay) {
+            GLib.Timeout.add (delay, () => {
+                sleep.callback ();
+                return Source.REMOVE;
+            });
+            yield;
         }
 
         private int get_timeout (int delay, bool redact) {
@@ -83,7 +82,23 @@ namespace Screenshot {
             return timeout;
         }
 
-        private async Gdk.Pixbuf? grab_save (Gdk.Rectangle? rect, CaptureType type, bool include_pointer) throws Error {
+        private async void screenshot_area (int x, int y, int width, int height, bool include_cursor, bool flash, string filename, out bool success, out string filename_used) throws GLib.Error {
+            if (include_cursor) {
+                try {
+                    yield proxy.screenshot_area_with_cursor (x, y, width, height,
+                                                             true, flash, filename,
+                                                             out success, out filename_used);
+                    return;
+                } catch (DBusError.UNKNOWN_METHOD e) {
+                    warning ("Couldn't include pointer: %s", e.message);
+                }
+            }
+
+            yield proxy.screenshot_area (x, y, width, height, flash, filename,
+                                         out success, out filename_used);
+        }
+
+        private async Gdk.Pixbuf? get_pixbuf (Gdk.Rectangle? rect, CaptureType type, bool include_pointer) throws Error {
             var success = false;
             var filename_used = "";
             var tmp_filename = get_tmp_filename ();
@@ -103,9 +118,10 @@ namespace Screenshot {
                         return null;
                     }
 
-                    yield proxy.screenshot_area (rect.x, rect.y, rect.width,
-                                                 rect.height, false, tmp_filename,
-                                                 out success, out filename_used);
+                    yield screenshot_area (rect.x, rect.y, rect.width, rect.height,
+                                           include_pointer, false, tmp_filename,
+                                           out success, out filename_used);
+
                     break;
             }
 
