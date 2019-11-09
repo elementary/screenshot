@@ -23,9 +23,6 @@ namespace Screenshot {
     public class ScreenshotBackend : Object {
 
         private ScreenshotProxy proxy;
-        private string prev_font_regular;
-        private string prev_font_document;
-        private string prev_font_mono;
 
         construct {
             try {
@@ -47,15 +44,15 @@ namespace Screenshot {
             yield sleep (get_timeout (delay, redact));
 
             if (redact) {
-                redact_text (true);
+                try {
+                    yield proxy.conceal_text ();
+                } catch (DBusError.UNKNOWN_METHOD e) {
+                    warning ("Couldn't conceal text: %s", e.message);
+                }
                 yield sleep (1000);
             }
 
             var pixbuf = yield get_pixbuf (rect, type, include_pointer);
-
-            if (redact) {
-                redact_text (false);
-            }
 
             return pixbuf;
         }
@@ -138,23 +135,6 @@ namespace Screenshot {
             yield file.delete_async ();
 
             return pixbuf;
-        }
-
-        private void redact_text (bool redact) {
-            var desktop_settings = new Settings ("org.gnome.desktop.interface");
-            if (redact) {
-                prev_font_regular = desktop_settings.get_string ("font-name");
-                prev_font_mono = desktop_settings.get_string ("monospace-font-name");
-                prev_font_document = desktop_settings.get_string ("document-font-name");
-
-                desktop_settings.set_string ("font-name", "Redacted Script Regular 9");
-                desktop_settings.set_string ("monospace-font-name", "Redacted Script Light 10");
-                desktop_settings.set_string ("document-font-name", "Redacted Script Regular 10");
-            } else {
-                desktop_settings.set_string ("font-name", prev_font_regular);
-                desktop_settings.set_string ("monospace-font-name", prev_font_mono);
-                desktop_settings.set_string ("document-font-name", prev_font_document);
-            }
         }
 
         private void play_shutter_sound (string id, string desc) {

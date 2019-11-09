@@ -21,6 +21,7 @@ namespace Screenshot {
     [DBus (name = "org.gnome.Shell.Screenshot")]
     public interface ScreenshotProxy : Object {
 
+        public abstract async void conceal_text () throws GLib.Error;
         public abstract async void screenshot (bool include_cursor, bool flash, string filename, out bool success, out string filename_used) throws GLib.Error;
         public abstract async void screenshot_window (bool include_frame, bool include_cursor, bool flash, string filename, out bool success, out string filename_used) throws GLib.Error;
         public abstract async void screenshot_area (int x, int y, int width, int height, bool flash, string filename, out bool success, out string filename_used) throws GLib.Error;
