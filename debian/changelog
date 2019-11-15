@@ -1,3 +1,21 @@
+screenshot-tool (1.7.0) bionic; urgency=medium
+
+  * Release 1.7.0 (#149)
+  * Add Gettext Updates to Actions
+  * Travis: Downgrade node to 10
+  * Update translation files
+  * Add Release Action (#146)
+  * AppData: Add 1.7.0 release info (#145)
+  * Add Lint to CI (#142)
+  * lint src files with vala-lint (#143)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Application window closes with Escape key (#134)
+
+ -- Cody Garver <cody@elementary.io>  Fri, 15 Nov 2019 21:46:19 +0000
+
 screenshot-tool (1.6.2) bionic; urgency=medium
 
   * New upstream release.
