@@ -24,7 +24,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.7.0" date="2019-10-29" urgency="medium">
+    <release version="1.7.0" date="2019-11-15" urgency="medium">
       <description>
         <ul>
           <li>Close when pressing the Escape key</li>
