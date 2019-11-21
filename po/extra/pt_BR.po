@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-09-01 01:22+0000\n"
+"PO-Revision-Date: 2019-11-22 03:24+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "screenshot-tool/extra/pt_BR/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Feche ao pressionar a tecla Escape"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
