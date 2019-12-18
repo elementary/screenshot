@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-03-12 21:27+0000\n"
+"PO-Revision-Date: 2019-12-19 20:43+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/ar/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:38
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/Application.vala:46
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "التقط كامل الشاشة"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/Application.vala:47
 msgid "Seconds"
-msgstr ""
+msgstr "ثواني"
 
 #: src/Application.vala:48
 msgid "Include the pointer with the screenshot"
@@ -82,11 +82,11 @@ msgstr ""
 
 #: src/ScreenshotWindow.vala:106
 msgid "Take Screenshot"
-msgstr ""
+msgstr "التقط صورة"
 
 #: src/ScreenshotWindow.vala:112
 msgid "Close"
-msgstr ""
+msgstr "اغلاق"
 
 #: src/ScreenshotWindow.vala:339
 msgid "Screenshot taken"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: src/ScreenshotWindow.vala:557
 msgid "Image not saved"
-msgstr ""
+msgstr "الصورة لم تحفظ"
 
 #: src/Widgets/SaveDialog.vala:40
 msgid "Screenshot"
