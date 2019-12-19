@@ -23,19 +23,45 @@ namespace Screenshot {
     public class ScreenshotBackend : Object {
 
         private ScreenshotProxy proxy;
+        public bool can_conceal_text { get; private set; }
+        public bool can_screenshot_area_with_cursor { get; private set; }
 
         construct {
             try {
                 proxy = Bus.get_proxy_sync<ScreenshotProxy> (BusType.SESSION,
                                                              "org.gnome.Shell.Screenshot",
                                                              "/org/gnome/Shell/Screenshot");
+
+                get_capabilities ();
             } catch (Error e) {
                 error ("Couldn't get dbus proxy: %s\n", e.message);
             }
         }
 
+        private void get_capabilities () throws Error {
+            var introspectable = Bus.get_proxy_sync<IntrospectableProxy> (
+                BusType.SESSION,
+                "org.gnome.Shell.Screenshot",
+                "/org/gnome/Shell/Screenshot"
+            );
+            var xml = introspectable.introspect ();
+
+            var node = new DBusNodeInfo.for_xml (xml);
+            var iface = node.lookup_interface ("org.gnome.Shell.Screenshot");
+            if (iface.lookup_method ("ConcealText") != null) {
+                can_conceal_text = true;
+            }
+
+            if (iface.lookup_method ("ScreenshotAreaWithCursor") != null) {
+                can_screenshot_area_with_cursor = true;
+            }
+        }
+
         public async Gdk.Pixbuf? capture (CaptureType type, int delay, bool include_pointer, bool redact) throws Error {
             Gdk.Rectangle? rect = null;
+
+            redact &= can_conceal_text;
+
             if (type == CaptureType.AREA) {
                 rect = {};
                 yield proxy.select_area (out rect.x, out rect.y, out rect.width, out rect.height);
@@ -44,11 +70,7 @@ namespace Screenshot {
             yield sleep (get_timeout (delay, redact));
 
             if (redact) {
-                try {
-                    yield proxy.conceal_text ();
-                } catch (DBusError.UNKNOWN_METHOD e) {
-                    warning ("Couldn't conceal text: %s", e.message);
-                }
+                yield proxy.conceal_text ();
                 yield sleep (1000);
             }
 
@@ -80,15 +102,11 @@ namespace Screenshot {
         }
 
         private async void screenshot_area (int x, int y, int width, int height, bool include_cursor, bool flash, string filename, out bool success, out string filename_used) throws GLib.Error {
-            if (include_cursor) {
-                try {
-                    yield proxy.screenshot_area_with_cursor (x, y, width, height,
-                                                             true, flash, filename,
-                                                             out success, out filename_used);
-                    return;
-                } catch (DBusError.UNKNOWN_METHOD e) {
-                    warning ("Couldn't include pointer: %s", e.message);
-                }
+            if (include_cursor && can_screenshot_area_with_cursor) {
+                yield proxy.screenshot_area_with_cursor (x, y, width, height,
+                                                         true, flash, filename,
+                                                         out success, out filename_used);
+                return;
             }
 
             yield proxy.screenshot_area (x, y, width, height, flash, filename,

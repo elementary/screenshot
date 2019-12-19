@@ -28,6 +28,9 @@ namespace Screenshot {
         private bool to_clipboard;
         private int window_x;
         private int window_y;
+        private ScreenshotBackend backend;
+        private Gtk.Label pointer_label;
+        private Gtk.Switch pointer_switch;
 
         public bool close_on_save { get; set; }
         public bool mouse_pointer { get; set; }
@@ -50,6 +53,8 @@ namespace Screenshot {
             set_keep_above (true);
             stick ();
 
+            backend = new ScreenshotBackend ();
+
             var all = new Gtk.RadioButton (null);
             all.image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", Gtk.IconSize.DND);
             all.tooltip_text = _("Grab the whole screen");
@@ -71,10 +76,10 @@ namespace Screenshot {
             radio_grid.add (curr_window);
             radio_grid.add (selection);
 
-            var pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
+            pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
             pointer_label.halign = Gtk.Align.END;
 
-            var pointer_switch = new Gtk.Switch ();
+            pointer_switch = new Gtk.Switch ();
             pointer_switch.halign = Gtk.Align.START;
 
             var close_label = new Gtk.Label (_("Close after saving:"));
@@ -88,6 +93,11 @@ namespace Screenshot {
 
             var redact_switch = new Gtk.Switch ();
             redact_switch.halign = Gtk.Align.START;
+
+            if (!backend.can_conceal_text) {
+                redact_label.no_show_all = true;
+                redact_switch.no_show_all = true;
+            }
 
             var delay_label = new Gtk.Label (_("Delay in seconds:"));
             delay_label.halign = Gtk.Align.END;
@@ -157,19 +167,24 @@ namespace Screenshot {
                     capture_mode = CaptureType.SCREEN;
             }
 
+            update_pointer_switch ();
+
             all.toggled.connect (() => {
                 capture_mode = CaptureType.SCREEN;
                 settings.set_enum ("last-capture-mode", capture_mode);
+                update_pointer_switch ();
             });
 
             curr_window.toggled.connect (() => {
                 capture_mode = CaptureType.CURRENT_WINDOW;
                 settings.set_enum ("last-capture-mode", capture_mode);
+                update_pointer_switch ();
             });
 
             selection.toggled.connect (() => {
                 capture_mode = CaptureType.AREA;
                 settings.set_enum ("last-capture-mode", capture_mode);
+                update_pointer_switch ();
                 present ();
             });
 
@@ -215,6 +230,12 @@ namespace Screenshot {
 
             close_on_save = true;
             from_command = true;
+        }
+
+        private void update_pointer_switch () {
+            var sensitive = backend.can_screenshot_area_with_cursor || capture_mode != CaptureType.AREA;
+            pointer_label.sensitive = sensitive;
+            pointer_switch.sensitive = sensitive;
         }
 
         private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
@@ -305,7 +326,6 @@ namespace Screenshot {
             remember_window_position ();
             this.hide ();
 
-            var backend = new ScreenshotBackend ();
             backend.capture.begin (capture_mode, delay, mouse_pointer, redact, (obj, res) => {
                 Gdk.Pixbuf? pixbuf = null;
                 try {
