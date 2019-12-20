@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-30 09:23-0700\n"
-"PO-Revision-Date: 2019-04-05 21:03+0000\n"
+"PO-Revision-Date: 2019-12-21 01:07+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -51,7 +51,7 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:93
 #: data/io.elementary.screenshot-tool.appdata.xml.in:102
 msgid "Translation updates"
-msgstr "Çeviri güncellemeleri"
+msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid ""
