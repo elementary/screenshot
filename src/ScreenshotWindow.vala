@@ -74,8 +74,7 @@ namespace Screenshot {
             var radio_grid = new Gtk.Grid ();
             radio_grid.halign = Gtk.Align.CENTER;
             radio_grid.column_spacing = 24;
-            radio_grid.margin = 24;
-            radio_grid.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
+            radio_grid.margin_top = radio_grid.margin_bottom = 24;
             radio_grid.add (all);
             radio_grid.add (curr_window);
             radio_grid.add (selection);
