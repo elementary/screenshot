@@ -24,6 +24,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.7.1" date="2020-01-21" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix minor visual issues with selection items</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.0" date="2019-11-15" urgency="medium">
       <description>
         <ul>
