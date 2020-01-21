@@ -1,3 +1,10 @@
+screenshot-tool (1.7.1) bionic; urgency=medium
+
+  * Release 1.7.1 (#153)
+  * ScreenshotWindow: Fix radiobutton for new selection style (#151)
+
+ -- Cody Garver <cody@elementary.io>  Tue, 21 Jan 2020 19:07:02 +0000
+
 screenshot-tool (1.7.0) bionic; urgency=medium
 
   * Release 1.7.0 (#149)
