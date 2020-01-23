@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2020-01-03 21:07+0000\n"
+"PO-Revision-Date: 2020-01-25 14:08+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/nl/>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Kleine visuele problemen opgelost met selectie items"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
