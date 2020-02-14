@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 09:23-0700\n"
+"POT-Creation-Date: 2020-01-21 19:07+0000\n"
 "PO-Revision-Date: 2019-07-15 01:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/screenshot-"
@@ -68,49 +68,49 @@ msgstr "Kapti la aktivan fenestron"
 msgid "Select area to grab"
 msgstr "Elekti areaĵon kaptota"
 
-#: src/ScreenshotWindow.vala:83
+#: src/ScreenshotWindow.vala:82
 msgid "Grab mouse pointer:"
 msgstr "Kapti la musan indikilon:"
 
-#: src/ScreenshotWindow.vala:89
+#: src/ScreenshotWindow.vala:88
 msgid "Close after saving:"
 msgstr "Fermi post registrado:"
 
-#: src/ScreenshotWindow.vala:95
+#: src/ScreenshotWindow.vala:94
 msgid "Conceal text:"
 msgstr "Kaŝi la tekston:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:100
 msgid "Delay in seconds:"
 msgstr "Daŭro en sekundoj:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:105
 msgid "Take Screenshot"
 msgstr "Krei ekrankopion"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:111
 msgid "Close"
 msgstr "Fermi"
 
-#: src/ScreenshotWindow.vala:339
+#: src/ScreenshotWindow.vala:338
 msgid "Screenshot taken"
 msgstr "Ekrankopio farita"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ekrankopita je %s"
 
-#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
 msgid "Could not capture screenshot"
 msgstr "Neeblis fari ekrankopion"
 
-#: src/ScreenshotWindow.vala:499
+#: src/ScreenshotWindow.vala:498
 msgid "Couldn't find an active window"
 msgstr "Ne estas aktiva fenestro"
 
-#: src/ScreenshotWindow.vala:557
+#: src/ScreenshotWindow.vala:556
 msgid "Image not saved"
 msgstr "Bildo ne registrita"
 

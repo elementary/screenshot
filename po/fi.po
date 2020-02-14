@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 09:23-0700\n"
+"POT-Creation-Date: 2020-01-21 19:07+0000\n"
 "PO-Revision-Date: 2018-06-08 08:13+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/screenshot-"
@@ -68,49 +68,49 @@ msgstr "Kaappaa nykyinen ikkuna"
 msgid "Select area to grab"
 msgstr "Valitse kaapattava alue"
 
-#: src/ScreenshotWindow.vala:83
+#: src/ScreenshotWindow.vala:82
 msgid "Grab mouse pointer:"
 msgstr "Kaappaa hiiren osoitin:"
 
-#: src/ScreenshotWindow.vala:89
+#: src/ScreenshotWindow.vala:88
 msgid "Close after saving:"
 msgstr "Sulje tallentamisen jälkeen:"
 
-#: src/ScreenshotWindow.vala:95
+#: src/ScreenshotWindow.vala:94
 msgid "Conceal text:"
 msgstr "Piilota teksti:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:100
 msgid "Delay in seconds:"
 msgstr "Viive sekunneissa:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:105
 msgid "Take Screenshot"
 msgstr "Ota kuvakaappaus"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:111
 msgid "Close"
 msgstr "Sulje"
 
-#: src/ScreenshotWindow.vala:339
+#: src/ScreenshotWindow.vala:338
 msgid "Screenshot taken"
 msgstr "Kuvakaappaus otettu"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Kuvakaappaus - %s"
 
-#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
 msgid "Could not capture screenshot"
 msgstr "Kuvakaappauksen ottaminen epäonnistui"
 
-#: src/ScreenshotWindow.vala:499
+#: src/ScreenshotWindow.vala:498
 msgid "Couldn't find an active window"
 msgstr "Aktiivista ikkunaa ei löytynyt"
 
-#: src/ScreenshotWindow.vala:557
+#: src/ScreenshotWindow.vala:556
 msgid "Image not saved"
 msgstr "Kuvaa ei tallennettu"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 09:23-0700\n"
+"POT-Creation-Date: 2020-01-21 19:07+0000\n"
 "PO-Revision-Date: 2016-07-28 21:44+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,49 +62,49 @@ msgstr "Снимане на текущия прозорец"
 msgid "Select area to grab"
 msgstr "Избиране на зона за снимане"
 
-#: src/ScreenshotWindow.vala:83
+#: src/ScreenshotWindow.vala:82
 msgid "Grab mouse pointer:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:89
+#: src/ScreenshotWindow.vala:88
 msgid "Close after saving:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:95
+#: src/ScreenshotWindow.vala:94
 msgid "Conceal text:"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:100
 msgid "Delay in seconds:"
 msgstr "Забавяне в секунди:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:105
 msgid "Take Screenshot"
 msgstr "Снимане"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:111
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:339
+#: src/ScreenshotWindow.vala:338
 msgid "Screenshot taken"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Снимка на екран от %s"
 
-#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
 msgid "Could not capture screenshot"
 msgstr "Неуспешно снимане"
 
-#: src/ScreenshotWindow.vala:499
+#: src/ScreenshotWindow.vala:498
 msgid "Couldn't find an active window"
 msgstr "Не е намерен активен прозорец"
 
-#: src/ScreenshotWindow.vala:557
+#: src/ScreenshotWindow.vala:556
 msgid "Image not saved"
 msgstr "Изображението не беше запазено"
 

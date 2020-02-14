@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 09:23-0700\n"
+"POT-Creation-Date: 2020-01-21 19:07+0000\n"
 "PO-Revision-Date: 2019-01-05 19:57+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -63,49 +63,49 @@ msgstr "Fang det aktive vindauget"
 msgid "Select area to grab"
 msgstr "Vel eit område å fange"
 
-#: src/ScreenshotWindow.vala:83
+#: src/ScreenshotWindow.vala:82
 msgid "Grab mouse pointer:"
 msgstr "Fang musepeikaren:"
 
-#: src/ScreenshotWindow.vala:89
+#: src/ScreenshotWindow.vala:88
 msgid "Close after saving:"
 msgstr "Avslutt etter lagring:"
 
-#: src/ScreenshotWindow.vala:95
+#: src/ScreenshotWindow.vala:94
 msgid "Conceal text:"
 msgstr "Skjul tekst:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:100
 msgid "Delay in seconds:"
 msgstr "Forseinking i sekund:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:105
 msgid "Take Screenshot"
 msgstr "Ta skjermkutt"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:111
 msgid "Close"
 msgstr "Lukk"
 
-#: src/ScreenshotWindow.vala:339
+#: src/ScreenshotWindow.vala:338
 msgid "Screenshot taken"
 msgstr "Skjermkutt teke"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skjermkutt frå %s"
 
-#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
 msgid "Could not capture screenshot"
 msgstr "Kunne ikkje fange opp skjermkutt"
 
-#: src/ScreenshotWindow.vala:499
+#: src/ScreenshotWindow.vala:498
 msgid "Couldn't find an active window"
 msgstr "Kunne ikkje finne eit aktivt vindauge"
 
-#: src/ScreenshotWindow.vala:557
+#: src/ScreenshotWindow.vala:556
 msgid "Image not saved"
 msgstr "Biletet vart ikkje lagra"
 

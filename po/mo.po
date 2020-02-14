@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-30 09:23-0700\n"
+"POT-Creation-Date: 2020-01-21 19:07+0000\n"
 "PO-Revision-Date: 2018-05-27 11:30+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/screenshot-"
@@ -62,49 +62,49 @@ msgstr "Prinde fereastra curentă"
 msgid "Select area to grab"
 msgstr "Selectați zona dorită"
 
-#: src/ScreenshotWindow.vala:83
+#: src/ScreenshotWindow.vala:82
 msgid "Grab mouse pointer:"
 msgstr "Printați indicatorul mouse-ului:"
 
-#: src/ScreenshotWindow.vala:89
+#: src/ScreenshotWindow.vala:88
 msgid "Close after saving:"
 msgstr "Închideți după salvare:"
 
-#: src/ScreenshotWindow.vala:95
+#: src/ScreenshotWindow.vala:94
 msgid "Conceal text:"
 msgstr "Ascundeți textul:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:100
 msgid "Delay in seconds:"
 msgstr "Întârziere în secunde:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:105
 msgid "Take Screenshot"
 msgstr "Să faceți captură de ecran"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:111
 msgid "Close"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:339
+#: src/ScreenshotWindow.vala:338
 msgid "Screenshot taken"
 msgstr "Captură de ecran realizată"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:381 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captură de ecran din %s"
 
-#: src/ScreenshotWindow.vala:498 src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
 msgid "Could not capture screenshot"
 msgstr "Captura de ecran nu a putut fi realizată"
 
-#: src/ScreenshotWindow.vala:499
+#: src/ScreenshotWindow.vala:498
 msgid "Couldn't find an active window"
 msgstr "Nu sa găsit o fereastră activă"
 
-#: src/ScreenshotWindow.vala:557
+#: src/ScreenshotWindow.vala:556
 msgid "Image not saved"
 msgstr "Imaginea nu a fost salvată"
 
