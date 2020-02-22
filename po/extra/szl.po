@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2020-02-22 12:37+0000\n"
+"PO-Revision-Date: 2020-02-23 13:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/szl/>\n"
@@ -22,13 +22,15 @@ msgstr "Przechyt ekranu"
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
 #: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
-msgstr ""
+msgstr "Spamiyntuje przechyty ekranu"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
+"Ajnfachowe noczynie do przechytowanio ekranu. Przechytuje cołki ekran, "
+"ôbrany plac, teroźne ôkno i tworzi czasowe przechyty."
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
@@ -44,7 +46,7 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:101
 #: data/io.elementary.screenshot-tool.appdata.xml.in:110
 msgid "Translation updates"
-msgstr ""
+msgstr "Aktualizacyje przekładu"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
@@ -80,7 +82,7 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:111
 #: data/io.elementary.screenshot-tool.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr ""
+msgstr "Poprowki drobnych błyndōw"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
@@ -108,24 +110,26 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:152
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr ""
+"przechyt ekranu;migawka;przechycynie;przechyć;pobiyranie;pobier;ôdcisk;durkow"
+"anie;wydurkowanie;zrzut ekranu;przechwycenie;przechwyt;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr ""
+msgstr "Przechyt cołkigo ekranu"
 
 #: data/io.elementary.screenshot-tool.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr ""
+msgstr "Przechyt teroźnego ôkna"
 
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr ""
+msgstr "Przechyt ôbranego placu"
