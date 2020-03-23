@@ -59,16 +59,22 @@ namespace Screenshot {
             set_keep_above (true);
             stick ();
 
-            var all = new Gtk.RadioButton (null);
+            var all = new Gtk.RadioButton.with_label (null, "Screen");
             all.image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", Gtk.IconSize.DND);
+            all.image_position = Gtk.PositionType.TOP;
+            all.always_show_image = true;
             all.tooltip_text = _("Grab the whole screen");
 
-            var curr_window = new Gtk.RadioButton.from_widget (all);
+            var curr_window = new Gtk.RadioButton.with_label_from_widget (all, "Window");
             curr_window.image = new Gtk.Image.from_icon_name ("grab-window-symbolic", Gtk.IconSize.DND);
+            curr_window.image_position = Gtk.PositionType.TOP;
+            curr_window.always_show_image = true;
             curr_window.tooltip_text = _("Grab the current window");
 
-            var selection = new Gtk.RadioButton.from_widget (curr_window);
+            var selection = new Gtk.RadioButton.with_label_from_widget (curr_window, "Area");
             selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
+            selection.image_position = Gtk.PositionType.TOP;
+            selection.always_show_image = true;
             selection.tooltip_text = _("Select area to grab");
 
             var radio_grid = new Gtk.Grid ();
