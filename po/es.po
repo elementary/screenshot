@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2019-09-09 09:22+0000\n"
+"PO-Revision-Date: 2020-02-25 20:08+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-14 05:53+0000\n"
 
 #: src/Application.vala:38
@@ -38,7 +38,7 @@ msgstr "Capturar toda la pantalla"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr "Capturar pantalla tras un retraso especificado"
+msgstr "Capturar pantalla tras una demora especificada"
 
 #: src/Application.vala:47
 msgid "Seconds"
