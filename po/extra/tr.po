@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2019-12-21 01:07+0000\n"
+"PO-Revision-Date: 2020-05-03 21:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/tr/>\n"
@@ -124,7 +124,8 @@ msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Hızlı fotoğraf;Ekran görüntüsü;"
+msgstr ""
+"Hızlı fotoğraf;Ekran görüntüsü;Anlık Görüntü;Şipşak;Snapshot;Screenshot;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
