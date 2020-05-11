@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2020-01-29 18:08+0000\n"
+"PO-Revision-Date: 2020-05-12 21:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/"
 "screenshot-tool/extra/pt/>\n"
@@ -36,7 +36,7 @@ msgid ""
 "current window shots, and timed shots."
 msgstr ""
 "Uma simples ferramenta de captura de ecrã. Capture todo o ecrã, áreas "
-"selecionadas, janelas em utilização e faça capturas temporizadas."
+"selecionadas, janelas em utilização e capturas temporizadas."
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
@@ -56,7 +56,7 @@ msgstr "Traduções atualizadas"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr "Fechar ao pressionar a tecla Escape"
+msgstr "Fechar ao premir a tecla Escape"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
@@ -76,7 +76,7 @@ msgstr "Aumentar o tempo de espera mínimo para 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr "Corrigir o comportamento da tecla Alt+F4"
+msgstr "Corrige o comportamento da tecla Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
@@ -126,7 +126,7 @@ msgstr "accessories-screenshot"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Instantâneo;Captura de Ecrã;"
+msgstr "Instantâneo;Captura de ecrã;"
 
 #: data/io.elementary.screenshot-tool.desktop.in:14
 msgid "Screenshot of the Whole Screen"
