@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2019-08-29 17:22+0000\n"
+"PO-Revision-Date: 2020-05-12 21:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/ar/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -36,7 +36,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "إصلاح المشاكل البصرية البسيطة مع عناصر التحديد"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
@@ -48,11 +48,11 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:101
 #: data/io.elementary.screenshot-tool.appdata.xml.in:110
 msgid "Translation updates"
-msgstr ""
+msgstr "تحديثات الترجمة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "أغلق عند الضغط على مفتاح Escape"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
@@ -84,7 +84,7 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:111
 #: data/io.elementary.screenshot-tool.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr ""
+msgstr "إصلاح الأخطاء الطفيفة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
