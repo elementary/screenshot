@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2020-05-12 21:10+0000\n"
+"PO-Revision-Date: 2020-05-16 02:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/ar/>\n"
@@ -58,23 +58,23 @@ msgstr "أغلق عند الضغط على مفتاح Escape"
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
-msgstr ""
+msgstr "تراجع عن الخط المختصر اسرع ما يمكن لتجنب المشاكل في بعض المواقف"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "دائما احترم اعدادات التأخير"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "زيادة اقل حد ممكن من الوقت قبل الالغاء إلى 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "اصلاح الخطأ عند الضغط على Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "الايقونات الان تعرض بجانب مكان خيارات التصوير"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:65
 #: data/io.elementary.screenshot-tool.appdata.xml.in:75
@@ -88,27 +88,27 @@ msgstr "إصلاح الأخطاء الطفيفة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "اصلاح خلل زر ESC"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "اضافة خاصية تحجيم اسم الملف"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:83
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "مجلد افتراضي جديد لحفظ لقطات الشاشة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "تذكر مكان النافذة الاساسية لاعادة عرض النافذة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "تشغيل صوت عند عمل لقطة للشاشة"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr ""
+msgstr "اصلاح خلل المنطقة السوداء عند عمل لقطة للشاشة في شاشات HiDPI"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:152
 msgid "elementary LLC."
@@ -116,7 +116,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "accessories-screenshot"
-msgstr ""
+msgstr "اضافات للقطة الشاشة"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
