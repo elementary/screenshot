@@ -72,12 +72,12 @@ namespace Screenshot.Widgets {
             preview_box.halign = Gtk.Align.CENTER;
             preview_box.add (preview);
 
-            var preview_box_context = preview_box.get_style_context ();
-            preview_box_context.add_class ("card");
-            preview_box_context.add_class ("checkerboard-layout");
+            unowned Gtk.StyleContext preview_box_context = preview_box.get_style_context ();
+            preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
+            preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
             var dialog_label = new Gtk.Label (_("Save Image as…"));
-            dialog_label.get_style_context ().add_class ("h4");
+            dialog_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
             dialog_label.halign = Gtk.Align.START;
 
             var name_label = new Gtk.Label (_("Name:"));
