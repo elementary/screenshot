@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2019-12-31 15:43+0000\n"
+"PO-Revision-Date: 2020-05-08 10:10+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/nl/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: src/Application.vala:38
 msgid "Screenshots"
-msgstr "Schermafdrukken"
+msgstr "Schermafbeeldingen"
 
 #: src/Application.vala:44
 msgid "Capture active window"
-msgstr "Maak een schermafbeelding van het actieve venster"
+msgstr "Maak een schermafbeelding van het geopende venster"
 
 #: src/Application.vala:45
 msgid "Capture area"
@@ -34,11 +34,11 @@ msgstr "Opnamegebied"
 
 #: src/Application.vala:46
 msgid "Capture the whole screen"
-msgstr "Maak een afbeelding van het volledige scherm"
+msgstr "Maak een schermafbeelding van het volledige scherm"
 
 #: src/Application.vala:47
 msgid "Take screenshot after specified delay"
-msgstr "Maak een schermafbeelding na een bepaalde vertraging"
+msgstr "Voeg een vertraging toe aan het maken van de schermafbeelding"
 
 #: src/Application.vala:47
 msgid "Seconds"

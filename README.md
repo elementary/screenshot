@@ -10,7 +10,7 @@ You'll need the following dependencies:
 * meson >= 0.43.0
 * libcanberra-dev
 * libgdk-pixbuf2.0-dev
-* libgranite-dev >= 5.0
+* libgranite-dev >= 5.4.0
 * valac
 
 Run `meson` to configure the build environment and then `ninja` to build and run automated tests

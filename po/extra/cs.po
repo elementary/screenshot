@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2018-06-08 10:23+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/screenshot-tool/"
+"PO-Revision-Date: 2020-05-11 12:10+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Oprava drobných vizuálních problémů s položkami výběru"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
@@ -56,29 +56,31 @@ msgstr "Aktualizace překladů"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Zavřít při stisku klávesy Esc"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Vrátit zpět z redigovaného písma co možná nejdříve aby se zabránilo "
+"zatuhnutí v některých situacích"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Vždy respektovat nastavení prodlevy"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Zvednut minimální časový limit na 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Oprava chování klávesové zkratky Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Ikony nyní představují volby oblasti k zachycení"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:65
 #: data/io.elementary.screenshot-tool.appdata.xml.in:75
@@ -88,31 +90,31 @@ msgstr ""
 #: data/io.elementary.screenshot-tool.appdata.xml.in:111
 #: data/io.elementary.screenshot-tool.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr "Menší opravy chyb"
+msgstr "Opravy menších chyb"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Oprava chování klávesy Esc"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Přidávání měřítka zobrazení k názvu souboru"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:83
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Nová výchozí složka pro ukládání snímků obrazovky"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Zapamatování pozice hlavního okna pro znovu se opakující okno"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Při pořizování snímku obrazovky přehrát zvuk závěrky"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Oprava přebytečné černé oblasti na HiDPI snímkách"
+msgstr "Oprava přebytečné černé oblasti na HiDPI snímcích"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:152
 msgid "elementary LLC."
