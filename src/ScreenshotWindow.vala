@@ -288,8 +288,7 @@ namespace Screenshot {
                                 this.destroy ();
                             }
                         } catch (GLib.Error e) {
-                            show_error_dialog ();
-                            debug (e.message);
+                            show_error_dialog (e.message);
                         }
                     }
                 });
@@ -313,8 +312,7 @@ namespace Screenshot {
                     try {
                         save_file (file_name, format, "", screenshot);
                     } catch (GLib.Error e) {
-                        show_error_dialog ();
-                        debug (e.message);
+                        show_error_dialog (e.message);
                     }
                 }
                 this.destroy ();
@@ -335,7 +333,7 @@ namespace Screenshot {
                         return;
                     }
                 } catch (Error e) {
-                    show_error_dialog ();
+                    show_error_dialog (e.message);
                 }
 
                 if (pixbuf != null) {
@@ -349,13 +347,14 @@ namespace Screenshot {
             });
         }
 
-        private void show_error_dialog () {
+        private void show_error_dialog (string error_message) {
             var dialog = new Granite.MessageDialog.with_image_from_icon_name (
                  _("Could not capture screenshot"),
                  _("Image not saved"),
                  "dialog-error",
                  Gtk.ButtonsType.CLOSE
             );
+            dialog.show_error_details (error_message);
 
             dialog.run ();
             dialog.destroy ();
