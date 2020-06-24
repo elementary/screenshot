@@ -20,8 +20,6 @@
 namespace Screenshot {
 
     public class ScreenshotApp : Gtk.Application {
-
-        private static ScreenshotApp app;
         private ScreenshotWindow window = null;
 
         private new OptionEntry[] options;
@@ -92,14 +90,6 @@ namespace Screenshot {
             window.show_all ();
         }
 
-        public static ScreenshotApp get_instance () {
-            if (app == null) {
-                app = new ScreenshotApp ();
-            }
-
-            return app;
-        }
-
         public static void create_dir_if_missing (string path) {
             if (!File.new_for_path (path).query_exists ()) {
                 try {
@@ -119,9 +109,7 @@ namespace Screenshot {
 
             Gtk.init (ref args);
 
-            app = new ScreenshotApp ();
-
-            return app.run (args);
+            return new ScreenshotApp ().run (args);
         }
 
         private int _command_line (ApplicationCommandLine command_line) {
