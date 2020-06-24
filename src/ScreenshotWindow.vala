@@ -220,12 +220,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         pointer_switch.sensitive = sensitive;
     }
 
-    private void update_pointer_switch () {
-        var sensitive = backend.can_screenshot_area_with_cursor || capture_mode != CaptureType.AREA;
-        pointer_label.sensitive = sensitive;
-        pointer_switch.sensitive = sensitive;
-    }
-
     private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
         string full_file_name = "";
         string folder_from_settings = "";
