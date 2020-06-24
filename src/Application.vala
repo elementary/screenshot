@@ -20,8 +20,6 @@
 public class Screenshot.ScreenshotApp : Gtk.Application {
     private ScreenshotWindow window = null;
 
-    private new OptionEntry[] options;
-
     private int delay = 1;
     private bool grab_pointer = false;
     private bool screen = false;
@@ -35,12 +33,12 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
     public ScreenshotApp () {
         Object (
             application_id: "io.elementary.screenshot-tool",
-            flags: ApplicationFlags.HANDLES_COMMAND_LINE
+            flags: ApplicationFlags.FLAGS_NONE
         );
     }
 
     construct {
-        options = new OptionEntry[7];
+        var options = new OptionEntry[7];
         options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
         options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
         options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
@@ -50,19 +48,11 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
         options[6] = { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, _("Save screenshot to clipboard"), null };
 
         add_main_option_entries (options);
+    }
 
+    protected override void activate () {
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/io/elementary/screenshot");
-
-        var quit_action = new SimpleAction ("quit", null);
-        quit_action.activate.connect (() => {
-            if (window != null) {
-                window.destroy ();
-            }
-        });
-
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
@@ -72,46 +62,6 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
         granite_settings.notify["prefers-color-scheme"].connect (() => {
             gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
         });
-    }
-
-    protected override void activate () {
-        this.hold ();
-        stdout.printf ("activated\n");
-        this.release ();
-    }
-
-    public static void create_dir_if_missing (string path) {
-        if (!File.new_for_path (path).query_exists ()) {
-            try {
-                File file = File.new_for_path (path);
-                file.make_directory ();
-            } catch (Error e) {
-                debug (e.message);
-            }
-        }
-    }
-
-    public static int main (string[] args) {
-        Gtk.init (ref args);
-
-        return new ScreenshotApp ().run (args);
-    }
-
-    private int _command_line (ApplicationCommandLine command_line) {
-        string[] args = command_line.get_arguments ();
-
-        try {
-            var opt_context = new OptionContext ("- Screenshot tool");
-            opt_context.set_help_enabled (true);
-            opt_context.add_main_entries (options, null);
-
-            unowned string[] tmp = args;
-            opt_context.parse (ref tmp);
-        } catch (OptionError e) {
-            command_line.print ("error: %s\n", e.message);
-            command_line.print ("Run '%s --help' to see a full list of available command line options.\n", args[0]);
-            return 0;
-        }
 
         var action = 0;
         if (screen) action = 1;
@@ -133,14 +83,29 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
             window.take_clicked ();
         }
 
-        return 0;
+        var quit_action = new SimpleAction ("quit", null);
+        quit_action.activate.connect (() => {
+            if (window != null) {
+                window.destroy ();
+            }
+        });
+
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
     }
 
-    public override int command_line (ApplicationCommandLine commmand_line) {
-        this.hold ();
-        int res = _command_line (commmand_line);
-        this.release ();
+    public static void create_dir_if_missing (string path) {
+        if (!File.new_for_path (path).query_exists ()) {
+            try {
+                File file = File.new_for_path (path);
+                file.make_directory ();
+            } catch (Error e) {
+                debug (e.message);
+            }
+        }
+    }
 
-        return res;
+    public static int main (string[] args) {
+        return new ScreenshotApp ().run (args);
     }
 }
