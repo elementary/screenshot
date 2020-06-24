@@ -42,6 +42,27 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         to_clipboard = false;
     }
 
+    public ScreenshotWindow.from_cmd (int action, int delay, bool grab_pointer, bool redact, bool clipboard) {
+        close_on_save = true;
+        from_command = true;
+        mouse_pointer = grab_pointer;
+        this.delay = int.max (0, delay);
+        this.redact = redact;
+        to_clipboard = clipboard;
+
+        switch (action) {
+            case 1:
+                capture_mode = CaptureType.SCREEN;
+                break;
+            case 2:
+                capture_mode = CaptureType.CURRENT_WINDOW;
+                break;
+            case 3:
+                capture_mode = CaptureType.AREA;
+                break;
+        }
+    }
+
     construct {
         if (from_command) {
             return;
@@ -193,41 +214,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         close_btn.clicked.connect (() => {
             destroy ();
         });
-    }
-
-    public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
-        if (delay != null) {
-            this.delay = int.max (0, delay);
-        }
-
-        if (grab_pointer != null) {
-            mouse_pointer = grab_pointer;
-        }
-
-        if (redact != null) {
-            this.redact = redact;
-        }
-
-        if (action != null) {
-            switch (action) {
-                case 1:
-                    capture_mode = CaptureType.SCREEN;
-                    break;
-                case 2:
-                    capture_mode = CaptureType.CURRENT_WINDOW;
-                    break;
-                case 3:
-                    capture_mode = CaptureType.AREA;
-                    break;
-            }
-        }
-
-        if (clipboard != null) {
-            to_clipboard = clipboard;
-        }
-
-        close_on_save = true;
-        from_command = true;
     }
 
     private void update_pointer_switch () {
