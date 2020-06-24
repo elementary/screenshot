@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-24 14:04+0000\n"
 "PO-Revision-Date: 2018-06-06 06:14+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/screenshot-"
@@ -20,97 +20,93 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:35
 msgid "Screenshots"
 msgstr "스크린샷"
 
-#: src/Application.vala:44
+#: src/Application.vala:46
 msgid "Capture active window"
 msgstr "사용 중인 창 찍기"
 
-#: src/Application.vala:45
+#: src/Application.vala:47
 msgid "Capture area"
 msgstr "지정 범위 찍기"
 
-#: src/Application.vala:46
+#: src/Application.vala:48
 msgid "Capture the whole screen"
 msgstr "전체 화면 찍기"
 
-#: src/Application.vala:47
+#: src/Application.vala:49
 msgid "Take screenshot after specified delay"
 msgstr "타임 샷 찍기"
 
-#: src/Application.vala:47
+#: src/Application.vala:49
 msgid "Seconds"
 msgstr "초"
 
-#: src/Application.vala:48
+#: src/Application.vala:50
 msgid "Include the pointer with the screenshot"
 msgstr "마우스 포인터 포함"
 
-#: src/Application.vala:49
+#: src/Application.vala:51
 msgid "Redact system text"
 msgstr "시스템 텍스트 편집"
 
-#: src/Application.vala:50
+#: src/Application.vala:52
 msgid "Save screenshot to clipboard"
 msgstr "스크린샷 클립보드에 저장하기"
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "전체 화면"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "현재 창"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "사용자 지정"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "마우스 포인터 포함:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "저장하고 닫기:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "텍스트 숨김:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "타이머 설정:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "스크린샷 찍기"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr "닫기"
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "스크린샷을 찍었습니다"
 
+#: src/ScreenshotWindow.vala:60
+msgid "Grab the whole screen"
+msgstr "전체 화면"
+
+#: src/ScreenshotWindow.vala:64
+msgid "Grab the current window"
+msgstr "현재 창"
+
+#: src/ScreenshotWindow.vala:68
+msgid "Select area to grab"
+msgstr "사용자 지정"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Grab mouse pointer:"
+msgstr "마우스 포인터 포함:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Close after saving:"
+msgstr "저장하고 닫기:"
+
+#: src/ScreenshotWindow.vala:90
+msgid "Conceal text:"
+msgstr "텍스트 숨김:"
+
+#: src/ScreenshotWindow.vala:101
+msgid "Delay in seconds:"
+msgstr "타이머 설정:"
+
+#: src/ScreenshotWindow.vala:106
+msgid "Take Screenshot"
+msgstr "스크린샷 찍기"
+
+#: src/ScreenshotWindow.vala:112
+msgid "Close"
+msgstr "닫기"
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:311 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s에 스크린샷 찍기"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:354
 msgid "Could not capture screenshot"
 msgstr "스크린샷을 찍을 수 없습니다"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "사용 중인 창이 없습니다"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:355
 msgid "Image not saved"
 msgstr "이미지 저장되지 않음"
 
@@ -149,6 +145,9 @@ msgstr "취소"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "사용 중인 창이 없습니다"
 
 #~ msgid "Capture area:"
 #~ msgstr "찍을 범위:"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-24 14:04+0000\n"
 "PO-Revision-Date: 2017-05-06 07:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -17,98 +17,94 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:35
 #, fuzzy
 msgid "Screenshots"
 msgstr "Снимак екрана"
 
-#: src/Application.vala:44
+#: src/Application.vala:46
 msgid "Capture active window"
 msgstr "Снимите радни прозор"
 
-#: src/Application.vala:45
+#: src/Application.vala:47
 msgid "Capture area"
 msgstr "Област снимања"
 
-#: src/Application.vala:46
+#: src/Application.vala:48
 msgid "Capture the whole screen"
 msgstr "Снимите читав екран"
 
-#: src/Application.vala:47
+#: src/Application.vala:49
 msgid "Take screenshot after specified delay"
 msgstr "Снимите екран након наведеног застоја"
 
-#: src/Application.vala:47
+#: src/Application.vala:49
 msgid "Seconds"
 msgstr "Секунде"
 
-#: src/Application.vala:48
+#: src/Application.vala:50
 msgid "Include the pointer with the screenshot"
 msgstr "Укључи показивач у снимку екрана"
 
-#: src/Application.vala:49
+#: src/Application.vala:51
 msgid "Redact system text"
 msgstr "Уредите текст система"
 
-#: src/Application.vala:50
+#: src/Application.vala:52
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "Захвати читав екран"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "Захвати текући прозор"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "Изаберите област за снимање"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "Захвати показивач миша:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "Затвори након чувања:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "Прикриј текст:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "Застој у секундама:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "Снимите екран"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "Снимак екрана је урађен"
 
+#: src/ScreenshotWindow.vala:60
+msgid "Grab the whole screen"
+msgstr "Захвати читав екран"
+
+#: src/ScreenshotWindow.vala:64
+msgid "Grab the current window"
+msgstr "Захвати текући прозор"
+
+#: src/ScreenshotWindow.vala:68
+msgid "Select area to grab"
+msgstr "Изаберите област за снимање"
+
+#: src/ScreenshotWindow.vala:78
+msgid "Grab mouse pointer:"
+msgstr "Захвати показивач миша:"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Close after saving:"
+msgstr "Затвори након чувања:"
+
+#: src/ScreenshotWindow.vala:90
+msgid "Conceal text:"
+msgstr "Прикриј текст:"
+
+#: src/ScreenshotWindow.vala:101
+msgid "Delay in seconds:"
+msgstr "Застој у секундама:"
+
+#: src/ScreenshotWindow.vala:106
+msgid "Take Screenshot"
+msgstr "Снимите екран"
+
+#: src/ScreenshotWindow.vala:112
+msgid "Close"
+msgstr ""
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:311 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Снимак екрана у %s"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:354
 msgid "Could not capture screenshot"
 msgstr "Не могу да снимим снимак екрана"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "Не могу да нађем радни прозор"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:355
 msgid "Image not saved"
 msgstr "Слика није сачувана"
 
@@ -147,6 +143,9 @@ msgstr "Откажи"
 #: src/Widgets/SaveDialog.vala:151
 msgid "Copy to Clipboard"
 msgstr "Умножи у оставу"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "Не могу да нађем радни прозор"
 
 #~ msgid "Capture area:"
 #~ msgstr "Област снимања:"
