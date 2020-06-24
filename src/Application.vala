@@ -22,7 +22,6 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
 
     private new OptionEntry[] options;
 
-    private int action = 0;
     private int delay = 1;
     private bool grab_pointer = false;
     private bool screen = false;
@@ -81,18 +80,6 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
         this.release ();
     }
 
-    private void normal_startup () {
-        if (window != null) {
-            window.present (); // present window if app is already open
-            return;
-        }
-
-        window = new ScreenshotWindow ();
-        window.get_style_context ().add_class ("rounded");
-        window.set_application (this);
-        window.show_all ();
-    }
-
     public static void create_dir_if_missing (string path) {
         if (!File.new_for_path (path).query_exists ()) {
             try {
@@ -126,12 +113,20 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
             return 0;
         }
 
+        var action = 0;
         if (screen) action = 1;
         if (win) action = 2;
         if (area) action = 3;
 
         if (action == 0) {
-            normal_startup ();
+            if (window == null) {
+                window = new ScreenshotWindow ();
+                window.get_style_context ().add_class ("rounded");
+                window.set_application (this);
+                window.show_all ();
+            }
+
+            window.present ();
         } else {
             window = new ScreenshotWindow.from_cmd (action, delay, grab_pointer, redact, clipboard);
             window.set_application (this);
