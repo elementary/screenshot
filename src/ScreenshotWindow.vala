@@ -286,7 +286,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
                         }
                     } catch (GLib.Error e) {
                         show_error_dialog (e.message);
-                        debug (e.message);
                     }
                 }
             });
@@ -311,7 +310,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
                     save_file (file_name, format, "", screenshot);
                 } catch (GLib.Error e) {
                     show_error_dialog (e.message);
-                    debug (e.message);
                 }
             }
             this.destroy ();
