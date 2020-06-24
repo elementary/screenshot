@@ -18,9 +18,7 @@
 */
 
 namespace Screenshot {
-
     public class ScreenshotApp : Gtk.Application {
-
         private static ScreenshotApp app;
         private ScreenshotWindow window = null;
 
@@ -37,9 +35,14 @@ namespace Screenshot {
 
         public const string SAVE_FOLDER = _("Screenshots");
 
-        construct {
-            flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
+        public ScreenshotApp () {
+            Object (
+                application_id: "io.elementary.screenshot-tool",
+                flags: ApplicationFlags.HANDLES_COMMAND_LINE
+            );
+        }
 
+        construct {
             options = new OptionEntry[7];
             options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
             options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
@@ -112,11 +115,6 @@ namespace Screenshot {
         }
 
         public static int main (string[] args) {
-            // Init internationalization support
-            Intl.setlocale (LocaleCategory.ALL, "");
-            Intl.bind_textdomain_codeset ("io.elementary.screenshot-tool", "UTF-8");
-            Intl.textdomain ("io.elementary.screenshot-tool");
-
             Gtk.init (ref args);
 
             app = new ScreenshotApp ();
