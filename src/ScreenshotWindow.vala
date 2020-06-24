@@ -193,7 +193,9 @@ namespace Screenshot {
             delay = delay_spin.get_value_as_int ();
 
             take_btn.clicked.connect (take_clicked);
-            close_btn.clicked.connect (close_clicked);
+            close_btn.clicked.connect (() => {
+                destroy ();
+            });
         }
 
         public ScreenshotWindow.from_cmd (int? action, int? delay, bool? grab_pointer, bool? redact, bool? clipboard) {
@@ -359,10 +361,6 @@ namespace Screenshot {
 
             dialog.run ();
             dialog.destroy ();
-        }
-
-        private void close_clicked () {
-            destroy ();
         }
 
         // Save main window position so that this position can be used
