@@ -211,7 +211,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         delay = delay_spin.get_value_as_int ();
 
         take_btn.clicked.connect (take_clicked);
-        close_btn.clicked.connect (close_clicked);
+        close_btn.clicked.connect (() => {
+            destroy ();
+        });
     }
 
     private void update_pointer_switch () {
@@ -341,10 +343,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
         dialog.run ();
         dialog.destroy ();
-    }
-
-    private void close_clicked () {
-        destroy ();
     }
 
     // Save main window position so that this position can be used
