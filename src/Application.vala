@@ -95,12 +95,10 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
     }
 
     public static void create_dir_if_missing (string path) {
-        if (!File.new_for_path (path).query_exists ()) {
-            try {
-                File file = File.new_for_path (path);
-                file.make_directory ();
-            } catch (Error e) {
-                debug (e.message);
+        if (Posix.mkdir (path, 0775) != 0) {
+            var err_no = GLib.errno;
+            if (err_no != Posix.EEXIST) {
+                debug (GLib.IOError.from_errno (err_no).message);
             }
         }
     }
