@@ -18,37 +18,39 @@
 */
 
 public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
+    public bool to_clipboard { get; construct; }
+    public bool close_on_save { get; set; }
+    public bool mouse_pointer { get; set; }
+    public bool redact { get; set; }
+
     private Settings settings;
     private CaptureType capture_mode;
     private bool from_command;
     private int delay;
-    private bool to_clipboard;
     private int window_x;
     private int window_y;
     private ScreenshotBackend backend;
     private Gtk.Label pointer_label;
     private Gtk.Switch pointer_switch;
 
-    public bool close_on_save { get; set; }
-    public bool mouse_pointer { get; set; }
-    public bool redact { get; set; }
-
     public ScreenshotWindow () {
         Object (
             border_width: 6,
-            resizable: false
+            resizable: false,
+            to_clipboard: false
         );
-
-        to_clipboard = false;
     }
 
     public ScreenshotWindow.from_cmd (int action, int delay, bool grab_pointer, bool redact, bool clipboard) {
+        Object (
+            to_clipboard: clipboard
+        );
+
         close_on_save = true;
         from_command = true;
         mouse_pointer = grab_pointer;
         this.delay = int.max (0, delay);
         this.redact = redact;
-        to_clipboard = clipboard;
 
         switch (action) {
             case 1:
