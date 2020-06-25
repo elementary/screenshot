@@ -305,7 +305,10 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     }
 
     public void take_clicked () {
-        remember_window_position ();
+        // Save main window position so that this position can be used
+        // when the window reappears again
+        get_position (out window_x, out window_y);
+
         this.hide ();
 
         backend.capture.begin (capture_mode, delay, mouse_pointer, redact, (obj, res) => {
@@ -343,11 +346,5 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
         dialog.run ();
         dialog.destroy ();
-    }
-
-    // Save main window position so that this position can be used
-    // when the window reappears again
-    private void remember_window_position () {
-        get_position (out window_x, out window_y);
     }
 }
