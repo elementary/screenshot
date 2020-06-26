@@ -19,7 +19,7 @@ Run `meson` to configure the build environment and then `ninja` to build and run
     cd build
     ninja
 
-To install, use `ninja install`, then execute with `io.elementary.screenshot-tool`
+To install, use `ninja install`, then execute with `io.elementary.screenshot`
 
     sudo ninja install
-    io.elementary.screenshot-tool
+    io.elementary.screenshot

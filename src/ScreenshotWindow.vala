@@ -164,7 +164,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         set_titlebar (titlebar);
         add (grid);
 
-        settings = new Settings ("io.elementary.screenshot-tool");
+        settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("mouse-pointer", this, "mouse-pointer", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);

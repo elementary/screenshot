@@ -23,5 +23,5 @@ install:
 script:
   - houston ci
     --type system-app
-    --name-domain io.elementary.screenshot-tool
+    --name-domain io.elementary.screenshot
     --name-human Screenshot
