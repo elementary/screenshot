@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 14:04+0000\n"
+"POT-Creation-Date: 2020-06-26 21:48+0000\n"
 "PO-Revision-Date: 2018-07-05 20:07+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/screenshot-"
@@ -21,39 +21,39 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:35
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "Posnetek zaslona"
 
-#: src/Application.vala:46
-msgid "Capture active window"
-msgstr "Zajemi trenutno okno"
-
-#: src/Application.vala:47
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "Območje zajemanja"
 
-#: src/Application.vala:48
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "Zajemi celotni zaslon"
 
-#: src/Application.vala:49
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "Zajemi trenutno okno"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "Zajemi zaslon po  zamiku"
 
-#: src/Application.vala:49
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "Sekunde"
 
-#: src/Application.vala:50
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "V zajeto sliko vključi tudi kazalnik"
 
-#: src/Application.vala:51
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "Odstrani besedilo z zajema"
 
-#: src/Application.vala:52
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Shrani posnetek na odložišče"
 
@@ -61,53 +61,53 @@ msgstr "Shrani posnetek na odložišče"
 msgid "Screenshot taken"
 msgstr "Slika zajeta"
 
-#: src/ScreenshotWindow.vala:60
+#: src/ScreenshotWindow.vala:80
 msgid "Grab the whole screen"
 msgstr "Zajemi cel zaslon"
 
-#: src/ScreenshotWindow.vala:64
+#: src/ScreenshotWindow.vala:84
 msgid "Grab the current window"
 msgstr "Zajemi trenutno okno"
 
-#: src/ScreenshotWindow.vala:68
+#: src/ScreenshotWindow.vala:88
 msgid "Select area to grab"
 msgstr "Izberite območje za zajem"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:98
 msgid "Grab mouse pointer:"
 msgstr "Zajemi miškin kazalec:"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
 msgstr "Zapri po zajemu:"
 
-#: src/ScreenshotWindow.vala:90
+#: src/ScreenshotWindow.vala:110
 msgid "Conceal text:"
 msgstr "Prikrij besedilo:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:121
 msgid "Delay in seconds:"
 msgstr "Zamik v sekundah:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:126
 msgid "Take Screenshot"
 msgstr "Zajemi sliko"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:132
 msgid "Close"
 msgstr "Zapri"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:311 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Zaslonska slika %s"
 
-#: src/ScreenshotWindow.vala:354
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "Ni bilo mogoče zajeti zaslona"
 
-#: src/ScreenshotWindow.vala:355
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "Slika ni bila shranjena"
 
