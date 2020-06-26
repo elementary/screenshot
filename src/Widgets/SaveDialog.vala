@@ -45,7 +45,7 @@ namespace Screenshot.Widgets {
         construct {
             set_keep_above (true);
             var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
-                + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
+                + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
 
             var folder_from_settings = settings.get_string ("folder-dir");
 
@@ -53,7 +53,7 @@ namespace Screenshot.Widgets {
                 folder_dir = folder_from_settings;
             }
 
-            ScreenshotApp.create_dir_if_missing (folder_dir);
+            Application.create_dir_if_missing (folder_dir);
 
             int width = pixbuf.get_width () / 4;
             int height = pixbuf.get_height () / 4;

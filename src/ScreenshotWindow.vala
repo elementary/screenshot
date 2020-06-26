@@ -234,9 +234,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
                 folder_dir = folder_from_settings;
             } else {
                 folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                    + "%c".printf (GLib.Path.DIR_SEPARATOR) + ScreenshotApp.SAVE_FOLDER;
+                    + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
             }
-            ScreenshotApp.create_dir_if_missing (folder_dir);
+            Application.create_dir_if_missing (folder_dir);
         }
 
         int attempt = 0;
