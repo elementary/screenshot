@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 14:04+0000\n"
+"POT-Creation-Date: 2020-06-26 21:48+0000\n"
 "PO-Revision-Date: 2020-05-30 09:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -20,39 +20,39 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:35
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
-#: src/Application.vala:46
-msgid "Capture active window"
-msgstr "Zachytit aktivní okno"
-
-#: src/Application.vala:47
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "Zachytit oblast"
 
-#: src/Application.vala:48
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "Zachytit celou obrazovku"
 
-#: src/Application.vala:49
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "Zachytit aktivní okno"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "Pořídit snímek po stanovené prodlevě"
 
-#: src/Application.vala:49
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "Sekund"
 
-#: src/Application.vala:50
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "Zahrnout do snímku obrazovky kurzor myši"
 
-#: src/Application.vala:51
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "Odebrat systémový text"
 
-#: src/Application.vala:52
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Uložit snímek obrazovky do schránky"
 
@@ -60,53 +60,53 @@ msgstr "Uložit snímek obrazovky do schránky"
 msgid "Screenshot taken"
 msgstr "Snímek zachycen"
 
-#: src/ScreenshotWindow.vala:60
+#: src/ScreenshotWindow.vala:80
 msgid "Grab the whole screen"
 msgstr "Zachytit celou obrazovku"
 
-#: src/ScreenshotWindow.vala:64
+#: src/ScreenshotWindow.vala:84
 msgid "Grab the current window"
 msgstr "Zachytit aktivní okno"
 
-#: src/ScreenshotWindow.vala:68
+#: src/ScreenshotWindow.vala:88
 msgid "Select area to grab"
 msgstr "Zvolit oblast k zachycení"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:98
 msgid "Grab mouse pointer:"
 msgstr "Zachytit kurzor myši:"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
 msgstr "Zavřít po uložení:"
 
-#: src/ScreenshotWindow.vala:90
+#: src/ScreenshotWindow.vala:110
 msgid "Conceal text:"
 msgstr "Znečitelnit text:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:121
 msgid "Delay in seconds:"
 msgstr "Zpoždění ve vteřinách:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:126
 msgid "Take Screenshot"
 msgstr "Zachytit snímek obrazovky"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:132
 msgid "Close"
 msgstr "Zavřít"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:311 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Snímek z %s"
 
-#: src/ScreenshotWindow.vala:354
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "Snímek obrazovky nemohl být pořízen"
 
-#: src/ScreenshotWindow.vala:355
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "Obrázek neuložen"
 
