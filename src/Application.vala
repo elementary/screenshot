@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Screenshot.ScreenshotApp : Gtk.Application {
+public class Screenshot.Application : Gtk.Application {
     public const string SAVE_FOLDER = _("Screenshots");
 
     private ScreenshotWindow window = null;
@@ -49,7 +49,7 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
         { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, CLIPBOARD, null }
     };
 
-    public ScreenshotApp () {
+    public Application () {
         Object (
             application_id: "io.elementary.screenshot-tool",
             flags: ApplicationFlags.FLAGS_NONE
@@ -114,6 +114,6 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        return new ScreenshotApp ().run (args);
+        return new Application ().run (args);
     }
 }
