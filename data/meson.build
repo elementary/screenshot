@@ -8,13 +8,14 @@ foreach i : icon_sizes
 endforeach
 
 install_data(
-    meson.project_name() + '.gschema.xml',
-    install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
+    'gschema.xml',
+    install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas'),
+    rename: meson.project_name() + '.gschema.xml'
 )
 
 i18n.merge_file (
     'desktop',
-    input: meson.project_name() + '.desktop.in',
+    input: 'screenshot.desktop.in',
     output: meson.project_name() + '.desktop',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'applications'),
@@ -24,7 +25,7 @@ i18n.merge_file (
 
 i18n.merge_file (
     'appdata',
-    input: meson.project_name() + '.appdata.xml.in',
+    input: 'screenshot.appdata.xml.in',
     output: meson.project_name() + '.appdata.xml',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo'),
