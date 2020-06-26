@@ -18,17 +18,36 @@
 */
 
 public class Screenshot.ScreenshotApp : Gtk.Application {
+    public const string SAVE_FOLDER = _("Screenshots");
+
     private ScreenshotWindow window = null;
 
-    private int delay = 1;
-    private bool grab_pointer = false;
-    private bool screen = false;
-    private bool win = false;
-    private bool area = false;
-    private bool redact = false;
-    private bool clipboard = false;
+    private static bool area = false;
+    private static bool clipboard = false;
+    private static bool grab_pointer = false;
+    private static bool redact = false;
+    private static bool screen = false;
+    private static bool win = false;
+    private static int delay = 1;
 
-    public const string SAVE_FOLDER = _("Screenshots");
+    private const string CAPTURE_AREA = N_("Capture area");
+    private const string CAPTURE_STRING = N_("Capture the whole screen");
+    private const string CAPTURE_WIN = N_("Capture active window");
+    private const string DELAY = N_("Take screenshot after specified delay");
+    private const string SECONDS = N_("Seconds");
+    private const string INCLUDE_POINTER = N_("Include the pointer with the screenshot");
+    private const string REDACT_TEXT = N_("Redact system text");
+    private const string CLIPBOARD = N_("Save screenshot to clipboard");
+
+    private const OptionEntry[] OPTION_ENTRIES = {
+        { "window", 'w', 0, OptionArg.NONE, ref win, CAPTURE_WIN, null },
+        { "area", 'r', 0, OptionArg.NONE, ref area, CAPTURE_AREA, null },
+        { "screen", 's', 0, OptionArg.NONE, ref screen, CAPTURE_STRING, null },
+        { "delay", 'd', 0, OptionArg.INT, ref delay, DELAY, SECONDS},
+        { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, INCLUDE_POINTER, null },
+        { "redact", 'e', 0, OptionArg.NONE, ref redact, REDACT_TEXT, null },
+        { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, CLIPBOARD, null }
+    };
 
     public ScreenshotApp () {
         Object (
@@ -38,16 +57,7 @@ public class Screenshot.ScreenshotApp : Gtk.Application {
     }
 
     construct {
-        var options = new OptionEntry[7];
-        options[0] = { "window", 'w', 0, OptionArg.NONE, ref win, _("Capture active window"), null };
-        options[1] = { "area", 'r', 0, OptionArg.NONE, ref area, _("Capture area"), null };
-        options[2] = { "screen", 's', 0, OptionArg.NONE, ref screen, _("Capture the whole screen"), null };
-        options[3] = { "delay", 'd', 0, OptionArg.INT, ref delay, _("Take screenshot after specified delay"), _("Seconds")};
-        options[4] = { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, _("Include the pointer with the screenshot"), null };
-        options[5] = { "redact", 'e', 0, OptionArg.NONE, ref redact, _("Redact system text"), null };
-        options[6] = { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, _("Save screenshot to clipboard"), null };
-
-        add_main_option_entries (options);
+        add_main_option_entries (OPTION_ENTRIES);
     }
 
     protected override void activate () {
