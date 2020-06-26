@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 14:04+0000\n"
+"POT-Creation-Date: 2020-06-26 21:48+0000\n"
 "PO-Revision-Date: 2019-01-29 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
@@ -15,39 +15,39 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:35
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: src/Application.vala:46
-msgid "Capture active window"
-msgstr "アクティブなウィンドウを取得します"
-
-#: src/Application.vala:47
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "取得する範囲"
 
-#: src/Application.vala:48
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "画面全体を取得します"
 
-#: src/Application.vala:49
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "アクティブなウィンドウを取得します"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "指定された遅延の後にスクリーンショットを撮ります"
 
-#: src/Application.vala:49
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "秒"
 
-#: src/Application.vala:50
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "スクリーンショットにマウスポインターを含めます"
 
-#: src/Application.vala:51
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "システムテキストを隠します"
 
-#: src/Application.vala:52
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "スクリーンショットをクリップボードに保存します"
 
@@ -55,53 +55,53 @@ msgstr "スクリーンショットをクリップボードに保存します"
 msgid "Screenshot taken"
 msgstr "スクリーンショットを撮りました"
 
-#: src/ScreenshotWindow.vala:60
+#: src/ScreenshotWindow.vala:80
 msgid "Grab the whole screen"
 msgstr "画面全体を取得します"
 
-#: src/ScreenshotWindow.vala:64
+#: src/ScreenshotWindow.vala:84
 msgid "Grab the current window"
 msgstr "現在のウィンドウを取得します"
 
-#: src/ScreenshotWindow.vala:68
+#: src/ScreenshotWindow.vala:88
 msgid "Select area to grab"
 msgstr "取得する範囲を選択します"
 
-#: src/ScreenshotWindow.vala:78
+#: src/ScreenshotWindow.vala:98
 msgid "Grab mouse pointer:"
 msgstr "マウスポインター部分を取得:"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
 msgstr "保存後に閉じる:"
 
-#: src/ScreenshotWindow.vala:90
+#: src/ScreenshotWindow.vala:110
 msgid "Conceal text:"
 msgstr "テキストを隠す:"
 
-#: src/ScreenshotWindow.vala:101
+#: src/ScreenshotWindow.vala:121
 msgid "Delay in seconds:"
 msgstr "遅延する秒数:"
 
-#: src/ScreenshotWindow.vala:106
+#: src/ScreenshotWindow.vala:126
 msgid "Take Screenshot"
 msgstr "スクリーンショットを撮る"
 
-#: src/ScreenshotWindow.vala:112
+#: src/ScreenshotWindow.vala:132
 msgid "Close"
 msgstr "閉じる"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:311 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:89
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s のスクリーンショット"
 
-#: src/ScreenshotWindow.vala:354
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "スクリーンショットを取得できませんでした"
 
-#: src/ScreenshotWindow.vala:355
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "画像は保存されていません"
 
