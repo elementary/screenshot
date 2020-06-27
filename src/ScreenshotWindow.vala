@@ -256,7 +256,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
     private void save_pixbuf (Gdk.Pixbuf screenshot) {
         if (from_command == false) {
-            var save_dialog = new Screenshot.Widgets.SaveDialog (screenshot, settings, this);
+            var save_dialog = new Screenshot.SaveDialog (screenshot, settings, this);
             save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
                 save_dialog.destroy ();
 
