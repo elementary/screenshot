@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2020-05-11 12:10+0000\n"
+"PO-Revision-Date: 2020-06-29 17:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/cs/>\n"
@@ -122,7 +122,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "io.elementary.screenshot-tool"
-msgstr ""
+msgstr "io.elementary.screenshot-tool"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
