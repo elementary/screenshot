@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-29 07:03+0000\n"
 "PO-Revision-Date: 2020-03-17 14:09+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
-"Language-Team: Esperanto <https://l10n.elementary.io/projects/"
-"screenshot-tool/extra/eo/>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/screenshot-"
+"tool/extra/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,8 +119,8 @@ msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "accessories-screenshot"
-msgstr "accessories-screenshot"
+msgid "io.elementary.screenshot-tool"
+msgstr ""
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -137,6 +137,9 @@ msgstr "Kopio de la aktiva fenestro"
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Kopio de elektita areaĵo"
+
+#~ msgid "accessories-screenshot"
+#~ msgstr "accessories-screenshot"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Pri Ekrankopio"

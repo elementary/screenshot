@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-29 07:03+0000\n"
 "PO-Revision-Date: 2019-02-22 00:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -120,8 +120,8 @@ msgid "elementary LLC."
 msgstr "elementary LLC. (selskap med begrenset ansvar)"
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "accessories-screenshot"
-msgstr "accessories-screenshot"
+msgid "io.elementary.screenshot-tool"
+msgstr ""
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -138,6 +138,9 @@ msgstr "Skjermavbildning av gjeldende vindu"
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skjermavbildning av valgt område"
+
+#~ msgid "accessories-screenshot"
+#~ msgstr "accessories-screenshot"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Om Skjermbilde"
