@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-29 07:03+0000\n"
 "PO-Revision-Date: 2018-06-15 00:10+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
@@ -114,8 +114,8 @@ msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "accessories-screenshot"
-msgstr "accessories-screenshot"
+msgid "io.elementary.screenshot-tool"
+msgstr ""
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -132,6 +132,9 @@ msgstr "Képernyőkép az aktuális ablakról"
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Képernyőkép egy kijelölt területről"
+
+#~ msgid "accessories-screenshot"
+#~ msgstr "accessories-screenshot"
 
 #~ msgid "About Screenshot"
 #~ msgstr "A Képernyőképről"
