@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2019-01-14 00:09+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/screenshot-"
@@ -73,7 +73,9 @@ msgid "Select area to grab"
 msgstr "Sélectionner une zone à capturer"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "Capturer le pointeur :"
 
 #: src/ScreenshotWindow.vala:104

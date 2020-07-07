@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2017-03-03 14:12+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,9 @@ msgid "Select area to grab"
 msgstr "Norādīt reģionu ko tvert"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "Tvert peles kursoru"
 
 #: src/ScreenshotWindow.vala:104

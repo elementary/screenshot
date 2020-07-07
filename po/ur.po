@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2016-09-22 10:24+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,9 @@ msgid "Select area to grab"
 msgstr "تصویر لینے کے لیے رکبہ چنیں"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "ماوٗس پوائنٹر کو پکڑے:"
 
 #: src/ScreenshotWindow.vala:104

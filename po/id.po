@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2018-06-12 07:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
@@ -68,7 +68,9 @@ msgid "Select area to grab"
 msgstr "Pilih area yang akan diambil"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "Ambil penunjuk mouse:"
 
 #: src/ScreenshotWindow.vala:104

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2016-06-03 16:46+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -71,7 +71,9 @@ msgid "Select area to grab"
 msgstr "เลือกพื้นที่ที่ต้องการจับภาพ"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "จับภาพตัวชี้เมาส์:"
 
 #: src/ScreenshotWindow.vala:104
