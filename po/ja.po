@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2019-01-29 00:03+0000\n"
+"PO-Revision-Date: 2020-07-09 21:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
+"screenshot-tool/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -68,10 +68,8 @@ msgid "Select area to grab"
 msgstr "取得する範囲を選択します"
 
 #: src/ScreenshotWindow.vala:98
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "マウスポインター部分を取得:"
+msgstr "ポインター部分を取得:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
