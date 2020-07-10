@@ -86,7 +86,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
         selection.tooltip_text = _("Select area to grab");
 
-        pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
+        pointer_label = new Gtk.Label (_("Grab pointer:"));
         pointer_label.halign = Gtk.Align.END;
 
         pointer_switch = new Gtk.Switch ();
