@@ -73,6 +73,16 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
         preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
+        var preview_event_box = new Gtk.EventBox();
+        preview_event_box.add (preview_box);
+
+        Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
+        Gtk.drag_source_add_image_targets (preview_event_box);
+        Gtk.drag_source_set_icon_gicon (preview_event_box, preview.gicon);
+        preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
+            selection_data.set_pixbuf (pixbuf);
+        });
+
         var dialog_label = new Gtk.Label (_("Save Image as…"));
         dialog_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
         dialog_label.halign = Gtk.Align.START;
@@ -129,7 +139,7 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         grid.margin_top = 0;
         grid.row_spacing = 12;
         grid.column_spacing = 12;
-        grid.attach (preview_box, 0, 0, 2, 1);
+        grid.attach (preview_event_box, 0, 0, 2, 1);
         grid.attach (dialog_label, 0, 1, 2, 1);
         grid.attach (name_label, 0, 2, 1, 1);
         grid.attach (name_entry, 1, 2, 1, 1);
