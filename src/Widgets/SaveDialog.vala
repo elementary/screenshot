@@ -73,7 +73,7 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
         preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
-        var preview_event_box = new Gtk.EventBox();
+        var preview_event_box = new Gtk.EventBox ();
         preview_event_box.add (preview_box);
 
         Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
