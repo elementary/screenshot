@@ -96,7 +96,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         radio_grid.add (curr_window);
         radio_grid.add (selection);
 
-        pointer_label = new Gtk.Label (_("Grab mouse pointer:"));
+        pointer_label = new Gtk.Label (_("Grab pointer:"));
         pointer_label.halign = Gtk.Align.END;
 
         pointer_switch = new Gtk.Switch ();
