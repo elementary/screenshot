@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2018-05-27 11:30+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/screenshot-"
@@ -13,136 +13,137 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 #, fuzzy
 msgid "Screenshots"
 msgstr "Captură de ecran"
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr "Captură de fereastră activă"
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "Capturați zona"
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "Capturați tot ecranul"
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "Captură de fereastră activă"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "Faceți captură de ecran specificată"
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "Secunde"
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "Includeți pointerul de la maus cu captura de ecran"
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "Redactează textul sistemului"
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "Apucă tot ecranul"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "Prinde fereastra curentă"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "Selectați zona dorită"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "Printați indicatorul mouse-ului:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "Închideți după salvare:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "Ascundeți textul:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "Întârziere în secunde:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "Să faceți captură de ecran"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "Captură de ecran realizată"
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr "Apucă tot ecranul"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr "Prinde fereastra curentă"
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr "Selectați zona dorită"
+
+#: src/ScreenshotWindow.vala:98
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
+msgstr "Printați indicatorul mouse-ului:"
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr "Închideți după salvare:"
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr "Ascundeți textul:"
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr "Întârziere în secunde:"
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr "Să faceți captură de ecran"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr ""
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captură de ecran din %s"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "Captura de ecran nu a putut fi realizată"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "Nu sa găsit o fereastră activă"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "Imaginea nu a fost salvată"
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr "Captură de ecran"
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr "Salvează imaginea ca…"
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr "Nume:"
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr "Formatul:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr "Carpeta:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr "Selectați carpeta Imagini de ecran …"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr "Salvează"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr "Anulează"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr "Copiați în clipboard"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "Nu sa găsit o fereastră activă"
 
 #~ msgid "Capture area:"
 #~ msgstr "Zona de captură:"

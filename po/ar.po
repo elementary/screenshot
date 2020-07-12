@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2020-05-16 02:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -16,132 +16,133 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "لقطات الشاشة"
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr "صور الشاشة الفعالة"
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "منطقة التصوير"
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "التقط كامل الشاشة"
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "صور الشاشة الفعالة"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "خذ لقطات شاشة بعد وقت معين"
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "ثواني"
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "ضمن المؤشر عند عمل لقطة للشاشة"
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "اختصر نصوص النظام"
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "حفظ لقطة الشاشة إلى الحافظة"
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "اسحب الشاشة كاملة"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "اسحب النافذة الحالية"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "اختر المنطقة للسحب"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "اسحب المؤشر:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "اغلق بعد الحفظ:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "اخفي النص:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "التأخير بالثواني:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "التقط صورة"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr "اغلاق"
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "تم اخذ لقطة للشاشة"
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr "اسحب الشاشة كاملة"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr "اسحب النافذة الحالية"
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr "اختر المنطقة للسحب"
+
+#: src/ScreenshotWindow.vala:98
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
+msgstr "اسحب المؤشر:"
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr "اغلق بعد الحفظ:"
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr "اخفي النص:"
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr "التأخير بالثواني:"
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr "التقط صورة"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr "اغلاق"
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr "لقطة شاشة منذ %s"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "لم ينجح التقاط لقطة للشاشة"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "لم يتم ايجاد نافذة فعالة"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "الصورة لم تحفظ"
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr "لقطة للشاشة"
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr "حفظ الصورة باسم…"
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr "الاسم:"
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr "الصيغة:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr "المجلد:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr "اختر مجلد للقطات الشاشة…"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr "حفظ"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr "نسخ إلى الحافظة"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "لم يتم ايجاد نافذة فعالة"

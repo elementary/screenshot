@@ -1,136 +1,132 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr ""
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr ""
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr ""
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr ""
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr ""
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr ""
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr ""
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr ""
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr ""
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr ""
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:98
+msgid "Grab pointer:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr ""
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr ""
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr ""

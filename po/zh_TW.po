@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2019-05-24 01:03+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -15,135 +15,136 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "螢幕截圖"
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr "擷取使用中的視窗"
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "擷取區域"
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "擷取整個畫面"
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "擷取使用中的視窗"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "倒數計時後拍攝畫面快照"
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "秒"
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "畫面快照包含滑鼠指標"
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "擬定系統文字"
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "儲存至剪貼簿"
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "擷取整個畫面"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "抓取目前視窗"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "選取要抓取的區域"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "抓取滑鼠指標："
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "儲存後關閉："
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "隱藏文字："
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "倒數秒數："
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "拍下畫面快照"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr "關閉"
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "已擷取畫面快照"
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr "擷取整個畫面"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr "抓取目前視窗"
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr "選取要抓取的區域"
+
+#: src/ScreenshotWindow.vala:98
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
+msgstr "抓取滑鼠指標："
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr "儲存後關閉："
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr "隱藏文字："
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr "倒數秒數："
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr "拍下畫面快照"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr "關閉"
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s 的畫面快照"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "無法擷取畫面快照"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "找不到使用中的活動視窗"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "影像並未儲存"
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr "畫面快照"
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr "將影像儲存成…"
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr "名稱："
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr "格式："
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr "資料夾："
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr "選取畫面快照資料夾："
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr "儲存"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr "複製到剪貼簿"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "找不到使用中的活動視窗"
 
 #~ msgid "Capture area:"
 #~ msgstr "擷取區域："

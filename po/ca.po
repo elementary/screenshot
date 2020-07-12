@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2019-09-18 17:22+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"PO-Revision-Date: 2020-07-09 21:12+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/ca/>\n"
 "Language: ca\n"
@@ -17,138 +17,137 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "Captures de pantalla"
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr "Captura la finestra activa"
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "Captura l'àrea"
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "Captura tota la pantalla"
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "Captura la finestra activa"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "Fes la captura al cap d'un retard especificat"
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "Segons"
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "Inclou el punter a la captura de pantalla"
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "Expurga el text del sistema"
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Desa la captura de pantalla al porta-retalls"
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "Captura la pantalla sencera"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "Captura la finestra actual"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "Seleccioneu l’àrea de captura"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "Captura el punter del ratolí:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "Tanca després de desar:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "Amaga el text:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "Retard en segons:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "Fes una captura de pantalla"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr "Tanca"
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "Captura de pantalla feta"
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr "Captura la pantalla sencera"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr "Captura la finestra actual"
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr "Seleccioneu l’àrea de captura"
+
+#: src/ScreenshotWindow.vala:98
+msgid "Grab pointer:"
+msgstr "Captura del punter del ratolí:"
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr "Tanca després de desar:"
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr "Amaga el text:"
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr "Retard en segons:"
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr "Fes una captura de pantalla"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr "Tanca"
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura de pantalla del %s"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "No s'ha pogut fer la captura."
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "No s’ha pogut trobar una finestra activa"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "Imatge sense desar"
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr "Captura de pantalla"
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr "Desa la imatge com a…"
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr "Nom:"
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr "Format:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr "Carpeta:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr "Trieu la carpeta de captures…"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr "Desa"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "No s’ha pogut trobar una finestra activa"
 
 #~ msgid "Capture area:"
 #~ msgstr "Àrea de captura:"

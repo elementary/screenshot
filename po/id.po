@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2018-06-12 07:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
@@ -15,135 +15,136 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: src/Application.vala:38
+#: src/Application.vala:21
 msgid "Screenshots"
 msgstr "Tangkapan layar"
 
-#: src/Application.vala:44
-msgid "Capture active window"
-msgstr "Tangkap jendela aktif"
-
-#: src/Application.vala:45
+#: src/Application.vala:33
 msgid "Capture area"
 msgstr "Daerah tangkapan"
 
-#: src/Application.vala:46
+#: src/Application.vala:34
 msgid "Capture the whole screen"
 msgstr "Tangkap seluruh layar"
 
-#: src/Application.vala:47
+#: src/Application.vala:35
+msgid "Capture active window"
+msgstr "Tangkap jendela aktif"
+
+#: src/Application.vala:36
 msgid "Take screenshot after specified delay"
 msgstr "Ambil cuplikan layar setelah jeda yang ditentukan"
 
-#: src/Application.vala:47
+#: src/Application.vala:37
 msgid "Seconds"
 msgstr "Detik"
 
-#: src/Application.vala:48
+#: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
 msgstr "Sertakan pointer dengan cuplikan layar"
 
-#: src/Application.vala:49
+#: src/Application.vala:39
 msgid "Redact system text"
 msgstr "Redaktasikan teks sistem"
 
-#: src/Application.vala:50
+#: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Simpan tangkapan layar ke papan klip"
 
-#: src/ScreenshotWindow.vala:64
-msgid "Grab the whole screen"
-msgstr "Ambil seluruh layar"
-
-#: src/ScreenshotWindow.vala:68
-msgid "Grab the current window"
-msgstr "Ambil jendela saat ini"
-
-#: src/ScreenshotWindow.vala:72
-msgid "Select area to grab"
-msgstr "Pilih area yang akan diambil"
-
-#: src/ScreenshotWindow.vala:82
-msgid "Grab mouse pointer:"
-msgstr "Ambil penunjuk mouse:"
-
-#: src/ScreenshotWindow.vala:88
-msgid "Close after saving:"
-msgstr "Tutup setelah menyimpan:"
-
-#: src/ScreenshotWindow.vala:94
-msgid "Conceal text:"
-msgstr "Teks kedok:"
-
-#: src/ScreenshotWindow.vala:100
-msgid "Delay in seconds:"
-msgstr "Jeda dalam detik:"
-
-#: src/ScreenshotWindow.vala:105
-msgid "Take Screenshot"
-msgstr "Ambil Cuplikan Layar"
-
-#: src/ScreenshotWindow.vala:111
-msgid "Close"
-msgstr "Tutup"
-
-#: src/ScreenshotWindow.vala:338
+#: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
 msgstr "Cuplikan layar telah diambil"
 
+#: src/ScreenshotWindow.vala:80
+msgid "Grab the whole screen"
+msgstr "Ambil seluruh layar"
+
+#: src/ScreenshotWindow.vala:84
+msgid "Grab the current window"
+msgstr "Ambil jendela saat ini"
+
+#: src/ScreenshotWindow.vala:88
+msgid "Select area to grab"
+msgstr "Pilih area yang akan diambil"
+
+#: src/ScreenshotWindow.vala:98
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
+msgstr "Ambil penunjuk mouse:"
+
+#: src/ScreenshotWindow.vala:104
+msgid "Close after saving:"
+msgstr "Tutup setelah menyimpan:"
+
+#: src/ScreenshotWindow.vala:110
+msgid "Conceal text:"
+msgstr "Teks kedok:"
+
+#: src/ScreenshotWindow.vala:121
+msgid "Delay in seconds:"
+msgstr "Jeda dalam detik:"
+
+#: src/ScreenshotWindow.vala:126
+msgid "Take Screenshot"
+msgstr "Ambil Cuplikan Layar"
+
+#: src/ScreenshotWindow.vala:132
+msgid "Close"
+msgstr "Tutup"
+
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:380 src/Widgets/SaveDialog.vala:89
+#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Cuplikan layar dari %s"
 
-#: src/ScreenshotWindow.vala:497 src/ScreenshotWindow.vala:555
+#: src/ScreenshotWindow.vala:342
 msgid "Could not capture screenshot"
 msgstr "Tidak dapat menangkap cuplikan layar"
 
-#: src/ScreenshotWindow.vala:498
-msgid "Couldn't find an active window"
-msgstr "Tidak dapat menemukan jendela aktif"
-
-#: src/ScreenshotWindow.vala:556
+#: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
 msgstr "Gambar tidak disimpan"
 
-#: src/Widgets/SaveDialog.vala:40
+#: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
 msgstr "Cuplikan layar"
 
-#: src/Widgets/SaveDialog.vala:79
+#: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
 msgstr "Simpan Gambar sebagai…"
 
-#: src/Widgets/SaveDialog.vala:83
+#: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
 msgstr "Nama:"
 
-#: src/Widgets/SaveDialog.vala:100
+#: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
 msgstr "Format:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
 msgstr "Folder:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
 msgstr "Pilih Folder Cuplikan Layar…"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:144
 msgid "Save"
 msgstr "Simpan"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
 msgstr "Salin ke Papan Klip"
+
+#~ msgid "Couldn't find an active window"
+#~ msgstr "Tidak dapat menemukan jendela aktif"
 
 #~ msgid "Capture area:"
 #~ msgstr "Area pengambilan:"

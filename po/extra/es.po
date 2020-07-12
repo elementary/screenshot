@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
-"PO-Revision-Date: 2020-01-25 14:08+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"PO-Revision-Date: 2020-07-02 03:12+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/es/>\n"
 "Language: es\n"
@@ -57,15 +57,15 @@ msgstr "Actualización de traducciones"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr "Cerrar al presionar la tecla Escape"
+msgstr "Se cierra al presionar la tecla Escape"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
-"Revertir de la fuente redactada lo antes posible para evitar quedarse "
-"atascado en algunas situaciones"
+"Se revierte del tipo de letra censurado con la mayor prontitud posible para "
+"evitar que se quede activado en determinadas situaciones"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:54
 msgid "Always respect delay setting"
@@ -77,7 +77,7 @@ msgstr "Aumentar el tiempo de espera mínimo a 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr "Corregir el comportamiento de la tecla Alt+F4"
+msgstr "Se corrige el comportamiento de la tecla Alt+F4"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
@@ -108,24 +108,25 @@ msgstr "Nueva carpeta predeterminada para guardar capturas de pantalla"
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
 msgstr ""
-"Recuerde la posición de la ventana principal cuando reaparezca la ventana"
+"Se recuerda la posición de la ventana principal para cuando reaparezca la "
+"ventana"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
-"Reproduce el sonido del obturador cuando se toma una captura de pantalla"
+msgstr "Se reproduce un sonido de obturador al hacer una captura de pantalla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Solucionar área negra adicional en capturas de pantalla hechas en HDPI"
+msgstr ""
+"Se soluciona un área negra adicional en capturas de pantalla hechas en HiDPI"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:152
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "accessories-screenshot"
-msgstr "accessories-screenshot"
+msgid "io.elementary.screenshot-tool"
+msgstr "io.elementary.screenshot-tool"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -142,6 +143,9 @@ msgstr "Captura de la ventana actual"
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura de un área seleccionada"
+
+#~ msgid "accessories-screenshot"
+#~ msgstr "accessories-screenshot"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Acerca de Captura de pantalla"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 19:07+0000\n"
+"POT-Creation-Date: 2020-06-29 07:03+0000\n"
 "PO-Revision-Date: 2018-06-22 12:53+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -119,8 +119,8 @@ msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "accessories-screenshot"
-msgstr "accessories-screenshot"
+msgid "io.elementary.screenshot-tool"
+msgstr ""
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -137,6 +137,9 @@ msgstr "Screenshot of the Current Window"
 #: data/io.elementary.screenshot-tool.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Screenshot of a Selected Area"
+
+#~ msgid "accessories-screenshot"
+#~ msgstr "accessories-screenshot"
 
 #~ msgid "About Screenshot"
 #~ msgstr "About Screenshot"

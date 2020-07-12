@@ -1,6 +1,6 @@
 project(
     'io.elementary.screenshot-tool', 'vala', 'c',
-    meson_version : '>= 0.43',
+    meson_version : '>= 0.46',
     version: '1.7.1'
 )
 
@@ -30,7 +30,8 @@ executable(
         dependency('gobject-2.0'),
         dependency('gtk+-3.0'),
         dependency('granite', version: '>=5.4.0'),
-        dependency('libcanberra')
+        dependency('libcanberra'),
+        meson.get_compiler('vala').find_library('posix'),
     ],
     install : true
 )
