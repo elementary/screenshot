@@ -70,7 +70,7 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
 
         Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
         Gtk.drag_source_add_image_targets (preview_event_box);
-        Gtk.drag_source_set_icon_gicon (preview_event_box, new ThemedIcon("image-x-generic"));
+        Gtk.drag_source_set_icon_gicon (preview_event_box, new ThemedIcon ("image-x-generic"));
         preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
             selection_data.set_pixbuf (pixbuf);
         });
