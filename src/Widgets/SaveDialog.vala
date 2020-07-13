@@ -65,16 +65,8 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
         preview.get_style_context ().set_scale (1);
 
-        var preview_box = new Gtk.Grid ();
-        preview_box.halign = Gtk.Align.CENTER;
-        preview_box.add (preview);
-
-        unowned Gtk.StyleContext preview_box_context = preview_box.get_style_context ();
-        preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
-        preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
-
         var preview_event_box = new Gtk.EventBox ();
-        preview_event_box.add (preview_box);
+        preview_event_box.add (preview);
 
         Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
         Gtk.drag_source_add_image_targets (preview_event_box);
@@ -82,6 +74,15 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
             selection_data.set_pixbuf (pixbuf);
         });
+
+
+        var preview_box = new Gtk.Grid ();
+        preview_box.halign = Gtk.Align.CENTER;
+        preview_box.add (preview_event_box);
+
+        unowned Gtk.StyleContext preview_box_context = preview_box.get_style_context ();
+        preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
+        preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
         var dialog_label = new Gtk.Label (_("Save Image as…"));
         dialog_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
@@ -139,7 +140,7 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         grid.margin_top = 0;
         grid.row_spacing = 12;
         grid.column_spacing = 12;
-        grid.attach (preview_event_box, 0, 0, 2, 1);
+        grid.attach (preview_box, 0, 0, 2, 1);
         grid.attach (dialog_label, 0, 1, 2, 1);
         grid.attach (name_label, 0, 2, 1, 1);
         grid.attach (name_entry, 1, 2, 1, 1);
