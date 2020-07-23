@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2020-05-03 21:10+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"PO-Revision-Date: 2020-07-16 09:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/tr/>\n"
 "Language: tr\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Seçim öğeleriyle ilgili küçük görsel sorunları giderildi"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:31
 #: data/io.elementary.screenshot-tool.appdata.xml.in:39
@@ -56,29 +56,31 @@ msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Esc tuşuna basınca kapat"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Bazı durumlarda takılmaktan kaçınmak için düzeltilmiş yazı tipinden en kısa "
+"sürede geri dön"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Gecikme ayarına her zaman saygı göster"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Minimum zaman aşımı süresini 300'e çıkart"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Alt+F4 davranışını düzelt"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Simgeler artık yakalama alanı seçeneklerini temsil ediyor"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:65
 #: data/io.elementary.screenshot-tool.appdata.xml.in:75
@@ -92,23 +94,23 @@ msgstr "Küçük hata düzeltmeleri"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "ESC tuşu davranışını düzeltildi"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Dosya adına ölçeklendirme faktörünü ekle"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:83
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Ekran görüntülerini kaydetmek için yeni varsayılan klasör"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Yeniden görünen pencere için ana pencere konumunu hatırla"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Ekran görüntüsü alındığında deklanşör sesini çal"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
@@ -120,7 +122,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "io.elementary.screenshot-tool"
-msgstr ""
+msgstr "io.elementary.screenshot-tool"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
