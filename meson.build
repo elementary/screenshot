@@ -35,7 +35,7 @@ executable(
         dependency('gtk+-3.0'),
         dependency('granite', version: '>=5.4.0'),
         dependency('libcanberra'),
-        dependency('libhandy-1', version: '>=0.80.0'),
+        dependency('libhandy-1', version: '>=0.83.0'),
         meson.get_compiler('vala').find_library('posix'),
     ],
     install : true

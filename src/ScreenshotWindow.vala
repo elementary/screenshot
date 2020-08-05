@@ -70,6 +70,8 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             return;
         }
 
+        Hdy.init ();
+
         set_keep_above (true);
         stick ();
 
