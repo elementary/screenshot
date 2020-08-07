@@ -82,7 +82,6 @@ public class Screenshot.Application : Gtk.Application {
         if (action == 0) {
             if (window == null) {
                 window = new ScreenshotWindow ();
-                window.get_style_context ().add_class ("rounded");
                 window.set_application (this);
                 window.show_all ();
             }
