@@ -1,7 +1,7 @@
-Source: screenshot-tool
+Source: io.elementary.screenshot
 Section: graphics
 Priority: optional
-Maintainer: Cody Garver <cody@elementary.io> 
+Maintainer: elementary, Inc. <builds@elementary.io> 
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libcanberra-dev,
@@ -11,10 +11,20 @@ Build-Depends: debhelper (>= 10.5.1),
                meson,
                valac (>= 0.20)
 Standards-Version: 4.1.1
-Homepage: https://github.com/elementary/screenshot-tool
+Homepage: https://github.com/elementary/screenshot
+
+Package: io.elementary.screenshot
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: screenshot-tool
+Replaces: screenshot-tool
+Description: Screenshot utility
+ A simple program screenshot utility for elementary OS.
 
 Package: screenshot-tool
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Screenshot utility
- A simple program screenshot utility for elementary OS.
+Depends: io.elementary.screenshot, ${misc:Depends}
+Section: oldlibs
+Priority: optional
+Description: transitional dummy package
+    This is a transitional dummy package. It can safely be removed.
