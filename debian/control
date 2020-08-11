@@ -16,7 +16,7 @@ Homepage: https://github.com/elementary/screenshot
 Package: io.elementary.screenshot
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: screenshot-tool
+Breaks: screenshot-tool
 Replaces: screenshot-tool
 Description: Screenshot utility
  A simple program screenshot utility for elementary OS.
