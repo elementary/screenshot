@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2019-01-05 19:57+0000\n"
-"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
-"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"PO-Revision-Date: 2020-07-22 20:12+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/nn/>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -68,8 +68,8 @@ msgid "Select area to grab"
 msgstr "Vel eit område å fange"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
-msgstr "Fang musepeikaren:"
+msgid "Grab pointer:"
+msgstr "Fang peikaren:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"

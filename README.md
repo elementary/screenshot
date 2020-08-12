@@ -11,6 +11,7 @@ You'll need the following dependencies:
 * libcanberra-dev
 * libgdk-pixbuf2.0-dev
 * libgranite-dev >= 5.4.0
+* libhandy-1 >= 0.83.0
 * valac
 
 Run `meson` to configure the build environment and then `ninja` to build and run automated tests

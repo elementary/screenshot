@@ -3,6 +3,7 @@
   <gresource prefix="/io/elementary/screenshot">
     <file alias="grab-area-symbolic.svg" compressed="true" preprocess="xml-stripblanks">grab-area-symbolic.svg</file>
     <file alias="grab-screen-symbolic.svg" compressed="true" preprocess="xml-stripblanks">grab-screen-symbolic.svg</file>
+    <file alias="grab-screen-symbolic-dark.svg" compressed="true" preprocess="xml-stripblanks">grab-screen-symbolic-dark.svg</file>
     <file alias="grab-window-symbolic.svg" compressed="true" preprocess="xml-stripblanks">grab-window-symbolic.svg</file>
   </gresource>
 </gresources>

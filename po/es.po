@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2020-02-25 20:08+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/es/>\n"
@@ -73,8 +73,8 @@ msgid "Select area to grab"
 msgstr "Seleccionar el área que capturar"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
-msgstr "Capturar el puntero del ratón:"
+msgid "Grab pointer:"
+msgstr "Capturar puntero:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
@@ -108,7 +108,7 @@ msgstr "No se pudo realizar la captura"
 
 #: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
-msgstr "Imagen no guardada"
+msgstr "No se guardó la imagen"
 
 #: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
@@ -144,7 +144,7 @@ msgstr "Cancelar"
 
 #: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Copiar en el portapapeles"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "No se encontró ninguna ventana activa"

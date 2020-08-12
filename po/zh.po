@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-07-07 18:31+0000\n"
 "PO-Revision-Date: 2018-04-19 15:30+0000\n"
 "Last-Translator: xia zixin <xia.zixin@yahoo.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/screenshot-"
@@ -67,7 +67,9 @@ msgid "Select area to grab"
 msgstr "选择区域中截取"
 
 #: src/ScreenshotWindow.vala:98
-msgid "Grab mouse pointer:"
+#, fuzzy
+#| msgid "Grab mouse pointer:"
+msgid "Grab pointer:"
 msgstr "保留鼠标："
 
 #: src/ScreenshotWindow.vala:104

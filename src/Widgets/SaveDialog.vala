@@ -65,9 +65,20 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
         preview.get_style_context ().set_scale (1);
 
+        var preview_event_box = new Gtk.EventBox ();
+        preview_event_box.add (preview);
+
+        Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
+        Gtk.drag_source_add_image_targets (preview_event_box);
+        Gtk.drag_source_set_icon_gicon (preview_event_box, new ThemedIcon ("image-x-generic"));
+        preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
+            selection_data.set_pixbuf (pixbuf);
+        });
+
+
         var preview_box = new Gtk.Grid ();
         preview_box.halign = Gtk.Align.CENTER;
-        preview_box.add (preview);
+        preview_box.add (preview_event_box);
 
         unowned Gtk.StyleContext preview_box_context = preview_box.get_style_context ();
         preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
