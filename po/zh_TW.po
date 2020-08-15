@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2019-05-24 01:03+0000\n"
+"PO-Revision-Date: 2020-08-16 05:13+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "screenshot-tool/screenshot-tool/zh_Hant/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -68,10 +68,8 @@ msgid "Select area to grab"
 msgstr "選取要抓取的區域"
 
 #: src/ScreenshotWindow.vala:98
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "抓取滑鼠指標："
+msgstr "抓取游標："
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
@@ -129,7 +127,7 @@ msgstr "資料夾："
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
-msgstr "選取畫面快照資料夾："
+msgstr "選取螢幕截圖資料夾…"
 
 #: src/Widgets/SaveDialog.vala:144
 msgid "Save"
