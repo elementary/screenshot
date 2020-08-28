@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2020-08-28 20:12+0000\n"
+"PO-Revision-Date: 2020-08-29 21:13+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/screenshot-tool/"
 "screenshot-tool/oc/>\n"
@@ -21,27 +21,27 @@ msgstr "Capturas d’ecran"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr ""
+msgstr "Capturar per zònas"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "Capturar l’ensemble del burèu"
 
 #: src/Application.vala:35
 msgid "Capture active window"
-msgstr ""
+msgstr "Capturar la fenèstra activa"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "Efectua una captura d'ecran aprèp lo relambi indicat"
 
 #: src/Application.vala:37
 msgid "Seconds"
-msgstr ""
+msgstr "Segondas"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "Inclure lo puntador dins la captura d’ecran"
 
 #: src/Application.vala:39
 msgid "Redact system text"
@@ -49,11 +49,11 @@ msgstr ""
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Copiar la captura d’ecran al quichapapièrs"
 
 #: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
-msgstr ""
+msgstr "Captura d’ecran efectuada"
 
 #: src/ScreenshotWindow.vala:80
 msgid "Grab the whole screen"
@@ -61,11 +61,11 @@ msgstr ""
 
 #: src/ScreenshotWindow.vala:84
 msgid "Grab the current window"
-msgstr ""
+msgstr "Capturar la fenèstra actuala"
 
 #: src/ScreenshotWindow.vala:88
 msgid "Select area to grab"
-msgstr ""
+msgstr "Seleccionar la zòna de capturar"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Grab pointer:"
@@ -85,11 +85,11 @@ msgstr ""
 
 #: src/ScreenshotWindow.vala:126
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Far una captura d’ecran"
 
 #: src/ScreenshotWindow.vala:132
 msgid "Close"
-msgstr ""
+msgstr "Tampar"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
@@ -103,27 +103,27 @@ msgstr ""
 
 #: src/ScreenshotWindow.vala:343
 msgid "Image not saved"
-msgstr ""
+msgstr "Imatge pas enregistrat"
 
 #: src/Widgets/SaveDialog.vala:37
 msgid "Screenshot"
-msgstr ""
+msgstr "Captura d’ecran"
 
 #: src/Widgets/SaveDialog.vala:76
 msgid "Save Image as…"
-msgstr ""
+msgstr "Enregistrar l’imatge jos"
 
 #: src/Widgets/SaveDialog.vala:80
 msgid "Name:"
-msgstr ""
+msgstr "Nom :"
 
 #: src/Widgets/SaveDialog.vala:97
 msgid "Format:"
-msgstr ""
+msgstr "Format :"
 
 #: src/Widgets/SaveDialog.vala:121
 msgid "Folder:"
-msgstr ""
+msgstr "Dossièr :"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "Select Screenshots Folder…"
@@ -131,12 +131,12 @@ msgstr ""
 
 #: src/Widgets/SaveDialog.vala:144
 msgid "Save"
-msgstr ""
+msgstr "Enregistrar"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Cancel"
-msgstr ""
+msgstr "Anullar"
 
 #: src/Widgets/SaveDialog.vala:148
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copiar al quicha-papièrs"
