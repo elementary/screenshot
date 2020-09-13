@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2020-09-12 20:14+0000\n"
+"PO-Revision-Date: 2020-09-14 04:42+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/"
 "screenshot-tool/extra/uk/>\n"
@@ -24,7 +24,7 @@ msgstr "Знімок екрана"
 #: data/io.elementary.screenshot-tool.appdata.xml.in:9
 #: data/io.elementary.screenshot-tool.desktop.in:5
 msgid "Save images of the screen"
-msgstr "Збереження зображень екрану"
+msgstr "Зберігайте зображення екрану"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:11
 msgid ""
