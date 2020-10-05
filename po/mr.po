@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2018-12-23 16:49+0000\n"
+"PO-Revision-Date: 2020-09-15 19:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/mr/>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot-tool/"
+"screenshot-tool/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -68,10 +68,8 @@ msgid "Select area to grab"
 msgstr "पकडण्यासाठी क्षेत्र निवडा"
 
 #: src/ScreenshotWindow.vala:98
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "माउस पॉइंटर पकडा:"
+msgstr "पॉइंटर पकडा:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
