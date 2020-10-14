@@ -1,7 +1,7 @@
 # Screenshot
 [![Translation status](https://l10n.elementary.io/widgets/screenshot-tool/-/svg-badge.svg)](https://l10n.elementary.io/projects/screenshot-tool/?utm_source=widget)
 
-![Screenshot Tool Screenshot](data/screenshot.png?raw=true)
+![Screenshot](data/screenshot.png?raw=true)
 
 ## Building, Testing, and Installation
 
