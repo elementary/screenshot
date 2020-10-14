@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2017-12-28 19:11+0000\n"
-"Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
-"Language-Team: Vietnamese <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/vi/>\n"
+"PO-Revision-Date: 2020-10-11 06:14+0000\n"
+"Last-Translator: Trkien618 <hacngoctrungkien@gmail.com>\n"
+"Language-Team: Vietnamese <https://l10n.elementary.io/projects/"
+"screenshot-tool/screenshot-tool/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -34,7 +34,7 @@ msgstr "Chụp cửa sổ đang hoạt động"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Chụp ảnh màn hình sau khi sự chậm trễ được chỉ định"
+msgstr "Chụp hẹn giờ"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -42,37 +42,35 @@ msgstr "Giây"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "Bao gồm con trỏ với ảnh chụp màn hình"
+msgstr "Chụp con trỏ chuột với màn hình"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr "Giảm lại văn bản hệ thống"
+msgstr "Giảm văn bản hệ thống"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Lưu ảnh chụp màn hình vào clipboard"
 
 #: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
-msgstr "Đã chụp ảnh chụp màn hình"
+msgstr "Đã chụp màn hình"
 
 #: src/ScreenshotWindow.vala:80
 msgid "Grab the whole screen"
-msgstr "Chụp toàn bộ màn hình"
+msgstr "Chụp toàn bộ"
 
 #: src/ScreenshotWindow.vala:84
 msgid "Grab the current window"
-msgstr "Chụp cửa sổ hiện tại"
+msgstr "Chụp cửa sổ"
 
 #: src/ScreenshotWindow.vala:88
 msgid "Select area to grab"
 msgstr "Chọn khu vực để chụp"
 
 #: src/ScreenshotWindow.vala:98
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Chụp con trỏ chuột:"
+msgstr "Chụp cả con trỏ chuột:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Close after saving:"
@@ -80,7 +78,7 @@ msgstr "Đóng sau khi lưu:"
 
 #: src/ScreenshotWindow.vala:110
 msgid "Conceal text:"
-msgstr "Che giấu văn bản:"
+msgstr "Che văn bản:"
 
 #: src/ScreenshotWindow.vala:121
 msgid "Delay in seconds:"
