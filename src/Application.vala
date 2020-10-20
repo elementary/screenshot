@@ -46,7 +46,8 @@ public class Screenshot.Application : Gtk.Application {
         { "delay", 'd', 0, OptionArg.INT, ref delay, DELAY, SECONDS},
         { "grab-pointer", 'p', 0, OptionArg.NONE, ref grab_pointer, INCLUDE_POINTER, null },
         { "redact", 'e', 0, OptionArg.NONE, ref redact, REDACT_TEXT, null },
-        { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, CLIPBOARD, null }
+        { "clipboard", 'c', 0, OptionArg.NONE, ref clipboard, CLIPBOARD, null },
+        { null }
     };
 
     public Application () {
@@ -81,7 +82,6 @@ public class Screenshot.Application : Gtk.Application {
         if (action == 0) {
             if (window == null) {
                 window = new ScreenshotWindow ();
-                window.get_style_context ().add_class ("rounded");
                 window.set_application (this);
                 window.show_all ();
             }

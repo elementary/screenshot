@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2019-05-23 12:03+0000\n"
+"PO-Revision-Date: 2020-08-16 05:13+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "screenshot-tool/extra/zh_Hant/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:8
@@ -51,7 +51,7 @@ msgstr "翻譯更新"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "當按下 ESC 鍵時關閉"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:46
 msgid ""
@@ -65,11 +65,11 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "將最小逾時時間增加至 300"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "修正 Alt + F4 按鍵行為"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
@@ -87,7 +87,7 @@ msgstr "小臭蟲修正"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "修正按下 ESC 鍵時的行為"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:74
 msgid "Append scaling factor to filename"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "當拍下螢幕截圖時播放快門音效"
 
 #: data/io.elementary.screenshot-tool.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
@@ -115,7 +115,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.screenshot-tool.desktop.in:7
 msgid "io.elementary.screenshot-tool"
-msgstr ""
+msgstr "io.elementary.screenshot-tool"
 
 #: data/io.elementary.screenshot-tool.desktop.in:10
 msgid "Snapshot;Screenshot;"
