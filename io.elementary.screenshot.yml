@@ -1,8 +1,8 @@
 app-id: io.elementary.screenshot
 runtime: org.gnome.Platform
-runtime-version: '3.36'
+runtime-version: '3.38'
 base: io.elementary.BaseApp
-base-version: juno-19.08
+base-version: juno-20.08
 sdk: org.gnome.Sdk
 command: io.elementary.screenshot-tool
 finish-args:
