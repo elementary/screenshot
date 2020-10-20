@@ -1,0 +1,31 @@
+app-id: io.elementary.screenshot
+runtime: org.gnome.Platform
+runtime-version: '3.36'
+base: io.elementary.BaseApp
+base-version: juno-19.08
+sdk: org.gnome.Sdk
+command: io.elementary.screenshot-tool
+finish-args:
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+
+  # needed for perfers-color-scheme
+  - '--system-talk-name=org.freedesktop.Accounts'
+
+  - '--talk-name=org.gnome.Shell.Screenshot'
+
+  - '--metadata=X-DConf=migrate-path=/io/elementary/screenshot-tool/'
+modules:
+  - name: handy
+    buildsystem: meson
+    sources:
+      - type: git
+        url: https://gitlab.gnome.org/GNOME/libhandy.git
+        tag: '1.0.0'
+
+  - name: screenshot
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .
