@@ -25,23 +25,19 @@ jobs:
         ninja -C build install
 
   flatpak:
-
     runs-on: ubuntu-latest
 
     container:
-      image: elementary/docker:unstable
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
       options: --privileged
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Install flatpak-builder
-      run: |
-        apt update
-        apt install -y flatpak flatpak-builder
-    - name: Add flathub
-      run: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    - name: Build manifest
-      run: flatpak-builder --repo=flatpak-repo --force-clean --disable-rofiles-fuse --ccache --install-deps-from=flathub flatpak-build io.elementary.screenshot.yml
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@master
+      with:
+        bundle: "screenshot.flatpak"
+        manifest-path: "io.elementary.screenshot-tool.yml"
+        app-id: "io.elementary.screenshot-tool"
 
   lint:
 
