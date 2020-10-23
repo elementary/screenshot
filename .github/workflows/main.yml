@@ -36,8 +36,8 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions@master
       with:
         bundle: "screenshot.flatpak"
-        manifest-path: "io.elementary.screenshot-tool.yml"
-        app-id: "io.elementary.screenshot-tool"
+        manifest-path: "io.elementary.screenshot.yml"
+        app-id: "io.elementary.screenshot"
 
   lint:
 
