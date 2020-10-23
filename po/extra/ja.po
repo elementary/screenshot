@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
 "PO-Revision-Date: 2020-06-30 21:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -15,17 +15,15 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/io.elementary.screenshot-tool.desktop.in:4
+#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/io.elementary.screenshot-tool.desktop.in:5
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "画面の画像を保存します"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -33,27 +31,23 @@ msgstr ""
 "シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィン"
 "ドウのほか、遅延させたスクリーンショットも取得できます。"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
 msgstr "選択項目に関する軽微な視覚的な不具合を修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:31
-#: data/io.elementary.screenshot-tool.appdata.xml.in:39
-#: data/io.elementary.screenshot-tool.appdata.xml.in:47
-#: data/io.elementary.screenshot-tool.appdata.xml.in:56
-#: data/io.elementary.screenshot-tool.appdata.xml.in:66
-#: data/io.elementary.screenshot-tool.appdata.xml.in:76
-#: data/io.elementary.screenshot-tool.appdata.xml.in:86
-#: data/io.elementary.screenshot-tool.appdata.xml.in:101
-#: data/io.elementary.screenshot-tool.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
+#: data/screenshot.appdata.xml.in:110
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
 msgstr "Esc キーの押下時にアプリを終了するように修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -61,78 +55,77 @@ msgstr ""
 "特定の状況下においてアプリがフリーズするのを防ぐため、なるべく早くダミーフォ"
 "ントから復元するように修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
 msgstr "遅延の設定を常に反映するように修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
 msgstr "タイムアウトの最小値を300ミリ秒に増加"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
 msgstr "Alt+F4 キー押下時の動作を修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
 msgstr "取得範囲を表すアイコンに変更"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:65
-#: data/io.elementary.screenshot-tool.appdata.xml.in:75
-#: data/io.elementary.screenshot-tool.appdata.xml.in:85
-#: data/io.elementary.screenshot-tool.appdata.xml.in:93
-#: data/io.elementary.screenshot-tool.appdata.xml.in:102
-#: data/io.elementary.screenshot-tool.appdata.xml.in:111
-#: data/io.elementary.screenshot-tool.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
+#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:118
 msgid "Minor bug fixes"
 msgstr "軽微なバグの修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
 msgstr "Esc キー押下時の動作を修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
 msgstr "ファイル名にスケールファクターを追加するように変更"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
 msgstr "スクリーンショットのデフォルトの保存先を変更"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
 msgstr ""
 "メインウィンドウの位置を記録し、再度表示されるウィンドウで復元するように変更"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "スクリーンショットの取得時にシャッター音が鳴るように変更"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "HiDPI スクリーンショットでの余分な黒い部分を修正"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:152
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "io.elementary.screenshot-tool"
+#: data/screenshot.desktop.in:7
+#, fuzzy
+#| msgid "io.elementary.screenshot-tool"
+msgid "io.elementary.screenshot"
 msgstr "io.elementary.screenshot-tool"
 
-#: data/io.elementary.screenshot-tool.desktop.in:10
+#: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Snapshot;Screenshot;スナップショット;スクリーンショット;"
 
-#: data/io.elementary.screenshot-tool.desktop.in:14
+#: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "画面全体のスクリーンショット"
 
-#: data/io.elementary.screenshot-tool.desktop.in:18
+#: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "現在のウィンドウのスクリーンショット"
 
-#: data/io.elementary.screenshot-tool.desktop.in:22
+#: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "選択範囲のスクリーンショット"
 

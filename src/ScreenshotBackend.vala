@@ -171,7 +171,7 @@ namespace Screenshot {
 
         private string get_tmp_filename () {
             var dir = Environment.get_user_cache_dir ();
-            var name = "io.elementary.screenshot-tool-%lu.png".printf (Random.next_int ());
+            var name = "io.elementary.screenshot-%lu.png".printf (Random.next_int ());
             return Path.build_filename (dir, name);
         }
     }
