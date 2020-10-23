@@ -1,5 +1,5 @@
 project(
-    'io.elementary.screenshot-tool', 'vala', 'c',
+    'io.elementary.screenshot', 'vala', 'c',
     meson_version : '>= 0.46',
     version: '1.7.1'
 )
@@ -8,14 +8,14 @@ gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments(
-    '-DGETTEXT_PACKAGE="' + meson.project_name() + '"',
+    '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()),
     '-DHANDY_USE_UNSTABLE_API',
     language:'c'
 )
 
 icon_res = gnome.compile_resources(
     'screenshot-icon-resources',
-    'data/' + meson.project_name() + '.gresource.xml',
+    join_paths('data', 'gresource.xml'),
     source_dir: 'data'
 )
 

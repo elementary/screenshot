@@ -52,7 +52,7 @@ public class Screenshot.Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "io.elementary.screenshot-tool",
+            application_id: "io.elementary.screenshot",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
