@@ -33,11 +33,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: bilelmoussaoui/flatpak-github-actions@master
+    - uses: bilelmoussaoui/flatpak-github-actions@v1
       with:
-        bundle: "screenshot.flatpak"
+        bundle: "io.elementary.screenshot.flatpak"
         manifest-path: "io.elementary.screenshot.yml"
-        app-id: "io.elementary.screenshot"
 
   lint:
 
