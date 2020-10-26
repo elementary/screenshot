@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2018-08-18 13:26+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/de/>\n"
+"PO-Revision-Date: 2020-10-27 21:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -46,7 +46,7 @@ msgstr "Sekunden"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "Zeiger mit in das Bildschirmfoto aufnehmen"
+msgstr "Bildschirmfoto inklusive Mauszeiger aufnehmen"
 
 #: src/Application.vala:39
 msgid "Redact system text"
@@ -54,7 +54,7 @@ msgstr "Systemtext unleserlich machen"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr "Speichere Bildschirmfoto in die Zwischenablage"
+msgstr "Bildschirmfoto in der Zwischenablage speichern"
 
 #: src/ScreenshotBackend.vala:147
 msgid "Screenshot taken"
@@ -73,8 +73,6 @@ msgid "Select area to grab"
 msgstr "Aufnahmebereich auswählen"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
 msgstr "Mauszeiger einbeziehen:"
 
@@ -102,7 +100,7 @@ msgstr "Schließen"
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Screenshot von %s"
+msgstr "Bildschirmfoto von %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
