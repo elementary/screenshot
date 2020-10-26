@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2019-01-02 18:00+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/screenshot-"
-"tool/extra/de/>\n"
+"PO-Revision-Date: 2020-10-27 21:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/screenshot/extra/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Kleinere Probleme bei der Wahl von Objekten behoben"
 
 #: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
@@ -51,29 +51,31 @@ msgstr "Aktualisierte Übersetzungen"
 
 #: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Beim Drücken der Escape-Taste schließen"
 
 #: data/screenshot.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Verschleiernde Schrift zu kurz wie möglich einsetzen, um in bestimmten "
+"Situationen auftretende Probleme zu vermeiden"
 
 #: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Verzögerung immer beachten"
 
 #: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Minimale Verzögerung auf 300 vergrößern"
 
 #: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Verhalten von Alt+F4 korrigiert"
 
 #: data/screenshot.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Optionen für den Aufnahmebereich werden jetzt mit Symbolen dargestellt"
 
 #: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
 #: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
@@ -84,23 +86,24 @@ msgstr "Kleinere Fehler behoben"
 
 #: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Verhalten des Escape-Taste korrigiert"
 
 #: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Skalierungsfaktor wird an den Dateinamen angehängt"
 
 #: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Neuer Standardordner zum Speichern von Bildschirmfotos"
 
 #: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
 msgstr ""
+"Position des Hauptfensters wird gespeichert für erneut dargestellte Fenster"
 
 #: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Verschlussgeräusch wiedergeben, wenn ein Bildschirmfoto erstellt wird"
 
 #: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
@@ -112,7 +115,7 @@ msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
-msgstr ""
+msgstr "io.elementary.screenshot"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
