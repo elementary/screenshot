@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2020-07-02 03:12+0000\n"
+"PO-Revision-Date: 2020-10-25 03:15+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/es/>\n"
@@ -26,7 +26,7 @@ msgstr "Captura de pantalla"
 
 #: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
-msgstr "Guardar imágenes de la pantalla"
+msgstr "Guarde imágenes de la pantalla"
 
 #: data/screenshot.appdata.xml.in:11
 msgid ""
@@ -63,11 +63,11 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr "Respetar siempre la configuración de retraso"
+msgstr "Se respeta siempre la configuración de demora"
 
 #: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr "Aumentar el tiempo de espera mínimo a 300"
+msgstr "Se aumentó el tiempo de espera mínimo a 300"
 
 #: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
@@ -82,15 +82,15 @@ msgstr "Los iconos ahora representan las opciones del área de captura"
 #: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
 #: data/screenshot.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr "Reparación de errores menores"
+msgstr "Arreglos de defectos menores"
 
 #: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr "Corregir comportamiento de la tecla ESC"
+msgstr "Corrección del comportamiento de la tecla Esc"
 
 #: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr "Agregar factor de escala al nombre de archivo"
+msgstr "Se añade el factor de escala al nombre de archivo"
 
 #: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
@@ -116,10 +116,8 @@ msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7
-#, fuzzy
-#| msgid "io.elementary.screenshot-tool"
 msgid "io.elementary.screenshot"
-msgstr "io.elementary.screenshot-tool"
+msgstr "io.elementary.screenshot"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
