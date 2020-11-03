@@ -79,17 +79,17 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         all = new Gtk.RadioButton (null);
         all.image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", Gtk.IconSize.DND);
-        all.tooltip_text = _("Grab the whole screen");
+        all.tooltip_text = _("Capture the whole screen");
 
         var curr_window = new Gtk.RadioButton.from_widget (all);
         curr_window.image = new Gtk.Image.from_icon_name ("grab-window-symbolic", Gtk.IconSize.DND);
-        curr_window.tooltip_text = _("Grab the current window");
+        curr_window.tooltip_text = _("Capture the current window");
 
         var selection = new Gtk.RadioButton.from_widget (curr_window);
         selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
-        selection.tooltip_text = _("Select area to grab");
+        selection.tooltip_text = _("Select area to capture");
 
-        pointer_label = new Gtk.Label (_("Grab pointer:"));
+        pointer_label = new Gtk.Label (_("Capture pointer:"));
         pointer_label.halign = Gtk.Align.END;
 
         pointer_switch = new Gtk.Switch ();
@@ -117,7 +117,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
 
-        var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
+        var take_btn = new Gtk.Button.with_label (_("Capture Screenshot"));
         take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         take_btn.can_default = true;
 
