@@ -24,6 +24,20 @@ jobs:
         ninja -C build
         ninja -C build install
 
+  flatpak:
+    runs-on: ubuntu-latest
+
+    container:
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
+      options: --privileged
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@v2
+      with:
+        bundle: "io.elementary.screenshot.flatpak"
+        manifest-path: "io.elementary.screenshot.yml"
+
   lint:
 
     runs-on: ubuntu-latest
