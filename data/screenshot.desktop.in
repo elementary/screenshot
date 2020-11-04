@@ -10,13 +10,13 @@ Keywords=Snapshot;Screenshot;
 Actions=ScreenShot;WindowShot;AreaShot;
 
 [Desktop Action ScreenShot]
-Name=Capture Screenshot of the Whole Screen
+Name=Capture the Whole Screen
 Exec=io.elementary.screenshot --screen
 
 [Desktop Action WindowShot]
-Name=Capture Screenshot of the Current Window
+Name=Capture the Current Window
 Exec=io.elementary.screenshot --window
 
 [Desktop Action AreaShot]
-Name=Capture Screenshot of a Selected Area
+Name=Select Area to Capture
 Exec=io.elementary.screenshot --area
