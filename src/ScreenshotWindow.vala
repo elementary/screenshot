@@ -79,17 +79,17 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         all = new Gtk.RadioButton (null);
         all.image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", Gtk.IconSize.DND);
-        all.tooltip_text = _("Capture the whole screen");
+        all.tooltip_text = _("Whole screen");
 
         var curr_window = new Gtk.RadioButton.from_widget (all);
         curr_window.image = new Gtk.Image.from_icon_name ("grab-window-symbolic", Gtk.IconSize.DND);
-        curr_window.tooltip_text = _("Capture the current window");
+        curr_window.tooltip_text = _("Current window");
 
         var selection = new Gtk.RadioButton.from_widget (curr_window);
         selection.image = new Gtk.Image.from_icon_name ("grab-area-symbolic", Gtk.IconSize.DND);
-        selection.tooltip_text = _("Select area to capture");
+        selection.tooltip_text = _("Select area");
 
-        pointer_label = new Gtk.Label (_("Capture pointer:"));
+        pointer_label = new Gtk.Label (_("Include pointer:"));
         pointer_label.halign = Gtk.Align.END;
 
         pointer_switch = new Gtk.Switch ();
