@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
 "PO-Revision-Date: 2020-07-22 20:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -55,53 +55,53 @@ msgstr "Lagre skjermkuttet til utklippstavla"
 msgid "Screenshot taken"
 msgstr "Skjermkutt teke"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Fang heile skjermen"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
 msgstr "Fang det aktive vindauget"
 
-#: src/ScreenshotWindow.vala:88
+#: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
 msgstr "Vel eit område å fange"
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
 msgstr "Fang peikaren:"
 
-#: src/ScreenshotWindow.vala:104
+#: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
 msgstr "Avslutt etter lagring:"
 
-#: src/ScreenshotWindow.vala:110
+#: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
 msgstr "Skjul tekst:"
 
-#: src/ScreenshotWindow.vala:121
+#: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
 msgstr "Forseinking i sekund:"
 
-#: src/ScreenshotWindow.vala:126
+#: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
 msgstr "Ta skjermkutt"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:126
 msgid "Close"
 msgstr "Lukk"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skjermkutt frå %s"
 
-#: src/ScreenshotWindow.vala:342
+#: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
 msgstr "Kunne ikkje fange opp skjermkutt"
 
-#: src/ScreenshotWindow.vala:343
+#: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
 msgstr "Biletet vart ikkje lagra"
 
@@ -109,35 +109,35 @@ msgstr "Biletet vart ikkje lagra"
 msgid "Screenshot"
 msgstr "Skjermkutt"
 
-#: src/Widgets/SaveDialog.vala:76
+#: src/Widgets/SaveDialog.vala:87
 msgid "Save Image as…"
 msgstr "Lagre biletet som…"
 
-#: src/Widgets/SaveDialog.vala:80
+#: src/Widgets/SaveDialog.vala:91
 msgid "Name:"
 msgstr "Namn:"
 
-#: src/Widgets/SaveDialog.vala:97
+#: src/Widgets/SaveDialog.vala:108
 msgid "Format:"
 msgstr "Format:"
 
-#: src/Widgets/SaveDialog.vala:121
+#: src/Widgets/SaveDialog.vala:132
 msgid "Folder:"
 msgstr "Mappe:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:135
 msgid "Select Screenshots Folder…"
 msgstr "Vel mappe for skjermkutt…"
 
-#: src/Widgets/SaveDialog.vala:144
+#: src/Widgets/SaveDialog.vala:155
 msgid "Save"
 msgstr "Lagre"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:158
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/SaveDialog.vala:148
+#: src/Widgets/SaveDialog.vala:159
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavla"
 

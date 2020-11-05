@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
 "PO-Revision-Date: 2018-06-22 20:56+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/screenshot-"
@@ -61,55 +61,55 @@ msgstr "Сохранить снимок в буфер обмена"
 msgid "Screenshot taken"
 msgstr "Снимок экрана создан"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Захватить весь экран"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
 msgstr "Захватить текущее окно"
 
-#: src/ScreenshotWindow.vala:88
+#: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
 msgstr "Выбрать область захвата"
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:92
 #, fuzzy
 #| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
 msgstr "Захватить указатель:"
 
-#: src/ScreenshotWindow.vala:104
+#: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
 msgstr "Закрыть после сохранения:"
 
-#: src/ScreenshotWindow.vala:110
+#: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
 msgstr "Скрыть текст:"
 
-#: src/ScreenshotWindow.vala:121
+#: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
 msgstr "Задержка в секундах:"
 
-#: src/ScreenshotWindow.vala:126
+#: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
 msgstr "Сделать снимок экрана"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:126
 msgid "Close"
 msgstr "Закрыть"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Снимок экрана от %s"
 
-#: src/ScreenshotWindow.vala:342
+#: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
 msgstr "Не удалось сделать скриншот"
 
-#: src/ScreenshotWindow.vala:343
+#: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
 msgstr "Снимок не сохранён"
 
@@ -117,35 +117,35 @@ msgstr "Снимок не сохранён"
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
-#: src/Widgets/SaveDialog.vala:76
+#: src/Widgets/SaveDialog.vala:87
 msgid "Save Image as…"
 msgstr "Сохранить изображение как…"
 
-#: src/Widgets/SaveDialog.vala:80
+#: src/Widgets/SaveDialog.vala:91
 msgid "Name:"
 msgstr "Название:"
 
-#: src/Widgets/SaveDialog.vala:97
+#: src/Widgets/SaveDialog.vala:108
 msgid "Format:"
 msgstr "Формат:"
 
-#: src/Widgets/SaveDialog.vala:121
+#: src/Widgets/SaveDialog.vala:132
 msgid "Folder:"
 msgstr "Папка:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:135
 msgid "Select Screenshots Folder…"
 msgstr "Выберите папку для скриншотов…"
 
-#: src/Widgets/SaveDialog.vala:144
+#: src/Widgets/SaveDialog.vala:155
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:158
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Widgets/SaveDialog.vala:148
+#: src/Widgets/SaveDialog.vala:159
 msgid "Copy to Clipboard"
 msgstr "Копировать в буфер обмена"
 

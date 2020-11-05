@@ -52,7 +52,7 @@ public class Screenshot.Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "io.elementary.screenshot-tool",
+            application_id: "io.elementary.screenshot",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
@@ -82,7 +82,6 @@ public class Screenshot.Application : Gtk.Application {
         if (action == 0) {
             if (window == null) {
                 window = new ScreenshotWindow ();
-                window.get_style_context ().add_class ("rounded");
                 window.set_application (this);
                 window.show_all ();
             }

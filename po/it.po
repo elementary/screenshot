@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:31+0000\n"
-"PO-Revision-Date: 2018-09-06 23:02+0000\n"
-"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/it/>\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"PO-Revision-Date: 2020-10-23 09:01+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"Language-Team: Italian <https://l10n.elementary.io/projects/screenshot-tool/"
+"screenshot-tool/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -60,55 +60,53 @@ msgstr "Salva la schermata negli appunti"
 msgid "Screenshot taken"
 msgstr "Schermata catturata"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Cattura l'intero schermo"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
 msgstr "Cattura la finestra corrente"
 
-#: src/ScreenshotWindow.vala:88
+#: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
 msgstr "Seleziona l'area da catturare"
 
-#: src/ScreenshotWindow.vala:98
-#, fuzzy
-#| msgid "Grab mouse pointer:"
+#: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
-msgstr "Cattura puntatore del mouse:"
+msgstr "Cattura puntatore:"
 
-#: src/ScreenshotWindow.vala:104
+#: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
 msgstr "Chiudere dopo il salvataggio:"
 
-#: src/ScreenshotWindow.vala:110
+#: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
 msgstr "Occulta il testo:"
 
-#: src/ScreenshotWindow.vala:121
+#: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
 msgstr "Ritardo in secondi:"
 
-#: src/ScreenshotWindow.vala:126
+#: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
 msgstr "Scatta istantanea"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:126
 msgid "Close"
 msgstr "Chiudi"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Schermata del %s"
 
-#: src/ScreenshotWindow.vala:342
+#: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
 msgstr "Impossibile catturare la schermata"
 
-#: src/ScreenshotWindow.vala:343
+#: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
 msgstr "Immagine non salvata"
 
@@ -116,35 +114,35 @@ msgstr "Immagine non salvata"
 msgid "Screenshot"
 msgstr "Schermata"
 
-#: src/Widgets/SaveDialog.vala:76
+#: src/Widgets/SaveDialog.vala:87
 msgid "Save Image as…"
 msgstr "Salva immagine come…"
 
-#: src/Widgets/SaveDialog.vala:80
+#: src/Widgets/SaveDialog.vala:91
 msgid "Name:"
 msgstr "Nome:"
 
-#: src/Widgets/SaveDialog.vala:97
+#: src/Widgets/SaveDialog.vala:108
 msgid "Format:"
 msgstr "Formato:"
 
-#: src/Widgets/SaveDialog.vala:121
+#: src/Widgets/SaveDialog.vala:132
 msgid "Folder:"
 msgstr "Cartella:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:135
 msgid "Select Screenshots Folder…"
 msgstr "Seleziona cartella delle schermate…"
 
-#: src/Widgets/SaveDialog.vala:144
+#: src/Widgets/SaveDialog.vala:155
 msgid "Save"
 msgstr "Salva"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:158
 msgid "Cancel"
 msgstr "Annulla"
 
-#: src/Widgets/SaveDialog.vala:148
+#: src/Widgets/SaveDialog.vala:159
 msgid "Copy to Clipboard"
 msgstr "Copia negli appunti"
 

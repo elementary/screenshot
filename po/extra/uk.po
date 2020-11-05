@@ -2,134 +2,130 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2016-08-10 18:24+0000\n"
-"Last-Translator: Roman Sytnyk <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"PO-Revision-Date: 2020-10-25 03:15+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/"
+"screenshot-tool/extra/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/io.elementary.screenshot-tool.desktop.in:4
+#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Знімок екрана"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/io.elementary.screenshot-tool.desktop.in:5
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
-msgstr "Збереження зображень екрану"
+msgstr "Зберігайте зображення екрану"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"Простий інструмент для створення скріншотів. Знімайте весь екран, вибрані "
-"області, поточні вікна, та з допомогою таймера."
+"Простий засіб для створення знімків екрана. Знімайте весь екран, вибрані "
+"області, поточні вікна власноруч та з допомогою таймера."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Виправлено незначні вади зовнішнього вигляду елементів вибору"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:31
-#: data/io.elementary.screenshot-tool.appdata.xml.in:39
-#: data/io.elementary.screenshot-tool.appdata.xml.in:47
-#: data/io.elementary.screenshot-tool.appdata.xml.in:56
-#: data/io.elementary.screenshot-tool.appdata.xml.in:66
-#: data/io.elementary.screenshot-tool.appdata.xml.in:76
-#: data/io.elementary.screenshot-tool.appdata.xml.in:86
-#: data/io.elementary.screenshot-tool.appdata.xml.in:101
-#: data/io.elementary.screenshot-tool.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
+#: data/screenshot.appdata.xml.in:110
 msgid "Translation updates"
-msgstr ""
+msgstr "Оновлено переклади"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr ""
+msgstr "Закривайте програму натиснувши Escape"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Якнайшвидше скасуйте зміну шрифту, щоб уникнути зациклювання в деяких "
+"ситуаціях"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Чітке дотримання встановленої затримки"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Збільшено мінімальний час затримки до 300"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Виправлено поведінку комбінації клавіш Alt+F4"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Параметри вибору області захоплення у вигляді піктограм"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:65
-#: data/io.elementary.screenshot-tool.appdata.xml.in:75
-#: data/io.elementary.screenshot-tool.appdata.xml.in:85
-#: data/io.elementary.screenshot-tool.appdata.xml.in:93
-#: data/io.elementary.screenshot-tool.appdata.xml.in:102
-#: data/io.elementary.screenshot-tool.appdata.xml.in:111
-#: data/io.elementary.screenshot-tool.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
+#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr ""
+msgstr "Незначні вади усунено"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Виправлено поведінку клавіші ESC"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Додано коефіцієнт масштабування до назви файлу"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Нова тека зберігання знімків екрана"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Запам'ятовування положення головного вікна до наступного запуску"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Додано звук затвора, коли зроблено знімок екрана"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr ""
+msgstr "Виправлено появу зайвої чорної зони на знімках екранів з HiDPI"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:152
 msgid "elementary LLC."
-msgstr ""
+msgstr "elementary LLC."
 
-#: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "io.elementary.screenshot-tool"
-msgstr ""
+#: data/screenshot.desktop.in:7
+msgid "io.elementary.screenshot"
+msgstr "io.elementary.screenshot"
 
-#: data/io.elementary.screenshot-tool.desktop.in:10
+#: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Screenshot;"
+msgstr "Snapshot;Screenshot;Скріншот;Знімок;Екран;"
 
-#: data/io.elementary.screenshot-tool.desktop.in:14
+#: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Знімок на весь екран"
+msgstr "Знімок всього екрана"
 
-#: data/io.elementary.screenshot-tool.desktop.in:18
+#: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Знімок поточного вікна"
 
-#: data/io.elementary.screenshot-tool.desktop.in:22
+#: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Знімок обраної області"
+msgstr "Знімок вибраної області"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Про Screenshot"

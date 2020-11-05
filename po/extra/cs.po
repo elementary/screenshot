@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
 "PO-Revision-Date: 2020-06-29 17:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -20,17 +20,15 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/io.elementary.screenshot-tool.desktop.in:4
+#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Snímek obrazovky"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/io.elementary.screenshot-tool.desktop.in:5
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Ukládejte snímky obrazovky"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -38,27 +36,23 @@ msgstr ""
 "Jednoduchý nástroj pro snímání obrazovky. Zachytí snímek celé plochy, snímek "
 "vybrané oblasti, aktuálního okna i časované snímky."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
 msgstr "Oprava drobných vizuálních problémů s položkami výběru"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:31
-#: data/io.elementary.screenshot-tool.appdata.xml.in:39
-#: data/io.elementary.screenshot-tool.appdata.xml.in:47
-#: data/io.elementary.screenshot-tool.appdata.xml.in:56
-#: data/io.elementary.screenshot-tool.appdata.xml.in:66
-#: data/io.elementary.screenshot-tool.appdata.xml.in:76
-#: data/io.elementary.screenshot-tool.appdata.xml.in:86
-#: data/io.elementary.screenshot-tool.appdata.xml.in:101
-#: data/io.elementary.screenshot-tool.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
+#: data/screenshot.appdata.xml.in:110
 msgid "Translation updates"
 msgstr "Aktualizace překladů"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
 msgstr "Zavřít při stisku klávesy Esc"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -66,77 +60,76 @@ msgstr ""
 "Vrátit zpět z redigovaného písma co možná nejdříve aby se zabránilo "
 "zatuhnutí v některých situacích"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
 msgstr "Vždy respektovat nastavení prodlevy"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
 msgstr "Zvednut minimální časový limit na 300"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
 msgstr "Oprava chování klávesové zkratky Alt+F4"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
 msgstr "Ikony nyní představují volby oblasti k zachycení"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:65
-#: data/io.elementary.screenshot-tool.appdata.xml.in:75
-#: data/io.elementary.screenshot-tool.appdata.xml.in:85
-#: data/io.elementary.screenshot-tool.appdata.xml.in:93
-#: data/io.elementary.screenshot-tool.appdata.xml.in:102
-#: data/io.elementary.screenshot-tool.appdata.xml.in:111
-#: data/io.elementary.screenshot-tool.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
+#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:118
 msgid "Minor bug fixes"
 msgstr "Opravy menších chyb"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
 msgstr "Oprava chování klávesy Esc"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
 msgstr "Přidávání měřítka zobrazení k názvu souboru"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
 msgstr "Nová výchozí složka pro ukládání snímků obrazovky"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
 msgstr "Zapamatování pozice hlavního okna pro znovu se opakující okno"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Při pořizování snímku obrazovky přehrát zvuk závěrky"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Oprava přebytečné černé oblasti na HiDPI snímcích"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:152
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "io.elementary.screenshot-tool"
+#: data/screenshot.desktop.in:7
+#, fuzzy
+#| msgid "io.elementary.screenshot-tool"
+msgid "io.elementary.screenshot"
 msgstr "io.elementary.screenshot-tool"
 
-#: data/io.elementary.screenshot-tool.desktop.in:10
+#: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Momentka;Snímek obrazovky;Snapshot;Screenshot;"
 
-#: data/io.elementary.screenshot-tool.desktop.in:14
+#: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Snímek celé obrazovky"
 
-#: data/io.elementary.screenshot-tool.desktop.in:18
+#: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Snímek aktuálního okna"
 
-#: data/io.elementary.screenshot-tool.desktop.in:22
+#: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Snímek vybrané oblasti"
 

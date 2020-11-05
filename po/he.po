@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:31+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
 "PO-Revision-Date: 2020-07-23 22:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -55,53 +55,53 @@ msgstr "שמירת צילום המסך ללוח הגזירים"
 msgid "Screenshot taken"
 msgstr "המסך צולם"
 
-#: src/ScreenshotWindow.vala:80
+#: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "לכידה של כל המסך"
 
-#: src/ScreenshotWindow.vala:84
+#: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
 msgstr "לכידת החלון הנוכחי"
 
-#: src/ScreenshotWindow.vala:88
+#: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
 msgstr "בחירת אזור ללכידה"
 
-#: src/ScreenshotWindow.vala:98
+#: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
 msgstr "לכידת הסמן:"
 
-#: src/ScreenshotWindow.vala:104
+#: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
 msgstr "לסגור לאחר השמירה:"
 
-#: src/ScreenshotWindow.vala:110
+#: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
 msgstr "הסתרת טקסט:"
 
-#: src/ScreenshotWindow.vala:121
+#: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
 msgstr "השהיה בשניות:"
 
-#: src/ScreenshotWindow.vala:126
+#: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
 msgstr "צילום המסך"
 
-#: src/ScreenshotWindow.vala:132
+#: src/ScreenshotWindow.vala:126
 msgid "Close"
 msgstr "סגירה"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:297 src/Widgets/SaveDialog.vala:86
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
 #, c-format
 msgid "Screenshot from %s"
 msgstr "צילום מסך מ־%s"
 
-#: src/ScreenshotWindow.vala:342
+#: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
 msgstr "לא ניתן לצלם את המסך"
 
-#: src/ScreenshotWindow.vala:343
+#: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
 msgstr "התמונה לא נשמרה"
 
@@ -109,35 +109,35 @@ msgstr "התמונה לא נשמרה"
 msgid "Screenshot"
 msgstr "צילום מסך"
 
-#: src/Widgets/SaveDialog.vala:76
+#: src/Widgets/SaveDialog.vala:87
 msgid "Save Image as…"
 msgstr "שמירת תמונה בשם…"
 
-#: src/Widgets/SaveDialog.vala:80
+#: src/Widgets/SaveDialog.vala:91
 msgid "Name:"
 msgstr "שם:"
 
-#: src/Widgets/SaveDialog.vala:97
+#: src/Widgets/SaveDialog.vala:108
 msgid "Format:"
 msgstr "תבנית:"
 
-#: src/Widgets/SaveDialog.vala:121
+#: src/Widgets/SaveDialog.vala:132
 msgid "Folder:"
 msgstr "תיקייה:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:135
 msgid "Select Screenshots Folder…"
 msgstr "בחירת תיקייה לצילומי המסך…"
 
-#: src/Widgets/SaveDialog.vala:144
+#: src/Widgets/SaveDialog.vala:155
 msgid "Save"
 msgstr "שמירה"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:158
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Widgets/SaveDialog.vala:148
+#: src/Widgets/SaveDialog.vala:159
 msgid "Copy to Clipboard"
 msgstr "העתקה ללוח הגזירים"
 

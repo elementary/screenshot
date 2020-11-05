@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-29 07:03+0000\n"
-"PO-Revision-Date: 2020-07-02 03:12+0000\n"
+"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"PO-Revision-Date: 2020-10-25 03:15+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot-tool/"
 "extra/es/>\n"
@@ -20,17 +20,15 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:8
-#: data/io.elementary.screenshot-tool.desktop.in:4
+#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Captura de pantalla"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:9
-#: data/io.elementary.screenshot-tool.desktop.in:5
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
-msgstr "Guardar imágenes de la pantalla"
+msgstr "Guarde imágenes de la pantalla"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:11
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -39,27 +37,23 @@ msgstr ""
 "la pantalla completa, un área concreta o la ventana activa y realizar "
 "capturas tras un tiempo."
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:30
 msgid "Fix minor visual issues with selection items"
 msgstr "Corrección de problemas visuales menores con elementos de selección"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:31
-#: data/io.elementary.screenshot-tool.appdata.xml.in:39
-#: data/io.elementary.screenshot-tool.appdata.xml.in:47
-#: data/io.elementary.screenshot-tool.appdata.xml.in:56
-#: data/io.elementary.screenshot-tool.appdata.xml.in:66
-#: data/io.elementary.screenshot-tool.appdata.xml.in:76
-#: data/io.elementary.screenshot-tool.appdata.xml.in:86
-#: data/io.elementary.screenshot-tool.appdata.xml.in:101
-#: data/io.elementary.screenshot-tool.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
+#: data/screenshot.appdata.xml.in:110
 msgid "Translation updates"
 msgstr "Actualización de traducciones"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
 msgstr "Se cierra al presionar la tecla Escape"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:46
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -67,80 +61,77 @@ msgstr ""
 "Se revierte del tipo de letra censurado con la mayor prontitud posible para "
 "evitar que se quede activado en determinadas situaciones"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
-msgstr "Respetar siempre la configuración de retraso"
+msgstr "Se respeta siempre la configuración de demora"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:55
 msgid "Increase minimum timeout to 300"
-msgstr "Aumentar el tiempo de espera mínimo a 300"
+msgstr "Se aumentó el tiempo de espera mínimo a 300"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:63
 msgid "Fix Alt+F4 key behavior"
 msgstr "Se corrige el comportamiento de la tecla Alt+F4"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:64
 msgid "Icons now represent the capture area options"
 msgstr "Los iconos ahora representan las opciones del área de captura"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:65
-#: data/io.elementary.screenshot-tool.appdata.xml.in:75
-#: data/io.elementary.screenshot-tool.appdata.xml.in:85
-#: data/io.elementary.screenshot-tool.appdata.xml.in:93
-#: data/io.elementary.screenshot-tool.appdata.xml.in:102
-#: data/io.elementary.screenshot-tool.appdata.xml.in:111
-#: data/io.elementary.screenshot-tool.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
+#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:118
 msgid "Minor bug fixes"
-msgstr "Reparación de errores menores"
+msgstr "Arreglos de defectos menores"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix ESC key behavior"
-msgstr "Corregir comportamiento de la tecla ESC"
+msgstr "Corrección del comportamiento de la tecla Esc"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:74
 msgid "Append scaling factor to filename"
-msgstr "Agregar factor de escala al nombre de archivo"
+msgstr "Se añade el factor de escala al nombre de archivo"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:83
 msgid "New default folder to save screenshots"
 msgstr "Nueva carpeta predeterminada para guardar capturas de pantalla"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
 msgstr ""
 "Se recuerda la posición de la ventana principal para cuando reaparezca la "
 "ventana"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Se reproduce un sonido de obturador al hacer una captura de pantalla"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""
 "Se soluciona un área negra adicional en capturas de pantalla hechas en HiDPI"
 
-#: data/io.elementary.screenshot-tool.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:152
 msgid "elementary LLC."
 msgstr "elementary LLC."
 
-#: data/io.elementary.screenshot-tool.desktop.in:7
-msgid "io.elementary.screenshot-tool"
-msgstr "io.elementary.screenshot-tool"
+#: data/screenshot.desktop.in:7
+msgid "io.elementary.screenshot"
+msgstr "io.elementary.screenshot"
 
-#: data/io.elementary.screenshot-tool.desktop.in:10
+#: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Captura;Imagen;Pantallazo;"
 
-#: data/io.elementary.screenshot-tool.desktop.in:14
+#: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
 msgstr "Captura de pantalla completa"
 
-#: data/io.elementary.screenshot-tool.desktop.in:18
+#: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
 msgstr "Captura de la ventana actual"
 
-#: data/io.elementary.screenshot-tool.desktop.in:22
+#: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura de un área seleccionada"
 

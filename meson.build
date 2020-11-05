@@ -1,5 +1,5 @@
 project(
-    'io.elementary.screenshot-tool', 'vala', 'c',
+    'io.elementary.screenshot', 'vala', 'c',
     meson_version : '>= 0.46',
     version: '1.7.1'
 )
@@ -7,11 +7,15 @@ project(
 gnome = import('gnome')
 i18n = import('i18n')
 
-add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.screenshot-tool"', language:'c')
+add_global_arguments(
+    '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()),
+    '-DHANDY_USE_UNSTABLE_API',
+    language:'c'
+)
 
 icon_res = gnome.compile_resources(
     'screenshot-icon-resources',
-    'data/' + meson.project_name() + '.gresource.xml',
+    join_paths('data', 'gresource.xml'),
     source_dir: 'data'
 )
 
@@ -31,6 +35,7 @@ executable(
         dependency('gtk+-3.0'),
         dependency('granite', version: '>=5.4.0'),
         dependency('libcanberra'),
+        dependency('libhandy-1', version: '>=0.83.0'),
         meson.get_compiler('vala').find_library('posix'),
     ],
     install : true
