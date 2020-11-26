@@ -1,5 +1,5 @@
 # Screenshot
-[![Translation status](https://l10n.elementary.io/widgets/screenshot-tool/-/svg-badge.svg)](https://l10n.elementary.io/projects/screenshot-tool/?utm_source=widget)
+[![Translation status](https://l10n.elementary.io/widgets/screenshot/-/svg-badge.svg)](https://l10n.elementary.io/engage/screenshot/?utm_source=widget)
 
 ![Screenshot](data/screenshot.png?raw=true)
 
