@@ -18,5 +18,5 @@ Name=Capture the Current Window
 Exec=io.elementary.screenshot --window
 
 [Desktop Action AreaShot]
-Name=Select Area to Capture
+Name=Capture a Selected Area
 Exec=io.elementary.screenshot --area
