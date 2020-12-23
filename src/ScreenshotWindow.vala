@@ -117,7 +117,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
 
-        var take_btn = new Gtk.Button.with_label (_("Capture Screenshot"));
+        var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
         take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         take_btn.can_default = true;
 
