@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-02-17 01:18+0000\n"
 "PO-Revision-Date: 2017-07-31 10:43+0000\n"
 "Last-Translator: mohamad12121 <mohamadij2@gmail.com>\n"
 "Language-Team: Persian <https://weblate.elementary.io/projects/screenshot-"
@@ -93,7 +93,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
@@ -106,41 +106,41 @@ msgstr "نمی توان اسکرینb'‌'شات گرفت"
 msgid "Image not saved"
 msgstr "تصویر ذخیره نشد"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "اسکرین شات"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "ذخیره تصویر به عنوان …"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "نام:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "ذخیره"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr ""
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "ذخیره"
 
 #~ msgid "Capture area:"
 #~ msgstr "ناحیه عکس گرفتن:"
