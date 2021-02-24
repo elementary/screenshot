@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:18+0000\n"
-"PO-Revision-Date: 2020-10-27 21:15+0000\n"
+"PO-Revision-Date: 2021-02-25 00:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -132,7 +132,7 @@ msgstr "Ordner:"
 
 #: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr "Bildschirmfotoordner auswählen …"
+msgstr "Bildschirmfotoordner wählen …"
 
 #: src/Widgets/SaveDialog.vala:154
 msgid "Copy to Clipboard"
