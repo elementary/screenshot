@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:18+0000\n"
-"PO-Revision-Date: 2021-03-02 22:24+0000\n"
+"PO-Revision-Date: 2021-03-03 12:09+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ru/>\n"
@@ -43,7 +43,7 @@ msgstr "Сделать снимок после указанной задержк
 
 #: src/Application.vala:37
 msgid "Seconds"
-msgstr "секунд"
+msgstr "Секунд"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
