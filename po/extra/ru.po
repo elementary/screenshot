@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:18+0000\n"
-"PO-Revision-Date: 2021-03-03 12:09+0000\n"
+"PO-Revision-Date: 2021-03-03 15:16+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/extra/"
 "ru/>\n"
@@ -58,6 +58,8 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Скорее отмените изменение шрифта, чтобы избежать зацикливания в некоторых "
+"ситуациях"
 
 #: data/screenshot.appdata.xml.in:54
 msgid "Always respect delay setting"
@@ -96,11 +98,11 @@ msgstr "Новая папка по умолчанию для хранения с
 
 #: data/screenshot.appdata.xml.in:84
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Запоминание положения главного окна к следующему запуску"
 
 #: data/screenshot.appdata.xml.in:100
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Добавлен звук затвора, когда сделан снимок экрана"
 
 #: data/screenshot.appdata.xml.in:109
 msgid "Fix extra black area on HiDPI screenshots"
@@ -112,7 +114,7 @@ msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
-msgstr ""
+msgstr "io.elementary.screenshot"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
