@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:18+0000\n"
-"PO-Revision-Date: 2020-01-25 14:08+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"PO-Revision-Date: 2021-03-13 09:04+0000\n"
+"Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
-"screenshot-tool/extra/pt_BR/>\n"
+"screenshot/extra/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
@@ -50,7 +50,7 @@ msgstr "Atualizações de tradução"
 
 #: data/screenshot.appdata.xml.in:38
 msgid "Close when pressing the Escape key"
-msgstr "Feche ao pressionar a tecla Escape"
+msgstr "Fechar ao pressionar a tecla Escape"
 
 #: data/screenshot.appdata.xml.in:46
 msgid ""
@@ -113,7 +113,7 @@ msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
-msgstr ""
+msgstr "io.elementary.screenshot"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
