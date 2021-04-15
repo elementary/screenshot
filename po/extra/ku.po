@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:18+0000\n"
+"POT-Creation-Date: 2021-04-15 00:20+0000\n"
 "PO-Revision-Date: 2017-02-10 20:40+0000\n"
 "Last-Translator: Rokar ✌ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""
 
 #: data/screenshot.appdata.xml.in:152
-msgid "elementary LLC."
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/screenshot.desktop.in:7

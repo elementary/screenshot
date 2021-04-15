@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:18+0000\n"
+"POT-Creation-Date: 2021-04-15 00:20+0000\n"
 "PO-Revision-Date: 2017-03-31 17:48+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -105,7 +105,7 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Must ala HiDPI ekraanipiltidel"
 
 #: data/screenshot.appdata.xml.in:152
-msgid "elementary LLC."
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/screenshot.desktop.in:7

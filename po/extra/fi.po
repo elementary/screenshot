@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:18+0000\n"
+"POT-Creation-Date: 2021-04-15 00:20+0000\n"
 "PO-Revision-Date: 2018-07-04 18:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/screenshot-"
@@ -107,7 +107,9 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Korjaa ylimääräinen musta alue HiDPI-kuvakaappauksista"
 
 #: data/screenshot.appdata.xml.in:152
-msgid "elementary LLC."
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7
