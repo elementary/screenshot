@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 00:20+0000\n"
-"PO-Revision-Date: 2020-12-14 19:16+0000\n"
+"PO-Revision-Date: 2021-04-15 08:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot/extra/"
 "he/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
@@ -101,10 +101,8 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr "תיקון אזור שחור נוסף בצילומי HiDPI"
 
 #: data/screenshot.appdata.xml.in:152
-#, fuzzy
-#| msgid "elementary LLC."
 msgid "elementary, Inc."
-msgstr "elementary LLC.‎"
+msgstr "elementary בע״מ."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
