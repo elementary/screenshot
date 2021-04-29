@@ -1,6 +1,6 @@
 app-id: io.elementary.screenshot
 runtime: io.elementary.Platform
-runtime-version: 'daily
+runtime-version: 'daily'
 sdk: io.elementary.Sdk
 command: io.elementary.screenshot
 finish-args:
