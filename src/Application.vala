@@ -58,6 +58,11 @@ public class Screenshot.Application : Gtk.Application {
     }
 
     construct {
+        Intl.setlocale (LocaleCategory.ALL, "");
+        GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        GLib.Intl.textdomain (GETTEXT_PACKAGE);
+
         add_main_option_entries (OPTION_ENTRIES);
     }
 
