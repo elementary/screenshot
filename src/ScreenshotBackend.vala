@@ -144,8 +144,6 @@ namespace Screenshot {
                 return null;
             }
 
-            play_shutter_sound ("screen-capture", _("Screenshot taken"));
-
             var file = File.new_for_path (filename_used);
             var stream = yield file.read_async ();
             var pixbuf = yield new Gdk.Pixbuf.from_stream_async (stream);
@@ -153,20 +151,6 @@ namespace Screenshot {
             yield file.delete_async ();
 
             return pixbuf;
-        }
-
-        private void play_shutter_sound (string id, string desc) {
-            Canberra.Context context;
-            Canberra.Proplist props;
-
-            Canberra.Context.create (out context);
-            Canberra.Proplist.create (out props);
-
-            props.sets (Canberra.PROP_EVENT_ID, id);
-            props.sets (Canberra.PROP_EVENT_DESCRIPTION, desc);
-            props.sets (Canberra.PROP_CANBERRA_CACHE_CONTROL, "permanent");
-
-            context.play_full (0, props, null);
         }
 
         private string get_tmp_filename () {
