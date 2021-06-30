@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-08-29 21:13+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -50,10 +50,6 @@ msgstr ""
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Copiar la captura d’ecran al quichapapièrs"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Captura d’ecran efectuada"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -140,3 +136,6 @@ msgstr "Anullar"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Enregistrar"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Captura d’ecran efectuada"

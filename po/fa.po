@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2017-07-31 10:43+0000\n"
 "Last-Translator: mohamad12121 <mohamadij2@gmail.com>\n"
 "Language-Team: Persian <https://weblate.elementary.io/projects/screenshot-"
@@ -51,10 +51,6 @@ msgstr ""
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr ""
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "اسکرینb'‌'شات گرفته شد"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -141,6 +137,9 @@ msgstr "انصراف"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "ذخیره"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "اسکرینb'‌'شات گرفته شد"
 
 #~ msgid "Capture area:"
 #~ msgstr "ناحیه عکس گرفتن:"

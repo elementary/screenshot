@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-10-23 09:01+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -55,10 +55,6 @@ msgstr "Occulta il testo di sistema"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Salva la schermata negli appunti"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Schermata catturata"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -145,6 +141,9 @@ msgstr "Annulla"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Salva"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Schermata catturata"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Non è stata trovata nessuna finestra attiva"

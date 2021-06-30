@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-07-09 21:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -50,10 +50,6 @@ msgstr "システムテキストを隠します"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "スクリーンショットをクリップボードに保存します"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "スクリーンショットを撮りました"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -140,6 +136,9 @@ msgstr "キャンセル"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "保存"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "スクリーンショットを撮りました"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "アクティブなウィンドウが見つかりませんでした"

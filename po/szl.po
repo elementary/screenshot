@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-02-23 13:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -49,10 +49,6 @@ msgstr "Redaguj tekst systymowy"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Spamiyntej przechyt ekranu do skrytki"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Przechyt ekranu bōł zrobiōny"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -141,6 +137,9 @@ msgstr "Pociep"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Spamiyntej"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Przechyt ekranu bōł zrobiōny"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Niy szło znojś aktywnego ôkna"

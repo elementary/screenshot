@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2018-10-21 09:35+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/screenshot-"
@@ -55,10 +55,6 @@ msgstr "Redigera bort systemtext"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Spara skärmdump till urklipp"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Skärmdump tagen"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -147,6 +143,9 @@ msgstr "Avbryt"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Spara"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Skärmdump tagen"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Kunde inte hitta aktuellt fönster"

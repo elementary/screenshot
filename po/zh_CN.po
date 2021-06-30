@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-10-25 03:15+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -55,10 +55,6 @@ msgstr "编辑系统文本"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "保存至剪贴板"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "截图完毕"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -145,6 +141,9 @@ msgstr "取消"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "保存"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "截图完毕"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "找不到活动窗口"

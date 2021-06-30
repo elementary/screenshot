@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2018-11-04 11:21+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/screenshot-"
@@ -51,10 +51,6 @@ msgstr "Sakrij sistemski tekst"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "Sačuvaj snimku u međuspremnik"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Ekran snimljen"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -143,6 +139,9 @@ msgstr "Otkaži"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Sačuvaj"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Ekran snimljen"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nije bilo moguće pronaći aktivan prozor"

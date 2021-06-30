@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-08-16 05:13+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -50,10 +50,6 @@ msgstr "擬定系統文字"
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
 msgstr "儲存至剪貼簿"
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "已擷取畫面快照"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -140,6 +136,9 @@ msgstr "取消"
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "儲存"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "已擷取畫面快照"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "找不到使用中的活動視窗"
