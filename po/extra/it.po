@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2020-10-23 18:48+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -20,15 +20,15 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Schermata"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
+#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Salva immagini dello schermo"
 
-#: data/screenshot.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:12
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -37,24 +37,24 @@ msgstr ""
 "schermo, di un'area selezionata o della finestra corrente e anche scatti "
 "cronometrati."
 
-#: data/screenshot.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:31
 msgid "Fix minor visual issues with selection items"
 msgstr ""
 "Corregge problemi minori di visualizzazione con gli elementi della selezione"
 
-#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
-#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
-#: data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:40
+#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:57
+#: data/screenshot.appdata.xml.in:67 data/screenshot.appdata.xml.in:77
+#: data/screenshot.appdata.xml.in:87 data/screenshot.appdata.xml.in:102
+#: data/screenshot.appdata.xml.in:111
 msgid "Translation updates"
 msgstr "Aggiornamento delle traduzioni"
 
-#: data/screenshot.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:39
 msgid "Close when pressing the Escape key"
 msgstr "Chiudi quando viene premuto il tasto Esc"
 
-#: data/screenshot.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:47
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -62,58 +62,58 @@ msgstr ""
 "Ripristina il carattere modificato il prima possibile per evitare di "
 "rimanere bloccato in alcune situazioni"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:55
 msgid "Always respect delay setting"
 msgstr "Rispetta sempre le impostazioni di ritardo"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:56
 msgid "Increase minimum timeout to 300"
 msgstr "Aumenta il contro alla rovescia minimo a 300 ms"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:64
 msgid "Fix Alt+F4 key behavior"
 msgstr "Corregge il comportamento della combinazione Alt + F4"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:65
 msgid "Icons now represent the capture area options"
 msgstr "Le icone ora rappresentano le opzioni dell'area di cattura"
 
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
-#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
-#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:94
+#: data/screenshot.appdata.xml.in:103 data/screenshot.appdata.xml.in:112
+#: data/screenshot.appdata.xml.in:119
 msgid "Minor bug fixes"
 msgstr "Correzione di bug minori"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:74
 msgid "Fix ESC key behavior"
 msgstr "Corregge il comportamento del tasto Esc"
 
-#: data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:75
 msgid "Append scaling factor to filename"
 msgstr "Aggiunge il fattore di scala al nome del file"
 
-#: data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:84
 msgid "New default folder to save screenshots"
 msgstr "Nuova cartella predefinita per il salvataggio delle schermate"
 
-#: data/screenshot.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:85
 msgid "Remember main window position for reappearing window"
 msgstr ""
 "Ricorda la posizione della finestra principale per quando verrà aperta "
 "nuovamente"
 
-#: data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:101
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Riproduci il suono dell'otturatore quando si cattura una schermata"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:110
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""
 "Correzione di un problema che provocava la comparsa di uno spazio nero "
 "aggiuntivo nelle schermate di schermi HiDPI"
 
-#: data/screenshot.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:153
 #, fuzzy
 #| msgid "elementary LLC."
 msgid "elementary, Inc."

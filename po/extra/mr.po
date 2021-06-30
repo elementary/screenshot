@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 00:20+0000\n"
+"POT-Creation-Date: 2021-06-30 06:48+0000\n"
 "PO-Revision-Date: 2021-06-19 19:55+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "स्क्रीनशॉट"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
+#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "स्क्रीनच्या प्रतिमा सेव्ह करा"
 
-#: data/screenshot.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:12
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -31,76 +31,76 @@ msgstr ""
 "एक साधे स्क्रीनशॉट साधन. संपूर्ण स्क्रीन शॉट्स, निवडलेले क्षेत्राचे शॉट्स, वर्तमान विंडो शॉट "
 "आणि टाइम शॉट कॅप्चर करा."
 
-#: data/screenshot.appdata.xml.in:30
+#: data/screenshot.appdata.xml.in:31
 msgid "Fix minor visual issues with selection items"
 msgstr "निवड आयटमसंबंधीत किरकोळ व्हिज्युअल समस्यांचे निराकरण करा"
 
-#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
-#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
-#: data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:40
+#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:57
+#: data/screenshot.appdata.xml.in:67 data/screenshot.appdata.xml.in:77
+#: data/screenshot.appdata.xml.in:87 data/screenshot.appdata.xml.in:102
+#: data/screenshot.appdata.xml.in:111
 msgid "Translation updates"
 msgstr "भाषांतर अपडेट्स"
 
-#: data/screenshot.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:39
 msgid "Close when pressing the Escape key"
 msgstr "एस्केप की दाबल्यावर बंद करा"
 
-#: data/screenshot.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:47
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr "काही परिस्थितीत अडकणे टाळण्यासाठी शक्य तितक्या लवकर रेडकेटेड फॉन्टवर परत जा"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:55
 msgid "Always respect delay setting"
 msgstr "विलंब सेटिंगचा नेहमी आदर करा"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:56
 msgid "Increase minimum timeout to 300"
 msgstr "किमान कालबाह्यता 300 पर्यंत वाढवा"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:64
 msgid "Fix Alt+F4 key behavior"
 msgstr "Alt + F4 की वर्तन निराकरण करा"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:65
 msgid "Icons now represent the capture area options"
 msgstr "आयकॉन्स आता कॅप्चर क्षेत्र पर्याय प्रस्तुत करतात"
 
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
-#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
-#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:94
+#: data/screenshot.appdata.xml.in:103 data/screenshot.appdata.xml.in:112
+#: data/screenshot.appdata.xml.in:119
 msgid "Minor bug fixes"
 msgstr "किरकोळ दोष निराकरणे"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:74
 msgid "Fix ESC key behavior"
 msgstr "ESC की वर्तन निश्चित करा"
 
-#: data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:75
 msgid "Append scaling factor to filename"
 msgstr "फाईलनाव मध्ये स्केलिंग घटक जोडा"
 
-#: data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:84
 msgid "New default folder to save screenshots"
 msgstr "स्क्रीनशॉट जतन करण्यासाठी नवीन डीफॉल्ट फोल्डर"
 
-#: data/screenshot.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:85
 msgid "Remember main window position for reappearing window"
 msgstr "विंडो पुन्हा दिसण्यासाठी मुख्य विंडो स्थान लक्षात ठेवा"
 
-#: data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:101
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "जेव्हा स्क्रीनशॉट घेतला जातो तेव्हा शटर ध्वनी प्ले करा"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:110
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "हायडीपीआय स्क्रीनशॉटवर अतिरिक्त काळा क्षेत्र निश्चित करा"
 
-#: data/screenshot.appdata.xml.in:152
+#: data/screenshot.appdata.xml.in:153
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
