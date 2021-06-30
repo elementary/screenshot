@@ -11,26 +11,11 @@ finish-args:
   # needed for perfers-color-scheme
   - '--system-talk-name=org.freedesktop.Accounts'
 
-  # Needed for shutter sound
-  - '--socket=pulseaudio'
-
   - '--filesystem=home'
   - '--talk-name=org.gnome.Shell.Screenshot'
 
   - '--metadata=X-DConf=migrate-path=/io/elementary/screenshot/'
 modules:
-  - name: canberra
-    config-opts:
-      - '--enable-gstreamer'
-      - '--enable-pulse'
-      - '--disable-oss'
-      - '--disable-static'
-      - '--with-builtin=dso'
-    sources:
-      - type: git
-        url: http://git.0pointer.net/clone/libcanberra.git
-        disable-shallow-clone: true
-
   - name: screenshot
     buildsystem: meson
     sources:
