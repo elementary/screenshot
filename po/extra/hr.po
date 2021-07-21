@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 06:48+0000\n"
+"POT-Creation-Date: 2021-07-21 02:48+0000\n"
 "PO-Revision-Date: 2017-09-19 20:54+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Croatian <https://weblate.elementary.io/projects/screenshot-"
@@ -33,75 +33,91 @@ msgstr ""
 "područje, trenutni prozor i vremenski zakažite slikanje."
 
 #: data/screenshot.appdata.xml.in:31
-msgid "Fix minor visual issues with selection items"
+msgid "Support the dark style"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:40
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:57
-#: data/screenshot.appdata.xml.in:67 data/screenshot.appdata.xml.in:77
-#: data/screenshot.appdata.xml.in:87 data/screenshot.appdata.xml.in:102
-#: data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:32
+msgid "Drag and Drop the preview image from the save dialog"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:33
+msgid "Drag to move the window from anywhere"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:34
+msgid "Show details for errors if they occur"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
+#: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
+#: data/screenshot.appdata.xml.in:68 data/screenshot.appdata.xml.in:78
+#: data/screenshot.appdata.xml.in:88 data/screenshot.appdata.xml.in:98
+#: data/screenshot.appdata.xml.in:113 data/screenshot.appdata.xml.in:122
 msgid "Translation updates"
 msgstr "Nadopune prijevoda"
 
-#: data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:42
+msgid "Fix minor visual issues with selection items"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:50
 msgid "Close when pressing the Escape key"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:47
+#: data/screenshot.appdata.xml.in:58
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:66
 msgid "Always respect delay setting"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:67
 msgid "Increase minimum timeout to 300"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:75
 msgid "Fix Alt+F4 key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:65
+#: data/screenshot.appdata.xml.in:76
 msgid "Icons now represent the capture area options"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
-#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:94
-#: data/screenshot.appdata.xml.in:103 data/screenshot.appdata.xml.in:112
-#: data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:77 data/screenshot.appdata.xml.in:87
+#: data/screenshot.appdata.xml.in:97 data/screenshot.appdata.xml.in:105
+#: data/screenshot.appdata.xml.in:114 data/screenshot.appdata.xml.in:123
+#: data/screenshot.appdata.xml.in:130
 msgid "Minor bug fixes"
 msgstr "Manji popravci grešaka"
 
-#: data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:85
 msgid "Fix ESC key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:86
 msgid "Append scaling factor to filename"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:95
 msgid "New default folder to save screenshots"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:85
+#: data/screenshot.appdata.xml.in:96
 msgid "Remember main window position for reappearing window"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:101
+#: data/screenshot.appdata.xml.in:112
 msgid "Play shutter sound when a screenshot is taken"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:121
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Popravljeno dodatno crno područje na HiDPI snimkama zaslona"
 
-#: data/screenshot.appdata.xml.in:153
+#: data/screenshot.appdata.xml.in:164
 msgid "elementary, Inc."
 msgstr ""
 
