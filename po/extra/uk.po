@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-06-20 12:37+0000\n"
+"PO-Revision-Date: 2021-07-21 04:23+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
 "extra/uk/>\n"
@@ -34,19 +34,21 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Support the dark style"
-msgstr ""
+msgstr "Підтримка темного стилю"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
+"Перетягування зображення попереднього перегляду з діалогового вікна "
+"збереження"
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Перетягування вікна за будь-яке місце"
 
 #: data/screenshot.appdata.xml.in:34
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "Показ подробиць щодо помилок у разі їх виникнення"
 
 #: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
 #: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
