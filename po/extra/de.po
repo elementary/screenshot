@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2020-10-27 21:15+0000\n"
-"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"PO-Revision-Date: 2021-07-21 21:41+0000\n"
+"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/screenshot/extra/"
 "de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
@@ -39,19 +39,20 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Support the dark style"
-msgstr ""
+msgstr "Unterstützung für Dark Mode"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
+"Vorschaubild aus dem Speicherdialog kann per Drag & Drop verschoben werden"
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Ziehen um das Fenster von überall her zu bewegen"
 
 #: data/screenshot.appdata.xml.in:34
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "Zeige Details für Fehler, wenn diese auftreten"
 
 #: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
 #: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
@@ -126,10 +127,8 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Schwarze Ränder bei HiDPI-Bildschirmfotos beseitigt"
 
 #: data/screenshot.appdata.xml.in:164
-#, fuzzy
-#| msgid "elementary LLC."
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
