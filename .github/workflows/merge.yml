@@ -21,8 +21,8 @@ jobs:
       - name: Build
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
         with:
-          bundle: tasks.flatpak
-          manifest-path: io.elementary.tasks.yml
+          bundle: screenshot.flatpak
+          manifest-path: io.elementary.screenshot.yml
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
