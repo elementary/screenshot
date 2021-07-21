@@ -23,10 +23,10 @@ jobs:
         with:
           bundle: screenshot.flatpak
           manifest-path: io.elementary.screenshot.yml
-          run-tests: true
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
+          branch: daily
 
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
