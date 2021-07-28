@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-04-16 11:03+0000\n"
+"PO-Revision-Date: 2021-07-28 17:24+0000\n"
 "Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/extra/"
 "es/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Support the dark style"
-msgstr ""
+msgstr "Modo oscuro soportado"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Drag and Drop the preview image from the save dialog"
@@ -47,11 +47,11 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Arrastra para mover la ventana desde cualquier lugar"
 
 #: data/screenshot.appdata.xml.in:34
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "Mostrar detalles de errores si ocurren"
 
 #: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
 #: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
