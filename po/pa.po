@@ -3,134 +3,136 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2016-06-01 15:21+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-07-28 06:29+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/pa/>\n"
+"Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: src/Application.vala:21
 msgid "Screenshots"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੈਣ ਲਈ ਇਲਾਕਾ"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "ਸਾਰੀ ਸਕਰੀਨ ਦਾ ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/Application.vala:35
 msgid "Capture active window"
-msgstr ""
+msgstr "ਸਰਗਰਮ ਵਿੰਡੋ ਦਾ ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "ਦੱਸੀ ਗਈ ਦੇਰੀ ਬਾਅਦ ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/Application.vala:37
 msgid "Seconds"
-msgstr ""
+msgstr "ਸਕਿੰਟ"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਵਿੱਚ ਪੁਆਇੰਟਰ ਵੀ ਸ਼ਾਮਲ ਕਰੋ"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਲਿਖਤ ਨੂੰ ਕਾਲਖ ਫੇਰ ਕੇ ਲੁਕਾ ਦਿਓ"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਨੂੰ ਕਲਿਪਬੋਰਡ 'ਤੇ ਸਾਂਭੋ"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "ਸਾਰੀ ਸਕਰੀਨ ਦਾ ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
-msgstr ""
+msgstr "ਚਲੰਤ ਵਿੰਡੋ ਦਾ ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੈਣ ਲਈ ਇਲਾਕਾ ਚੁਣੋ"
 
 #: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
-msgstr ""
+msgstr "ਪੁਆਇੰਟਰ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
-msgstr ""
+msgstr "ਸਾਂਭਣ ਤੋਂ ਬਾਅਦ ਬੰਦ ਕਰੋ:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
-msgstr ""
+msgstr "ਲਿਖਤ ਲੁਕਾਓ:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
-msgstr ""
+msgstr "ਦੇਰੀ ਸਕਿੰਟਾਂ ਵਿੱਚ:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲਓ"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
-msgstr ""
+msgstr "ਬੰਦ ਕਰੋ"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "%s ਨੂੰ ਲਿਆ ਗਿਆ ਸਕਰੀਨਸ਼ਾਟ"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਿਆ"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
-msgstr ""
+msgstr "ਤਸਵੀਰ ਸਾਂਭੀ ਨਹੀਂ ਗਈ"
 
 #: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ"
 
 #: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr ""
+msgstr "ਤਸਵੀਰ ਨੂੰ ਬਤੌਰ ਸਾਂਭੋ…"
 
 #: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
-msgstr ""
+msgstr "ਨਾਂ:"
 
 #: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
-msgstr ""
+msgstr "ਫ਼ਾਰਮੈਟ:"
 
 #: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
-msgstr ""
+msgstr "ਫ਼ੋਲਡਰ:"
 
 #: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਫ਼ੋਲਡਰ ਚੁਣੋ…"
 
 #: src/Widgets/SaveDialog.vala:154
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "ਕਲਿਪਬੋਰਡ 'ਤੇ ਨਕਲ ਕਰੋ"
 
 #: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
-msgstr ""
+msgstr "ਰੱਦ ਕਰੋ"
 
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
-msgstr ""
+msgstr "ਸਾਂਭੋ"
