@@ -8,7 +8,7 @@ Homepage: https://github.com/elementary/screenshot
 
 Package: io.elementary.screenshot
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}
 Breaks: screenshot-tool
 Replaces: screenshot-tool
 Description: Screenshot utility

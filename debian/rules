@@ -6,7 +6,7 @@
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 %:
-	dh $@ --buildsystem=meson
+	dh $@
 
 override_dh_strip:
 	dh_strip --dbgsym-migration='screenshot-tool-dbg (<< 0.1.5)'
