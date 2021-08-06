@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+flatpak remove --system -y io.elementary.screenshot//stable
+
+#DEBHELPER#
+
+exit 0
