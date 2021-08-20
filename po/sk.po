@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
 "PO-Revision-Date: 2021-08-20 12:58+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/sk/>\n"
 "Language: sk\n"
@@ -22,9 +22,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
-#, fuzzy
 msgid "Screenshots"
-msgstr "Snímok obrazovky"
+msgstr "Snímky obrazovky"
 
 #: src/Application.vala:33
 msgid "Capture area"
@@ -40,7 +39,7 @@ msgstr "Zachytiť aktívne okno"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Zachyť snímok obrazovky po specifikovanom omeškaní"
+msgstr "Vytvoriť snímok obrazovky po stanovenom oneskorení"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -48,7 +47,7 @@ msgstr "Sekundy"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "Zahrň myš s snímke obrazovky"
+msgstr "Zahrnúť kurzor do snímky obrazovky"
 
 #: src/Application.vala:39
 msgid "Redact system text"
@@ -56,7 +55,7 @@ msgstr "Revidovať systémový text"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "Uložiť snímok obrazovky do schránky"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -68,13 +67,11 @@ msgstr "Zosnímať aktuálne okno"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr "Vyberte oblasť, ktorú chcete zachytiť"
+msgstr "Vybrať oblasť na zosnímanie"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Zachytiť ukazovateľ myši:"
+msgstr "Zosnímať kurzor:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -82,7 +79,7 @@ msgstr "Zavrieť po uložení:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
-msgstr "Skry text:"
+msgstr "Ukryť text:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
@@ -90,11 +87,11 @@ msgstr "Oneskorenie v sekundách:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr "Urobiť snímok obrazovky"
+msgstr "Zachytiť snímok obrazovky"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
-msgstr ""
+msgstr "Zatvoriť"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
@@ -108,7 +105,7 @@ msgstr "Nepodarilo sa zachytiť snímok obrazovky"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
-msgstr "Obrázok nebol uložený"
+msgstr "Obrázok neuložený"
 
 #: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
@@ -124,7 +121,7 @@ msgstr "Názov:"
 
 #: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
-msgstr "Formát :"
+msgstr "Formát:"
 
 #: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
