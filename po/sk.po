@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-08-20 12:58+0000\n"
+"PO-Revision-Date: 2021-08-20 18:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/sk/>\n"
@@ -129,11 +129,11 @@ msgstr "Priečinok:"
 
 #: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr "Vybrať priečinok pre snímky z obrazovky…"
+msgstr "Vybrať priečinok snímok obrazovky…"
 
 #: src/Widgets/SaveDialog.vala:154
 msgid "Copy to Clipboard"
-msgstr "Kopírovať do schránky"
+msgstr "Skopírovať do schránky"
 
 #: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
