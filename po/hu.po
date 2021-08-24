@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2018-06-05 17:52+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/hu/>\n"
+"PO-Revision-Date: 2021-08-24 04:08+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -33,7 +33,7 @@ msgstr "Aktív ablak mentése"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Képernyőmentés egy meghatározott késleltetés után"
+msgstr "Képernyőkép egy meghatározott késleltetés után"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -61,13 +61,11 @@ msgstr "Az aktuális ablak mentése"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr "Kijelölt terület mentése"
+msgstr "A kijelölt terület mentése"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Mentse az egérmutatót:"
+msgstr "Az egérmutató mentése:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -93,7 +91,7 @@ msgstr "Bezárás"
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Képernyőmentés %s"
+msgstr "Képernyőkép %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
@@ -125,7 +123,7 @@ msgstr "Könyvtár:"
 
 #: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr "Válassza ki a képernyőmentések helyét…"
+msgstr "Válassza ki a képernyőképek helyét…"
 
 #: src/Widgets/SaveDialog.vala:154
 msgid "Copy to Clipboard"
@@ -133,7 +131,7 @@ msgstr "Másolás a vágólapra"
 
 #: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: src/Widgets/SaveDialog.vala:158
 msgid "Save"
