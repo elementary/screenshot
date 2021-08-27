@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-08-24 04:08+0000\n"
+"PO-Revision-Date: 2021-08-27 15:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/hu/>\n"
@@ -95,7 +95,7 @@ msgstr "Képernyőkép %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr "Nem lehetett menteni a képernyőképet"
+msgstr "Nem sikerült menteni a képernyőképet"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
