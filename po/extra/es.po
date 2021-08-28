@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-07-28 17:24+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"PO-Revision-Date: 2021-08-28 23:41+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/extra/"
 "es/>\n"
 "Language: es\n"
@@ -35,23 +35,24 @@ msgid ""
 msgstr ""
 "Una herramienta sencilla para hacer capturas de pantalla. Permite capturar "
 "la pantalla completa, un área concreta o la ventana activa y realizar "
-"capturas tras un tiempo."
+"capturas tras un lapso."
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Support the dark style"
-msgstr "Modo oscuro soportado"
+msgstr "Se admite el estilo oscuro"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
+"Arrastre y coloque la imagen de previsualización desde el diálogo de guardado"
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Drag to move the window from anywhere"
-msgstr "Arrastra para mover la ventana desde cualquier lugar"
+msgstr "Arrastre para mover la ventana desde cualquier lugar"
 
 #: data/screenshot.appdata.xml.in:34
 msgid "Show details for errors if they occur"
-msgstr "Mostrar detalles de errores si ocurren"
+msgstr "Se muestran detalles de los errores si se producen"
 
 #: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
 #: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
@@ -59,7 +60,7 @@ msgstr "Mostrar detalles de errores si ocurren"
 #: data/screenshot.appdata.xml.in:88 data/screenshot.appdata.xml.in:98
 #: data/screenshot.appdata.xml.in:113 data/screenshot.appdata.xml.in:122
 msgid "Translation updates"
-msgstr "Actualización de traducciones"
+msgstr "Traducciones actualizadas"
 
 #: data/screenshot.appdata.xml.in:42
 msgid "Fix minor visual issues with selection items"
