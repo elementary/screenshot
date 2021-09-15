@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 02:48+0000\n"
-"PO-Revision-Date: 2021-06-19 19:55+0000\n"
+"PO-Revision-Date: 2021-09-15 16:45+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot/extra/"
 "mr/>\n"
@@ -33,19 +33,19 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Support the dark style"
-msgstr ""
+msgstr "गडद शैलीला समर्थन द्या"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
+msgstr "सेव्ह संवादातून प्रीव्ह्यू इमेज ड्रॅग आणि ड्रॉप करा"
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "विंडो कोठूनही हलवण्यासाठी ड्रॅग करा"
 
 #: data/screenshot.appdata.xml.in:34
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "त्रुटी आढळल्यास तपशील दाखवा"
 
 #: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
 #: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
