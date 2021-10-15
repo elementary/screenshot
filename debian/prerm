@@ -2,7 +2,7 @@
 
 set -e
 
-flatpak remove --system -y io.elementary.screenshot//stable || true
+flatpak remove --system --noninteractive io.elementary.screenshot//stable || true
 
 #DEBHELPER#
 
