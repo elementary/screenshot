@@ -3,7 +3,7 @@
 set -e
 
 flatpak remote-add --if-not-exists --system appcenter https://flatpak.elementary.io/repo.flatpakrepo
-flatpak install --system --noninteractive io.elementary.screenshot//stable
+flatpak install --system --noninteractive io.elementary.screenshot//stable || true
 
 #DEBHELPER#
 
