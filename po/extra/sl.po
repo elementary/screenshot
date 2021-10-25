@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-21 02:48+0000\n"
+"POT-Creation-Date: 2021-10-25 18:42+0000\n"
 "PO-Revision-Date: 2018-08-22 00:09+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/screenshot-"
@@ -35,92 +35,93 @@ msgid ""
 "current window shots, and timed shots."
 msgstr "Preprosto orodje za zajem zaslona."
 
-#: data/screenshot.appdata.xml.in:31
-msgid "Support the dark style"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:32
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:33
-msgid "Drag to move the window from anywhere"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:34
-msgid "Show details for errors if they occur"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:35 data/screenshot.appdata.xml.in:43
-#: data/screenshot.appdata.xml.in:51 data/screenshot.appdata.xml.in:59
-#: data/screenshot.appdata.xml.in:68 data/screenshot.appdata.xml.in:78
-#: data/screenshot.appdata.xml.in:88 data/screenshot.appdata.xml.in:98
-#: data/screenshot.appdata.xml.in:113 data/screenshot.appdata.xml.in:122
+#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:42
+#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:58
+#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:95
+#: data/screenshot.appdata.xml.in:105 data/screenshot.appdata.xml.in:120
+#: data/screenshot.appdata.xml.in:129
 msgid "Translation updates"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:42
+#: data/screenshot.appdata.xml.in:38
+msgid "Support the dark style"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:39
+msgid "Drag and Drop the preview image from the save dialog"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:40
+msgid "Drag to move the window from anywhere"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:41
+msgid "Show details for errors if they occur"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:49
 msgid "Fix minor visual issues with selection items"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:50
+#: data/screenshot.appdata.xml.in:57
 msgid "Close when pressing the Escape key"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.appdata.xml.in:65
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:66
+#: data/screenshot.appdata.xml.in:73
 msgid "Always respect delay setting"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:67
+#: data/screenshot.appdata.xml.in:74
 msgid "Increase minimum timeout to 300"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:75
+#: data/screenshot.appdata.xml.in:82
 msgid "Fix Alt+F4 key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:76
+#: data/screenshot.appdata.xml.in:83
 msgid "Icons now represent the capture area options"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:77 data/screenshot.appdata.xml.in:87
-#: data/screenshot.appdata.xml.in:97 data/screenshot.appdata.xml.in:105
-#: data/screenshot.appdata.xml.in:114 data/screenshot.appdata.xml.in:123
-#: data/screenshot.appdata.xml.in:130
+#: data/screenshot.appdata.xml.in:84 data/screenshot.appdata.xml.in:94
+#: data/screenshot.appdata.xml.in:104 data/screenshot.appdata.xml.in:112
+#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:130
+#: data/screenshot.appdata.xml.in:137
 msgid "Minor bug fixes"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:85
+#: data/screenshot.appdata.xml.in:92
 msgid "Fix ESC key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:86
+#: data/screenshot.appdata.xml.in:93
 msgid "Append scaling factor to filename"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:95
+#: data/screenshot.appdata.xml.in:102
 msgid "New default folder to save screenshots"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:96
+#: data/screenshot.appdata.xml.in:103
 msgid "Remember main window position for reappearing window"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:112
+#: data/screenshot.appdata.xml.in:119
 msgid "Play shutter sound when a screenshot is taken"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:121
+#: data/screenshot.appdata.xml.in:128
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:164
+#: data/screenshot.appdata.xml.in:171
 #, fuzzy
 #| msgid "elementary LLC."
 msgid "elementary, Inc."
