@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-25 18:42+0000\n"
-"PO-Revision-Date: 2021-07-22 15:48+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"PO-Revision-Date: 2021-11-14 13:37+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot/extra/"
 "nl/>\n"
 "Language: nl\n"
@@ -126,10 +126,8 @@ msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Verhelp extra zwarte randen op schermafdrukken met hoge DPI"
 
 #: data/screenshot.appdata.xml.in:171
-#, fuzzy
-#| msgid "elementary LLC."
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
