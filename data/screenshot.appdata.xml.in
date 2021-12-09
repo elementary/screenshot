@@ -25,7 +25,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="6.0.2" date="2021-12-07" urgency="medium">
+    <release version="6.0.2" date="2021-12-09" urgency="medium">
       <description>
         <ul>
           <li>Update elementary runtime to 6.1</li>
