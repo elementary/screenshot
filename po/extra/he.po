@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:22+0000\n"
-"PO-Revision-Date: 2021-07-21 10:55+0000\n"
+"PO-Revision-Date: 2021-12-10 01:02+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot/extra/"
 "he/>\n"
@@ -33,11 +33,11 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:31
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "סביבת הריצה של elementary עודכנה ל־6.1"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Updated translations"
-msgstr ""
+msgstr "עודכנו תרגומים"
 
 #: data/screenshot.appdata.xml.in:39 data/screenshot.appdata.xml.in:50
 #: data/screenshot.appdata.xml.in:58 data/screenshot.appdata.xml.in:66
