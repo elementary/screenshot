@@ -27,6 +27,7 @@
   <releases>
     <release version="6.0.2" date="2021-12-13" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Update elementary runtime to 6.1</li>
           <li>Updated translations</li>
@@ -35,6 +36,7 @@
     </release>
     <release version="6.0.1" date="2021-10-22" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Translation updates</li>
         </ul>
@@ -42,9 +44,13 @@
     </release>
     <release version="6.0.0" date="2021-07-19" urgency="medium">
       <description>
+        <p>New features:</p>
         <ul>
           <li>Support the dark style</li>
           <li>Drag and Drop the preview image from the save dialog</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
           <li>Drag to move the window from anywhere</li>
           <li>Show details for errors if they occur</li>
           <li>Translation updates</li>
@@ -53,6 +59,7 @@
     </release>
     <release version="1.7.1" date="2020-01-21" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Fix minor visual issues with selection items</li>
           <li>Translation updates</li>
@@ -61,6 +68,7 @@
     </release>
     <release version="1.7.0" date="2019-11-15" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Close when pressing the Escape key</li>
           <li>Translation updates</li>
