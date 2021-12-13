@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-09-02 23:18+0000\n"
+"PO-Revision-Date: 2021-12-14 05:19+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
 "extra/hu/>\n"
@@ -34,10 +34,8 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
 #: data/screenshot.appdata.xml.in:71
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "Kisebb hibajavítások"
+msgstr "Kisebb frissítések:"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Update elementary runtime to 6.1"
@@ -45,7 +43,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Updated translations"
-msgstr ""
+msgstr "Frissített fordítások"
 
 #: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
 #: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
@@ -58,7 +56,7 @@ msgstr "Fordítási frissítések"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
-msgstr ""
+msgstr "Új funkciók:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
@@ -135,7 +133,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Javítsa a fekete területeket a HiDPI képernyőképeken"
+msgstr "A fekete területek javítása a HiDPI képernyőképeken"
 
 #: data/screenshot.appdata.xml.in:187
 msgid "elementary, Inc."
