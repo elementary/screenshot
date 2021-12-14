@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-12-09 07:39+0000\n"
+"PO-Revision-Date: 2021-12-14 08:26+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
 "extra/ja/>\n"
@@ -34,10 +34,8 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
 #: data/screenshot.appdata.xml.in:71
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "軽微なバグの修正"
+msgstr "軽微な更新:"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Update elementary runtime to 6.1"
@@ -58,7 +56,7 @@ msgstr "翻訳の更新"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
-msgstr ""
+msgstr "新機能:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
