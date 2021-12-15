@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-12-10 10:45+0000\n"
+"PO-Revision-Date: 2021-12-15 17:24+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot/extra/"
 "ca/>\n"
@@ -39,10 +39,8 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
 #: data/screenshot.appdata.xml.in:71
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "Correccions d'errors menors"
+msgstr "Actualitzacions menors:"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Update elementary runtime to 6.1"
@@ -63,7 +61,7 @@ msgstr "Actualitzacions de la traducció"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
-msgstr ""
+msgstr "Característiques noves:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
