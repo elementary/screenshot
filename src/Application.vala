@@ -67,8 +67,7 @@ public class Screenshot.Application : Gtk.Application {
     }
 
     protected override void activate () {
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/io/elementary/screenshot");
+        Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/screenshot");
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
@@ -88,7 +87,7 @@ public class Screenshot.Application : Gtk.Application {
             if (window == null) {
                 window = new ScreenshotWindow ();
                 window.set_application (this);
-                window.show_all ();
+                window.present ();
             }
 
             window.present ();
