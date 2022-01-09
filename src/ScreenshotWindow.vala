@@ -30,8 +30,8 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     private int window_x;
     private int window_y;
     private ScreenshotBackend backend;
+    private Gtk.Image all_image;
     private Gtk.Label pointer_label;
-    private Gtk.ToggleButton all;
     private Gtk.Switch pointer_switch;
 
     public ScreenshotWindow () {
@@ -75,22 +75,38 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
         backend = new ScreenshotBackend ();
 
-        all = new Gtk.ToggleButton () {
-            icon_name = "grab-screen-symbolic",
+        all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic") {
+            pixel_size = 32
+        };
+
+        var all = new Gtk.CheckButton () {
+            active = true,
             tooltip_text = _("Grab the whole screen")
         };
+        all.add_css_class ("image-button");
+        all_image.set_parent (all);
 
-        var curr_window = new Gtk.ToggleButton () {
+        var curr_image = new Gtk.Image.from_icon_name ("grab-window-symbolic") {
+            pixel_size = 32
+        };
+
+        var curr_window = new Gtk.CheckButton () {
             group = all,
-            icon_name = "grab-window-symbolic",
             tooltip_text = _("Grab the current window")
         };
+        curr_window.add_css_class ("image-button");
+        curr_image.set_parent (curr_window);
 
-        var selection = new Gtk.ToggleButton () {
+        var selection_image = new Gtk.Image.from_icon_name ("grab-area-symbolic") {
+            pixel_size = 32
+        };
+
+        var selection = new Gtk.CheckButton () {
             group = all,
-            icon_name = "grab-area-symbolic",
             tooltip_text = _("Select area to grab")
         };
+        selection.add_css_class ("image-button");
+        selection_image.set_parent (selection);
 
         pointer_label = new Gtk.Label (_("Grab pointer:"));
         pointer_label.halign = Gtk.Align.END;
@@ -239,9 +255,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
     private void update_icons (bool prefers_dark) {
         if (prefers_dark) {
-            all.icon_name = "grab-screen-symbolic-dark";
+            all_image.icon_name = "grab-screen-symbolic-dark";
         } else {
-            all.icon_name = "grab-screen-symbolic";
+            all_image.icon_name = "grab-screen-symbolic";
         }
     }
 
