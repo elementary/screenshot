@@ -131,8 +131,11 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         var location_label = new Gtk.Label (_("Folder:"));
         location_label.halign = Gtk.Align.END;
 
-        var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
-        location.set_current_folder (folder_dir);
+        var location_dialog = new Gtk.FileChooserDialog (_("Select Screenshots Folder…"), this,
+            Gtk.FileChooserAction.SELECT_FOLDER);
+        location_dialog.set_current_folder (folder_dir);
+
+        var location_button = new Gtk.Button ();
 
         var grid = new Gtk.Grid ();
         grid.margin = 12;
@@ -146,7 +149,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         grid.attach (format_label, 0, 3, 1, 1);
         grid.attach (format_cmb, 1, 3, 1, 1);
         grid.attach (location_label, 0, 4, 1, 1);
-        grid.attach (location, 1, 4, 1, 1);
+        grid.attach (location_button, 1, 4, 1, 1);
 
         var content = this.get_content_area () as Gtk.Box;
         content.add (grid);
@@ -175,8 +178,12 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             settings.set_string ("format", format_cmb.get_active_text ());
         });
 
-        location.selection_changed.connect (() => {
-            SList<string> uris = location.get_uris ();
+        location_button.clicked.connect (() => {
+            location_dialog.run ();
+        });
+
+        location_dialog.selection_changed.connect (() => {
+            SList<string> uris = location_dialog.get_uris ();
             foreach (unowned string uri in uris) {
                 settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
                 folder_dir = settings.get_string ("folder-dir");
