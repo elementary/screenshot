@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-08-20 18:10+0000\n"
+"PO-Revision-Date: 2022-02-28 19:01+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/extra/"
 "sk/>\n"
@@ -39,18 +39,16 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
 #: data/screenshot.appdata.xml.in:71
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "Oprava menších chýb"
+msgstr "Opravy menších chýb:"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "Behové prostredie elementary aktualizované na verziu 6.1"
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
 #: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
@@ -63,7 +61,7 @@ msgstr "Aktualizácia prekladov"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
