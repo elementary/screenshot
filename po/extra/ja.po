@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-12-14 08:26+0000\n"
+"PO-Revision-Date: 2022-04-09 03:26+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
 "extra/ja/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
 #: data/screenshot.appdata.xml.in:71
 msgid "Minor updates:"
-msgstr "軽微な更新:"
+msgstr "そのほかのアップデート:"
 
 #: data/screenshot.appdata.xml.in:32
 msgid "Update elementary runtime to 6.1"
