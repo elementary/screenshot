@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2018-11-04 11:21+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/screenshot-"
@@ -52,10 +52,6 @@ msgstr "Sakrij sistemski tekst"
 msgid "Save screenshot to clipboard"
 msgstr "Sačuvaj snimku u međuspremnik"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Ekran snimljen"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Uslikaj cijeli ekran"
@@ -95,7 +91,7 @@ msgid "Close"
 msgstr "Zatvori"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Snimka ekrana iz %s"
@@ -108,41 +104,44 @@ msgstr "Nije bilo moguće snimiti ekran"
 msgid "Image not saved"
 msgstr "Slika nije sačuvana"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Snimka ekrana"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Sačuvaj sliku kao…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Naziv:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Format:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Fascikla:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Odaberi fasciklu snimki ekrana…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Sačuvaj"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Kopiraj u međuspremnik"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Kopiraj u međuspremnik"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Sačuvaj"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Ekran snimljen"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nije bilo moguće pronaći aktivan prozor"

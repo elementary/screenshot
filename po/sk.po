@@ -8,21 +8,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2016-12-13 09:30+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
-"Language-Team: Slovak <>\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"PO-Revision-Date: 2021-10-29 15:29+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: src/Application.vala:21
-#, fuzzy
 msgid "Screenshots"
-msgstr "Snímok obrazovky"
+msgstr "Snímky obrazovky"
 
 #: src/Application.vala:33
 msgid "Capture area"
@@ -38,7 +39,7 @@ msgstr "Zachytiť aktívne okno"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Zachyť snímok obrazovky po specifikovanom omeškaní"
+msgstr "Vytvoriť snímok obrazovky po stanovenom oneskorení"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -46,7 +47,7 @@ msgstr "Sekundy"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "Zahrň myš s snímke obrazovky"
+msgstr "Zahrnúť kurzor do snímky obrazovky"
 
 #: src/Application.vala:39
 msgid "Redact system text"
@@ -54,11 +55,7 @@ msgstr "Revidovať systémový text"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
-
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr ""
+msgstr "Uložiť snímok obrazovky do schránky"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -70,13 +67,11 @@ msgstr "Zosnímať aktuálne okno"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr "Vyberte oblasť, ktorú chcete zachytiť"
+msgstr "Vybrať oblasť na zosnímanie"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Zachytiť ukazovateľ myši:"
+msgstr "Zosnímať kurzor:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -84,7 +79,7 @@ msgstr "Zavrieť po uložení:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
-msgstr "Skry text:"
+msgstr "Skryť text:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
@@ -92,14 +87,14 @@ msgstr "Oneskorenie v sekundách:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr "Urobiť snímok obrazovky"
+msgstr "Vytvoriť snímok"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
-msgstr ""
+msgstr "Zatvoriť"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Snímok obrazovky z %s"
@@ -110,43 +105,43 @@ msgstr "Nepodarilo sa zachytiť snímok obrazovky"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
-msgstr "Obrázok nebol uložený"
+msgstr "Obrázok neuložený"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Snímok obrazovky"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
-msgstr "Uložiť obrázok ako..."
+msgstr "Uložiť obrázok ako…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Názov:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
-msgstr "Formát :"
+msgstr "Formát:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Priečinok:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr "Vybrať priečinok pre snímky z obrazovky..."
+msgstr "Vybrať priečinok snímok obrazovky…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Uložiť"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Skopírovať do schránky"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Kopírovať do schránky"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Uložiť"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nebolo nájdené žiadne aktívne okno"

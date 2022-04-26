@@ -2,6 +2,7 @@
 <!-- Copyright 2015-2017 elementary, LLC <contact@elementary.io> -->
 <component type="desktop">
   <id>io.elementary.screenshot</id>
+  <launchable type="desktop-id">io.elementary.screenshot.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_group>elementary</project_group>
   <project_license>GPL-3.0+</project_license>
@@ -24,8 +25,41 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="6.0.2" date="2021-12-13" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update elementary runtime to 6.1</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.1" date="2021-10-22" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.0" date="2021-07-19" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Support the dark style</li>
+          <li>Drag and Drop the preview image from the save dialog</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Drag to move the window from anywhere</li>
+          <li>Show details for errors if they occur</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.1" date="2020-01-21" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Fix minor visual issues with selection items</li>
           <li>Translation updates</li>
@@ -34,6 +68,7 @@
     </release>
     <release version="1.7.0" date="2019-11-15" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Close when pressing the Escape key</li>
           <li>Translation updates</li>
@@ -149,11 +184,11 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <developer_name>elementary LLC.</developer_name>
-  <url type="homepage">http://elementary.io/</url>
+  <developer_name>elementary, Inc.</developer_name>
+  <url type="homepage">https://elementary.io/</url>
   <url type="bugtracker">https://github.com/elementary/screenshot/issues</url>
   <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://elementaryos.stackexchange.com/questions/tagged/screenshot</url>
-  <url type="translate">https://l10n.elementary.io/projects/screenshot-tool</url>
+  <url type="help">https://github.com/elementary/screenshot/discussions/categories/q-a</url>
+  <url type="translate">https://l10n.elementary.io/projects/screenshot/</url>
   <update_contact>contact_at_elementary.io</update_contact>
 </component>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2017-03-03 14:12+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,6 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Ekrānattēls uzņemts"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Tvert visu ekrānu"
@@ -93,7 +89,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ekrānattēls no %s"
@@ -106,41 +102,44 @@ msgstr "Neizdevās notvert ekrānattēlu"
 msgid "Image not saved"
 msgstr "Attēls netika saglabāts"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Ekrānattēls"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Saglabāt attēlu kā..."
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Nosaukums:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Formāts:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Mape:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Norādiet ekrānattēlu mapi"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "_Saglabāt"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Kopēt uz starpliktuvi"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "At_celt"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Kopēt uz starpliktuvi"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "_Saglabāt"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Ekrānattēls uzņemts"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Neatradu aktīvo logu"

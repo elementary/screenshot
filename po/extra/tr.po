@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"PO-Revision-Date: 2021-12-14 21:43+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot/extra/"
 "tr/>\n"
 "Language: tr\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Ekran Görüntüsü"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
+#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Ekranın görüntülerini kaydet"
 
-#: data/screenshot.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:12
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -36,23 +36,58 @@ msgstr ""
 "Basit bir ekran görüntüsü aracı. Tüm ekranın, sadece seçili alanın, sadece "
 "seçili pencerenin görüntüsünü kaydedin ve zamanlanabilir kayıtlar yapın."
 
-#: data/screenshot.appdata.xml.in:30
-msgid "Fix minor visual issues with selection items"
-msgstr "Öğelerin seçimiyle alakalı ufak görsel sorunlar düzeltildi"
+#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
+#: data/screenshot.appdata.xml.in:71
+msgid "Minor updates:"
+msgstr "Küçük güncellemeler:"
 
-#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
-#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
-#: data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:32
+msgid "Update elementary runtime to 6.1"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:33
+msgid "Updated translations"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
+#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
+#: data/screenshot.appdata.xml.in:145
 msgid "Translation updates"
 msgstr "Çeviriler güncellendi"
 
-#: data/screenshot.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:47
+msgid "New features:"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:49
+msgid "Support the dark style"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:50
+msgid "Drag and Drop the preview image from the save dialog"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:54
+msgid "Drag to move the window from anywhere"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:55
+msgid "Show details for errors if they occur"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:64
+msgid "Fix minor visual issues with selection items"
+msgstr "Öğelerin seçimiyle alakalı ufak görsel sorunlar düzeltildi"
+
+#: data/screenshot.appdata.xml.in:73
 msgid "Close when pressing the Escape key"
 msgstr "Esc tuşuna basınca kapat"
 
-#: data/screenshot.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:81
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -60,56 +95,56 @@ msgstr ""
 "Bazı durumlarda takılmaktan kaçınmak için düzeltilmiş yazı tipinden en kısa "
 "sürede geri dön"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:89
 msgid "Always respect delay setting"
 msgstr "Gecikme ayarını her zaman uygula"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:90
 msgid "Increase minimum timeout to 300"
 msgstr "Minimum zaman aşımı süresini 300'e çıkart"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:98
 msgid "Fix Alt+F4 key behavior"
 msgstr "Alt+F4 davranışını düzelt"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:99
 msgid "Icons now represent the capture area options"
 msgstr "Simgeler artık yakalama alanı seçeneklerini temsil ediyor"
 
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
-#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
-#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
+#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
+#: data/screenshot.appdata.xml.in:153
 msgid "Minor bug fixes"
 msgstr "Küçük hata düzeltmeleri"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:108
 msgid "Fix ESC key behavior"
 msgstr "ESC tuşu davranışını düzeltildi"
 
-#: data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:109
 msgid "Append scaling factor to filename"
 msgstr "Dosya adına ölçeklendirme faktörünü ekle"
 
-#: data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:118
 msgid "New default folder to save screenshots"
 msgstr "Ekran görüntülerini kaydetmek için yeni varsayılan klasör"
 
-#: data/screenshot.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:119
 msgid "Remember main window position for reappearing window"
 msgstr "Yeniden görünen pencere için ana pencere konumunu hatırla"
 
-#: data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:135
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Ekran görüntüsü alındığında deklanşör sesini çal"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "HiDPI ekran görüntülerinde ekstra siyah alanı düzelt"
 
-#: data/screenshot.appdata.xml.in:152
-msgid "elementary LLC."
-msgstr "elementary LLC."
+#: data/screenshot.appdata.xml.in:187
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"

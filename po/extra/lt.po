@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2019-08-29 17:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/screenshot-"
@@ -16,15 +16,15 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:8 data/screenshot.desktop.in:4
+#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Ekrano kopija"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:5
+#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Įrašyti ekrano paveikslus"
 
-#: data/screenshot.appdata.xml.in:11
+#: data/screenshot.appdata.xml.in:12
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -33,23 +33,60 @@ msgstr ""
 "pasirinktos srities ekrano kopijas, esamo lango ekrano kopijas bei ekrano "
 "kopijas su laiko uždelsimu."
 
-#: data/screenshot.appdata.xml.in:30
-msgid "Fix minor visual issues with selection items"
+#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
+#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
+#: data/screenshot.appdata.xml.in:71
+#, fuzzy
+#| msgid "Minor bug fixes"
+msgid "Minor updates:"
+msgstr "Smulkių klaidų pataisymai"
+
+#: data/screenshot.appdata.xml.in:32
+msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:31 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:47 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:66 data/screenshot.appdata.xml.in:76
-#: data/screenshot.appdata.xml.in:86 data/screenshot.appdata.xml.in:101
-#: data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:33
+msgid "Updated translations"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
+#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
+#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
+#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
+#: data/screenshot.appdata.xml.in:145
 msgid "Translation updates"
 msgstr "Vertimų atnaujinimai"
 
-#: data/screenshot.appdata.xml.in:38
+#: data/screenshot.appdata.xml.in:47
+msgid "New features:"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:49
+msgid "Support the dark style"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:50
+msgid "Drag and Drop the preview image from the save dialog"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:54
+msgid "Drag to move the window from anywhere"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:55
+msgid "Show details for errors if they occur"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:64
+msgid "Fix minor visual issues with selection items"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:73
 msgid "Close when pressing the Escape key"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:46
+#: data/screenshot.appdata.xml.in:81
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -57,55 +94,57 @@ msgstr ""
 "Kaip įmanoma greičiau sugrįžti iš redaguoto šrifto, kad kai kuriose "
 "situacijose būtų išvengta strigčių"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:89
 msgid "Always respect delay setting"
 msgstr "Visada gerbti delsos nustatymą"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:90
 msgid "Increase minimum timeout to 300"
 msgstr "Padidinti mažiausią laiko limitą iki 300"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.appdata.xml.in:98
 msgid "Fix Alt+F4 key behavior"
 msgstr "Pataisyti Alt+F4 klavišo elgseną"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:99
 msgid "Icons now represent the capture area options"
 msgstr "Dabar, piktogramos atvaizduoja fotografavimo srities parametrus"
 
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:75
-#: data/screenshot.appdata.xml.in:85 data/screenshot.appdata.xml.in:93
-#: data/screenshot.appdata.xml.in:102 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
+#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
+#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
+#: data/screenshot.appdata.xml.in:153
 msgid "Minor bug fixes"
 msgstr "Smulkių klaidų pataisymai"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:108
 msgid "Fix ESC key behavior"
 msgstr "Pataisyti Grįžties(ESC) klavišo elgseną"
 
-#: data/screenshot.appdata.xml.in:74
+#: data/screenshot.appdata.xml.in:109
 msgid "Append scaling factor to filename"
 msgstr "Pridėti mastelio keitimo faktorių į failo pavadinimą"
 
-#: data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:118
 msgid "New default folder to save screenshots"
 msgstr "Naujas numatytasis aplankas, skirtas ekrano kopijų įrašymui"
 
-#: data/screenshot.appdata.xml.in:84
+#: data/screenshot.appdata.xml.in:119
 msgid "Remember main window position for reappearing window"
 msgstr "Prisiminti iš naujo atsirandančio lango pagrindinę poziciją"
 
-#: data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:135
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Darant ekrano kopiją atkurti sklendės garsą"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Pataisyta papildoma juoda sritis HiDPI ekrano kopijose"
 
-#: data/screenshot.appdata.xml.in:152
-msgid "elementary LLC."
+#: data/screenshot.appdata.xml.in:187
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #: data/screenshot.desktop.in:7

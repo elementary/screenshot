@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2020-05-16 02:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -52,10 +52,6 @@ msgstr "اختصر نصوص النظام"
 msgid "Save screenshot to clipboard"
 msgstr "حفظ لقطة الشاشة إلى الحافظة"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "تم اخذ لقطة للشاشة"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "اسحب الشاشة كاملة"
@@ -95,7 +91,7 @@ msgid "Close"
 msgstr "اغلاق"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "لقطة شاشة منذ %s"
@@ -108,41 +104,44 @@ msgstr "لم ينجح التقاط لقطة للشاشة"
 msgid "Image not saved"
 msgstr "الصورة لم تحفظ"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "لقطة للشاشة"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "حفظ الصورة باسم…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "الاسم:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "الصيغة:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "المجلد:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "اختر مجلد للقطات الشاشة…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "حفظ"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "نسخ إلى الحافظة"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "نسخ إلى الحافظة"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "حفظ"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "تم اخذ لقطة للشاشة"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "لم يتم ايجاد نافذة فعالة"

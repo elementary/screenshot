@@ -1,36 +1,18 @@
 app-id: io.elementary.screenshot
-runtime: org.gnome.Platform
-runtime-version: '3.36'
-base: io.elementary.BaseApp
-base-version: juno-19.08
-sdk: org.gnome.Sdk
+runtime: io.elementary.Platform
+runtime-version: '6.1'
+sdk: io.elementary.Sdk
 command: io.elementary.screenshot
 finish-args:
   - '--share=ipc'
   - '--socket=fallback-x11'
   - '--socket=wayland'
 
-  # needed for perfers-color-scheme
-  - '--system-talk-name=org.freedesktop.Accounts'
-
-  # Needed for shutter sound
-  - '--socket=pulseaudio'
-
   - '--filesystem=home'
   - '--talk-name=org.gnome.Shell.Screenshot'
 
   - '--metadata=X-DConf=migrate-path=/io/elementary/screenshot/'
 modules:
-  - name: handy
-    buildsystem: meson
-    config-opts:
-      - '-Dexamples=false'
-      - '-Dtests=false'
-    sources:
-      - type: git
-        url: https://gitlab.gnome.org/GNOME/libhandy.git
-        tag: '1.0.1'
-
   - name: screenshot
     buildsystem: meson
     sources:

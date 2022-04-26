@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2018-06-05 17:52+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/hu/>\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"PO-Revision-Date: 2021-08-27 15:07+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -33,7 +33,7 @@ msgstr "Aktív ablak mentése"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Képernyőmentés egy meghatározott késleltetés után"
+msgstr "Képernyőkép egy meghatározott késleltetés után"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -51,10 +51,6 @@ msgstr "Rendszerszövegek kitakarása"
 msgid "Save screenshot to clipboard"
 msgstr "Képernyőképek mentése a vágólapra"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Képernyőkép elkészítve"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "A teljes képernyő mentése"
@@ -65,13 +61,11 @@ msgstr "Az aktuális ablak mentése"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr "Kijelölt terület mentése"
+msgstr "A kijelölt terület mentése"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Mentse az egérmutatót:"
+msgstr "Az egérmutató mentése:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -94,54 +88,57 @@ msgid "Close"
 msgstr "Bezárás"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Képernyőmentés %s"
+msgstr "Képernyőkép %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr "Nem lehetett menteni a képernyőképet"
+msgstr "Nem sikerült menteni a képernyőképet"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
 msgstr "A kép nem lett elmentve"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Képernyőkép"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Kép mentése másként…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Név:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Formátum:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Könyvtár:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
-msgstr "Válassza ki a képernyőmentések helyét…"
+msgstr "Válassza ki a képernyőképek helyét…"
 
-#: src/Widgets/SaveDialog.vala:155
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Másolás a vágólapra"
+
+#: src/Widgets/SaveDialog.vala:156
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/Widgets/SaveDialog.vala:158
 msgid "Save"
 msgstr "Mentés"
 
-#: src/Widgets/SaveDialog.vala:158
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Másolás a vágólapra"
+#~ msgid "Screenshot taken"
+#~ msgstr "Képernyőkép elkészítve"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nem található aktív ablak"

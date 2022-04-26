@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2018-05-27 11:30+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/screenshot-"
@@ -50,10 +50,6 @@ msgstr "Redactează textul sistemului"
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Captură de ecran realizată"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Apucă tot ecranul"
@@ -93,7 +89,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captură de ecran din %s"
@@ -106,41 +102,44 @@ msgstr "Captura de ecran nu a putut fi realizată"
 msgid "Image not saved"
 msgstr "Imaginea nu a fost salvată"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Captură de ecran"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Salvează imaginea ca…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Nume:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Formatul:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Carpeta:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Selectați carpeta Imagini de ecran …"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Salvează"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Copiați în clipboard"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "Anulează"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Copiați în clipboard"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Salvează"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Captură de ecran realizată"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nu sa găsit o fereastră activă"

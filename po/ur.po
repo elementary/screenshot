@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2016-09-22 10:24+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,6 @@ msgstr "سسٹم متن کو کالا کریں پوشیدہ کرنے کے لیے
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr ""
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "مکمل سکرین کی تصویر لیں"
@@ -93,7 +89,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "سکرین شاٹ بتاریخ %s"
@@ -106,41 +102,41 @@ msgstr "سکرین شاٹ نہیں لے سکا"
 msgid "Image not saved"
 msgstr "تصویر محفوظ نہیں ہوئی"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "سکرین شاٹ"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "تصویر محفوظ کریں بنام۔۔۔"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "نام:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "فارمیٹ:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "فولڈر:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "سکریں شاٹ فولڈر منتخب کریں۔۔۔"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "محفوظ کریں"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "منسوخ کریں"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr ""
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "محفوظ کریں"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "کوئی ایکٹیو ونڈو نہیں ملی"

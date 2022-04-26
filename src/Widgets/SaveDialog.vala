@@ -20,7 +20,7 @@
 *              Fabio Zaramella <ffabio.96.x@gmail.com>
 */
 
-public class Screenshot.SaveDialog : Gtk.Dialog {
+public class Screenshot.SaveDialog : Granite.Dialog {
     public Gdk.Pixbuf pixbuf { get; construct; }
     public Settings settings { get; construct; }
 
@@ -28,7 +28,6 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
 
     public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
         Object (
-            border_width: 6,
             deletable: false,
             modal: true,
             pixbuf: pixbuf,
@@ -136,7 +135,7 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         location.set_current_folder (folder_dir);
 
         var grid = new Gtk.Grid ();
-        grid.margin = 6;
+        grid.margin = 12;
         grid.margin_top = 0;
         grid.row_spacing = 12;
         grid.column_spacing = 12;
@@ -152,17 +151,12 @@ public class Screenshot.SaveDialog : Gtk.Dialog {
         var content = this.get_content_area () as Gtk.Box;
         content.add (grid);
 
-        var save_btn = new Gtk.Button.with_label (_("Save"));
+        var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
+
+        var retry_btn = (Gtk.Button) add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
+
+        var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-
-        var retry_btn = new Gtk.Button.with_label (_("Cancel"));
-        var clipboard_btn = new Gtk.Button.with_label (_("Copy to Clipboard"));
-
-        var actions = get_action_area () as Gtk.Box;
-        actions.margin_top = 12;
-        actions.add (clipboard_btn);
-        actions.add (retry_btn);
-        actions.add (save_btn);
 
         save_btn.clicked.connect (() => {
             save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());

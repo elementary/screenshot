@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
 "PO-Revision-Date: 2018-06-05 22:08+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/screenshot-"
@@ -52,10 +52,6 @@ msgstr "Redaguoti sistemos tekstą"
 msgid "Save screenshot to clipboard"
 msgstr "Įrašyti ekrano kopiją į iškarpinę"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Ekrano kopija padaryta"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Visas ekranas"
@@ -95,7 +91,7 @@ msgid "Close"
 msgstr "Užverti"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ekrano kopija ties %s"
@@ -108,41 +104,44 @@ msgstr "Nepavyko nufotografuoti ekrano"
 msgid "Image not saved"
 msgstr "Paveikslas neįrašytas"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Ekrano kopija"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Įrašyti paveikslą kaip…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Pavadinimas:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Formatas:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Aplankas:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Pasirinkite ekrano kopijų aplanką…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Įrašyti"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Kopijuoti į iškarpinę"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Kopijuoti į iškarpinę"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Įrašyti"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Ekrano kopija padaryta"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nepavyko rasti aktyvaus lango"

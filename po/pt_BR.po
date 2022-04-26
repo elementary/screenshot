@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2018-11-22 03:11+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
-"screenshot-tool/screenshot-tool/pt_BR/>\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"PO-Revision-Date: 2021-03-13 09:04+0000\n"
+"Last-Translator: Leonardo <leonardo@elementary.io>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"screenshot/screenshot/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -56,10 +56,6 @@ msgstr "Remover textos do sistema"
 msgid "Save screenshot to clipboard"
 msgstr "Salvar captura de tela na área de transferência"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Captura de tela obtida"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Capture a tela inteira"
@@ -73,10 +69,8 @@ msgid "Select area to grab"
 msgstr "Selecione a área a ser capturada"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "Capturar o ponteiro do mouse:"
+msgstr "Capturar o ponteiro:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -99,7 +93,7 @@ msgid "Close"
 msgstr "Fechar"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura de tela de %s"
@@ -112,41 +106,44 @@ msgstr "Não foi possível capturar a tela"
 msgid "Image not saved"
 msgstr "A imagem não foi salva"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Captura de Tela"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Salvar imagem como…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "Nome:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Formato:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Pasta:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Selecione a pasta de captura de imagens…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Salvar"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Copiar para a área de transferência"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Copiar para a área de transferência"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Salvar"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Captura de tela obtida"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Não foi possível encontrar uma janela ativa"

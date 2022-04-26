@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 09:03+0000\n"
-"PO-Revision-Date: 2020-07-16 09:12+0000\n"
-"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
-"Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/tr/>\n"
+"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"PO-Revision-Date: 2021-08-18 05:04+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -56,10 +56,6 @@ msgstr "Sistem metnini yeniden düzenle"
 msgid "Save screenshot to clipboard"
 msgstr "Ekran görüntüsünü panoya kaydet"
 
-#: src/ScreenshotBackend.vala:147
-msgid "Screenshot taken"
-msgstr "Ekran görüntüsü alındı"
-
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
 msgstr "Tüm ekranı yakala"
@@ -82,7 +78,7 @@ msgstr "Kaydettikten sonra kapat:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
-msgstr "Yazıyı sakla:"
+msgstr "Metni gizle:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
@@ -97,7 +93,7 @@ msgid "Close"
 msgstr "Kapat"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:97
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s ekran görüntüsü"
@@ -110,41 +106,44 @@ msgstr "Ekran görüntüsü yakalanamadı"
 msgid "Image not saved"
 msgstr "Görüntü kaydedilmedi"
 
-#: src/Widgets/SaveDialog.vala:37
+#: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
 msgstr "Ekran Görüntüsü"
 
-#: src/Widgets/SaveDialog.vala:87
+#: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"
 msgstr "Resmi Farklı Kaydet…"
 
-#: src/Widgets/SaveDialog.vala:91
+#: src/Widgets/SaveDialog.vala:90
 msgid "Name:"
 msgstr "İsim:"
 
-#: src/Widgets/SaveDialog.vala:108
+#: src/Widgets/SaveDialog.vala:107
 msgid "Format:"
 msgstr "Biçim:"
 
-#: src/Widgets/SaveDialog.vala:132
+#: src/Widgets/SaveDialog.vala:131
 msgid "Folder:"
 msgstr "Klasör:"
 
-#: src/Widgets/SaveDialog.vala:135
+#: src/Widgets/SaveDialog.vala:134
 msgid "Select Screenshots Folder…"
 msgstr "Ekran Görüntüsü Klasörünü Seç…"
 
-#: src/Widgets/SaveDialog.vala:155
-msgid "Save"
-msgstr "Kaydet"
+#: src/Widgets/SaveDialog.vala:154
+msgid "Copy to Clipboard"
+msgstr "Panoya Kopyala"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/Widgets/SaveDialog.vala:159
-msgid "Copy to Clipboard"
-msgstr "Panoya Kopyala"
+#: src/Widgets/SaveDialog.vala:158
+msgid "Save"
+msgstr "Kaydet"
+
+#~ msgid "Screenshot taken"
+#~ msgstr "Ekran görüntüsü alındı"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Aktif pencere bulunamadı"
