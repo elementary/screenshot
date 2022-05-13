@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-05-13 10:30+0000\n"
+"PO-Revision-Date: 2022-05-13 23:41+0000\n"
 "Last-Translator: CoronixTV <lenemilianblum@gmail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/screenshot/extra/"
 "de/>\n"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:33
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualisierte Übersetzungen"
 
 #: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
 #: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
@@ -62,7 +62,7 @@ msgstr "Aktualisierte Übersetzungen"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
-msgstr ""
+msgstr "Neue Funktionen:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
