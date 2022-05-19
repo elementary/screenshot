@@ -154,13 +154,22 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
         location_dialog.set_current_folder (folder_dir);
 
+        var arrow = new Gtk.Image () {
+            gicon = new ThemedIcon ("pan-down-symbolic"),
+            halign = Gtk.Align.END
+        };
+
         var location_button_indicator = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         location_button_indicator.pack_start (folder_icon, false, false);
         location_button_indicator.pack_start (folder_name, true, true);
-        location_button_indicator.pack_start (new Gtk.Image.from_icon_name ("document-open-symbolic", Gtk.IconSize.BUTTON), false, false);
+        location_button_indicator.pack_start (arrow, false, false);
 
         var location_button = new Gtk.Button ();
         location_button.add (location_button_indicator);
+
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
+        size_group.add_widget (format_cmb);
+        size_group.add_widget (location_button);
 
         var grid = new Gtk.Grid ();
         grid.margin = 12;
@@ -205,15 +214,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         location_button.clicked.connect (() => {
             location_dialog.run ();
-            var f = new Gtk.FileChooserButton ("HIIIII", Gtk.FileChooserAction.SELECT_FOLDER);
-            var cont = ((Gtk.Container) f.get_children ().nth_data (0));
-            var box = (Gtk.Box) cont.get_children ().nth_data (0);
-            box.foreach ((item) => {
-                if (item is Gtk.Image) {
-                    print ("yoohoo\n");
-                    print ("%s\n", ((Gtk.Image) item).icon_name);
-                }
-            });
         });
 
         location_dialog.response.connect ((response) => {
