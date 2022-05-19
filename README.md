@@ -10,7 +10,7 @@ You'll need the following dependencies:
 * meson >= 0.43.0
 * libgdk-pixbuf2.0-dev
 * libgranite-dev >= 6.0.0
-* libhandy-1 >= 0.83.0
+* libhandy-1-dev >= 0.83.0
 * valac
 
 Run `meson` to configure the build environment and then `ninja` to build and run automated tests
