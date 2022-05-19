@@ -45,27 +45,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var folder_from_settings = settings.get_string ("folder-dir");
 
-        var folder_name = new Gtk.Label ("") {
-            halign = Gtk.Align.START
-        };
-
-        var folder_icon = new Gtk.Image () {
-            pixel_size = 16
-        };
-
         if (folder_from_settings != folder_dir && folder_from_settings != "") {
             folder_dir = folder_from_settings;
-        }
-
-        if (folder_dir == Environment.get_home_dir ()) {
-            folder_name.label = "Home";
-            folder_icon.gicon = new ThemedIcon ("user-home");
-        } else if (folder_dir == "/") {
-            folder_name.label = "File System";
-            folder_icon.gicon = new ThemedIcon ("drive-harddisk");
-        } else {
-            folder_name.label = folder_dir.reverse ().split ("/")[0].reverse ();
-            folder_icon.gicon = new ThemedIcon ("folder");
         }
 
         Application.create_dir_if_missing (folder_dir);
@@ -150,9 +131,24 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         var location_label = new Gtk.Label (_("Folder:"));
         location_label.halign = Gtk.Align.END;
 
-        var location_dialog = new Gtk.FileChooserNative (_("Select Screenshots Folder…"), this,
-            Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
-        location_dialog.set_current_folder (folder_dir);
+        var folder_name = new Gtk.Label ("") {
+            halign = Gtk.Align.START
+        };
+
+        var folder_icon = new Gtk.Image () {
+            pixel_size = 16
+        };
+
+        if (folder_dir == Environment.get_home_dir ()) {
+            folder_name.label = "Home";
+            folder_icon.gicon = new ThemedIcon ("user-home");
+        } else if (folder_dir == "/") {
+            folder_name.label = "File System";
+            folder_icon.gicon = new ThemedIcon ("drive-harddisk");
+        } else {
+            folder_name.label = folder_dir.reverse ().split ("/")[0].reverse ();
+            folder_icon.gicon = new ThemedIcon ("folder");
+        }
 
         var arrow = new Gtk.Image () {
             gicon = new ThemedIcon ("pan-down-symbolic"),
@@ -166,6 +162,10 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var location_button = new Gtk.Button ();
         location_button.add (location_button_indicator);
+
+        var location_dialog = new Gtk.FileChooserNative (_("Select Screenshots Folder…"), this,
+            Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
+        location_dialog.set_current_folder (folder_dir);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
         size_group.add_widget (format_cmb);
