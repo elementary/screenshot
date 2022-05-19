@@ -45,8 +45,27 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var folder_from_settings = settings.get_string ("folder-dir");
 
+        var folder_name = new Gtk.Label ("") {
+            halign = Gtk.Align.START
+        };
+
+        var folder_icon = new Gtk.Image () {
+            pixel_size = 16
+        };
+
         if (folder_from_settings != folder_dir && folder_from_settings != "") {
             folder_dir = folder_from_settings;
+        }
+
+        if (folder_dir == Environment.get_home_dir ()) {
+            folder_name.label = "Home";
+            folder_icon.gicon = new ThemedIcon ("user-home");
+        } else if (folder_dir == "/") {
+            folder_name.label = "File System";
+            folder_icon.gicon = new ThemedIcon ("drive-harddisk");
+        } else {
+            folder_name.label = folder_dir.reverse ().split ("/")[0].reverse ();
+            folder_icon.gicon = new ThemedIcon ("folder");
         }
 
         Application.create_dir_if_missing (folder_dir);
@@ -131,11 +150,17 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         var location_label = new Gtk.Label (_("Folder:"));
         location_label.halign = Gtk.Align.END;
 
-        var location_dialog = new Gtk.FileChooserDialog (_("Select Screenshots Folder…"), this,
-            Gtk.FileChooserAction.SELECT_FOLDER);
+        var location_dialog = new Gtk.FileChooserNative (_("Select Screenshots Folder…"), this,
+            Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
         location_dialog.set_current_folder (folder_dir);
 
+        var location_button_indicator = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        location_button_indicator.pack_start (folder_icon, false, false);
+        location_button_indicator.pack_start (folder_name, true, true);
+        location_button_indicator.pack_start (new Gtk.Image.from_icon_name ("document-open-symbolic", Gtk.IconSize.BUTTON), false, false);
+
         var location_button = new Gtk.Button ();
+        location_button.add (location_button_indicator);
 
         var grid = new Gtk.Grid ();
         grid.margin = 12;
@@ -180,13 +205,35 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         location_button.clicked.connect (() => {
             location_dialog.run ();
+            var f = new Gtk.FileChooserButton ("HIIIII", Gtk.FileChooserAction.SELECT_FOLDER);
+            var cont = ((Gtk.Container) f.get_children ().nth_data (0));
+            var box = (Gtk.Box) cont.get_children ().nth_data (0);
+            box.foreach ((item) => {
+                if (item is Gtk.Image) {
+                    print ("yoohoo\n");
+                    print ("%s\n", ((Gtk.Image) item).icon_name);
+                }
+            });
         });
 
-        location_dialog.selection_changed.connect (() => {
-            SList<string> uris = location_dialog.get_uris ();
-            foreach (unowned string uri in uris) {
-                settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
-                folder_dir = settings.get_string ("folder-dir");
+        location_dialog.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                SList<string> uris = location_dialog.get_uris ();
+                foreach (unowned string uri in uris) {
+                    settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
+                    folder_dir = settings.get_string ("folder-dir");
+                }
+
+                if (folder_dir == Environment.get_home_dir ()) {
+                    folder_name.label = "Home";
+                    folder_icon.gicon = new ThemedIcon ("user-home");
+                } else if (folder_dir == "/") {
+                    folder_name.label = "File System";
+                    folder_icon.gicon = new ThemedIcon ("drive-harddisk");
+                } else {
+                    folder_name.label = folder_dir.reverse ().split ("/")[0].reverse ();
+                    folder_icon.gicon = new ThemedIcon ("folder");
+                }
             }
         });
 
