@@ -168,25 +168,21 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
         location_dialog.set_current_folder (folder_dir);
 
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
-        size_group.add_widget (format_cmb);
-        size_group.add_widget (location_button);
-
         var grid = new Gtk.Grid ();
         grid.margin = 12;
-        grid.margin_top = 0;
         grid.row_spacing = 12;
         grid.column_spacing = 12;
-        grid.attach (preview_box, 0, 0, 2, 1);
-        grid.attach (dialog_label, 0, 1, 2, 1);
-        grid.attach (name_label, 0, 2, 1, 1);
-        grid.attach (name_entry, 1, 2, 1, 1);
-        grid.attach (format_label, 0, 3, 1, 1);
-        grid.attach (format_cmb, 1, 3, 1, 1);
-        grid.attach (location_label, 0, 4, 1, 1);
-        grid.attach (location_button, 1, 4, 1, 1);
+        grid.row_homogeneous = true;
+        grid.attach (dialog_label, 0, 0, 2, 1);
+        grid.attach (name_label, 0, 1, 1, 1);
+        grid.attach (name_entry, 1, 1, 1, 1);
+        grid.attach (format_label, 0, 2, 1, 1);
+        grid.attach (format_cmb, 1, 2, 1, 1);
+        grid.attach (location_label, 0, 3, 1, 1);
+        grid.attach (location_button, 1, 3, 1, 1);
 
         var content = this.get_content_area () as Gtk.Box;
+        content.add (preview_box);
         content.add (grid);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
