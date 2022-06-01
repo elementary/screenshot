@@ -232,7 +232,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                     folder_name.label = "File System";
                     folder_icon.gicon = new ThemedIcon ("drive-harddisk");
                 } else {
-                    folder_name.label = folder_dir.reverse ().split ("/")[0].reverse ();
+                    folder_name.label = Path.get_basename (folder_dir);
                     folder_icon.gicon = new ThemedIcon ("folder");
                 }
             }
