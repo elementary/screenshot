@@ -132,7 +132,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         location_label.halign = Gtk.Align.END;
 
         var folder_name = new Gtk.Label ("") {
-            halign = Gtk.Align.START
+            halign = Gtk.Align.START,
+            hexpand = true
         };
 
         var folder_icon = new Gtk.Image () {
@@ -156,9 +157,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
 
         var location_button_indicator = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-        location_button_indicator.pack_start (folder_icon, false, false);
-        location_button_indicator.pack_start (folder_name, true, true);
-        location_button_indicator.pack_start (arrow, false, false);
+        location_button_indicator.add (folder_icon);
+        location_button_indicator.add (folder_name);
+        location_button_indicator.add (arrow);
 
         var location_button = new Gtk.Button ();
         location_button.add (location_button_indicator);
