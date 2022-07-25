@@ -24,9 +24,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
     public Gdk.Pixbuf pixbuf { get; construct; }
     public Settings settings { get; construct; }
 
-    private Granite.ValidatedEntry name_entry;
-    private Gtk.Button save_btn;
-
     public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
     public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
@@ -106,7 +103,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             file_name += "@%ix".printf (this.scale_factor);
         }
 
-        name_entry = new Granite.ValidatedEntry () {
+        var name_entry = new Granite.ValidatedEntry () {
             hexpand = true,
             text = file_name
         };
@@ -173,7 +170,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var retry_btn = (Gtk.Button) add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
-        save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
+        var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         name_entry.changed.connect (() => {
