@@ -1,6 +1,6 @@
 /*
 * Copyright (c) 2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-*               2017–2022 elementary LLC. (https://elementary.io)
+*               2017–2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
@@ -23,6 +23,9 @@
 public class Screenshot.SaveDialog : Granite.Dialog {
     public Gdk.Pixbuf pixbuf { get; construct; }
     public Settings settings { get; construct; }
+
+    private Granite.ValidatedEntry name_entry;
+    private Gtk.Button save_btn;
 
     public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
@@ -103,19 +106,11 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             file_name += "@%ix".printf (this.scale_factor);
         }
 
-        var name_entry = new Granite.ValidatedEntry () {
+        name_entry = new Granite.ValidatedEntry () {
             hexpand = true,
             text = file_name
         };
         name_entry.grab_focus ();
-        name_entry.changed.connect (() => {
-            name_entry.is_valid = !name_entry.text.contains ("/");
-            if (name_entry.is_valid) {
-                name_entry.secondary_icon_tooltip_text = "";
-            } else {
-                name_entry.secondary_icon_tooltip_text = _("File name cannot contain '/'");
-            }
-        });
 
         var format_label = new Gtk.Label (_("Format:")) {
             halign = Gtk.Align.END
@@ -173,9 +168,11 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        
+
         name_entry.changed.connect (() => {
-            save_btn.set_sensitive (name_entry.is_valid);
+            name_entry.is_valid = !name_entry.text.contains ("/");
+            set_name_tooltip ();
+            set_button_sensitivity ();
         });
 
         save_btn.clicked.connect (() => {
@@ -209,5 +206,17 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
             return false;
         });
+    }
+
+    private void set_name_tooltip () {
+        if (name_entry.is_valid) {
+            name_entry.secondary_icon_tooltip_text = "";
+        } else {
+            name_entry.secondary_icon_tooltip_text = _("File name cannot contain '/'");
+        }
+    }
+
+    private void set_button_sensitivity () {
+        save_btn.sensitive = name_entry.is_valid;
     }
 }
