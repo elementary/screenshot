@@ -112,6 +112,13 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
         name_entry.grab_focus ();
 
+        var name_message_revealer = new ValidationMessage (_("File name cannot contain '/'"));
+        name_message_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
+        var name_entry_grid = new Gtk.Grid ();
+        name_entry_grid.attach (name_entry, 0, 0);
+        name_entry_grid.attach (name_message_revealer, 0, 1);
+
         var format_label = new Gtk.Label (_("Format:")) {
             halign = Gtk.Align.END
         };
@@ -153,7 +160,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         grid.attach (preview_box, 0, 0, 2, 1);
         grid.attach (dialog_label, 0, 1, 2, 1);
         grid.attach (name_label, 0, 2, 1, 1);
-        grid.attach (name_entry, 1, 2, 1, 1);
+        grid.attach (name_entry_grid, 1, 2, 1, 1);
         grid.attach (format_label, 0, 3, 1, 1);
         grid.attach (format_cmb, 1, 3, 1, 1);
         grid.attach (location_label, 0, 4, 1, 1);
@@ -171,8 +178,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         name_entry.changed.connect (() => {
             name_entry.is_valid = !name_entry.text.contains ("/");
-            set_name_tooltip ();
-            set_button_sensitivity ();
+            name_message_revealer.reveal_child = !name_entry.is_valid;
+            save_btn.sensitive = name_entry.is_valid;
         });
 
         save_btn.clicked.connect (() => {
@@ -206,17 +213,5 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
             return false;
         });
-    }
-
-    private void set_name_tooltip () {
-        if (name_entry.is_valid) {
-            name_entry.secondary_icon_tooltip_text = "";
-        } else {
-            name_entry.secondary_icon_tooltip_text = _("File name cannot contain '/'");
-        }
-    }
-
-    private void set_button_sensitivity () {
-        save_btn.sensitive = name_entry.is_valid;
     }
 }
