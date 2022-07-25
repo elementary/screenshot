@@ -166,7 +166,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var retry_btn = (Gtk.Button) add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
-        var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
+        save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         name_entry.changed.connect (() => {
