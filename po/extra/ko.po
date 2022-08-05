@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-08-05 15:49+0000\n"
+"PO-Revision-Date: 2022-08-05 18:31+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/screenshot/extra/"
 "ko/>\n"
@@ -122,29 +122,27 @@ msgstr "ESC 키 수정"
 
 #: data/screenshot.appdata.xml.in:109
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "파일 이름에 배율 인수 추가"
 
 #: data/screenshot.appdata.xml.in:118
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "스크린샷을 저장할 새 기본 폴더"
 
 #: data/screenshot.appdata.xml.in:119
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "다시 나타나는 창의 기본 창 위치 기억하기"
 
 #: data/screenshot.appdata.xml.in:135
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "스크린샷을 찍을 때 셔터 소리내기"
 
 #: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "HiDPI 스크린샷에서 특정 부분이 검게 변하던 이슈 해결"
 
 #: data/screenshot.appdata.xml.in:187
-#, fuzzy
-#| msgid "elementary LLC."
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:7
 msgid "io.elementary.screenshot"
