@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-12-14 11:31+0000\n"
+"PO-Revision-Date: 2022-09-27 01:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
 "extra/uk/>\n"
@@ -53,7 +53,7 @@ msgstr "Оновлено переклади"
 #: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
 #: data/screenshot.appdata.xml.in:145
 msgid "Translation updates"
-msgstr "Оновлено переклади"
+msgstr "Оновлення перекладів"
 
 #: data/screenshot.appdata.xml.in:47
 msgid "New features:"
