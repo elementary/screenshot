@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-02-28 19:01+0000\n"
+"PO-Revision-Date: 2022-09-30 18:12+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/extra/"
 "sk/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
-msgstr "Snímok obrazovky"
+msgstr "Snímka obrazovky"
 
 #: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
@@ -33,7 +33,7 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"Jednoduchý nástroj na snímanie obrazovky. Zachyťte snímok celej obrazovky, "
+"Jednoduchý nástroj na snímanie obrazovky. Zachyťte snímku celej obrazovky, "
 "vybranej oblasti, aktuálneho okna aj časované snímky."
 
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
@@ -128,7 +128,7 @@ msgstr "Pridávať mierku zobrazenia k názvu súboru"
 
 #: data/screenshot.appdata.xml.in:118
 msgid "New default folder to save screenshots"
-msgstr "Nový predvolený priečinok na ukladanie snímkov obrazovky"
+msgstr "Nový predvolený priečinok na ukladanie snímok obrazovky"
 
 #: data/screenshot.appdata.xml.in:119
 msgid "Remember main window position for reappearing window"
@@ -136,11 +136,11 @@ msgstr "Zapamätať si pozíciu hlavného okna pre znovu sa zobrazujúce okno"
 
 #: data/screenshot.appdata.xml.in:135
 msgid "Play shutter sound when a screenshot is taken"
-msgstr "Pri vytváraní snímku obrazovky prehrať zvuk uzávierky"
+msgstr "Pri vytváraní snímky obrazovky prehrať zvuk uzávierky"
 
 #: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Opravená nadbytočná čierna oblasť na HiDPI snímkoch"
+msgstr "Opravená nadbytočná čierna oblasť na HiDPI snímkach"
 
 #: data/screenshot.appdata.xml.in:187
 msgid "elementary, Inc."
@@ -152,19 +152,19 @@ msgstr ""
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Momentka;Snímok obrazovky;"
+msgstr "Momentka;Snímka obrazovky;Screenshot;"
 
 #: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Snímok celej obrazovky"
+msgstr "Snímka celej obrazovky"
 
 #: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "Snímok aktuálneho okna"
+msgstr "Snímka aktuálneho okna"
 
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Snímok vybranej oblasti"
+msgstr "Snímka vybranej oblasti"
 
 #~ msgid "About Screenshot"
 #~ msgstr "O programe Snímka obrazovky"
