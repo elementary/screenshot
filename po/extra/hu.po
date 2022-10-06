@@ -60,7 +60,7 @@ msgstr "Új funkciók:"
 
 #: data/screenshot.appdata.xml.in:49
 msgid "Support the dark style"
-msgstr ""
+msgstr "A sötét stílus támogatása"
 
 #: data/screenshot.appdata.xml.in:50
 msgid "Drag and Drop the preview image from the save dialog"
