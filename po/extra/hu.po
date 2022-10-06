@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-10-06 12:37+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"PO-Revision-Date: 2022-10-06 12:46+0000\n"
+"Last-Translator: Ju Li Ahn <milestone2@keemail.me>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
 "extra/hu/>\n"
 "Language: hu\n"
@@ -123,15 +123,15 @@ msgstr "A méretezési rész hozzáadása a fájlnévhez"
 
 #: data/screenshot.appdata.xml.in:118
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "A képernyőkép-mentések új alapértelmezett helye"
 
 #: data/screenshot.appdata.xml.in:119
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Főablak helyzetének megjegyzése az újra megjelenéshez"
 
 #: data/screenshot.appdata.xml.in:135
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Hangjelzés Képernyőkép készítésekor"
 
 #: data/screenshot.appdata.xml.in:144
 msgid "Fix extra black area on HiDPI screenshots"
