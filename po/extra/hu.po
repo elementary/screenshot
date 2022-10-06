@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-10-06 12:35+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"PO-Revision-Date: 2022-10-06 12:36+0000\n"
+"Last-Translator: Ju Li Ahn <milestone2@keemail.me>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
 "extra/hu/>\n"
 "Language: hu\n"
@@ -87,22 +87,24 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Az elakadások elkerülése érdekében a lehető leghamarabb állítsa vissza a "
+"szerkesztett betűtípust"
 
 #: data/screenshot.appdata.xml.in:89
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Mindig tartsa be a késleltetési beállításokat"
 
 #: data/screenshot.appdata.xml.in:90
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "A minimális időtúllépés növelése 300-ra"
 
 #: data/screenshot.appdata.xml.in:98
 msgid "Fix Alt+F4 key behavior"
-msgstr ""
+msgstr "Az Alt+F4 működésének javítása"
 
 #: data/screenshot.appdata.xml.in:99
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Az ikonok most a rögzítési terület lehetőségeit jelzik"
 
 #: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
 #: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
