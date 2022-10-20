@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2022-10-20 18:48+0000\n"
 "PO-Revision-Date: 2022-09-27 01:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
@@ -33,59 +33,59 @@ msgstr ""
 "ділянки, поточні вікна власноруч та з допомогою таймера."
 
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
-#: data/screenshot.appdata.xml.in:71
+#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
+#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/screenshot.appdata.xml.in:32
-msgid "Update elementary runtime to 6.1"
-msgstr "Оновлення середовища виконання elementary до версії 6.1"
-
-#: data/screenshot.appdata.xml.in:33
+#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
-#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
-#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
-#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
-#: data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:41
+msgid "Update elementary runtime to 6.1"
+msgstr "Оновлення середовища виконання elementary до версії 6.1"
+
+#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
+#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
+#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:154
 msgid "Translation updates"
 msgstr "Оновлення перекладів"
 
-#: data/screenshot.appdata.xml.in:47
+#: data/screenshot.appdata.xml.in:56
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/screenshot.appdata.xml.in:49
+#: data/screenshot.appdata.xml.in:58
 msgid "Support the dark style"
 msgstr "Підтримка темного стилю"
 
-#: data/screenshot.appdata.xml.in:50
+#: data/screenshot.appdata.xml.in:59
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 "Перетягування зображення попереднього перегляду з діалогового вікна "
 "збереження"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:63
 msgid "Drag to move the window from anywhere"
 msgstr "Перетягування вікна за будь-яке місце"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:64
 msgid "Show details for errors if they occur"
 msgstr "Показ подробиць щодо помилок у разі їх виникнення"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix minor visual issues with selection items"
 msgstr "Виправлено незначні вади зовнішнього вигляду елементів вибору"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:82
 msgid "Close when pressing the Escape key"
 msgstr "Закривайте програму натиснувши Escape"
 
-#: data/screenshot.appdata.xml.in:81
+#: data/screenshot.appdata.xml.in:90
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -93,54 +93,54 @@ msgstr ""
 "Якнайшвидше скасуйте зміну шрифту, щоб уникнути зациклювання в деяких "
 "ситуаціях"
 
-#: data/screenshot.appdata.xml.in:89
+#: data/screenshot.appdata.xml.in:98
 msgid "Always respect delay setting"
 msgstr "Чітке дотримання встановленої затримки"
 
-#: data/screenshot.appdata.xml.in:90
+#: data/screenshot.appdata.xml.in:99
 msgid "Increase minimum timeout to 300"
 msgstr "Збільшено мінімальний час затримки до 300"
 
-#: data/screenshot.appdata.xml.in:98
+#: data/screenshot.appdata.xml.in:107
 msgid "Fix Alt+F4 key behavior"
 msgstr "Виправлено поведінку комбінації клавіш Alt+F4"
 
-#: data/screenshot.appdata.xml.in:99
+#: data/screenshot.appdata.xml.in:108
 msgid "Icons now represent the capture area options"
 msgstr "Параметри вибору області захоплення у вигляді піктограм"
 
-#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
-#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
-#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
-#: data/screenshot.appdata.xml.in:153
+#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
+#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
+#: data/screenshot.appdata.xml.in:162
 msgid "Minor bug fixes"
 msgstr "Незначні вади усунено"
 
-#: data/screenshot.appdata.xml.in:108
+#: data/screenshot.appdata.xml.in:117
 msgid "Fix ESC key behavior"
 msgstr "Виправлено поведінку клавіші ESC"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:118
 msgid "Append scaling factor to filename"
 msgstr "Додано коефіцієнт масштабування до назви файлу"
 
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
 msgstr "Нова тека зберігання знімків екрана"
 
-#: data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:128
 msgid "Remember main window position for reappearing window"
 msgstr "Запам'ятовування положення головного вікна до наступного запуску"
 
-#: data/screenshot.appdata.xml.in:135
+#: data/screenshot.appdata.xml.in:144
 msgid "Play shutter sound when a screenshot is taken"
 msgstr "Додано звук затвора, коли зроблено знімок екрана"
 
-#: data/screenshot.appdata.xml.in:144
+#: data/screenshot.appdata.xml.in:153
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr "Виправлено появу зайвої чорної зони на знімках екранів з HiDPI"
 
-#: data/screenshot.appdata.xml.in:187
+#: data/screenshot.appdata.xml.in:196
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
