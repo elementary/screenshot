@@ -96,7 +96,7 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.5714286,0,0,0.7142857,-5.7142853,27.928572)" />
     <radialGradient
-       gradientTransform="matrix(0.75490707,0,0,0.37758803,-1.992131,58.25133)"
+       gradientTransform="matrix(0.65882358,0,0,0.37758803,5.0042103,58.25133)"
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient8838"
        id="radialGradient4443"
@@ -117,7 +117,7 @@
          id="stop8842" />
     </linearGradient>
     <radialGradient
-       gradientTransform="matrix(0.75490707,0,0,0.37758803,8.702386,58.25133)"
+       gradientTransform="matrix(0.65882354,0,0,0.37758803,15.698729,58.25133)"
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient8838"
        id="radialGradient4440"
@@ -413,13 +413,13 @@
   <path
      style="display:inline;overflow:visible;visibility:visible;opacity:0.4;fill:url(#radialGradient4443);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none"
      id="path8836"
-     d="m 53.304809,59.997701 c 0,2.215761 -3.591073,4.011879 -8.020887,4.011879 -4.429815,0 -8.020887,-1.796118 -8.020887,-4.011879 0,-2.215761 3.591072,-4.011879 8.020887,-4.011879 4.429814,0 8.020887,1.796118 8.020887,4.011879 z" />
+     d="m 53.263035,59.997701 c 0,2.215761 -3.134007,4.011879 -7,4.011879 -3.865995,0 -7,-1.796118 -7,-4.011879 0,-2.215761 3.134005,-4.011879 7,-4.011879 3.865993,0 7,1.796118 7,4.011879 z" />
   <path
      style="display:inline;overflow:visible;visibility:visible;opacity:0.4;fill:url(#radialGradient4440);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none"
      id="path4007"
-     d="m 63.999326,59.997701 c 0,2.215761 -3.591073,4.011879 -8.020888,4.011879 -4.429814,0 -8.020887,-1.796118 -8.020887,-4.011879 0,-2.215761 3.591073,-4.011879 8.020887,-4.011879 4.429815,0 8.020888,1.796118 8.020888,4.011879 z" />
+     d="m 63.957551,59.997701 c 0,2.215761 -3.134006,4.011879 -7,4.011879 -3.865994,0 -7,-1.796118 -7,-4.011879 0,-2.215761 3.134006,-4.011879 7,-4.011879 3.865994,0 7,1.796118 7,4.011879 z" />
   <g
-     transform="translate(-0.17831697)"
+     transform="translate(0.82146014)"
      id="g3115">
     <g
        id="g3106"
@@ -455,7 +455,7 @@
     </g>
   </g>
   <g
-     transform="matrix(0.99844347,0,0,0.99447084,-0.06254414,0.17912811)"
+     transform="matrix(0.99844347,0,0,0.99447084,0.93723297,0.17912811)"
      id="g3133">
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#radialGradient3139);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
