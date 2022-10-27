@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-10-29 15:29+0000\n"
+"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"PO-Revision-Date: 2022-09-30 18:12+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/sk/>\n"
@@ -39,7 +39,7 @@ msgstr "Zachytiť aktívne okno"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Vytvoriť snímok obrazovky po stanovenom oneskorení"
+msgstr "Vytvoriť snímku obrazovky po stanovenom oneskorení"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -55,7 +55,7 @@ msgstr "Revidovať systémový text"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr "Uložiť snímok obrazovky do schránky"
+msgstr "Uložiť snímku obrazovky do schránky"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
@@ -87,7 +87,7 @@ msgstr "Oneskorenie v sekundách:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr "Vytvoriť snímok"
+msgstr "Vytvoriť snímku"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
@@ -97,11 +97,11 @@ msgstr "Zatvoriť"
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
-msgstr "Snímok obrazovky z %s"
+msgstr "Snímka obrazovky z %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr "Nepodarilo sa zachytiť snímok obrazovky"
+msgstr "Nepodarilo sa zachytiť snímku obrazovky"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
@@ -109,7 +109,7 @@ msgstr "Obrázok neuložený"
 
 #: src/Widgets/SaveDialog.vala:36
 msgid "Screenshot"
-msgstr "Snímok obrazovky"
+msgstr "Snímka obrazovky"
 
 #: src/Widgets/SaveDialog.vala:86
 msgid "Save Image as…"

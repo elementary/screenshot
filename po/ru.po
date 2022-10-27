@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-08-28 04:22+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"PO-Revision-Date: 2022-08-15 05:04+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ru/>\n"
 "Language: ru\n"
@@ -27,7 +27,7 @@ msgstr "Снимки экрана"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr "Область захвата"
+msgstr "Захватить область"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
