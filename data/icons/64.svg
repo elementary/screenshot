@@ -40,16 +40,6 @@
          style="stop-color:#ffffff;stop-opacity:0.39215687"
          offset="1" />
     </linearGradient>
-    <radialGradient
-       cx="6.952919"
-       cy="9.9571075"
-       r="12.671875"
-       fx="6.952919"
-       fy="9.9571075"
-       id="radialGradient3988-3"
-       xlink:href="#linearGradient2867-449-88-871-390-598-476-591-434-148-57-177-8-3-3-6-4-8-8-8-5-7-8"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,8.3741498,-10.280782,0,135.53887,-79.76307)" />
     <linearGradient
        id="linearGradient3688-166-749-4-0-3-8">
       <stop
@@ -74,17 +64,6 @@
       <stop
          id="stop2899-4-5-1-5"
          style="stop-color:#181818;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient2867-449-88-871-390-598-476-591-434-148-57-177-8-3-3-6-4-8-8-8-5-7-8">
-      <stop
-         id="stop3750-1-0-7-6-6-1-3-9-3-9-2"
-         style="stop-color:#404648;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop3754-1-8-5-2-7-6-7-1-9-1-0"
-         style="stop-color:#0c1011;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <radialGradient
@@ -280,6 +259,26 @@
        y1="64.032387"
        x2="61.182655"
        y2="72.330383" />
+    <linearGradient
+       id="outerBackgroundGradient-5-0">
+      <stop
+         id="stop3864-8-6-4"
+         offset="0"
+         style="stop-color:#261e2b;stop-opacity:1;" />
+      <stop
+         id="stop3866-9-1-86"
+         offset="1"
+         style="stop-color:#352f39;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#outerBackgroundGradient-5-0"
+       id="linearGradient4158"
+       x1="38.542343"
+       y1="138.22308"
+       x2="38.542343"
+       y2="193.82295"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-198.00362)" />
   </defs>
   <metadata
      id="metadata4166">
@@ -318,14 +317,15 @@
        width="44" />
   </g>
   <rect
-     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:url(#radialGradient3988-3);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+     style="color:#000000;font-variation-settings:normal;display:inline;overflow:visible;visibility:visible;opacity:1;vector-effect:none;fill:url(#linearGradient4158);fill-opacity:1;fill-rule:nonzero;stroke:#1a0e1f;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.7;-inkscape-stroke:none;marker:none;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
      id="rect5505-21-3-8-5-2"
-     y="4.5"
+     y="-59.5"
      x="4.5"
      ry="6"
      rx="6"
      height="55"
-     width="55" />
+     width="55"
+     transform="scale(1,-1)" />
   <rect
      style="opacity:0.3;fill:none;stroke:url(#linearGradient3180);stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="rect6741-5-0-2-3"
@@ -408,17 +408,8 @@
      d="m 12,18 v 1 h 3 v -1 z m 9,0 v 1 h 8 v -1 z m 14,0 v 1 h 8 v -1 z m 14,0 v 1 h 3 v -1 z m -39,3 v 1 h 2 v -1 z m 42,0 v 1 h 2 V 21 Z M 10,35 v 1 h 2 v -1 z m 42,0 v 1 h 2 V 35 Z M 12,46 v 1 h 3 v -1 z m 9,0 v 1 h 8 v -1 z m 14,0 v 1 h 8 v -1 z m 14,0 v 1 h 3 v -1 z" />
   <path
      id="rect3872-3-2"
-     style="display:inline;opacity:0.2;fill:url(#linearGradient2019);fill-opacity:1;stroke:none;stroke-width:1.33358"
+     style="display:inline;opacity:0.15;fill:url(#linearGradient2019);fill-opacity:1;stroke:none;stroke-width:1.33358"
      d="M 10.5 4.5 C 7.176 4.5 4.5 7.176 4.5 10.5 L 4.5 36.519531 L 59.5 20.738281 L 59.5 10.5 C 59.5 7.176 56.824 4.5 53.5 4.5 L 10.5 4.5 z " />
-  <rect
-     style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.7;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-     id="rect5505-21-3-8-9-1-1"
-     y="4.5000019"
-     x="4.4999986"
-     ry="6"
-     rx="6"
-     height="55"
-     width="55" />
   <path
      style="display:inline;overflow:visible;visibility:visible;opacity:0.4;fill:url(#radialGradient4443);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none"
      id="path8836"
