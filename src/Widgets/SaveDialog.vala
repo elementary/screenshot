@@ -86,7 +86,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
         var dialog_label = new Gtk.Label (_("Save Image as…")) {
-            halign = Gtk.Align.START
+            halign = Gtk.Align.START,
+            margin_top = 12,
+            margin_start = 12
         };
         dialog_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
@@ -111,10 +113,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var name_message_revealer = new ValidationMessage (_("The filename must not be blank and must not contain '/'"));
         name_message_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
-
-        var name_entry_grid = new Gtk.Grid ();
-        name_entry_grid.attach (name_entry, 0, 0);
-        name_entry_grid.attach (name_message_revealer, 0, 1);
 
         var format_label = new Gtk.Label (_("Format:")) {
             halign = Gtk.Align.END
@@ -150,20 +148,22 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var grid = new Gtk.Grid () {
             margin = 12,
-            margin_top = 0,
-            row_spacing = 12,
-            column_spacing = 12
+            margin_top = 6,
+            column_spacing = 12,
+            row_spacing = 6,
+            column_homogeneous = false
         };
-        grid.attach (preview_box, 0, 0, 2, 1);
-        grid.attach (dialog_label, 0, 1, 2, 1);
-        grid.attach (name_label, 0, 2, 1, 1);
-        grid.attach (name_entry_grid, 1, 2, 1, 1);
-        grid.attach (format_label, 0, 3, 1, 1);
-        grid.attach (format_cmb, 1, 3, 1, 1);
-        grid.attach (location_label, 0, 4, 1, 1);
-        grid.attach (location, 1, 4, 1, 1);
+        grid.attach (name_label, 0, 1, 1, 1);
+        grid.attach (name_entry, 1, 1, 1, 1);
+        grid.attach (format_label, 0, 2, 1, 1);
+        grid.attach (format_cmb, 1, 2, 1, 1);
+        grid.attach (location_label, 0, 3, 1, 1);
+        grid.attach (location, 1, 3, 1, 1);
 
         var content = this.get_content_area () as Gtk.Box;
+        content.add (preview_box);
+        content.add (dialog_label);
+        content.add (name_message_revealer);
         content.add (grid);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
