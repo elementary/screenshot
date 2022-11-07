@@ -109,7 +109,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
         name_entry.grab_focus ();
 
-        var name_message_revealer = new ValidationMessage (_("File name cannot contain '/'"));
+        var name_message_revealer = new ValidationMessage (_("The filename must not be blank and must not contain '/'"));
         name_message_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
         var name_entry_grid = new Gtk.Grid ();
@@ -174,7 +174,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         name_entry.changed.connect (() => {
-            name_entry.is_valid = !name_entry.text.contains ("/");
+            name_entry.is_valid = name_entry.text.length > 0 && !name_entry.text.contains ("/");
             name_message_revealer.reveal_child = !name_entry.is_valid;
             save_btn.sensitive = name_entry.is_valid;
         });
