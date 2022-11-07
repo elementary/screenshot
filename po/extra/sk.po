@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-02-28 19:01+0000\n"
+"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"PO-Revision-Date: 2022-09-30 18:12+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/extra/"
 "sk/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
 msgid "Screenshot"
-msgstr "Snímok obrazovky"
+msgstr "Snímka obrazovky"
 
 #: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
@@ -33,61 +33,61 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"Jednoduchý nástroj na snímanie obrazovky. Zachyťte snímok celej obrazovky, "
+"Jednoduchý nástroj na snímanie obrazovky. Zachyťte snímku celej obrazovky, "
 "vybranej oblasti, aktuálneho okna aj časované snímky."
 
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
-#: data/screenshot.appdata.xml.in:71
+#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
+#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
 msgid "Minor updates:"
 msgstr "Opravy menších chýb:"
 
-#: data/screenshot.appdata.xml.in:32
-msgid "Update elementary runtime to 6.1"
-msgstr "Behové prostredie elementary aktualizované na verziu 6.1"
-
-#: data/screenshot.appdata.xml.in:33
+#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
-#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
-#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
-#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
-#: data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:41
+msgid "Update elementary runtime to 6.1"
+msgstr "Behové prostredie elementary aktualizované na verziu 6.1"
+
+#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
+#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
+#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:154
 msgid "Translation updates"
 msgstr "Aktualizácia prekladov"
 
-#: data/screenshot.appdata.xml.in:47
+#: data/screenshot.appdata.xml.in:56
 msgid "New features:"
 msgstr "Nové funkcie:"
 
-#: data/screenshot.appdata.xml.in:49
+#: data/screenshot.appdata.xml.in:58
 msgid "Support the dark style"
 msgstr "Podpora tmavého režimu"
 
-#: data/screenshot.appdata.xml.in:50
+#: data/screenshot.appdata.xml.in:59
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "Potiahnite a uvoľnite obrázok ukážky kamkoľvek z dialógu ukladania"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:63
 msgid "Drag to move the window from anywhere"
 msgstr "Potiahnutím posuňte okno odkiaľkoľvek"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:64
 msgid "Show details for errors if they occur"
 msgstr "Zobrazenie detailov chýb, ak nejaké nastanú"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix minor visual issues with selection items"
 msgstr "Opravené drobné vizuálne problémy s položkami výberu"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:82
 msgid "Close when pressing the Escape key"
 msgstr "Zatvoriť pri stlačení klávesy Esc"
 
-#: data/screenshot.appdata.xml.in:81
+#: data/screenshot.appdata.xml.in:90
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
@@ -95,54 +95,54 @@ msgstr ""
 "Vrátiť späť z revidovaného písma čo najskôr, aby sa zabránilo stuhnutiu v "
 "niektorých situáciách"
 
-#: data/screenshot.appdata.xml.in:89
+#: data/screenshot.appdata.xml.in:98
 msgid "Always respect delay setting"
 msgstr "Vždy rešpektovať nastavenie oneskorenia"
 
-#: data/screenshot.appdata.xml.in:90
+#: data/screenshot.appdata.xml.in:99
 msgid "Increase minimum timeout to 300"
 msgstr "Zvýšený minimálny časový limit na 300"
 
-#: data/screenshot.appdata.xml.in:98
+#: data/screenshot.appdata.xml.in:107
 msgid "Fix Alt+F4 key behavior"
 msgstr "Oprava chovania klávesovej skratky Alt+F4"
 
-#: data/screenshot.appdata.xml.in:99
+#: data/screenshot.appdata.xml.in:108
 msgid "Icons now represent the capture area options"
 msgstr "Ikonky teraz reprezentujú možnosti výberu oblasti na zachytenie"
 
-#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
-#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
-#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
-#: data/screenshot.appdata.xml.in:153
+#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
+#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
+#: data/screenshot.appdata.xml.in:162
 msgid "Minor bug fixes"
 msgstr "Oprava menších chýb"
 
-#: data/screenshot.appdata.xml.in:108
+#: data/screenshot.appdata.xml.in:117
 msgid "Fix ESC key behavior"
 msgstr "Oprava chovania klávesy Esc"
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:118
 msgid "Append scaling factor to filename"
 msgstr "Pridávať mierku zobrazenia k názvu súboru"
 
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
-msgstr "Nový predvolený priečinok na ukladanie snímkov obrazovky"
+msgstr "Nový predvolený priečinok na ukladanie snímok obrazovky"
 
-#: data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:128
 msgid "Remember main window position for reappearing window"
 msgstr "Zapamätať si pozíciu hlavného okna pre znovu sa zobrazujúce okno"
 
-#: data/screenshot.appdata.xml.in:135
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "Pri vytváraní snímku obrazovky prehrať zvuk uzávierky"
-
 #: data/screenshot.appdata.xml.in:144
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Opravená nadbytočná čierna oblasť na HiDPI snímkoch"
+msgid "Play shutter sound when a screenshot is taken"
+msgstr "Pri vytváraní snímky obrazovky prehrať zvuk uzávierky"
 
-#: data/screenshot.appdata.xml.in:187
+#: data/screenshot.appdata.xml.in:153
+msgid "Fix extra black area on HiDPI screenshots"
+msgstr "Opravená nadbytočná čierna oblasť na HiDPI snímkach"
+
+#: data/screenshot.appdata.xml.in:196
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -152,19 +152,19 @@ msgstr ""
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Momentka;Snímok obrazovky;"
+msgstr "Momentka;Snímka obrazovky;Screenshot;"
 
 #: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Snímok celej obrazovky"
+msgstr "Snímka celej obrazovky"
 
 #: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "Snímok aktuálneho okna"
+msgstr "Snímka aktuálneho okna"
 
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Snímok vybranej oblasti"
+msgstr "Snímka vybranej oblasti"
 
 #~ msgid "About Screenshot"
 #~ msgstr "O programe Snímka obrazovky"
