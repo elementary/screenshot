@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2022-08-15 05:04+0000\n"
+"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"PO-Revision-Date: 2022-11-04 02:50+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ru/>\n"
@@ -51,7 +51,7 @@ msgstr "Показывать указатель мыши на снимке эк�
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr "Редактировать системный текст"
+msgstr "Скрыть системный текст"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
@@ -71,7 +71,7 @@ msgstr "Выбрать область захвата"
 
 #: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
-msgstr "Отображать курсор:"
+msgstr "Показывать курсор:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -87,7 +87,7 @@ msgstr "Задержка в секундах:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr "Сделать снимок экрана"
+msgstr "Сделать снимок"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
@@ -101,7 +101,7 @@ msgstr "Снимок экрана от %s"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr "Не удалось сделать скриншот"
+msgstr "Не удалось сделать снимок"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
@@ -133,7 +133,7 @@ msgstr "Выберите папку для скриншотов…"
 
 #: src/Widgets/SaveDialog.vala:154
 msgid "Copy to Clipboard"
-msgstr "Копировать в буфер обмена"
+msgstr "Скопировать"
 
 #: src/Widgets/SaveDialog.vala:156
 msgid "Cancel"
