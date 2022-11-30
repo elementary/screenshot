@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 20:34+0000\n"
 "PO-Revision-Date: 2016-06-03 16:43+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Georgian <ka@li.org>\n"
@@ -94,7 +94,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
@@ -111,35 +111,39 @@ msgstr "სურათი არ დამახსოვრდა"
 msgid "Screenshot"
 msgstr "ეკრანის ანაბეჭდი"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "სურათის შენახვა როგორც..."
 
-#: src/Widgets/SaveDialog.vala:90
+#: src/Widgets/SaveDialog.vala:95
 msgid "Name:"
 msgstr "სახელი:"
 
-#: src/Widgets/SaveDialog.vala:107
+#: src/Widgets/SaveDialog.vala:114
+msgid "The filename must not be blank and must not contain '/'"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:117
 msgid "Format:"
 msgstr "ფორმატი:"
 
-#: src/Widgets/SaveDialog.vala:131
+#: src/Widgets/SaveDialog.vala:142
 msgid "Folder:"
 msgstr "საქაღალდე:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:146
 msgid "Select Screenshots Folder…"
 msgstr "ეკრანის ანაბეჭდების საქაღალდის არჩევა..."
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:169
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:171
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:173
 msgid "Save"
 msgstr "შენახვა"
 
