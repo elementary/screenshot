@@ -1,6 +1,6 @@
 /*
 * Copyright (c) 2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-*               2017–2018 elementary LLC. (https://elementary.io)
+*               2017–2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
@@ -60,8 +60,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var scale = get_style_context ().get_scale ();
 
-        var preview = new Gtk.Image ();
-        preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
+        var preview = new Gtk.Image () {
+            gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR)
+        };
         preview.get_style_context ().set_scale (1);
 
         var preview_event_box = new Gtk.EventBox ();
@@ -75,20 +76,25 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         });
 
 
-        var preview_box = new Gtk.Grid ();
-        preview_box.halign = Gtk.Align.CENTER;
+        var preview_box = new Gtk.Grid () {
+            halign = Gtk.Align.CENTER
+        };
         preview_box.add (preview_event_box);
 
         unowned Gtk.StyleContext preview_box_context = preview_box.get_style_context ();
         preview_box_context.add_class (Granite.STYLE_CLASS_CARD);
         preview_box_context.add_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
-        var dialog_label = new Gtk.Label (_("Save Image as…"));
+        var dialog_label = new Gtk.Label (_("Save Image as…")) {
+            halign = Gtk.Align.START,
+            margin_top = 12,
+            margin_start = 12
+        };
         dialog_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-        dialog_label.halign = Gtk.Align.START;
 
-        var name_label = new Gtk.Label (_("Name:"));
-        name_label.halign = Gtk.Align.END;
+        var name_label = new Gtk.Label (_("Name:")) {
+            halign = Gtk.Align.END
+        };
 
         var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
@@ -99,13 +105,18 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             file_name += "@%ix".printf (this.scale_factor);
         }
 
-        var name_entry = new Gtk.Entry ();
-        name_entry.hexpand = true;
-        name_entry.text = file_name;
+        var name_entry = new Granite.ValidatedEntry () {
+            hexpand = true,
+            text = file_name
+        };
         name_entry.grab_focus ();
 
-        var format_label = new Gtk.Label (_("Format:"));
-        format_label.halign = Gtk.Align.END;
+        var name_message_revealer = new ValidationMessage (_("The filename must not be blank and must not contain '/'"));
+        name_message_revealer.label_widget.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
+        var format_label = new Gtk.Label (_("Format:")) {
+            halign = Gtk.Align.END
+        };
 
         var format_cmb = new Gtk.ComboBoxText ();
         format_cmb.append_text ("png");
@@ -128,27 +139,31 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                 break;
         }
 
-        var location_label = new Gtk.Label (_("Folder:"));
-        location_label.halign = Gtk.Align.END;
+        var location_label = new Gtk.Label (_("Folder:")) {
+            halign = Gtk.Align.END
+        };
 
         var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
         location.set_current_folder (folder_dir);
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 12;
-        grid.margin_top = 0;
-        grid.row_spacing = 12;
-        grid.column_spacing = 12;
-        grid.attach (preview_box, 0, 0, 2, 1);
-        grid.attach (dialog_label, 0, 1, 2, 1);
-        grid.attach (name_label, 0, 2, 1, 1);
-        grid.attach (name_entry, 1, 2, 1, 1);
-        grid.attach (format_label, 0, 3, 1, 1);
-        grid.attach (format_cmb, 1, 3, 1, 1);
-        grid.attach (location_label, 0, 4, 1, 1);
-        grid.attach (location, 1, 4, 1, 1);
+        var grid = new Gtk.Grid () {
+            margin = 12,
+            margin_top = 6,
+            column_spacing = 12,
+            row_spacing = 6,
+            column_homogeneous = false
+        };
+        grid.attach (name_label, 0, 1, 1, 1);
+        grid.attach (name_entry, 1, 1, 1, 1);
+        grid.attach (format_label, 0, 2, 1, 1);
+        grid.attach (format_cmb, 1, 2, 1, 1);
+        grid.attach (location_label, 0, 3, 1, 1);
+        grid.attach (location, 1, 3, 1, 1);
 
         var content = this.get_content_area () as Gtk.Box;
+        content.add (preview_box);
+        content.add (dialog_label);
+        content.add (name_message_revealer);
         content.add (grid);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
@@ -157,6 +172,12 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
+        name_entry.changed.connect (() => {
+            name_entry.is_valid = name_entry.text.length > 0 && !name_entry.text.contains ("/");
+            name_message_revealer.reveal_child = !name_entry.is_valid;
+            save_btn.sensitive = name_entry.is_valid;
+        });
 
         save_btn.clicked.connect (() => {
             save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
