@@ -96,6 +96,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             file_name += "@%ix".printf (this.scale_factor);
         }
 
+        var name_label = new Granite.HeaderLabel (_("Name"));
+
         var name_entry = new Granite.ValidatedEntry () {
             activates_default = true,
             hexpand = true,
@@ -119,10 +121,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
         name_message_revealer.add (validation_label);
 
-        var name_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        name_box.add (new Granite.HeaderLabel (_("Name")));
-        name_box.add (name_entry);
-        name_box.add (name_message_revealer);
+        var format_label = new Granite.HeaderLabel (_("File Type"));
 
         var format_cmb = new Gtk.ComboBoxText ();
         format_cmb.append_text ("png");
@@ -145,18 +144,12 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                 break;
         }
 
-        var format_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        format_box.add (new Granite.HeaderLabel (_("File Type")));
-        format_box.add (format_cmb);
+        var location_label = new Granite.HeaderLabel (_("Folder")) {
+            margin_top = 18
+        };
 
         var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
         location.set_current_folder (folder_dir);
-
-        var location_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
-            margin_top = 18
-        };
-        location_box.add (new Granite.HeaderLabel (_("Folder")));
-        location_box.add (location);
 
         var content = this.get_content_area () as Gtk.Box;
         content.valign = Gtk.Align.START;
@@ -166,9 +159,13 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         content.margin_start = 12;
         content.add (dialog_label);
         content.add (preview_box);
-        content.add (name_box);
-        content.add (format_box);
-        content.add (location_box);
+        content.add (name_label);
+        content.add (name_entry);
+        content.add (name_message_revealer);
+        content.add (format_label);
+        content.add (format_cmb);
+        content.add (location_label);
+        content.add (location);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
 
