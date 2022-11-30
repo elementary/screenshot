@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 20:34+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2022-09-21 11:55+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -88,7 +88,7 @@ msgid "Close"
 msgstr "داخستن"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "سکرینشوت لە %s"
@@ -101,7 +101,7 @@ msgstr "نەتوانرا وێنەی شاشە بگیرێت"
 msgid "Image not saved"
 msgstr "وێنەکە پاشەکەوت نەکرا"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "سکرینشوت"
 
@@ -109,37 +109,48 @@ msgstr "سکرینشوت"
 msgid "Save Image as…"
 msgstr "پاشەکەوتکردنی وێنە وەکو…"
 
-#: src/Widgets/SaveDialog.vala:95
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "ناو:"
 
-#: src/Widgets/SaveDialog.vala:114
-msgid "The filename must not be blank and must not contain '/'"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:117
-msgid "Format:"
-msgstr "جۆر:"
-
-#: src/Widgets/SaveDialog.vala:142
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "بوخچە:"
 
-#: src/Widgets/SaveDialog.vala:146
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "بوخچەی سکرینشوتەکان دیاری بکە…"
 
-#: src/Widgets/SaveDialog.vala:169
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "کۆپیکردنی بۆ کلیپبۆرد"
 
-#: src/Widgets/SaveDialog.vala:171
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
-#: src/Widgets/SaveDialog.vala:173
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "پاشەکەوتکردن"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "جۆر:"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "نەتوانرا پەنجەرەی چالاک بدۆزرێتەوە"

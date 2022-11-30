@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 20:34+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2022-11-30 23:09+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
@@ -89,7 +89,7 @@ msgid "Close"
 msgstr "Закрити"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Знімок за %s"
@@ -102,7 +102,7 @@ msgstr "Неможливо зробити знімок екрана"
 msgid "Image not saved"
 msgstr "Зображення не збережено"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "Знімок екрана"
 
@@ -110,37 +110,52 @@ msgstr "Знімок екрана"
 msgid "Save Image as…"
 msgstr "Зберегти зображення як…"
 
-#: src/Widgets/SaveDialog.vala:95
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Назва:"
 
-#: src/Widgets/SaveDialog.vala:114
-msgid "The filename must not be blank and must not contain '/'"
-msgstr "Назва файлу не повинна бути порожньою і не повинна містити символу «/»"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:117
-msgid "Format:"
-msgstr "Формат:"
-
-#: src/Widgets/SaveDialog.vala:142
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Тека:"
 
-#: src/Widgets/SaveDialog.vala:146
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "Виберіть теку для знімків екрана…"
 
-#: src/Widgets/SaveDialog.vala:169
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: src/Widgets/SaveDialog.vala:171
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/Widgets/SaveDialog.vala:173
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "Зберегти"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "The filename must not be blank and must not contain '/'"
+#~ msgstr ""
+#~ "Назва файлу не повинна бути порожньою і не повинна містити символу «/»"
+
+#~ msgid "Format:"
+#~ msgstr "Формат:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "Знімок екрана зроблено"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 20:34+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2022-09-30 18:12+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/screenshot/"
@@ -94,7 +94,7 @@ msgid "Close"
 msgstr "Zatvoriť"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Snímka obrazovky z %s"
@@ -107,7 +107,7 @@ msgstr "Nepodarilo sa zachytiť snímku obrazovky"
 msgid "Image not saved"
 msgstr "Obrázok neuložený"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "Snímka obrazovky"
 
@@ -115,37 +115,48 @@ msgstr "Snímka obrazovky"
 msgid "Save Image as…"
 msgstr "Uložiť obrázok ako…"
 
-#: src/Widgets/SaveDialog.vala:95
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Názov:"
 
-#: src/Widgets/SaveDialog.vala:114
-msgid "The filename must not be blank and must not contain '/'"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:117
-msgid "Format:"
-msgstr "Formát:"
-
-#: src/Widgets/SaveDialog.vala:142
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Priečinok:"
 
-#: src/Widgets/SaveDialog.vala:146
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "Vybrať priečinok snímok obrazovky…"
 
-#: src/Widgets/SaveDialog.vala:169
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "Skopírovať do schránky"
 
-#: src/Widgets/SaveDialog.vala:171
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Widgets/SaveDialog.vala:173
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "Uložiť"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Formát:"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nebolo nájdené žiadne aktívne okno"

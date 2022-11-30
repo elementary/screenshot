@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 20:34+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2019-02-22 00:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -95,7 +95,7 @@ msgid "Close"
 msgstr "Lukk"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skjermavbildning fra %s"
@@ -108,7 +108,7 @@ msgstr "Kunne ikke utføre skjermavbildning"
 msgid "Image not saved"
 msgstr "Bilde ikke lagret"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "Skjermavbildning"
 
@@ -116,37 +116,48 @@ msgstr "Skjermavbildning"
 msgid "Save Image as…"
 msgstr "Lagre bilde som…"
 
-#: src/Widgets/SaveDialog.vala:95
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Navn:"
 
-#: src/Widgets/SaveDialog.vala:114
-msgid "The filename must not be blank and must not contain '/'"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:117
-msgid "Format:"
-msgstr "Format:"
-
-#: src/Widgets/SaveDialog.vala:142
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Mappe:"
 
-#: src/Widgets/SaveDialog.vala:146
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "Velg mappe for skjermavbildninger…"
 
-#: src/Widgets/SaveDialog.vala:169
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavle"
 
-#: src/Widgets/SaveDialog.vala:171
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/SaveDialog.vala:173
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "Lagre"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Format:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "Skjermavbildning utført"

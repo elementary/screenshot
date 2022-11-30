@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 20:34+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2022-08-05 18:30+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/screenshot/"
@@ -93,7 +93,7 @@ msgid "Close"
 msgstr "닫기"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s에 스크린샷 찍기"
@@ -106,7 +106,7 @@ msgstr "스크린샷을 찍을 수 없습니다"
 msgid "Image not saved"
 msgstr "이미지 저장되지 않음"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "스크린샷"
 
@@ -114,37 +114,48 @@ msgstr "스크린샷"
 msgid "Save Image as…"
 msgstr "다음 이름으로 저장하기…"
 
-#: src/Widgets/SaveDialog.vala:95
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "이름:"
 
-#: src/Widgets/SaveDialog.vala:114
-msgid "The filename must not be blank and must not contain '/'"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:117
-msgid "Format:"
-msgstr "형식:"
-
-#: src/Widgets/SaveDialog.vala:142
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "폴더:"
 
-#: src/Widgets/SaveDialog.vala:146
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "스크린샷 폴더 고르기…"
 
-#: src/Widgets/SaveDialog.vala:169
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
-#: src/Widgets/SaveDialog.vala:171
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Widgets/SaveDialog.vala:173
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "저장"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "형식:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "스크린샷을 찍었습니다"
