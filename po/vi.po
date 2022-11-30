@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 20:34+0000\n"
 "PO-Revision-Date: 2020-10-11 06:14+0000\n"
 "Last-Translator: Trkien618 <hacngoctrungkien@gmail.com>\n"
 "Language-Team: Vietnamese <https://l10n.elementary.io/projects/screenshot-"
@@ -89,7 +89,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Ảnh chụp màn hình từ %s"
@@ -106,35 +106,39 @@ msgstr "Hình ảnh không được lưu"
 msgid "Screenshot"
 msgstr "Ảnh chụp màn hình"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "Lưu ảnh thành…"
 
-#: src/Widgets/SaveDialog.vala:90
+#: src/Widgets/SaveDialog.vala:95
 msgid "Name:"
 msgstr "Tên:"
 
-#: src/Widgets/SaveDialog.vala:107
+#: src/Widgets/SaveDialog.vala:114
+msgid "The filename must not be blank and must not contain '/'"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:117
 msgid "Format:"
 msgstr "Định dạng:"
 
-#: src/Widgets/SaveDialog.vala:131
+#: src/Widgets/SaveDialog.vala:142
 msgid "Folder:"
 msgstr "Thư mục:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:146
 msgid "Select Screenshots Folder…"
 msgstr "Chọn thư mục cho ảnh chụp màn hình…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:169
 msgid "Copy to Clipboard"
 msgstr "Sao chép vào Clipboard"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:171
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:173
 msgid "Save"
 msgstr "Lưu"
 

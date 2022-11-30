@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 20:34+0000\n"
 "PO-Revision-Date: 2018-04-19 15:30+0000\n"
 "Last-Translator: xia zixin <xia.zixin@yahoo.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/screenshot-"
@@ -89,7 +89,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
 #, c-format
 msgid "Screenshot from %s"
 msgstr "屏幕截图 %s"
@@ -106,35 +106,39 @@ msgstr "图像未保存"
 msgid "Screenshot"
 msgstr "截图"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "另存为…"
 
-#: src/Widgets/SaveDialog.vala:90
+#: src/Widgets/SaveDialog.vala:95
 msgid "Name:"
 msgstr "姓名："
 
-#: src/Widgets/SaveDialog.vala:107
+#: src/Widgets/SaveDialog.vala:114
+msgid "The filename must not be blank and must not contain '/'"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:117
 msgid "Format:"
 msgstr "格式："
 
-#: src/Widgets/SaveDialog.vala:131
+#: src/Widgets/SaveDialog.vala:142
 msgid "Folder:"
 msgstr "文件夹："
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:146
 msgid "Select Screenshots Folder…"
 msgstr "选择截图文件夹…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:169
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:171
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:173
 msgid "Save"
 msgstr "保存"
 

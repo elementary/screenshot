@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 20:34+0000\n"
 "PO-Revision-Date: 2018-07-05 20:07+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/screenshot-"
@@ -96,7 +96,7 @@ msgid "Close"
 msgstr "Zapri"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Zaslonska slika %s"
@@ -113,35 +113,39 @@ msgstr "Slika ni bila shranjena"
 msgid "Screenshot"
 msgstr "Posnetek zaslona"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "Shrani sliko kot…"
 
-#: src/Widgets/SaveDialog.vala:90
+#: src/Widgets/SaveDialog.vala:95
 msgid "Name:"
 msgstr "Ime:"
 
-#: src/Widgets/SaveDialog.vala:107
+#: src/Widgets/SaveDialog.vala:114
+msgid "The filename must not be blank and must not contain '/'"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:117
 msgid "Format:"
 msgstr "Zapis:"
 
-#: src/Widgets/SaveDialog.vala:131
+#: src/Widgets/SaveDialog.vala:142
 msgid "Folder:"
 msgstr "Mapa:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:146
 msgid "Select Screenshots Folder…"
 msgstr "Izberite mapo za slike…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:169
 msgid "Copy to Clipboard"
 msgstr "Kopiraj v odložišče"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:171
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:173
 msgid "Save"
 msgstr "Shrani"
 

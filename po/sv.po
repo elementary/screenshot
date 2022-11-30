@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 20:34+0000\n"
 "PO-Revision-Date: 2018-10-21 09:35+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/screenshot-"
@@ -95,7 +95,7 @@ msgid "Close"
 msgstr "Stäng"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:102
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skärmdump från %s"
@@ -112,35 +112,39 @@ msgstr "Bilden sparades inte"
 msgid "Screenshot"
 msgstr "Skärmdump"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "Spara bild som…"
 
-#: src/Widgets/SaveDialog.vala:90
+#: src/Widgets/SaveDialog.vala:95
 msgid "Name:"
 msgstr "Namn:"
 
-#: src/Widgets/SaveDialog.vala:107
+#: src/Widgets/SaveDialog.vala:114
+msgid "The filename must not be blank and must not contain '/'"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:117
 msgid "Format:"
 msgstr "Format:"
 
-#: src/Widgets/SaveDialog.vala:131
+#: src/Widgets/SaveDialog.vala:142
 msgid "Folder:"
 msgstr "Mapp:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:146
 msgid "Select Screenshots Folder…"
 msgstr "Välj mapp för skärmdumpar…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:169
 msgid "Copy to Clipboard"
 msgstr "Kopiera till urklipp"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:171
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:173
 msgid "Save"
 msgstr "Spara"
 
