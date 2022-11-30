@@ -177,10 +177,10 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         name_entry.changed.connect (() => {
             if (name_entry.text.length == 0) {
-                validation_label.label = _("File name can't be blank");
+                validation_label.label = _("Filename can't be blank");
                 name_entry.is_valid = false;
             } else if (name_entry.text.contains ("/")) {
-                validation_label.label = _("File name can't contain “/”");
+                validation_label.label = _("Filename can't contain “/”");
                 name_entry.is_valid = false;
             } else {
                 name_entry.is_valid = true;
