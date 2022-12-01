@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-30 23:09+0000\n"
-"PO-Revision-Date: 2020-07-09 21:12+0000\n"
+"PO-Revision-Date: 2022-12-03 12:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -115,20 +115,16 @@ msgid "Save Image as…"
 msgstr "Desa la imatge com a…"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "Nom:"
+msgstr "Nom"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "Tipus de fitxer"
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "Carpeta:"
+msgstr "Carpeta"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
@@ -148,11 +144,11 @@ msgstr "Desa"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "El nom del fitxer no pot estar en blanc."
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "El nom del fitxer no pot contenir /."
 
 #~ msgid "Format:"
 #~ msgstr "Format:"
