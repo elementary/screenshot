@@ -105,6 +105,19 @@ public class Screenshot.Application : Gtk.Application {
             }
         });
 
+        var open_action = new SimpleAction ("open", VariantType.STRING);
+        open_action.activate.connect ((parameter) => {
+            var context = Gdk.Display.get_default ().get_app_launch_context ();
+            context.set_timestamp (Gdk.CURRENT_TIME);
+
+            try {
+                AppInfo.launch_default_for_uri ("file:///" + parameter.get_string (), context);
+            } catch (Error e) {
+                critical (e.message);
+            }
+        });
+
+        add_action (open_action);
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
     }

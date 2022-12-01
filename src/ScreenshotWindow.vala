@@ -262,6 +262,10 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         var readable_path = folder_dir.replace (Environment.get_home_dir () + "%c".printf (Path.DIR_SEPARATOR), "");
 
         var notification = new Notification (_("Screenshot saved"));
+        notification.add_button (
+            _("Open"),
+            Action.print_detailed_name ("app.open", new Variant ("s", full_file_name))
+        );
         notification.set_body (_("Saved to “%s”").printf (readable_path));
         notification.set_icon (file_icon);
         notification.set_priority (NotificationPriority.LOW);
