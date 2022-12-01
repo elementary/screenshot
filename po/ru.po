@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-30 23:09+0000\n"
-"PO-Revision-Date: 2022-11-04 02:50+0000\n"
+"PO-Revision-Date: 2022-12-03 12:25+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -116,20 +116,16 @@ msgid "Save Image as…"
 msgstr "Сохранить изображение как…"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "Название:"
+msgstr "Название"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "Тип файла"
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "Папка:"
+msgstr "Папка"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
@@ -149,11 +145,11 @@ msgstr "Сохранить"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "Имя файла не может быть пустым"
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "Имя файла не может содержать «/»"
 
 #~ msgid "Format:"
 #~ msgstr "Формат:"
