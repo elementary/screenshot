@@ -281,6 +281,11 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
                 /// TRANSLATORS: %s represents a timestamp here
                 string file_name = _("Screenshot from %s").printf (date_time);
+
+                if (scale_factor > 1) {
+                    file_name += "@%ix".printf (scale_factor);
+                }
+
                 string format = settings.get_string ("format");
                 try {
                     save_file (file_name, format, "", screenshot);
