@@ -19,7 +19,6 @@
 
 public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
     public bool to_clipboard { get; construct; }
-    public bool close_on_save { get; set; }
     public bool mouse_pointer { get; set; }
     public bool redact { get; set; }
 
@@ -46,7 +45,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             to_clipboard: clipboard
         );
 
-        close_on_save = true;
         from_command = true;
         mouse_pointer = grab_pointer;
         this.delay = int.max (0, delay);
@@ -95,12 +93,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         pointer_switch = new Gtk.Switch ();
         pointer_switch.halign = Gtk.Align.START;
 
-        var close_label = new Gtk.Label (_("Close after saving:"));
-        close_label.halign = Gtk.Align.END;
-
-        var close_switch = new Gtk.Switch ();
-        close_switch.halign = Gtk.Align.START;
-
         var redact_label = new Gtk.Label (_("Conceal text:"));
         redact_label.halign = Gtk.Align.END;
 
@@ -139,8 +131,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         };
         option_grid.attach (pointer_label, 0, 0);
         option_grid.attach (pointer_switch, 1, 0);
-        option_grid.attach (close_label, 0, 1);
-        option_grid.attach (close_switch, 1, 1);
         option_grid.attach (redact_label, 0, 2);
         option_grid.attach (redact_switch, 1, 2);
         option_grid.attach (delay_label, 0, 3);
@@ -170,8 +160,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("mouse-pointer", this, "mouse-pointer", GLib.SettingsBindFlags.DEFAULT);
-        settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        settings.bind ("close-on-save", this, "close-on-save", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("redact", this, "redact", GLib.SettingsBindFlags.DEFAULT);
@@ -297,7 +285,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
                 }
             }
 
-            if (close_on_save || from_command) {
+            if (from_command) {
                 destroy ();
             }
     }
@@ -313,11 +301,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             Gdk.Pixbuf? pixbuf = null;
             try {
                 pixbuf = backend.capture.end (res);
-            } catch (GLib.IOError.CANCELLED e) {
-                if (close_on_save) {
-                    this.destroy ();
-                    return;
-                }
             } catch (Error e) {
                 show_error_dialog (e.message);
             }
