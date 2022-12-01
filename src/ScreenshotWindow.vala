@@ -274,29 +274,29 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
     }
 
     private void save_pixbuf (Gdk.Pixbuf screenshot) {
-            if (to_clipboard) {
-                Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
-            } else {
-                var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
+        if (to_clipboard) {
+            Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
+        } else {
+            var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
-                /// TRANSLATORS: %s represents a timestamp here
-                string file_name = _("Screenshot from %s").printf (date_time);
+            /// TRANSLATORS: %s represents a timestamp here
+            string file_name = _("Screenshot from %s").printf (date_time);
 
-                if (scale_factor > 1) {
-                    file_name += "@%ix".printf (scale_factor);
-                }
-
-                string format = settings.get_string ("format");
-                try {
-                    save_file (file_name, format, "", screenshot);
-                } catch (GLib.Error e) {
-                    show_error_dialog (e.message);
-                }
+            if (scale_factor > 1) {
+                file_name += "@%ix".printf (scale_factor);
             }
 
-            if (from_command) {
-                destroy ();
+            string format = settings.get_string ("format");
+            try {
+                save_file (file_name, format, "", screenshot);
+            } catch (GLib.Error e) {
+                show_error_dialog (e.message);
             }
+        }
+
+        if (from_command) {
+            destroy ();
+        }
     }
 
     public void take_clicked () {
