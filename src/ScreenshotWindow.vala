@@ -230,20 +230,29 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         pointer_switch.sensitive = sensitive;
     }
 
-    private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
-        string full_file_name = "";
+    private void save_file (Gdk.Pixbuf screenshot) throws GLib.Error {
+        var date_time = new DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
-        if (folder_dir == "") {
-            folder_dir = settings.get_string ("folder-dir");
-            if (folder_dir == "") {
-                folder_dir = Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                    + "%c".printf (Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
-            }
+        /// TRANSLATORS: %s represents a timestamp here
+        string file_name = _("Screenshot from %s").printf (date_time);
 
-            Application.create_dir_if_missing (folder_dir);
+        if (scale_factor > 1) {
+            file_name += "@%ix".printf (scale_factor);
         }
 
+        string full_file_name = "";
+
+        var folder_dir = settings.get_string ("folder-dir");
+        if (folder_dir == "") {
+            folder_dir = Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
+                + "%c".printf (Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
+        }
+
+        Application.create_dir_if_missing (folder_dir);
+
         int attempt = 0;
+
+        string format = settings.get_string ("format");
 
         do {
             if (attempt == 0) {
@@ -277,18 +286,8 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         if (to_clipboard) {
             Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
         } else {
-            var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
-
-            /// TRANSLATORS: %s represents a timestamp here
-            string file_name = _("Screenshot from %s").printf (date_time);
-
-            if (scale_factor > 1) {
-                file_name += "@%ix".printf (scale_factor);
-            }
-
-            string format = settings.get_string ("format");
             try {
-                save_file (file_name, format, "", screenshot);
+                save_file (screenshot);
             } catch (GLib.Error e) {
                 show_error_dialog (e.message);
             }
