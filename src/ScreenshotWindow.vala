@@ -244,16 +244,14 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
     private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
         string full_file_name = "";
-        string folder_from_settings = "";
 
         if (folder_dir == "") {
-            folder_from_settings = settings.get_string ("folder-dir");
-            if (folder_from_settings != "") {
-                folder_dir = folder_from_settings;
-            } else {
-                folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                    + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
+            folder_dir = settings.get_string ("folder-dir");
+            if (folder_dir == "") {
+                folder_dir = Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
+                    + "%c".printf (Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
             }
+
             Application.create_dir_if_missing (folder_dir);
         }
 
@@ -270,6 +268,17 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         } while (File.new_for_path (full_file_name).query_exists ());
 
         screenshot.save (full_file_name, format);
+
+        var file_icon = new FileIcon (File.new_for_path (full_file_name));
+
+        var readable_path = folder_dir.replace (Environment.get_home_dir () + "%c".printf (Path.DIR_SEPARATOR), "");
+
+        var notification = new Notification (_("Screenshot saved"));
+        notification.set_body (_("Saved to “%s”").printf (readable_path));
+        notification.set_icon (file_icon);
+        notification.set_priority (NotificationPriority.LOW);
+
+        GLib.Application.get_default ().send_notification (null, notification);
     }
 
     private void save_pixbuf (Gdk.Pixbuf screenshot) {
