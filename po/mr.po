@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:48+0000\n"
+"POT-Creation-Date: 2022-11-30 23:09+0000\n"
 "PO-Revision-Date: 2020-09-15 19:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -88,7 +88,7 @@ msgid "Close"
 msgstr "बंद करा"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s चा स्क्रीनशॉट"
@@ -101,41 +101,56 @@ msgstr "स्क्रीनशॉट कॅप्चर होऊ शकला
 msgid "Image not saved"
 msgstr "प्रतिमा जतन केली नाही"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "स्क्रीनशॉट"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "म्हणून प्रतिमा जतन करा …"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:99
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "नाव:"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "प्रारूप:"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:147
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "फ़ोल्डर:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "स्क्रीनशॉट फोल्डर निवडा …"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्डवर कॉपी करा"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "जतन करा"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "प्रारूप:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "स्क्रीनशॉट घेतला"
