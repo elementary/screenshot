@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2018-07-04 18:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/screenshot-"
@@ -148,10 +148,6 @@ msgstr "Korjaa ylimääräinen musta alue HiDPI-kuvakaappauksista"
 #| msgid "elementary LLC."
 msgid "elementary, Inc."
 msgstr "elementary LLC."
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr ""
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"

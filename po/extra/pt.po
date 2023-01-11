@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2021-12-21 20:15+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/screenshot/"
@@ -147,10 +147,6 @@ msgstr "Corrigida área preta extra nas capturas HiDPI"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr "io.elementary.screenshot"
-
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "Instantâneo;Captura de ecrã;"
@@ -166,6 +162,9 @@ msgstr "Captura da janela atual"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura da área selecionada"
+
+#~ msgid "io.elementary.screenshot"
+#~ msgstr "io.elementary.screenshot"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

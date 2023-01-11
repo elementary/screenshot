@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2018-08-24 00:01+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
@@ -142,10 +142,6 @@ msgstr "Perbaiki area hitam ekstra pada cuplikan layar HiDPI"
 #| msgid "elementary LLC."
 msgid "elementary, Inc."
 msgstr "elementary LLC."
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr ""
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2022-06-05 20:16+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -146,10 +146,6 @@ msgstr "HiDPI ekran görüntülerinde ekstra siyah alanı düzelt"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr "io.elementary.screenshot"
-
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr ""
@@ -166,6 +162,9 @@ msgstr "Geçerli Pencerenin Görüntüsü"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Seçilen Bölgenin Görüntüsü"
+
+#~ msgid "io.elementary.screenshot"
+#~ msgstr "io.elementary.screenshot"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

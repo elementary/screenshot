@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2021-11-01 16:19+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -144,10 +144,6 @@ msgstr "修复 HiDPI 截屏中存在黑色区域的问题"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr "io.elementary.screenshot"
-
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
 msgstr "截图;截屏;"
@@ -163,6 +159,9 @@ msgstr "当前窗口的截图"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "选中区域的截图"
+
+#~ msgid "io.elementary.screenshot"
+#~ msgstr "io.elementary.screenshot"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"
