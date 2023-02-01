@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2020-07-09 21:12+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"PO-Revision-Date: 2022-12-03 12:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -88,7 +88,7 @@ msgid "Close"
 msgstr "閉じる"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s のスクリーンショット"
@@ -101,41 +101,52 @@ msgstr "スクリーンショットを取得できませんでした"
 msgid "Image not saved"
 msgstr "画像は保存されていません"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "名前を付けて画像を保存…"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "名前:"
+#: src/Widgets/SaveDialog.vala:99
+msgid "Name"
+msgstr "名前"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "形式:"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
+msgstr "ファイルの種類"
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
-msgstr "フォルダー:"
+#: src/Widgets/SaveDialog.vala:147
+msgid "Folder"
+msgstr "フォルダー"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "スクリーンショットフォルダーを選択…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "クリップボードにコピー"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "保存"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr "ファイル名は空にできません"
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr "ファイル名に “/” は使えません"
+
+#~ msgid "Format:"
+#~ msgstr "形式:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "スクリーンショットを撮りました"

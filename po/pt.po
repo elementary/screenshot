@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-05-02 12:42+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"PO-Revision-Date: 2022-12-20 23:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -93,7 +93,7 @@ msgid "Close"
 msgstr "Fechar"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura de ecrã de %s"
@@ -106,41 +106,52 @@ msgstr "Não foi possível capturar a foto do ecrã"
 msgid "Image not saved"
 msgstr "Imagem não guardada"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "Captura de ecrã"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "Guardar imagem como…"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "Nome:"
+#: src/Widgets/SaveDialog.vala:99
+msgid "Name"
+msgstr "Nome"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Formato:"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
+msgstr "Tipo de ficheiro"
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
-msgstr "Pasta:"
+#: src/Widgets/SaveDialog.vala:147
+msgid "Folder"
+msgstr "Pasta"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "Selecionar pasta de capturas de ecrã…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "Guardar"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr "O nome do ficheiro não pode ficar em branco"
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr "O nome do ficheiro não pode conter \"/\""
+
+#~ msgid "Format:"
+#~ msgstr "Formato:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "Captura de ecrã efetuada"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2016-04-20 17:50+0000\n"
 "Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -33,115 +33,111 @@ msgid ""
 msgstr ""
 
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
-#: data/screenshot.appdata.xml.in:71
+#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
+#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
 msgid "Minor updates:"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:32
-msgid "Update elementary runtime to 6.1"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:33
+#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
-#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
-#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
-#: data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:41
+msgid "Update elementary runtime to 6.1"
+msgstr ""
+
+#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
+#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
+#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
+#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
+#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
+#: data/screenshot.appdata.xml.in:154
 msgid "Translation updates"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:47
+#: data/screenshot.appdata.xml.in:56
 msgid "New features:"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:49
+#: data/screenshot.appdata.xml.in:58
 msgid "Support the dark style"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:50
+#: data/screenshot.appdata.xml.in:59
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.appdata.xml.in:63
 msgid "Drag to move the window from anywhere"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.appdata.xml.in:64
 msgid "Show details for errors if they occur"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.appdata.xml.in:73
 msgid "Fix minor visual issues with selection items"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.appdata.xml.in:82
 msgid "Close when pressing the Escape key"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:81
+#: data/screenshot.appdata.xml.in:90
 msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:89
+#: data/screenshot.appdata.xml.in:98
 msgid "Always respect delay setting"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:90
+#: data/screenshot.appdata.xml.in:99
 msgid "Increase minimum timeout to 300"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:98
+#: data/screenshot.appdata.xml.in:107
 msgid "Fix Alt+F4 key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:99
+#: data/screenshot.appdata.xml.in:108
 msgid "Icons now represent the capture area options"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
-#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
-#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
-#: data/screenshot.appdata.xml.in:153
+#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
+#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
+#: data/screenshot.appdata.xml.in:162
 msgid "Minor bug fixes"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:108
+#: data/screenshot.appdata.xml.in:117
 msgid "Fix ESC key behavior"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:109
+#: data/screenshot.appdata.xml.in:118
 msgid "Append scaling factor to filename"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:118
+#: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:119
+#: data/screenshot.appdata.xml.in:128
 msgid "Remember main window position for reappearing window"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:135
+#: data/screenshot.appdata.xml.in:144
 msgid "Play shutter sound when a screenshot is taken"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:144
+#: data/screenshot.appdata.xml.in:153
 msgid "Fix extra black area on HiDPI screenshots"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:187
+#: data/screenshot.appdata.xml.in:196
 msgid "elementary, Inc."
-msgstr ""
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
 msgstr ""
 
 #: data/screenshot.desktop.in:10

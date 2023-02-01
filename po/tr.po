@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
-"PO-Revision-Date: 2021-08-18 05:04+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"PO-Revision-Date: 2022-12-03 12:25+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -93,7 +93,7 @@ msgid "Close"
 msgstr "Kapat"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s ekran görüntüsü"
@@ -106,41 +106,52 @@ msgstr "Ekran görüntüsü yakalanamadı"
 msgid "Image not saved"
 msgstr "Görüntü kaydedilmedi"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:35
 msgid "Screenshot"
 msgstr "Ekran Görüntüsü"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:88
 msgid "Save Image as…"
 msgstr "Resmi Farklı Kaydet…"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
-msgstr "İsim:"
+#: src/Widgets/SaveDialog.vala:99
+msgid "Name"
+msgstr "Ad"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Biçim:"
+#: src/Widgets/SaveDialog.vala:124
+msgid "File Type"
+msgstr "Dosya Türü"
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
-msgstr "Klasör:"
+#: src/Widgets/SaveDialog.vala:147
+msgid "Folder"
+msgstr "Klasör"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
 msgstr "Ekran Görüntüsü Klasörünü Seç…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
 msgstr "Panoya Kopyala"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:174
 msgid "Save"
 msgstr "Kaydet"
+
+#: src/Widgets/SaveDialog.vala:180
+msgid "Filename can't be blank"
+msgstr "Dosya adı boş olamaz"
+
+#: src/Widgets/SaveDialog.vala:183
+msgid "Filename can't contain “/”"
+msgstr "Dosya adı “/” içeremez"
+
+#~ msgid "Format:"
+#~ msgstr "Biçim:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "Ekran görüntüsü alındı"
