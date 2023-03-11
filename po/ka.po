@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2023-03-11 09:36+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ka/>\n"
 "Language: ka\n"
@@ -21,9 +21,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
-#, fuzzy
 msgid "Screenshots"
-msgstr "ეკრანის ანაბეჭდი"
+msgstr "ეკრანის ანაბეჭდები"
 
 #: src/Application.vala:33
 msgid "Capture area"
@@ -70,10 +69,8 @@ msgid "Select area to grab"
 msgstr "დასაფიქსირებელი სივრცის არჩევა"
 
 #: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
 msgid "Grab pointer:"
-msgstr "მაუსის ისრის დაფიქსირება"
+msgstr "კურსორის გადაღება:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -118,20 +115,16 @@ msgid "Save Image as…"
 msgstr "სურათის შენახვა როგორც…"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "სახელი:"
+msgstr "სახელი"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
 msgstr ""
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "საქაღალდე:"
+msgstr "საქაღალდე"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
