@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2023-03-11 09:36+0000\n"
+"PO-Revision-Date: 2023-03-12 10:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ka/>\n"
@@ -26,47 +26,47 @@ msgstr "ეკრანის ანაბეჭდები"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr ""
+msgstr "გადასაღები ადგილი"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "მთელი ეკრანის გადაღება"
 
 #: src/Application.vala:35
 msgid "Capture active window"
-msgstr ""
+msgstr "აქტური ფანჯრის გადაღება"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "ანაბეჭდის მითითებული დაყოვნების შემდეგ გადაღება"
 
 #: src/Application.vala:37
 msgid "Seconds"
-msgstr ""
+msgstr "წამი"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "ეკრანის ანაბეჭდზე კურსორიც გამოჩნდება"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr ""
+msgstr "სისტემის ტექსტის ჩასწორება"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "ეკრანის ანაბეჭდის ბაფერში შენახვა"
 
 #: src/ScreenshotWindow.vala:82
 msgid "Grab the whole screen"
-msgstr "მთელი ეკრანის დაფიქსირება"
+msgstr "მთლიანი ეკრანის დათრევა"
 
 #: src/ScreenshotWindow.vala:86
 msgid "Grab the current window"
-msgstr "მიმდინარე ფანჯრის დაფიქსირება"
+msgstr "მიმდინარე ფანჯრის დათრევა"
 
 #: src/ScreenshotWindow.vala:90
 msgid "Select area to grab"
-msgstr "დასაფიქსირებელი სივრცის არჩევა"
+msgstr "მონიშნეთ დასათრევი ადგილი"
 
 #: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
@@ -78,11 +78,11 @@ msgstr "დახურვა შენახვის შემდეგ:"
 
 #: src/ScreenshotWindow.vala:104
 msgid "Conceal text:"
-msgstr ""
+msgstr "ტექსტის დამალვა:"
 
 #: src/ScreenshotWindow.vala:115
 msgid "Delay in seconds:"
-msgstr "დაყოვნება წამებში:"
+msgstr "დაყოვნების დრო წამებში:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
@@ -90,17 +90,17 @@ msgstr "ეკრანის ანაბეჭდის გადაღებ�
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
-msgstr ""
+msgstr "ახლო"
 
 #. / TRANSLATORS: %s represents a timestamp here
 #: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "ეკრანის ანაბეჭდი %s-დან"
 
 #: src/ScreenshotWindow.vala:360
 msgid "Could not capture screenshot"
-msgstr ""
+msgstr "ეკრანის ანაბეჭდის გადაღების შეცდომა"
 
 #: src/ScreenshotWindow.vala:361
 msgid "Image not saved"
@@ -120,7 +120,7 @@ msgstr "სახელი"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "ფაილის ტიპი"
 
 #: src/Widgets/SaveDialog.vala:147
 msgid "Folder"
@@ -132,7 +132,7 @@ msgstr "ეკრანის ანაბეჭდების საქაღ�
 
 #: src/Widgets/SaveDialog.vala:170
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "ბუფერში კოპირება"
 
 #: src/Widgets/SaveDialog.vala:172
 msgid "Cancel"
@@ -144,11 +144,11 @@ msgstr "შენახვა"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "ფაილის სახელი არ შეიძლება, ცარიელი იყოს"
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "ფაილის სახელი არ შეიძლება შეიცავდეს \"/\""
 
 #~ msgid "Format:"
 #~ msgstr "ფორმატი:"
