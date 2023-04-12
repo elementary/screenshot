@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
-"PO-Revision-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"PO-Revision-Date: 2022-12-03 12:25+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/uk/>\n"
@@ -111,20 +111,16 @@ msgid "Save Image as…"
 msgstr "Зберегти зображення як…"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "Назва:"
+msgstr "Назва"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "Тип файлу"
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "Тека:"
+msgstr "Тека"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
@@ -144,11 +140,11 @@ msgstr "Зберегти"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "Назва файлу не може бути порожньою"
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "Назва файлу не може містити символ «/»"
 
 #~ msgid "The filename must not be blank and must not contain '/'"
 #~ msgstr ""

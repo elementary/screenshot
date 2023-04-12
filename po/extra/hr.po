@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2017-09-19 20:54+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Croatian <https://weblate.elementary.io/projects/screenshot-"
@@ -140,10 +140,6 @@ msgstr "Popravljeno dodatno crno područje na HiDPI snimkama zaslona"
 
 #: data/screenshot.appdata.xml.in:196
 msgid "elementary, Inc."
-msgstr ""
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
 msgstr ""
 
 #: data/screenshot.desktop.in:10

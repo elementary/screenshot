@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2018-10-25 10:04+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/screenshot-"
@@ -145,10 +145,6 @@ msgstr ""
 #| msgid "elementary LLC."
 msgid "elementary, Inc."
 msgstr "elementary LLC."
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr ""
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"

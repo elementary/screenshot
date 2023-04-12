@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 23:09+0000\n"
-"PO-Revision-Date: 2020-07-09 21:12+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/fr/>\n"
+"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"PO-Revision-Date: 2023-02-23 19:25+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -50,7 +50,7 @@ msgstr "Inclure le pointeur dans la capture d'écran"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr "Rédiger le texte du système"
+msgstr "Caviarder le texte du système"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
@@ -115,20 +115,16 @@ msgid "Save Image as…"
 msgstr "Enregistrer l'image sous…"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "Nom :"
+msgstr "Nom"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "Type de fichier"
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "Dossier :"
+msgstr "Dossier"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
@@ -148,11 +144,11 @@ msgstr "Enregistrer"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "Le nom du fichier ne peut pas être vide"
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "Le nom du fichier ne peut pas contenir « / »"
 
 #~ msgid "Format:"
 #~ msgstr "Format :"
