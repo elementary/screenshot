@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2020-09-15 19:14+0000\n"
+"PO-Revision-Date: 2023-02-08 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot-tool/"
-"screenshot-tool/mr/>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -110,20 +110,16 @@ msgid "Save Image as…"
 msgstr "म्हणून प्रतिमा जतन करा …"
 
 #: src/Widgets/SaveDialog.vala:99
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "नाव:"
+msgstr "नाव"
 
 #: src/Widgets/SaveDialog.vala:124
 msgid "File Type"
-msgstr ""
+msgstr "फाईल प्रकार"
 
 #: src/Widgets/SaveDialog.vala:147
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "फ़ोल्डर:"
+msgstr "फ़ोल्डर"
 
 #: src/Widgets/SaveDialog.vala:151
 msgid "Select Screenshots Folder…"
@@ -143,11 +139,11 @@ msgstr "जतन करा"
 
 #: src/Widgets/SaveDialog.vala:180
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "फाइलनाव रिक्त असू शकत नाही"
 
 #: src/Widgets/SaveDialog.vala:183
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "फाइलनावामध्ये “/” असू शकत नाही"
 
 #~ msgid "Format:"
 #~ msgstr "प्रारूप:"
