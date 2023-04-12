@@ -1,4 +1,4 @@
-/*
+ /*
 * Copyright 2017–2020 elementary, Inc. (https://elementary.io)
 *           2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
 *
@@ -18,7 +18,7 @@
 */
 
 public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
-    public bool to_clipboard { get; construct; }
+    public bool to_clipboard { get; set construct; }
     public bool mouse_pointer { get; set; }
     public bool redact { get; set; }
 
@@ -109,6 +109,22 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
 
+        var destination_label = new Gtk.Label (_("Send to:")) {
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.CENTER,
+        };
+
+        var dest_screenshots_button = new Gtk.RadioButton (null) {
+            tooltip_text = _("Save to Screenshots"),
+            image = new Gtk.Image.from_icon_name ("document-save", Gtk.IconSize.DND)
+        };
+
+        //TODO Better icon
+        var dest_clipboard_button = new Gtk.RadioButton.from_widget (dest_screenshots_button) {
+            tooltip_text = _("Save to Clipboard"),
+            image = new Gtk.Image.from_icon_name ("edit-paste", Gtk.IconSize.DND)
+        };
+
         var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
         take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         take_btn.can_default = true;
@@ -135,6 +151,10 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         option_grid.attach (redact_switch, 1, 2);
         option_grid.attach (delay_label, 0, 3);
         option_grid.attach (delay_spin, 1, 3);
+
+        option_grid.attach (destination_label, 0, 4);
+        option_grid.attach (dest_screenshots_button, 1, 4);
+        option_grid.attach (dest_clipboard_button, 2, 4);
 
         var actions = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
             layout_style = Gtk.ButtonBoxStyle.END,
@@ -206,6 +226,10 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         take_btn.clicked.connect (take_clicked);
         close_btn.clicked.connect (() => {
             destroy ();
+        });
+
+        dest_clipboard_button.toggled.connect (() => {
+            to_clipboard = dest_clipboard_button.active;
         });
 
         var gtk_settings = Gtk.Settings.get_default ();
@@ -285,6 +309,11 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
     private void save_pixbuf (Gdk.Pixbuf screenshot) {
         if (to_clipboard) {
             Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
+            var notification = new Notification (_("Screenshot copied to clipboard"));
+            notification.set_icon (new ThemedIcon ("edit-paste"));
+            notification.set_priority (NotificationPriority.LOW);
+
+            GLib.Application.get_default ().send_notification (null, notification);
         } else {
             try {
                 save_file (screenshot);
