@@ -4,8 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
 "PO-Revision-Date: 2023-05-26 16:27+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: sofiul_iam <sofiulfr@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
 "extra/id/>\n"
 "Language: id\n"
@@ -124,7 +123,7 @@ msgstr "Menambahkan faktor penskalaan ke nama berkas"
 
 #: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
-msgstr ""
+msgstr "Folder utama baru untuk menyimpan cuplikan layar"
 
 #: data/screenshot.appdata.xml.in:128
 msgid "Remember main window position for reappearing window"
