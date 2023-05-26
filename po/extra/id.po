@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2023-05-26 16:26+0000\n"
-"Last-Translator: sofiul_iam <sofiulfr@gmail.com>\n"
+"PO-Revision-Date: 2023-05-26 16:27+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
 "extra/id/>\n"
 "Language: id\n"
@@ -100,7 +101,7 @@ msgstr "Meningkatkan batas waktu minimum menjadi 300"
 
 #: data/screenshot.appdata.xml.in:107
 msgid "Fix Alt+F4 key behavior"
-msgstr "Perbaiki tindakan tombol ALT+F4"
+msgstr "Perbaikan perilaku tombol ALT+F4"
 
 #: data/screenshot.appdata.xml.in:108
 msgid "Icons now represent the capture area options"
@@ -119,7 +120,7 @@ msgstr "Perbaikan perilaku tombol ESC"
 
 #: data/screenshot.appdata.xml.in:118
 msgid "Append scaling factor to filename"
-msgstr ""
+msgstr "Menambahkan faktor penskalaan ke nama berkas"
 
 #: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
