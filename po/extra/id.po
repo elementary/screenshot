@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2023-05-23 18:06+0000\n"
+"PO-Revision-Date: 2023-05-26 16:26+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
@@ -35,18 +35,16 @@ msgstr ""
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
 #: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "Perbaikan kutu kecil"
+msgstr "Pembaruan kecil:"
 
 #: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
 msgid "Updated translations"
-msgstr ""
+msgstr "Pembaruan terjemahan"
 
 #: data/screenshot.appdata.xml.in:41
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "Permbaruan ke runtime elementary 6.1"
 
 #: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
 #: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
@@ -59,27 +57,27 @@ msgstr "Pembaruan terjemahan"
 
 #: data/screenshot.appdata.xml.in:56
 msgid "New features:"
-msgstr ""
+msgstr "Fitur baru:"
 
 #: data/screenshot.appdata.xml.in:58
 msgid "Support the dark style"
-msgstr ""
+msgstr "Dukungan gaya gelap"
 
 #: data/screenshot.appdata.xml.in:59
 msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
+msgstr "Seret dan Jatuhkan gambar pratinjau dari dialog simpan"
 
 #: data/screenshot.appdata.xml.in:63
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Seret untuk memindahkan jendela dari mana saja"
 
 #: data/screenshot.appdata.xml.in:64
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "Menampilkan detail kesalahan jika terjadi"
 
 #: data/screenshot.appdata.xml.in:73
 msgid "Fix minor visual issues with selection items"
-msgstr ""
+msgstr "Memperbaiki masalah visual kecil pada pemilihan item"
 
 #: data/screenshot.appdata.xml.in:82
 msgid "Close when pressing the Escape key"
@@ -90,14 +88,16 @@ msgid ""
 "Revert from redacted font as soon as possible to avoid getting stuck in some "
 "situations"
 msgstr ""
+"Mengembalikan dari font yang disunting sesegera mungkin untuk menghindari "
+"terjebak dalam beberapa situasi"
 
 #: data/screenshot.appdata.xml.in:98
 msgid "Always respect delay setting"
-msgstr ""
+msgstr "Selalu hormati pengaturan jeda"
 
 #: data/screenshot.appdata.xml.in:99
 msgid "Increase minimum timeout to 300"
-msgstr ""
+msgstr "Meningkatkan batas waktu minimum menjadi 300"
 
 #: data/screenshot.appdata.xml.in:107
 msgid "Fix Alt+F4 key behavior"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: data/screenshot.appdata.xml.in:108
 msgid "Icons now represent the capture area options"
-msgstr ""
+msgstr "Ikon sekarang mewakili opsi area pengambilan"
 
 #: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
 #: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
@@ -116,7 +116,7 @@ msgstr "Perbaikan kutu kecil"
 
 #: data/screenshot.appdata.xml.in:117
 msgid "Fix ESC key behavior"
-msgstr ""
+msgstr "Perbaikan perilaku tombol ESC"
 
 #: data/screenshot.appdata.xml.in:118
 msgid "Append scaling factor to filename"
