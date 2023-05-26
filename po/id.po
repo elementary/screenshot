@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2023-05-23 18:06+0000\n"
+"PO-Revision-Date: 2023-05-27 17:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
@@ -45,9 +45,8 @@ msgid "Include the pointer with the screenshot"
 msgstr "Sertakan penunjuk dengan tangkapan layar"
 
 #: src/Application.vala:39
-#, fuzzy
 msgid "Redact system text"
-msgstr "Sembunyikan teks sistem"
+msgstr "Sunting teks sistem"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
