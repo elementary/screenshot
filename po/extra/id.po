@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2023-05-26 16:27+0000\n"
-"Last-Translator: sofiul_iam <sofiulfr@gmail.com>\n"
+"PO-Revision-Date: 2023-05-27 17:07+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
 "extra/id/>\n"
 "Language: id\n"
@@ -28,8 +29,8 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"Alat cuplikan layar sederhana. Cuplik seluruh cuplikan layar, cuplik area "
-"yang dipilih, cuplikan jendela saat ini, dan cuplikan dengan waktu."
+"Alat tangkapan layar sederhana. Tangkap seluruh layar, tangkap area "
+"terpilih, tangkap jendela saat ini, dan tangkap dengan waktu."
 
 #: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
 #: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
@@ -123,41 +124,39 @@ msgstr "Menambahkan faktor penskalaan ke nama berkas"
 
 #: data/screenshot.appdata.xml.in:127
 msgid "New default folder to save screenshots"
-msgstr "Folder utama baru untuk menyimpan cuplikan layar"
+msgstr "Folder bawaan baru untuk menyimpan tangkapan layar"
 
 #: data/screenshot.appdata.xml.in:128
 msgid "Remember main window position for reappearing window"
-msgstr ""
+msgstr "Mengingat posisi jendela utama untuk jendela yang muncul kembali"
 
 #: data/screenshot.appdata.xml.in:144
 msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
+msgstr "Memutar suara rana saat mengambil tangkapan layar"
 
 #: data/screenshot.appdata.xml.in:153
 msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Perbaiki area hitam ekstra pada cuplikan layar HiDPI"
+msgstr "Perbaikan area hitam ekstra pada tangkapan layar HiDPI"
 
 #: data/screenshot.appdata.xml.in:196
-#, fuzzy
-#| msgid "elementary LLC."
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Cuplikan layar;"
+msgstr "Snapshot;Tangkapan layar;"
 
 #: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Cuplikan Layar dari Seluruh Layar"
+msgstr "Tangkapan Layar dari Seluruh Layar"
 
 #: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "Cuplikan Layar dari Jendela Saat Ini"
+msgstr "Tangkapan Layar dari Jendela Saat Ini"
 
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Cuplikan Layar dari Suatu Daerah"
+msgstr "Tangkapan Layar dari Area Terpilih"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"
