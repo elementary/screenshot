@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:26+0000\n"
 "PO-Revision-Date: 2021-11-01 16:19+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -20,129 +20,68 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "截图"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "保存屏幕截图"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr "简单的截图工具，包括抓屏、选区、窗口和倒计时等功能。"
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:99
 #, fuzzy
 #| msgid "Minor bug fixes"
 msgid "Minor updates:"
 msgstr "细节修复"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:66
 msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
+#: data/screenshot.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "翻译更新"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:83
 msgid "New features:"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:85
 msgid "Support the dark style"
 msgstr "支持深色风格"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:86
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "从保存对话框中拖放预览图像"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:90
 msgid "Drag to move the window from anywhere"
 msgstr "拖动以从任何位置移动窗口"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:91
 msgid "Show details for errors if they occur"
 msgstr "如果发生错误，显示详细信息"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.metainfo.xml.in:101
 msgid "Fix minor visual issues with selection items"
 msgstr "修复已选中项的显示问题"
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr "按下 Esc 键时关闭"
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr "快速恢复修正的字体以避免卡顿情况出现"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr "优先执行倒计秒数配置"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr "提高最小超时设定至 300"
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr "修复 Alt + F4 组合键行为"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr "以图标表示区域选择功能"
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "细节修复"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr "修复 ESC 键行为"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr "文件名包含比例系数"
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr "更新保存目录"
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr "记住主窗口位置"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "截屏时播放音效"
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "修复 HiDPI 截屏中存在黑色区域的问题"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -159,6 +98,47 @@ msgstr "当前窗口的截图"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "选中区域的截图"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "按下 Esc 键时关闭"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr "快速恢复修正的字体以避免卡顿情况出现"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "优先执行倒计秒数配置"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "提高最小超时设定至 300"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "修复 Alt + F4 组合键行为"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "以图标表示区域选择功能"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "细节修复"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "修复 ESC 键行为"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "文件名包含比例系数"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "更新保存目录"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "记住主窗口位置"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "截屏时播放音效"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "修复 HiDPI 截屏中存在黑色区域的问题"
 
 #~ msgid "io.elementary.screenshot"
 #~ msgstr "io.elementary.screenshot"
