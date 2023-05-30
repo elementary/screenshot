@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:26+0000\n"
 "PO-Revision-Date: 2022-04-09 03:26+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "画面の画像を保存します"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -31,117 +31,53 @@ msgstr ""
 "シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィン"
 "ドウのほか、遅延させたスクリーンショットも取得できます。"
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:66
 msgid "Update elementary runtime to 6.1"
 msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
+#: data/screenshot.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:83
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:85
 msgid "Support the dark style"
 msgstr "ダークスタイルに対応"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:86
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 "保存ダイアログからプレビュー画像をドラッグアンドドロップできる機能を追加"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:90
 msgid "Drag to move the window from anywhere"
 msgstr "ウィンドウをドラッグして移動できるように修正"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:91
 msgid "Show details for errors if they occur"
 msgstr "エラーが発生した場合に詳細を表示するように修正"
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.metainfo.xml.in:101
 msgid "Fix minor visual issues with selection items"
 msgstr "選択項目に関する軽微な視覚的な不具合を修正"
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr "Esc キーの押下時にアプリを終了するように修正"
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-"特定の状況下においてアプリがフリーズするのを防ぐため、なるべく早くダミーフォ"
-"ントから復元するように修正"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr "遅延の設定を常に反映するように修正"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr "タイムアウトの最小値を300ミリ秒に増加"
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr "Alt+F4 キー押下時の挙動を修正"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr "取得範囲を表すアイコンに変更"
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "軽微なバグの修正"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr "Esc キー押下時の挙動を修正"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr "ファイル名にスケールファクターを追加するように変更"
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr "スクリーンショットのデフォルトの保存先を変更"
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr ""
-"メインウィンドウの位置を記録し、再度表示されるウィンドウで復元するように変更"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "スクリーンショットの取得時にシャッター音が鳴るように変更"
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "HiDPI スクリーンショットでの余分な黒い部分を修正"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -158,6 +94,51 @@ msgstr "現在のウィンドウのスクリーンショット"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "選択範囲のスクリーンショット"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "Esc キーの押下時にアプリを終了するように修正"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr ""
+#~ "特定の状況下においてアプリがフリーズするのを防ぐため、なるべく早くダミー"
+#~ "フォントから復元するように修正"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "遅延の設定を常に反映するように修正"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "タイムアウトの最小値を300ミリ秒に増加"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "Alt+F4 キー押下時の挙動を修正"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "取得範囲を表すアイコンに変更"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "軽微なバグの修正"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "Esc キー押下時の挙動を修正"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "ファイル名にスケールファクターを追加するように変更"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "スクリーンショットのデフォルトの保存先を変更"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr ""
+#~ "メインウィンドウの位置を記録し、再度表示されるウィンドウで復元するように変"
+#~ "更"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "スクリーンショットの取得時にシャッター音が鳴るように変更"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "HiDPI スクリーンショットでの余分な黒い部分を修正"
 
 #~ msgid "io.elementary.screenshot"
 #~ msgstr "io.elementary.screenshot"
