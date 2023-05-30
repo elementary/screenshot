@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:26+0000\n"
 "PO-Revision-Date: 2017-03-31 17:48+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Ekraanipilt"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Ekraanist piltide salvestamine"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -35,114 +35,53 @@ msgstr ""
 "ekraanist, valitud alast, kindlast aknast ning kõike seda sobiliku "
 "viivitusega."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:99
 #, fuzzy
 #| msgid "Minor bug fixes"
 msgid "Minor updates:"
 msgstr "Vigade parandused"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:66
 msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
+#: data/screenshot.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "Tõlgete uuendused"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:83
 msgid "New features:"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:85
 msgid "Support the dark style"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:86
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:90
 msgid "Drag to move the window from anywhere"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:91
 msgid "Show details for errors if they occur"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:73
+#: data/screenshot.metainfo.xml.in:101
 msgid "Fix minor visual issues with selection items"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "Vigade parandused"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Must ala HiDPI ekraanipiltidel"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
 msgstr ""
 
 #: data/screenshot.desktop.in:10
@@ -160,6 +99,12 @@ msgstr "Ekraanipilt aktiivsest aknast"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Ekraanipilt valitud alast"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Vigade parandused"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Must ala HiDPI ekraanipiltidel"
 
 #~ msgid "About Screenshot"
 #~ msgstr "Rakendusest…"
