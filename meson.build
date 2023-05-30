@@ -1,6 +1,6 @@
 project(
     'io.elementary.screenshot', 'vala', 'c',
-    meson_version : '>= 0.46',
+    meson_version : '>= 0.56',
     version: '6.0.3'
 )
 
