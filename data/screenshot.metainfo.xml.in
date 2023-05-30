@@ -50,6 +50,15 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="6.0.4" date="2023-05-29" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="6.0.3" date="2022-12-02" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -94,16 +103,7 @@
       </description>
     </release>
 
-    <release version="1.7.1" date="2020-01-21" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Fix minor visual issues with selection items</li>
-          <li>Translation updates</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="1.7.1" date="2020-01-21" urgency="medium" />
     <release version="1.7.0" date="2019-11-15" urgency="medium" />
     <release version="1.6.2" date="2019-02-20" urgency="medium" />
     <release version="1.6.1" date="2019-02-01" urgency="medium" />
