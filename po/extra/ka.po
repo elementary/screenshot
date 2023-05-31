@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:26+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2023-03-16 06:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/screenshot/"
@@ -41,47 +41,43 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
-#: data/screenshot.metainfo.xml.in:99
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "უმნიშვნელო განახლებები:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "განახლებული თარგმანები"
 
-#: data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Elementary-ის გაშვების გარემოს განახლება ვერსიამდე 6.1"
 
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
-#: data/screenshot.metainfo.xml.in:102
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "თარგმანის განახლებები"
 
-#: data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "ახალი ფუნქციები:"
 
-#: data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "ბნელი სტილის მხარდაჭერა"
 
-#: data/screenshot.metainfo.xml.in:86
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "შენახვის ფანჯრიდან მინიატურის გადმოთრევა/დაგდება"
 
-#: data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "გადმოათრიეთ ფანჯრის ნებისმიერი ადგილიდან გადმოსატანად"
 
-#: data/screenshot.metainfo.xml.in:91
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "შეცდომის აღმოჩენისას მისი დეტალების ჩვენება"
-
-#: data/screenshot.metainfo.xml.in:101
-msgid "Fix minor visual issues with selection items"
-msgstr "ელემენტების მონიშვნასთან დაკავშირებული ვიზუალური პრობლემების გასწორება"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -98,6 +94,10 @@ msgstr "მიმდინარე ფანჯრის ანაბეჭდ�
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "მონიშნული ადგილის ანაბეჭდი"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr ""
+#~ "ელემენტების მონიშვნასთან დაკავშირებული ვიზუალური პრობლემების გასწორება"
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "დახურვა Escape ღილაკით"

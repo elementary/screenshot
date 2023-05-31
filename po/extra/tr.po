@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:26+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2022-06-05 20:16+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -41,47 +41,43 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
-#: data/screenshot.metainfo.xml.in:99
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Küçük güncellemeler:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "elementary çalışma zamanı 6.1 sürümüne güncellendi"
 
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
-#: data/screenshot.metainfo.xml.in:102
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Çeviriler güncellendi"
 
-#: data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:86
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:91
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr ""
-
-#: data/screenshot.metainfo.xml.in:101
-msgid "Fix minor visual issues with selection items"
-msgstr "Öğelerin seçimiyle alakalı ufak görsel sorunlar düzeltildi"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -99,6 +95,9 @@ msgstr "Geçerli Pencerenin Görüntüsü"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Seçilen Bölgenin Görüntüsü"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Öğelerin seçimiyle alakalı ufak görsel sorunlar düzeltildi"
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "Esc tuşuna basınca kapat"

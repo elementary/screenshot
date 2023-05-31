@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:26+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2022-01-10 00:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -41,47 +41,43 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
-#: data/screenshot.metainfo.xml.in:99
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Opravy menších chyb:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "Aktualizovány překlady"
 
-#: data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Běhové prostředí elementary aktualizováno na verzi 6.1"
 
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
-#: data/screenshot.metainfo.xml.in:102
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Aktualizace překladů"
 
-#: data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "Nové funkce:"
 
-#: data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Podpora pro tmavý motiv vzhledu"
 
-#: data/screenshot.metainfo.xml.in:86
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "Přetahování náhledového obrázku z dialogu ukládání"
 
-#: data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Přetáhněte pro přesun okna odkudkoli"
 
-#: data/screenshot.metainfo.xml.in:91
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "Zobrazování podrobností pro chyby, pokud se vyskytnou"
-
-#: data/screenshot.metainfo.xml.in:101
-msgid "Fix minor visual issues with selection items"
-msgstr "Oprava drobných vizuálních problémů s položkami výběru"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -98,6 +94,9 @@ msgstr "Snímek aktuálního okna"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Snímek vybrané oblasti"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Oprava drobných vizuálních problémů s položkami výběru"
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "Zavřít při stisku klávesy Esc"

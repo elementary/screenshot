@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:26+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2021-12-15 17:24+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -41,48 +41,44 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
-#: data/screenshot.metainfo.xml.in:99
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Actualització de l'entorn d'execució de l'elementary a 6.1"
 
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
-#: data/screenshot.metainfo.xml.in:102
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Actualitzacions de la traducció"
 
-#: data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "Característiques noves:"
 
-#: data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Admissió de l'estil fosc"
 
-#: data/screenshot.metainfo.xml.in:86
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 "Arrossegueu i deixeu anar la imatge de vista prèvia des del diàleg de desar."
 
-#: data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Arrossegueu per moure la finestra des de qualsevol lloc."
 
-#: data/screenshot.metainfo.xml.in:91
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "Es mostren els detalls dels errors si es produeixen."
-
-#: data/screenshot.metainfo.xml.in:101
-msgid "Fix minor visual issues with selection items"
-msgstr "Correcció d'errors visuals de selecció d'elements"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -99,6 +95,9 @@ msgstr "Captura de la finestra actual"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura d'una àrea seleccionada"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Correcció d'errors visuals de selecció d'elements"
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "Es tanca en prémer la tecla Esc."

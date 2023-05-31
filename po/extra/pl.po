@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:26+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2021-12-15 11:36+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -42,47 +42,43 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:74 data/screenshot.metainfo.xml.in:88
-#: data/screenshot.metainfo.xml.in:99
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Drobne aktualizacje:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "Zaktualizowano tłumaczenia"
 
-#: data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Zaktualizowano do wersji elementary 6.1"
 
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:92
-#: data/screenshot.metainfo.xml.in:102
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Aktualizacje tłumaczenia"
 
-#: data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "Nowe funkcje:"
 
-#: data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Wsparcie dla ciemnego motywu"
 
-#: data/screenshot.metainfo.xml.in:86
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "Przeciągnij i upuść podgląd obrazu z okienka zapisu"
 
-#: data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Przeciągnij by przemieścić okno gdziekolwiek"
 
-#: data/screenshot.metainfo.xml.in:91
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "Pokaż szczegóły błędów gdy występują"
-
-#: data/screenshot.metainfo.xml.in:101
-msgid "Fix minor visual issues with selection items"
-msgstr "Naprawiono mniejsze problemy wizualne z zaznaczonymi elementami"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -99,6 +95,9 @@ msgstr "Zrzut bieżącego okna"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Zrzut wybranego obszaru"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Naprawiono mniejsze problemy wizualne z zaznaczonymi elementami"
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "Zamknij po naciśnięciu klawisza Escape"
