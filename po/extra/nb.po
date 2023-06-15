@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:30+0000\n"
-"PO-Revision-Date: 2023-03-02 10:25+0000\n"
+"PO-Revision-Date: 2023-06-16 10:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "screenshot/extra/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -56,7 +56,7 @@ msgstr "Oppdaterte oversettelser"
 
 #: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "Oppdatert elementary-kjøretidsrutine til 6.1"
 
 #: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
@@ -72,15 +72,15 @@ msgstr "Støtte for mørk stil"
 
 #: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
+msgstr "Dra og slipp forhåndsvisningsbilde fra lagringsdialogen"
 
 #: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Dra og slipp vindu fra hvor som helst"
 
 #: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
-msgstr ""
+msgstr "Vis detaljer for feil hvis de inntreffer"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
