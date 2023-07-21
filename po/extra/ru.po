@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2022-08-15 05:04+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -21,15 +21,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Сохраняйте изображения экрана"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -37,117 +37,50 @@ msgstr ""
 "Простой инструмент для создания скриншотов. Снимки всего экрана, выбранной "
 "области, текущего окна, а также снимки с временной задержкой."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Обновление среды выполнения elementary до версии 6.1"
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Обновления перевода"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "Новые возможности:"
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Поддержка тёмного стиля"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
 "Перетаскивание изображения предварительного просмотра из диалогового окна "
 "сохранения"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Перетаскивание окна за любое место"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "Отображение подробной информации об ошибках в случае их возникновения"
-
-#: data/screenshot.appdata.xml.in:73
-msgid "Fix minor visual issues with selection items"
-msgstr "Исправлены незначительные визуальные проблемы с элементами выбора"
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr "Закрывайте программу нажав клавишу Escape"
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-"Скорее отмените изменение шрифта, чтобы избежать зацикливания в некоторых "
-"ситуациях"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr "Чёткое соблюдение установленной задержки"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr "Увеличено минимальное время задержки до 300"
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr "Исправлено поведение сочетания клавиш Alt+F4"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr "Иконки теперь представляют собой варианты зоны захвата"
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "Исправления незначительных ошибок"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr "Исправлено поведение клавиши ESC"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr "Добавлен коэффициент масштабирования к названию файла"
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr "Новая папка по умолчанию для хранения снимков экрана"
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr "Запоминание положения главного окна к следующему запуску"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "Добавлен звук затвора, когда сделан снимок экрана"
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Устранение дополнительной чёрной области на HiDPI скриншотах"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -164,6 +97,52 @@ msgstr "Снимок текущего окна"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Снимок выбранной области"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Исправлены незначительные визуальные проблемы с элементами выбора"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "Закрывайте программу нажав клавишу Escape"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr ""
+#~ "Скорее отмените изменение шрифта, чтобы избежать зацикливания в некоторых "
+#~ "ситуациях"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "Чёткое соблюдение установленной задержки"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "Увеличено минимальное время задержки до 300"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "Исправлено поведение сочетания клавиш Alt+F4"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "Иконки теперь представляют собой варианты зоны захвата"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Исправления незначительных ошибок"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "Исправлено поведение клавиши ESC"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "Добавлен коэффициент масштабирования к названию файла"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "Новая папка по умолчанию для хранения снимков экрана"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "Запоминание положения главного окна к следующему запуску"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "Добавлен звук затвора, когда сделан снимок экрана"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Устранение дополнительной чёрной области на HiDPI скриншотах"
 
 #~ msgid "io.elementary.screenshot"
 #~ msgstr "io.elementary.screenshot"
