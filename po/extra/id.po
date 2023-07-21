@@ -2,162 +2,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
-"PO-Revision-Date: 2018-08-24 00:01+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Indonesian <https://weblate.elementary.io/projects/screenshot-"
-"tool/extra/id/>\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
+"PO-Revision-Date: 2023-05-27 17:07+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
+"Language-Team: Indonesian <https://l10n.elementary.io/projects/screenshot/"
+"extra/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
-msgstr "Cuplikan layar"
+msgstr "Tangkapan layar"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Simpan gambar dari layar"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"Alat cuplikan layar sederhana. Cuplik seluruh cuplikan layar, cuplik area "
-"yang dipilih, cuplikan jendela saat ini, dan cuplikan dengan waktu."
+"Alat tangkapan layar sederhana. Tangkap seluruh layar, tangkap area "
+"terpilih, tangkap jendela saat ini, dan tangkap dengan waktu."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
-#, fuzzy
-#| msgid "Minor bug fixes"
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
-msgstr "Perbaikan kutu kecil"
+msgstr "Pembaruan kecil:"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
-msgstr ""
+msgstr "Pembaruan terjemahan"
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "Permbaruan ke runtime elementary 6.1"
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Pembaruan terjemahan"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
-msgstr ""
+msgstr "Fitur baru:"
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
-msgstr ""
+msgstr "Dukungan gaya gelap"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
+msgstr "Seret dan Jatuhkan gambar pratinjau dari dialog simpan"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
-msgstr ""
+msgstr "Seret untuk memindahkan jendela dari mana saja"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:73
-msgid "Fix minor visual issues with selection items"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "Perbaikan kutu kecil"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Perbaiki area hitam ekstra pada cuplikan layar HiDPI"
-
-#: data/screenshot.appdata.xml.in:196
-#, fuzzy
-#| msgid "elementary LLC."
-msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "Menampilkan detail kesalahan jika terjadi"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Snapshot;Cuplikan layar;"
+msgstr "Snapshot;Tangkapan layar;"
 
 #: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
-msgstr "Cuplikan Layar dari Seluruh Layar"
+msgstr "Tangkapan Layar dari Seluruh Layar"
 
 #: data/screenshot.desktop.in:18
 msgid "Screenshot of the Current Window"
-msgstr "Cuplikan Layar dari Jendela Saat Ini"
+msgstr "Tangkapan Layar dari Jendela Saat Ini"
 
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "Cuplikan Layar dari Suatu Daerah"
+msgstr "Tangkapan Layar dari Area Terpilih"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Memperbaiki masalah visual kecil pada pemilihan item"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "Tutup ketika menekan tombol Escape"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr ""
+#~ "Mengembalikan dari font yang disunting sesegera mungkin untuk menghindari "
+#~ "terjebak dalam beberapa situasi"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "Selalu hormati pengaturan jeda"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "Meningkatkan batas waktu minimum menjadi 300"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "Perbaikan perilaku tombol ALT+F4"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "Ikon sekarang mewakili opsi area pengambilan"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Perbaikan kutu kecil"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "Perbaikan perilaku tombol ESC"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "Menambahkan faktor penskalaan ke nama berkas"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "Folder bawaan baru untuk menyimpan tangkapan layar"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "Mengingat posisi jendela utama untuk jendela yang muncul kembali"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "Memutar suara rana saat mengambil tangkapan layar"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Perbaikan area hitam ekstra pada tangkapan layar HiDPI"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"
