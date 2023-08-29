@@ -254,7 +254,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
     }
 
     private void update_location_button (string folder_dir) {
-        var file = File.new_for_path  (folder_dir);
+        var file = File.new_for_path (folder_dir);
         try {
             var info = file.query_info (
                 FileAttribute.STANDARD_DISPLAY_NAME + "," + FileAttribute.STANDARD_ICON,
