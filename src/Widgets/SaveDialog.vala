@@ -148,8 +148,42 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             margin_top = 18
         };
 
-        var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
-        location.set_current_folder (folder_dir);
+        var folder_name = new Gtk.Label ("") {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+
+        var folder_icon = new Gtk.Image () {
+            pixel_size = 16
+        };
+
+        if (folder_dir == Environment.get_home_dir ()) {
+            folder_name.label = "Home";
+            folder_icon.gicon = new ThemedIcon ("user-home");
+        } else if (folder_dir == "/") {
+            folder_name.label = "File System";
+            folder_icon.gicon = new ThemedIcon ("drive-harddisk");
+        } else {
+            folder_name.label = Path.get_basename (folder_dir);
+            folder_icon.gicon = new ThemedIcon ("folder");
+        }
+
+        var arrow = new Gtk.Image () {
+            gicon = new ThemedIcon ("pan-down-symbolic"),
+            halign = Gtk.Align.END
+        };
+
+        var location_button_indicator = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        location_button_indicator.add (folder_icon);
+        location_button_indicator.add (folder_name);
+        location_button_indicator.add (arrow);
+
+        var location_button = new Gtk.Button ();
+        location_button.add (location_button_indicator);
+
+        var location_dialog = new Gtk.FileChooserNative (_("Select Screenshots Folder…"), this,
+            Gtk.FileChooserAction.SELECT_FOLDER, "Open", "Cancel");
+        location_dialog.set_current_folder (folder_dir);
 
         var content = this.get_content_area () as Gtk.Box;
         content.valign = Gtk.Align.START;
@@ -165,7 +199,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         content.add (format_label);
         content.add (format_cmb);
         content.add (location_label);
-        content.add (location);
+        content.add (location_button);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
 
@@ -207,11 +241,28 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             settings.set_string ("format", format_cmb.get_active_text ());
         });
 
-        location.selection_changed.connect (() => {
-            SList<string> uris = location.get_uris ();
-            foreach (unowned string uri in uris) {
-                settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
-                folder_dir = settings.get_string ("folder-dir");
+        location_button.clicked.connect (() => {
+            location_dialog.run ();
+        });
+
+        location_dialog.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                SList<string> uris = location_dialog.get_uris ();
+                foreach (unowned string uri in uris) {
+                    settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
+                    folder_dir = settings.get_string ("folder-dir");
+                }
+
+                if (folder_dir == Environment.get_home_dir ()) {
+                    folder_name.label = "Home";
+                    folder_icon.gicon = new ThemedIcon ("user-home");
+                } else if (folder_dir == "/") {
+                    folder_name.label = "File System";
+                    folder_icon.gicon = new ThemedIcon ("drive-harddisk");
+                } else {
+                    folder_name.label = Path.get_basename (folder_dir);
+                    folder_icon.gicon = new ThemedIcon ("folder");
+                }
             }
         });
     }
