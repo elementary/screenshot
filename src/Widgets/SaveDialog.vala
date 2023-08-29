@@ -28,7 +28,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
     private Gtk.Label folder_name;
     private Gtk.Image folder_image;
-    private string folder_dir;
 
     public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
         Object (
@@ -43,7 +42,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
     construct {
         set_keep_above (true);
-        folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
+        var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
             + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
 
         var folder_from_settings = settings.get_string ("folder-dir");
@@ -159,7 +158,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         folder_image = new Gtk.Image ();
 
-        update_location_button ();
+        update_location_button (folder_dir);
 
         var arrow = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic", BUTTON);
 
@@ -249,12 +248,12 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                     folder_dir = settings.get_string ("folder-dir");
                 }
 
-                update_location_button ();
+                update_location_button (folder_dir);
             }
         });
     }
 
-    private void update_location_button () {
+    private void update_location_button (string folder_dir) {
         var file = File.new_for_path  (folder_dir);
         try {
             var info = file.query_info (
