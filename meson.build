@@ -1,6 +1,6 @@
 project(
     'io.elementary.screenshot', 'vala', 'c',
-    meson_version : '>= 0.56',
+    meson_version : '>= 0.57',
     version: '6.0.4'
 )
 
@@ -50,7 +50,7 @@ executable(
     install : true
 )
 
-meson.add_install_script('meson/post_install.py')
+gnome.post_install(glib_compile_schemas: true)
 
 subdir('data')
 subdir('po')
