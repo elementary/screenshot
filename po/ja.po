@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-30 11:34+0000\n"
-"PO-Revision-Date: 2022-12-03 12:25+0000\n"
+"PO-Revision-Date: 2023-08-31 19:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -127,7 +127,7 @@ msgstr "スクリーンショットフォルダーを選択…"
 
 #: src/Widgets/SaveDialog.vala:178
 msgid "Select"
-msgstr ""
+msgstr "選択"
 
 #: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
