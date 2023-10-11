@@ -19,7 +19,6 @@
 
 public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
     public bool to_clipboard { get; construct; }
-    public bool close_on_save { get; set; }
     public bool mouse_pointer { get; set; }
     public bool redact { get; set; }
 
@@ -46,7 +45,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             to_clipboard: clipboard
         );
 
-        close_on_save = true;
         from_command = true;
         mouse_pointer = grab_pointer;
         this.delay = int.max (0, delay);
@@ -95,12 +93,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         pointer_switch = new Gtk.Switch ();
         pointer_switch.halign = Gtk.Align.START;
 
-        var close_label = new Gtk.Label (_("Close after saving:"));
-        close_label.halign = Gtk.Align.END;
-
-        var close_switch = new Gtk.Switch ();
-        close_switch.halign = Gtk.Align.START;
-
         var redact_label = new Gtk.Label (_("Conceal text:"));
         redact_label.halign = Gtk.Align.END;
 
@@ -139,8 +131,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         };
         option_grid.attach (pointer_label, 0, 0);
         option_grid.attach (pointer_switch, 1, 0);
-        option_grid.attach (close_label, 0, 1);
-        option_grid.attach (close_switch, 1, 1);
         option_grid.attach (redact_label, 0, 2);
         option_grid.attach (redact_switch, 1, 2);
         option_grid.attach (delay_label, 0, 3);
@@ -170,8 +160,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("mouse-pointer", this, "mouse-pointer", GLib.SettingsBindFlags.DEFAULT);
-        settings.bind ("close-on-save", close_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        settings.bind ("close-on-save", this, "close-on-save", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("delay", delay_spin, "value", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("redact", redact_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         settings.bind ("redact", this, "redact", GLib.SettingsBindFlags.DEFAULT);
@@ -242,22 +230,29 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         pointer_switch.sensitive = sensitive;
     }
 
-    private void save_file (string file_name, string format, owned string folder_dir, Gdk.Pixbuf screenshot) throws GLib.Error {
-        string full_file_name = "";
-        string folder_from_settings = "";
+    private void save_file (Gdk.Pixbuf screenshot) throws GLib.Error {
+        var date_time = new DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
-        if (folder_dir == "") {
-            folder_from_settings = settings.get_string ("folder-dir");
-            if (folder_from_settings != "") {
-                folder_dir = folder_from_settings;
-            } else {
-                folder_dir = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
-                    + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
-            }
-            Application.create_dir_if_missing (folder_dir);
+        /// TRANSLATORS: %s represents a timestamp here
+        string file_name = _("Screenshot from %s").printf (date_time);
+
+        if (scale_factor > 1) {
+            file_name += "@%ix".printf (scale_factor);
         }
 
+        string full_file_name = "";
+
+        var folder_dir = settings.get_string ("folder-dir");
+        if (folder_dir == "") {
+            folder_dir = Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)
+                + "%c".printf (Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
+        }
+
+        Application.create_dir_if_missing (folder_dir);
+
         int attempt = 0;
+
+        string format = settings.get_string ("format");
 
         do {
             if (attempt == 0) {
@@ -270,57 +265,36 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
         } while (File.new_for_path (full_file_name).query_exists ());
 
         screenshot.save (full_file_name, format);
+
+        var file_icon = new FileIcon (File.new_for_path (full_file_name));
+
+        var readable_path = folder_dir.replace (Environment.get_home_dir () + "%c".printf (Path.DIR_SEPARATOR), "");
+
+        var notification = new Notification (_("Screenshot saved"));
+        notification.add_button (
+            _("Open"),
+            Action.print_detailed_name ("app.open", new Variant ("s", full_file_name))
+        );
+        notification.set_body (_("Saved to “%s”").printf (readable_path));
+        notification.set_icon (file_icon);
+        notification.set_priority (NotificationPriority.LOW);
+
+        GLib.Application.get_default ().send_notification (null, notification);
     }
 
     private void save_pixbuf (Gdk.Pixbuf screenshot) {
-        if (from_command == false) {
-            var save_dialog = new Screenshot.SaveDialog (screenshot, settings, this);
-            save_dialog.save_response.connect ((response, folder_dir, output_name, format) => {
-                save_dialog.destroy ();
-
-                if (response) {
-                    string[] formats = {".png", ".jpg", ".jpeg", ".bmp", ".tiff"};
-                    string output = output_name;
-
-                    foreach (string type in formats) {
-                        output = output.replace (type, "");
-                    }
-
-                    try {
-                        save_file (output, format, folder_dir, screenshot);
-
-                        if (close_on_save) {
-                            this.destroy ();
-                        }
-                    } catch (GLib.Error e) {
-                        show_error_dialog (e.message);
-                    }
-                }
-            });
-
-            save_dialog.close.connect (() => {
-                if (close_on_save) {
-                    this.destroy ();
-                }
-            });
-
-            save_dialog.show_all ();
+        if (to_clipboard) {
+            Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
         } else {
-            if (to_clipboard) {
-                Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
-            } else {
-                var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
-
-                /// TRANSLATORS: %s represents a timestamp here
-                string file_name = _("Screenshot from %s").printf (date_time);
-                string format = settings.get_string ("format");
-                try {
-                    save_file (file_name, format, "", screenshot);
-                } catch (GLib.Error e) {
-                    show_error_dialog (e.message);
-                }
+            try {
+                save_file (screenshot);
+            } catch (GLib.Error e) {
+                show_error_dialog (e.message);
             }
-            this.destroy ();
+        }
+
+        if (from_command) {
+            destroy ();
         }
     }
 
@@ -335,11 +309,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             Gdk.Pixbuf? pixbuf = null;
             try {
                 pixbuf = backend.capture.end (res);
-            } catch (GLib.IOError.CANCELLED e) {
-                if (close_on_save) {
-                    this.destroy ();
-                    return;
-                }
             } catch (Error e) {
                 show_error_dialog (e.message);
             }

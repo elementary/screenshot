@@ -1,4 +1,3 @@
 src/Application.vala
 src/ScreenshotBackend.vala
 src/ScreenshotWindow.vala
-src/Widgets/SaveDialog.vala
