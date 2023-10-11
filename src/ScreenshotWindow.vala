@@ -368,8 +368,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
              Gtk.ButtonsType.CLOSE
         );
         dialog.show_error_details (error_message);
-
-        dialog.run ();
-        dialog.destroy ();
+        dialog.response.connect (destroy);
+        dialog.present ();
     }
 }
