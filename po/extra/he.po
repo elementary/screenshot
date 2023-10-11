@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2021-12-15 11:36+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "צילום מסך"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "שמירת תמונה של המסך"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -31,113 +31,48 @@ msgstr ""
 "כלי פשוט לצילום המסך. ניתן לצלם את כל המסך, חלקים נבחרים ממנו, החלון הנוכחי "
 "וצילומים מתוזמנים."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary בע״מ."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "עודכנו תרגומים"
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "סביבת הריצה של elementary עודכנה ל־6.1"
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "עדכוני תרגומים"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "תמיכה בסגנון כהה"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "ניתן לגרור ולהשליך את תמונות התצוגה המקדימה מחלונית השמירה"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "ניתן לגרור כדי להעביר את החלון מכל מקום"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "יוצגו פרטים לשגיאות כשאלו מתרחשות"
-
-#: data/screenshot.appdata.xml.in:73
-msgid "Fix minor visual issues with selection items"
-msgstr "תיקון תקלות חזותיות מזעריות עם בחירת פריטים"
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr "לסגור בלחיצה על המקש Escape"
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr "לשחזר את הגופן שהשתנה באופן זמני כדי להימנע מתקיעות בכל מיני מצבים"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr "תמיד לכבד את הגדרות ההשהיה"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr "הקטנת הזמן הקצוב המזערי ל־300"
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr "תיקון התנהגות צירוף המקשים Alt+F4"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr "סמלים מייצגים מעתה את אפשרויות האזורים ללכידה"
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "תיקוני באגים קלים"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr "תיקון התנהגות המקש Esc"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr "הוספת מקדם שינוי גודל לשם הקובץ"
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr "תיקיית בררת מחדל חדשה לשמירת צילומי מסך"
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr "לזכור את מיקום החלון הראשי לטובת תצוגה חוזרת"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "השמעת צליל צמצם בעת צילום המסך"
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "תיקון אזור שחור נוסף בצילומי HiDPI"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
-msgstr "elementary בע״מ."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -154,6 +89,50 @@ msgstr "צילום החלון הנוכחי"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "צילום אזור נבחר"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "תיקון תקלות חזותיות מזעריות עם בחירת פריטים"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "לסגור בלחיצה על המקש Escape"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr "לשחזר את הגופן שהשתנה באופן זמני כדי להימנע מתקיעות בכל מיני מצבים"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "תמיד לכבד את הגדרות ההשהיה"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "הקטנת הזמן הקצוב המזערי ל־300"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "תיקון התנהגות צירוף המקשים Alt+F4"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "סמלים מייצגים מעתה את אפשרויות האזורים ללכידה"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "תיקוני באגים קלים"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "תיקון התנהגות המקש Esc"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "הוספת מקדם שינוי גודל לשם הקובץ"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "תיקיית בררת מחדל חדשה לשמירת צילומי מסך"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "לזכור את מיקום החלון הראשי לטובת תצוגה חוזרת"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "השמעת צליל צמצם בעת צילום המסך"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "תיקון אזור שחור נוסף בצילומי HiDPI"
 
 #~ msgid "io.elementary.screenshot"
 #~ msgstr "io.elementary.screenshot"

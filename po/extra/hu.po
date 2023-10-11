@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 17:46+0000\n"
+"POT-Creation-Date: 2023-05-30 18:30+0000\n"
 "PO-Revision-Date: 2022-10-06 12:46+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Képernyőkép"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Képernyőképek készítése"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -31,116 +31,48 @@ msgstr ""
 "Egy egyszerű képernyőkép eszköz. Készítsen képet az egész asztalról, egy "
 "kijelölt területről vagy az aktív ablakról, akár időzetve is."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:48 data/screenshot.appdata.xml.in:61
-#: data/screenshot.appdata.xml.in:71 data/screenshot.appdata.xml.in:80
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Kisebb frissítések:"
 
-#: data/screenshot.appdata.xml.in:32 data/screenshot.appdata.xml.in:42
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/screenshot.appdata.xml.in:41
+#: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
 msgstr "Az elementary futtatókörnyezet frissítve 6.1-re"
 
-#: data/screenshot.appdata.xml.in:50 data/screenshot.appdata.xml.in:65
-#: data/screenshot.appdata.xml.in:74 data/screenshot.appdata.xml.in:83
-#: data/screenshot.appdata.xml.in:91 data/screenshot.appdata.xml.in:100
-#: data/screenshot.appdata.xml.in:110 data/screenshot.appdata.xml.in:120
-#: data/screenshot.appdata.xml.in:130 data/screenshot.appdata.xml.in:145
-#: data/screenshot.appdata.xml.in:154
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Fordítási frissítések"
 
-#: data/screenshot.appdata.xml.in:56
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr "Új funkciók:"
 
-#: data/screenshot.appdata.xml.in:58
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Sötét téma támogatása"
 
-#: data/screenshot.appdata.xml.in:59
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "Az előnézeti kép áthúzható a mentési párbeszédpanelről"
 
-#: data/screenshot.appdata.xml.in:63
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Ablak átmozgatása bárhonnan"
 
-#: data/screenshot.appdata.xml.in:64
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "A hibarészletek megjelenítése, ha előfordulnak"
-
-#: data/screenshot.appdata.xml.in:73
-msgid "Fix minor visual issues with selection items"
-msgstr ""
-"A kiválasztott elemekkel kapcsolatos kisebb vizuális problémák javítása"
-
-#: data/screenshot.appdata.xml.in:82
-msgid "Close when pressing the Escape key"
-msgstr "Bezárás az Escape billentyű megnyomására"
-
-#: data/screenshot.appdata.xml.in:90
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-"Az elakadások elkerülése érdekében a lehető leghamarabb állítsa vissza a "
-"szerkesztett betűtípust"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Always respect delay setting"
-msgstr "Mindig tartsa be a késleltetési beállításokat"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Increase minimum timeout to 300"
-msgstr "A minimális időtúllépés növelése 300-ra"
-
-#: data/screenshot.appdata.xml.in:107
-msgid "Fix Alt+F4 key behavior"
-msgstr "Az Alt+F4 működésének javítása"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Icons now represent the capture area options"
-msgstr "Az ikonok mostantól a rögzítési terület lehetőségeit jelzik"
-
-#: data/screenshot.appdata.xml.in:109 data/screenshot.appdata.xml.in:119
-#: data/screenshot.appdata.xml.in:129 data/screenshot.appdata.xml.in:137
-#: data/screenshot.appdata.xml.in:146 data/screenshot.appdata.xml.in:155
-#: data/screenshot.appdata.xml.in:162
-msgid "Minor bug fixes"
-msgstr "Kisebb hibajavítások"
-
-#: data/screenshot.appdata.xml.in:117
-msgid "Fix ESC key behavior"
-msgstr "Az ESC működésének javítása"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "Append scaling factor to filename"
-msgstr "A méretezési tényező hozzáadása a fájlnévhez"
-
-#: data/screenshot.appdata.xml.in:127
-msgid "New default folder to save screenshots"
-msgstr "A képernyőkép-mentések új alapértelmezett helye"
-
-#: data/screenshot.appdata.xml.in:128
-msgid "Remember main window position for reappearing window"
-msgstr "Főablak helyzetének megjegyzése az újra megjelenéshez"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "Hangjelzés Képernyőkép készítésekor"
-
-#: data/screenshot.appdata.xml.in:153
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "A fekete területek javítása a HiDPI képernyőképeken"
-
-#: data/screenshot.appdata.xml.in:196
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -157,6 +89,53 @@ msgstr "Képernyőkép az aktuális ablakról"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Képernyőkép egy kijelölt területről"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr ""
+#~ "A kiválasztott elemekkel kapcsolatos kisebb vizuális problémák javítása"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "Bezárás az Escape billentyű megnyomására"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr ""
+#~ "Az elakadások elkerülése érdekében a lehető leghamarabb állítsa vissza a "
+#~ "szerkesztett betűtípust"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "Mindig tartsa be a késleltetési beállításokat"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "A minimális időtúllépés növelése 300-ra"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "Az Alt+F4 működésének javítása"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "Az ikonok mostantól a rögzítési terület lehetőségeit jelzik"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Kisebb hibajavítások"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "Az ESC működésének javítása"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "A méretezési tényező hozzáadása a fájlnévhez"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "A képernyőkép-mentések új alapértelmezett helye"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "Főablak helyzetének megjegyzése az újra megjelenéshez"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "Hangjelzés Képernyőkép készítésekor"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "A fekete területek javítása a HiDPI képernyőképeken"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"
