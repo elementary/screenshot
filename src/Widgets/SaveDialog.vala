@@ -195,6 +195,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         content.add (format_cmb);
         content.add (location_label);
         content.add (location_button);
+        content.show_all ();
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
 
