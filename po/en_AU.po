@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2017-07-07 20:40+0000\n"
 "Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
 "Language-Team: English (Australia) <https://l10n.elementary.io/projects/"
@@ -104,41 +104,60 @@ msgstr "Could not capture screenshot"
 msgid "Image not saved"
 msgstr "Image not saved"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Screenshot"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Save Image as…"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:102
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Name:"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Format:"
+#: src/Widgets/SaveDialog.vala:127
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:150
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Folder:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Select Screenshots Folder…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Copy to Clipboard"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Save"
+
+#: src/Widgets/SaveDialog.vala:209
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:212
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Format:"
 
 #~ msgid "Screenshot taken"
 #~ msgstr "Screenshot taken"

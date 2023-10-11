@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2020-08-16 05:13+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -101,41 +101,60 @@ msgstr "無法擷取畫面快照"
 msgid "Image not saved"
 msgstr "影像並未儲存"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "畫面快照"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "將影像儲存成…"
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:102
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "名稱："
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "格式："
+#: src/Widgets/SaveDialog.vala:127
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:150
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "資料夾："
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "選取螢幕截圖資料夾…"
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "複製到剪貼簿"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "儲存"
+
+#: src/Widgets/SaveDialog.vala:209
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:212
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "格式："
 
 #~ msgid "Screenshot taken"
 #~ msgstr "已擷取畫面快照"

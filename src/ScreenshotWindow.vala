@@ -27,8 +27,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     private CaptureType capture_mode;
     private bool from_command;
     private int delay;
-    private int window_x;
-    private int window_y;
     private ScreenshotBackend backend;
     private Gtk.Image all_image;
     private Gtk.Label pointer_label;

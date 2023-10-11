@@ -1,6 +1,6 @@
 /*
 * Copyright (c) 2014–2016 Fabio Zaramella <ffabio.96.x@gmail.com>
-*               2017–2018 elementary LLC. (https://elementary.io)
+*               2017–2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
@@ -26,6 +26,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
     public signal void save_response (bool response, string folder_dir, string output_name, string format);
 
+    private Gtk.Label folder_name;
+    private Gtk.Image folder_image;
+
     public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
         Object (
             deletable: false,
@@ -50,21 +53,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         Application.create_dir_if_missing (folder_dir);
 
-        // int width = pixbuf.get_width () / 4;
-        // int height = pixbuf.get_height () / 4;
-        // if (pixbuf.get_width () > Gdk.Screen.width () / 2 || pixbuf.get_height () > Gdk.Screen.height () / 2) {
-        //     width /= 2;
-        //     height /= 2;
-        // }
-
-        var scale = get_style_context ().get_scale ();
-
-        var preview = new Gtk.Image ();
-        // preview.gicon = pixbuf.scale_simple (width * scale, height * scale, Gdk.InterpType.BILINEAR);
-        // preview.get_style_context ().set_scale (1);
-
-        // var preview_event_box = new Gtk.EventBox ();
-        // preview_event_box.add (preview);
+        var preview = new Gtk.Picture ();
 
         // Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
         // Gtk.drag_source_add_image_targets (preview_event_box);
@@ -73,20 +62,17 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         //     selection_data.set_pixbuf (pixbuf);
         // });
 
-        var preview_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+        var preview_box = new Gtk.Box (HORIZONTAL, 0) {
+            margin_top = 18,
+            margin_bottom = 18,
             halign = Gtk.Align.CENTER
         };
         preview_box.append (preview);
+
         preview_box.add_css_class (Granite.STYLE_CLASS_CARD);
         preview_box.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
-        preview_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
 
-        var dialog_label = new Gtk.Label (_("Save Image as…"));
-        dialog_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
-        dialog_label.halign = Gtk.Align.START;
-
-        var name_label = new Gtk.Label (_("Name:"));
-        name_label.halign = Gtk.Align.END;
+        var dialog_label = new Granite.HeaderLabel (_("Save Image as…"));
 
         var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
@@ -97,13 +83,32 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             file_name += "@%ix".printf (this.scale_factor);
         }
 
-        var name_entry = new Gtk.Entry ();
-        name_entry.hexpand = true;
-        name_entry.text = file_name;
+        var name_label = new Granite.HeaderLabel (_("Name"));
+
+        var name_entry = new Granite.ValidatedEntry () {
+            activates_default = true,
+            hexpand = true,
+            text = file_name
+        };
         name_entry.grab_focus ();
 
-        var format_label = new Gtk.Label (_("Format:"));
-        format_label.halign = Gtk.Align.END;
+        var validation_label = new Gtk.Label ("") {
+            halign = Gtk.Align.END,
+            justify = Gtk.Justification.RIGHT,
+            max_width_chars = 55,
+            wrap = true,
+            xalign = 1
+        };
+        validation_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        validation_label.get_style_context ().add_class (Granite.STYLE_CLASS_ERROR);
+
+        var name_message_revealer = new Gtk.Revealer () {
+            child = validation_label,
+            transition_type = Gtk.RevealerTransitionType.CROSSFADE,
+            margin_top = 3
+        };
+
+        var format_label = new Granite.HeaderLabel (_("File Type"));
 
         var format_cmb = new Gtk.ComboBoxText ();
         format_cmb.append_text ("png");
@@ -126,29 +131,54 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                 break;
         }
 
-        var location_label = new Gtk.Label (_("Folder:"));
-        location_label.halign = Gtk.Align.END;
-
-        // var location = new Gtk.FileChooserButton (_("Select Screenshots Folder…"), Gtk.FileChooserAction.SELECT_FOLDER);
-        // location.set_current_folder (folder_dir);
-
-        var grid = new Gtk.Grid () {
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12,
-            column_spacing = 12,
-            row_spacing = 12
+        var location_label = new Granite.HeaderLabel (_("Folder")) {
+            margin_top = 18
         };
-        grid.attach (preview_box, 0, 0, 2);
-        grid.attach (dialog_label, 0, 1, 2);
-        grid.attach (name_label, 0, 2);
-        grid.attach (name_entry, 1, 2);
-        grid.attach (format_label, 0, 3);
-        grid.attach (format_cmb, 1, 3);
-        grid.attach (location_label, 0, 4);
-        // grid.attach (location, 1, 4);
 
-        get_content_area ().append (grid);
+        folder_name = new Gtk.Label ("") {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+
+        folder_image = new Gtk.Image ();
+
+        update_location_button (folder_dir);
+
+        var arrow = new Gtk.Image.from_icon_name ("view-more-horizontal-symbolic");
+
+        var location_button_indicator = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3);
+        location_button_indicator.append (folder_image);
+        location_button_indicator.append (folder_name);
+        location_button_indicator.append (arrow);
+
+        var location_button = new Gtk.Button () {
+            child = location_button_indicator
+        };
+
+        var location_dialog = new Gtk.FileChooserNative (
+            _("Select Screenshots Folder…"),
+            this,
+            Gtk.FileChooserAction.SELECT_FOLDER,
+            _("Select"),
+            null
+        );
+        location_dialog.set_current_folder (File.new_for_path (folder_dir));
+
+        var content = this.get_content_area () as Gtk.Box;
+        content.valign = Gtk.Align.START;
+        content.vexpand = true;
+        content.margin_end = 12;
+        content.margin_bottom = 12;
+        content.margin_start = 12;
+        content.append (dialog_label);
+        content.append (preview_box);
+        content.append (name_label);
+        content.append (name_entry);
+        content.append (name_message_revealer);
+        content.append (format_label);
+        content.append (format_cmb);
+        content.append (location_label);
+        content.append (location_button);
 
         var clipboard_btn = (Gtk.Button) add_button (_("Copy to Clipboard"), 0);
 
@@ -156,7 +186,22 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.receives_default = true;
-        save_btn.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        save_btn.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+
+        name_entry.changed.connect (() => {
+            if (name_entry.text.length == 0) {
+                validation_label.label = _("Filename can't be blank");
+                name_entry.is_valid = false;
+            } else if (name_entry.text.contains ("/")) {
+                validation_label.label = _("Filename can't contain “/”");
+                name_entry.is_valid = false;
+            } else {
+                name_entry.is_valid = true;
+            }
+
+            name_message_revealer.reveal_child = !name_entry.is_valid;
+            save_btn.sensitive = name_entry.is_valid;
+        });
 
         save_btn.clicked.connect (() => {
             save_response (true, folder_dir, name_entry.get_text (), format_cmb.get_active_text ());
@@ -175,12 +220,31 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             settings.set_string ("format", format_cmb.get_active_text ());
         });
 
-        // location.selection_changed.connect (() => {
-        //     SList<string> uris = location.get_uris ();
-        //     foreach (unowned string uri in uris) {
-        //         settings.set_string ("folder-dir", Uri.unescape_string (uri.substring (7, -1)));
-        //         folder_dir = settings.get_string ("folder-dir");
-        //     }
-        // });
+        location_button.clicked.connect (() => {
+            location_dialog.show ();
+        });
+
+        location_dialog.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                var file_path = location_dialog.get_file ().get_path ();
+                settings.set_string ("folder-dir", file_path );
+                update_location_button (file_path);
+            }
+        });
+    }
+
+    private void update_location_button (string folder_dir) {
+        var file = File.new_for_path (folder_dir);
+        try {
+            var info = file.query_info (
+                FileAttribute.STANDARD_DISPLAY_NAME + "," + FileAttribute.STANDARD_ICON,
+                FileQueryInfoFlags.NONE
+            );
+            folder_name.label = info.get_display_name ();
+            folder_image.gicon = info.get_icon ();
+        } catch (Error e) {
+            folder_name.label = folder_dir;
+            folder_image.gicon = new ThemedIcon ("folder");
+        }
     }
 }

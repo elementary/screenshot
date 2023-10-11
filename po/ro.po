@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2016-12-15 08:45+0000\n"
 "Last-Translator: Marius Albina <marius.albina@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,41 +102,60 @@ msgstr "Nu s-a putut face captura."
 msgid "Image not saved"
 msgstr "Imaginea nu a fost salvată"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Captură de ecran"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Salvează imaginea ca..."
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:102
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Nume:"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Format:"
+#: src/Widgets/SaveDialog.vala:127
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:150
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Dosar:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Selectează dosarul pentru capturi..."
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Copiază în memorie"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Anulează"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Salvează"
+
+#: src/Widgets/SaveDialog.vala:209
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:212
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Format:"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Nu s-a putut găsi o fereastră activă"

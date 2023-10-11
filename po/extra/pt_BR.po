@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2021-08-09 16:26+0000\n"
 "Last-Translator: lucaspifonseca <lucaspifonseca@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -20,15 +20,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
-#: data/screenshot.appdata.xml.in:9 data/screenshot.desktop.in:4
+#: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
 msgid "Screenshot"
 msgstr "Captura de Tela"
 
-#: data/screenshot.appdata.xml.in:10 data/screenshot.desktop.in:5
+#: data/screenshot.metainfo.xml.in:11 data/screenshot.desktop.in:5
 msgid "Save images of the screen"
 msgstr "Salvar imagens da tela"
 
-#: data/screenshot.appdata.xml.in:12
+#: data/screenshot.metainfo.xml.in:13
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
@@ -36,121 +36,50 @@ msgstr ""
 "Uma simples ferramenta de captura de tela. Captura imagens da tela inteira, "
 "áreas selecionadas, janela atual e temporizadas."
 
-#: data/screenshot.appdata.xml.in:30 data/screenshot.appdata.xml.in:39
-#: data/screenshot.appdata.xml.in:52 data/screenshot.appdata.xml.in:62
-#: data/screenshot.appdata.xml.in:71
+#: data/screenshot.metainfo.xml.in:48
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
+#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
+#: data/screenshot.metainfo.xml.in:97
 #, fuzzy
 #| msgid "Minor bug fixes"
 msgid "Minor updates:"
 msgstr "Correções de pequenos bugs"
 
-#: data/screenshot.appdata.xml.in:32
-msgid "Update elementary runtime to 6.1"
-msgstr ""
-
-#: data/screenshot.appdata.xml.in:33
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
+#: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:41 data/screenshot.appdata.xml.in:56
-#: data/screenshot.appdata.xml.in:65 data/screenshot.appdata.xml.in:74
-#: data/screenshot.appdata.xml.in:82 data/screenshot.appdata.xml.in:91
-#: data/screenshot.appdata.xml.in:101 data/screenshot.appdata.xml.in:111
-#: data/screenshot.appdata.xml.in:121 data/screenshot.appdata.xml.in:136
-#: data/screenshot.appdata.xml.in:145
+#: data/screenshot.metainfo.xml.in:75
+msgid "Update elementary runtime to 6.1"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Atualizações de tradução"
 
-#: data/screenshot.appdata.xml.in:47
+#: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
 msgstr ""
 
-#: data/screenshot.appdata.xml.in:49
+#: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
 msgstr "Suporte ao modo noturno"
 
-#: data/screenshot.appdata.xml.in:50
+#: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr "Arraste e solte a imagem prévia da caixa de diálogo para salvar"
 
-#: data/screenshot.appdata.xml.in:54
+#: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
 msgstr "Arraste para mover a janela de qualquer lugar"
 
-#: data/screenshot.appdata.xml.in:55
+#: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
 msgstr "Mostrar detalhes dos erros caso ocorram"
-
-#: data/screenshot.appdata.xml.in:64
-msgid "Fix minor visual issues with selection items"
-msgstr "Corrija pequenos problemas visuais com itens de seleção"
-
-#: data/screenshot.appdata.xml.in:73
-msgid "Close when pressing the Escape key"
-msgstr "Fechar ao pressionar a tecla Escape"
-
-#: data/screenshot.appdata.xml.in:81
-msgid ""
-"Revert from redacted font as soon as possible to avoid getting stuck in some "
-"situations"
-msgstr ""
-"Reverta a fonte desativada o mais rápido possível para evitar travamentos em "
-"algumas situações"
-
-#: data/screenshot.appdata.xml.in:89
-msgid "Always respect delay setting"
-msgstr "Sempre respeitar a configuração de atraso"
-
-#: data/screenshot.appdata.xml.in:90
-msgid "Increase minimum timeout to 300"
-msgstr "Aumente o tempo limite mínimo para 300"
-
-#: data/screenshot.appdata.xml.in:98
-msgid "Fix Alt+F4 key behavior"
-msgstr "Corrigir o comportamento do atalho Alt+F4"
-
-#: data/screenshot.appdata.xml.in:99
-msgid "Icons now represent the capture area options"
-msgstr "Os ícones agora representam as opções da área de captura"
-
-#: data/screenshot.appdata.xml.in:100 data/screenshot.appdata.xml.in:110
-#: data/screenshot.appdata.xml.in:120 data/screenshot.appdata.xml.in:128
-#: data/screenshot.appdata.xml.in:137 data/screenshot.appdata.xml.in:146
-#: data/screenshot.appdata.xml.in:153
-msgid "Minor bug fixes"
-msgstr "Correções de pequenos bugs"
-
-#: data/screenshot.appdata.xml.in:108
-msgid "Fix ESC key behavior"
-msgstr "Corrigir o comportamento da tecla ESC"
-
-#: data/screenshot.appdata.xml.in:109
-msgid "Append scaling factor to filename"
-msgstr "Anexar fator de escala ao nome do arquivo"
-
-#: data/screenshot.appdata.xml.in:118
-msgid "New default folder to save screenshots"
-msgstr "Nova pasta padrão para salvar capturas de tela"
-
-#: data/screenshot.appdata.xml.in:119
-msgid "Remember main window position for reappearing window"
-msgstr "Lembrar a posição da janela principal para reaparecer a janela"
-
-#: data/screenshot.appdata.xml.in:135
-msgid "Play shutter sound when a screenshot is taken"
-msgstr "Reproduzir som do obturador quando uma captura de tela é capturada"
-
-#: data/screenshot.appdata.xml.in:144
-msgid "Fix extra black area on HiDPI screenshots"
-msgstr "Corrigida área preta extra em screenshots HiDPI"
-
-#: data/screenshot.appdata.xml.in:187
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/screenshot.desktop.in:7
-msgid "io.elementary.screenshot"
-msgstr "io.elementary.screenshot"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -167,6 +96,55 @@ msgstr "Captura de tela da janela atual"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Captura de tela da área selecionada"
+
+#~ msgid "Fix minor visual issues with selection items"
+#~ msgstr "Corrija pequenos problemas visuais com itens de seleção"
+
+#~ msgid "Close when pressing the Escape key"
+#~ msgstr "Fechar ao pressionar a tecla Escape"
+
+#~ msgid ""
+#~ "Revert from redacted font as soon as possible to avoid getting stuck in "
+#~ "some situations"
+#~ msgstr ""
+#~ "Reverta a fonte desativada o mais rápido possível para evitar travamentos "
+#~ "em algumas situações"
+
+#~ msgid "Always respect delay setting"
+#~ msgstr "Sempre respeitar a configuração de atraso"
+
+#~ msgid "Increase minimum timeout to 300"
+#~ msgstr "Aumente o tempo limite mínimo para 300"
+
+#~ msgid "Fix Alt+F4 key behavior"
+#~ msgstr "Corrigir o comportamento do atalho Alt+F4"
+
+#~ msgid "Icons now represent the capture area options"
+#~ msgstr "Os ícones agora representam as opções da área de captura"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Correções de pequenos bugs"
+
+#~ msgid "Fix ESC key behavior"
+#~ msgstr "Corrigir o comportamento da tecla ESC"
+
+#~ msgid "Append scaling factor to filename"
+#~ msgstr "Anexar fator de escala ao nome do arquivo"
+
+#~ msgid "New default folder to save screenshots"
+#~ msgstr "Nova pasta padrão para salvar capturas de tela"
+
+#~ msgid "Remember main window position for reappearing window"
+#~ msgstr "Lembrar a posição da janela principal para reaparecer a janela"
+
+#~ msgid "Play shutter sound when a screenshot is taken"
+#~ msgstr "Reproduzir som do obturador quando uma captura de tela é capturada"
+
+#~ msgid "Fix extra black area on HiDPI screenshots"
+#~ msgstr "Corrigida área preta extra em screenshots HiDPI"
+
+#~ msgid "io.elementary.screenshot"
+#~ msgstr "io.elementary.screenshot"
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

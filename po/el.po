@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2017-01-29 08:30+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,41 +102,60 @@ msgstr "Δεν είναι εφικτή η λήψη του στιγμιότυπο
 msgid "Image not saved"
 msgstr "Η απεικόνιση δεν αποθηκεύτηκε"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Στιγμιότυπο οθόνης"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Αποθήκευση απεικόνισης ως..."
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:102
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Όνομα:"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Μορφή:"
+#: src/Widgets/SaveDialog.vala:127
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:150
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Φάκελος:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Επιλογή φακέλου στιγμιότυπων οθόνης..."
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Αντιγραφή στο πρόχειρο"
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Αποθήκευση"
+
+#: src/Widgets/SaveDialog.vala:209
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:212
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Μορφή:"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Δε βρέθηκε ενεργό παράθυρο"

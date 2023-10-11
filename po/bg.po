@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 22:41+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2016-07-28 21:44+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,41 +100,60 @@ msgstr "Неуспешно снимане"
 msgid "Image not saved"
 msgstr "Изображението не беше запазено"
 
-#: src/Widgets/SaveDialog.vala:36
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Снимка"
 
-#: src/Widgets/SaveDialog.vala:86
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Запазване на изображението като..."
 
-#: src/Widgets/SaveDialog.vala:90
-msgid "Name:"
+#: src/Widgets/SaveDialog.vala:102
+#, fuzzy
+#| msgid "Name:"
+msgid "Name"
 msgstr "Име:"
 
-#: src/Widgets/SaveDialog.vala:107
-msgid "Format:"
-msgstr "Формат:"
+#: src/Widgets/SaveDialog.vala:127
+msgid "File Type"
+msgstr ""
 
-#: src/Widgets/SaveDialog.vala:131
-msgid "Folder:"
+#: src/Widgets/SaveDialog.vala:150
+#, fuzzy
+#| msgid "Folder:"
+msgid "Folder"
 msgstr "Папка:"
 
-#: src/Widgets/SaveDialog.vala:134
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Избиране на папка за снимки..."
 
-#: src/Widgets/SaveDialog.vala:154
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:156
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Отказ"
 
-#: src/Widgets/SaveDialog.vala:158
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Запазване"
+
+#: src/Widgets/SaveDialog.vala:209
+msgid "Filename can't be blank"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:212
+msgid "Filename can't contain “/”"
+msgstr ""
+
+#~ msgid "Format:"
+#~ msgstr "Формат:"
 
 #~ msgid "Couldn't find an active window"
 #~ msgstr "Не е намерен активен прозорец"
