@@ -31,6 +31,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     private Gtk.Image all_image;
     private Gtk.Label pointer_label;
     private Gtk.Switch pointer_switch;
+    private Pantheon.Desktop.Shell? desktop_shell;
 
     public ScreenshotWindow () {
         Object (
@@ -68,6 +69,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
             return;
         }
 
+        set_keep_above ();
         // set_keep_above (true);
         // stick ();
 
@@ -249,6 +251,42 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         });
 
         update_icons (gtk_settings.gtk_application_prefer_dark_theme);
+    }
+
+    public static void registry_handle_global (void *data, Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
+        unowned ScreenshotWindow self = (ScreenshotWindow) data;
+        if (@interface == "io_elementary_pantheon_shell_v1") {
+            self.desktop_shell = wl_registry.bind<Pantheon.Desktop.Shell> (name, ref Pantheon.Desktop.Shell.iface, uint32.min (version, 1));
+            unowned var surface = self.get_surface ();
+            if (surface is Gdk.Wayland.Surface) {
+                unowned var wl_surface = ((Gdk.Wayland.Surface) surface).get_wl_surface ();
+                var extended_behavior = self.desktop_shell.get_extended_behavior (wl_surface);
+                extended_behavior.set_keep_above ();
+            }
+        }
+    }
+
+    public static void registry_handle_global_remove (void *data, Wl.Registry wl_registry, uint32 name) {
+        unowned ScreenshotWindow self = (ScreenshotWindow) data;
+    }
+
+    private static Wl.RegistryListener registry_listener;
+    private void set_keep_above () {
+        registry_listener.global = registry_handle_global;
+        registry_listener.global_remove = registry_handle_global_remove;
+        unowned var display = Gdk.Display.get_default ();
+        if (display is Gdk.Wayland.Display) {
+            unowned var wl_display = ((Gdk.Wayland.Display) display).get_wl_display ();
+            var wl_registry = wl_display.get_registry ();
+            wl_registry.add_listener (
+                registry_listener,
+                this
+            );
+
+            if (wl_display.roundtrip () < 0) {
+                return;
+            }
+        }
     }
 
     private void update_icons (bool prefers_dark) {

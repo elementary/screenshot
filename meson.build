@@ -6,6 +6,7 @@ project(
 
 gnome = import('gnome')
 i18n = import('i18n')
+vala = meson.get_compiler('vala')
 
 add_global_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()),
@@ -28,6 +29,8 @@ config_file = configure_file(
     configuration: config_data
 )
 
+subdir('protocol')
+
 executable(
     meson.project_name(),
     icon_res,
@@ -43,8 +46,11 @@ executable(
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('gtk4'),
+        dependency('gtk4-wayland'),
+        dependency('wayland-client'),
         dependency('granite-7', version: '>=7.0.0'),
         meson.get_compiler('vala').find_library('posix'),
+        pantheon_desktop_shell_dep,
     ],
     install : true
 )
