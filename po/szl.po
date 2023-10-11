@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:30+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2020-02-23 13:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -89,7 +89,7 @@ msgid "Close"
 msgstr "Zawrzij"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Przechyt ekranu ze %s"
@@ -102,51 +102,55 @@ msgstr "Niy szło wykōnać przechytu ekranu"
 msgid "Image not saved"
 msgstr "Ôbroz niy bōł spamiyntany"
 
-#: src/Widgets/SaveDialog.vala:35
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Przechyt ekranu"
 
-#: src/Widgets/SaveDialog.vala:88
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Spamiyntej ôbroz za…"
 
-#: src/Widgets/SaveDialog.vala:99
+#: src/Widgets/SaveDialog.vala:102
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Miano:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:127
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:150
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "Katalog:"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Ôbier folder przechytōw ekranu…"
 
-#: src/Widgets/SaveDialog.vala:170
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Skopiuj do skrytki"
 
-#: src/Widgets/SaveDialog.vala:172
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Pociep"
 
-#: src/Widgets/SaveDialog.vala:174
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Spamiyntej"
 
-#: src/Widgets/SaveDialog.vala:180
+#: src/Widgets/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:183
+#: src/Widgets/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
 

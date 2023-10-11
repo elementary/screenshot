@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:30+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2022-08-05 18:30+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/screenshot/"
@@ -93,7 +93,7 @@ msgid "Close"
 msgstr "닫기"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s에 스크린샷 찍기"
@@ -106,51 +106,55 @@ msgstr "스크린샷을 찍을 수 없습니다"
 msgid "Image not saved"
 msgstr "이미지 저장되지 않음"
 
-#: src/Widgets/SaveDialog.vala:35
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "스크린샷"
 
-#: src/Widgets/SaveDialog.vala:88
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "다음 이름으로 저장하기…"
 
-#: src/Widgets/SaveDialog.vala:99
+#: src/Widgets/SaveDialog.vala:102
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "이름:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:127
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:150
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "폴더:"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "스크린샷 폴더 고르기…"
 
-#: src/Widgets/SaveDialog.vala:170
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
-#: src/Widgets/SaveDialog.vala:172
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Widgets/SaveDialog.vala:174
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "저장"
 
-#: src/Widgets/SaveDialog.vala:180
+#: src/Widgets/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:183
+#: src/Widgets/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
 

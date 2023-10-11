@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:30+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2018-12-14 22:09+0000\n"
 "Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/screenshot-tool/"
@@ -91,7 +91,7 @@ msgid "Close"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s से स्क्रीनशॉट"
@@ -104,51 +104,55 @@ msgstr ""
 msgid "Image not saved"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:35
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "स्क्रीनशॉट"
 
-#: src/Widgets/SaveDialog.vala:88
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "छवि ऐसे सुरक्षित करें…"
 
-#: src/Widgets/SaveDialog.vala:99
+#: src/Widgets/SaveDialog.vala:102
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "नाम:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:127
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:150
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "फ़ोल्डर:"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "स्क्रीनशॉट्स के लिए फोल्डर चुनें…"
 
-#: src/Widgets/SaveDialog.vala:170
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:172
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: src/Widgets/SaveDialog.vala:174
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "सहेजें"
 
-#: src/Widgets/SaveDialog.vala:180
+#: src/Widgets/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:183
+#: src/Widgets/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
 

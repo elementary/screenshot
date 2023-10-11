@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:30+0000\n"
-"PO-Revision-Date: 2023-06-12 15:07+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"PO-Revision-Date: 2023-08-31 19:08+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/ru/>\n"
 "Language: ru\n"
@@ -94,7 +94,7 @@ msgid "Close"
 msgstr "Закрыть"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Снимок экрана от %s"
@@ -107,47 +107,51 @@ msgstr "Не удалось сделать снимок"
 msgid "Image not saved"
 msgstr "Снимок не сохранён"
 
-#: src/Widgets/SaveDialog.vala:35
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "Снимок экрана"
 
-#: src/Widgets/SaveDialog.vala:88
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "Сохранить изображение как…"
 
-#: src/Widgets/SaveDialog.vala:99
+#: src/Widgets/SaveDialog.vala:102
 msgid "Name"
 msgstr "Название"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:127
 msgid "File Type"
 msgstr "Тип файла"
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:150
 msgid "Folder"
 msgstr "Папка"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "Выберите папку для снимков экрана…"
 
-#: src/Widgets/SaveDialog.vala:170
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr "Выбрать"
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Скопировать"
 
-#: src/Widgets/SaveDialog.vala:172
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Widgets/SaveDialog.vala:174
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/Widgets/SaveDialog.vala:180
+#: src/Widgets/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Имя файла не может быть пустым"
 
-#: src/Widgets/SaveDialog.vala:183
+#: src/Widgets/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Имя файла не может содержать «/»"
 

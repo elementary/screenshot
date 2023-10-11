@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:30+0000\n"
+"POT-Creation-Date: 2023-08-30 11:34+0000\n"
 "PO-Revision-Date: 2020-05-16 02:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -91,7 +91,7 @@ msgid "Close"
 msgstr "اغلاق"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:93
+#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
 #, c-format
 msgid "Screenshot from %s"
 msgstr "لقطة شاشة منذ %s"
@@ -104,51 +104,55 @@ msgstr "لم ينجح التقاط لقطة للشاشة"
 msgid "Image not saved"
 msgstr "الصورة لم تحفظ"
 
-#: src/Widgets/SaveDialog.vala:35
+#: src/Widgets/SaveDialog.vala:38
 msgid "Screenshot"
 msgstr "لقطة للشاشة"
 
-#: src/Widgets/SaveDialog.vala:88
+#: src/Widgets/SaveDialog.vala:91
 msgid "Save Image as…"
 msgstr "حفظ الصورة باسم…"
 
-#: src/Widgets/SaveDialog.vala:99
+#: src/Widgets/SaveDialog.vala:102
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "الاسم:"
 
-#: src/Widgets/SaveDialog.vala:124
+#: src/Widgets/SaveDialog.vala:127
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:147
+#: src/Widgets/SaveDialog.vala:150
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "المجلد:"
 
-#: src/Widgets/SaveDialog.vala:151
+#: src/Widgets/SaveDialog.vala:175
 msgid "Select Screenshots Folder…"
 msgstr "اختر مجلد للقطات الشاشة…"
 
-#: src/Widgets/SaveDialog.vala:170
+#: src/Widgets/SaveDialog.vala:178
+msgid "Select"
+msgstr ""
+
+#: src/Widgets/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "نسخ إلى الحافظة"
 
-#: src/Widgets/SaveDialog.vala:172
+#: src/Widgets/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/SaveDialog.vala:174
+#: src/Widgets/SaveDialog.vala:203
 msgid "Save"
 msgstr "حفظ"
 
-#: src/Widgets/SaveDialog.vala:180
+#: src/Widgets/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:183
+#: src/Widgets/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
 
