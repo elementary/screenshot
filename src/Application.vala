@@ -66,19 +66,28 @@ public class Screenshot.Application : Gtk.Application {
         add_main_option_entries (OPTION_ENTRIES);
     }
 
-    protected override void activate () {
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/io/elementary/screenshot");
+    protected override void startup () {
+        base.startup ();
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
 
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
 
         granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
         });
 
+        var quit_action = new SimpleAction ("quit", null);
+        quit_action.activate.connect (() => {
+            quit ();
+        });
+
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
+    }
+
+    protected override void activate () {
         var action = 0;
         if (screen) action = 1;
         if (win) action = 2;
@@ -97,16 +106,6 @@ public class Screenshot.Application : Gtk.Application {
             window.set_application (this);
             window.take_clicked ();
         }
-
-        var quit_action = new SimpleAction ("quit", null);
-        quit_action.activate.connect (() => {
-            if (window != null) {
-                window.destroy ();
-            }
-        });
-
-        add_action (quit_action);
-        set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
     }
 
     public static void create_dir_if_missing (string path) {
