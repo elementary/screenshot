@@ -68,8 +68,6 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             return;
         }
 
-        Hdy.init ();
-
         backend = new ScreenshotBackend ();
 
         all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", DND);
