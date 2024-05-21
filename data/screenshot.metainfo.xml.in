@@ -56,6 +56,7 @@
       <description>
         <p>Minor updates:</p>
         <ul>
+          <li>The window is no longer always on top or stuck on every desktop</li>
           <li>Updated translations</li>
         </ul>
       </description>
