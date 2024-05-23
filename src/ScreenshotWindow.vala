@@ -69,10 +69,6 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
             return;
         }
 
-        set_keep_above ();
-        // set_keep_above (true);
-        // stick ();
-
         backend = new ScreenshotBackend ();
 
         all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic") {
@@ -251,6 +247,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         });
 
         update_icons (gtk_settings.gtk_application_prefer_dark_theme);
+
+        // It seems like realize doesn't get emitted for the native itself
+        window_handle.realize.connect (set_keep_above);
     }
 
     public static void registry_handle_global (void *data, Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
