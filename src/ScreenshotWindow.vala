@@ -252,21 +252,22 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         window_handle.realize.connect (set_keep_above);
     }
 
-    public static void registry_handle_global (void *data, Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
-        unowned ScreenshotWindow self = (ScreenshotWindow) data;
+    public void registry_handle_global (Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
         if (@interface == "io_elementary_pantheon_shell_v1") {
-            self.desktop_shell = wl_registry.bind<Pantheon.Desktop.Shell> (name, ref Pantheon.Desktop.Shell.iface, uint32.min (version, 1));
-            unowned var surface = self.get_surface ();
+            desktop_shell = wl_registry.bind<Pantheon.Desktop.Shell> (name, ref Pantheon.Desktop.Shell.iface, uint32.min (version, 1));
+            unowned var surface = get_surface ();
             if (surface is Gdk.Wayland.Surface) {
                 unowned var wl_surface = ((Gdk.Wayland.Surface) surface).get_wl_surface ();
-                var extended_behavior = self.desktop_shell.get_extended_behavior (wl_surface);
+                var extended_behavior = desktop_shell.get_extended_behavior (wl_surface);
                 extended_behavior.set_keep_above ();
             }
         }
     }
 
-    public static void registry_handle_global_remove (void *data, Wl.Registry wl_registry, uint32 name) {
-        unowned ScreenshotWindow self = (ScreenshotWindow) data;
+    public void registry_handle_global_remove (Wl.Registry wl_registry, uint32 name) {
+        if (name == desktop_shell.get_id ()) {
+            desktop_shell = null;
+        }
     }
 
     private static Wl.RegistryListener registry_listener;
