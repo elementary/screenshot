@@ -31,7 +31,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     private Gtk.Image all_image;
     private Gtk.Label pointer_label;
     private Gtk.Switch pointer_switch;
+
     private Pantheon.Desktop.Shell? desktop_shell;
+    private uint32 global_name;
 
     public ScreenshotWindow () {
         Object (
@@ -254,6 +256,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
     public void registry_handle_global (Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
         if (@interface == "io_elementary_pantheon_shell_v1") {
+            global_name = name;
             desktop_shell = wl_registry.bind<Pantheon.Desktop.Shell> (name, ref Pantheon.Desktop.Shell.iface, uint32.min (version, 1));
             unowned var surface = get_surface ();
             if (surface is Gdk.Wayland.Surface) {
@@ -265,7 +268,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     }
 
     public void registry_handle_global_remove (Wl.Registry wl_registry, uint32 name) {
-        if (name == desktop_shell.get_id ()) {
+        if (name == global_name) {
             desktop_shell = null;
         }
     }
