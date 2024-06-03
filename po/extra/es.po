@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-30 11:34+0000\n"
-"PO-Revision-Date: 2021-08-28 23:41+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2024-06-04 22:13+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/extra/"
 "es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -44,40 +44,39 @@ msgstr "elementary, Inc."
 #: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
 #: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
 #: data/screenshot.metainfo.xml.in:97
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "Arreglos de defectos menores"
+msgstr "Actualizaciones menores:"
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
 #: data/screenshot.metainfo.xml.in:76
 msgid "Updated translations"
-msgstr ""
+msgstr "Traducciones actualizadas"
 
 #: data/screenshot.metainfo.xml.in:75
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "Actualizado al entorno de ejecución de elementary 6.1"
 
 #: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
 msgid "Translation updates"
-msgstr "Traducciones actualizadas"
+msgstr "Actualizaciones de traducciones"
 
 #: data/screenshot.metainfo.xml.in:92
 msgid "New features:"
-msgstr ""
+msgstr "Nuevas características:"
 
 #: data/screenshot.metainfo.xml.in:94
 msgid "Support the dark style"
-msgstr "Se admite el estilo oscuro"
+msgstr "Soporte para el estilo oscuro"
 
 #: data/screenshot.metainfo.xml.in:95
 msgid "Drag and Drop the preview image from the save dialog"
 msgstr ""
-"Arrastre y coloque la imagen de previsualización desde el diálogo de guardado"
+"Se puede arrastrar y soltar las imágenes de la vista previa desde el cuadro "
+"de diálogo de guardar"
 
 #: data/screenshot.metainfo.xml.in:99
 msgid "Drag to move the window from anywhere"
-msgstr "Arrastre para mover la ventana desde cualquier lugar"
+msgstr "Se puede arrastrar para mover la ventana desde cualquier lugar"
 
 #: data/screenshot.metainfo.xml.in:100
 msgid "Show details for errors if they occur"
