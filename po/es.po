@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-30 11:34+0000\n"
-"PO-Revision-Date: 2024-06-14 19:19+0000\n"
+"PO-Revision-Date: 2024-06-17 20:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/"
 "screenshot/es/>\n"
@@ -38,7 +38,7 @@ msgstr "Capturar la ventana activa"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "Capturar la imagen tras un tiempo especificado"
+msgstr "Tomar la captura de pantalla tras un tiempo especificado"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -70,7 +70,7 @@ msgstr "Seleccionar el área a obtener"
 
 #: src/ScreenshotWindow.vala:92
 msgid "Grab pointer:"
-msgstr "Capturar puntero:"
+msgstr "Capturar el puntero:"
 
 #: src/ScreenshotWindow.vala:98
 msgid "Close after saving:"
@@ -86,7 +86,7 @@ msgstr "Retraso en segundos:"
 
 #: src/ScreenshotWindow.vala:120
 msgid "Take Screenshot"
-msgstr "Capturar imagen"
+msgstr "Tomar captura de pantalla"
 
 #: src/ScreenshotWindow.vala:126
 msgid "Close"
