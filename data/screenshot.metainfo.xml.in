@@ -17,10 +17,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/screenshot/6.0.4/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/screenshot/6.0.4/data/screenshot2.png</image>
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot2.png</image>
     </screenshot>
   </screenshots>
 
@@ -52,7 +52,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.0" date="2024-05-20" urgency="medium">
+    <release version="8.0.0" date="2024-07-25" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
