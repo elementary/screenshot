@@ -74,6 +74,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
         preview.add_css_class (Granite.STYLE_CLASS_CARD);
         preview.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
+        preview.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         preview.add_controller (drag_source);
 
         var dialog_label = new Granite.HeaderLabel (_("Save Image as…"));
@@ -167,6 +168,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             null
         );
         location_dialog.set_current_folder (File.new_for_path (folder_dir));
+
+        // Prevent large dialog size with large screenshots
+        default_width = 500;
 
         var content = this.get_content_area () as Gtk.Box;
         content.append (dialog_label);
