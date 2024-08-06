@@ -52,6 +52,21 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         Application.create_dir_if_missing (folder_dir);
 
+        var drag_source = new Gtk.DragSource () {
+            actions = COPY,
+            content = new Gdk.ContentProvider.for_value (pixbuf)
+        };
+        drag_source.set_icon (
+            Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).lookup_icon (
+                "image-x-generic",
+                null,
+                32,
+                scale_factor,
+                NONE,
+                PRELOAD
+            ), 0, 0
+        );
+
         var preview = new Gtk.Picture.for_paintable (Gdk.Texture.for_pixbuf (pixbuf)) {
             height_request = 128,
             margin_top = 18,
@@ -59,13 +74,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         };
         preview.add_css_class (Granite.STYLE_CLASS_CARD);
         preview.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
-
-        // Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
-        // Gtk.drag_source_add_image_targets (preview_event_box);
-        // Gtk.drag_source_set_icon_gicon (preview_event_box, new ThemedIcon ("image-x-generic"));
-        // preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
-        //     selection_data.set_pixbuf (pixbuf);
-        // });
+        preview.add_controller (drag_source);
 
         var dialog_label = new Granite.HeaderLabel (_("Save Image as…"));
 
