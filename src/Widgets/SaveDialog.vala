@@ -52,7 +52,13 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         Application.create_dir_if_missing (folder_dir);
 
-        var preview = new Gtk.Picture ();
+        var preview = new Gtk.Picture.for_paintable (Gdk.Texture.for_pixbuf (pixbuf)) {
+            height_request = 128,
+            margin_top = 18,
+            margin_bottom = 18
+        };
+        preview.add_css_class (Granite.STYLE_CLASS_CARD);
+        preview.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
         // Gtk.drag_source_set (preview_event_box, Gdk.ModifierType.BUTTON1_MASK, null, Gdk.DragAction.COPY);
         // Gtk.drag_source_add_image_targets (preview_event_box);
@@ -60,16 +66,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         // preview_event_box.drag_data_get.connect ((widget, context, selection_data, info, time_) => {
         //     selection_data.set_pixbuf (pixbuf);
         // });
-
-        var preview_box = new Gtk.Box (HORIZONTAL, 0) {
-            margin_top = 18,
-            margin_bottom = 18,
-            halign = Gtk.Align.CENTER
-        };
-        preview_box.append (preview);
-
-        preview_box.add_css_class (Granite.STYLE_CLASS_CARD);
-        preview_box.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
 
         var dialog_label = new Granite.HeaderLabel (_("Save Image as…"));
 
@@ -164,13 +160,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         location_dialog.set_current_folder (File.new_for_path (folder_dir));
 
         var content = this.get_content_area () as Gtk.Box;
-        content.valign = Gtk.Align.START;
-        content.vexpand = true;
-        content.margin_end = 12;
-        content.margin_bottom = 12;
-        content.margin_start = 12;
         content.append (dialog_label);
-        content.append (preview_box);
+        content.append (preview);
         content.append (name_label);
         content.append (name_entry);
         content.append (name_message_revealer);

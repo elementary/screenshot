@@ -185,6 +185,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         };
 
         child = window_handle;
+        titlebar = new Gtk.Grid () { visible = false };
 
         settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
