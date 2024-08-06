@@ -207,7 +207,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         });
 
         clipboard_btn.clicked.connect (() => {
-             // Gtk.Clipboard.get_default (this.get_display ()).set_image (pixbuf);
+            Gdk.Display.get_default ().get_clipboard ().set_texture (Gdk.Texture.for_pixbuf (pixbuf));
              close ();
         });
 

@@ -325,9 +325,9 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
             save_dialog.present ();
         } else {
-            // if (to_clipboard) {
-            //     Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
-            // } else {
+            if (to_clipboard) {
+                Gdk.Display.get_default ().get_clipboard ().set_texture (Gdk.Texture.for_pixbuf (screenshot));
+            } else {
                 var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
                 /// TRANSLATORS: %s represents a timestamp here
@@ -338,7 +338,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
                 } catch (GLib.Error e) {
                     show_error_dialog (e.message);
                 }
-            // }
+            }
             this.destroy ();
         }
     }
