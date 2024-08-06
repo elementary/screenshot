@@ -68,13 +68,10 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
             return;
         }
 
-        // set_keep_above (true);
-        // stick ();
-
         backend = new ScreenshotBackend ();
 
         all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic") {
-            pixel_size = 32
+            icon_size = LARGE
         };
 
         var all = new Gtk.CheckButton () {
@@ -85,7 +82,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         all_image.set_parent (all);
 
         var curr_image = new Gtk.Image.from_icon_name ("grab-window-symbolic") {
-            pixel_size = 32
+            icon_size = LARGE
         };
 
         var curr_window = new Gtk.CheckButton () {
@@ -96,7 +93,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         curr_image.set_parent (curr_window);
 
         var selection_image = new Gtk.Image.from_icon_name ("grab-area-symbolic") {
-            pixel_size = 32
+            icon_size = LARGE
         };
 
         var selection = new Gtk.CheckButton () {
@@ -106,28 +103,29 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         selection.add_css_class ("image-button");
         selection_image.set_parent (selection);
 
-        pointer_label = new Gtk.Label (_("Grab pointer:"));
-        pointer_label.halign = Gtk.Align.END;
+        pointer_label = new Gtk.Label (_("Grab pointer:")) {
+            halign = END
+        };
 
-        pointer_switch = new Gtk.Switch ();
-        pointer_switch.halign = Gtk.Align.START;
+        pointer_switch = new Gtk.Switch () {
+            halign = START
+        };
 
-        var close_label = new Gtk.Label (_("Close after saving:"));
-        close_label.halign = Gtk.Align.END;
+        var close_label = new Gtk.Label (_("Close after saving:")) {
+            halign = END
+        };
 
-        var close_switch = new Gtk.Switch ();
-        close_switch.halign = Gtk.Align.START;
+        var close_switch = new Gtk.Switch () {
+            halign = START
+        };
 
-        var redact_label = new Gtk.Label (_("Conceal text:"));
-        redact_label.halign = Gtk.Align.END;
+        var redact_label = new Gtk.Label (_("Conceal text:")) {
+            halign = END
+        };
 
-        var redact_switch = new Gtk.Switch ();
-        redact_switch.halign = Gtk.Align.START;
-
-        if (!backend.can_conceal_text) {
-            redact_label.visible = false;
-            redact_switch.visible = false;
-        }
+        var redact_switch = new Gtk.Switch () {
+            halign = START
+        };
 
         var delay_label = new Gtk.Label (_("Delay in seconds:"));
         delay_label.halign = Gtk.Align.END;
@@ -141,12 +139,12 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
 
         var close_btn = new Gtk.Button.with_label (_("Close"));
 
-        var radio_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 18) {
-            halign = Gtk.Align.CENTER
+        var radio_box = new Gtk.Box (HORIZONTAL, 18) {
+            halign = CENTER
         };
-        radio_grid.append (all);
-        radio_grid.append (curr_window);
-        radio_grid.append (selection);
+        radio_box.append (all);
+        radio_box.append (curr_window);
+        radio_box.append (selection);
 
         var option_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -156,39 +154,37 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
         option_grid.attach (pointer_switch, 1, 0);
         option_grid.attach (close_label, 0, 1);
         option_grid.attach (close_switch, 1, 1);
-        option_grid.attach (redact_label, 0, 2);
-        option_grid.attach (redact_switch, 1, 2);
+
+        if (backend.can_conceal_text) {
+            option_grid.attach (redact_label, 0, 2);
+            option_grid.attach (redact_switch, 1, 2);
+        }
+
         option_grid.attach (delay_label, 0, 3);
         option_grid.attach (delay_spin, 1, 3);
 
-        var actions = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
-            halign = Gtk.Align.END,
+        var actions = new Gtk.Box (HORIZONTAL, 6) {
+            halign = END,
             homogeneous = true
         };
         actions.append (close_btn);
         actions.append (take_btn);
 
-        var grid = new Gtk.Grid () {
+        var box = new Gtk.Box (VERTICAL, 24) {
             margin_top = 24,
             margin_end = 12,
             margin_bottom = 12,
-            margin_start = 12,
-            row_spacing = 24
+            margin_start = 12
         };
-        grid.attach (radio_grid, 0, 0);
-        grid.attach (option_grid, 0, 1);
-        grid.attach (actions, 0, 2);
+        box.append (radio_box);
+        box.append (option_grid);
+        box.append (actions);
 
         var window_handle = new Gtk.WindowHandle () {
-            child = grid
+            child = box
         };
 
         child = window_handle;
-
-        var empty_title = new Gtk.Label ("") {
-            visible = false
-        };
-        set_titlebar (empty_title);
 
         settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -368,7 +364,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
             }
 
             if (from_command == false) {
-                this.present ();
+                present ();
             }
         });
     }
@@ -381,8 +377,7 @@ public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
              Gtk.ButtonsType.CLOSE
         );
         dialog.show_error_details (error_message);
-
+        dialog.response.connect (destroy);
         dialog.present ();
-        dialog.destroy ();
     }
 }

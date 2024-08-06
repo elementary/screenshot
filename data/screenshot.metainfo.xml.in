@@ -17,10 +17,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/screenshot/6.0.4/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/screenshot/6.0.4/data/screenshot2.png</image>
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot2.png</image>
     </screenshot>
   </screenshots>
 
@@ -45,11 +45,23 @@
   <url type="homepage">https://elementary.io/</url>
   <url type="translate">https://l10n.elementary.io/projects/screenshot/</url>
 
-  <developer_name>elementary, Inc.</developer_name>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
   <project_group>elementary</project_group>
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-07-25" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>The window is no longer always on top or stuck on every desktop</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="6.0.4" date="2023-05-30" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -87,22 +99,7 @@
       </description>
     </release>
 
-    <release version="6.0.0" date="2021-07-19" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Support the dark style</li>
-          <li>Drag and Drop the preview image from the save dialog</li>
-        </ul>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Drag to move the window from anywhere</li>
-          <li>Show details for errors if they occur</li>
-          <li>Translation updates</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="6.0.0" date="2021-07-19" urgency="medium" />
     <release version="1.7.1" date="2020-01-21" urgency="medium" />
     <release version="1.7.0" date="2019-11-15" urgency="medium" />
     <release version="1.6.2" date="2019-02-20" urgency="medium" />

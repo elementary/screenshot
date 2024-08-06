@@ -41,7 +41,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
     }
 
     construct {
-        // set_keep_above (true);
         var folder_dir = Environment.get_user_special_dir (UserDirectory.PICTURES)
             + "%c".printf (GLib.Path.DIR_SEPARATOR) + Application.SAVE_FOLDER;
 
@@ -99,8 +98,8 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             wrap = true,
             xalign = 1
         };
-        validation_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
-        validation_label.get_style_context ().add_class (Granite.STYLE_CLASS_ERROR);
+        validation_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        validation_label.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         var name_message_revealer = new Gtk.Revealer () {
             child = validation_label,
@@ -186,7 +185,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         var save_btn = (Gtk.Button) add_button (_("Save"), Gtk.ResponseType.APPLY);
         save_btn.receives_default = true;
-        save_btn.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        save_btn.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         name_entry.changed.connect (() => {
             if (name_entry.text.length == 0) {
