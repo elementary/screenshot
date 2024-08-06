@@ -69,7 +69,7 @@ public class Screenshot.Application : Gtk.Application {
     protected override void startup () {
         base.startup ();
 
-        Hdy.init ();
+        Granite.init ();
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
@@ -99,7 +99,7 @@ public class Screenshot.Application : Gtk.Application {
             if (window == null) {
                 window = new ScreenshotWindow ();
                 window.set_application (this);
-                window.show_all ();
+                window.present ();
             }
 
             window.present ();

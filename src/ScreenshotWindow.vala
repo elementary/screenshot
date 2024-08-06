@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
+public class Screenshot.ScreenshotWindow : Gtk.ApplicationWindow {
     public bool to_clipboard { get; construct; }
     public bool close_on_save { get; set; }
     public bool mouse_pointer { get; set; }
@@ -70,26 +70,38 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         backend = new ScreenshotBackend ();
 
-        all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic", DND);
+        all_image = new Gtk.Image.from_icon_name ("grab-screen-symbolic") {
+            icon_size = LARGE
+        };
 
-        var all = new Gtk.RadioButton (null) {
+        var all = new Gtk.CheckButton () {
+            active = true,
             tooltip_text = _("Grab the whole screen")
         };
-        all.image = all_image;
+        all.add_css_class ("image-button");
+        all_image.set_parent (all);
 
-        var curr_image = new Gtk.Image.from_icon_name ("grab-window-symbolic", DND);
+        var curr_image = new Gtk.Image.from_icon_name ("grab-window-symbolic") {
+            icon_size = LARGE
+        };
 
-        var curr_window = new Gtk.RadioButton.from_widget (all) {
+        var curr_window = new Gtk.CheckButton () {
+            group = all,
             tooltip_text = _("Grab the current window")
         };
-        curr_window.image = curr_image;
+        curr_window.add_css_class ("image-button");
+        curr_image.set_parent (curr_window);
 
-        var selection_image = new Gtk.Image.from_icon_name ("grab-area-symbolic", DND);
+        var selection_image = new Gtk.Image.from_icon_name ("grab-area-symbolic") {
+            icon_size = LARGE
+        };
 
-        var selection = new Gtk.RadioButton.from_widget (curr_window) {
+        var selection = new Gtk.CheckButton () {
+            group = all,
             tooltip_text = _("Select area to grab")
         };
-        selection.image = selection_image;
+        selection.add_css_class ("image-button");
+        selection_image.set_parent (selection);
 
         pointer_label = new Gtk.Label (_("Grab pointer:")) {
             halign = END
@@ -120,20 +132,19 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
 
         var delay_spin = new Gtk.SpinButton.with_range (0, 15, 1);
 
-        var take_btn = new Gtk.Button.with_label (_("Take Screenshot"));
-        take_btn.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        take_btn.can_default = true;
-
-        this.set_default (take_btn);
+        var take_btn = new Gtk.Button.with_label (_("Take Screenshot")) {
+            receives_default = true
+        };
+        take_btn.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var close_btn = new Gtk.Button.with_label (_("Close"));
 
         var radio_box = new Gtk.Box (HORIZONTAL, 18) {
             halign = CENTER
         };
-        radio_box.add (all);
-        radio_box.add (curr_window);
-        radio_box.add (selection);
+        radio_box.append (all);
+        radio_box.append (curr_window);
+        radio_box.append (selection);
 
         var option_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -156,8 +167,8 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             halign = END,
             homogeneous = true
         };
-        actions.add (close_btn);
-        actions.add (take_btn);
+        actions.append (close_btn);
+        actions.append (take_btn);
 
         var box = new Gtk.Box (VERTICAL, 24) {
             margin_top = 24,
@@ -165,15 +176,16 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             margin_bottom = 12,
             margin_start = 12
         };
-        box.add (radio_box);
-        box.add (option_grid);
-        box.add (actions);
+        box.append (radio_box);
+        box.append (option_grid);
+        box.append (actions);
 
-        var window_handle = new Hdy.WindowHandle () {
+        var window_handle = new Gtk.WindowHandle () {
             child = box
         };
 
         child = window_handle;
+        titlebar = new Gtk.Grid () { visible = false };
 
         settings = new Settings ("io.elementary.screenshot");
         settings.bind ("mouse-pointer", pointer_switch, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -315,7 +327,7 @@ public class Screenshot.ScreenshotWindow : Hdy.ApplicationWindow {
             save_dialog.present ();
         } else {
             if (to_clipboard) {
-                Gtk.Clipboard.get_default (this.get_display ()).set_image (screenshot);
+                Gdk.Display.get_default ().get_clipboard ().set_texture (Gdk.Texture.for_pixbuf (screenshot));
             } else {
                 var date_time = new GLib.DateTime.now_local ().format ("%Y-%m-%d %H.%M.%S");
 
