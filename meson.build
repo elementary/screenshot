@@ -33,10 +33,9 @@ executable(
     icon_res,
     'src/Application.vala',
     'src/CaptureType.vala',
-    'src/ScreenshotBackend.vala',
-    'src/ScreenshotProxy.vala',
-    'src/ScreenshotWindow.vala',
-    'src/Widgets/SaveDialog.vala',
+    'src/SaveDialog.vala',
+        'src/ScreenshotBackend.vala',
+        'src/ScreenshotProxy.vala',
     config_file,
     dependencies: [
         dependency('gdk-pixbuf-2.0'),
@@ -45,6 +44,7 @@ executable(
         dependency('gtk+-3.0'),
         dependency('granite', version: '>=6.0.0'),
         dependency('libhandy-1', version: '>=0.83.0'),
+        dependency('libportal'),
         meson.get_compiler('vala').find_library('posix'),
     ],
     install : true
