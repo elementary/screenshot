@@ -29,14 +29,13 @@ public class Screenshot.SaveDialog : Granite.Dialog {
     private Gtk.Label folder_name;
     private Gtk.Image folder_image;
 
-    public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings, Gtk.Window parent) {
+    public SaveDialog (Gdk.Pixbuf pixbuf, Settings settings) {
         Object (
             deletable: false,
             modal: true,
             pixbuf: pixbuf,
             settings: settings,
-            title: _("Screenshot"),
-            transient_for: parent
+            title: _("Screenshot")
         );
     }
 
