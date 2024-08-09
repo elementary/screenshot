@@ -34,8 +34,8 @@ executable(
     'src/Application.vala',
     'src/CaptureType.vala',
     'src/SaveDialog.vala',
-        'src/ScreenshotBackend.vala',
-        'src/ScreenshotProxy.vala',
+    'src/ScreenshotBackend.vala',
+    'src/ScreenshotProxy.vala',
     config_file,
     dependencies: [
         dependency('gdk-pixbuf-2.0'),
