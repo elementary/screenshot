@@ -30,8 +30,6 @@ public class Screenshot.Application : Gtk.Application {
 
     private Settings settings = new Settings ("io.elementary.screenshot");
 
-    private Gdk.Pixbuf? pixbuf;
-
     private const string CAPTURE_AREA = N_("Capture area");
     private const string CAPTURE_STRING = N_("Capture the whole screen");
     private const string CAPTURE_WIN = N_("Capture active window");
@@ -89,8 +87,6 @@ public class Screenshot.Application : Gtk.Application {
 
         add_action (quit_action);
         set_accels_for_action ("app.quit", {"<Control>q", "Escape"});
-
-        hold ();
     }
 
     protected override void activate () {
@@ -107,14 +103,16 @@ public class Screenshot.Application : Gtk.Application {
     }
 
     private async void take_screenshot () {
+        hold ();
+
         var portal = new Xdp.Portal ();
 
         try {
             var file_uri = yield portal.take_screenshot (null, INTERACTIVE, null);
 
-            pixbuf = new Gdk.Pixbuf.from_file (Filename.from_uri (file_uri, null));
+            var pixbuf = new Gdk.Pixbuf.from_file (Filename.from_uri (file_uri, null));
 
-            show_save_dialog ();
+            show_save_dialog (pixbuf);
         } catch (Error e) {
             warning ("Failed to take screenshot via portal: %s", e.message);
         } finally {
@@ -123,13 +121,15 @@ public class Screenshot.Application : Gtk.Application {
     }
 
     private async void take_screenshot_backend (CaptureType capture_type) {
+        hold ();
+
         var backend = new ScreenshotBackend ();
 
         try {
-            pixbuf = yield backend.capture (capture_type, delay, grab_pointer, redact);
+            var pixbuf = yield backend.capture (capture_type, delay, grab_pointer, redact);
 
             if (pixbuf != null) {
-                show_save_dialog ();
+                show_save_dialog (pixbuf);
             }
         } catch (GLib.IOError.CANCELLED e) {
             //Do nothing
@@ -140,7 +140,7 @@ public class Screenshot.Application : Gtk.Application {
         }
     }
 
-    private void show_save_dialog () {
+    private void show_save_dialog (Gdk.Pixbuf pixbuf) {
         var save_dialog = new SaveDialog (pixbuf, settings);
         save_dialog.set_application (this);
 
@@ -156,7 +156,7 @@ public class Screenshot.Application : Gtk.Application {
                 }
 
                 try {
-                    save_file (output, format, folder_dir);
+                    save_file (dialog.pixbuf, output, format, folder_dir);
                 } catch (GLib.Error e) {
                     show_error_dialog (e.message);
                 }
@@ -168,7 +168,7 @@ public class Screenshot.Application : Gtk.Application {
         save_dialog.present ();
     }
 
-    private void save_file (string file_name, string format, owned string folder_dir) throws GLib.Error {
+    private void save_file (Gdk.Pixbuf pixbuf, string file_name, string format, owned string folder_dir) throws GLib.Error {
         if (pixbuf == null) {
             critical ("Pixbuf is null");
             return;
