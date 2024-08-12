@@ -160,6 +160,8 @@ public class Screenshot.Application : Gtk.Application {
                 } catch (GLib.Error e) {
                     show_error_dialog (e.message);
                 }
+            } else {
+                take_screenshot.begin ();
             }
         });
 
