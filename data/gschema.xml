@@ -1,32 +1,10 @@
 <schemalist>
-    <enum id="io.elementary.screenshot.capture-mode">
-        <value nick="screen" value="0"/>
-        <value nick="window" value="1"/>
-        <value nick="area" value="2"/>
-    </enum>
-
     <schema id="io.elementary.screenshot" path="/io/elementary/screenshot/" gettext-domain="io.elementary.screenshot">
         <key name="format" type="s">
             <default>"png"</default>
         </key>
-        <key name="mouse-pointer" type="b">
-            <default>false</default>
-        </key>
-        <key name="close-on-save" type="b">
-            <default>false</default>
-        </key>
-        <key name="redact" type="b">
-            <default>false</default>
-        </key>
-        <key name="delay" type="i">
-            <range min="0" max="15"/>
-            <default>1</default>
-        </key>
         <key name="folder-dir" type="s">
             <default>""</default>
-        </key>
-        <key name='last-capture-mode' enum='io.elementary.screenshot.capture-mode'>
-            <default>"screen"</default>
         </key>
     </schema>
 </schemalist>
