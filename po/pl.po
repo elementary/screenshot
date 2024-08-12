@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2023-09-09 09:08+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/screenshot/"
@@ -57,103 +57,94 @@ msgstr "Redaguj tekst systemowy"
 msgid "Save screenshot to clipboard"
 msgstr "Zapisz zrzut ekranu do schowka"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Zdjęcie całego ekranu"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Nie udało się zrobić zrzutu ekranu"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Zdjęcie aktywnego okna"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Obraz nie został zapisany"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Zdjęcie zaznaczonego obszaru"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Zrzut ekranu"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Przechwyć kursor:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Wyłącz po zapisaniu:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Ukryj tekst:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Opóźnienie w sekundach:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Zrób zrzut ekranu"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Zamknij"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Zapisz obraz jako…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Zrzut ekranu z %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Nie udało się zrobić zrzutu ekranu"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Obraz nie został zapisany"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Zrzut ekranu"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Zapisz obraz jako…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Nazwa"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Typ pliku"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Katalog"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Wybierz miejsce zapisu zrzutów ekranu…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Wybierz"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Kopiuj do schowka"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Zapisz"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Nazwa pliku nie może być pusta"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Nazwa pliku nie może zawierać „/”"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Zdjęcie całego ekranu"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Zdjęcie aktywnego okna"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Zdjęcie zaznaczonego obszaru"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Przechwyć kursor:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Wyłącz po zapisaniu:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Ukryj tekst:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Opóźnienie w sekundach:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Zrób zrzut ekranu"
+
+#~ msgid "Close"
+#~ msgstr "Zamknij"
 
 #~ msgid "Format:"
 #~ msgstr "Format:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2024-03-01 20:12+0000\n"
 "Last-Translator: Aefgh Threenine <aefgh39622@gmail.com>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/screenshot/"
@@ -56,105 +56,93 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "จับภาพทั้งหน้าจอ"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "ไม่สามารถจับภาพหน้าจอ"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "จับภาพหน้าต่างปัจจุบัน"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "ไม่ได้บันทึกภาพ"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "เลือกพื้นที่ที่ต้องการจับภาพ"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "ภาพหน้าจอ"
 
-#: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
-msgid "Grab pointer:"
-msgstr "จับภาพตัวชี้เมาส์:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "ปิดหลังจากบันทึก:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "หน่วงเวลาเป็นวินาที:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "ถ่ายภาพหน้าจอ"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "ปิด"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "บันทึกภาพเป็น…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "ภาพหน้าจอเมื่อ %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "ไม่สามารถจับภาพหน้าจอ"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "ไม่ได้บันทึกภาพ"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "ภาพหน้าจอ"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "บันทึกภาพเป็น…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "ชื่อ"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "ชนิดไฟล์"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "โฟลเดอร์"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "เลือกโฟลเดอร์ภาพหน้าจอ…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "เลือก"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "คัดลอกลงคลิปบอร์ด"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "บันทึก"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "จับภาพทั้งหน้าจอ"
+
+#~ msgid "Grab the current window"
+#~ msgstr "จับภาพหน้าต่างปัจจุบัน"
+
+#~ msgid "Select area to grab"
+#~ msgstr "เลือกพื้นที่ที่ต้องการจับภาพ"
+
+#, fuzzy
+#~| msgid "Grab mouse pointer:"
+#~ msgid "Grab pointer:"
+#~ msgstr "จับภาพตัวชี้เมาส์:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "ปิดหลังจากบันทึก:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "หน่วงเวลาเป็นวินาที:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "ถ่ายภาพหน้าจอ"
+
+#~ msgid "Close"
+#~ msgstr "ปิด"
 
 #~ msgid "Capture area:"
 #~ msgstr "พื้นที่ในการจับภาพ:"

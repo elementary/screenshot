@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2023-05-30 04:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/screenshot/"
@@ -56,103 +56,94 @@ msgstr "Systeemtekst onleesbaar maken"
 msgid "Save screenshot to clipboard"
 msgstr "Bewaar de schermafbeelding op het klembord"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Leg het volledige scherm vast"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Kon geen schermafdruk nemen"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Leg het huidige venster vast"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Afbeelding niet opgeslagen"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Selecteer een gebied om vast te leggen"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Schermafdruk"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Cursor vastleggen:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Afsluiten na opslaan:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Verberg tekst:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Uitstel in seconden:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Neem schermafdruk"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Sluiten"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Afbeelding opslaan als…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Schermafdruk van %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Kon geen schermafdruk nemen"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Afbeelding niet opgeslagen"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Schermafdruk"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Afbeelding opslaan als…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Naam"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Bestandstype"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Map"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Selecteer map voor schermafbeeldingen…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Kopiëren naar klembord"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Opslaan"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Bestandsnaam kan niet leeg zijn"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Bestandsnaam kan geen “/” bevatten"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Leg het volledige scherm vast"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Leg het huidige venster vast"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Selecteer een gebied om vast te leggen"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Cursor vastleggen:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Afsluiten na opslaan:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Verberg tekst:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Uitstel in seconden:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Neem schermafdruk"
+
+#~ msgid "Close"
+#~ msgstr "Sluiten"
 
 #~ msgid "Format:"
 #~ msgstr "Formaat:"

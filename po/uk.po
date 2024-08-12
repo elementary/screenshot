@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2023-08-31 19:08+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
@@ -52,103 +52,94 @@ msgstr "Редагувати системний текст"
 msgid "Save screenshot to clipboard"
 msgstr "Зберегти знімок екрана до буфера обміну"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Захопити весь екран"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Неможливо зробити знімок екрана"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Захопити поточне вікно"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Зображення не збережено"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Вибрати ділянку"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Знімок екрана"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Захопити вказівник:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Закрити після збереження:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Приховати текст:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Затримка в секундах:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Зробити знімок екрана"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Закрити"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Зберегти зображення як…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Знімок за %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Неможливо зробити знімок екрана"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Зображення не збережено"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Знімок екрана"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Зберегти зображення як…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Назва"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Тип файлу"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Тека"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Виберіть теку для знімків екрана…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Вибрати"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Зберегти"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Назва файлу не може бути порожньою"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Назва файлу не може містити символ «/»"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Захопити весь екран"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Захопити поточне вікно"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Вибрати ділянку"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Захопити вказівник:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Закрити після збереження:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Приховати текст:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Затримка в секундах:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Зробити знімок екрана"
+
+#~ msgid "Close"
+#~ msgstr "Закрити"
 
 #~ msgid "The filename must not be blank and must not contain '/'"
 #~ msgstr ""

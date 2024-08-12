@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2016-06-30 19:06+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,107 +49,86 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Merr të tërë ekranin"
-
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Merr dritaren aktuale"
-
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Zgjidh zonën e kapjes"
-
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Mbyll pas ruajtjes:"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Imazhi nuk u ruajt"
 
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Vonesa në sekonda:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr ""
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Ruaje imazhin si…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Imazhi nuk u ruajt"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr ""
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Ruaje imazhin si…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Emri:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "Dosja:"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Anulo"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Ruaj"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Merr të tërë ekranin"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Merr dritaren aktuale"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Zgjidh zonën e kapjes"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Mbyll pas ruajtjes:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Vonesa në sekonda:"
 
 #~ msgid "Format:"
 #~ msgstr "Formati:"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2018-10-18 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/screenshot-"
@@ -51,109 +51,100 @@ msgstr "Fjern systemtekst"
 msgid "Save screenshot to clipboard"
 msgstr "Gem skærmbille i udklipsholder"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Indfang hele skærmen"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Kunne ikke tage skærmbillede"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Indfang det aktuelle vindue"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Billede ikke gemt"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Vælg område som skal indfanges"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Skærmbillede"
 
-#: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
-msgid "Grab pointer:"
-msgstr "Indfang musemarkør:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Luk efter gem:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Skjul tekst:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Sekunders forsinkelse:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Tag skærmbillede"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Luk"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Gem billede som…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skærmbillede fra %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Kunne ikke tage skærmbillede"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Billede ikke gemt"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Skærmbillede"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Gem billede som…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Navn:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "Mappe:"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Vælg skærmbilledmappe…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Kopiér til udklipsholder"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Annuller"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Gem"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Indfang hele skærmen"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Indfang det aktuelle vindue"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Vælg område som skal indfanges"
+
+#, fuzzy
+#~| msgid "Grab mouse pointer:"
+#~ msgid "Grab pointer:"
+#~ msgstr "Indfang musemarkør:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Luk efter gem:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Skjul tekst:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Sekunders forsinkelse:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Tag skærmbillede"
+
+#~ msgid "Close"
+#~ msgstr "Luk"
 
 #~ msgid "Format:"
 #~ msgstr "Format:"

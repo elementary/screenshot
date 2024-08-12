@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2024-06-20 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
@@ -51,103 +51,94 @@ msgstr "システムテキストを隠します"
 msgid "Save screenshot to clipboard"
 msgstr "スクリーンショットをクリップボードに保存します"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "画面全体を取得します"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "スクリーンショットを取得できませんでした"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "現在のウィンドウを取得します"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "画像は保存されていません"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "範囲を選択して取得します"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "スクリーンショット"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "ポインター部分を取得:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "保存後に閉じる:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "テキストを隠す:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "遅延する秒数:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "スクリーンショットを撮る"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "閉じる"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "名前を付けて画像を保存…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s のスクリーンショット"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "スクリーンショットを取得できませんでした"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "画像は保存されていません"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "スクリーンショット"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "名前を付けて画像を保存…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "名前"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "ファイルの種類"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "フォルダー"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "スクリーンショットフォルダーを選択…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "選択"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "クリップボードにコピー"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "保存"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "ファイル名は空にできません"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "ファイル名に“/”は使えません"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "画面全体を取得します"
+
+#~ msgid "Grab the current window"
+#~ msgstr "現在のウィンドウを取得します"
+
+#~ msgid "Select area to grab"
+#~ msgstr "範囲を選択して取得します"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "ポインター部分を取得:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "保存後に閉じる:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "テキストを隠す:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "遅延する秒数:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "スクリーンショットを撮る"
+
+#~ msgid "Close"
+#~ msgstr "閉じる"
 
 #~ msgid "Format:"
 #~ msgstr "形式:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2024-04-27 21:13+0000\n"
 "Last-Translator: Matheus Torres Carvalho <matheustcarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -56,103 +56,94 @@ msgstr "Remover textos do sistema"
 msgid "Save screenshot to clipboard"
 msgstr "Salvar captura de tela na área de transferência"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Capture a tela inteira"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Não foi possível capturar a tela"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Capture a janela atual"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "A imagem não foi salva"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Selecione a área a ser capturada"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Captura de Tela"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Capturar o ponteiro:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Fechar após salvar:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Ocultar texto:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Atraso em segundos:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Capture a tela"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Fechar"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Salvar imagem como…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Captura de tela de %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Não foi possível capturar a tela"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "A imagem não foi salva"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Captura de Tela"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Salvar imagem como…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Nome"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Tipo de arquivo"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Pasta"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Selecione a pasta de captura de imagens…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Selecionar"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Salvar"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "O nome do arquivo não pode ficar em branco"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "O nome do arquivo não pode conter \"/\""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Capture a tela inteira"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Capture a janela atual"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Selecione a área a ser capturada"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Capturar o ponteiro:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Fechar após salvar:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Ocultar texto:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Atraso em segundos:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Capture a tela"
+
+#~ msgid "Close"
+#~ msgstr "Fechar"
 
 #~ msgid "Format:"
 #~ msgstr "Formato:"
