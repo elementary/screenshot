@@ -176,7 +176,7 @@ public class Screenshot.Application : Gtk.Application {
         string folder_from_settings = "";
 
         if (folder_dir == "") {
-            folder_from_settings = new Settings ("io.elementary.screenshot").get_string ("folder-dir");
+            folder_from_settings = settings.get_string ("folder-dir");
             if (folder_from_settings != "") {
                 folder_dir = folder_from_settings;
             } else {
