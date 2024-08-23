@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2018-12-14 22:09+0000\n"
 "Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/screenshot-tool/"
@@ -52,109 +52,94 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "पूरे स्क्रीन को पकड़ें"
-
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "वर्तमान विंडो को पकड़ें"
-
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "चुने हुए क्षेत्र को पकड़ें"
-
-#: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
-msgid "Grab pointer:"
-msgstr "माउस पॉइंटर को पकड़ें"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "सहेजने के पश्चात बंद करें"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "टेक्स्ट के छुपाएँ :"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "स्क्रीनशॉट लें"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
+#: src/Application.vala:209
+msgid "Image not saved"
 msgstr ""
+
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "स्क्रीनशॉट"
+
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "छवि ऐसे सुरक्षित करें…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s से स्क्रीनशॉट"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr ""
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "स्क्रीनशॉट"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "छवि ऐसे सुरक्षित करें…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "नाम:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "फ़ोल्डर:"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "स्क्रीनशॉट्स के लिए फोल्डर चुनें…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "सहेजें"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "पूरे स्क्रीन को पकड़ें"
+
+#~ msgid "Grab the current window"
+#~ msgstr "वर्तमान विंडो को पकड़ें"
+
+#~ msgid "Select area to grab"
+#~ msgstr "चुने हुए क्षेत्र को पकड़ें"
+
+#, fuzzy
+#~| msgid "Grab mouse pointer:"
+#~ msgid "Grab pointer:"
+#~ msgstr "माउस पॉइंटर को पकड़ें"
+
+#~ msgid "Close after saving:"
+#~ msgstr "सहेजने के पश्चात बंद करें"
+
+#~ msgid "Conceal text:"
+#~ msgstr "टेक्स्ट के छुपाएँ :"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "स्क्रीनशॉट लें"
 
 #~ msgid "Format:"
 #~ msgstr "प्रारूप:"

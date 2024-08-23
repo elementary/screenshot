@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -42,100 +42,64 @@ msgstr ""
 msgid "Save screenshot to clipboard"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
+#: src/Application.vala:209
+msgid "Image not saved"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
 msgstr ""
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr ""
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr ""
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr ""
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr ""
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr ""
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""

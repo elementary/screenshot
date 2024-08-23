@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2024-07-05 14:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -56,105 +56,96 @@ msgstr "Fjern systemtekst"
 msgid "Save screenshot to clipboard"
 msgstr "Lagre skjermavbildning til utklippstavle"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Fang hele skjermen"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Kunne ikke utføre skjermavbildning"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Fang det aktuelle vinduet"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Bilde ikke lagret"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Velg område å fange"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Skjermavbildning"
 
-#: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
-msgid "Grab pointer:"
-msgstr "Fang musepeker:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Avslutt etter lagring:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Skjul tekst:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Forsinkelse i sekunder:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Utfør skjermavbildning"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Lukk"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Lagre bilde som…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Skjermavbildning fra %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Kunne ikke utføre skjermavbildning"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Bilde ikke lagret"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Skjermavbildning"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Lagre bilde som…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Navn"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Filtype"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Mappe"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Velg mappe for skjermavbildninger…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Velg"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Kopier til utklippstavle"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Lagre"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Filnavn kan ikke stå tomt"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Filnavn kan ikke inneholde «/»"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Fang hele skjermen"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Fang det aktuelle vinduet"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Velg område å fange"
+
+#, fuzzy
+#~| msgid "Grab mouse pointer:"
+#~ msgid "Grab pointer:"
+#~ msgstr "Fang musepeker:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Avslutt etter lagring:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Skjul tekst:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Forsinkelse i sekunder:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Utfør skjermavbildning"
+
+#~ msgid "Close"
+#~ msgstr "Lukk"
 
 #~ msgid "Format:"
 #~ msgstr "Format:"

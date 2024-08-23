@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2023-09-16 18:08+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/screenshot/"
@@ -56,103 +56,94 @@ msgstr "Poista järjestelmän teksti"
 msgid "Save screenshot to clipboard"
 msgstr "Tallenna kuvakaappaus leikepöydälle"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Kaappaa koko näyttö"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Kuvakaappauksen ottaminen epäonnistui"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Kaappaa nykyinen ikkuna"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Kuvaa ei tallennettu"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Valitse kaapattava alue"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Kuvakaappaus"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Kaappaa osoitin:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Sulje tallentamisen jälkeen:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Piilota teksti:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Viive sekunneissa:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Ota kuvakaappaus"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Sulje"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Tallenna kuva nimellä…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Kuvakaappaus - %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Kuvakaappauksen ottaminen epäonnistui"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Kuvaa ei tallennettu"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Kuvakaappaus"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Tallenna kuva nimellä…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Nimi"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Tiedostotyyppi"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Kansio"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Valitse kuvakaappauskansio…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Valitse"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Tiedostonimi ei voi olla tyhjä"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Tiedostonimi ei voi sisältää merkkiä “/”"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Kaappaa koko näyttö"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Kaappaa nykyinen ikkuna"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Valitse kaapattava alue"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Kaappaa osoitin:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Sulje tallentamisen jälkeen:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Piilota teksti:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Viive sekunneissa:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Ota kuvakaappaus"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
 
 #~ msgid "Format:"
 #~ msgstr "Muoto:"

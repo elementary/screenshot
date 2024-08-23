@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2023-09-19 19:08+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/screenshot/"
@@ -56,103 +56,94 @@ msgstr "Systemtext unleserlich machen"
 msgid "Save screenshot to clipboard"
 msgstr "Bildschirmfoto in der Zwischenablage speichern"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Gesamten Bildschirm aufnehmen"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Es konnte kein Bildschirmfoto aufgenommen werden"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Aktuelles Fenster aufnehmen"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Aufnahme wurde nicht gespeichert"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Aufnahmebereich auswählen"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Bildschirmfoto"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "Mauszeiger einbeziehen:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Beenden nach speichern:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Text verschleiern:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Verzögerung in Sekunden:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Bildschirmfoto aufnehmen"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Schließen"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Bild speichern unter …"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Bildschirmfoto von %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Es konnte kein Bildschirmfoto aufgenommen werden"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Aufnahme wurde nicht gespeichert"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Bildschirmfoto"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Bild speichern unter …"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 msgid "Name"
 msgstr "Name"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr "Dateityp"
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 msgid "Folder"
 msgstr "Ordner"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Bildschirmfotoordner wählen …"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr "Auswählen"
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Speichern"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr "Dateinamen dürfen nicht leer sein"
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr "Dateinamen dürfen kein »/« enthalten"
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Gesamten Bildschirm aufnehmen"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Aktuelles Fenster aufnehmen"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Aufnahmebereich auswählen"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "Mauszeiger einbeziehen:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Beenden nach speichern:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Text verschleiern:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Verzögerung in Sekunden:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Bildschirmfoto aufnehmen"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
 
 #~ msgid "Format:"
 #~ msgstr "Format:"

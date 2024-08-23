@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2020-02-23 13:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -50,109 +50,100 @@ msgstr "Redaguj tekst systymowy"
 msgid "Save screenshot to clipboard"
 msgstr "Spamiyntej przechyt ekranu do skrytki"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "Przechyć cołki ekran"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "Niy szło wykōnać przechytu ekranu"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "Przechyć teroźne ôkno"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "Ôbroz niy bōł spamiyntany"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "Zaznacz plac do przechytu"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "Przechyt ekranu"
 
-#: src/ScreenshotWindow.vala:92
-#, fuzzy
-#| msgid "Grab mouse pointer:"
-msgid "Grab pointer:"
-msgstr "Przechyć kursōr myszy:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "Zawrzij po spamiyntaniu:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "Skryj tekst:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "Ôpōźniynie w sekundach:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "Zrōb przechyt ekranu"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "Zawrzij"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "Spamiyntej ôbroz za…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Przechyt ekranu ze %s"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "Niy szło wykōnać przechytu ekranu"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "Ôbroz niy bōł spamiyntany"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "Przechyt ekranu"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "Spamiyntej ôbroz za…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Miano:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "Katalog:"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "Ôbier folder przechytōw ekranu…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "Skopiuj do skrytki"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "Pociep"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "Spamiyntej"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "Przechyć cołki ekran"
+
+#~ msgid "Grab the current window"
+#~ msgstr "Przechyć teroźne ôkno"
+
+#~ msgid "Select area to grab"
+#~ msgstr "Zaznacz plac do przechytu"
+
+#, fuzzy
+#~| msgid "Grab mouse pointer:"
+#~ msgid "Grab pointer:"
+#~ msgstr "Przechyć kursōr myszy:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "Zawrzij po spamiyntaniu:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "Skryj tekst:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "Ôpōźniynie w sekundach:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "Zrōb przechyt ekranu"
+
+#~ msgid "Close"
+#~ msgstr "Zawrzij"
 
 #~ msgid "Format:"
 #~ msgstr "Format:"

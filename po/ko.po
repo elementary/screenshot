@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-08-12 23:07+0000\n"
 "PO-Revision-Date: 2022-08-05 18:30+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/screenshot/"
@@ -56,107 +56,98 @@ msgstr "시스템 텍스트 편집"
 msgid "Save screenshot to clipboard"
 msgstr "스크린샷 클립보드에 저장하기"
 
-#: src/ScreenshotWindow.vala:82
-msgid "Grab the whole screen"
-msgstr "전체 화면"
+#: src/Application.vala:208
+msgid "Could not capture screenshot"
+msgstr "스크린샷을 찍을 수 없습니다"
 
-#: src/ScreenshotWindow.vala:86
-msgid "Grab the current window"
-msgstr "현재 창"
+#: src/Application.vala:209
+msgid "Image not saved"
+msgstr "이미지 저장되지 않음"
 
-#: src/ScreenshotWindow.vala:90
-msgid "Select area to grab"
-msgstr "사용자 지정"
+#: src/SaveDialog.vala:38
+msgid "Screenshot"
+msgstr "스크린샷"
 
-#: src/ScreenshotWindow.vala:92
-msgid "Grab pointer:"
-msgstr "포인터 잡기:"
-
-#: src/ScreenshotWindow.vala:98
-msgid "Close after saving:"
-msgstr "저장하고 닫기:"
-
-#: src/ScreenshotWindow.vala:104
-msgid "Conceal text:"
-msgstr "텍스트 숨김:"
-
-#: src/ScreenshotWindow.vala:115
-msgid "Delay in seconds:"
-msgstr "타이머 설정:"
-
-#: src/ScreenshotWindow.vala:120
-msgid "Take Screenshot"
-msgstr "스크린샷 찍기"
-
-#: src/ScreenshotWindow.vala:126
-msgid "Close"
-msgstr "닫기"
+#: src/SaveDialog.vala:90
+msgid "Save Image as…"
+msgstr "다음 이름으로 저장하기…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/ScreenshotWindow.vala:315 src/Widgets/SaveDialog.vala:96
+#: src/SaveDialog.vala:95
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s에 스크린샷 찍기"
 
-#: src/ScreenshotWindow.vala:360
-msgid "Could not capture screenshot"
-msgstr "스크린샷을 찍을 수 없습니다"
-
-#: src/ScreenshotWindow.vala:361
-msgid "Image not saved"
-msgstr "이미지 저장되지 않음"
-
-#: src/Widgets/SaveDialog.vala:38
-msgid "Screenshot"
-msgstr "스크린샷"
-
-#: src/Widgets/SaveDialog.vala:91
-msgid "Save Image as…"
-msgstr "다음 이름으로 저장하기…"
-
-#: src/Widgets/SaveDialog.vala:102
+#: src/SaveDialog.vala:101
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "이름:"
 
-#: src/Widgets/SaveDialog.vala:127
+#: src/SaveDialog.vala:126
 msgid "File Type"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:150
+#: src/SaveDialog.vala:149
 #, fuzzy
 #| msgid "Folder:"
 msgid "Folder"
 msgstr "폴더:"
 
-#: src/Widgets/SaveDialog.vala:175
+#: src/SaveDialog.vala:174
 msgid "Select Screenshots Folder…"
 msgstr "스크린샷 폴더 고르기…"
 
-#: src/Widgets/SaveDialog.vala:178
+#: src/SaveDialog.vala:177
 msgid "Select"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:199
+#: src/SaveDialog.vala:199
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
-#: src/Widgets/SaveDialog.vala:201
+#: src/SaveDialog.vala:201
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Widgets/SaveDialog.vala:203
+#: src/SaveDialog.vala:203
 msgid "Save"
 msgstr "저장"
 
-#: src/Widgets/SaveDialog.vala:209
+#: src/SaveDialog.vala:209
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/Widgets/SaveDialog.vala:212
+#: src/SaveDialog.vala:212
 msgid "Filename can't contain “/”"
 msgstr ""
+
+#~ msgid "Grab the whole screen"
+#~ msgstr "전체 화면"
+
+#~ msgid "Grab the current window"
+#~ msgstr "현재 창"
+
+#~ msgid "Select area to grab"
+#~ msgstr "사용자 지정"
+
+#~ msgid "Grab pointer:"
+#~ msgstr "포인터 잡기:"
+
+#~ msgid "Close after saving:"
+#~ msgstr "저장하고 닫기:"
+
+#~ msgid "Conceal text:"
+#~ msgstr "텍스트 숨김:"
+
+#~ msgid "Delay in seconds:"
+#~ msgstr "타이머 설정:"
+
+#~ msgid "Take Screenshot"
+#~ msgstr "스크린샷 찍기"
+
+#~ msgid "Close"
+#~ msgstr "닫기"
 
 #~ msgid "Format:"
 #~ msgstr "형식:"
