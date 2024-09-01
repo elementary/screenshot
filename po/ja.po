@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 23:07+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2024-06-20 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
@@ -63,53 +63,53 @@ msgstr "画像は保存されていません"
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
-#: src/SaveDialog.vala:90
+#: src/SaveDialog.vala:79
 msgid "Save Image as…"
 msgstr "名前を付けて画像を保存…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/SaveDialog.vala:95
+#: src/SaveDialog.vala:84
 #, c-format
 msgid "Screenshot from %s"
 msgstr "%s のスクリーンショット"
 
-#: src/SaveDialog.vala:101
+#: src/SaveDialog.vala:90
 msgid "Name"
 msgstr "名前"
 
-#: src/SaveDialog.vala:126
+#: src/SaveDialog.vala:115
 msgid "File Type"
 msgstr "ファイルの種類"
 
-#: src/SaveDialog.vala:149
+#: src/SaveDialog.vala:138
 msgid "Folder"
 msgstr "フォルダー"
 
-#: src/SaveDialog.vala:174
+#: src/SaveDialog.vala:163
 msgid "Select Screenshots Folder…"
 msgstr "スクリーンショットフォルダーを選択…"
 
-#: src/SaveDialog.vala:177
+#: src/SaveDialog.vala:166
 msgid "Select"
 msgstr "選択"
 
-#: src/SaveDialog.vala:199
+#: src/SaveDialog.vala:185
 msgid "Copy to Clipboard"
 msgstr "クリップボードにコピー"
 
-#: src/SaveDialog.vala:201
+#: src/SaveDialog.vala:187
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/SaveDialog.vala:203
+#: src/SaveDialog.vala:189
 msgid "Save"
 msgstr "保存"
 
-#: src/SaveDialog.vala:209
+#: src/SaveDialog.vala:195
 msgid "Filename can't be blank"
 msgstr "ファイル名は空にできません"
 
-#: src/SaveDialog.vala:212
+#: src/SaveDialog.vala:198
 msgid "Filename can't contain “/”"
 msgstr "ファイル名に“/”は使えません"
 

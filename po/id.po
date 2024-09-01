@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 23:07+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2023-05-27 17:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -64,53 +64,53 @@ msgstr "Gambar tidak disimpan"
 msgid "Screenshot"
 msgstr "Tangkapan layar"
 
-#: src/SaveDialog.vala:90
+#: src/SaveDialog.vala:79
 msgid "Save Image as…"
 msgstr "Simpan Gambar sebagai…"
 
 #. / TRANSLATORS: %s represents a timestamp here
-#: src/SaveDialog.vala:95
+#: src/SaveDialog.vala:84
 #, c-format
 msgid "Screenshot from %s"
 msgstr "Tangkapan layar dari %s"
 
-#: src/SaveDialog.vala:101
+#: src/SaveDialog.vala:90
 msgid "Name"
 msgstr "Nama"
 
-#: src/SaveDialog.vala:126
+#: src/SaveDialog.vala:115
 msgid "File Type"
 msgstr "Jenis Berkas"
 
-#: src/SaveDialog.vala:149
+#: src/SaveDialog.vala:138
 msgid "Folder"
 msgstr "Folder"
 
-#: src/SaveDialog.vala:174
+#: src/SaveDialog.vala:163
 msgid "Select Screenshots Folder…"
 msgstr "Pilih Folder Tangkapan Layar…"
 
-#: src/SaveDialog.vala:177
+#: src/SaveDialog.vala:166
 msgid "Select"
 msgstr ""
 
-#: src/SaveDialog.vala:199
+#: src/SaveDialog.vala:185
 msgid "Copy to Clipboard"
 msgstr "Salin ke Papan Klip"
 
-#: src/SaveDialog.vala:201
+#: src/SaveDialog.vala:187
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/SaveDialog.vala:203
+#: src/SaveDialog.vala:189
 msgid "Save"
 msgstr "Simpan"
 
-#: src/SaveDialog.vala:209
+#: src/SaveDialog.vala:195
 msgid "Filename can't be blank"
 msgstr "Nama berkas tidak boleh kosong"
 
-#: src/SaveDialog.vala:212
+#: src/SaveDialog.vala:198
 msgid "Filename can't contain “/”"
 msgstr "Nama berkas tidak boleh mengandung “/”"
 
