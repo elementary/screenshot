@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2024-07-05 14:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -37,48 +37,28 @@ msgstr ""
 "områder, gjeldende vindu, med muligheten til å bruke nedtelling til å gjøre "
 "det."
 
-#: data/screenshot.metainfo.xml.in:48
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:95
 msgid "Minor updates:"
 msgstr "Småoppdateringer:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
-#: data/screenshot.metainfo.xml.in:76
+#: data/screenshot.metainfo.xml.in:59
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
 msgstr "Oppdaterte oversettelser"
 
-#: data/screenshot.metainfo.xml.in:75
+#: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
 msgstr "Oppdatert elementary-kjøretidsrutine til 6.1"
 
-#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
+#: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
 msgstr "Oversettelsesoppdateringer"
-
-#: data/screenshot.metainfo.xml.in:92
-msgid "New features:"
-msgstr "Nye funksjoner:"
-
-#: data/screenshot.metainfo.xml.in:94
-msgid "Support the dark style"
-msgstr "Støtte for mørk stil"
-
-#: data/screenshot.metainfo.xml.in:95
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr "Dra og slipp forhåndsvisningsbilde fra lagringsdialogen"
-
-#: data/screenshot.metainfo.xml.in:99
-msgid "Drag to move the window from anywhere"
-msgstr "Dra og slipp vindu fra hvor som helst"
-
-#: data/screenshot.metainfo.xml.in:100
-msgid "Show details for errors if they occur"
-msgstr "Vis detaljer for feil hvis de inntreffer"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -95,6 +75,24 @@ msgstr "Skjermavbildning av gjeldende vindu"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skjermavbildning av valgt område"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New features:"
+#~ msgstr "Nye funksjoner:"
+
+#~ msgid "Support the dark style"
+#~ msgstr "Støtte for mørk stil"
+
+#~ msgid "Drag and Drop the preview image from the save dialog"
+#~ msgstr "Dra og slipp forhåndsvisningsbilde fra lagringsdialogen"
+
+#~ msgid "Drag to move the window from anywhere"
+#~ msgstr "Dra og slipp vindu fra hvor som helst"
+
+#~ msgid "Show details for errors if they occur"
+#~ msgstr "Vis detaljer for feil hvis de inntreffer"
 
 #~ msgid "Minor bug fixes"
 #~ msgstr "Retting av småfeil"

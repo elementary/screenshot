@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2022-10-06 12:46+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/screenshot/"
@@ -31,48 +31,28 @@ msgstr ""
 "Egy egyszerű képernyőkép eszköz. Készítsen képet az egész asztalról, egy "
 "kijelölt területről vagy az aktív ablakról, akár időzetve is."
 
-#: data/screenshot.metainfo.xml.in:48
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:95
 msgid "Minor updates:"
 msgstr "Kisebb frissítések:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
-#: data/screenshot.metainfo.xml.in:76
+#: data/screenshot.metainfo.xml.in:59
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/screenshot.metainfo.xml.in:75
+#: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
 msgstr "Az elementary futtatókörnyezet frissítve 6.1-re"
 
-#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
+#: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
 msgstr "Fordítási frissítések"
-
-#: data/screenshot.metainfo.xml.in:92
-msgid "New features:"
-msgstr "Új funkciók:"
-
-#: data/screenshot.metainfo.xml.in:94
-msgid "Support the dark style"
-msgstr "Sötét téma támogatása"
-
-#: data/screenshot.metainfo.xml.in:95
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr "Az előnézeti kép áthúzható a mentési párbeszédpanelről"
-
-#: data/screenshot.metainfo.xml.in:99
-msgid "Drag to move the window from anywhere"
-msgstr "Ablak átmozgatása bárhonnan"
-
-#: data/screenshot.metainfo.xml.in:100
-msgid "Show details for errors if they occur"
-msgstr "A hibarészletek megjelenítése, ha előfordulnak"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -89,6 +69,24 @@ msgstr "Képernyőkép az aktuális ablakról"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Képernyőkép egy kijelölt területről"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New features:"
+#~ msgstr "Új funkciók:"
+
+#~ msgid "Support the dark style"
+#~ msgstr "Sötét téma támogatása"
+
+#~ msgid "Drag and Drop the preview image from the save dialog"
+#~ msgstr "Az előnézeti kép áthúzható a mentési párbeszédpanelről"
+
+#~ msgid "Drag to move the window from anywhere"
+#~ msgstr "Ablak átmozgatása bárhonnan"
+
+#~ msgid "Show details for errors if they occur"
+#~ msgstr "A hibarészletek megjelenítése, ha előfordulnak"
 
 #~ msgid "Fix minor visual issues with selection items"
 #~ msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2022-09-21 11:55+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -29,47 +29,27 @@ msgid ""
 "current window shots, and timed shots."
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:48
-msgid "elementary, Inc."
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:95
 msgid "Minor updates:"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
-#: data/screenshot.metainfo.xml.in:76
+#: data/screenshot.metainfo.xml.in:59
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:75
+#: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
+#: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:92
-msgid "New features:"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:94
-msgid "Support the dark style"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:95
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:99
-msgid "Drag to move the window from anywhere"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:100
-msgid "Show details for errors if they occur"
 msgstr ""
 
 #: data/screenshot.desktop.in:10

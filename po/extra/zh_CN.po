@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2021-11-01 16:19+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -34,50 +34,30 @@ msgid ""
 "current window shots, and timed shots."
 msgstr "简单的截图工具，包括抓屏、选区、窗口和倒计时等功能。"
 
-#: data/screenshot.metainfo.xml.in:48
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:95
 #, fuzzy
 #| msgid "Minor bug fixes"
 msgid "Minor updates:"
 msgstr "细节修复"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
-#: data/screenshot.metainfo.xml.in:76
+#: data/screenshot.metainfo.xml.in:59
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:75
+#: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
+#: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
 msgstr "翻译更新"
-
-#: data/screenshot.metainfo.xml.in:92
-msgid "New features:"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:94
-msgid "Support the dark style"
-msgstr "支持深色风格"
-
-#: data/screenshot.metainfo.xml.in:95
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr "从保存对话框中拖放预览图像"
-
-#: data/screenshot.metainfo.xml.in:99
-msgid "Drag to move the window from anywhere"
-msgstr "拖动以从任何位置移动窗口"
-
-#: data/screenshot.metainfo.xml.in:100
-msgid "Show details for errors if they occur"
-msgstr "如果发生错误，显示详细信息"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -94,6 +74,21 @@ msgstr "当前窗口的截图"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "选中区域的截图"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "Support the dark style"
+#~ msgstr "支持深色风格"
+
+#~ msgid "Drag and Drop the preview image from the save dialog"
+#~ msgstr "从保存对话框中拖放预览图像"
+
+#~ msgid "Drag to move the window from anywhere"
+#~ msgstr "拖动以从任何位置移动窗口"
+
+#~ msgid "Show details for errors if they occur"
+#~ msgstr "如果发生错误，显示详细信息"
 
 #~ msgid "Fix minor visual issues with selection items"
 #~ msgstr "修复已选中项的显示问题"

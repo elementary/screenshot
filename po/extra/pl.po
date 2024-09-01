@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-30 11:34+0000\n"
+"POT-Creation-Date: 2024-09-01 10:36+0000\n"
 "PO-Revision-Date: 2021-12-15 11:36+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -37,48 +37,28 @@ msgstr ""
 "Proste narzędzie do tworzenia zrzutów ekranu. Przechwytuje cały ekran, "
 "wybrany obszar, bieżące okno oraz tworzy czasowe zrzuty ekranu."
 
-#: data/screenshot.metainfo.xml.in:48
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/screenshot.metainfo.xml.in:55 data/screenshot.metainfo.xml.in:64
-#: data/screenshot.metainfo.xml.in:73 data/screenshot.metainfo.xml.in:83
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
+#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
+#: data/screenshot.metainfo.xml.in:95
 msgid "Minor updates:"
 msgstr "Drobne aktualizacje:"
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:66
-#: data/screenshot.metainfo.xml.in:76
+#: data/screenshot.metainfo.xml.in:59
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
 msgstr "Zaktualizowano tłumaczenia"
 
-#: data/screenshot.metainfo.xml.in:75
+#: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
 msgstr "Zaktualizowano do wersji elementary 6.1"
 
-#: data/screenshot.metainfo.xml.in:85 data/screenshot.metainfo.xml.in:101
+#: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
 msgstr "Aktualizacje tłumaczenia"
-
-#: data/screenshot.metainfo.xml.in:92
-msgid "New features:"
-msgstr "Nowe funkcje:"
-
-#: data/screenshot.metainfo.xml.in:94
-msgid "Support the dark style"
-msgstr "Wsparcie dla ciemnego motywu"
-
-#: data/screenshot.metainfo.xml.in:95
-msgid "Drag and Drop the preview image from the save dialog"
-msgstr "Przeciągnij i upuść podgląd obrazu z okienka zapisu"
-
-#: data/screenshot.metainfo.xml.in:99
-msgid "Drag to move the window from anywhere"
-msgstr "Przeciągnij by przemieścić okno gdziekolwiek"
-
-#: data/screenshot.metainfo.xml.in:100
-msgid "Show details for errors if they occur"
-msgstr "Pokaż szczegóły błędów gdy występują"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
@@ -95,6 +75,24 @@ msgstr "Zrzut bieżącego okna"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Zrzut wybranego obszaru"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New features:"
+#~ msgstr "Nowe funkcje:"
+
+#~ msgid "Support the dark style"
+#~ msgstr "Wsparcie dla ciemnego motywu"
+
+#~ msgid "Drag and Drop the preview image from the save dialog"
+#~ msgstr "Przeciągnij i upuść podgląd obrazu z okienka zapisu"
+
+#~ msgid "Drag to move the window from anywhere"
+#~ msgstr "Przeciągnij by przemieścić okno gdziekolwiek"
+
+#~ msgid "Show details for errors if they occur"
+#~ msgstr "Pokaż szczegóły błędów gdy występują"
 
 #~ msgid "Fix minor visual issues with selection items"
 #~ msgstr "Naprawiono mniejsze problemy wizualne z zaznaczonymi elementami"
