@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2021-12-15 11:36+0000\n"
+"PO-Revision-Date: 2024-09-02 00:57+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/screenshot/extra/"
 "he/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -39,7 +39,7 @@ msgstr "עדכונים משניים:"
 
 #: data/screenshot.metainfo.xml.in:59
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "החלון אינו עליון יותר או נעוץ בכל שולחנות העבודה"
 
 #: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
