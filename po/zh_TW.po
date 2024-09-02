@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2020-08-16 05:13+0000\n"
-"Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
+"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
-"screenshot-tool/screenshot-tool/zh_Hant/>\n"
+"screenshot/screenshot/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
 msgid "Screenshots"
-msgstr "螢幕截圖"
+msgstr "畫面快照"
 
 #: src/Application.vala:33
 msgid "Capture area"
@@ -41,11 +41,11 @@ msgstr "秒"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "畫面快照包含滑鼠指標"
+msgstr "在畫面快照中包含滑鼠指標"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr "擬定系統文字"
+msgstr "隱藏系統文字"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
@@ -74,28 +74,24 @@ msgid "Screenshot from %s"
 msgstr "%s 的畫面快照"
 
 #: src/SaveDialog.vala:90
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "名稱："
+msgstr "名稱"
 
 #: src/SaveDialog.vala:115
 msgid "File Type"
-msgstr ""
+msgstr "檔案類型"
 
 #: src/SaveDialog.vala:138
-#, fuzzy
-#| msgid "Folder:"
 msgid "Folder"
-msgstr "資料夾："
+msgstr "資料夾"
 
 #: src/SaveDialog.vala:163
 msgid "Select Screenshots Folder…"
-msgstr "選取螢幕截圖資料夾…"
+msgstr "選取畫面快照資料夾…"
 
 #: src/SaveDialog.vala:166
 msgid "Select"
-msgstr ""
+msgstr "選擇"
 
 #: src/SaveDialog.vala:185
 msgid "Copy to Clipboard"
@@ -111,11 +107,11 @@ msgstr "儲存"
 
 #: src/SaveDialog.vala:195
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "檔案名稱不能是空的"
 
 #: src/SaveDialog.vala:198
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "檔案名稱不能包含 \"/\""
 
 #~ msgid "Grab the whole screen"
 #~ msgstr "擷取整個畫面"
