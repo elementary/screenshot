@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2021-07-22 15:48+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "screenshot/extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -27,30 +27,27 @@ msgstr "將螢幕畫面存成影像"
 msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
-msgstr ""
-"簡單的畫面快照工具。捕捉整個螢幕的快照、選定區域快照、目前視窗快照、倒數計時"
+msgstr "簡單的畫面快照工具。擷取整個螢幕的快照、選擇區域快照、目前視窗快照、倒數計時"
 "快照等。"
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
 #: data/screenshot.metainfo.xml.in:95
-#, fuzzy
-#| msgid "Minor bug fixes"
 msgid "Minor updates:"
-msgstr "小臭蟲修正"
+msgstr "小型更新："
 
 #: data/screenshot.metainfo.xml.in:59
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "視窗不再總是維持或卡在每個桌面的最上層"
 
 #: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
 msgid "Updated translations"
-msgstr ""
+msgstr "更新翻譯"
 
 #: data/screenshot.metainfo.xml.in:87
 msgid "Update elementary runtime to 6.1"
-msgstr ""
+msgstr "將 elementary 執行環境更新至 6.1 版"
 
 #: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
@@ -70,7 +67,7 @@ msgstr "目前視窗的畫面快照"
 
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
-msgstr "選定區域的快照"
+msgstr "所選區域的畫面快照"
 
 #, fuzzy
 #~| msgid "elementary LLC."
