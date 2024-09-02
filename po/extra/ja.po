@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2024-07-14 21:01+0000\n"
+"PO-Revision-Date: 2024-09-03 23:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
 "extra/ja/>\n"
@@ -39,7 +39,8 @@ msgstr "そのほかのアップデート:"
 
 #: data/screenshot.metainfo.xml.in:59
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "ウィンドウが最前面に維持されたりすべてのデスクトップに表示されたりしないよう"
+"に修正"
 
 #: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
