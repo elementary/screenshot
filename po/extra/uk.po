@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2022-09-27 01:55+0000\n"
+"PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/screenshot/"
 "extra/uk/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -41,6 +41,7 @@ msgstr "Незначні оновлення:"
 #: data/screenshot.metainfo.xml.in:59
 msgid "The window is no longer always on top or stuck on every desktop"
 msgstr ""
+"Вікно перестало бути завжди зверху або переноситися на кожен робочий стіл"
 
 #: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
