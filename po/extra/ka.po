@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2023-03-16 06:25+0000\n"
+"PO-Revision-Date: 2024-09-12 22:16+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/screenshot/"
 "extra/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -44,7 +44,7 @@ msgstr "უმნიშვნელო განახლებები:"
 
 #: data/screenshot.metainfo.xml.in:59
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "ფანჯარა აღარაა ყველა ფანჯრის ზემოთ ან ნაჩვენები ყველა სამუშაო მაგიდაზე"
 
 #: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
