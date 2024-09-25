@@ -3,38 +3,37 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:36+0000\n"
-"PO-Revision-Date: 2017-07-31 10:43+0000\n"
-"Last-Translator: mohamad12121 <mohamadij2@gmail.com>\n"
-"Language-Team: Persian <https://weblate.elementary.io/projects/screenshot-"
-"tool/screenshot-tool/fa/>\n"
+"PO-Revision-Date: 2024-09-26 18:16+0000\n"
+"Last-Translator: Hossein <hossein17@duck.com>\n"
+"Language-Team: Persian <https://l10n.elementary.io/projects/screenshot/"
+"screenshot/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
-#, fuzzy
 msgid "Screenshots"
-msgstr "اسکرین شات"
+msgstr "اسکرین شات ها"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr ""
+msgstr "عکس گرفتن از محدوده"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
-msgstr ""
+msgstr "عکس گرفتن از کل صفحه"
 
 #: src/Application.vala:35
 msgid "Capture active window"
-msgstr ""
+msgstr "عکس گرفتن از پنجره فعال"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr ""
+msgstr "گرفتن اسکرین شات پس از تاخیر مشخص"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -42,19 +41,19 @@ msgstr "ثانیه"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr ""
+msgstr "اشاره گر را با اسکرین شات اضافه کنید"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr ""
+msgstr "ویرایش متن سیستم"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr ""
+msgstr "ذخیره اسکرین شات در کلیپ برد"
 
 #: src/Application.vala:208
 msgid "Could not capture screenshot"
-msgstr "نمی توان اسکرینb'‌'شات گرفت"
+msgstr "نمی توان اسکرین شات گرفت"
 
 #: src/Application.vala:209
 msgid "Image not saved"
@@ -72,33 +71,31 @@ msgstr "ذخیره تصویر به عنوان …"
 #: src/SaveDialog.vala:84
 #, c-format
 msgid "Screenshot from %s"
-msgstr ""
+msgstr "اسکرین شات از %s"
 
 #: src/SaveDialog.vala:90
-#, fuzzy
-#| msgid "Name:"
 msgid "Name"
-msgstr "نام:"
+msgstr "نام"
 
 #: src/SaveDialog.vala:115
 msgid "File Type"
-msgstr ""
+msgstr "نوع فایل"
 
 #: src/SaveDialog.vala:138
 msgid "Folder"
-msgstr ""
+msgstr "پوشه"
 
 #: src/SaveDialog.vala:163
 msgid "Select Screenshots Folder…"
-msgstr ""
+msgstr "انتخاب پوشه اسکرین شات…"
 
 #: src/SaveDialog.vala:166
 msgid "Select"
-msgstr ""
+msgstr "انتخاب"
 
 #: src/SaveDialog.vala:185
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "کپی در کلیپ برد"
 
 #: src/SaveDialog.vala:187
 msgid "Cancel"
@@ -110,11 +107,11 @@ msgstr "ذخیره"
 
 #: src/SaveDialog.vala:195
 msgid "Filename can't be blank"
-msgstr ""
+msgstr "نام فایل نمی تواند خالی باشد"
 
 #: src/SaveDialog.vala:198
 msgid "Filename can't contain “/”"
-msgstr ""
+msgstr "نام فایل نمی تواند حاوی \"/\" باشد"
 
 #~ msgid "Delay in seconds:"
 #~ msgstr "وقفه به ثانیه:"
