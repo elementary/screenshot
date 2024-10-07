@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015-2023 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.screenshot</id>
+  <launchable type="desktop-id">io.elementary.screenshot.desktop</launchable>
+  <translation type="gettext">io.elementary.screenshot</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Screenshot</name>
+  <name xml:lang="zh_TW">畫面快照</name>
+  <name xml:lang="zh_CN">截图</name>
+  <name xml:lang="zh">截图</name>
+  <name xml:lang="vi">Ảnh chụp màn hình</name>
+  <name xml:lang="uk">Знімок екрана</name>
+  <name xml:lang="ug">ئېكراندىن رەسىم كىسىش</name>
+  <name xml:lang="tr">Ekran Görüntüsü</name>
+  <name xml:lang="th">ภาพหน้าจอ</name>
+  <name xml:lang="szl">Przechyt ekranu</name>
+  <name xml:lang="sv">Skärmdump</name>
+  <name xml:lang="sr">Снимак екрана</name>
+  <name xml:lang="sl">Posnetek zaslona</name>
+  <name xml:lang="sk">Snímka obrazovky</name>
+  <name xml:lang="si">තිර සේයාව</name>
+  <name xml:lang="ru">Снимок экрана</name>
+  <name xml:lang="ro">Captură de ecran</name>
+  <name xml:lang="pt_BR">Captura de Tela</name>
+  <name xml:lang="pt">Captura de ecrã</name>
+  <name xml:lang="pl">Zrzut ekranu</name>
+  <name xml:lang="pa">ਸਕਰੀਨਸ਼ਾਟ</name>
+  <name xml:lang="nn">Skjermkutt</name>
+  <name xml:lang="nl">Schermafdruk</name>
+  <name xml:lang="nb">Skjermavbildning</name>
+  <name xml:lang="mr">स्क्रीनशॉट</name>
+  <name xml:lang="mo">Captură de ecran</name>
+  <name xml:lang="lt">Ekrano kopija</name>
+  <name xml:lang="ku">Wêneya sermasê</name>
+  <name xml:lang="ko">스크린샷</name>
+  <name xml:lang="ka">ეკრანის ანაბეჭდი</name>
+  <name xml:lang="ja">スクリーンショット</name>
+  <name xml:lang="it">Schermata</name>
+  <name xml:lang="id">Tangkapan layar</name>
+  <name xml:lang="hu">Képernyőkép</name>
+  <name xml:lang="hr">Slika zaslona</name>
+  <name xml:lang="hi">स्क्रीनशॉट</name>
+  <name xml:lang="he">צילום מסך</name>
+  <name xml:lang="gl">Captura de pantalla</name>
+  <name xml:lang="fr">Capture d'écran</name>
+  <name xml:lang="fi">Kuvakaappaus</name>
+  <name xml:lang="fa">اسکرین شات</name>
+  <name xml:lang="eu">Pantaila-argazkia</name>
+  <name xml:lang="et">Ekraanipilt</name>
+  <name xml:lang="es">Captura de pantalla</name>
+  <name xml:lang="eo">Ekrankopio</name>
+  <name xml:lang="en_GB">Screenshot</name>
+  <name xml:lang="en_CA">Screenshot</name>
+  <name xml:lang="en_AU">Screenshot</name>
+  <name xml:lang="el">Στιγμιότυπο οθόνης</name>
+  <name xml:lang="de">Bildschirmfoto</name>
+  <name xml:lang="da">Skærmbillede</name>
+  <name xml:lang="cs">Snímek obrazovky</name>
+  <name xml:lang="ckb">سکرینشوت</name>
+  <name xml:lang="ca">Captura de pantalla</name>
+  <name xml:lang="bs">Snimka ekrana</name>
+  <name xml:lang="bg">Снимка</name>
+  <name xml:lang="ar">لقطة للشاشة</name>
+  <summary>Save images of the screen</summary>
+  <summary xml:lang="zh_TW">將螢幕畫面存成影像</summary>
+  <summary xml:lang="zh_CN">保存屏幕截图</summary>
+  <summary xml:lang="vi">Lưu hình ảnh của màn hình</summary>
+  <summary xml:lang="uk">Зберігайте зображення екрана</summary>
+  <summary xml:lang="ug">ئىكران رەسىمىنى ساقلاش</summary>
+  <summary xml:lang="tr">Ekranın görüntülerini kaydet</summary>
+  <summary xml:lang="szl">Spamiyntuje przechyty ekranu</summary>
+  <summary xml:lang="sv">Spara bilder av skärmen</summary>
+  <summary xml:lang="sr">Сачувајте слике екрана</summary>
+  <summary xml:lang="sq">Ruaj imazhe të ekranit</summary>
+  <summary xml:lang="sl">Shrani posnetke zaslona</summary>
+  <summary xml:lang="sk">Ukladajte snímky obrazovky</summary>
+  <summary xml:lang="ru">Сохраняйте изображения экрана</summary>
+  <summary xml:lang="ro">Salvează imagini ale ecranului</summary>
+  <summary xml:lang="pt_BR">Salvar imagens da tela</summary>
+  <summary xml:lang="pt">Guardar imagens do ecrã</summary>
+  <summary xml:lang="pl">Zapisuje zrzuty ekranu</summary>
+  <summary xml:lang="nn">Lagre bilete av skjermen</summary>
+  <summary xml:lang="nl">Schermafbeeldingen opslaan</summary>
+  <summary xml:lang="nb">Lagre bilder av skjermen</summary>
+  <summary xml:lang="mr">स्क्रीनच्या प्रतिमा सेव्ह करा</summary>
+  <summary xml:lang="mo">Salvați imaginile ecranului</summary>
+  <summary xml:lang="lt">Įrašyti ekrano paveikslus</summary>
+  <summary xml:lang="ko">스크린샷 이미지 저장</summary>
+  <summary xml:lang="ka">ეკრანის სურათების შენახვა</summary>
+  <summary xml:lang="ja">画面の画像を保存します</summary>
+  <summary xml:lang="it">Salva immagini dello schermo</summary>
+  <summary xml:lang="id">Simpan gambar dari layar</summary>
+  <summary xml:lang="hu">Képernyőképek készítése</summary>
+  <summary xml:lang="hr">Spremi slike zaslona</summary>
+  <summary xml:lang="hi">स्क्रीन की छवि सुरक्षित करें</summary>
+  <summary xml:lang="he">שמירת תמונה של המסך</summary>
+  <summary xml:lang="gl">Gardar imaxes da pantalla</summary>
+  <summary xml:lang="fr">Enregistrer des images de l'écran</summary>
+  <summary xml:lang="fi">Tallenna näytöllä näkyvä kuva</summary>
+  <summary xml:lang="fa">ذخیره تصاویر صفحه</summary>
+  <summary xml:lang="et">Ekraanist piltide salvestamine</summary>
+  <summary xml:lang="es">Guarde imágenes de la pantalla</summary>
+  <summary xml:lang="eo">Savkopiu ekranaĵojn</summary>
+  <summary xml:lang="en_GB">Save images of the screen</summary>
+  <summary xml:lang="en_CA">Save images of the screen</summary>
+  <summary xml:lang="el">Αποθηκεύστε απεικονίσεις της οθόνης σας</summary>
+  <summary xml:lang="de">Bildschirmfotos speichern</summary>
+  <summary xml:lang="da">Gem billeder af skærmen</summary>
+  <summary xml:lang="cs">Ukládejte snímky obrazovky</summary>
+  <summary xml:lang="ckb">پاشەکەوتکردنی وێنەکانی پەردە</summary>
+  <summary xml:lang="ca">Desa imatges de la pantalla</summary>
+  <summary xml:lang="bs">Sačuvaj slike ekrana</summary>
+  <summary xml:lang="bg">Запазване на снимки на екрана</summary>
+  <summary xml:lang="ar">حفظ صور الشاشة</summary>
+  <description>
+    <p>
+      A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.
+    </p>
+    <p xml:lang="zh_TW">簡單的畫面快照工具。擷取整個螢幕的快照、選擇區域快照、目前視窗快照、倒數計時快照等。</p>
+    <p xml:lang="zh_CN">简单的截图工具，包括抓屏、选区、窗口和倒计时等功能。</p>
+    <p xml:lang="vi">Một công cụ chụp màn hình đơn giản. Chụp toàn màn hình, chụp khu vực đã chọn, chụp cửa sổ hiện tại và chụp theo thời gian.</p>
+    <p xml:lang="uk">Простий засіб для створення знімків екрана. Знімайте весь екран, вибрані ділянки, поточні вікна власноруч та з допомогою таймера.</p>
+    <p xml:lang="ug">بىر ئاددىي ئىكراندىن رەسىم كىسىش قورالى،پۈتۈن ئىكراننىڭ، تاللانغان رايوننىڭ، ھازىرقى كۆزنەكنىڭ ۋە ئىلگىرىكى بىرەر ۋاقىتنىڭ رەسىمىنى كىسەلەيدۇ.</p>
+    <p xml:lang="tr">Basit bir ekran görüntüsü aracı. Tüm ekranın, sadece seçili alanın, sadece seçili pencerenin görüntüsünü kaydedin ve zamanlanabilir kayıtlar yapın.</p>
+    <p xml:lang="szl">Ajnfachowe noczynie do przechytowanio ekranu. Przechytuje cołki ekran, ôbrany plac, teroźne ôkno i tworzi czasowe przechyty.</p>
+    <p xml:lang="sv">Ett simpelt skärmdumpsverktyg. Fånga bilder av hela skärmen, valda områden, nuvarande fönster eller använd tidsinställning.</p>
+    <p xml:lang="sr">Једноставан алат за снимање екрана. Снимите читав екран, изабрану област, текући прозор, или обавите снимање након неког времена.</p>
+    <p xml:lang="sl">Preprosto orodje za zajem zaslona.</p>
+    <p xml:lang="sk">Jednoduchý nástroj na snímanie obrazovky. Zachyťte snímku celej obrazovky, vybranej oblasti, aktuálneho okna aj časované snímky.</p>
+    <p xml:lang="ru">Простой инструмент для создания скриншотов. Снимки всего экрана, выбранной области, текущего окна, а также снимки с временной задержкой.</p>
+    <p xml:lang="ro">Un utilitar simplu pentru captură. Captureză tot ecranul, zonele selectate, fereastra curentă şi capturi contra cronometru.</p>
+    <p xml:lang="pt_BR">Uma simples ferramenta de captura de tela. Captura imagens da tela inteira, áreas selecionadas, janela atual e temporizadas.</p>
+    <p xml:lang="pt">Uma simples ferramenta de captura de ecrã. Capture todo o ecrã, áreas selecionadas, janelas em utilização e capturas temporizadas.</p>
+    <p xml:lang="pl">Proste narzędzie do tworzenia zrzutów ekranu. Przechwytuje cały ekran, wybrany obszar, bieżące okno oraz tworzy czasowe zrzuty ekranu.</p>
+    <p xml:lang="nn">Eit enkelt skjermkuttverktøy. Ta heile skjermkutt, valde område, gjeldande vindauge. Alt med moglegheita til å bruke nedtelling til å gjere det.</p>
+    <p xml:lang="nl">Simpel gereedschap voor het nemen van schermafdrukken. Fotografeer het volledige scherm, geselecteerde gebieden, openstaande vensters of maak getimede opnames.</p>
+    <p xml:lang="nb">Et enkelt skjermavbildningsverktøy. Ta hele skjermavbildninger, valgte områder, gjeldende vindu, med muligheten til å bruke nedtelling til å gjøre det.</p>
+    <p xml:lang="mr">एक साधे स्क्रीनशॉट साधन. संपूर्ण स्क्रीन शॉट्स, निवडलेले क्षेत्राचे शॉट्स, वर्तमान विंडो शॉट आणि टाइम शॉट कॅप्चर करा.</p>
+    <p xml:lang="mo">Un instrument simplu de captura de ecran. Capturați fotografii întregi, fotografiile selectate pe zonă, fotografiile actuale ale ferestrelor și fotografiile temporizate.</p>
+    <p xml:lang="lt">Paprastas ekrano kopijų įrankis. Fotografuokite viso ekrano kopijas, pasirinktos srities ekrano kopijas, esamo lango ekrano kopijas bei ekrano kopijas su laiko uždelsimu.</p>
+    <p xml:lang="ko">간편한 스크린샷 프로그램. 전체 화면 찍기, 지정 범위 찍기, 현재 창 찍기, 그리고 타임 샷 찍기.</p>
+    <p xml:lang="ka">ეკრანის ანაბეჭდის გადასაღები მარტივი პროგრამა. გადაიღეთ მთელი ეკრანები, მონიშნული ადგილები, მიმდინარე ფანჯრები და დაყოვნებული სურათები.</p>
+    <p xml:lang="ja">シンプルなスクリーンショットツールです。画面全体、選択した範囲、現在のウィンドウのほか、遅延させたスクリーンショットも取得できます。</p>
+    <p xml:lang="it">Un semplice strumento per catturare schermate. Scatta una foto dell'intero schermo, di un'area selezionata o della finestra corrente e anche scatti cronometrati.</p>
+    <p xml:lang="id">Alat tangkapan layar sederhana. Tangkap seluruh layar, tangkap area terpilih, tangkap jendela saat ini, dan tangkap dengan waktu.</p>
+    <p xml:lang="hu">Egy egyszerű képernyőkép eszköz. Készítsen képet az egész asztalról, egy kijelölt területről vagy az aktív ablakról, akár időzetve is.</p>
+    <p xml:lang="hr">Jednostavan alat za slikanje zaslona. Uslikajte cijelokupni zaslon, odabrano područje, trenutni prozor i vremenski zakažite slikanje.</p>
+    <p xml:lang="hi">स्क्रीनशॉट हेतु के आसान साधन। सम्पूर्ण स्क्रीन, चिन्हित क्षेत्र, वर्तमान विंडो, और समय आधारित शॉट्स लें।</p>
+    <p xml:lang="he">כלי פשוט לצילום המסך. ניתן לצלם את כל המסך, חלקים נבחרים ממנו, החלון הנוכחי וצילומים מתוזמנים.</p>
+    <p xml:lang="gl">Unha ferramenta sinxela para facer capturas de pantalla. Permite capturar a pantalla completa, unha área concreta ou a xanela activa e realizar capturas tras un tempo.</p>
+    <p xml:lang="fr">Un outil de capture d'écran simple. Capturez des captures d'écran entières, des zones sélectionnées, des fenêtres actuelles et des captures avec retardateur.</p>
+    <p xml:lang="fi">Yksinkertainen työkalu kuvakaappausta varten. Ota koko näytön kuvakaappauksia, kuvakaappauksia valituista alueista tai ikkunoista sekä ajastettuja kuvakaappauksia.</p>
+    <p xml:lang="fa">یک ابزار اسکرین شات ساده. عکس‌های کل صفحه، عکس‌های محدوده انتخاب‌شده، عکس‌های پنجره فعال و عکس‌های زمان‌بندی شده را بگیرید.</p>
+    <p xml:lang="et">Lihtne ekraanist pildi tegemise tööriist. Võimalik on teha pilti kogu ekraanist, valitud alast, kindlast aknast ning kõike seda sobiliku viivitusega.</p>
+    <p xml:lang="es">Una herramienta sencilla para hacer capturas de pantalla. Permite capturar la pantalla completa, un área concreta o la ventana activa y realizar capturas tras un lapso.</p>
+    <p xml:lang="eo">Jen simpla ekrankopia ilo. Kaptu la tutan ekranon, parton, aktivan fenestron, tuj aŭ post momentoj.</p>
+    <p xml:lang="en_GB">A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.</p>
+    <p xml:lang="en_CA">A simple screenshot tool. Capture whole screen shots, selected area shots, current window shots, and timed shots.</p>
+    <p xml:lang="el">Ένα απλό εργαλείο λήψης στιγμιότυπων οθόνης. Πραγματοποιείστε λήψη στιγμιότυπων ολόκληρης της οθόνης, επιλεγμένων περιοχών, τρέχοντων παραθύρων και συγχρονισμένων στιγμιότυπων.</p>
+    <p xml:lang="de">Ein einfaches Tool zum Aufnehmen von Bildschirmfotos. Es können der gesamte Bildschirm, ausgewählte Bereiche sowie Fotos von Fenstern mit oder ohne Zeitauslöser aufgenommen werden.</p>
+    <p xml:lang="da">Et simpelt skærmbilledeværktøj. Tag billede af hele skærmen, områder af skærmen, nuværende vindue samt tidsindstillede billeder.</p>
+    <p xml:lang="cs">Jednoduchý nástroj pro snímání obrazovky. Zachytí snímek celé plochy, snímek vybrané oblasti, aktuálního okna i časované snímky.</p>
+    <p xml:lang="ca">Una eina simple de captura de pantalla. Captura imatges de pantalla, d'àrees seleccionades, de la finestra actual i fa captures temporitzades.</p>
+    <p xml:lang="bs">Jednostavna alatka za snimanje ekrana. Obuhvatite cijeli ekran, odabrano područje, trenutni prozor ili tempirajte svoje snimke.</p>
+    <p xml:lang="bg">Прост инструмент за снимки с възможност на заснемане на целия екран, на отделен прозорец, на избрана зона или в назначено време.</p>
+    <p xml:lang="ar">أداة شاشة بسيطة. تلتقط جميع لقطات الشاشة ولقطات لمناطق محددة بالشاشة ولقطات النافذة الحالية و توقيت اللقطات.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/screenshot/8.0.0/data/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>io.elementary.screenshot</binary>
+  </provides>
+  <recommends>
+    <display_length compare="ge">380</display_length>
+  </recommends>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <url type="bugtracker">https://github.com/elementary/screenshot/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/screenshot/discussions/categories/q-a</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/projects/screenshot/</url>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+  <releases>
+    <release version="8.0.0" date="2024-07-25" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <p xml:lang="zh_TW">小型更新：</p>
+        <p xml:lang="uk">Незначні оновлення:</p>
+        <p xml:lang="tr">Küçük güncellemeler:</p>
+        <p xml:lang="sk">Opravy menších chýb:</p>
+        <p xml:lang="ru">Незначительные обновления:</p>
+        <p xml:lang="pt_BR">Atualizações menores:</p>
+        <p xml:lang="pt">Pequenas atualizações:</p>
+        <p xml:lang="pl">Drobne aktualizacje:</p>
+        <p xml:lang="nb">Småoppdateringer:</p>
+        <p xml:lang="mr">किरकोळ अद्यतने:</p>
+        <p xml:lang="ko">소소한 업데이트:</p>
+        <p xml:lang="ka">უმნიშვნელო განახლებები:</p>
+        <p xml:lang="ja">そのほかのアップデート:</p>
+        <p xml:lang="id">Pembaruan kecil:</p>
+        <p xml:lang="hu">Kisebb frissítések:</p>
+        <p xml:lang="he">עדכונים משניים:</p>
+        <p xml:lang="fr">Mises à jour mineures :</p>
+        <p xml:lang="fa">آپدیت جزئی:</p>
+        <p xml:lang="es">Actualizaciones menores:</p>
+        <p xml:lang="en_GB">Minor updates:</p>
+        <p xml:lang="de">Kleinere Aktualisierungen:</p>
+        <p xml:lang="cs">Opravy menších chyb:</p>
+        <p xml:lang="ca">Actualitzacions menors:</p>
+        <ul>
+          <li>The window is no longer always on top or stuck on every desktop</li>
+          <li xml:lang="zh_TW">視窗不再總是維持或卡在每個桌面的最上層</li>
+          <li xml:lang="uk">Вікно перестало бути завжди зверху або переноситися на кожен робочий стіл</li>
+          <li xml:lang="tr">Pencere artık her zaman en üstte değil veya her masaüstünde takılı kalmıyor</li>
+          <li xml:lang="ru">Окно больше не находится поверх всех окон или на каждом рабочем столе</li>
+          <li xml:lang="pt_BR">A janela não fica mais sempre no topo ou presa em todas as áreas de trabalho</li>
+          <li xml:lang="pt">A janela já não está sempre por cima ou presa em todos os ambientes de trabalho</li>
+          <li xml:lang="pl">Okno nie jest już zawsze na wierzchu albo zacięte na każdym ekranie</li>
+          <li xml:lang="ka">ფანჯარა აღარაა ყველა ფანჯრის ზემოთ ან ნაჩვენები ყველა სამუშაო მაგიდაზე</li>
+          <li xml:lang="ja">ウィンドウが最前面に維持されたりすべてのデスクトップに表示されたりしないように修正</li>
+          <li xml:lang="hu">Az ablak már nincs mindig felül és nem jelenik meg minden munkaterületen</li>
+          <li xml:lang="he">החלון אינו עליון יותר או נעוץ בכל שולחנות העבודה</li>
+          <li xml:lang="fa">پنجره دیگر همیشه در بالا نیست یا روی هر دسکتاپ گیر نمی کند</li>
+          <li xml:lang="es">La ventana ya no se encuentra siempre encima o fijada en todos los escritorios</li>
+          <li xml:lang="en_GB">The window is no longer always on top or stuck on every desktop</li>
+          <li xml:lang="ca">La finestra ja no és sempre a la part superior o enganxada a tots els escriptoris.</li>
+          <li>Updated translations</li>
+          <li xml:lang="zh_TW">更新翻譯</li>
+          <li xml:lang="uk">Оновлено переклади</li>
+          <li xml:lang="tr">Güncellenmiş çeviriler</li>
+          <li xml:lang="sk">Aktualizované preklady</li>
+          <li xml:lang="ru">Обновлены переводы</li>
+          <li xml:lang="pt_BR">Traduções atualizadas</li>
+          <li xml:lang="pt">Traduções atualizadas</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia</li>
+          <li xml:lang="nb">Oppdaterte oversettelser</li>
+          <li xml:lang="mr">अद्यतनित भाषांतरे</li>
+          <li xml:lang="ko">최신 번역</li>
+          <li xml:lang="ka">განახლებული თარგმანები</li>
+          <li xml:lang="ja">翻訳の更新</li>
+          <li xml:lang="id">Pembaruan terjemahan</li>
+          <li xml:lang="hu">Frissített fordítások</li>
+          <li xml:lang="he">עודכנו תרגומים</li>
+          <li xml:lang="fr">Mise à jour des traductions</li>
+          <li xml:lang="fa">ترجمه های به روز شده</li>
+          <li xml:lang="es">Traducciones actualizadas</li>
+          <li xml:lang="en_GB">Updated translations</li>
+          <li xml:lang="de">Aktualisierte Übersetzungen</li>
+          <li xml:lang="cs">Aktualizovány překlady</li>
+          <li xml:lang="ca">Traduccions actualitzades</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.4" date="2023-05-30" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <p xml:lang="zh_TW">小型更新：</p>
+        <p xml:lang="uk">Незначні оновлення:</p>
+        <p xml:lang="tr">Küçük güncellemeler:</p>
+        <p xml:lang="sk">Opravy menších chýb:</p>
+        <p xml:lang="ru">Незначительные обновления:</p>
+        <p xml:lang="pt_BR">Atualizações menores:</p>
+        <p xml:lang="pt">Pequenas atualizações:</p>
+        <p xml:lang="pl">Drobne aktualizacje:</p>
+        <p xml:lang="nb">Småoppdateringer:</p>
+        <p xml:lang="mr">किरकोळ अद्यतने:</p>
+        <p xml:lang="ko">소소한 업데이트:</p>
+        <p xml:lang="ka">უმნიშვნელო განახლებები:</p>
+        <p xml:lang="ja">そのほかのアップデート:</p>
+        <p xml:lang="id">Pembaruan kecil:</p>
+        <p xml:lang="hu">Kisebb frissítések:</p>
+        <p xml:lang="he">עדכונים משניים:</p>
+        <p xml:lang="fr">Mises à jour mineures :</p>
+        <p xml:lang="fa">آپدیت جزئی:</p>
+        <p xml:lang="es">Actualizaciones menores:</p>
+        <p xml:lang="en_GB">Minor updates:</p>
+        <p xml:lang="de">Kleinere Aktualisierungen:</p>
+        <p xml:lang="cs">Opravy menších chyb:</p>
+        <p xml:lang="ca">Actualitzacions menors:</p>
+        <ul>
+          <li>Updated translations</li>
+          <li xml:lang="zh_TW">更新翻譯</li>
+          <li xml:lang="uk">Оновлено переклади</li>
+          <li xml:lang="tr">Güncellenmiş çeviriler</li>
+          <li xml:lang="sk">Aktualizované preklady</li>
+          <li xml:lang="ru">Обновлены переводы</li>
+          <li xml:lang="pt_BR">Traduções atualizadas</li>
+          <li xml:lang="pt">Traduções atualizadas</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia</li>
+          <li xml:lang="nb">Oppdaterte oversettelser</li>
+          <li xml:lang="mr">अद्यतनित भाषांतरे</li>
+          <li xml:lang="ko">최신 번역</li>
+          <li xml:lang="ka">განახლებული თარგმანები</li>
+          <li xml:lang="ja">翻訳の更新</li>
+          <li xml:lang="id">Pembaruan terjemahan</li>
+          <li xml:lang="hu">Frissített fordítások</li>
+          <li xml:lang="he">עודכנו תרגומים</li>
+          <li xml:lang="fr">Mise à jour des traductions</li>
+          <li xml:lang="fa">ترجمه های به روز شده</li>
+          <li xml:lang="es">Traducciones actualizadas</li>
+          <li xml:lang="en_GB">Updated translations</li>
+          <li xml:lang="de">Aktualisierte Übersetzungen</li>
+          <li xml:lang="cs">Aktualizovány překlady</li>
+          <li xml:lang="ca">Traduccions actualitzades</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.3" date="2022-12-02" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <p xml:lang="zh_TW">小型更新：</p>
+        <p xml:lang="uk">Незначні оновлення:</p>
+        <p xml:lang="tr">Küçük güncellemeler:</p>
+        <p xml:lang="sk">Opravy menších chýb:</p>
+        <p xml:lang="ru">Незначительные обновления:</p>
+        <p xml:lang="pt_BR">Atualizações menores:</p>
+        <p xml:lang="pt">Pequenas atualizações:</p>
+        <p xml:lang="pl">Drobne aktualizacje:</p>
+        <p xml:lang="nb">Småoppdateringer:</p>
+        <p xml:lang="mr">किरकोळ अद्यतने:</p>
+        <p xml:lang="ko">소소한 업데이트:</p>
+        <p xml:lang="ka">უმნიშვნელო განახლებები:</p>
+        <p xml:lang="ja">そのほかのアップデート:</p>
+        <p xml:lang="id">Pembaruan kecil:</p>
+        <p xml:lang="hu">Kisebb frissítések:</p>
+        <p xml:lang="he">עדכונים משניים:</p>
+        <p xml:lang="fr">Mises à jour mineures :</p>
+        <p xml:lang="fa">آپدیت جزئی:</p>
+        <p xml:lang="es">Actualizaciones menores:</p>
+        <p xml:lang="en_GB">Minor updates:</p>
+        <p xml:lang="de">Kleinere Aktualisierungen:</p>
+        <p xml:lang="cs">Opravy menších chyb:</p>
+        <p xml:lang="ca">Actualitzacions menors:</p>
+        <ul>
+          <li>Updated translations</li>
+          <li xml:lang="zh_TW">更新翻譯</li>
+          <li xml:lang="uk">Оновлено переклади</li>
+          <li xml:lang="tr">Güncellenmiş çeviriler</li>
+          <li xml:lang="sk">Aktualizované preklady</li>
+          <li xml:lang="ru">Обновлены переводы</li>
+          <li xml:lang="pt_BR">Traduções atualizadas</li>
+          <li xml:lang="pt">Traduções atualizadas</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia</li>
+          <li xml:lang="nb">Oppdaterte oversettelser</li>
+          <li xml:lang="mr">अद्यतनित भाषांतरे</li>
+          <li xml:lang="ko">최신 번역</li>
+          <li xml:lang="ka">განახლებული თარგმანები</li>
+          <li xml:lang="ja">翻訳の更新</li>
+          <li xml:lang="id">Pembaruan terjemahan</li>
+          <li xml:lang="hu">Frissített fordítások</li>
+          <li xml:lang="he">עודכנו תרגומים</li>
+          <li xml:lang="fr">Mise à jour des traductions</li>
+          <li xml:lang="fa">ترجمه های به روز شده</li>
+          <li xml:lang="es">Traducciones actualizadas</li>
+          <li xml:lang="en_GB">Updated translations</li>
+          <li xml:lang="de">Aktualisierte Übersetzungen</li>
+          <li xml:lang="cs">Aktualizovány překlady</li>
+          <li xml:lang="ca">Traduccions actualitzades</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.2" date="2021-12-13" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <p xml:lang="zh_TW">小型更新：</p>
+        <p xml:lang="uk">Незначні оновлення:</p>
+        <p xml:lang="tr">Küçük güncellemeler:</p>
+        <p xml:lang="sk">Opravy menších chýb:</p>
+        <p xml:lang="ru">Незначительные обновления:</p>
+        <p xml:lang="pt_BR">Atualizações menores:</p>
+        <p xml:lang="pt">Pequenas atualizações:</p>
+        <p xml:lang="pl">Drobne aktualizacje:</p>
+        <p xml:lang="nb">Småoppdateringer:</p>
+        <p xml:lang="mr">किरकोळ अद्यतने:</p>
+        <p xml:lang="ko">소소한 업데이트:</p>
+        <p xml:lang="ka">უმნიშვნელო განახლებები:</p>
+        <p xml:lang="ja">そのほかのアップデート:</p>
+        <p xml:lang="id">Pembaruan kecil:</p>
+        <p xml:lang="hu">Kisebb frissítések:</p>
+        <p xml:lang="he">עדכונים משניים:</p>
+        <p xml:lang="fr">Mises à jour mineures :</p>
+        <p xml:lang="fa">آپدیت جزئی:</p>
+        <p xml:lang="es">Actualizaciones menores:</p>
+        <p xml:lang="en_GB">Minor updates:</p>
+        <p xml:lang="de">Kleinere Aktualisierungen:</p>
+        <p xml:lang="cs">Opravy menších chyb:</p>
+        <p xml:lang="ca">Actualitzacions menors:</p>
+        <ul>
+          <li>Update elementary runtime to 6.1</li>
+          <li xml:lang="zh_TW">將 elementary 執行環境更新至 6.1 版</li>
+          <li xml:lang="uk">Оновлення середовища виконання elementary до версії 6.1</li>
+          <li xml:lang="tr">elementary çalışma zamanı 6.1 sürümüne güncellendi</li>
+          <li xml:lang="sk">Aktualizácia elementary runtime na verziu 6.1</li>
+          <li xml:lang="ru">Обновление среды выполнения elementary до версии 6.1</li>
+          <li xml:lang="pt_BR">Atualizar para o elementary runtime 6.1</li>
+          <li xml:lang="pt">Atualizar para o elementary runtime 6.1</li>
+          <li xml:lang="pl">Zaktualizowano do wersji elementary 6.1</li>
+          <li xml:lang="nb">Oppdatert elementary-kjøretidsrutine til 6.1</li>
+          <li xml:lang="mr">elementary रनटाइम 6.1 वर अपडेट करा</li>
+          <li xml:lang="ko">elementary runtime 6.1로 업데이트하기</li>
+          <li xml:lang="ka">Elementary-ის გაშვების გარემოს განახლება ვერსიამდე 6.1</li>
+          <li xml:lang="ja">elementary ランタイムのバージョンを 6.1 にアップデート</li>
+          <li xml:lang="id">Permbaruan ke runtime elementary 6.1</li>
+          <li xml:lang="hu">Az elementary futtatókörnyezet frissítve 6.1-re</li>
+          <li xml:lang="he">סביבת הריצה של elementary עודכנה ל־6.1</li>
+          <li xml:lang="fr">Mise à jour vers l'exécutable elementary 6.1</li>
+          <li xml:lang="fa">به روزرسانی المنتری اجرا به 6.1</li>
+          <li xml:lang="es">Actualizado al entorno de ejecución de elementary 6.1</li>
+          <li xml:lang="en_GB">Update elementary runtime to 6.1</li>
+          <li xml:lang="cs">Běhové prostředí elementary aktualizováno na verzi 6.1</li>
+          <li xml:lang="ca">Actualització de l'entorn d'execució de l'elementary a 6.1</li>
+          <li>Updated translations</li>
+          <li xml:lang="zh_TW">更新翻譯</li>
+          <li xml:lang="uk">Оновлено переклади</li>
+          <li xml:lang="tr">Güncellenmiş çeviriler</li>
+          <li xml:lang="sk">Aktualizované preklady</li>
+          <li xml:lang="ru">Обновлены переводы</li>
+          <li xml:lang="pt_BR">Traduções atualizadas</li>
+          <li xml:lang="pt">Traduções atualizadas</li>
+          <li xml:lang="pl">Zaktualizowano tłumaczenia</li>
+          <li xml:lang="nb">Oppdaterte oversettelser</li>
+          <li xml:lang="mr">अद्यतनित भाषांतरे</li>
+          <li xml:lang="ko">최신 번역</li>
+          <li xml:lang="ka">განახლებული თარგმანები</li>
+          <li xml:lang="ja">翻訳の更新</li>
+          <li xml:lang="id">Pembaruan terjemahan</li>
+          <li xml:lang="hu">Frissített fordítások</li>
+          <li xml:lang="he">עודכנו תרגומים</li>
+          <li xml:lang="fr">Mise à jour des traductions</li>
+          <li xml:lang="fa">ترجمه های به روز شده</li>
+          <li xml:lang="es">Traducciones actualizadas</li>
+          <li xml:lang="en_GB">Updated translations</li>
+          <li xml:lang="de">Aktualisierte Übersetzungen</li>
+          <li xml:lang="cs">Aktualizovány překlady</li>
+          <li xml:lang="ca">Traduccions actualitzades</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.1" date="2021-10-22" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <p xml:lang="zh_TW">小型更新：</p>
+        <p xml:lang="uk">Незначні оновлення:</p>
+        <p xml:lang="tr">Küçük güncellemeler:</p>
+        <p xml:lang="sk">Opravy menších chýb:</p>
+        <p xml:lang="ru">Незначительные обновления:</p>
+        <p xml:lang="pt_BR">Atualizações menores:</p>
+        <p xml:lang="pt">Pequenas atualizações:</p>
+        <p xml:lang="pl">Drobne aktualizacje:</p>
+        <p xml:lang="nb">Småoppdateringer:</p>
+        <p xml:lang="mr">किरकोळ अद्यतने:</p>
+        <p xml:lang="ko">소소한 업데이트:</p>
+        <p xml:lang="ka">უმნიშვნელო განახლებები:</p>
+        <p xml:lang="ja">そのほかのアップデート:</p>
+        <p xml:lang="id">Pembaruan kecil:</p>
+        <p xml:lang="hu">Kisebb frissítések:</p>
+        <p xml:lang="he">עדכונים משניים:</p>
+        <p xml:lang="fr">Mises à jour mineures :</p>
+        <p xml:lang="fa">آپدیت جزئی:</p>
+        <p xml:lang="es">Actualizaciones menores:</p>
+        <p xml:lang="en_GB">Minor updates:</p>
+        <p xml:lang="de">Kleinere Aktualisierungen:</p>
+        <p xml:lang="cs">Opravy menších chyb:</p>
+        <p xml:lang="ca">Actualitzacions menors:</p>
+        <ul>
+          <li>Translation updates</li>
+          <li xml:lang="zh_TW">翻譯更新</li>
+          <li xml:lang="zh_CN">翻译更新</li>
+          <li xml:lang="vi">Cập nhật bản dịch</li>
+          <li xml:lang="uk">Оновлення перекладів</li>
+          <li xml:lang="tr">Çeviriler güncellendi</li>
+          <li xml:lang="szl">Aktualizacyje przekładu</li>
+          <li xml:lang="sr">Освежења превода</li>
+          <li xml:lang="sk">Aktualizácia prekladov</li>
+          <li xml:lang="ru">Обновления перевода</li>
+          <li xml:lang="pt_BR">Atualizações de tradução</li>
+          <li xml:lang="pt">Traduções atualizadas</li>
+          <li xml:lang="pl">Aktualizacje tłumaczenia</li>
+          <li xml:lang="nl">Vertaalupdates</li>
+          <li xml:lang="nb">Oversettelsesoppdateringer</li>
+          <li xml:lang="mr">भाषांतर अपडेट्स</li>
+          <li xml:lang="mo">Actualizări de traduceri</li>
+          <li xml:lang="lt">Vertimų atnaujinimai</li>
+          <li xml:lang="ku">rojanekirina wergerrandin</li>
+          <li xml:lang="ko">번역 업데이트</li>
+          <li xml:lang="ka">თარგმანის განახლებები</li>
+          <li xml:lang="ja">翻訳の更新</li>
+          <li xml:lang="it">Aggiornamento delle traduzioni</li>
+          <li xml:lang="id">Pembaruan terjemahan</li>
+          <li xml:lang="hu">Fordítási frissítések</li>
+          <li xml:lang="hr">Nadopune prijevoda</li>
+          <li xml:lang="he">עדכוני תרגומים</li>
+          <li xml:lang="gl">Actualización de traducións</li>
+          <li xml:lang="fr">Mise à jour des traductions</li>
+          <li xml:lang="fi">Päivityksiä kielikäännöksiin</li>
+          <li xml:lang="fa">بروزرسانی ترجمه</li>
+          <li xml:lang="et">Tõlgete uuendused</li>
+          <li xml:lang="es">Actualizaciones de traducciones</li>
+          <li xml:lang="eo">Tradukaj ĝisdatigoj</li>
+          <li xml:lang="en_GB">Translation updates</li>
+          <li xml:lang="en_CA">Translation updates</li>
+          <li xml:lang="de">Aktualisierte Übersetzungen</li>
+          <li xml:lang="da">Opdatering af oversættelse</li>
+          <li xml:lang="cs">Aktualizace překladů</li>
+          <li xml:lang="ca">Actualitzacions de la traducció</li>
+          <li xml:lang="ar">تحديثات الترجمة</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.0" date="2021-07-19" urgency="medium"/>
+    <release version="1.7.1" date="2020-01-21" urgency="medium"/>
+    <release version="1.7.0" date="2019-11-15" urgency="medium"/>
+    <release version="1.6.2" date="2019-02-20" urgency="medium"/>
+    <release version="1.6.1" date="2019-02-01" urgency="medium"/>
+    <release version="1.6.0" date="2018-10-16" urgency="medium"/>
+    <release version="0.1.5" date="2018-06-06" urgency="medium"/>
+    <release version="0.1.4" date="2017-07-27" urgency="medium"/>
+    <release version="0.1.3" date="2017-04-21" urgency="medium"/>
+    <release version="0.1.2" date="2017-02-10" urgency="medium"/>
+    <release version="0.1.1" date="2016-11-24" urgency="medium"/>
+  </releases>
+</component>

@@ -1,0 +1,29 @@
+[Application]
+name=io.elementary.screenshot
+runtime=io.elementary.Platform/x86_64/8
+sdk=io.elementary.Sdk/x86_64/8
+command=io.elementary.screenshot
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;fallback-x11;
+filesystems=home;
+
+[Session Bus Policy]
+org.gnome.Shell.Screenshot=talk
+
+[X-DConf]
+migrate-path=/io/elementary/screenshot/
+
+[Extension io.elementary.screenshot.Locale]
+directory=share/runtime/locale
+autodelete=true
+locale-subset=true
+
+[Extension io.elementary.screenshot.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=io.elementary.screenshot.Locale;io.elementary.screenshot.Debug;

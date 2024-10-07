@@ -1,0 +1,5 @@
+[Runtime]
+name=io.elementary.screenshot.Locale
+
+[ExtensionOf]
+ref=app/io.elementary.screenshot/x86_64/master
