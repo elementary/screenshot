@@ -210,8 +210,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         });
 
         clipboard_btn.clicked.connect (() => {
-            Gdk.Display.get_default ().get_clipboard ().set_texture (Gdk.Texture.for_pixbuf (pixbuf));
-             close ();
+            Gdk.Clipboard clipboard = Gdk.Display.get_default ().get_clipboard ();
+            clipboard.changed.connect (on_clipboard_changed);
+            clipboard.set_texture (Gdk.Texture.for_pixbuf (pixbuf));
         });
 
         retry_btn.clicked.connect (() => {
@@ -248,5 +249,26 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             folder_name.label = folder_dir;
             folder_image.gicon = new ThemedIcon ("folder");
         }
+    }
+
+    private void on_clipboard_changed () {
+        Gdk.Clipboard clipboard = Gdk.Display.get_default ().get_clipboard ();
+        Gdk.Texture texture = Gdk.Texture.for_pixbuf (pixbuf);
+        clipboard.read_texture_async.begin (null, (obj, res) => {
+            Gdk.Texture _texture = clipboard.read_texture_async.end (res);
+            if (_texture != null && _texture.height == texture.height && _texture.width == texture.width) {
+                hide_destroy ();
+            }
+        });
+    }
+
+    public void hide_destroy () {
+        hide ();
+
+        // Timeout added to ensure the clipboard is synced
+        // before closing the window
+        GLib.Timeout.add_once (500, () => {
+            close ();
+        });
     }
 }
