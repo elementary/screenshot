@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2024-07-05 14:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -36,6 +36,10 @@ msgstr ""
 "Et enkelt skjermavbildningsverktøy. Ta hele skjermavbildninger, valgte "
 "områder, gjeldende vindu, med muligheten til å bruke nedtelling til å gjøre "
 "det."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
@@ -75,9 +79,6 @@ msgstr "Skjermavbildning av gjeldende vindu"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skjermavbildning av valgt område"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nye funksjoner:"

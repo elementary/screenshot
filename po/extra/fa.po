@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2024-09-26 18:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -28,8 +28,12 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr ""
-"یک ابزار اسکرین شات ساده. عکس‌های کل صفحه، عکس‌های محدوده انتخاب‌شده، عکس‌"
-"های پنجره فعال و عکس‌های زمان‌بندی شده را بگیرید."
+"یک ابزار اسکرین شات ساده. عکس‌های کل صفحه، عکس‌های محدوده انتخاب‌شده، عکس‌های "
+"پنجره فعال و عکس‌های زمان‌بندی شده را بگیرید."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85

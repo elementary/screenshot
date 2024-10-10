@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2019-01-05 03:20+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -30,6 +30,12 @@ msgid ""
 msgstr ""
 "Eit enkelt skjermkuttverktøy. Ta heile skjermkutt, valde område, gjeldande "
 "vindauge. Alt med moglegheita til å bruke nedtelling til å gjere det."
+
+#: data/screenshot.metainfo.xml.in:49
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
@@ -69,11 +75,6 @@ msgstr "Skjermkutt av gjeldande vindauge"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skjermkutt av eit valt område"
-
-#, fuzzy
-#~| msgid "elementary LLC."
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

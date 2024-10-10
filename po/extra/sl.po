@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2018-08-22 00:09+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/screenshot-"
@@ -34,6 +34,12 @@ msgid ""
 "A simple screenshot tool. Capture whole screen shots, selected area shots, "
 "current window shots, and timed shots."
 msgstr "Preprosto orodje za zajem zaslona."
+
+#: data/screenshot.metainfo.xml.in:49
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
@@ -73,11 +79,6 @@ msgstr "Posnetek trenutnega okna"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Posnetek izbranega območja"
-
-#, fuzzy
-#~| msgid "elementary LLC."
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "About Screenshot"
 #~ msgstr "O programu za zajemanje zaslonskih slik"

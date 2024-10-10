@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2024-09-12 22:16+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/screenshot/"
@@ -35,6 +35,10 @@ msgid ""
 msgstr ""
 "ეკრანის ანაბეჭდის გადასაღები მარტივი პროგრამა. გადაიღეთ მთელი ეკრანები, "
 "მონიშნული ადგილები, მიმდინარე ფანჯრები და დაყოვნებული სურათები."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
@@ -74,9 +78,6 @@ msgstr "მიმდინარე ფანჯრის ანაბეჭდ�
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "მონიშნული ადგილის ანაბეჭდი"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "ახალი ფუნქციები:"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:36+0000\n"
+"POT-Creation-Date: 2024-10-10 17:47+0000\n"
 "PO-Revision-Date: 2017-09-19 21:26+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Uighur <https://weblate.elementary.io/projects/screenshot-"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "بىر ئاددىي ئىكراندىن رەسىم كىسىش قورالى،پۈتۈن ئىكراننىڭ، تاللانغان رايوننىڭ، "
 "ھازىرقى كۆزنەكنىڭ ۋە ئىلگىرىكى بىرەر ۋاقىتنىڭ رەسىمىنى كىسەلەيدۇ."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
 #: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
