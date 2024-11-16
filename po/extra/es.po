@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-10 17:47+0000\n"
-"PO-Revision-Date: 2024-09-09 10:20+0000\n"
+"PO-Revision-Date: 2024-11-17 20:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/extra/"
 "es/>\n"
@@ -64,7 +64,7 @@ msgstr "Actualizado al entorno de ejecución de elementary 6.1"
 
 #: data/screenshot.metainfo.xml.in:97
 msgid "Translation updates"
-msgstr "Actualizaciones de traducciones"
+msgstr "Traducciones actualizadas"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
