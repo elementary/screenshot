@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 17:47+0000\n"
+"POT-Creation-Date: 2024-12-02 17:19+0000\n"
 "PO-Revision-Date: 2024-09-07 14:28+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/screenshot/"
@@ -40,28 +40,29 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
-#: data/screenshot.metainfo.xml.in:95
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:97 data/screenshot.metainfo.xml.in:107
 msgid "Minor updates:"
 msgstr "Pequenas atualizações:"
 
-#: data/screenshot.metainfo.xml.in:59
+#: data/screenshot.metainfo.xml.in:59 data/screenshot.metainfo.xml.in:72
+#: data/screenshot.metainfo.xml.in:81 data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:100
+msgid "Updated translations"
+msgstr "Traduções atualizadas"
+
+#: data/screenshot.metainfo.xml.in:71
 msgid "The window is no longer always on top or stuck on every desktop"
 msgstr ""
 "A janela já não está sempre por cima ou presa em todos os ambientes de "
 "trabalho"
 
-#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
-#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
-msgid "Updated translations"
-msgstr "Traduções atualizadas"
-
-#: data/screenshot.metainfo.xml.in:87
+#: data/screenshot.metainfo.xml.in:99
 msgid "Update elementary runtime to 6.1"
 msgstr "Atualizar para o elementary runtime 6.1"
 
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:109
 msgid "Translation updates"
 msgstr "Traduções atualizadas"
 

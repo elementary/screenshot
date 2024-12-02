@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-10 17:47+0000\n"
+"POT-Creation-Date: 2024-12-02 17:19+0000\n"
 "PO-Revision-Date: 2020-02-23 13:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/screenshot-tool/"
@@ -36,28 +36,29 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:67
-#: data/screenshot.metainfo.xml.in:76 data/screenshot.metainfo.xml.in:85
-#: data/screenshot.metainfo.xml.in:95
+#: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
+#: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:97 data/screenshot.metainfo.xml.in:107
 #, fuzzy
 #| msgid "Minor bug fixes"
 msgid "Minor updates:"
 msgstr "Poprowki drobnych błyndōw"
 
-#: data/screenshot.metainfo.xml.in:59
-msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
-
-#: data/screenshot.metainfo.xml.in:60 data/screenshot.metainfo.xml.in:69
-#: data/screenshot.metainfo.xml.in:78 data/screenshot.metainfo.xml.in:88
+#: data/screenshot.metainfo.xml.in:59 data/screenshot.metainfo.xml.in:72
+#: data/screenshot.metainfo.xml.in:81 data/screenshot.metainfo.xml.in:90
+#: data/screenshot.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:87
+#: data/screenshot.metainfo.xml.in:71
+msgid "The window is no longer always on top or stuck on every desktop"
+msgstr ""
+
+#: data/screenshot.metainfo.xml.in:99
 msgid "Update elementary runtime to 6.1"
 msgstr ""
 
-#: data/screenshot.metainfo.xml.in:97
+#: data/screenshot.metainfo.xml.in:109
 msgid "Translation updates"
 msgstr "Aktualizacyje przekładu"
 
