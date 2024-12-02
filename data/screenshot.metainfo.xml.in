@@ -53,6 +53,12 @@
 
   <releases>
     <release version="8.0.1" date="2024-12-02" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
       <issues>
         <issue url="https://github.com/elementary/screenshot/issues/224">Screenshots to clipboard don't paste into many apps like Web, etc. (ctrl+prnt, ctrl+shift+prnt, ctrl+alt+prnt)</issue>
       </issues>
