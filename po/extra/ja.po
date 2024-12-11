@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-02 17:19+0000\n"
-"PO-Revision-Date: 2024-09-03 23:16+0000\n"
+"PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
 "extra/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -39,7 +39,7 @@ msgstr "elementary, Inc."
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
 #: data/screenshot.metainfo.xml.in:97 data/screenshot.metainfo.xml.in:107
 msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
+msgstr "マイナーアップデート:"
 
 #: data/screenshot.metainfo.xml.in:59 data/screenshot.metainfo.xml.in:72
 #: data/screenshot.metainfo.xml.in:81 data/screenshot.metainfo.xml.in:90
