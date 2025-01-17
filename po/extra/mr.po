@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-02 17:19+0000\n"
-"PO-Revision-Date: 2022-01-16 08:30+0000\n"
+"PO-Revision-Date: 2025-01-18 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot/extra/"
 "mr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:44+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -49,7 +49,7 @@ msgstr "अद्यतनित भाषांतरे"
 
 #: data/screenshot.metainfo.xml.in:71
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "विंडो आता नेहमीच वर नसते किंवा प्रत्येक डेस्कटॉपवर अडकलेली नसते."
 
 #: data/screenshot.metainfo.xml.in:99
 msgid "Update elementary runtime to 6.1"
