@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2024-12-02 15:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -36,10 +36,6 @@ msgstr ""
 "Yksinkertainen työkalu kuvakaappausta varten. Ota koko näytön "
 "kuvakaappauksia, kuvakaappauksia valituista alueista tai ikkunoista sekä "
 "ajastettuja kuvakaappauksia."
-
-#: data/screenshot.metainfo.xml.in:49
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -82,6 +78,9 @@ msgstr "Kuvakaappaus nykyisestä ikkunasta"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Kuvakaappaus valitusta alueesta"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Minor bug fixes"
 #~ msgstr "Muita pieniä korjauksia"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2025-01-18 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -30,10 +30,6 @@ msgid ""
 msgstr ""
 "एक साधे स्क्रीनशॉट साधन. संपूर्ण स्क्रीन शॉट्स, निवडलेले क्षेत्राचे शॉट्स, वर्तमान विंडो शॉट "
 "आणि टाइम शॉट कॅप्चर करा."
-
-#: data/screenshot.metainfo.xml.in:49
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -74,6 +70,9 @@ msgstr "वर्तमान विंडोचा स्क्रीनशॉ�
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "निवडलेल्या क्षेत्राचा स्क्रीनशॉट"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "नवीन वैशिष्ट्ये:"

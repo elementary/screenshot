@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2018-10-25 10:04+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/screenshot-"
@@ -35,12 +35,6 @@ msgid ""
 msgstr ""
 "Ett simpelt skärmdumpsverktyg. Fånga bilder av hela skärmen, valda områden, "
 "nuvarande fönster eller använd tidsinställning."
-
-#: data/screenshot.metainfo.xml.in:49
-#, fuzzy
-#| msgid "elementary LLC."
-msgid "elementary, Inc."
-msgstr "elementary LLC."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -81,6 +75,11 @@ msgstr "Skärmdump av aktuellt fönster"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skärmdump av ett markerat område"
+
+#, fuzzy
+#~| msgid "elementary LLC."
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary LLC."
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

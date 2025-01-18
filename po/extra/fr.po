@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2021-12-14 11:31+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -36,10 +36,6 @@ msgstr ""
 "Un outil de capture d'écran simple. Capturez des captures d'écran entières, "
 "des zones sélectionnées, des fenêtres actuelles et des captures avec "
 "retardateur."
-
-#: data/screenshot.metainfo.xml.in:49
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -80,6 +76,9 @@ msgstr "Capture de la fenêtre actuelle"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Capture de la zone sélectionnée"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nouvelles fonctionnalités :"

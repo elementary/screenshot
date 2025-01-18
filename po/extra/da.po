@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2018-10-18 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/screenshot-"
@@ -30,12 +30,6 @@ msgid ""
 msgstr ""
 "Et simpelt skærmbilledeværktøj. Tag billede af hele skærmen, områder af "
 "skærmen, nuværende vindue samt tidsindstillede billeder."
-
-#: data/screenshot.metainfo.xml.in:49
-#, fuzzy
-#| msgid "elementary LLC."
-msgid "elementary, Inc."
-msgstr "elementary ApS."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -78,6 +72,11 @@ msgstr "Skærmbillede af det aktuelle vindue"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Skærmbillede af et valgt område"
+
+#, fuzzy
+#~| msgid "elementary LLC."
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary ApS."
 
 #~ msgid "Minor bug fixes"
 #~ msgstr "Mindre fejlrettelser"

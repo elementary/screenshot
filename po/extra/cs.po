@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 17:19+0000\n"
+"POT-Creation-Date: 2025-01-18 16:17+0000\n"
 "PO-Revision-Date: 2022-01-10 00:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -35,10 +35,6 @@ msgid ""
 msgstr ""
 "Jednoduchý nástroj pro snímání obrazovky. Zachytí snímek celé plochy, snímek "
 "vybrané oblasti, aktuálního okna i časované snímky."
-
-#: data/screenshot.metainfo.xml.in:49
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -79,6 +75,9 @@ msgstr "Snímek aktuálního okna"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Snímek vybrané oblasti"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Nové funkce:"
