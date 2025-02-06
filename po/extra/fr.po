@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-18 16:17+0000\n"
-"PO-Revision-Date: 2021-12-14 11:31+0000\n"
+"PO-Revision-Date: 2025-02-07 16:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/screenshot/extra/"
 "fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: data/screenshot.metainfo.xml.in:10 data/screenshot.desktop.in:4
@@ -51,7 +51,7 @@ msgstr "Mise à jour des traductions"
 
 #: data/screenshot.metainfo.xml.in:71
 msgid "The window is no longer always on top or stuck on every desktop"
-msgstr ""
+msgstr "La fenêtre n'est plus toujours en haut ou coincée sur chaque bureau"
 
 #: data/screenshot.metainfo.xml.in:99
 msgid "Update elementary runtime to 6.1"
