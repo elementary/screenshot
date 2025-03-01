@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-18 16:17+0000\n"
+"POT-Creation-Date: 2025-03-01 15:28+0000\n"
 "PO-Revision-Date: 2024-10-14 20:11+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "簡單的畫面快照工具。擷取整個螢幕的快照、選擇區域快照、目前視窗快照、倒數計時"
 "快照等。"
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -70,9 +74,6 @@ msgstr "目前視窗的畫面快照"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "所選區域的畫面快照"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Close when pressing the Escape key"
 #~ msgstr "當按下 ESC 鍵時關閉"

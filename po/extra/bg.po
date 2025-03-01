@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-18 16:17+0000\n"
+"POT-Creation-Date: 2025-03-01 15:28+0000\n"
 "PO-Revision-Date: 2016-07-25 14:08+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 msgstr ""
 "Прост инструмент за снимки с възможност на заснемане на целия екран, на "
 "отделен прозорец, на избрана зона или в назначено време."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-18 16:17+0000\n"
+"POT-Creation-Date: 2025-03-01 15:28+0000\n"
 "PO-Revision-Date: 2020-03-17 14:09+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/screenshot-"
@@ -35,6 +35,12 @@ msgid ""
 msgstr ""
 "Jen simpla ekrankopia ilo. Kaptu la tutan ekranon, parton, aktivan "
 "fenestron, tuj aŭ post momentoj."
+
+#: data/screenshot.metainfo.xml.in:49
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -77,11 +83,6 @@ msgstr "Kopio de la aktiva fenestro"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Kopio de elektita areaĵo"
-
-#, fuzzy
-#~| msgid "elementary LLC."
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "Fix minor visual issues with selection items"
 #~ msgstr "Ripari etajn vidajn problemojn pri elektado de elementoj"

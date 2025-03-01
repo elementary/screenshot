@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-18 16:17+0000\n"
+"POT-Creation-Date: 2025-03-01 15:28+0000\n"
 "PO-Revision-Date: 2018-11-04 11:28+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/screenshot-"
@@ -31,6 +31,12 @@ msgid ""
 msgstr ""
 "Jednostavna alatka za snimanje ekrana. Obuhvatite cijeli ekran, odabrano "
 "područje, trenutni prozor ili tempirajte svoje snimke."
+
+#: data/screenshot.metainfo.xml.in:49
+#, fuzzy
+#| msgid "elementary LLC."
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
@@ -71,11 +77,6 @@ msgstr "Snimka trenutnog prozora"
 #: data/screenshot.desktop.in:22
 msgid "Screenshot of a Selected Area"
 msgstr "Snimka odabranog područja"
-
-#, fuzzy
-#~| msgid "elementary LLC."
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "accessories-screenshot"
 #~ msgstr "accessories-screenshot"

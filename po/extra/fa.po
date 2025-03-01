@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-18 16:17+0000\n"
+"POT-Creation-Date: 2025-03-01 15:28+0000\n"
 "PO-Revision-Date: 2024-09-26 18:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/screenshot/extra/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "یک ابزار اسکرین شات ساده. عکس‌های کل صفحه، عکس‌های محدوده انتخاب‌شده، عکس‌های "
 "پنجره فعال و عکس‌های زمان‌بندی شده را بگیرید."
+
+#: data/screenshot.metainfo.xml.in:49
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/screenshot.metainfo.xml.in:57 data/screenshot.metainfo.xml.in:69
 #: data/screenshot.metainfo.xml.in:79 data/screenshot.metainfo.xml.in:88
