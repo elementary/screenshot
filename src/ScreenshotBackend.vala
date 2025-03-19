@@ -30,10 +30,10 @@ namespace Screenshot {
                 if (_is_redacted_font_available != null) {
                     return _is_redacted_font_available;
                 }
-    
+
                 (unowned Pango.FontFamily)[] families;
                 Pango.CairoFontMap.get_default ().list_families (out families);
-    
+
                 _is_redacted_font_available = false;
                 foreach (unowned var family in families) {
                     if (family.get_name () == "Redacted Script") {
@@ -41,7 +41,7 @@ namespace Screenshot {
                         break;
                     }
                 }
-    
+
                 return _is_redacted_font_available;
             }
         }
