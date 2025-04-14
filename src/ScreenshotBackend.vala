@@ -19,12 +19,32 @@
 */
 
 namespace Screenshot {
-
     public class ScreenshotBackend : Object {
-
         private ScreenshotProxy proxy;
-        public bool can_conceal_text { get; private set; }
-        public bool can_screenshot_area_with_cursor { get; private set; }
+        private bool can_conceal_text = false;
+        private bool can_screenshot_area_with_cursor = false;
+
+        private bool? _is_redacted_font_available = null;
+        private bool is_redacted_font_available {
+            get {
+                if (_is_redacted_font_available != null) {
+                    return _is_redacted_font_available;
+                }
+
+                (unowned Pango.FontFamily)[] families;
+                Pango.CairoFontMap.get_default ().list_families (out families);
+
+                _is_redacted_font_available = false;
+                foreach (unowned var family in families) {
+                    if (family.get_name () == "Redacted Script") {
+                        _is_redacted_font_available = true;
+                        break;
+                    }
+                }
+
+                return _is_redacted_font_available;
+            }
+        }
 
         construct {
             try {
@@ -48,9 +68,7 @@ namespace Screenshot {
 
             var node = new DBusNodeInfo.for_xml (xml);
             var iface = node.lookup_interface ("org.gnome.Shell.Screenshot");
-            if (iface.lookup_method ("ConcealText") != null) {
-                can_conceal_text = true;
-            }
+            can_conceal_text = iface.lookup_method ("ConcealText") != null && is_redacted_font_available;
 
             if (iface.lookup_method ("ScreenshotAreaWithCursor") != null) {
                 can_screenshot_area_with_cursor = true;
