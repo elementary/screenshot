@@ -52,6 +52,18 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.2" date="2025-05-01" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/screenshot/issues/306">Changing screenshots folder in the save dialog and saving screenshot does not save it there</issue>
+      </issues>
+    </release>
+
     <release version="8.0.1" date="2024-12-02" urgency="medium">
       <description>
         <p>Minor updates:</p>
