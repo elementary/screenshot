@@ -225,9 +225,9 @@ public class Screenshot.SaveDialog : Granite.Dialog {
                 try {
                     var folder = location_dialog.select_folder.end (res);
 
-                    var folder_path = folder.get_path ();
-                    settings.set_string ("folder-dir", folder_path);
-                    update_location_button (folder_path);
+                    folder_dir = folder.get_path ();
+                    settings.set_string ("folder-dir", folder_dir);
+                    update_location_button (folder_dir);
                 } catch (Error err) {
                     warning ("Failed to select screenshots folder: %s", err.message);
                 }
