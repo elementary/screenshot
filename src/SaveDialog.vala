@@ -223,7 +223,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
             location_dialog.select_folder.begin (this, null, (obj, res) => {
                 try {
-                    var folder = chooser.select_folder.end (res);
+                    var folder = location_dialog.select_folder.end (res);
 
                     var folder_path = folder.get_path ();
                     settings.set_string ("folder-dir", folder_path);
