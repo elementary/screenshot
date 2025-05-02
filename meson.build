@@ -41,7 +41,7 @@ executable(
         dependency('gdk-pixbuf-2.0'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
-        dependency('gtk4'),
+        dependency('gtk4', version: '>=4.10'),
         dependency('granite-7', version: '>=7.0.0'),
         dependency('libportal'),
         meson.get_compiler('vala').find_library('posix'),
