@@ -159,15 +159,6 @@ public class Screenshot.SaveDialog : Granite.Dialog {
             child = location_button_indicator
         };
 
-        var location_dialog = new Gtk.FileChooserNative (
-            _("Select Screenshots Folder…"),
-            this,
-            Gtk.FileChooserAction.SELECT_FOLDER,
-            _("Select"),
-            null
-        );
-        location_dialog.set_current_folder (File.new_for_path (folder_dir));
-
         // Prevent large dialog size with large screenshots
         default_width = 500;
 
@@ -224,15 +215,23 @@ public class Screenshot.SaveDialog : Granite.Dialog {
         });
 
         location_button.clicked.connect (() => {
-            location_dialog.show ();
-        });
+            var location_dialog = new Gtk.FileDialog () {
+                title = _("Select Screenshots Folder…"),
+                accept_label = _("Select"),
+                initial_folder = File.new_for_path (folder_dir)
+            };
 
-        location_dialog.response.connect ((response) => {
-            if (response == Gtk.ResponseType.ACCEPT) {
-                var file_path = location_dialog.get_file ().get_path ();
-                settings.set_string ("folder-dir", file_path );
-                update_location_button (file_path);
-            }
+            location_dialog.select_folder.begin (this, null, (obj, res) => {
+                try {
+                    var folder = chooser.select_folder.end (res);
+
+                    var folder_path = folder.get_path ();
+                    settings.set_string ("folder-dir", folder_path);
+                    update_location_button (folder_path);
+                } catch (Error err) {
+                    warning ("Failed to select screenshots folder: %s", err.message);
+                }
+            });
         });
     }
 
