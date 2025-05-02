@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2018-10-18 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/screenshot-"
@@ -89,32 +89,32 @@ msgstr ""
 msgid "Folder"
 msgstr "Mappe:"
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "Vælg skærmbilledmappe…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr ""
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "Kopiér til udklipsholder"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "Annuller"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "Gem"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
+msgstr ""
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "Vælg skærmbilledmappe…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
 msgstr ""
 
 #~ msgid "Grab the whole screen"

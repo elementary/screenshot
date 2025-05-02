@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2018-04-19 15:30+0000\n"
 "Last-Translator: xia zixin <xia.zixin@yahoo.com>\n"
 "Language-Team: Chinese <https://weblate.elementary.io/projects/screenshot-"
@@ -88,32 +88,32 @@ msgstr ""
 msgid "Folder"
 msgstr "文件夹："
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "选择截图文件夹…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr ""
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "取消"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "保存"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
+msgstr ""
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "选择截图文件夹…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
 msgstr ""
 
 #~ msgid "Grab the whole screen"

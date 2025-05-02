@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2024-09-26 18:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/screenshot/"
@@ -85,33 +85,33 @@ msgstr "نوع فایل"
 msgid "Folder"
 msgstr "پوشه"
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "انتخاب پوشه اسکرین شات…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr "انتخاب"
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "کپی در کلیپ برد"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "ذخیره"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr "نام فایل نمی تواند خالی باشد"
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
 msgstr "نام فایل نمی تواند حاوی \"/\" باشد"
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "انتخاب پوشه اسکرین شات…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
+msgstr "انتخاب"
 
 #~ msgid "Delay in seconds:"
 #~ msgstr "وقفه به ثانیه:"

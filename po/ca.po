@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2023-09-12 10:08+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/screenshot/"
@@ -90,33 +90,33 @@ msgstr "Tipus de fitxer"
 msgid "Folder"
 msgstr "Carpeta"
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "Trieu la carpeta de captures…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr "Selecciona"
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "Desa"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr "El nom del fitxer no pot estar en blanc."
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
 msgstr "El nom del fitxer no pot contenir /."
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "Trieu la carpeta de captures…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
+msgstr "Selecciona"
 
 #~ msgid "Grab the whole screen"
 #~ msgstr "Captura la pantalla sencera"

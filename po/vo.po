@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
@@ -75,30 +75,30 @@ msgstr ""
 msgid "Folder"
 msgstr ""
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr ""
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr ""
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr ""
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr ""
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr ""
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
+msgstr ""
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr ""
+
+#: src/SaveDialog.vala:220
+msgid "Select"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2024-06-17 20:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/screenshot/"
@@ -90,33 +90,33 @@ msgstr "Tipo de archivo"
 msgid "Folder"
 msgstr "Carpeta"
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "Seleccionar carpeta de capturas…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr "Seleccionar"
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "Copiar en el portapapeles"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "Guardar"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr "El nombre del archivo no puede estar vacío"
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
 msgstr "El nombre del archivo no puede contener «/»"
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "Seleccionar carpeta de capturas…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
+msgstr "Seleccionar"
 
 #~ msgid "Grab the whole screen"
 #~ msgstr "Obtener toda la pantalla"

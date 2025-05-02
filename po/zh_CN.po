@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: screenshot-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 15:28+0000\n"
+"POT-Creation-Date: 2025-05-02 15:53+0000\n"
 "PO-Revision-Date: 2023-08-11 10:08+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -90,33 +90,33 @@ msgstr "文件类型"
 msgid "Folder"
 msgstr "目录"
 
-#: src/SaveDialog.vala:163
-msgid "Select Screenshots Folder…"
-msgstr "选择保存目录…"
-
-#: src/SaveDialog.vala:166
-msgid "Select"
-msgstr ""
-
-#: src/SaveDialog.vala:185
+#: src/SaveDialog.vala:176
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: src/SaveDialog.vala:187
+#: src/SaveDialog.vala:178
 msgid "Cancel"
 msgstr "取消"
 
-#: src/SaveDialog.vala:189
+#: src/SaveDialog.vala:180
 msgid "Save"
 msgstr "保存"
 
-#: src/SaveDialog.vala:195
+#: src/SaveDialog.vala:186
 msgid "Filename can't be blank"
 msgstr "文件名不能为空"
 
-#: src/SaveDialog.vala:198
+#: src/SaveDialog.vala:189
 msgid "Filename can't contain “/”"
 msgstr "文件名不能包含“/”"
+
+#: src/SaveDialog.vala:219
+msgid "Select Screenshots Folder…"
+msgstr "选择保存目录…"
+
+#: src/SaveDialog.vala:220
+msgid "Select"
+msgstr ""
 
 #~ msgid "Grab the whole screen"
 #~ msgstr "截取整个屏幕"
