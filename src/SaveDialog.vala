@@ -161,6 +161,7 @@ public class Screenshot.SaveDialog : Granite.Dialog {
 
         // Prevent large dialog size with large screenshots
         default_width = 500;
+        default_height = 500;
 
         var content = this.get_content_area () as Gtk.Box;
         content.append (dialog_label);
