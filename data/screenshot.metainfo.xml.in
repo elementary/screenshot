@@ -31,7 +31,7 @@
   </provides>
 
   <recommends>
-    <display_length compare="ge">380</display_length>
+    <display_length compare="ge">500</display_length>
   </recommends>
   <supports>
     <control>pointing</control>
@@ -52,6 +52,18 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.3" date="2025-08-22" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/screenshot/issues/316">screenshot crashes after capture</issue>
+      </issues>
+    </release>
+
     <release version="8.0.2" date="2025-08-12" urgency="medium">
       <description>
         <p>Minor updates:</p>
