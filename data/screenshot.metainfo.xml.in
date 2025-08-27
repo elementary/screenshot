@@ -52,6 +52,18 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.4" date="2025-08-27" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/screenshot/discussions/321">Screenshot doesn't open at all</issue>
+      </issues>
+    </release>
+
     <release version="8.0.3" date="2025-08-25" urgency="medium">
       <description>
         <p>Minor updates:</p>
