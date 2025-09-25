@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-02 15:53+0000\n"
-"PO-Revision-Date: 2024-06-20 12:16+0000\n"
+"PO-Revision-Date: 2025-09-26 21:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/screenshot/"
+"Language-Team: Japanese <https://l10n.elementaryos.org/projects/screenshot/"
 "screenshot/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:43+0000\n"
 
 #: src/Application.vala:21
@@ -21,19 +21,19 @@ msgstr "スクリーンショット"
 
 #: src/Application.vala:33
 msgid "Capture area"
-msgstr "取得する範囲"
+msgstr "選択範囲を取得する"
 
 #: src/Application.vala:34
 msgid "Capture the whole screen"
-msgstr "画面全体を取得します"
+msgstr "画面全体を取得する"
 
 #: src/Application.vala:35
 msgid "Capture active window"
-msgstr "アクティブウィンドウを取得します"
+msgstr "アクティブウィンドウを取得する"
 
 #: src/Application.vala:36
 msgid "Take screenshot after specified delay"
-msgstr "指定された遅延の後にスクリーンショットを撮ります"
+msgstr "指定された遅延の後にスクリーンショットを撮る"
 
 #: src/Application.vala:37
 msgid "Seconds"
@@ -41,15 +41,15 @@ msgstr "秒"
 
 #: src/Application.vala:38
 msgid "Include the pointer with the screenshot"
-msgstr "スクリーンショットにマウスポインターを含めます"
+msgstr "スクリーンショットにマウスポインターを含める"
 
 #: src/Application.vala:39
 msgid "Redact system text"
-msgstr "システムテキストを隠します"
+msgstr "システムテキストを隠す"
 
 #: src/Application.vala:40
 msgid "Save screenshot to clipboard"
-msgstr "スクリーンショットをクリップボードに保存します"
+msgstr "スクリーンショットをクリップボードに保存する"
 
 #: src/Application.vala:208
 msgid "Could not capture screenshot"
@@ -71,7 +71,7 @@ msgstr "名前を付けて画像を保存…"
 #: src/SaveDialog.vala:84
 #, c-format
 msgid "Screenshot from %s"
-msgstr "%s のスクリーンショット"
+msgstr "スクリーンショット %s"
 
 #: src/SaveDialog.vala:90
 msgid "Name"
