@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-02 15:53+0000\n"
-"PO-Revision-Date: 2025-09-26 21:55+0000\n"
+"PO-Revision-Date: 2026-03-09 08:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/screenshot/"
 "screenshot/ja/>\n"
@@ -71,7 +71,7 @@ msgstr "名前を付けて画像を保存…"
 #: src/SaveDialog.vala:84
 #, c-format
 msgid "Screenshot from %s"
-msgstr "スクリーンショット %s"
+msgstr "Screenshot from %s"
 
 #: src/SaveDialog.vala:90
 msgid "Name"
