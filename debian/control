@@ -1,7 +1,7 @@
 Source: io.elementary.screenshot
 Section: graphics
 Priority: optional
-Maintainer: elementary, Inc. <builds@elementary.io> 
+Maintainer: elementary <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/screenshot
