@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-02 15:53+0000\n"
-"PO-Revision-Date: 2026-06-29 12:17+0000\n"
+"PO-Revision-Date: 2026-07-25 23:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/screenshot/"
 "extra/el/>\n"
@@ -51,6 +51,8 @@ msgstr "Ενημερωμένες μεταφράσεις"
 #: data/screenshot.metainfo.xml.in:71
 msgid "The window is no longer always on top or stuck on every desktop"
 msgstr ""
+"Το παράθυρο δεν είναι πλέον πάντα πάνω από τα υπόλοιπα ή κολλημένο σε κάθε "
+"επιφάνεια εργασίας"
 
 #: data/screenshot.metainfo.xml.in:99
 msgid "Update elementary runtime to 6.1"
@@ -62,7 +64,7 @@ msgstr "Ενημερώσεις μετάφρασης"
 
 #: data/screenshot.desktop.in:10
 msgid "Snapshot;Screenshot;"
-msgstr "Στιγμιότυπο;Στιγμιότυπο οθόνης;"
+msgstr "Στιγμιότυπο;Στιγμιότυπο οθόνης;Snapshot;Screenshot;"
 
 #: data/screenshot.desktop.in:14
 msgid "Screenshot of the Whole Screen"
