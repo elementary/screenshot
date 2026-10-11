@@ -20,4 +20,4 @@ Depends: io.elementary.screenshot, ${misc:Depends}
 Section: oldlibs
 Priority: optional
 Description: transitional dummy package
-    This is a transitional dummy package. It can safely be removed.
+ This is a transitional dummy package. It can safely be removed.
