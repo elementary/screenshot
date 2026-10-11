@@ -1,8 +1,38 @@
+io.elementary.screenshot (8.0.4) noble; urgency=medium
+
+  * Release 8.0.4
+
+ -- elementary <builds@elementary.io>  Mon, 15 Dec 2025 16:56:51 +0000
+
+io.elementary.screenshot (8.0.3) noble; urgency=medium
+
+  * Release 8.0.3
+
+ -- elementary <builds@elementary.io>  Mon, 25 Aug 2025 22:06:38 +0000
+
+io.elementary.screenshot (8.0.2) noble; urgency=medium
+
+  * Release 8.0.2
+
+ -- elementary <builds@elementary.io>  Wed, 13 Aug 2025 15:31:16 +0000
+
 io.elementary.screenshot (8.0.1) jammy; urgency=medium
 
   * Release 8.0.1 (#292)
 
  -- elementary <builds@elementary.io>  Mon, 02 Dec 2024 17:19:11 +0000
+
+io.elementary.screenshot (8.0.0) jammy; urgency=medium
+
+  * Release 8.0.0
+
+ -- elementary <builds@elementary.io>  Thu, 25 Jul 2024 17:53:04 +0000
+
+io.elementary.screenshot (6.0.4) jammy; urgency=medium
+
+  * New upstream release
+
+ -- elementary <builds@elementary.io>  Wed, 31 May 2023 16:50:32 +0000
 
 io.elementary.screenshot (6.0.3) jammy; urgency=medium
 
@@ -10,11 +40,23 @@ io.elementary.screenshot (6.0.3) jammy; urgency=medium
 
  -- Danielle Fore <danielle@elementary.io>  Fri, 02 Dec 2022 16:02:56 -0800
 
+io.elementary.screenshot (6.0.2) focal; urgency=medium
+
+  * New upstream release
+
+ -- elementary <builds@elementary.io>  Mon, 13 Dec 2021 22:41:39 +0000
+
 io.elementary.screenshot (6.0.1) focal; urgency=medium
 
   * New upstream release
 
  -- Danielle Fore <danielle@elementary.io>  Wed, 27 Oct 2021 17:02:32 -0700
+
+io.elementary.screenshot (6.0.0) focal; urgency=medium
+
+  * New upstream release
+
+ -- elementary <builds@elementary.io>  Wed, 21 Jul 2021 02:48:23 +0000
 
 io.elementary.screenshot (1.7.1) bionic; urgency=medium
 
